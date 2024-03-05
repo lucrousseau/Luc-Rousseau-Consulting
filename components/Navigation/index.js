@@ -12,11 +12,11 @@ export default function Navigation({ ...props }) {
   const alignmentsClass = alignments({ props });
 
   const navItems = [
-    { href: t("#projects"), label: t("projects") },
-    { href: t("#why"), label: t("why") },
-    { href: t("#services"), label: t("services") },
-    { href: t("#development"), label: t("development") },
-    { href: t("#advantages"), label: t("advantages") },
+    { href: `#${t("_projects")}`, label: t("projects") },
+    { href: `#${t("_why")}`, label: t("why") },
+    { href: `#${t("_services")}`, label: t("services") },
+    { href: `#${t("_development")}`, label: t("development") },
+    { href: `#${t("_advantages")}`, label: t("advantages") },
   ];
 
   return (

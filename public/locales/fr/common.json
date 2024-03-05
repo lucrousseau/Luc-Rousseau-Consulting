@@ -5,11 +5,11 @@
   "development": "Développement",
   "advantages": "Avantages",
   "#projects": "#projets",
-  "#why": "#pourquoi",
-  "#services": "#services",
-  "#development": "#développement",
-  "#advantage": "#avantage",
+  "_why": "pourquoi",
+  "_services": "services",
+  "_development": "developpement",
+  "_advantage": "avantage",
   "contact-me": "Contactez-moi!",
-  "hello@lucrousseau.com": "bonjour@lucrousseau.com",
+  "hello@lucrousseau.com": "bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous",
   "have-good-day": "Passez une bonne journée!"
 }

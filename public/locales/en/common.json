@@ -4,12 +4,12 @@
   "services": "Services",
   "development": "Development",
   "advantages": "Advantages",
-  "#projects": "#projects",
-  "#why": "#why",
-  "#services": "#services",
-  "#development": "#development",
-  "#advantage": "#advantage",
+  "_projects": "projects",
+  "_why": "why",
+  "_services": "services",
+  "_development": "development",
+  "advantage": "advantage",
   "contact-me": "Contact me!",
-  "hello@lucrousseau.com": "hello@lucrousseau.com",
+  "hello@lucrousseau.com": "hello@lucrousseau.com?subject=Appointment%20Request",
   "have-good-day": "Have a good day"
 }
