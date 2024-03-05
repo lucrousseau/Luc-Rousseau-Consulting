@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Link from "next/link";
 
 import { alignments } from "../../commons/alignments";
 
@@ -9,13 +10,13 @@ export default function Logo({ ...props }) {
 
   return (
     <div className={classNames("component component__logo", alignmentsClass)}>
-      <a
+      <Link
         href="/"
         className="h2 logo"
         aria-label="Luc Rousseau | CTO à la Demande & Création de Produits"
       >
         <span>Luc Rousseau</span>
-      </a>
+      </Link>
     </div>
   );
 }

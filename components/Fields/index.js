@@ -19,7 +19,7 @@ export default function Fields({
   fallbackValue,
   options,
   size,
-  onchange,
+  onChange,
   ...props
 }) {
   const alignmentsClass = alignments({ props });
@@ -55,7 +55,7 @@ export default function Fields({
             defaultValue={defaultValue}
             fallbackValue={fallbackValue}
             placeholder={"Select yout Timezone"}
-            onchange={onchange}
+            onChange={onChange}
             {...props}
           />
         )}

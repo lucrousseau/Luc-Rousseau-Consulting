@@ -14,9 +14,12 @@ export default function Month({ month, year, onSelectDay }) {
   const currentMoment = moment();
 
   const isBeforeToday = (day) => {
-    return currentMoment.isAfter(
-      moment(`${year}-${month + 1}-${day}`, "YYYY-MM-DD")
-    );
+    const dayToCompare = moment(
+      `${year}-${month + 1}-${day}`,
+      "YYYY-MM-DD"
+    ).startOf("day");
+
+    return dayToCompare.isBefore(currentMoment.startOf("day"));
   };
 
   const isToday = (day) => {
@@ -25,6 +28,8 @@ export default function Month({ month, year, onSelectDay }) {
       moment(`${year}-${month + 1}-${day}`, "YYYY-MM-DD").format("YYYY-MM-DD")
     );
   };
+
+  const isAvailable = (day) => {};
 
   // Adjusted to use moment.js
   const firstDayOfMonth = monthStart.day();
@@ -44,6 +49,7 @@ export default function Month({ month, year, onSelectDay }) {
           isToday: isToday(day),
           isSelected: selectedDay === dateStr,
           isInactive: isBeforeToday(day),
+          isAvailable: isAvailable(day),
         })}
         onClick={() => {
           if (!isBeforeToday(day)) {
@@ -58,7 +64,7 @@ export default function Month({ month, year, onSelectDay }) {
   });
 
   const emptyDays = Array.from({ length: firstDayOfMonth }).map((_, i) => (
-    <td key={`empty-${i}`}>
+    <td key={`empty-${i}`} className="isInactive">
       <span></span>
     </td>
   ));

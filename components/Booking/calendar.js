@@ -5,12 +5,26 @@ import CalendarNavigation from "./calendarNavigation";
 import Month from "./month";
 import Timezone from "./timezone";
 import Hours from "./hours";
+import getsCurrentUserTimezone from "./commons/getsCurrentUserTimezone";
 
 import { TIMEZONE } from "./commons/constants";
 
 import "./styles/calendar.scss";
 
 export default function Calendar({ month, year }) {
+  const { timezone } = getsCurrentUserTimezone();
+
+  const [currentUserTimezone, setCurrentUserTimezone] = useState(timezone);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedTimezone = localStorage.getItem("userTimezone");
+      if (storedTimezone) {
+        setCurrentUserTimezone(storedTimezone);
+      }
+    }
+  }, []);
+
   const initialDate =
     month && year
       ? moment.tz(`${year}-${month}-01`, "YYYY-MM-DD", TIMEZONE)
@@ -70,7 +84,10 @@ export default function Calendar({ month, year }) {
                 year={currentYear}
                 onSelectDay={handleSelectDay}
               />
-              <Timezone />
+              <Timezone
+                currentUserTimezone={currentUserTimezone}
+                setCurrentUserTimezone={setCurrentUserTimezone}
+              />
             </>
           ),
         },
@@ -82,6 +99,7 @@ export default function Calendar({ month, year }) {
               day={currentSelectedDay}
               month={currentSelectedMonth}
               year={currentSelectedYear}
+              timezone={currentUserTimezone}
             />
           ),
         },

@@ -1,27 +1,19 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { faEarthAmericas } from "@fortawesome/pro-light-svg-icons";
-
-import React, { useState } from "react";
 import Fields from "../Fields";
-import getsCurrentUserTimezone from "./commons/getsCurrentUserTimezone";
 
 import { TIMEZONE_OPTIONS } from "./commons/constants";
 
-export default function Timezone() {
-  const { timezone, utcOffset } = getsCurrentUserTimezone();
-
-  const [currentUserTimezone, setCurrentUserTimezone] = useState(() => {
-    if (typeof window !== "undefined") {
-      localStorage.getItem("userTimezone") || timezone;
-    }
-
-    return timezone;
-  });
-
+export default function Timezone({
+  currentUserTimezone,
+  setCurrentUserTimezone,
+}) {
   const handleTimezoneChange = (event) => {
     const value = event.target.value;
-    localStorage.setItem("userTimezone", value);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("userTimezone", value);
+    }
     setCurrentUserTimezone(value);
   };
 
@@ -31,7 +23,6 @@ export default function Timezone() {
       size="small"
       prefix={<FontAwesomeIcon icon={faEarthAmericas} />}
       value={currentUserTimezone}
-      fallbackValue={utcOffset}
       options={TIMEZONE_OPTIONS}
       onChange={handleTimezoneChange}
     />
