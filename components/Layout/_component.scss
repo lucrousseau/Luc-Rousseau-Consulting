@@ -1,0 +1,17 @@
+@use "sass:math";
+
+@import "./styles/abstracts/functions";
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/mixins";
+
+.component {
+  --margin-top: var(--padding);
+  --margin-bottom: var(--padding);
+
+  &--nomargin {
+    --margin-top: 0;
+    --margin-left: 0;
+    --margin-right: 0;
+    --margin-bottom: 0;
+  }
+}

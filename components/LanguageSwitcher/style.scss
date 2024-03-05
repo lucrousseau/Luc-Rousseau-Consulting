@@ -1,0 +1,24 @@
+@use "sass:math";
+
+@import "./styles/abstracts/functions";
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/mixins";
+
+.component__language-switcher {
+  ul {
+    list-style: none;
+  }
+  &__lang {
+    display: none;
+    &--current {
+      display: block;
+    }
+  }
+  a {
+    text-decoration: none;
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}

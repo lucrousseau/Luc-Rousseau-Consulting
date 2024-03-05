@@ -1,0 +1,29 @@
+@mixin fontSizes($parent: null, $reset: false, $unit: "em") {
+  @if $reset {
+    #{$parent}.smaller,
+    #{$parent}.small,
+    #{$parent}.big,
+    #{$parent}.bigger {
+      font-size: initial;
+    }
+  } @else {
+    $font-sizes: (
+      "smaller": 0.2,
+      "small": 0.9,
+      "big": 1.1,
+      "bigger": 1.2,
+    );
+
+    @each $size, $value in $font-sizes {
+      @at-root {
+        #{$parent}.#{$size} {
+          font-size: #{$value}#{$unit};
+        }
+      }
+    }
+  }
+}
+
+@mixin shadow() {
+  filter: drop-shadow(0 0 var(--shadow-size) var(--shadow-color));
+}

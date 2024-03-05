@@ -1,0 +1,66 @@
+@use "sass:math";
+
+@import "./styles/abstracts/functions";
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/mixins";
+
+.component__fields {
+  $this: &;
+
+  &.small {
+    input,
+    select,
+    textarea {
+      padding: calc(var(--input-padding) * 0.5);
+    }
+  }
+  label {
+    width: 100%;
+    display: block;
+    font-weight: 500;
+    position: relative;
+  }
+  input,
+  select,
+  textarea {
+    width: 100%;
+    display: block;
+    appearance: none;
+    color: var(--input-color);
+    padding: var(--input-padding);
+    background-color: var(--input-background-color);
+    border: var(--border-width) solid var(--input-border-color);
+    border-radius: var(--input-border-radius);
+    font-family: var(--input-font-family);
+
+    @include fontSizes(null, false, "em");
+
+    &:focus {
+      outline: none;
+    }
+  }
+  svg {
+    width: 1em;
+    height: 1em;
+  }
+
+  &[field-type="select"] {
+    &#{$this}--prefix {
+      #{$this}__prefix {
+        > svg {
+          left: 0.5em;
+          position: absolute;
+          top: calc((100% - 1em) / 2);
+        }
+      }
+    }
+    select {
+      padding-left: 2em;
+    }
+    label > svg {
+      right: 0.5em;
+      position: absolute;
+      top: calc((100% - 1em) / 2);
+    }
+  }
+}

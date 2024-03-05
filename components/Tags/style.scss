@@ -1,0 +1,27 @@
+@use "sass:math";
+
+@import "./styles/abstracts/functions";
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/mixins";
+
+.component__tags {
+  $parent: &;
+  display: flex;
+  gap: calc(var(--gap) * 0.5);
+
+  strong {
+    line-height: 1em;
+    position: relative;
+    padding: var(--padding);
+    border-radius: calc(var(--border-radius) * 0.5);
+    background-color: var(--secondary-background-color);
+
+    @include shadow();
+
+    i {
+      font-size: 1em;
+      font-style: normal;
+      margin-left: 0.25em;
+    }
+  }
+}

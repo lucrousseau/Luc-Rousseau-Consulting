@@ -1,0 +1,115 @@
+@mixin paddingMargin($reset: false) {
+  $all-directions: (top, right, bottom, left);
+  $all-properties: ("padding", "margin");
+
+  @if $reset != true {
+    @each $prefix, $breakpoint in $breakpoints {
+      $originalPrefix: $prefix;
+      $prefix: getPrefix($prefix);
+
+      @if $prefix == "" {
+        @include paddingMarginValuesProps(
+          $prefix,
+          $originalPrefix,
+          $all-directions,
+          $all-properties
+        );
+      } @else {
+        @media screen and (max-width: $breakpoint) {
+          @include paddingMarginValuesProps(
+            $prefix,
+            $originalPrefix,
+            $all-directions,
+            $all-properties
+          );
+        }
+      }
+    }
+  }
+
+  @each $property in $all-properties {
+    @each $direction in $all-directions {
+      @each $prefix, $breakpoint in $breakpoints {
+        $prefix: getPrefix($prefix);
+
+        --#{$prefix}#{$property}-#{$direction}: initial;
+      }
+    }
+  }
+}
+
+@mixin paddingMarginValuesProps(
+  $prefix: null,
+  $originalPrefix: null,
+  $all-directions,
+  $all-properties
+) {
+  @each $property in $all-properties {
+    @each $direction in $all-directions {
+      $previousPrefix: getPrefix(findPreviousBreakepoint($originalPrefix));
+      $value: var(--get-#{$previousPrefix}#{$property}-#{$direction});
+
+      @if $prefix == "" {
+        $value: "initial";
+      }
+
+      --get-#{$prefix}#{$property}-#{$direction}: var(
+        --#{$prefix}#{$property}-#{$direction},
+        #{$value}
+      );
+    }
+  }
+
+  @each $property in $all-properties {
+    @each $direction in $all-directions {
+      #{$property}-#{$direction}: var(
+        --get-#{$prefix}#{$property}-#{$direction}
+      );
+    }
+  }
+}
+
+.container,
+.row,
+.row > .col,
+.grid,
+.grid > .col,
+.component {
+  @include paddingMargin();
+}
+
+.container,
+.row {
+  align-items: inherit;
+  justify-content: inherit;
+  &--left {
+    justify-content: flex-start;
+  }
+  &--center {
+    justify-content: center;
+  }
+  &--right {
+    justify-content: flex-end;
+  }
+  &--top {
+    align-items: flex-start;
+  }
+  &--middle {
+    align-items: center;
+  }
+  &--bottom {
+    align-items: flex-end;
+  }
+}
+
+.align {
+  &--left {
+    text-align: left;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+}

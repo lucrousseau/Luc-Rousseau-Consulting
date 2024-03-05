@@ -1,0 +1,110 @@
+@use "sass:math";
+
+@import "./styles/abstracts/functions";
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/mixins";
+
+@import "../mixins";
+@import "../commons";
+@import "../component";
+
+@mixin colWidth($prefix: null, $size) {
+  $prefix: getPrefix($prefix);
+
+  &--#{$prefix}#{$size} {
+    flex: 0 0
+      calc(
+        ((100% / #{$columns}) * #{$size}) -
+          (var(--gap) * #{1 - math.div(1, $columns) * $size})
+      );
+  }
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  flex-direction: row;
+
+  &--nowrap {
+    flex-wrap: nowrap;
+  }
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+  &--column {
+    flex-direction: column;
+  }
+  &--inline {
+    display: inline-flex;
+  }
+
+  // Generate responsive classes for columns
+  @each $prefix, $breakpoint in $breakpoints {
+    $prefix: getPrefix($prefix);
+
+    @if $prefix == "" {
+      &--reverse {
+        flex-direction: row-reverse;
+      }
+    } @else {
+      @media screen and (max-width: $breakpoint) {
+        &--#{$prefix}reverse {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+
+  > .col {
+    $that: &;
+    flex: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    // Reset flex properties
+    &.row {
+      flex-direction: inherit;
+    }
+
+    // Vertical alignment for Flexbox
+    &--top {
+      align-self: flex-start;
+    }
+    &--middle {
+      align-self: center;
+    }
+    &--bottom {
+      align-self: flex-end;
+    }
+
+    // Pull-right and pull-left for Flexbox
+    &--pull-right,
+    &--pull-left {
+      flex: none;
+    }
+    &--pull-right {
+      margin-left: auto;
+    }
+    &--pull-left {
+      margin-right: auto;
+    }
+
+    // Generate responsive classes for columns
+    @each $prefix, $breakpoint in $breakpoints {
+      @if $prefix == "full" {
+        @for $size from 1 through $columns {
+          @include colWidth($prefix, $size);
+        }
+      } @else {
+        @media screen and (max-width: $breakpoint) {
+          @for $size from 1 through $columns {
+            @include colWidth($prefix, $size);
+          }
+        }
+      }
+    }
+  }
+}

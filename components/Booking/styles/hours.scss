@@ -1,0 +1,20 @@
+@use "sass:math";
+
+@import "./styles/abstracts/functions";
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/mixins";
+
+@import "./commons";
+
+.component__booking__hours {
+  &__list {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    span {
+      @include bookMeClickElement(true);
+
+      text-align: center;
+    }
+  }
+}

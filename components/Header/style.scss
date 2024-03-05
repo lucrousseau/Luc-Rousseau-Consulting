@@ -1,0 +1,72 @@
+@use "sass:math";
+
+@import "./styles/abstracts/functions";
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/mixins";
+
+body {
+  &.nav-open {
+    .component__header__bars div {
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        top: calc(50% - var(--border-width) * var(--menu-bar-height) / 2);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        bottom: calc(50% - var(--border-width) * var(--menu-bar-height) / 2);
+      }
+    }
+  }
+}
+
+.component__header {
+  $this: &;
+  --margin-top: 0;
+  --margin-bottom: 0;
+  .col #{$this}__bars {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: var(--menu-bars-width);
+    height: var(--menu-bars-height);
+    div {
+      width: 100%;
+      position: absolute;
+      background-color: var(--body-color);
+      height: calc(var(--border-width) * var(--menu-bar-height));
+      &:nth-child(1) {
+        top: 0;
+      }
+      &:nth-child(2) {
+        top: calc(50% - var(--border-width) * var(--menu-bar-height) / 2);
+      }
+      &:nth-child(3) {
+        bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobile-nav-primary-breakpoint) {
+    .col #{$this}__bars {
+      display: inherit;
+    }
+    .col #{$this}__nav {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: $mobile-nav-secondary-breakpoint) {
+    .col #{$this}__tools {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: $mobile-nav-tertiary-breakpoint) {
+    .col #{$this}__right {
+      display: none;
+    }
+  }
+}

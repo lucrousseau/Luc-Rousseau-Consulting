@@ -1,0 +1,19 @@
+@use "sass:math";
+
+@import "./styles/abstracts/functions";
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/mixins";
+
+.component__navigation {
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}

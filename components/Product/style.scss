@@ -1,0 +1,23 @@
+@use "sass:math";
+
+@import "./styles/abstracts/functions";
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/mixins";
+
+.component__product {
+  height: 100%;
+  padding: var(--padding);
+  padding-top: var(--double-padding);
+  padding-bottom: calc(var(--padding) * 7);
+
+  background-color: var(--secondary-background-color);
+  border-radius: var(--border-radius);
+
+  @include shadow();
+
+  .component__buy {
+    bottom: var(--double-padding);
+    position: absolute;
+    width: calc(100% - var(--double-padding) * 2);
+  }
+}

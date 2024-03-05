@@ -1,0 +1,13 @@
+@import "../node_modules/minireset.css";
+
+ul,
+ol {
+  padding-left: revert;
+}
+
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}

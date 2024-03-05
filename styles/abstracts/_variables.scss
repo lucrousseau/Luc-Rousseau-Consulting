@@ -1,0 +1,255 @@
+// Define grid system and breakpoints
+$columns: 12;
+
+$xxl: 1400px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+$xs: 480px;
+
+// Common breakpoints for the grid generation
+$breakpoints: (
+  "full": 999999,
+  "xxl": $xxl,
+  "xl": $xl,
+  "lg": $lg,
+  "md": $md,
+  "sm": $sm,
+  "xs": $xs,
+);
+
+// Special breakpoints NOT for the grid generation
+$mobile-nav-primary-breakpoint: 1024px;
+$mobile-nav-secondary-breakpoint: $md;
+$mobile-nav-tertiary-breakpoint: $sm;
+
+:root {
+  // Grid
+  --columns: var(--set-columns, #{$columns});
+  --gap: calc(var(--set-gap, 30) / var(--body-font-size) * 1rem);
+
+  --xxl: var(--set-xxl, #{$xxl});
+  --xl: var(--set-xl, #{$xl});
+  --lg: var(--set-lg, #{$lg});
+  --md: var(--set-md, #{$md});
+  --sm: var(--set-sm, #{$sm});
+  --xs: var(--set-xs, #{$xs});
+
+  --container-max-width: var(--set-container-max-width, 1280px);
+  --container-background-max-width: var(--set-container-max-width, 1920px);
+
+  --container-padding-top: calc(
+    var(--set-container-padding-top, 50) / var(--body-font-size) * 1rem
+  );
+  --container-padding-bottom: calc(
+    var(--set-container-padding-bottom, 50) / var(--body-font-size) * 1rem
+  );
+  --container-padding-left: calc(
+    var(--set-container-padding-left, 20) / var(--body-font-size) * 1rem
+  );
+  --container-padding-right: calc(
+    var(--set-container-padding-right, 20) / var(--body-font-size) * 1rem
+  );
+
+  @media screen and (max-width: $xl) {
+    --gap: calc(var(--set-gap, 20) / var(--body-font-size) * 1rem);
+  }
+
+  @media screen and (max-width: $sm) {
+    --gap: calc(var(--set-gap, 15) / var(--body-font-size) * 1rem);
+
+    --container-padding-top: calc(
+      var(--set-container-padding-top, 15) / var(--body-font-size) * 1rem
+    );
+    --container-padding-bottom: calc(
+      var(--set-container-padding-bottom, 15) / var(--body-font-size) * 1rem
+    );
+  }
+
+  // Body
+  --body-font-family: var(
+    --set-body-font-family,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol"
+  );
+  --body-font-size: var(--set-body-font-size, 16);
+  --body-background-color: var(--set-body-background-color, #f6f5f5);
+  --body-color: var(--set-body-color, #454c73);
+
+  // Headings
+  --heading-1-font-family: var(
+    --set-heading-1-font-family,
+    "QuincyCF",
+    Georgia,
+    serif
+  );
+  --heading-2-font-family: var(
+    --set-heading-2-font-family,
+    "QuincyCF",
+    Georgia,
+    serif
+  );
+  --heading-3-font-family: var(
+    --set-heading-3-font-family,
+    "QuincyCF",
+    Georgia,
+    serif
+  );
+  --heading-4-font-family: var(
+    --set-heading-4-font-family,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol"
+  );
+  --heading-5-font-family: var(
+    --set-heading-5-font-family,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol"
+  );
+  --heading-6-font-family: var(
+    --set-heading-6-font-family,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol"
+  );
+
+  --heading-1-font-size: calc(
+    var(--set-heading-1-font-size, 60) / var(--body-font-size) * 1rem
+  );
+  --heading-2-font-size: calc(
+    var(--set-heading-2-font-size, 36) / var(--body-font-size) * 1rem
+  );
+  --heading-3-font-size: calc(
+    var(--set-heading-3-font-size, 24) / var(--body-font-size) * 1rem
+  );
+  --heading-4-font-size: calc(
+    var(--set-heading-4-font-size, 20) / var(--body-font-size) * 1rem
+  );
+  --heading-5-font-size: calc(
+    var(--set-heading-5-font-size, 18) / var(--body-font-size) * 1rem
+  );
+  --heading-6-font-size: calc(
+    var(--set-heading-6-font-size, 16) / var(--body-font-size) * 1rem
+  );
+
+  --heading-1-color: var(--set-heading-1-color, #131e61);
+  --heading-2-color: var(--set-heading-2-color, #131e61);
+  --heading-3-color: var(--set-heading-3-color, #454c73);
+  --heading-4-color: var(--set-heading-4-color, #131e61);
+  --heading-5-color: var(--set-heading-5-color, #131e61);
+  --heading-6-color: var(--set-heading-6-color, #131e61);
+
+  // Links
+  --link-color: var(--set-link-color, #ee6f57);
+  --link-color-hover: var(--set-link-color-hover, #ee6f57);
+
+  --external-link-color: var(--set-external-link-color, #131e61);
+  --external-link-color-hover: var(--set-external-link-color-hover, #131e61);
+
+  // Buttons
+  --btn-primary-color: var(--set-btn-primary-color, #f6f5f5);
+  --btn-secondary-color: var(--set-btn-secondary-color, #f6f5f5);
+  --btn-tertiary-color: var(--set-btn-tertiary-color, #f6f5f5);
+
+  --btn-primary-background-color: var(
+    --set-btn-primary-background-color,
+    #e2624a
+  );
+  --btn-secondary-background-color: var(
+    --set-btn-secondary-background-color,
+    #131e61
+  );
+  --btn-tertiary-background-color: var(
+    --set-btn-tertiary-background-color,
+    #454c73
+  );
+
+  // Forms
+  /*--input-font-size: calc(
+    var(--set-input-font-size, 16) / var(--body-font-size) * 1rem
+  );*/
+  --input-font-family: var(
+    --set-input-font-family,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol"
+  );
+  --input-color: var(--set-input-color, #454c73);
+  --input-border-color: var(--set-input-border-color, #454c73);
+  --input-border-radius: calc(
+    var(--set-input-border-radius, 5) / var(--body-font-size) * 1rem
+  );
+  --input-background-color: var(--set-input-background-color, transparent);
+  --input-padding: calc(
+    var(--set-input-padding, 15) / var(--body-font-size) * 1rem
+  );
+
+  //Hamburguer menu
+  --menu-bars-width: 3rem;
+  --menu-bars-height: 1.5rem;
+  --menu-bars-background-color: var(
+    --set-menu-bars-background-color,
+    var(--body-color)
+  );
+  --menu-bar-height: 3;
+
+  // Others
+  --padding: calc(var(--set-padd, 15) / var(--body-font-size) * 1rem);
+  --double-padding: calc(var(--padding) * 2);
+
+  --border-width: var(--set-border-width, 1px);
+  --border-radius: calc(
+    var(--set-border-radius, 30) / var(--body-font-size) * 1rem
+  );
+
+  --shadow-color: var(--set-shadow-color, rgba(0, 0, 0, 0.05));
+  --shadow-size: calc(
+    var(--set-shadow-size, 10) / var(--body-font-size) * 1rem
+  );
+
+  --primary-accent-color: var(--set-accent-color, #ee6f57);
+  --secondary-accent-color: var(--set-secondary-accent-color, #ee6f57);
+  --secondary-background-color: var(--set-light-background-color, #ffffff);
+
+  @media screen and (max-width: $sm) {
+    --double-padding: var(--padding);
+  }
+}

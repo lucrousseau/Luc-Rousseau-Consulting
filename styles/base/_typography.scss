@@ -1,0 +1,168 @@
+html {
+  font-size: calc(var(--body-font-size) * 1px);
+  font-family: var(--body-font-family);
+}
+
+body {
+  font-size: 1rem;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  @include fontSizes(null, true);
+
+  margin-top: var(--padding);
+  margin-bottom: var(--padding);
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  font-weight: 900;
+  line-height: 1.1em;
+}
+
+h1,
+h2 {
+  &.underline {
+    position: relative;
+    padding-bottom: 0.5em;
+    &::after {
+      left: 0;
+      bottom: 0;
+      content: "";
+      width: 5rem;
+      position: absolute;
+      background-color: var(--primary-accent-color);
+      height: calc(var(--border-width) * 2);
+    }
+    &--center {
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &--right {
+      &::after {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+}
+
+h1,
+.h1 {
+  color: var(--heading-1-color);
+  font-size: var(--heading-1-font-size);
+  font-family: var(--heading-1-font-family);
+}
+
+h2,
+.h2 {
+  color: var(--heading-2-color);
+  font-size: var(--heading-2-font-size);
+  font-family: var(--heading-2-font-family);
+}
+
+h3,
+.h3 {
+  font-weight: 500;
+  line-height: 1.3em;
+  color: var(--heading-3-color);
+  font-size: var(--heading-3-font-size);
+  font-family: var(--heading-3-font-family);
+}
+
+h4,
+.h4 {
+  font-weight: 500;
+  line-height: 1.3em;
+  color: var(--heading-4-color);
+  font-size: var(--heading-4-font-size);
+  font-family: var(--heading-4-font-family);
+}
+
+h5,
+.h5 {
+  color: var(--heading-5-color);
+  font-size: var(--heading-5-font-size);
+  font-family: var(--heading-5-font-family);
+}
+
+h6,
+.h6 {
+  color: var(--heading-6-color);
+  font-size: var(--heading-6-font-size);
+  font-family: var(--heading-6-font-family);
+}
+
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  @include fontSizes(null, true);
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+ul,
+ol,
+picture {
+  margin-top: var(--padding);
+  margin-bottom: var(--padding);
+}
+
+h1 {
+  + h2,
+  + h3 {
+    margin-top: 0;
+  }
+}
+
+p,
+ul,
+ol,
+picture,
+dl,
+pre,
+table,
+form,
+blockquote {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  &.small {
+    line-height: 1.4rem;
+  }
+  &.smaller {
+    line-height: 1.4em;
+  }
+}
+
+small {
+  font-size: 0.8em;
+}

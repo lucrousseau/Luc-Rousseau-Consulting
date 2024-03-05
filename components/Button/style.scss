@@ -1,0 +1,101 @@
+@use "sass:math";
+
+@import "./styles/abstracts/functions";
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/mixins";
+
+.btn {
+  $this: &;
+  border: none;
+  display: inline-block;
+  padding: calc(1em - var(--border-width) * 4)
+    calc(2em - var(--border-width) * 4);
+  border-radius: 100em;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  appearance: none;
+  font-size: 1rem;
+  font-family: var(--body-font-family);
+
+  @include fontSizes(&, false, "rem");
+
+  &.small,
+  &.smaller {
+    $padding: 0.9em;
+    padding: calc(#{$padding} - var(--border-width) * 4)
+      calc(#{$padding * 2} - var(--border-width) * 4);
+  }
+
+  &--disabled {
+    pointer-events: none;
+  }
+
+  &--primary,
+  &--secondary,
+  &--tertiary {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+
+  &--primary {
+    border: calc(var(--border-width) * 2) solid
+      var(--btn-primary-background-color);
+    color: var(--btn-primary-color);
+    background-color: var(--btn-primary-background-color);
+
+    &:hover,
+    &:active {
+      color: var(--btn-primary-background-color);
+      background-color: transparent;
+      border: calc(var(--border-width) * 2) solid
+        var(--btn-primary-background-color);
+    }
+    &#{$this}--disabled {
+      border-color: var(--body-color);
+      background-color: var(--body-color);
+    }
+  }
+
+  &--secondary {
+    border: calc(var(--border-width) * 2) solid
+      var(--btn-secondary-background-color);
+    color: var(--btn-secondary-color);
+    background-color: var(--btn-secondary-background-color);
+
+    &:hover,
+    &:active {
+      color: var(--btn-primary-background-color);
+      background-color: transparent;
+      border: calc(var(--border-width) * 2) solid
+        var(--btn-primary-background-color);
+    }
+
+    &#{$this}--disabled {
+      border-color: var(--body-color);
+      background-color: var(--body-color);
+    }
+  }
+
+  &--tertiary {
+    border: calc(var(--border-width) * 2) solid
+      var(--btn-tertiary-background-color);
+    color: var(--btn-tertiary-color);
+    background-color: var(--btn-tertiary-background-color);
+
+    &:hover,
+    &:active {
+      color: var(--btn-primary-background-color);
+      background-color: transparent;
+      border: calc(var(--border-width) * 2) solid
+        var(--btn-primary-background-color);
+    }
+
+    &#{$this}--disabled {
+      border-color: var(--body-color);
+      background-color: var(--body-color);
+    }
+  }
+}

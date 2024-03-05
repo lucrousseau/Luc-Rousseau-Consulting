@@ -1,0 +1,91 @@
+import React, { useState } from "react";
+import className from "classnames";
+import moment from "moment";
+
+import { DAYS_OF_WEEK } from "./commons/constants";
+
+import "./styles/month.scss";
+
+export default function Month({ month, year, onSelectDay }) {
+  const [selectedDay, setSelectedDay] = useState(null);
+
+  const monthStart = moment(`${year}-${month + 1}`, "YYYY-MM").startOf("month");
+  const monthEnd = monthStart.clone().endOf("month");
+  const currentMoment = moment();
+
+  const isBeforeToday = (day) => {
+    return currentMoment.isAfter(
+      moment(`${year}-${month + 1}-${day}`, "YYYY-MM-DD")
+    );
+  };
+
+  const isToday = (day) => {
+    return (
+      currentMoment.format("YYYY-MM-DD") ===
+      moment(`${year}-${month + 1}-${day}`, "YYYY-MM-DD").format("YYYY-MM-DD")
+    );
+  };
+
+  // Adjusted to use moment.js
+  const firstDayOfMonth = monthStart.day();
+  const daysInMonth = monthEnd.date();
+
+  // Generate days of the month using moment.js
+  const days = Array.from({ length: daysInMonth }, (_, i) => {
+    const day = i + 1;
+    const dateStr = moment(`${year}-${month + 1}-${day}`, "YYYY-MM-DD").format(
+      "YYYY-MM-DD"
+    );
+
+    return (
+      <td
+        key={day}
+        className={className({
+          isToday: isToday(day),
+          isSelected: selectedDay === dateStr,
+          isInactive: isBeforeToday(day),
+        })}
+        onClick={() => {
+          if (!isBeforeToday(day)) {
+            setSelectedDay(dateStr);
+            onSelectDay(dateStr);
+          }
+        }}
+      >
+        <span>{day}</span>
+      </td>
+    );
+  });
+
+  const emptyDays = Array.from({ length: firstDayOfMonth }).map((_, i) => (
+    <td key={`empty-${i}`}>
+      <span></span>
+    </td>
+  ));
+
+  // Combine and organize into weeks
+  const totalSlots = [...emptyDays, ...days];
+  let rows = [];
+  for (let i = 0; i < totalSlots.length; i += 7) {
+    rows.push(totalSlots.slice(i, i + 7));
+  }
+
+  return (
+    <table>
+      <thead>
+        <tr>
+          {DAYS_OF_WEEK.map((day, index) => (
+            <th key={index}>
+              <span>{day}</span>
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row, index) => (
+          <tr key={index}>{row}</tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
