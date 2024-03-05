@@ -37,7 +37,7 @@ export default function Home() {
                 cols: { col: 6, md: 12 },
                 content: (
                   <Picture
-                    src={"https://via.placeholder.com/1200x1800"}
+                    src={"images/luc-profil-full.jpg"}
                     alt={"Placeholder Image"}
                     absolute={true}
                   />
@@ -52,8 +52,8 @@ export default function Home() {
                       {
                         cols: { col: 11, xl: 12, sm: 12 },
                         style: {
-                          "--padding-top": "5rem",
-                          "--padding-bottom": "5rem",
+                          "--padding-top": "3rem",
+                          "--padding-bottom": "3rem",
                           "--sm-padding-top": "0rem",
                           "--sm-padding-bottom": "0rem",
                         },
@@ -61,7 +61,8 @@ export default function Home() {
                           <>
                             <h1>Luc Rousseau</h1>
                             <h3>
-                              CTO à la Demande & Création de Produits Numériques
+                              CTO à la Demande et Création de
+                              Produits Numériques
                             </h3>
                             <Row
                               halign={"center"}
@@ -70,7 +71,7 @@ export default function Home() {
                                   cols: { col: 5, sm: 7 },
                                   content: (
                                     <Picture
-                                      src={"https://via.placeholder.com/1200"}
+                                      src={"images/luc-profil-photo.jpg"}
                                       alt={"Placeholder Image"}
                                       rounded={true}
                                     />
@@ -86,26 +87,23 @@ export default function Home() {
                             </h4>
                             <p>
                               Aujourd&apos;hui, en tant que consultant et CTO à
-                              la demande,
-                              <strong>je guide les startups</strong> et les PME
-                              dans le
+                              la demande, <strong>je guide les startups</strong>{" "}
+                              et les PME dans le{" "}
                               <em>développement de leur MVP</em> (produit
                               minimum viable). Fort de mon expertise unique en
-                              développement web,
-                              <a href="#">
-                                direction artistique et expérience utilisateur
-                              </a>
-                              , et tout en respectant les échéanciers et les
-                              contraintes budgétaires, j&apos;aide mes clients à
-                              créer des produits viables, parfaitement alignés
-                              sur les besoins des utilisateurs.
+                              développement web, direction artistique et
+                              expérience utilisateur , et tout en respectant les
+                              échéanciers et les contraintes budgétaires,
+                              j&apos;aide mes clients à créer des produits
+                              viables, parfaitement alignés sur les besoins des
+                              utilisateurs.
                             </p>
                             <p>
                               <Button
                                 variant={"primary"}
                                 href={"#"}
                                 label={
-                                  "Pourquoi Faire Appel à un CTO à la Demande?"
+                                  "Contactez-moi pour discuter de votre projet"
                                 }
                               />
                             </p>
@@ -132,13 +130,12 @@ export default function Home() {
                 content: (
                   <>
                     <h2 className="underline underline--center">
-                      Lorem ipsum dolor sit amet
+                      Rendre le Possible Concret
                     </h2>
                     <p className="big">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Aliquid autem maxime, alias dolore facilis omnis!
-                      Provident, accusamus fuga. Sint dolorum magnam assumenda
-                      ipsum rerum adipisci sunt? Maiores ea iste facilis!
+                      Je convertis les défis du développement de produits
+                      numériques en opportunités claires et réalisables,
+                      catalysant ainsi l&apos;innovation et la réussite.
                     </p>
                   </>
                 ),
@@ -148,7 +145,7 @@ export default function Home() {
           <Row
             columns={[
               {
-                cols: { col: 9, sm: 12 },
+                cols: { col: 10, sm: 12 },
                 content: (
                   <Accordion
                     align={"left"}
@@ -158,9 +155,7 @@ export default function Home() {
                         emoji: "🧠",
                         content: (
                           <>
-                            <h4>
-                              Synergie Marketing, Web et Innovation Technique
-                            </h4>
+                            <h4>Synergie et Innovation Technique</h4>
                             <h5>
                               Définition et Mise en Place d&apos;une
                               Architecture Système Centralisée
@@ -169,7 +164,7 @@ export default function Home() {
                               <li>
                                 <strong>
                                   Conception d&apos;une Architecture Unifiée :
-                                </strong>
+                                </strong>{" "}
                                 Élaboration d&apos;une architecture système
                                 centralisée qui sert de fondation à tous les
                                 projets, garantissant cohérence, efficacité, et
@@ -193,7 +188,7 @@ export default function Home() {
                               <li>
                                 <strong>
                                   Orientation Technique et Encadrement :
-                                </strong>
+                                </strong>{" "}
                                 Apport de directives techniques précises et
                                 d&apos;un soutien aux équipes pour
                                 s&apos;assurer de l&apos;alignement avec
@@ -203,7 +198,7 @@ export default function Home() {
                               <li>
                                 <strong>
                                   Recrutement et Développement des Talents :
-                                </strong>
+                                </strong>{" "}
                                 Engagement actif dans le processus de sélection,
                                 visant à recruter des candidats hautement
                                 qualifiés qui s&apos;harmonisent avec la culture
@@ -227,7 +222,7 @@ export default function Home() {
                               <li>
                                 <strong>
                                   Mise à Jour et Optimisation Constantes :
-                                </strong>
+                                </strong>{" "}
                                 Analyse régulière de l&apos;efficacité de
                                 l&apos;architecture actuelle pour identifier les
                                 opportunités d&apos;amélioration.
@@ -237,15 +232,16 @@ export default function Home() {
                               <Button
                                 variant={"secondary"}
                                 size={"small"}
-                                href={"#"}
-                                label={"Visite the Website"}
+                                href={"https://www.nesto.ca"}
+                                target={"_blank"}
+                                label={"Visiter le Site Web"}
                               />
                             </p>
                           </>
                         ),
                       },
                       {
-                        title: "Nesto",
+                        title: "Compare Mortgages",
                         emoji: "🧠",
                         content: (
                           <>
@@ -261,7 +257,7 @@ export default function Home() {
                                 <strong>
                                   Conception d&apos;une Structure Système
                                   Optimale :
-                                </strong>
+                                </strong>{" "}
                                 Établir une architecture soutenant efficacement
                                 l&apos;analyse et la comparaison de prêts
                                 hypothécaires, assurant ainsi un support
@@ -270,7 +266,7 @@ export default function Home() {
                               <li>
                                 <strong>
                                   Planification Détailée du Projet :
-                                </strong>
+                                </strong>{" "}
                                 Définition des étapes clés et des livrables pour
                                 structurer le développement et garantir une
                                 livraison ponctuelle.
@@ -282,7 +278,7 @@ export default function Home() {
                                 <strong>
                                   Harmonisation des Étapes de Conception à
                                   Développement :
-                                </strong>
+                                </strong>{" "}
                                 Coordination efficace entre la création des
                                 maquettes fonctionnelles, le design, ainsi que
                                 les développeurs “back-end” et “front-end”.
@@ -290,7 +286,7 @@ export default function Home() {
                               <li>
                                 <strong>
                                   Planification et Intégration des Phases :
-                                </strong>
+                                </strong>{" "}
                                 Définition claire des priorités et des délais
                                 pour chaque étape, garantissant une progression
                                 sans heurts vers la livraison finale, tout en
@@ -306,7 +302,7 @@ export default function Home() {
                                 <strong>
                                   Développement de l&apos;Interface Utilisateur
                                   :
-                                </strong>
+                                </strong>{" "}
                                 Collaboration étroite avec les designers pour
                                 créer des prototypes et des maquettes qui
                                 répondent aux attentes des utilisateurs.
@@ -315,7 +311,7 @@ export default function Home() {
                                 <strong>
                                   Création et Intégration d&apos;Outils
                                   Performants :
-                                </strong>
+                                </strong>{" "}
                                 Développement et intégration d&apos;outils
                                 avancés dédiés aux tests A/B et à l&apos;analyse
                                 approfondie des données.
@@ -325,15 +321,18 @@ export default function Home() {
                               <Button
                                 variant={"secondary"}
                                 size={"small"}
-                                href={"#"}
-                                label={"Visite the Website"}
+                                href={
+                                  "https://comparemortgages.ca/quotes/purchase/"
+                                }
+                                target={"_blank"}
+                                label={"Visiter le Site Web"}
                               />
                             </p>
                           </>
                         ),
                       },
                       {
-                        title: "Nesto",
+                        title: "BrightWize",
                         emoji: "🧠",
                         content: (
                           <>
@@ -349,7 +348,7 @@ export default function Home() {
                                 projet.
                               </li>
                               <li>
-                                <strong>Stratégie de Développement :</strong>
+                                <strong>Stratégie de Développement :</strong>{" "}
                                 Développement d&apos;une stratégie détaillée
                                 pour guider la réalisation du projet, y compris
                                 la définition des phases de travail.
@@ -360,7 +359,7 @@ export default function Home() {
                               <li>
                                 <strong>
                                   Architecture et Sélection Technologique :
-                                </strong>
+                                </strong>{" "}
                                 Création d&apos;une architecture de projet et
                                 choix des technologies et outils adéquats pour
                                 assurer un développement efficace et adaptable.
@@ -377,7 +376,7 @@ export default function Home() {
                               <li>
                                 <strong>
                                   Suivi du Progrès et Résolution de Problèmes :
-                                </strong>
+                                </strong>{" "}
                                 Surveillance régulière de l&apos;avancement du
                                 développement, avec une attention particulière à
                                 la résolution proactive des défis techniques.
@@ -389,14 +388,6 @@ export default function Home() {
                                 respectent les standards de qualité élevés.
                               </li>
                             </ul>
-                            <p align="right">
-                              <Button
-                                variant={"secondary"}
-                                size={"small"}
-                                href={"#"}
-                                label={"Visite the Website"}
-                              />
-                            </p>
                           </>
                         ),
                       },
@@ -417,8 +408,8 @@ export default function Home() {
                   <p>
                     <Button
                       variant={"primary"}
-                      href={"#"}
-                      label={"Pourquoi Faire Appel à un CTO à la Demande?"}
+                      href={"mailto:bonjour@lucrousseau.com"}
+                      label={"Contactez-moi pour discuter de votre projet"}
                     />
                   </p>
                 ),
@@ -426,73 +417,12 @@ export default function Home() {
             ]}
           />
         </Container>
-        <Container align={"center"} halign={"center"}>
-          <Row
-            halign={"center"}
-            style={{
-              "--padding-bottom": "2rem",
-              "--sm-padding-bottom": "2rem",
-            }}
-            columns={[
-              {
-                cols: { col: 11, xl: 12, sm: 12 },
-                content: (
-                  <>
-                    <h2 className="underline underline--center">
-                      Lorem ipsum dolor sit amet
-                    </h2>
-                    <p className="big">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Aliquid autem maxime, alias dolore facilis omnis!
-                      Provident, accusamus fuga. Sint dolorum magnam assumenda
-                      ipsum rerum adipisci sunt? Maiores ea iste facilis!
-                    </p>
-                  </>
-                ),
-              },
-            ]}
-          />
-          <Grid
-            className="grid"
-            style={{ aspectRatio: "16/10" }}
-            template={[
-              {
-                cols: { col: 6, sm: 12 },
-                rows: { row: 12, sm: 4 },
-                content: (
-                  <Picture
-                    src={"https://via.placeholder.com/900x1200"}
-                    alt={"Placeholder Image"}
-                    absolute={true}
-                  />
-                ),
-              },
-              {
-                cols: { col: 6, sm: 12 },
-                rows: { row: 6, sm: 4 },
-                content: (
-                  <Picture
-                    src={"https://via.placeholder.com/1200"}
-                    alt={"Placeholder Image"}
-                    absolute={true}
-                  />
-                ),
-              },
-              {
-                cols: { col: 6, sm: 12 },
-                rows: { row: 6, sm: 4 },
-                content: (
-                  <Picture
-                    src={"https://via.placeholder.com/1200"}
-                    alt={"Placeholder Image"}
-                    absolute={true}
-                  />
-                ),
-              },
-            ]}
-          />
-        </Container>
-        <Container align={"center"} halign={"center"}>
+        <Container
+          id={"pourquoi"}
+          align={"center"}
+          halign={"center"}
+          background={{ src: "images/rome-1.jpg" }}
+        >
           <Row
             halign={"center"}
             style={{
@@ -522,7 +452,7 @@ export default function Home() {
           <Row
             columns={[
               {
-                cols: { col: 9, sm: 12 },
+                cols: { col: 10, sm: 12 },
                 content: (
                   <>
                     <ol className="align--center">
@@ -564,7 +494,7 @@ export default function Home() {
                                 variant={"primary"}
                                 href={"#"}
                                 label={
-                                  "Maximisez Votre Projet avec Mon Expertise de CTO à la Demande"
+                                  "Contactez-moi pour discuter de votre projet"
                                 }
                               />
                             </p>
@@ -578,11 +508,7 @@ export default function Home() {
             ]}
           />
         </Container>
-        <Container
-          align={"center"}
-          halign={"center"}
-          background={{ src: "https://via.placeholder.com/1200" }}
-        >
+        <Container id={"services"} align={"center"} halign={"center"}>
           <Row
             halign={"center"}
             style={{ "--padding-bottom": "2rem" }}
@@ -592,8 +518,7 @@ export default function Home() {
                 content: (
                   <>
                     <h2 className="underline underline--center">
-                      Maximisez Votre Projet avec Mon Expertise de CTO à la
-                      Demande
+                      Mon Offre de Service de CTO à la Demande
                     </h2>
                     <p className="big">
                       Je vous apporte une expertise technique doublée d&apos;une
@@ -612,13 +537,8 @@ export default function Home() {
                 cols: { col: 4, sm: 12 },
                 content: (
                   <Product
-                    title={"Planification Stratégique CTO"}
+                    title={"Planification Stratégique"}
                     price={100}
-                    legend={
-                      <>
-                        <strong>À partir de 1300$</strong>
-                      </>
-                    }
                     label={"Réservez Votre Session"}
                   >
                     <p>
@@ -647,14 +567,8 @@ export default function Home() {
                 cols: { col: 4, sm: 12 },
                 content: (
                   <Product
-                    title={"Session Diagnostique CTO"}
+                    title={"Session Diagnostique"}
                     price={100}
-                    legend={
-                      <>
-                        <del>200$</del>
-                        <strong>Gratuit pour une durée limitée</strong>
-                      </>
-                    }
                     label={"Réservez Votre Session"}
                   >
                     <p>
@@ -685,14 +599,8 @@ export default function Home() {
                 cols: { col: 4, sm: 12 },
                 content: (
                   <Product
-                    title={"Partenariat CTO à Long Terme"}
+                    title={"Partenariat à Long Terme"}
                     price={100}
-                    legend={
-                      <>
-                        <del>950$ / jour sur entente</del>
-                        <strong>Unavailable</strong>
-                      </>
-                    }
                     label={"Réservez Votre Session"}
                   >
                     <p>
@@ -715,12 +623,68 @@ export default function Home() {
                         Veille technologique et conseils sur les nouvelles
                         tendances
                       </li>
-                      <li>Formation et coaching des équipes</li>
-                      <li>
-                        *Inclut les services de partenaires tiers si nécessaire
-                      </li>
+                      <li>Service de développement web</li>
                     </ul>
                   </Product>
+                ),
+              },
+            ]}
+          />
+        </Container>
+        <Container align={"center"} halign={"center"}>
+          <Row
+            halign={"center"}
+            style={{
+              "--padding-bottom": "2rem",
+              "--sm-padding-bottom": "2rem",
+            }}
+            columns={[
+              {
+                cols: { col: 11, xl: 12, sm: 12 },
+                content: (
+                  <>
+                    <h2 className="underline underline--center">
+                      Les Langages et Technologies que je Maîtrise
+                    </h2>
+                    <p className="big">
+                      Mon expertise couvre design, développement et gestion de
+                      projet, transformant les idées en solutions numériques
+                      clés.
+                    </p>
+                  </>
+                ),
+              },
+            ]}
+          />
+          <Row
+            columns={[
+              {
+                cols: { col: 10, sm: 12 },
+                content: (
+                  <Tags
+                    halign={"center"}
+                    items={[
+                      { content: "React", emoji: "⭐️" },
+                      { content: "Vue.js", emoji: "⭐️" },
+                      { content: "PHP", emoji: "⭐️" },
+                      { content: "Webpack", emoji: "⭐️" },
+                      { content: "Conception", emoji: "⭐️" },
+                      { content: "ChatGPT", emoji: "⭐️" },
+                      { content: "Évaluation", emoji: "⭐️" },
+                      { content: "Copilote", emoji: "⭐️" },
+                      { content: "WordPress", emoji: "⭐️" },
+                      { content: "GraphQL", emoji: "⭐️" },
+                      { content: "API REST", emoji: "⭐️" },
+                      { content: "GIT", emoji: "⭐️" },
+                      { content: "Laravel", emoji: "⭐️" },
+                      { content: "Agile", emoji: "⭐️" },
+                      { content: "BEM", emoji: "⭐️" },
+                      { content: "SCSS", emoji: "⭐️" },
+                      { content: "Docker", emoji: "⭐️" },
+                      { content: "Tailwind", emoji: "⭐️" },
+                      { content: "Planification", emoji: "⭐️" },
+                    ]}
+                  />
                 ),
               },
             ]}
@@ -737,9 +701,7 @@ export default function Home() {
                     <Button
                       variant={"primary"}
                       href={"#"}
-                      label={
-                        "Maximisez Votre Projet avec Mon Expertise de CTO à la Demande"
-                      }
+                      label={"Contactez-moi pour discuter de votre projet"}
                     />
                   </p>
                 ),
@@ -747,7 +709,7 @@ export default function Home() {
             ]}
           />
         </Container>
-        <Container align={"center"} halign={"center"}>
+        <Container id={"avantages"} align={"center"} halign={"center"}>
           <Row
             halign={"center"}
             style={{ "--padding-bottom": "2rem" }}
@@ -757,13 +719,12 @@ export default function Home() {
                 content: (
                   <>
                     <h2 className="underline underline--center">
-                      Les Avantages de Mon Service de CTO à la Demande
+                      Les Avantages de Mon Offre de Service
                     </h2>
                     <p className="big">
-                      En tant que CTO à la demande, je fournis mon expertise
-                      technique et ma vision stratégique, stimulant
-                      l&apos;innovation et optimisant le développement à des
-                      moments essentiels de chaque projet.
+                      Je fournis mon expertise technique et ma vision
+                      stratégique, stimulant l&apos;innovation et optimisant le
+                      développement à des moments essentiels de chaque projet.
                     </p>
                   </>
                 ),
@@ -774,7 +735,7 @@ export default function Home() {
             align={"left"}
             columns={[
               {
-                cols: { col: 9, sm: 12 },
+                cols: { col: 10, sm: 12 },
                 content: (
                   <Accordion
                     align={"left"}
@@ -790,7 +751,7 @@ export default function Home() {
                         ),
                       },
                       {
-                        title: "Orientation vers l&apos;Expérience Utilisateur",
+                        title: "Orientation vers l'Expérience Utilisateur",
                         emoji: "👥",
                         content: (
                           <p>
@@ -869,9 +830,7 @@ export default function Home() {
                     <Button
                       variant={"primary"}
                       href={"#"}
-                      label={
-                        "Maximisez Votre Projet avec Mon Expertise de CTO à la Demande"
-                      }
+                      label={"Contactez-moi pour discuter de votre projet"}
                     />
                   </p>
                 ),
@@ -892,53 +851,60 @@ export default function Home() {
                 content: (
                   <>
                     <h2 className="underline underline--center">
-                      Lorem ipsum dolor sit amet
+                      Au-delà du Bureau : Passion, Voyage et Photographie
                     </h2>
                     <p className="big">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Aliquid autem maxime, alias dolore facilis omnis!
-                      Provident, accusamus fuga. Sint dolorum magnam assumenda
-                      ipsum rerum adipisci sunt? Maiores ea iste facilis!
+                      Parce que la vie ne se limite pas à notre travail, je
+                      m'évade à travers le voyage et capture le monde sous mon
+                      objectif, partageant ainsi mes passions qui m'inspirent au
+                      quotidien.
                     </p>
                   </>
                 ),
               },
             ]}
           />
-          <Row
-            columns={[
+          <Grid
+            className="grid"
+            style={{ aspectRatio: "16/10" }}
+            template={[
               {
-                cols: { col: 9, sm: 12 },
+                cols: { col: 6, sm: 12 },
+                rows: { row: 12, sm: 4 },
                 content: (
-                  <Tags
-                    halign={"center"}
-                    items={[
-                      { content: "React", emoji: "⭐️" },
-                      { content: "Vue.js", emoji: "⭐️" },
-                      { content: "PHP", emoji: "⭐️" },
-                      { content: "React", emoji: "⭐️" },
-                      { content: "Vue.js", emoji: "⭐️" },
-                      { content: "PHP", emoji: "⭐️" },
-                      { content: "React", emoji: "⭐️" },
-                      { content: "Vue.js", emoji: "⭐️" },
-                      { content: "PHP", emoji: "⭐️" },
-                      { content: "React", emoji: "⭐️" },
-                      { content: "Vue.js", emoji: "⭐️" },
-                      { content: "PHP", emoji: "⭐️" },
-                      { content: "React", emoji: "⭐️" },
-                      { content: "Vue.js", emoji: "⭐️" },
-                      { content: "PHP", emoji: "⭐️" },
-                    ]}
+                  <Picture
+                    src={"images/istanbul-1.jpg"}
+                    alt={"Istanbul"}
+                    absolute={true}
+                  />
+                ),
+              },
+              {
+                cols: { col: 6, sm: 12 },
+                rows: { row: 6, sm: 4 },
+                content: (
+                  <Picture
+                    src={"images/istanbul-2.jpg"}
+                    alt={"Istanbul"}
+                    absolute={true}
+                  />
+                ),
+              },
+              {
+                cols: { col: 6, sm: 12 },
+                rows: { row: 6, sm: 4 },
+                content: (
+                  <Picture
+                    src={"images/seville-1.jpg"}
+                    alt={"Seville"}
+                    absolute={true}
                   />
                 ),
               },
             ]}
           />
           <Row
-            style={{
-              "--padding-top": "2rem",
-              "--sm-padding-top": "2rem",
-            }}
+            style={{ "--padding-top": "2rem", "--sm-padding-top": "2rem" }}
             columns={[
               {
                 content: (
@@ -946,68 +912,9 @@ export default function Home() {
                     <Button
                       variant={"primary"}
                       href={"#"}
-                      label={"Pourquoi Faire Appel à un CTO à la Demande?"}
+                      label={"Contactez-moi pour discuter de votre projet"}
                     />
                   </p>
-                ),
-              },
-            ]}
-          />
-        </Container>
-        <Container align={"center"} halign={"center"}>
-          <Row
-            halign={"center"}
-            style={{ "--padding-bottom": "2rem" }}
-            columns={[
-              {
-                cols: { col: 11, xl: 12, sm: 12 },
-                content: (
-                  <>
-                    <h2 className="underline underline--center">
-                      Réserver une Session Diagnostic CTO
-                    </h2>
-                    <p className="big">
-                      Cette session est l&apos;occasion idéale de plonger dans
-                      les détails de vos défis technologiques, d&apos;explorer
-                      des opportunités d&apos;innovation et d&apos;esquisser des
-                      solutions personnalisées.
-                    </p>
-                  </>
-                ),
-              },
-            ]}
-          />
-          <Row
-            valign={"middle"}
-            columns={[
-              {
-                cols: { sm: 12 },
-                align: "left",
-                content: (
-                  <>
-                    <h3>
-                      Réservez votre session dès maintenant et faisons le
-                      premier pas ensemble vers la réalisation de votre vision
-                      technologique.
-                    </h3>
-                    <Booking />
-                    <p className="small">
-                      La &quot;Session Diagnostique CTO&quot; est un premier pas
-                      essentiel pour aligner vos ambitions technologiques avec
-                      des stratégies réalisables. Elle pose les fondations
-                      d&apos;une collaboration fructueuse, que ce soit pour une
-                      simple consultation ou un partenariat à long terme.
-                    </p>
-                  </>
-                ),
-              },
-              {
-                cols: { sm: 12 },
-                content: (
-                  <Picture
-                    src={"https://via.placeholder.com/1200"}
-                    alt={"Placeholder Image"}
-                  />
                 ),
               },
             ]}

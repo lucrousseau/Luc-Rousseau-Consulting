@@ -5,14 +5,6 @@ import { alignments } from "../../commons/alignments";
 
 import "./style.scss";
 
-/**
- *
- * @param {object} props
- * @param {React.ReactNode} props.children - The children to render within the accordion item.
- * @param {string} [props.className] - Additional class names for the accordion item.
- * @param {string} [props.align] - The alignment of the accordion item.
- */
-
 export default function Accordion({ className, items, ...props }) {
   const [activeIndex, setActiveIndex] = useState(null);
   const alignmentsClass = alignments({ props });

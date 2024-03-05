@@ -83,10 +83,10 @@ export default function Header({ ...props }) {
                                                       <Button
                                                         variant={"primary"}
                                                         size={"small"}
-                                                        label={
-                                                          "Réserver une Session"
+                                                        label={"Contactez-moi!"}
+                                                        href={
+                                                          "mailto:bonjour@lucrousseau.com"
                                                         }
-                                                        href={"#"}
                                                       />
                                                     ),
                                                   },

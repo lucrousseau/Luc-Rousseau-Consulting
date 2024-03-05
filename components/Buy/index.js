@@ -19,7 +19,12 @@ export default function Buy({ className, price, legend, label, ...props }) {
       data-price={price}
     >
       <span>{legend}</span>
-      <Button variant={"secondary"} size={"small"} href={"#"} label={label} />
+      <Button
+        variant={"secondary"}
+        size={"small"}
+        href={"mailto:bonjour@lucrousseau.com"}
+        label={label}
+      />
     </div>
   );
 }

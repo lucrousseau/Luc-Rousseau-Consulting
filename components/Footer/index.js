@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { alignments } from "../../commons/alignments";
 
 import Row from "../Layout/Row";
+import moment from "moment";
 
 export default function Footer({ ...props }) {
   const alignmentsClass = alignments({ props });
@@ -20,7 +21,7 @@ export default function Footer({ ...props }) {
                   {
                     content: (
                       <p>
-                        <small>2024 © Luc Rousseau</small>
+                        <small>{moment().format("YYYY")} © Luc Rousseau</small>
                       </p>
                     ),
                   },
@@ -28,7 +29,7 @@ export default function Footer({ ...props }) {
                     pull: "right",
                     content: (
                       <p>
-                        <small>Have an Happy Day</small>
+                        <small>Passez une bonne journée</small>
                       </p>
                     ),
                   },

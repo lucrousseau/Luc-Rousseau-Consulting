@@ -10,7 +10,7 @@ export default function Navigation({ ...props }) {
   const navItems = [
     { href: "#aboutme", label: "À Propos" },
     { href: "#projects", label: "Projets" },
-    { href: "#pourquoi", label: "pourquoi" },
+    { href: "#pourquoi", label: "Pourquoi" },
     { href: "#services", label: "Services" },
     { href: "#avantages", label: "Avantages" },
   ];

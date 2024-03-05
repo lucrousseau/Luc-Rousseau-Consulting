@@ -36,14 +36,14 @@ $mobile-nav-tertiary-breakpoint: $sm;
   --sm: var(--set-sm, #{$sm});
   --xs: var(--set-xs, #{$xs});
 
-  --container-max-width: var(--set-container-max-width, 1280px);
+  --container-max-width: var(--set-container-max-width, 1360px);
   --container-background-max-width: var(--set-container-max-width, 1920px);
 
   --container-padding-top: calc(
-    var(--set-container-padding-top, 50) / var(--body-font-size) * 1rem
+    var(--set-container-padding-top, 30) / var(--body-font-size) * 1rem
   );
   --container-padding-bottom: calc(
-    var(--set-container-padding-bottom, 50) / var(--body-font-size) * 1rem
+    var(--set-container-padding-bottom, 30) / var(--body-font-size) * 1rem
   );
   --container-padding-left: calc(
     var(--set-container-padding-left, 20) / var(--body-font-size) * 1rem
