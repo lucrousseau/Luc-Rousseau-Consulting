@@ -1,5 +1,4 @@
-import Head from "next/head";
-
+import SEO from "../components/SEO";
 import Row from "../components/Layout/Row";
 import Grid from "../components/Layout/Grid";
 import Container from "../components/Layout/Container";
@@ -15,62 +14,12 @@ import Product from "../components/Product";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>
-          Luc Rousseau - CTO à la Demande et Création de Produits Numériques
-        </title>
-        <meta
-          name="description"
-          content="Luc Rousseau - CTO à la Demande et Création de Produits Numériques. Expertise en développement web, direction artistique et expérience utilisateur."
-        />
-        <meta
-          property="og:title"
-          content="Luc Rousseau - CTO à la Demande et Création de Produits Numériques"
-        />
-        <meta
-          property="og:description"
-          content="Expertise en développement web, direction artistique et expérience utilisateur."
-        />
-        <meta
-          property="og:image"
-          content="https://lucrousseau.com/og//facebook.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Luc Rousseau - CTO à la Demande et Création de Produits Numériques"
-        />
-        <meta
-          name="twitter:description"
-          content="Expertise en développement web, direction artistique et expérience utilisateur."
-        />
-        <meta
-          name="twitter:image"
-          content="https://lucrousseau.com/og//twitter.jpg"
-        />
-        <link rel="canonical" href="https://lucrousseau.com" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="https://lucrousseau.com/favicon/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="https://lucrousseau.com/favicon/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="https://lucrousseau.com/favicon/favicon-16x16.png"
-        />
-        <link
-          rel="manifest"
-          href="https://lucrousseau.com/favicon/site.webmanifest"
-        />
-      </Head>
+      <SEO
+        title="Luc Rousseau - CTO à la Demande et Création de Produits Numériques"
+        description="Expertise en développement web, direction artistique et expérience utilisateur."
+        image="/og/facebook.jpg"
+        url="/"
+      />
       <Container
         tag={"header"}
         style={{
