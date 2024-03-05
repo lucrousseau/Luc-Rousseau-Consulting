@@ -82,34 +82,80 @@
 .row {
   align-items: inherit;
   justify-content: inherit;
-  &--left {
-    justify-content: flex-start;
-  }
-  &--center {
-    justify-content: center;
-  }
-  &--right {
-    justify-content: flex-end;
-  }
-  &--top {
-    align-items: flex-start;
-  }
-  &--middle {
-    align-items: center;
-  }
-  &--bottom {
-    align-items: flex-end;
+
+  @each $prefix, $breakpoint in $breakpoints {
+    $prefix: getPrefix($prefix);
+
+    @if $prefix == "" {
+      &--left {
+        justify-content: flex-start;
+      }
+      &--center {
+        justify-content: center;
+      }
+      &--right {
+        justify-content: flex-end;
+      }
+      &--top {
+        align-items: flex-start;
+      }
+      &--middle {
+        align-items: center;
+      }
+      &--bottom {
+        align-items: flex-end;
+      }
+    } @else {
+      @media screen and (max-width: $breakpoint) {
+        &--#{$prefix}left {
+          justify-content: flex-start;
+        }
+        &--#{$prefix}center {
+          justify-content: center;
+        }
+        &--#{$prefix}right {
+          justify-content: flex-end;
+        }
+        &--#{$prefix}top {
+          align-items: flex-start;
+        }
+        &--#{$prefix}middle {
+          align-items: center;
+        }
+        &--#{$prefix}bottom {
+          align-items: flex-end;
+        }
+      }
+    }
   }
 }
 
 .align {
-  &--left {
-    text-align: left;
-  }
-  &--center {
-    text-align: center;
-  }
-  &--right {
-    text-align: right;
+  @each $prefix, $breakpoint in $breakpoints {
+    $prefix: getPrefix($prefix);
+
+    @if $prefix == "" {
+      &--left {
+        text-align: left;
+      }
+      &--center {
+        text-align: center;
+      }
+      &--right {
+        text-align: right;
+      }
+    } @else {
+      @media screen and (max-width: $breakpoint) {
+        &--#{$prefix}left {
+          text-align: left;
+        }
+        &--#{$prefix}center {
+          text-align: center;
+        }
+        &--#{$prefix}right {
+          text-align: right;
+        }
+      }
+    }
   }
 }

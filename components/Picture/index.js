@@ -1,5 +1,7 @@
 import classNames from "classnames";
 
+import Image from "next/image";
+
 import { alignments } from "../../commons/alignments";
 
 import "./style.scss";
@@ -8,6 +10,9 @@ export default function Picture({
   className,
   src,
   alt,
+  width = 500,
+  height = 500,
+  layout,
   loading = "lazy",
   absolute,
   rounded,
@@ -28,7 +33,14 @@ export default function Picture({
         }
       )}
     >
-      <img src={src} alt={alt} loading={loading} />
+      <Image
+        src={src}
+        width={width}
+        height={height}
+        alt={alt}
+        layout={layout}
+        loading={loading}
+      />
     </div>
   );
 }

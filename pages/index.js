@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import Row from "../components/Layout/Row";
 import Grid from "../components/Layout/Grid";
 import Container from "../components/Layout/Container";
@@ -9,11 +11,66 @@ import Button from "../components/Button";
 import Accordion from "../components/Accordion";
 import Tags from "../components/Tags";
 import Product from "../components/Product";
-import Booking from "../components/Booking";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>
+          Luc Rousseau - CTO à la Demande et Création de Produits Numériques
+        </title>
+        <meta
+          name="description"
+          content="Luc Rousseau - CTO à la Demande et Création de Produits Numériques. Expertise en développement web, direction artistique et expérience utilisateur."
+        />
+        <meta
+          property="og:title"
+          content="Luc Rousseau - CTO à la Demande et Création de Produits Numériques"
+        />
+        <meta
+          property="og:description"
+          content="Expertise en développement web, direction artistique et expérience utilisateur."
+        />
+        <meta
+          property="og:image"
+          content="https://lucrousseau.com/og//facebook.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Luc Rousseau - CTO à la Demande et Création de Produits Numériques"
+        />
+        <meta
+          name="twitter:description"
+          content="Expertise en développement web, direction artistique et expérience utilisateur."
+        />
+        <meta
+          name="twitter:image"
+          content="https://lucrousseau.com/og//twitter.jpg"
+        />
+        <link rel="canonical" href="https://lucrousseau.com" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="https://lucrousseau.com/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="https://lucrousseau.com/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="https://lucrousseau.com/favicon/favicon-16x16.png"
+        />
+        <link
+          rel="manifest"
+          href="https://lucrousseau.com/favicon/site.webmanifest"
+        />
+      </Head>
       <Container
         tag={"header"}
         style={{
@@ -34,17 +91,19 @@ export default function Home() {
             reverse={["md"]}
             columns={[
               {
-                cols: { col: 6, md: 12 },
+                cols: { col: 6, lg: 0 },
                 content: (
                   <Picture
-                    src={"images/luc-profil-full.jpg"}
-                    alt={"Placeholder Image"}
+                    src={"/images/luc-profil-full.jpg"}
+                    width={1035}
+                    height={1570}
+                    alt={"Luc Rousseau"}
                     absolute={true}
                   />
                 ),
               },
               {
-                cols: { col: 6, md: 12 },
+                cols: { col: 6, lg: 12 },
                 content: (
                   <Row
                     halign={"center"}
@@ -71,8 +130,10 @@ export default function Home() {
                                   cols: { col: 5, sm: 7 },
                                   content: (
                                     <Picture
-                                      src={"images/luc-profil-photo.jpg"}
-                                      alt={"Placeholder Image"}
+                                      src={"/images/luc-profil-photo.jpg"}
+                                      width={1003}
+                                      height={1003}
+                                      alt={"Luc Rousseau"}
                                       rounded={true}
                                     />
                                   ),
@@ -421,7 +482,12 @@ export default function Home() {
           id={"pourquoi"}
           align={"center"}
           halign={"center"}
-          background={{ src: "images/rome-1.jpg" }}
+          background={{
+            src: "/images/rome-1.jpg",
+            alt: "Rome",
+            width: 2528,
+            height: 1264,
+          }}
         >
           <Row
             halign={"center"}
@@ -534,12 +600,12 @@ export default function Home() {
           <Row
             columns={[
               {
-                cols: { col: 4, sm: 12 },
+                cols: { col: 4, lg: 10, sm: 12 },
                 content: (
                   <Product
                     title={"Planification Stratégique"}
-                    price={100}
                     label={"Réservez Votre Session"}
+                    className={"align--lg-left"}
                   >
                     <p>
                       Un plan d&apos;action sur mesure pour concrétiser votre
@@ -564,12 +630,12 @@ export default function Home() {
                 ),
               },
               {
-                cols: { col: 4, sm: 12 },
+                cols: { col: 4, lg: 10, sm: 12 },
                 content: (
                   <Product
                     title={"Session Diagnostique"}
-                    price={100}
                     label={"Réservez Votre Session"}
+                    className={"align--lg-left"}
                   >
                     <p>
                       Une heure de consultation stratégique pour faire le point
@@ -596,12 +662,12 @@ export default function Home() {
                 ),
               },
               {
-                cols: { col: 4, sm: 12 },
+                cols: { col: 4, lg: 10, sm: 12 },
                 content: (
                   <Product
                     title={"Partenariat à Long Terme"}
-                    price={100}
                     label={"Réservez Votre Session"}
+                    className={"align--lg-left"}
                   >
                     <p>
                       Un engagement profond et constant, pour assurer la qualité
@@ -631,7 +697,7 @@ export default function Home() {
             ]}
           />
         </Container>
-        <Container align={"center"} halign={"center"}>
+        <Container id={"developpement"} align={"center"} halign={"center"}>
           <Row
             halign={"center"}
             style={{
@@ -869,33 +935,39 @@ export default function Home() {
             style={{ aspectRatio: "16/10" }}
             template={[
               {
-                cols: { col: 6, sm: 12 },
-                rows: { row: 12, sm: 4 },
+                cols: { col: 6 },
+                rows: { row: 12 },
                 content: (
                   <Picture
-                    src={"images/istanbul-1.jpg"}
+                    src={"/images/istanbul-1.jpg"}
+                    width={1366}
+                    height={1835}
                     alt={"Istanbul"}
                     absolute={true}
                   />
                 ),
               },
               {
-                cols: { col: 6, sm: 12 },
-                rows: { row: 6, sm: 4 },
+                cols: { col: 6 },
+                rows: { row: 6 },
                 content: (
                   <Picture
-                    src={"images/istanbul-2.jpg"}
+                    src={"/images/istanbul-2.jpg"}
+                    width={2048}
+                    height={1366}
                     alt={"Istanbul"}
                     absolute={true}
                   />
                 ),
               },
               {
-                cols: { col: 6, sm: 12 },
-                rows: { row: 6, sm: 4 },
+                cols: { col: 6 },
+                rows: { row: 6 },
                 content: (
                   <Picture
-                    src={"images/seville-1.jpg"}
+                    src={"/images/seville-1.jpg"}
+                    width={2048}
+                    height={1365}
                     alt={"Seville"}
                     absolute={true}
                   />

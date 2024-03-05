@@ -21,7 +21,7 @@ export default function Header({ ...props }) {
         halign={"center"}
         columns={[
           {
-            cols: { col: 11, xl: 12 },
+            cols: { col: 11, xl: 12, sm: 0 },
             content: (
               <Row
                 valign={"middle"}
@@ -100,17 +100,6 @@ export default function Header({ ...props }) {
                                   },
                                 ]}
                               />
-                            ),
-                          },
-                          {
-                            className: "component__header__bars",
-                            pull: "right",
-                            content: (
-                              <>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                              </>
                             ),
                           },
                         ]}

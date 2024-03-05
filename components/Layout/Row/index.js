@@ -18,7 +18,8 @@ const column = (item, index) => {
   const colClasses = !auto
     ? Object.entries(cols).map(([key, value]) => {
         const prefix = key === "col" ? "" : `${key}-`;
-        if (value) return `col--${prefix}${value}`;
+        if (value !== undefined && value !== null)
+          return `col--${prefix}${value}`;
       })
     : [];
 

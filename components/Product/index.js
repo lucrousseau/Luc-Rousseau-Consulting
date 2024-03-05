@@ -27,7 +27,12 @@ export default function Product({
     >
       <h3 className="h4">{title}</h3>
       {children}
-      <Buy price={price} legend={legend} label={label} />
+      <Buy
+        price={price}
+        legend={legend}
+        label={label}
+        className={"align--lg-right"}
+      />
     </div>
   );
 }

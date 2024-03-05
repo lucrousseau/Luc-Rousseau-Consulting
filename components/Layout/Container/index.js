@@ -31,7 +31,9 @@ export default function Container({
           {background.src && (
             <Picture
               src={background.src}
-              alt={"Placeholder Image"}
+              width={background.width}
+              height={background.height}
+              alt={background.alt}
               absolute={true}
             />
           )}

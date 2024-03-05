@@ -20,9 +20,9 @@ $breakpoints: (
 );
 
 // Special breakpoints NOT for the grid generation
-$mobile-nav-primary-breakpoint: 1024px;
-$mobile-nav-secondary-breakpoint: $md;
-$mobile-nav-tertiary-breakpoint: $sm;
+$mobile-nav-primary-breakpoint: 1050px;
+$mobile-nav-secondary-breakpoint: 620px;
+$mobile-nav-tertiary-breakpoint: 480px;
 
 :root {
   // Grid

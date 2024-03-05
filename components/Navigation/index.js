@@ -8,10 +8,10 @@ export default function Navigation({ ...props }) {
   const alignmentsClass = alignments({ props });
 
   const navItems = [
-    { href: "#aboutme", label: "À Propos" },
     { href: "#projects", label: "Projets" },
     { href: "#pourquoi", label: "Pourquoi" },
     { href: "#services", label: "Services" },
+    { href: "#developpement", label: "Développement" },
     { href: "#avantages", label: "Avantages" },
   ];
 

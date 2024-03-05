@@ -1,6 +1,10 @@
 html {
   font-size: calc(var(--body-font-size) * 1px);
   font-family: var(--body-font-family);
+
+  @media screen and (max-width: $sm) {
+    font-size: calc(var(--body-font-size) * 0.9px);
+  }
 }
 
 body {

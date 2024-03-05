@@ -29,7 +29,7 @@ export default function Footer({ ...props }) {
                     pull: "right",
                     content: (
                       <p>
-                        <small>Passez une bonne journée</small>
+                        <small>Passez une bonne journée!</small>
                       </p>
                     ),
                   },

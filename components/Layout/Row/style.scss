@@ -12,11 +12,16 @@
   $prefix: getPrefix($prefix);
 
   &--#{$prefix}#{$size} {
-    flex: 0 0
-      calc(
-        ((100% / #{$columns}) * #{$size}) -
-          (var(--gap) * #{1 - math.div(1, $columns) * $size})
-      );
+    @if $size == 0 {
+      display: none;
+    } @else {
+      flex: 0
+        0
+        calc(
+          ((100% / #{$columns}) * #{$size}) -
+            (var(--gap) * #{1 - math.div(1, $columns) * $size})
+        );
+    }
   }
 }
 
@@ -95,12 +100,12 @@
     // Generate responsive classes for columns
     @each $prefix, $breakpoint in $breakpoints {
       @if $prefix == "full" {
-        @for $size from 1 through $columns {
+        @for $size from 0 through $columns {
           @include colWidth($prefix, $size);
         }
       } @else {
         @media screen and (max-width: $breakpoint) {
-          @for $size from 1 through $columns {
+          @for $size from 0 through $columns {
             @include colWidth($prefix, $size);
           }
         }
