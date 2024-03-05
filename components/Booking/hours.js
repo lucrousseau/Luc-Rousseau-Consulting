@@ -5,7 +5,7 @@ import HoursNavigation from "./hoursNavigation";
 
 import "./styles/hours.scss";
 
-export default function Hours({ day, month, year, timezone }) {
+export default function Hours({ day, month, year, timezone, convertedHours }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentItems, setCurrentItems] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
@@ -29,7 +29,7 @@ export default function Hours({ day, month, year, timezone }) {
       setCurrentItems([]);
       setTotalPages(0);
     }
-  }, [day, month, year, timezone, currentPage]);
+  }, [day, month, year, timezone, currentPage, convertedHours]);
 
   const handlePreviousClick = (event) => {
     event.preventDefault();

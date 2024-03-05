@@ -6,7 +6,7 @@ import { DAYS_OF_WEEK } from "./commons/constants";
 
 import "./styles/month.scss";
 
-export default function Month({ month, year, onSelectDay }) {
+export default function Month({ month, year, onSelectDay, convertedHours }) {
   const [selectedDay, setSelectedDay] = useState(null);
 
   const monthStart = moment(`${year}-${month + 1}`, "YYYY-MM").startOf("month");
@@ -29,7 +29,18 @@ export default function Month({ month, year, onSelectDay }) {
     );
   };
 
-  const isAvailable = (day) => {};
+  const isAvailable = (day) => {
+    const weekdayIndex =
+      moment(`${year}-${month + 1}-${day}`, "YYYY-MM-DD").isoWeekday() - 1;
+    const availability = convertedHours[weekdayIndex];
+
+    if (!availability) {
+      return false;
+    }
+
+    const currentTime = moment().format("HH:mm");
+    return availability.hours.some((hour) => currentTime >= hour);
+  };
 
   // Adjusted to use moment.js
   const firstDayOfMonth = monthStart.day();
@@ -42,17 +53,18 @@ export default function Month({ month, year, onSelectDay }) {
       "YYYY-MM-DD"
     );
 
+    const isInactive = isBeforeToday(day) || !isAvailable(day);
+
     return (
       <td
         key={day}
         className={className({
           isToday: isToday(day),
           isSelected: selectedDay === dateStr,
-          isInactive: isBeforeToday(day),
-          isAvailable: isAvailable(day),
+          isInactive: isInactive,
         })}
         onClick={() => {
-          if (!isBeforeToday(day)) {
+          if (!isBeforeToday(day) && !isInactive) {
             setSelectedDay(dateStr);
             onSelectDay(dateStr);
           }

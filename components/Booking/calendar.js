@@ -6,6 +6,7 @@ import Month from "./month";
 import Timezone from "./timezone";
 import Hours from "./hours";
 import getsCurrentUserTimezone from "./commons/getsCurrentUserTimezone";
+import convertOpeningHoursTimeZone from "./commons/convertOpeningHoursTimeZone";
 
 import { TIMEZONE } from "./commons/constants";
 
@@ -15,6 +16,7 @@ export default function Calendar({ month, year }) {
   const { timezone } = getsCurrentUserTimezone();
 
   const [currentUserTimezone, setCurrentUserTimezone] = useState(timezone);
+  const [convertedHours, setConvertedHours] = useState([]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -23,7 +25,10 @@ export default function Calendar({ month, year }) {
         setCurrentUserTimezone(storedTimezone);
       }
     }
-  }, []);
+
+    const hours = convertOpeningHoursTimeZone(currentUserTimezone);
+    setConvertedHours(hours);
+  }, [currentUserTimezone]);
 
   const initialDate =
     month && year
@@ -83,6 +88,7 @@ export default function Calendar({ month, year }) {
                 month={currentMonth}
                 year={currentYear}
                 onSelectDay={handleSelectDay}
+                convertedHours={convertedHours}
               />
               <Timezone
                 currentUserTimezone={currentUserTimezone}
@@ -100,6 +106,7 @@ export default function Calendar({ month, year }) {
               month={currentSelectedMonth}
               year={currentSelectedYear}
               timezone={currentUserTimezone}
+              convertedHours={convertedHours}
             />
           ),
         },
