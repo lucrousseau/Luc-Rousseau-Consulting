@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Link from "next/link";
 import { alignments } from "../../commons/alignments";
 import Row from "../Layout/Row";
 import "./style.scss";
@@ -7,8 +8,8 @@ export default function LanguageSwitcher({ current = "en", ...props }) {
   const alignmentsClass = alignments({ props });
 
   const languages = [
-    { code: "en", label: "English" },
-    { code: "fr", label: "French" },
+    { code: "en", label: "English", href: "/" },
+    { code: "fr", label: "French", href: "/fr" },
   ];
 
   return (
@@ -29,9 +30,9 @@ export default function LanguageSwitcher({ current = "en", ...props }) {
               current === language.code,
           }),
           content: (
-            <a href="#" aria-label={language.label}>
+            <Link href={language.href} aria-label={language.label}>
               {language.code.toUpperCase()}
-            </a>
+            </Link>
           ),
         }))}
       />

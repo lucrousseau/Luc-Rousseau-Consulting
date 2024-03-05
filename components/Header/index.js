@@ -2,6 +2,8 @@ import classNames from "classnames";
 
 import { alignments } from "../../commons/alignments";
 
+import { useTranslation } from "next-i18next";
+
 import Row from "../Layout/Row";
 
 import Logo from "../Logo";
@@ -12,7 +14,8 @@ import Button from "../Button";
 
 import "./style.scss";
 
-export default function Header({ ...props }) {
+export default function Header({ lang, ...props }) {
+  const { t } = useTranslation();
   const alignmentsClass = alignments({ props });
 
   return (
@@ -64,7 +67,9 @@ export default function Header({ ...props }) {
                                                   },
                                                   {
                                                     content: (
-                                                      <LanguageSwitcher />
+                                                      <LanguageSwitcher
+                                                        current={lang}
+                                                      />
                                                     ),
                                                   },
                                                 ]}
@@ -83,9 +88,12 @@ export default function Header({ ...props }) {
                                                       <Button
                                                         variant={"primary"}
                                                         size={"small"}
-                                                        label={"Contactez-moi!"}
+                                                        label={t("contact-me")}
                                                         href={
-                                                          "mailto:bonjour@lucrousseau.com"
+                                                          "mailto:" +
+                                                          t(
+                                                            "hello@lucrousseau.com"
+                                                          )
                                                         }
                                                       />
                                                     ),

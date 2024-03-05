@@ -11,6 +11,8 @@ import Accordion from "../components/Accordion";
 import Tags from "../components/Tags";
 import Product from "../components/Product";
 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 export default function Home() {
   return (
     <>
@@ -27,7 +29,7 @@ export default function Home() {
           "--padding-bottom": "1rem",
         }}
       >
-        <Header />
+        <Header lang={"fr"} />
       </Container>
       <main>
         <Container
@@ -48,6 +50,7 @@ export default function Home() {
                     height={1570}
                     alt={"Luc Rousseau"}
                     absolute={true}
+                    priority={true}
                   />
                 ),
               },
@@ -870,9 +873,9 @@ export default function Home() {
                     </h2>
                     <p className="big">
                       Parce que la vie ne se limite pas à notre travail, je
-                      m'évade à travers le voyage et capture le monde sous mon
-                      objectif, partageant ainsi mes passions qui m'inspirent au
-                      quotidien.
+                      m&apos;évade à travers le voyage et capture le monde sous
+                      mon objectif, partageant ainsi mes passions qui
+                      m&apos;inspirent au quotidien.
                     </p>
                   </>
                 ),
@@ -954,3 +957,9 @@ export default function Home() {
     </>
   );
 }
+
+export const getServerSideProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});

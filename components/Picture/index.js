@@ -13,7 +13,7 @@ export default function Picture({
   width = 500,
   height = 500,
   layout,
-  loading = "lazy",
+  priority,
   absolute,
   rounded,
   ...props
@@ -39,7 +39,7 @@ export default function Picture({
         height={height}
         alt={alt}
         layout={layout}
-        loading={loading}
+        priority={priority}
       />
     </div>
   );

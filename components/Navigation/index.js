@@ -1,18 +1,22 @@
 import Link from "next/link";
+
+import { useTranslation } from "next-i18next";
+
 import classNames from "classnames";
 import { alignments } from "../../commons/alignments";
 import Row from "../Layout/Row";
 import "./style.scss";
 
 export default function Navigation({ ...props }) {
+  const { t } = useTranslation();
   const alignmentsClass = alignments({ props });
 
   const navItems = [
-    { href: "#projects", label: "Projets" },
-    { href: "#pourquoi", label: "Pourquoi" },
-    { href: "#services", label: "Services" },
-    { href: "#developpement", label: "Développement" },
-    { href: "#avantages", label: "Avantages" },
+    { href: t("#projects"), label: t("projects") },
+    { href: t("#why"), label: t("why") },
+    { href: t("#services"), label: t("services") },
+    { href: t("#development"), label: t("development") },
+    { href: t("#advantages"), label: t("advantages") },
   ];
 
   return (

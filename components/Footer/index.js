@@ -2,10 +2,13 @@ import classNames from "classnames";
 
 import { alignments } from "../../commons/alignments";
 
+import { useTranslation } from "next-i18next";
+
 import Row from "../Layout/Row";
 import moment from "moment";
 
 export default function Footer({ ...props }) {
+  const { t } = useTranslation();
   const alignmentsClass = alignments({ props });
 
   return (
@@ -29,7 +32,7 @@ export default function Footer({ ...props }) {
                     pull: "right",
                     content: (
                       <p>
-                        <small>Passez une bonne journée!</small>
+                        <small>{t("have-good-day")}</small>
                       </p>
                     ),
                   },
