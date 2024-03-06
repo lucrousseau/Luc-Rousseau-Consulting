@@ -2,6 +2,12 @@
   $all-directions: (top, right, bottom, left);
   $all-properties: ("padding", "margin");
 
+  @each $property in $all-properties {
+    @each $direction in $all-directions {
+      --#{$property}-#{$direction}: 0;
+    }
+  }
+
   @if $reset != true {
     @each $prefix, $breakpoint in $breakpoints {
       $originalPrefix: $prefix;
@@ -32,13 +38,15 @@
       @each $prefix, $breakpoint in $breakpoints {
         $prefix: getPrefix($prefix);
 
-        --#{$prefix}#{$property}-#{$direction}: initial;
+        --#{$prefix}#{$property}-#{$direction}: var(
+          --#{$property}-#{$direction}
+        );
       }
     }
   }
 }
 
-@mixin __paddingMarginValuesProps(
+@mixin paddingMarginValuesProps(
   $prefix: null,
   $originalPrefix: null,
   $all-directions,
@@ -50,7 +58,7 @@
       $value: var(--get-#{$previousPrefix}#{$property}-#{$direction});
 
       @if $prefix == "" {
-        $value: "initial";
+        $value: 0;
       }
 
       --get-#{$prefix}#{$property}-#{$direction}: var(
@@ -72,7 +80,7 @@
   }
 }
 
-@mixin paddingMarginValuesProps(
+@mixin __paddingMarginValuesProps(
   $prefix: null,
   $originalPrefix: null,
   $all-directions,

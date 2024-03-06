@@ -4,10 +4,6 @@
 @import "./styles/abstracts/variables";
 @import "./styles/abstracts/mixins";
 
-@import "../mixins";
-@import "../commons";
-@import "../component";
-
 @mixin colWidth($prefix: null, $size) {
   $prefix: getPrefix($prefix);
 
