@@ -2,7 +2,7 @@
 FROM node:18
 
 # Set the working directory inside the container
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Clone your project from Git
 RUN git clone https://github.com/lucrousseau/Frontend.git .
