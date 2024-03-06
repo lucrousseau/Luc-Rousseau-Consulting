@@ -1,11 +1,15 @@
 # Use Node.js version 18 as the base image
-FROM node:18
+FROM node:18 
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Clone your project from Git
-RUN git clone https://github.com/lucrousseau/Frontend.git .
+# ARG will declare a build-time variable named GITHUB_TOKEN
+ARG GITHUB_TOKEN
+
+# Use the build argument to clone your project from a private GitHub repository
+# Note: The URL format here inserts the GITHUB_TOKEN into the clone URL
+RUN git clone https://$GITHUB_TOKEN@github.com/lucrousseau/Frontend.git .
 
 # Install dependencies
 RUN npm install
@@ -18,3 +22,6 @@ EXPOSE 3131
 
 # Start the application
 CMD ["npm", "run", "start"]
+
+#docker build --build-arg GITHUB_TOKEN=your_personal_access_token_here -t luc-frontend .
+#docker run -p 3131:3131 luc-frontend
