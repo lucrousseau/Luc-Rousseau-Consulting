@@ -40,6 +40,8 @@ export default function Home() {
         style={{
           "--padding-top": "1rem",
           "--padding-bottom": "1rem",
+          "--xs-padding-top": "0rem",
+          "--xs-padding-bottom": "0rem",
         }}
       >
         <Header lang={i18n.language === "en" ? "fr" : "en"} />
@@ -79,6 +81,8 @@ export default function Home() {
                           "--padding-bottom": "3rem",
                           "--sm-padding-top": "0rem",
                           "--sm-padding-bottom": "0rem",
+                          "--xs-padding-top": "0rem",
+                          "--xs-padding-bottom": "0rem",
                         },
                         content: (
                           <>

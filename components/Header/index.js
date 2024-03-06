@@ -24,13 +24,14 @@ export default function Header({ lang, ...props }) {
         halign={"center"}
         columns={[
           {
-            cols: { col: 11, xl: 12, sm: 0 },
+            cols: { col: 11, xl: 12 },
             content: (
               <Row
                 valign={"middle"}
                 columns={[
                   {
                     pull: "left",
+                    cols: { sm: 0 },
                     content: <Logo />,
                   },
                   {
@@ -78,6 +79,7 @@ export default function Header({ lang, ...props }) {
                                           },
                                           {
                                             pull: "right",
+                                            cols: { xs: 0 },
                                             content: (
                                               <Row
                                                 valign={"middle"}

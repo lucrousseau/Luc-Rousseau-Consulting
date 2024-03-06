@@ -11,22 +11,7 @@
   --margin-bottom: 0;
 
   @media screen and (max-width: $mobile-nav-primary-breakpoint) {
-    .col #{$this}__bars {
-      display: inherit;
-    }
     .col #{$this}__nav {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: $mobile-nav-secondary-breakpoint) {
-    .col #{$this}__tools {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: $mobile-nav-tertiary-breakpoint) {
-    .col #{$this}__right {
       display: none;
     }
   }
