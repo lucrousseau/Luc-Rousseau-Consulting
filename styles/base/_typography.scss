@@ -78,7 +78,7 @@ h2,
   font-family: var(--heading-2-font-family);
 
   @media screen and (max-width: $sm) {
-    font-size: calc(var(--heading-2-font-size) * 0.9);
+    font-size: calc(var(--heading-2-font-size) * 0.95);
   }
 }
 
