@@ -18,10 +18,10 @@ RUN npm install
 RUN npm run build
 
 # Expose the port your app runs on
-EXPOSE 3131
+EXPOSE 3000
 
 # Start the application
 CMD ["npm", "run", "start"]
 
-#docker build --build-arg GITHUB_TOKEN=your_personal_access_token_here -t luc-frontend .
-#docker run -p 3131:3131 luc-frontend
+# docker build --build-arg GITHUB_TOKEN=your_personal_access_token_here -t luc-frontend .
+# docker run -p 3000:3000 luc-frontend
