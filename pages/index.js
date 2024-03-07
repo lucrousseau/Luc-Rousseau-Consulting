@@ -322,7 +322,7 @@ export default function Home() {
                                 <Button
                                   variant={"secondary"}
                                   size={"small"}
-                                  href={"https://www.nesto.ca"}
+                                  href={"https://www.nesto.ca/fr/"}
                                   target={"_blank"}
                                   label={"Visiter le Site Web"}
                                 />
