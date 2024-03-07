@@ -30,7 +30,7 @@ export default function Home() {
         />
       ) : (
         <SEO
-          title="Luc Rousseau - On-Demand CTO and Digital Product Creation"
+          title="Luc Rousseau - On-Demand CTO & Digital Product Specialist"
           description="Expertise in web development, art direction, and user experience."
           image="/og/image-en.jpg"
           url="/"
@@ -95,7 +95,7 @@ export default function Home() {
                               </h3>
                             ) : (
                               <h3>
-                                On-Demand CTO and Digital Product Creation
+                                On-Demand CTO & Digital Product Specialist
                               </h3>
                             )}
                             <Row
@@ -152,21 +152,24 @@ export default function Home() {
                             ) : (
                               <>
                                 <h4>
-                                  From UX/UI to freelance development, my 25
-                                  years of experience have endowed me with
-                                  cross-disciplinary expertise that I put at
-                                  your service.
+                                  With over 25 years of experience spanning
+                                  UX/UI to freelance development, I bring
+                                  cross-disciplinary expertise to your projects.
                                 </h4>
                                 <p>
-                                  Today, as a consultant and on-demand CTO,{" "}
-                                  <strong>I guide startups</strong> and SMEs in
-                                  the <em>development of their MVP</em> (Minimum
-                                  Viable Product). Armed with my unique
-                                  expertise in web development, artistic
-                                  direction, and user experience, and while
-                                  respecting timelines and budget constraints, I
-                                  help my clients create viable products,
-                                  perfectly aligned with user needs.
+                                  As a consultant and on-demand CTO, I
+                                  specialize in guiding startups and SMEs
+                                  through the creation of their MVPs (Minimum
+                                  Viable Products). Leveraging my unique skills
+                                  in web development, artistic direction, and
+                                  user experience—while adhering to budget and
+                                  timeline constraints—I assist in developing
+                                  products that truly meet user needs.
+                                </p>
+                                <p>
+                                  <strong>
+                                    Ready to bring your project to life?
+                                  </strong>
                                 </p>
                                 <p>
                                   <Button
@@ -174,7 +177,9 @@ export default function Home() {
                                     href={
                                       "mailto:hello@lucrousseau.com?subject=Appointment%20Request"
                                     }
-                                    label={"Contact me to discuss your project"}
+                                    label={
+                                      "Contact me to start the conversation"
+                                    }
                                   />
                                 </p>
                               </>
@@ -217,9 +222,9 @@ export default function Home() {
                         Making the Possible Tangible
                       </h2>
                       <p className="big">
-                        I convert the challenges of digital product development
-                        into clear and achievable opportunities, thus catalyzing
-                        innovation and success.
+                        Transforming digital product development challenges into
+                        distinct, achievable opportunities to fuel innovation
+                        and ensure success.
                       </p>
                     </>
                   ),
