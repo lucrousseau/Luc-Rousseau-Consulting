@@ -15,9 +15,17 @@
 
   @include shadow();
 
+  @media screen and (max-width: $sm) {
+    padding: calc(var(--padding) * 2);
+    padding-bottom: calc(var(--padding) * 7);
+  }
+
   .component__buy {
     bottom: var(--double-padding);
     position: absolute;
     width: calc(100% - var(--double-padding) * 2);
+    @media screen and (max-width: $sm) {
+      width: calc(100% - var(--padding) * 4);
+    }
   }
 }

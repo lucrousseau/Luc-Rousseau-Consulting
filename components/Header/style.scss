@@ -15,4 +15,10 @@
       display: none;
     }
   }
+
+  .row {
+    @media screen and (max-width: $sm) {
+      --gap: calc(var(--padding) * 1.5);
+    }
+  }
 }

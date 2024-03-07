@@ -13,7 +13,7 @@ export default function Buy({ className, price, legend, label, ...props }) {
   const alignmentsClass = alignments({ props });
 
   return (
-    <div
+    <p
       className={classNames(
         "component component__buy",
         className,
@@ -28,6 +28,6 @@ export default function Buy({ className, price, legend, label, ...props }) {
         href={`mailto:${t("hello@lucrousseau.com")}`}
         label={label}
       />
-    </div>
+    </p>
   );
 }

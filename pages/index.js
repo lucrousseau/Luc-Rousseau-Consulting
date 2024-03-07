@@ -1563,9 +1563,9 @@ export default function Home() {
                 rows: { row: 12 },
                 content: (
                   <Picture
-                    src={"/images/istanbul-1.jpg"}
-                    width={1366}
-                    height={1835}
+                    src={"/images/clearwater-falls.jpg"}
+                    width={1527}
+                    height={2048}
                     alt={"Istanbul"}
                     absolute={true}
                   />
@@ -1576,9 +1576,9 @@ export default function Home() {
                 rows: { row: 6 },
                 content: (
                   <Picture
-                    src={"/images/istanbul-2.jpg"}
+                    src={"/images/grand-teton-mouton-barn.jpg"}
                     width={2048}
-                    height={1366}
+                    height={1365}
                     alt={"Istanbul"}
                     absolute={true}
                   />
@@ -1589,7 +1589,7 @@ export default function Home() {
                 rows: { row: 6 },
                 content: (
                   <Picture
-                    src={"/images/seville-1.jpg"}
+                    src={"/images/portland-lighthouse.jpg"}
                     width={2048}
                     height={1365}
                     alt={"Seville"}

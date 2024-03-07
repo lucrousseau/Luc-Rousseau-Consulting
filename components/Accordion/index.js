@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import { alignments } from "../../commons/alignments";
 
@@ -8,10 +8,20 @@ import "./style.scss";
 export default function Accordion({ className, items, ...props }) {
   const [activeIndex, setActiveIndex] = useState(null);
   const alignmentsClass = alignments({ props });
+  const accordionRefs = useRef([]);
 
   const toggleItem = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+
+  useEffect(() => {
+    if (activeIndex !== null && accordionRefs.current[activeIndex]) {
+      accordionRefs.current[activeIndex].scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, [activeIndex]);
 
   return (
     <div
@@ -24,6 +34,7 @@ export default function Accordion({ className, items, ...props }) {
       {items.map((item, index) => (
         <div
           key={index}
+          ref={(el) => (accordionRefs.current[index] = el)}
           className={classNames("component__accordion__item", {
             "component__accordion__item--active": activeIndex === index,
           })}
