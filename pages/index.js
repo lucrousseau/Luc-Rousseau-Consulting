@@ -23,15 +23,21 @@ export default function Home() {
     <>
       {i18n.language === "fr" ? (
         <SEO
-          title="Luc Rousseau - CTO à la Demande et Création de Produits Numériques"
-          description="Expertise en développement web, direction artistique et expérience utilisateur."
+          title="Luc Rousseau - CTO à la Demande et Spécialiste de la Création de Produits Numériques"
+          description="De l'UX/UI au développement freelance,
+          mes 25 ans d'expérience m'ont doté
+          d'une expertise transversale que je mets
+          à votre disposition."
           image="/og/image-fr.jpg"
           url="/"
         />
       ) : (
         <SEO
           title="Luc Rousseau - On-Demand CTO & Digital Product Specialist"
-          description="Expertise in web development, art direction, and user experience."
+          description="With over 25 years of experience spanning
+          UX/UI to freelance development, I offer
+          cross-disciplinary expertise for your
+          projects."
           image="/og/image-en.jpg"
           url="/"
         />
@@ -90,8 +96,8 @@ export default function Home() {
                             <h1>Luc Rousseau</h1>
                             {i18n.language === "fr" ? (
                               <h3>
-                                CTO à la Demande et Création de
-                                Produits Numériques
+                                CTO à la Demande et Spécialiste de la Création
+                                de Produits Numériques
                               </h3>
                             ) : (
                               <h3>
@@ -118,24 +124,27 @@ export default function Home() {
                             {i18n.language === "fr" ? (
                               <>
                                 <h4>
-                                  De l&apos;UX/UI au développement indépendant,
-                                  mes 25 ans d&apos;expérience m&apos;ont
-                                  conféré une expertise transversale que je mets
-                                  à votre service.
+                                  De l&apos;UX/UI au développement freelance,
+                                  mes 25 ans d&apos;expérience m&apos;ont doté
+                                  d&apos;une expertise transversale que je mets
+                                  à votre disposition.
                                 </h4>
                                 <p>
-                                  Aujourd&apos;hui, en tant que consultant et
-                                  CTO à la demande,{" "}
-                                  <strong>je guide les startups</strong> et les
-                                  PME dans le <em>développement de leur MVP</em>{" "}
-                                  (produit minimum viable). Fort de mon
-                                  expertise unique en développement web,
-                                  direction artistique et expérience utilisateur
-                                  , et tout en respectant les échéanciers et les
-                                  contraintes budgétaires, j&apos;aide mes
-                                  clients à créer des produits viables,
-                                  parfaitement alignés sur les besoins des
-                                  utilisateurs.
+                                  En tant que consultant et CTO à la demande, je
+                                  guide les startups et les PME dans le
+                                  développement de leur MVP (Produit Minimum
+                                  Viable). Fort de mon expertise en
+                                  développement web, direction artistique et
+                                  expérience utilisateur, tout en respectant les
+                                  contraintes de délais et de budget,
+                                  j&apos;accompagne mes clients dans la création
+                                  de produits qui répondent véritablement aux
+                                  besoins des utilisateurs.
+                                </p>
+                                <p>
+                                  <strong>
+                                    Transformons votre vision en réalité.
+                                  </strong>
                                 </p>
                                 <p>
                                   <Button
@@ -143,9 +152,7 @@ export default function Home() {
                                     href={
                                       "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous"
                                     }
-                                    label={
-                                      "Contactez-moi pour discuter de votre projet"
-                                    }
+                                    label={"Planifions un entretien !"}
                                   />
                                 </p>
                               </>
@@ -153,22 +160,24 @@ export default function Home() {
                               <>
                                 <h4>
                                   With over 25 years of experience spanning
-                                  UX/UI to freelance development, I bring
-                                  cross-disciplinary expertise to your projects.
+                                  UX/UI to freelance development, I offer
+                                  cross-disciplinary expertise for your
+                                  projects.
                                 </h4>
                                 <p>
                                   As a consultant and on-demand CTO, I
-                                  specialize in guiding startups and SMEs
-                                  through the creation of their MVPs (Minimum
-                                  Viable Products). Leveraging my unique skills
-                                  in web development, artistic direction, and
-                                  user experience—while adhering to budget and
-                                  timeline constraints—I assist in developing
-                                  products that truly meet user needs.
+                                  specialize in guiding startups and SMEs in
+                                  creating their MVPs (Minimum Viable Products).
+                                  Utilizing my unique skills in web development,
+                                  artistic direction, and user experience—while
+                                  adhering to budget and timeline constraints—I
+                                  help develop products that truly meet user
+                                  needs.
                                 </p>
                                 <p>
                                   <strong>
-                                    Ready to bring your project to life?
+                                    Let&apos;s Transform Your Vision into
+                                    Reality.
                                   </strong>
                                 </p>
                                 <p>
@@ -177,9 +186,7 @@ export default function Home() {
                                     href={
                                       "mailto:hello@lucrousseau.com?subject=Appointment%20Request"
                                     }
-                                    label={
-                                      "Contact me to start the conversation"
-                                    }
+                                    label={"Schedule a Chat!"}
                                   />
                                 </p>
                               </>
@@ -208,12 +215,13 @@ export default function Home() {
                   i18n.language === "fr" ? (
                     <>
                       <h2 className="underline underline--center">
-                        Rendre le Possible Concret
+                        Rendre le Possible Tangible
                       </h2>
                       <p className="big">
-                        Je convertis les défis du développement de produits
+                        Je transforme les défis du développement de produits
                         numériques en opportunités claires et réalisables,
-                        catalysant ainsi l&apos;innovation et la réussite.
+                        catalysant ainsi l&apos;innovation et assurant la
+                        réussite.
                       </p>
                     </>
                   ) : (
@@ -222,7 +230,7 @@ export default function Home() {
                         Making the Possible Tangible
                       </h2>
                       <p className="big">
-                        Transforming digital product development challenges into
+                        I transform digital product development challenges into
                         distinct, achievable opportunities to fuel innovation
                         and ensure success.
                       </p>
@@ -255,46 +263,46 @@ export default function Home() {
                                   <strong>
                                     Conception d&apos;une Architecture Unifiée :
                                   </strong>{" "}
-                                  Élaboration d&apos;une architecture système
-                                  centralisée qui sert de fondation à tous les
-                                  projets, garantissant cohérence, efficacité,
-                                  et facilité de maintenance à travers les
+                                  Mise en place d&apos;une architecture système
+                                  centralisée qui constitue la base de tous les
+                                  projets, assurant cohérence, efficacité et
+                                  facilité de maintenance à travers les
                                   différentes initiatives.
                                 </li>
                                 <li>
-                                  <strong>Grille Adaptable :</strong>{" "}
-                                  Implémentation d&apos;une grille adaptable au
-                                  sein de l&apos;architecture, offrant une
-                                  flexibilité et une personnalisation selon les
-                                  exigences uniques de chaque projet, tout en
-                                  préservant une infrastructure technique solide
-                                  et cohérente.
+                                  <strong>Grille Adaptable :</strong> Mise en
+                                  œuvre d&apos;une grille adaptable dans
+                                  l&apos;architecture, offrant flexibilité et
+                                  personnalisation selon les besoins spécifiques
+                                  de chaque projet, tout en conservant une
+                                  infrastructure technique solide et cohérente.
                                 </li>
                               </ul>
                               <h5>
-                                Leadership Technique et Coordination des Équipes
+                                Leadership Technique et Coordination
+                                d&apos;Équipe
                               </h5>
                               <ul>
                                 <li>
                                   <strong>
-                                    Orientation Technique et Encadrement :
+                                    Direction Technique et Supervision :
                                   </strong>{" "}
-                                  Apport de directives techniques précises et
-                                  d&apos;un soutien aux équipes pour
-                                  s&apos;assurer de l&apos;alignement avec
-                                  l&apos;architecture définie et l&apos;adoption
-                                  des meilleures pratiques.
+                                  Fourniture de directives techniques précises
+                                  et de soutien aux équipes pour garantir
+                                  l&apos;alignement avec l&apos;architecture
+                                  définie et l&apos;adoption des meilleures
+                                  pratiques.
                                 </li>
                                 <li>
                                   <strong>
                                     Recrutement et Développement des Talents :
                                   </strong>{" "}
-                                  Engagement actif dans le processus de
-                                  sélection, visant à recruter des candidats
-                                  hautement qualifiés qui s&apos;harmonisent
-                                  avec la culture de l&apos;entreprise, et
-                                  conception de tests de compétences techniques
-                                  pour évaluer efficacement les candidats.
+                                  Participation active au processus de
+                                  recrutement, visant à embaucher des candidats
+                                  hautement qualifiés qui s&apos;intègrent à la
+                                  culture de l&apos;entreprise, et création de
+                                  tests de compétences techniques pour évaluer
+                                  efficacement les candidats.
                                 </li>
                               </ul>
                               <h5>
@@ -303,19 +311,19 @@ export default function Home() {
                               <ul>
                                 <li>
                                   <strong>Processus de Maintenance :</strong>{" "}
-                                  Mise en place de procédures de suivi et de
-                                  maintenance pour assurer la performance
+                                  Établissement de procédures de suivi et de
+                                  maintenance pour garantir la performance
                                   optimale des systèmes existants et leur
                                   conformité avec les avancées technologiques ou
                                   les changements de besoins.
                                 </li>
                                 <li>
                                   <strong>
-                                    Mise à Jour et Optimisation Constantes :
+                                    Mises à Jour et Optimisations Constantes :
                                   </strong>{" "}
                                   Analyse régulière de l&apos;efficacité de
                                   l&apos;architecture actuelle pour identifier
-                                  les opportunités d&apos;amélioration.
+                                  les possibilités d&apos;amélioration.
                                 </li>
                               </ul>
                               <p align="right">
@@ -338,22 +346,21 @@ export default function Home() {
                               <ul>
                                 <li>
                                   <strong>
-                                    Design of a Unified Architecture :
-                                  </strong>
-                                  Development of a centralized system
-                                  architecture that serves as the foundation for
-                                  all projects, ensuring consistency,
-                                  efficiency, and ease of maintenance across
-                                  various initiatives.
+                                    Design of a Unified Architecture:
+                                  </strong>{" "}
+                                  I develop a centralized system architecture
+                                  that serves as the foundation for all
+                                  projects, ensuring consistency, efficiency,
+                                  and ease of maintenance across various
+                                  initiatives.
                                 </li>
                                 <li>
-                                  <strong>Adaptable Grid :</strong>
-                                  Implementation of an adaptable grid within the
-                                  architecture, offering flexibility and
-                                  customization according to the unique
-                                  requirements of each project, while preserving
-                                  a solid and consistent technical
-                                  infrastructure.
+                                  <strong>Adaptable Grid:</strong> I implement
+                                  an adaptable grid within the architecture,
+                                  offering flexibility and customization
+                                  according to the unique requirements of each
+                                  project, while preserving a solid and
+                                  consistent technical infrastructure.
                                 </li>
                               </ul>
                               <h5>
@@ -362,20 +369,20 @@ export default function Home() {
                               <ul>
                                 <li>
                                   <strong>
-                                    Technical Direction and Supervision :
-                                  </strong>
-                                  Providing precise technical guidelines and
+                                    Technical Direction and Supervision:
+                                  </strong>{" "}
+                                  I provide precise technical guidelines and
                                   support to teams to ensure alignment with the
                                   defined architecture and adoption of best
                                   practices.
                                 </li>
                                 <li>
                                   <strong>
-                                    Recruitment and Talent Development :
-                                  </strong>
-                                  Actively engaging in the recruitment process,
+                                    Recruitment and Talent Development:
+                                  </strong>{" "}
+                                  I actively engage in the recruitment process,
                                   aiming to hire highly qualified candidates who
-                                  align with the company culture, and designing
+                                  align with the company culture, and I design
                                   technical skill tests to efficiently evaluate
                                   candidates.
                                 </li>
@@ -386,17 +393,17 @@ export default function Home() {
                               </h5>
                               <ul>
                                 <li>
-                                  <strong>Maintenance Process :</strong>{" "}
-                                  Establishing monitoring and maintenance
+                                  <strong>Maintenance Process:</strong> I
+                                  establish monitoring and maintenance
                                   procedures to ensure optimal performance of
                                   existing systems and their compliance with
                                   technological advancements or changing needs.
                                 </li>
                                 <li>
                                   <strong>
-                                    Constant Updates and Optimization :
-                                  </strong>
-                                  Regular analysis of the current
+                                    Constant Updates and Optimization:
+                                  </strong>{" "}
+                                  I regularly analyze the current
                                   architecture&apos;s effectiveness to identify
                                   opportunities for improvement.
                                 </li>
@@ -423,11 +430,11 @@ export default function Home() {
                           i18n.language === "fr" ? (
                             <>
                               <h4>
-                                Architecture, Innovation et Optimisation
-                                Utilisateur
+                                Architecture, Innovation et Optimisation pour
+                                l&apos;Utilisateur
                               </h4>
                               <h5>
-                                Planification Stratégique et Architecture
+                                Planification Stratégique et Architecture du
                                 Système
                               </h5>
                               <ul>
@@ -436,40 +443,40 @@ export default function Home() {
                                     Conception d&apos;une Structure Système
                                     Optimale :
                                   </strong>{" "}
-                                  Établir une architecture soutenant
-                                  efficacement l&apos;analyse et la comparaison
-                                  de prêts hypothécaires, assurant ainsi un
-                                  support optimal.
+                                  Établissement d&apos;une architecture qui
+                                  soutient efficacement l&apos;analyse et la
+                                  comparaison des prêts hypothécaires, assurant
+                                  ainsi un support optimal.
                                 </li>
                                 <li>
                                   <strong>
-                                    Planification Détailée du Projet :
+                                    Planification Précise du Projet :
                                   </strong>{" "}
                                   Définition des étapes clés et des livrables
-                                  pour structurer le développement et garantir
-                                  une livraison ponctuelle.
+                                  pour structurer le développement et assurer
+                                  une livraison dans les délais.
                                 </li>
                               </ul>
-                              <h5>Leadership d&apos;Équipe et Coordination</h5>
+                              <h5>Leadership et Coordination d&apos;Équipe</h5>
                               <ul>
                                 <li>
                                   <strong>
-                                    Harmonisation des Étapes de Conception à
+                                    Alignement des Étapes de Conception et de
                                     Développement :
                                   </strong>{" "}
-                                  Coordination efficace entre la création des
-                                  maquettes fonctionnelles, le design, ainsi que
-                                  les développeurs “back-end” et “front-end”.
+                                  Coordination efficace entre la création de
+                                  maquettes fonctionnelles, le design et les
+                                  développeurs back-end et front-end.
                                 </li>
                                 <li>
                                   <strong>
                                     Planification et Intégration des Phases :
                                   </strong>{" "}
-                                  Définition claire des priorités et des délais
-                                  pour chaque étape, garantissant une
-                                  progression sans heurts vers la livraison
-                                  finale, tout en maintenant une haute qualité
-                                  et une expérience utilisateur optimale.
+                                  Définition précise des priorités et des
+                                  échéances pour chaque phase, garantissant une
+                                  progression fluide vers la livraison finale,
+                                  tout en préservant une haute qualité et une
+                                  expérience utilisateur optimale.
                                 </li>
                               </ul>
                               <h5>
@@ -481,18 +488,19 @@ export default function Home() {
                                     Développement de l&apos;Interface
                                     Utilisateur :
                                   </strong>{" "}
-                                  Collaboration étroite avec les designers pour
-                                  créer des prototypes et des maquettes qui
-                                  répondent aux attentes des utilisateurs.
+                                  Travail en étroite collaboration avec les
+                                  designers pour créer des prototypes et des
+                                  maquettes répondant aux attentes des
+                                  utilisateurs.
                                 </li>
                                 <li>
                                   <strong>
                                     Création et Intégration d&apos;Outils
-                                    Performants :
+                                    Efficaces :
                                   </strong>{" "}
                                   Développement et intégration d&apos;outils
-                                  avancés dédiés aux tests A/B et à
-                                  l&apos;analyse approfondie des données.
+                                  avancés destinés aux tests A/B et à
+                                  l&apos;analyse détaillée des données.
                                 </li>
                               </ul>
                               <p align="right">
@@ -518,15 +526,15 @@ export default function Home() {
                               <ul>
                                 <li>
                                   <strong>
-                                    Designing an Optimal System Structure :
-                                  </strong>
-                                  Establishing an architecture that effectively
+                                    Designing an Optimal System Structure:
+                                  </strong>{" "}
+                                  I establish an architecture that effectively
                                   supports the analysis and comparison of
                                   mortgage loans, thus ensuring optimal support.
                                 </li>
                                 <li>
-                                  <strong>Detailed Project Planning :</strong>
-                                  Defining key stages and deliverables to
+                                  <strong>Detailed Project Planning:</strong> I
+                                  define key stages and deliverables to
                                   structure the development and ensure timely
                                   delivery.
                                 </li>
@@ -535,17 +543,17 @@ export default function Home() {
                               <ul>
                                 <li>
                                   <strong>
-                                    Aligning Design to Development Stages :
-                                  </strong>
-                                  Effectively coordinating between the creation
+                                    Aligning Design to Development Stages:
+                                  </strong>{" "}
+                                  I effectively coordinate between the creation
                                   of functional mockups, design, as well as
                                   back-end and front-end developers.
                                 </li>
                                 <li>
                                   <strong>
-                                    Planning and Integrating Phases :
-                                  </strong>
-                                  Clearly defining priorities and timelines for
+                                    Planning and Integrating Phases:
+                                  </strong>{" "}
+                                  I clearly define priorities and timelines for
                                   each phase, ensuring a smooth progression
                                   towards the final delivery while maintaining
                                   high quality and an optimal user experience.
@@ -554,17 +562,16 @@ export default function Home() {
                               <h5>User Experience and Result Analysis</h5>
                               <ul>
                                 <li>
-                                  <strong>User Interface Development :</strong>
-                                  Working closely with designers to create
+                                  <strong>User Interface Development:</strong> I
+                                  work closely with designers to create
                                   prototypes and mockups that meet user
                                   expectations.
                                 </li>
                                 <li>
                                   <strong>
-                                    Creation and Integration of Efficient Tools
-                                    :
-                                  </strong>
-                                  Developing and integrating advanced tools
+                                    Creation and Integration of Efficient Tools:
+                                  </strong>{" "}
+                                  I develop and integrate advanced tools
                                   dedicated to A/B testing and in-depth data
                                   analysis.
                                 </li>
@@ -590,22 +597,21 @@ export default function Home() {
                           i18n.language === "fr" ? (
                             <>
                               <h4>
-                                Innovation, Planification et Supervision
+                                IInnovation, Planification et Supervision
                                 Technique
                               </h4>
-                              <h5>Évaluation et Planification de Projet</h5>
+                              <h5>Évaluation et Planification du Projet</h5>
                               <ul>
                                 <li>
                                   <strong>Analyse de Faisabilité :</strong>{" "}
                                   Évaluation complète des délais, des ressources
-                                  nécessaires et de la viabilité globale du
-                                  projet.
+                                  nécessaires et de la viabilité du projet.
                                 </li>
                                 <li>
                                   <strong>Stratégie de Développement :</strong>{" "}
-                                  Développement d&apos;une stratégie détaillée
-                                  pour guider la réalisation du projet, y
-                                  compris la définition des phases de travail.
+                                  Élaboration d&apos;une stratégie détaillée
+                                  pour diriger l&apos;exécution du projet,
+                                  incluant la définition des phases de travail.
                                 </li>
                               </ul>
                               <h5>
@@ -614,37 +620,38 @@ export default function Home() {
                               <ul>
                                 <li>
                                   <strong>
-                                    Architecture et Sélection Technologique :
+                                    Sélection d&apos;Architecture et de
+                                    Technologie :
                                   </strong>{" "}
-                                  Création d&apos;une architecture de projet et
-                                  choix des technologies et outils adéquats pour
-                                  assurer un développement efficace et
+                                  Conception de l&apos;architecture du projet et
+                                  choix des technologies et outils appropriés
+                                  pour assurer un développement efficace et
                                   adaptable.
                                 </li>
                                 <li>
                                   <strong>Prérequis Techniques :</strong>{" "}
                                   Définition des exigences techniques pour
-                                  garantir une base solide pour le déploiement
-                                  et la croissance future du projet.
+                                  assurer une base solide pour le déploiement et
+                                  la croissance future du projet.
                                 </li>
                               </ul>
-                              <h5>Supervision et Support Technique Continu</h5>
+                              <h5>Supervision Technique et Support Continu</h5>
                               <ul>
                                 <li>
                                   <strong>
-                                    Suivi du Progrès et Résolution de Problèmes
+                                    Suivi des Progrès et Résolution de Problèmes
                                     :
                                   </strong>{" "}
                                   Surveillance régulière de l&apos;avancement du
-                                  développement, avec une attention particulière
-                                  à la résolution proactive des défis
-                                  techniques.
+                                  développement, en portant une attention
+                                  particulière à la résolution proactive des
+                                  défis techniques.
                                 </li>
                                 <li>
                                   <strong>Assurance de la Conformité :</strong>{" "}
-                                  Veille à ce que les développements soient
-                                  alignés avec la vision initiale du projet et
-                                  respectent les standards de qualité élevés.
+                                  Veiller à ce que les développements soient
+                                  conformes à la vision initiale du projet et
+                                  répondent à des normes de qualité élevées.
                                 </li>
                               </ul>
                             </>
@@ -656,14 +663,14 @@ export default function Home() {
                               <h5>Project Evaluation and Planning</h5>
                               <ul>
                                 <li>
-                                  <strong>Feasibility Analysis :</strong>
-                                  Comprehensive evaluation of timelines,
-                                  required resources, and the overall viability
-                                  of the project.
+                                  <strong>Feasibility Analysis:</strong> I
+                                  comprehensively evaluate timelines, required
+                                  resources, and the overall viability of the
+                                  project.
                                 </li>
                                 <li>
-                                  <strong>Development Strategy :</strong>
-                                  Developing a detailed strategy to guide the
+                                  <strong>Development Strategy:</strong> I
+                                  develop a detailed strategy to guide the
                                   project&apos;s execution, including the
                                   definition of work phases.
                                 </li>
@@ -672,15 +679,15 @@ export default function Home() {
                               <ul>
                                 <li>
                                   <strong>
-                                    Architecture and Technology Selection :
-                                  </strong>
-                                  Designing a project architecture and selecting
+                                    Architecture and Technology Selection:
+                                  </strong>{" "}
+                                  I design a project architecture and select
                                   appropriate technologies and tools to ensure
                                   effective and adaptable development.
                                 </li>
                                 <li>
-                                  <strong>Technical Prerequisites :</strong>
-                                  Defining technical requirements to ensure a
+                                  <strong>Technical Prerequisites:</strong> I
+                                  define technical requirements to ensure a
                                   solid foundation for the deployment and future
                                   growth of the project.
                                 </li>
@@ -689,17 +696,17 @@ export default function Home() {
                               <ul>
                                 <li>
                                   <strong>
-                                    Progress Monitoring and Problem Solving :
-                                  </strong>
-                                  Regular monitoring of development progress,
-                                  with particular attention to the proactive
+                                    Progress Monitoring and Problem Solving:
+                                  </strong>{" "}
+                                  I regularly monitor development progress,
+                                  paying particular attention to the proactive
                                   resolution of technical challenges.
                                 </li>
                                 <li>
-                                  <strong>Compliance Assurance :</strong>
-                                  Ensuring that developments are aligned with
-                                  the initial project vision and meet high
-                                  quality standards.
+                                  <strong>Compliance Assurance:</strong> I
+                                  ensure that developments are aligned with the
+                                  initial project vision and meet high quality
+                                  standards.
                                 </li>
                               </ul>
                             </>
@@ -726,7 +733,7 @@ export default function Home() {
                         href={
                           "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous"
                         }
-                        label={"Contactez-moi pour discuter de votre projet"}
+                        label={"Commencez à innover dès maintenant !"}
                       />
                     </p>
                   ) : (
@@ -736,7 +743,7 @@ export default function Home() {
                         href={
                           "mailto:hello@lucrousseau.com?subject=Appointment%20Request"
                         }
-                        label={"Contact me to discuss your project"}
+                        label={"Start Innovating Now!"}
                       />
                     </p>
                   ),
@@ -768,12 +775,12 @@ export default function Home() {
                   i18n.language === "fr" ? (
                     <>
                       <h2 className="underline underline--center">
-                        Pourquoi Faire Appel à un CTO à la Demande
+                        Pourquoi Opter pour un CTO à la Demande
                       </h2>
                       <p className="big">
-                        Choisir un CTO à la demande, c&apos;est s&apos;assurer
-                        un partenaire qui comprend votre vision et apporte une
-                        expertise technique sur mesure pour guider
+                        Choisir un CTO à la demande, c&apos;est sécuriser un
+                        partenaire qui comprend votre vision et apporte une
+                        expertise technique personnalisée pour guider
                         l&apos;innovation et optimiser le développement à chaque
                         étape.
                       </p>
@@ -803,28 +810,29 @@ export default function Home() {
                     <>
                       <ol className="align--center">
                         <li className="h3">
-                          Évite les erreurs coûteuses, contribue à la réduction
-                          des risques et à la sécurisation de votre projet.
+                          Prévention des erreurs coûteuses, contribution à la
+                          réduction des risques et sécurisation de votre projet.
                         </li>
                         <li className="h3">
-                          Assurance d&apos;excellence technique et cohérence à
+                          Garantie d&apos;excellence technique et de cohérence à
                           chaque étape du développement.
                         </li>
                         <li className="h3">
-                          Leadership adapté à la construction d&apos;une équipe
-                          performante et au choix des technologies.
+                          Leadership sur mesure pour constituer une équipe
+                          performante et sélectionner les technologies
+                          adéquates.
                         </li>
                         <li className="h3">
-                          Rôle central dans la réussite de vos ambitions
+                          Un rôle clé dans le succès de vos ambitions
                           numériques.
                         </li>
                         <li className="h3">
-                          Combinaison d&apos;expertise technique et compétences
-                          managériales.
+                          Une combinaison d&apos;expertise technique et de
+                          compétences managériales.
                         </li>
                         <li className="h3">
-                          Veille constante sur les tendances pour vous maintenir
-                          à l&apos;avant-garde.
+                          Une veille constante sur les tendances pour vous
+                          maintenir à l&apos;avant-garde.
                         </li>
                       </ol>
                       <Row
@@ -842,7 +850,7 @@ export default function Home() {
                                     "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous"
                                   }
                                   label={
-                                    "Contactez-moi pour discuter de votre projet"
+                                    "Sécurisez un accompagnement d'expert !"
                                   }
                                 />
                               </p>
@@ -859,23 +867,22 @@ export default function Home() {
                           reduction, and secures your project.
                         </li>
                         <li className="h3">
-                          Assurance of technical excellence and consistency at
-                          every development stage.
+                          Ensures technical excellence and consistency at every
+                          development stage.
                         </li>
                         <li className="h3">
-                          Tailored leadership for building a high-performing
-                          team and selecting technologies.
+                          Provides tailored leadership for building a
+                          high-performing team and selecting technologies.
                         </li>
                         <li className="h3">
-                          A central role in the success of your digital
+                          Plays a central role in the success of your digital
                           ambitions.
                         </li>
                         <li className="h3">
-                          A combination of technical expertise and managerial
-                          skills.
+                          Combines technical expertise and managerial skills.
                         </li>
                         <li className="h3">
-                          Constant monitoring of trends to keep you at the
+                          Constantly monitors trends to keep you at the
                           forefront.
                         </li>
                       </ol>
@@ -893,7 +900,7 @@ export default function Home() {
                                   href={
                                     "mailto:hello@lucrousseau.com?subject=Appointment%20Request"
                                   }
-                                  label={"Contact me to discuss your project"}
+                                  label={"Secure Expert Guidance!"}
                                 />
                               </p>
                             ),
@@ -917,13 +924,13 @@ export default function Home() {
                   i18n.language === "fr" ? (
                     <>
                       <h2 className="underline underline--center">
-                        Mon Offre de Service de CTO à la Demande
+                        Mon Offre de Services CTO à la Demande
                       </h2>
                       <p className="big">
-                        Je vous apporte une expertise technique doublée
-                        d&apos;une vision stratégique pour assurer
+                        Je vous apporte une expertise technique assortie
+                        d&apos;une vision stratégique pour garantir
                         l&apos;intégration technologique et l&apos;adaptabilité
-                        de votre projet aux défis actuels et futurs.
+                        de votre projet face aux défis actuels et futurs.
                       </p>
                     </>
                   ) : (
@@ -955,33 +962,33 @@ export default function Home() {
                     }
                     label={
                       i18n.language === "fr"
-                        ? "Réservez Votre Session"
-                        : "Book Your Session"
+                        ? "Réservez votre séance!"
+                        : "Book Your Session Now!"
                     }
                     className={"align--lg-left"}
                   >
                     {i18n.language === "fr" ? (
                       <>
                         <p>
-                          Un plan d&apos;action sur mesure pour concrétiser
-                          votre vision, incluant un cahier des charges détaillé
-                          et une roadmap stratégique.
+                          Un plan d&apos;action personnalisé pour concrétiser
+                          votre vision, comprenant un cahier des charges
+                          détaillé et une feuille de route stratégique.
                         </p>
                         <ul className="small align--left">
-                          <li>Session Diagnostique incluse</li>
+                          <li>Séance diagnostique incluse.</li>
                           <li>
-                            Élaboration d&apos;un plan d&apos;intervention
-                            personnalisé
+                            Élaboration d&apos;un plan d&apos;intervention sur
+                            mesure.
                           </li>
-                          <li>Stratégie d&apos;évolution du produit</li>
-                          <li>Analyse des technologies adaptées</li>
-                          <li>Planification des ressources et du budget</li>
+                          <li>Stratégie d&apos;évolution du produit.</li>
+                          <li>Analyse des technologies appropriées.</li>
+                          <li>Planification des ressources et du budget.</li>
                           <li>
-                            Définition d&apos;un calendrier de développement
+                            Définition d&apos;un calendrier de développement.
                           </li>
                           <li>
                             Coordination des plateformes et outils
-                            technologiques
+                            technologiques.
                           </li>
                         </ul>
                       </>
@@ -993,16 +1000,16 @@ export default function Home() {
                           strategic roadmap.
                         </p>
                         <ul className="small align--left">
-                          <li>Diagnostic Session included</li>
+                          <li>Diagnostic Session included.</li>
                           <li>
-                            Development of a personalized intervention plan
+                            Development of a personalized intervention plan.
                           </li>
-                          <li>Product evolution strategy</li>
-                          <li>Analysis of suitable technologies</li>
-                          <li>Planning of resources and budget</li>
-                          <li>Definition of a development schedule</li>
+                          <li>Product evolution strategy.</li>
+                          <li>Analysis of suitable technologies.</li>
+                          <li>Planning of resources and budget.</li>
+                          <li>Definition of a development schedule.</li>
                           <li>
-                            Coordination of platforms and technological tools
+                            Coordination of platforms and technological tools.
                           </li>
                         </ul>
                       </>
@@ -1016,40 +1023,40 @@ export default function Home() {
                   <Product
                     title={
                       i18n.language === "fr"
-                        ? "Session Diagnostique"
+                        ? "Séance Diagnostique"
                         : "Diagnostic Session"
                     }
                     label={
                       i18n.language === "fr"
-                        ? "Réservez Votre Session"
-                        : "Book Your Session"
+                        ? "Réservez votre séance!"
+                        : "Book Your Session Now!"
                     }
                     className={"align--lg-left"}
                   >
                     {i18n.language === "fr" ? (
                       <>
                         <p>
-                          Une heure de consultation stratégique pour faire le
-                          point sur vos défis technologiques et identifier les
+                          Une heure de consultation stratégique pour examiner
+                          vos défis technologiques et identifier les
                           opportunités.
                         </p>
                         <ul className="small align--left">
                           <li>
-                            Analyse des défis et opportunités technologiques
+                            Analyse des défis et opportunités technologiques.
                           </li>
                           <li>
-                            Conseils basés sur les meilleures pratiques de
-                            développement et tendances actuelles
+                            Conseils fondés sur les meilleures pratiques de
+                            développement et les tendances actuelles.
                           </li>
                           <li>
                             Discussion sur l&apos;état de votre stratégie
-                            technologique et analyse des risques
+                            technologique et analyse des risques.
                           </li>
                           <li>
-                            Orientation pour améliorer l&apos;UX/UI en lien avec
-                            vos processus de développement
+                            Recommandations pour améliorer l&apos;UX/UI en lien
+                            avec vos processus de développement.
                           </li>
-                          <li>Recommandations pour les prochaines étapes</li>
+                          <li>Propositions pour les prochaines étapes.</li>
                         </ul>
                       </>
                     ) : (
@@ -1061,21 +1068,21 @@ export default function Home() {
                         <ul className="small align--left">
                           <li>
                             Analysis of technological challenges and
-                            opportunities
+                            opportunities.
                           </li>
                           <li>
                             Advice based on best development practices and
-                            current trends
+                            current trends.
                           </li>
                           <li>
                             Discussion on the state of your technological
-                            strategy and risk analysis
+                            strategy and risk analysis.
                           </li>
                           <li>
                             Guidance to improve UX/UI in relation to your
-                            development processes
+                            development processes.
                           </li>
-                          <li>Recommendations for next steps</li>
+                          <li>Recommendations for next steps.</li>
                         </ul>
                       </>
                     )}
@@ -1093,60 +1100,60 @@ export default function Home() {
                     }
                     label={
                       i18n.language === "fr"
-                        ? "Réservez Votre Session"
-                        : "Book Your Session"
+                        ? "Réservez votre séance!"
+                        : "Book Your Session Now!"
                     }
                     className={"align--lg-left"}
                   >
                     {i18n.language === "fr" ? (
                       <>
                         <p>
-                          Un engagement profond et constant, pour assurer la
+                          Un engagement profond et continu pour garantir la
                           qualité et l&apos;évolution de votre projet.
                         </p>
                         <ul className="small align--left">
                           <li>
-                            Inclus la Session Diagnostique et la Planification
-                            Stratégique
+                            Inclut la séance diagnostique et la planification
+                            stratégique.
                           </li>
                           <li>
                             Gestion proactive et suivi régulier du développement
-                            ainsi que des partenaires technologiques
+                            et des partenaires technologiques.
                           </li>
                           <li>
                             Ajustements stratégiques et assurance qualité
-                            continue
+                            continue.
                           </li>
                           <li>
                             Veille technologique et conseils sur les nouvelles
-                            tendances
+                            tendances.
                           </li>
-                          <li>Service de développement web</li>
+                          <li>Service de développement web.</li>
                         </ul>
                       </>
                     ) : (
                       <>
                         <p>
-                          A deep and constant commitment to ensure the quality
+                          A deep and constant commitment to ensuring the quality
                           and evolution of your project.
                         </p>
                         <ul className="small align--left">
                           <li>
                             Includes the Diagnostic Session and Strategic
-                            Planning
+                            Planning.
                           </li>
                           <li>
                             Proactive management and regular monitoring of
-                            development and technological partners
+                            development and technological partners.
                           </li>
                           <li>
                             Strategic adjustments and continuous quality
-                            assurance
+                            assurance.
                           </li>
                           <li>
-                            Technological surveillance and advice on new trends
+                            Technological surveillance and advice on new trends.
                           </li>
-                          <li>Web development service</li>
+                          <li>Web development service.</li>
                         </ul>
                       </>
                     )}
@@ -1170,12 +1177,12 @@ export default function Home() {
                   i18n.language === "fr" ? (
                     <>
                       <h2 className="underline underline--center">
-                        Les Langages et Technologies que je Maîtrise
+                        Les Langages et Technologies que Je Maîtrise
                       </h2>
                       <p className="big">
-                        Mon expertise couvre design, développement et gestion de
-                        projet, transformant les idées en solutions numériques
-                        clés.
+                        Mon expertise s&apos;étend du design au développement et
+                        à la gestion de projet, transformant les idées en
+                        solutions numériques clés.
                       </p>
                     </>
                   ) : (
@@ -1271,7 +1278,7 @@ export default function Home() {
                         href={
                           "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous"
                         }
-                        label={"Contactez-moi pour discuter de votre projet"}
+                        label={"Discutons de vos besoins technologiques !"}
                       />
                     </p>
                   ) : (
@@ -1281,7 +1288,7 @@ export default function Home() {
                         href={
                           "mailto:hello@lucrousseau.com?subject=Appointment%20Request"
                         }
-                        label={"Contact me to discuss your project"}
+                        label={"Discuss Your Tech Needs!"}
                       />
                     </p>
                   ),
@@ -1300,13 +1307,13 @@ export default function Home() {
                   i18n.language === "fr" ? (
                     <>
                       <h2 className="underline underline--center">
-                        Les Avantages de Mon Offre de Service
+                        Les Avantages de Mon Service
                       </h2>
                       <p className="big">
-                        Je fournis mon expertise technique et ma vision
-                        stratégique, stimulant l&apos;innovation et optimisant
-                        le développement à des moments essentiels de chaque
-                        projet.
+                        Je mets à disposition mon expertise technique et ma
+                        vision stratégique, stimulant l&apos;innovation et
+                        optimisant le développement lors des moments clés de
+                        chaque projet.
                       </p>
                     </>
                   ) : (
@@ -1336,52 +1343,51 @@ export default function Home() {
                       i18n.language === "fr"
                         ? [
                             {
-                              title: "Expertise en Résolution de Problèmes",
+                              title: "Expertise en résolution de problèmes",
                               emoji: "🔓",
                               content: (
                                 <p>
-                                  Je trouve des solutions innovantes et sur
-                                  mesure pour vos défis, fort de mon expérience
-                                  variée.
+                                  Je propose des solutions innovantes et
+                                  personnalisées pour relever vos défis, fort de
+                                  mon expérience diversifiée.
                                 </p>
                               ),
                             },
                             {
-                              title:
-                                "Orientation vers l'Expérience Utilisateur",
+                              title: "Focus sur l'expérience utilisateur",
                               emoji: "👥",
                               content: (
                                 <p>
-                                  J&apos;évalue constamment si les efforts de
-                                  l&apos;équipe correspondent aux besoins de vos
+                                  Je veille constamment à aligner les efforts de
+                                  l&apos;équipe sur les besoins de vos
                                   utilisateurs, garantissant leur satisfaction.
                                 </p>
                               ),
                             },
                             {
-                              title: "Décisions Guidées par les Données",
+                              title: "Prise de décisions basée sur les données",
                               emoji: "💬",
                               content: (
                                 <p>
-                                  J&apos;adopte une approche analytique,
-                                  transformant vos idées en insights
-                                  actionnables.
+                                  J&apos;adopte une approche analytique pour
+                                  transformer vos idées en insights
+                                  exploitables.
                                 </p>
                               ),
                             },
                             {
-                              title: "Agilité et Adaptabilité",
+                              title: "Agilité et adaptabilité",
                               emoji: "🔄",
                               content: (
                                 <p>
                                   J&apos;utilise des méthodes agiles pour rester
-                                  flexible et adaptable, assurant une livraison
+                                  flexible et réactif, assurant une livraison
                                   régulière et efficace.
                                 </p>
                               ),
                             },
                             {
-                              title: "Optimisation de la Productivité",
+                              title: "Optimisation de la productivité",
                               emoji: "⏩",
                               content: (
                                 <p>
@@ -1393,24 +1399,25 @@ export default function Home() {
                             },
                             {
                               title:
-                                "Expertise en Codage, IA et Solutions No-Code",
+                                "Compétences en codage et solutions sans code",
                               emoji: "💻",
                               content: (
                                 <p>
                                   Je combine le codage traditionnel et les
-                                  solutions No-Code pour une efficacité maximale
-                                  adaptée à vos besoins.
+                                  solutions sans code pour une efficacité
+                                  maximale, adaptée à vos besoins.
                                 </p>
                               ),
                             },
                             {
-                              title: "Intelligence Artificielle Générative",
+                              title: "Intelligence artificielle générative",
                               emoji: "🤖",
                               content: (
                                 <p>
-                                  Je guide l&apos;exploration des horizons de
-                                  l&apos;intelligence artificielle générative
-                                  pour maximiser votre potentiel innovant.
+                                  Je vous guide dans l&apos;exploration des
+                                  possibilités offertes par l&apos;intelligence
+                                  artificielle générative pour maximiser votre
+                                  potentiel d&apos;innovation.
                                 </p>
                               ),
                             },
@@ -1466,14 +1473,14 @@ export default function Home() {
                               content: (
                                 <p>
                                   I create a dynamic work environment,
-                                  maximizing productivity and your teams&apos;
+                                  maximizing productivity and your team&apos;s
                                   well-being.
                                 </p>
                               ),
                             },
                             {
                               title:
-                                "Expertise in Coding, AI, and No-Code Solutions",
+                                "Expertise in Coding and No-Code Solutions",
                               emoji: "💻",
                               content: (
                                 <p>
@@ -1513,7 +1520,7 @@ export default function Home() {
                         href={
                           "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous"
                         }
-                        label={"Contactez-moi pour discuter de votre projet"}
+                        label={"Maximisez le potentiel de votre projet !"}
                       />
                     </p>
                   ) : (
@@ -1523,7 +1530,7 @@ export default function Home() {
                         href={
                           "mailto:hello@lucrousseau.com?subject=Appointment%20Request"
                         }
-                        label={"Contact me to discuss your project"}
+                        label={"Maximize Your Project's Potential!"}
                       />
                     </p>
                   ),
@@ -1545,13 +1552,13 @@ export default function Home() {
                   i18n.language === "fr" ? (
                     <>
                       <h2 className="underline underline--center">
-                        Au-delà du Bureau : Passion, Voyage et Photographie
+                        Au-delà du bureau : passion, voyage et photographie
                       </h2>
                       <p className="big">
-                        Parce que la vie ne se limite pas à notre travail, je
-                        m&apos;évade à travers le voyage et capture le monde
-                        sous mon objectif, partageant ainsi mes passions qui
-                        m&apos;inspirent au quotidien.
+                        La vie ne se résume pas au travail. Je trouve mon
+                        évasion à travers les voyages et la photographie,
+                        capturant le monde avec mon objectif et partageant les
+                        passions qui m&apos;inspirent au quotidien.
                       </p>
                     </>
                   ) : (
@@ -1626,7 +1633,7 @@ export default function Home() {
                         href={
                           "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous"
                         }
-                        label={"Contactez-moi pour discuter de votre projet"}
+                        label={"Contactez-moi pour des perspectives uniques !"}
                       />
                     </p>
                   ) : (
@@ -1636,7 +1643,7 @@ export default function Home() {
                         href={
                           "mailto:hello@lucrousseau.com?subject=Appointment%20Request"
                         }
-                        label={"Contact me to discuss your project"}
+                        label={"Contact Me for Unique Insights!"}
                       />
                     </p>
                   ),
