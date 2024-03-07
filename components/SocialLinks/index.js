@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 import classNames from "classnames";
 
@@ -9,6 +10,7 @@ import Row from "../Layout/Row";
 import "./style.scss";
 
 export default function SocialLinks({ ...props }) {
+  const { i18n } = useTranslation();
   const alignmentsClass = alignments({ props });
 
   return (
@@ -27,7 +29,11 @@ export default function SocialLinks({ ...props }) {
             tag: "li",
             content: (
               <Link
-                href="https://www.linkedin.com/in/lucrousseau/"
+                href={
+                  i18n.language === "fr"
+                    ? "https://www.linkedin.com/in/lucrousseau/"
+                    : "https://www.linkedin.com/in/lucrousseau/?locale=en_US"
+                }
                 className="col"
                 aria-label="LinkedIn"
                 target="_blank"
