@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "convert-webp": "node scripts/convert-to-webp.js"
+    "prebuild": "node scripts/convert-images.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
