@@ -16,6 +16,24 @@ const SEO = ({ title, description, image, url }) => {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={`${domain}${image}`} />
       <link rel="canonical" href={`${domain}${url}`} />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href={`${domain}/favicon/apple-touch-icon.png`}
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href={`${domain}/favicon/favicon-32x32.png`}
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href={`${domain}/favicon/favicon-16x16.png`}
+      />
+      <link rel="manifest" href={`${domain}/favicon/site.webmanifest`} />
     </Head>
   );
 };

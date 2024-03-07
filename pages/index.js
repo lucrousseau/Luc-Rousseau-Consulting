@@ -25,14 +25,14 @@ export default function Home() {
         <SEO
           title="Luc Rousseau - CTO à la Demande et Création de Produits Numériques"
           description="Expertise en développement web, direction artistique et expérience utilisateur."
-          image="/og/facebook.jpg"
+          image="/og/image-fr.jpg"
           url="/"
         />
       ) : (
         <SEO
           title="Luc Rousseau - On-Demand CTO and Digital Product Creation"
           description="Expertise in web development, art direction, and user experience."
-          image="/og/facebook.jpg"
+          image="/og/image-en.jpg"
           url="/"
         />
       )}
