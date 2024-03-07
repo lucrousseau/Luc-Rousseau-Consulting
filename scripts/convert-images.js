@@ -22,7 +22,7 @@ fs.readdir(directoryPath, (err, files) => {
 
       // Use sharp to convert the image to WebP format.
       sharp(sourceFilePath)
-        .webp({ quality: 90 })
+        .webp({ quality: 80 })
         .toFile(targetFilePath, (err) => {
           if (err) {
             console.error("Error converting image to WebP", err);
