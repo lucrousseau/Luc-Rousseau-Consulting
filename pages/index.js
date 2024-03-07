@@ -1194,6 +1194,7 @@ export default function Home() {
                     items={
                       i18n.language === "fr"
                         ? [
+                            { content: "Leadership", emoji: "⭐️" },
                             { content: "React", emoji: "⭐️" },
                             { content: "Vue.js", emoji: "⭐️" },
                             { content: "PHP", emoji: "⭐️" },
@@ -1210,11 +1211,13 @@ export default function Home() {
                             { content: "Agile", emoji: "⭐️" },
                             { content: "BEM", emoji: "⭐️" },
                             { content: "SCSS", emoji: "⭐️" },
+                            { content: "Planification", emoji: "⭐️" },
                             { content: "Docker", emoji: "⭐️" },
                             { content: "Tailwind", emoji: "⭐️" },
-                            { content: "Planification", emoji: "⭐️" },
+                            { content: "Budgétisation", emoji: "⭐️" },
                           ]
                         : [
+                            { content: "Leadership", emoji: "⭐️" },
                             { content: "React", emoji: "⭐️" },
                             { content: "Vue.js", emoji: "⭐️" },
                             { content: "PHP", emoji: "⭐️" },
@@ -1231,9 +1234,10 @@ export default function Home() {
                             { content: "Agile", emoji: "⭐️" },
                             { content: "BEM", emoji: "⭐️" },
                             { content: "SCSS", emoji: "⭐️" },
+                            { content: "Planning", emoji: "⭐️" },
                             { content: "Docker", emoji: "⭐️" },
                             { content: "Tailwind", emoji: "⭐️" },
-                            { content: "Planning", emoji: "⭐️" },
+                            { content: "Budgeting", emoji: "⭐️" },
                           ]
                     }
                   />
