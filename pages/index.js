@@ -414,7 +414,10 @@ export default function Home() {
                           ),
                       },
                       {
-                        title: "Compare Mortgages",
+                        title:
+                          i18n.language === "fr"
+                            ? "Mon Meilleur Taux"
+                            : "Compare Mortgages",
                         emoji: "🧠",
                         content:
                           i18n.language === "fr" ? (
@@ -497,7 +500,7 @@ export default function Home() {
                                   variant={"secondary"}
                                   size={"small"}
                                   href={
-                                    "https://comparemortgages.ca/quotes/purchase/"
+                                    "https://monmeilleurtaux.ca/quotes/nouvel-achat/"
                                   }
                                   target={"_blank"}
                                   label={"Visiter le Site Web"}
