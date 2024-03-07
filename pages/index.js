@@ -1221,6 +1221,7 @@ export default function Home() {
                             { content: "Docker", emoji: "⭐️" },
                             { content: "Tailwind", emoji: "⭐️" },
                             { content: "Budgétisation", emoji: "⭐️" },
+                            { content: " Next.js", emoji: "⭐️" },
                           ]
                         : [
                             { content: "Leadership", emoji: "⭐️" },
@@ -1244,6 +1245,7 @@ export default function Home() {
                             { content: "Docker", emoji: "⭐️" },
                             { content: "Tailwind", emoji: "⭐️" },
                             { content: "Budgeting", emoji: "⭐️" },
+                            { content: " Next.js", emoji: "⭐️" },
                           ]
                     }
                   />
