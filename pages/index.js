@@ -1581,7 +1581,7 @@ export default function Home() {
                     src={"/images/clearwater-falls.jpg"}
                     width={1527}
                     height={2048}
-                    alt={"Istanbul"}
+                    alt={"Clearwater Falls"}
                     absolute={true}
                   />
                 ),
@@ -1594,7 +1594,7 @@ export default function Home() {
                     src={"/images/grand-teton-mouton-barn.jpg"}
                     width={2048}
                     height={1365}
-                    alt={"Istanbul"}
+                    alt={"Grand Teton"}
                     absolute={true}
                   />
                 ),
@@ -1607,7 +1607,7 @@ export default function Home() {
                     src={"/images/portland-lighthouse.jpg"}
                     width={2048}
                     height={1365}
-                    alt={"Seville"}
+                    alt={"Portland"}
                     absolute={true}
                   />
                 ),
