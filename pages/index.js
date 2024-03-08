@@ -733,7 +733,7 @@ export default function Home() {
                         href={
                           "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous"
                         }
-                        label={"Commencez à innover dès maintenant !"}
+                        label={"Innovons dès maintenant !"}
                       />
                     </p>
                   ) : (
@@ -849,9 +849,7 @@ export default function Home() {
                                   href={
                                     "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous"
                                   }
-                                  label={
-                                    "Sécurisez un accompagnement d'expert !"
-                                  }
+                                  label={"Sécuriser votre expert !"}
                                 />
                               </p>
                             ),
@@ -957,72 +955,6 @@ export default function Home() {
                   <Product
                     title={
                       i18n.language === "fr"
-                        ? "Planification Stratégique"
-                        : "Strategic Planning"
-                    }
-                    label={
-                      i18n.language === "fr"
-                        ? "Réservez votre séance!"
-                        : "Book Your Session Now!"
-                    }
-                    className={"align--lg-left"}
-                  >
-                    {i18n.language === "fr" ? (
-                      <>
-                        <p>
-                          Un plan d&apos;action personnalisé pour concrétiser
-                          votre vision, comprenant un cahier des charges
-                          détaillé et une feuille de route stratégique.
-                        </p>
-                        <ul className="small align--left">
-                          <li>Séance diagnostique incluse.</li>
-                          <li>
-                            Élaboration d&apos;un plan d&apos;intervention sur
-                            mesure.
-                          </li>
-                          <li>Stratégie d&apos;évolution du produit.</li>
-                          <li>Analyse des technologies appropriées.</li>
-                          <li>Planification des ressources et du budget.</li>
-                          <li>
-                            Définition d&apos;un calendrier de développement.
-                          </li>
-                          <li>
-                            Coordination des plateformes et outils
-                            technologiques.
-                          </li>
-                        </ul>
-                      </>
-                    ) : (
-                      <>
-                        <p>
-                          A tailored action plan to realize your vision,
-                          including a detailed specification book and a
-                          strategic roadmap.
-                        </p>
-                        <ul className="small align--left">
-                          <li>Diagnostic Session included.</li>
-                          <li>
-                            Development of a personalized intervention plan.
-                          </li>
-                          <li>Product evolution strategy.</li>
-                          <li>Analysis of suitable technologies.</li>
-                          <li>Planning of resources and budget.</li>
-                          <li>Definition of a development schedule.</li>
-                          <li>
-                            Coordination of platforms and technological tools.
-                          </li>
-                        </ul>
-                      </>
-                    )}
-                  </Product>
-                ),
-              },
-              {
-                cols: { col: 4, lg: 10, sm: 12 },
-                content: (
-                  <Product
-                    title={
-                      i18n.language === "fr"
                         ? "Séance Diagnostique"
                         : "Diagnostic Session"
                     }
@@ -1089,6 +1021,73 @@ export default function Home() {
                   </Product>
                 ),
               },
+              {
+                cols: { col: 4, lg: 10, sm: 12 },
+                content: (
+                  <Product
+                    title={
+                      i18n.language === "fr"
+                        ? "Planification Stratégique"
+                        : "Strategic Planning"
+                    }
+                    label={
+                      i18n.language === "fr"
+                        ? "Réservez votre séance!"
+                        : "Book Your Session Now!"
+                    }
+                    className={"align--lg-left"}
+                  >
+                    {i18n.language === "fr" ? (
+                      <>
+                        <p>
+                          Un plan d&apos;action personnalisé pour concrétiser
+                          votre vision, comprenant un cahier des charges
+                          détaillé et une feuille de route stratégique.
+                        </p>
+                        <ul className="small align--left">
+                          <li>Séance diagnostique incluse.</li>
+                          <li>
+                            Élaboration d&apos;un plan d&apos;intervention sur
+                            mesure.
+                          </li>
+                          <li>Stratégie d&apos;évolution du produit.</li>
+                          <li>Analyse des technologies appropriées.</li>
+                          <li>Planification des ressources et du budget.</li>
+                          <li>
+                            Définition d&apos;un calendrier de développement.
+                          </li>
+                          <li>
+                            Coordination des plateformes et outils
+                            technologiques.
+                          </li>
+                        </ul>
+                      </>
+                    ) : (
+                      <>
+                        <p>
+                          A tailored action plan to realize your vision,
+                          including a detailed specification book and a
+                          strategic roadmap.
+                        </p>
+                        <ul className="small align--left">
+                          <li>Diagnostic Session included.</li>
+                          <li>
+                            Development of a personalized intervention plan.
+                          </li>
+                          <li>Product evolution strategy.</li>
+                          <li>Analysis of suitable technologies.</li>
+                          <li>Planning of resources and budget.</li>
+                          <li>Definition of a development schedule.</li>
+                          <li>
+                            Coordination of platforms and technological tools.
+                          </li>
+                        </ul>
+                      </>
+                    )}
+                  </Product>
+                ),
+              },
+
               {
                 cols: { col: 4, lg: 10, sm: 12 },
                 content: (
@@ -1278,7 +1277,7 @@ export default function Home() {
                         href={
                           "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous"
                         }
-                        label={"Discutons de vos besoins technologiques !"}
+                        label={"Discutons technologies !"}
                       />
                     </p>
                   ) : (
@@ -1520,7 +1519,7 @@ export default function Home() {
                         href={
                           "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous"
                         }
-                        label={"Maximisez le potentiel de votre projet !"}
+                        label={"Maximiser votre potentiel !"}
                       />
                     </p>
                   ) : (
@@ -1633,7 +1632,7 @@ export default function Home() {
                         href={
                           "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous"
                         }
-                        label={"Contactez-moi pour des perspectives uniques !"}
+                        label={"Contactez-moi !"}
                       />
                     </p>
                   ) : (
