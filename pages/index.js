@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 import SEO from "../components/SEO";
 import Row from "../components/Layout/Row";
@@ -1663,6 +1664,7 @@ export default function Home() {
         <Footer />
       </Container>
       <SpeedInsights />;
+      <Analytics />
     </>
   );
 }
