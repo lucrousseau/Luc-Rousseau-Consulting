@@ -131,7 +131,7 @@ export default function Home() {
                                   à votre disposition.
                                 </h4>
                                 <p>
-                                  En tant que consultant et CTO à la demande, je
+                                  En tant que consultant et CTO fractionné, je
                                   guide les startups et les PME dans le
                                   développement de leur MVP (Produit Minimum
                                   Viable). Fort de mon expertise en
@@ -166,7 +166,7 @@ export default function Home() {
                                   projects.
                                 </h4>
                                 <p>
-                                  As a consultant and on-demand CTO, I
+                                  As a consultant and fractional CTO, I
                                   specialize in guiding startups and SMEs in
                                   creating their MVPs (Minimum Viable Products).
                                   Utilizing my unique skills in web development,
