@@ -1028,8 +1028,8 @@ export default function Home() {
                   <Product
                     title={
                       i18n.language === "fr"
-                        ? "Planification Stratégique"
-                        : "Strategic Planning"
+                        ? "Énoncé des travaux"
+                        : "Scope of Work (SOW)"
                     }
                     label={
                       i18n.language === "fr"
@@ -1043,7 +1043,7 @@ export default function Home() {
                         <p>
                           Un plan d&apos;action personnalisé pour concrétiser
                           votre vision, comprenant un cahier des charges
-                          détaillé et une feuille de route stratégique.
+                          détaillé et une feuille de route.
                         </p>
                         <ul className="small align--left">
                           <li>Séance diagnostique incluse.</li>
@@ -1067,8 +1067,7 @@ export default function Home() {
                       <>
                         <p>
                           A tailored action plan to realize your vision,
-                          including a detailed specification book and a
-                          strategic roadmap.
+                          including a detailed specification book and a roadmap.
                         </p>
                         <ul className="small align--left">
                           <li>Diagnostic Session included.</li>
