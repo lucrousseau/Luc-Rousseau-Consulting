@@ -24,21 +24,15 @@ export default function Home() {
     <>
       {i18n.language === "fr" ? (
         <SEO
-          title="Luc Rousseau - CTO à la Demande et Spécialiste de la Création de Produits Numériques"
-          description="De l'UX/UI au développement freelance,
-          mes 25 ans d'expérience m'ont doté
-          d'une expertise transversale que je mets
-          à votre disposition."
+          title="Luc Rousseau - CTO à la Demande et Spécialiste de la Création de Produits Numériques, Montreal, Canada"
+          description="En tant que CTO fractionné, je me spécialise dans l'accompagnement des startups et des PME dans la création de leurs MVP (Produits Minimalement Viables) et la définition de leur Cahier des Charges (CDC)."
           image="/og/image-fr.jpg"
           url="/"
         />
       ) : (
         <SEO
-          title="Luc Rousseau - On-Demand CTO & Digital Product Specialist"
-          description="With over 25 years of experience spanning
-          UX/UI to freelance development, I offer
-          cross-disciplinary expertise for your
-          projects."
+          title="Luc Rousseau - CTO On-Demand & Digital Product Specialist, Montreal, Canada"
+          description="As a Fractional CTO, I specialize in guiding startups and SMEs in creating their MVPs (Minimum Viable Products) and defining their Scope of Work (SOW)."
           image="/og/image-en.jpg"
           url="/"
         />
@@ -102,7 +96,7 @@ export default function Home() {
                               </h3>
                             ) : (
                               <h3>
-                                On-Demand CTO & Digital Product Specialist
+                                CTO On-Demand & Digital Product Specialist
                               </h3>
                             )}
                             <Row
@@ -789,10 +783,10 @@ export default function Home() {
                   ) : (
                     <>
                       <h2 className="underline underline--center">
-                        Why Opt for an On-Demand CTO
+                        Why Opt for an CTO On-Demand
                       </h2>
                       <p className="big">
-                        Choosing an on-demand CTO means securing a partner who
+                        Choosing an CTO on-demand means securing a partner who
                         understands your vision and provides tailored technical
                         expertise to guide innovation and optimize development
                         at every stage.
@@ -935,7 +929,7 @@ export default function Home() {
                   ) : (
                     <>
                       <h2 className="underline underline--center">
-                        My On-Demand CTO Service Offering
+                        My CTO On-Demand Service Offering
                       </h2>
                       <p className="big">
                         I bring you technical expertise coupled with a strategic
@@ -1028,7 +1022,7 @@ export default function Home() {
                   <Product
                     title={
                       i18n.language === "fr"
-                        ? "Énoncé des travaux"
+                        ? "Cahier des Charges"
                         : "Scope of Work (SOW)"
                     }
                     label={
