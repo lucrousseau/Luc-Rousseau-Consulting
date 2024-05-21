@@ -4,7 +4,7 @@ import { alignments } from "../../commons/alignments";
 
 import { useTranslation } from "next-i18next";
 
-import Row from "../Layout/Row";
+import Row from "../../components/Layout/Row";
 import moment from "moment";
 
 export default function Footer({ ...props }) {

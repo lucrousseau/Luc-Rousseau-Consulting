@@ -4,18 +4,19 @@ import { alignments } from "../../commons/alignments";
 
 import { useTranslation } from "next-i18next";
 
-import Row from "../Layout/Row";
+import Row from "../../components/Layout/Row";
 
-import Logo from "../Logo";
-import Navigation from "../Navigation";
-import SocialLinks from "../SocialLinks";
-import LanguageSwitcher from "../LanguageSwitcher";
-import Button from "../Button";
+import Logo from "../../components/Logo";
+import Navigation from "../../components/Navigation";
+import SocialLinks from "../../components/SocialLinks";
+import LanguageSwitcher from "../../components/LanguageSwitcher";
+import Button from "../../components/Button";
 
 import "./style.scss";
 
-export default function Header({ lang, ...props }) {
-  const { t } = useTranslation();
+export default function Header({ ...props }) {
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language === "en" ? "fr" : "en";
   const alignmentsClass = alignments({ props });
 
   return (
@@ -91,12 +92,9 @@ export default function Header({ lang, ...props }) {
                                                         variant={"primary"}
                                                         size={"small"}
                                                         label={t("contact-me")}
-                                                        href={
-                                                          "mailto:" +
-                                                          t(
-                                                            "hello@lucrousseau.com"
-                                                          )
-                                                        }
+                                                        href={t(
+                                                          "hello@lucrousseau.com"
+                                                        )}
                                                       />
                                                     ),
                                                   },

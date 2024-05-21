@@ -1,0 +1,32 @@
+{
+  "anchor": "development",
+  "navigation-label": "Development",
+  "title": "The Languages and Technologies I Master",
+  "summary": "</h2><p className=\"big\">My expertise spans design, development, and project management, transforming ideas into key digital solutions.</p>",
+  "items": [
+    "Leadership",
+    "React",
+    "Vue.js",
+    "PHP",
+    "Webpack",
+    "Design",
+    "ChatGPT",
+    "Evaluation",
+    "Copilot",
+    "WordPress",
+    "GraphQL",
+    "REST API",
+    "GIT",
+    "Laravel",
+    "Agile",
+    "BEM",
+    "SCSS",
+    "Planning",
+    "Docker",
+    "Tailwind",
+    "Budgeting",
+    "Next.js",
+    "Figma"
+  ],
+  "footer-cta-label": "Start Innovating Now!"
+}
