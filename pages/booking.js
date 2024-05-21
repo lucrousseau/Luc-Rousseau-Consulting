@@ -1,7 +1,8 @@
 import Row from "../components/Layout/Row";
 import Container from "../components/Layout/Container";
 
-import Header from "../components/Header";
+import Header from "../sections/Header";
+
 import Footer from "../components/Footer";
 import Picture from "../components/Picture";
 import Booking from "../components/Booking";
