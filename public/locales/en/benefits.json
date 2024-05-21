@@ -1,0 +1,44 @@
+{
+  "anchor": "advantages",
+  "navigation-label": "Advantages",
+  "title": "The Benefits of My Service Offering",
+  "summary": "<p className=\"big\">I provide my technical expertise and strategic vision, stimulating innovation and optimizing development at critical moments of each project.</p>",
+  "items": [
+    {
+      "title": "Problem-Solving Expertise",
+      "emoji": "🔓",
+      "content": "<p>I find innovative and custom solutions for your challenges, backed by my diverse experience.</p>"
+    },
+    {
+      "title": "User Experience Focus",
+      "emoji": "👥",
+      "content": "<p>I consistently evaluate whether the team&apos;s efforts align with your users&apos; needs, ensuring their satisfaction.</p>"
+    },
+    {
+      "title": "Data-Driven Decisions",
+      "emoji": "💬",
+      "content": "<p>I adopt an analytical approach, turning your ideas into actionable insights.</p>"
+    },
+    {
+      "title": "Agility and Adaptability",
+      "emoji": "🔄",
+      "content": "<p>I use agile methods to stay flexible and adaptable, ensuring regular and efficient delivery.</p>"
+    },
+    {
+      "title": "Productivity Optimization",
+      "emoji": "⏩",
+      "content": "<p>I create a dynamic work environment, maximizing productivity and your team&apos;s well-being.</p>"
+    },
+    {
+      "title": "Expertise in Coding and No-Code Solutions",
+      "emoji": "💻",
+      "content": "<p>I combine traditional coding and No-Code solutions for maximum efficiency tailored to your needs.</p>"
+    },
+    {
+      "title": "Generative Artificial Intelligence",
+      "emoji": "🤖",
+      "content": "<p>I guide the exploration of generative artificial intelligence horizons to maximize your innovative potential.</p>"
+    }
+  ],
+  "footer-cta-label": "Maximize Your Project's Potential!"
+}

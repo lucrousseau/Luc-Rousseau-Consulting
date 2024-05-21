@@ -1,0 +1,26 @@
+{
+  "anchor": "services",
+  "navigation-label": "Services",
+  "title": "My CTO On-Demand Service Offering",
+  "summary": "<p className=\"big\">I bring you technical expertise coupled with a strategic vision to ensure the technological integration and adaptability of your project to current and future challenges.</p>",
+  "items": [
+    {
+      "title": "Diagnostic Session",
+      "subtitle": "One hour of strategic consultation to review your technological challenges and identify opportunities.",
+      "content": "<ul className=\"small align--left\"><li>Analysis of technological challenges and opportunities.</li><li>Advice based on best development practices and current trends.</li><li>Discussion on the state of your technological strategy and risk analysis.</li><li>Guidance to improve UX/UI in relation to your development processes.</li><li>Recommendations for next steps.</li></ul>",
+      "cta-label": "Book Your Session Now!"
+    },
+    {
+      "title": "Scope of Work (SOW)",
+      "subtitle": "A tailored action plan to realize your vision, including a detailed specification book and a roadmap.",
+      "content": "<ul className=\"small align--left\"><li>Diagnostic Session included.</li><li>Development of a personalized intervention plan.</li><li>Product evolution strategy.</li><li>Analysis of suitable technologies.</li><li>Planning of resources and budget.</li><li>Definition of a development schedule.</li><li>Coordination of platforms and technological tools.</li></ul>",
+      "cta-label": "Book Your Session Now!"
+    },
+    {
+      "title": "Long-Term Partnership",
+      "subtitle": "A deep and constant commitment to ensuring the quality and evolution of your project.",
+      "content": "<ul className=\"small align--left\"><li>Includes the Diagnostic Session and Strategic Planning.</li><li>Proactive management and regular monitoring of development and technological partners.</li><li>Strategic adjustments and continuous quality assurance.</li><li>Technological surveillance and advice on new trends.</li><li>Web development service.</li></ul>",
+      "cta-label": "Book Your Session Now!"
+    }
+  ]
+}

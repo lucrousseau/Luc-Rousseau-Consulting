@@ -1,15 +1,5 @@
 {
-  "projects": "Projets",
-  "why": "Pourquoi",
-  "services": "Services",
-  "development": "Développement",
-  "advantages": "Avantages",
-  "#projects": "#projets",
-  "_why": "pourquoi",
-  "_services": "services",
-  "_development": "developpement",
-  "_advantage": "avantage",
   "contact-me": "Contactez-moi!",
-  "hello@lucrousseau.com": "bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous",
+  "hello@lucrousseau.com": "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous",
   "have-good-day": "Passez une bonne journée !"
 }

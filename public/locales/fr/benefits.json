@@ -1,0 +1,44 @@
+{
+  "anchor": "avantages",
+  "navigation-label": "Avantages",
+  "title": "Les Avantages de Mon Service",
+  "summary": "<p className=\"big\">Je mets à disposition mon expertise technique et ma vision stratégique, stimulant l&apos;innovation et optimisant le développement lors des moments clés de chaque projet.</p>",
+  "items": [
+    {
+      "title": "Expertise en résolution de problèmes",
+      "emoji": "🔓",
+      "content": "<p>Je propose des solutions innovantes et personnalisées pour relever vos défis, fort de mon expérience diversifiée.</p>"
+    },
+    {
+      "title": "Focus sur l'expérience utilisateur",
+      "emoji": "👥",
+      "content": "<p>Je veille constamment à aligner les efforts de l&apos;équipe sur les besoins de vos utilisateurs, garantissant leur satisfaction.</p>"
+    },
+    {
+      "title": "Prise de décisions basée sur les données",
+      "emoji": "💬",
+      "content": "<p>J&apos;adopte une approche analytique pour transformer vos idées en insights exploitables.</p>"
+    },
+    {
+      "title": "Agilité et adaptabilité",
+      "emoji": "🔄",
+      "content": "<p>J&apos;utilise des méthodes agiles pour rester flexible et réactif, assurant une livraison régulière et efficace.</p>"
+    },
+    {
+      "title": "Optimisation de la productivité",
+      "emoji": "⏩",
+      "content": "<p>Je crée un environnement de travail dynamique, maximisant la productivité et le bien-être de vos équipes.</p>"
+    },
+    {
+      "title": "Compétences en codage et solutions sans code",
+      "emoji": "💻",
+      "content": "<p>Je combine le codage traditionnel et les solutions sans code pour une efficacité maximale, adaptée à vos besoins.</p>"
+    },
+    {
+      "title": "Intelligence artificielle générative",
+      "emoji": "🤖",
+      "content": "<p>Je vous guide dans l&apos;exploration des possibilités offertes par l&apos;intelligence artificielle générative pour maximiser votre potentiel d&apos;innovation.</p>"
+    }
+  ],
+  "footer-cta-label": "Maximiser votre potentiel !"
+}
