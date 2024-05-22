@@ -8,8 +8,11 @@ import Button from "../../components/Button";
 import Accordion from "../../components/Accordion";
 
 export default function Benefits() {
-  const { t, i18n } = useTranslation();
-  const items = t("benefits:items", { returnObjects: true });
+  const { t } = useTranslation();
+  const items = t("benefits:items", { returnObjects: true }).map((item) => ({
+    ...item,
+    content: parse(item.content),
+  }));
 
   return (
     <Container id={t("benefits:anchor")} align={"center"} halign={"center"}>
