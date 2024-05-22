@@ -14,6 +14,7 @@ export default function Tangible() {
     const content = (
       <>
         {parse(item.content)}
+
         {item["cta-link"] && item["cta-label"] && (
           <p align="right">
             <Button
@@ -31,7 +32,7 @@ export default function Tangible() {
     return {
       title: item.title,
       emoji: item.emoji || "🧠",
-      content,
+      content: content,
     };
   });
 
