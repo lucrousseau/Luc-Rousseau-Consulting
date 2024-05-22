@@ -11,6 +11,15 @@ export default function Footer({ ...props }) {
   const { t } = useTranslation();
   const alignmentsClass = alignments({ props });
 
+  const getEmail = (email) => {
+    const startIndex = email.indexOf(":");
+    const endIndex = email.indexOf("?");
+    if (startIndex !== -1 && endIndex !== -1) {
+      return email.substring(startIndex + 1, endIndex);
+    }
+    return email;
+  };
+
   return (
     <div className={classNames("component component__footer", alignmentsClass)}>
       <Row
@@ -24,7 +33,12 @@ export default function Footer({ ...props }) {
                   {
                     content: (
                       <p>
-                        <small>{moment().format("YYYY")} © Luc Rousseau</small>
+                        <small>
+                          {moment().format("YYYY")} © Luc Rousseau   |  {" "}
+                          <a href={t("hello@lucrousseau.com")}>
+                            {getEmail(t("hello@lucrousseau.com"))}
+                          </a>
+                        </small>
                       </p>
                     ),
                   },
