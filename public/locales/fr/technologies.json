@@ -2,9 +2,8 @@
   "anchor": "developpement",
   "navigation-label": "Développement",
   "title": "Les Langages et Technologies que Je Maîtrise",
-  "summary": "<p className=\"big\">Mon expertise s&apos;étend du design au développement et à la gestion de projet, transformant les idées en solutions numériques clés.</p>",
+  "summary": "<p className=\"big\">Mon expertise s'étend du design au développement et à la gestion de projet, transformant les idées en solutions numériques clés.</p>",
   "items": [
-    "Leadership",
     "React",
     "Vue.js",
     "PHP",
@@ -26,7 +25,8 @@
     "Tailwind",
     "Budgeting",
     "Next.js",
-    "Figma"
+    "Figma",
+    "Leadership"
   ],
-  "footer-cta-label": "Discutons technologies !"
+  "footer-cta-label": "Discutons de votre projet !"
 }
