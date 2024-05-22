@@ -25,7 +25,7 @@ export default function Buy({ className, price, legend, label, ...props }) {
       <Button
         variant={"secondary"}
         size={"small"}
-        href={t("hello@lucrousseau.com")}
+        href={t("schedule-me")}
         label={label}
       />
     </p>
