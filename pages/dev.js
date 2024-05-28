@@ -1,3 +1,4 @@
+/*
 import { useTranslation } from "next-i18next";
 
 import SEO from "../components/SEO";
@@ -94,3 +95,4 @@ export const getServerSideProps = async ({ locale }) => ({
     ])),
   },
 });
+*/
