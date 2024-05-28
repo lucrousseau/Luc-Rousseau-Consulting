@@ -171,8 +171,8 @@ $mobile-nav-tertiary-breakpoint: 480px;
   --heading-6-color: var(--set-heading-6-color, #131e61);
 
   // Links
-  --link-color: var(--set-link-color, #6c8e7b);
-  --link-color-hover: var(--set-link-color-hover, #6c8e7b);
+  --link-color: var(--set-link-color, #647e72);
+  --link-color-hover: var(--set-link-color-hover, #647e72);
 
   --external-link-color: var(--set-external-link-color, #131e61);
   --external-link-color-hover: var(--set-external-link-color-hover, #131e61);
@@ -184,7 +184,7 @@ $mobile-nav-tertiary-breakpoint: 480px;
 
   --btn-primary-background-color: var(
     --set-btn-primary-background-color,
-    #6c8e7b
+    #647e72
   );
   --btn-secondary-background-color: var(
     --set-btn-secondary-background-color,
@@ -245,7 +245,7 @@ $mobile-nav-tertiary-breakpoint: 480px;
     var(--set-shadow-size, 10) / var(--body-font-size) * 1rem
   );
 
-  --primary-accent-color: var(--set-accent-color, #6c8e7b);
+  --primary-accent-color: var(--set-accent-color, #647e72);
   --secondary-accent-color: var(--set-secondary-accent-color, #ee6f57);
   --secondary-background-color: var(--set-light-background-color, #ffffff);
 
