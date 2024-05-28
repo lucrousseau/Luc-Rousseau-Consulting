@@ -3,7 +3,6 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
-
 import Picture from "../../components/Picture";
 import Button from "../../components/Button";
 
