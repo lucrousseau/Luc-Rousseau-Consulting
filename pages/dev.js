@@ -3,15 +3,15 @@ import { useTranslation } from "next-i18next";
 import SEO from "../components/SEO";
 import Container from "../components/Layout/Container";
 
-import Header from "../sections/Header/index.js";
-import Footer from "../sections/Footer/index.js";
-import HomeHero from "../sections/HomeHero/index.js";
-import Tangible from "../sections/Tangible/index.js";
-import Why from "../sections/Why/index.js";
-import Services from "../sections/Services/index.js";
-import Technologies from "../sections/Technologies/index.js";
-import Benefits from "../sections/Benefits/index.js";
-import Passion from "../sections/Passion/index.js";
+import Header from "../sections/Header";
+import Footer from "../sections/Footer";
+import HomeHero from "../sections/HomeHero";
+import Tangible from "../sections/Tangible";
+import Why from "../sections/Why";
+import Services from "../sections/Services";
+import Technologies from "../sections/Technologies";
+import Benefits from "../sections/Benefits";
+import Passion from "../sections/Passion";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 

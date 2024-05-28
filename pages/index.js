@@ -4,12 +4,12 @@ import { useTranslation } from "next-i18next";
 import SEO from "../components/SEO";
 import Container from "../components/Layout/Container";
 
-import Header from "../sections/Header/index.js";
-import Footer from "../sections/Footer/index.js";
-import DevelopmentHero from "../sections/DevelopmentHero/index.js";
-import Why from "../sections/Why/index.js";
-import Technologies from "../sections/Technologies/index.js";
-import Tangible from "../sections/Tangible/index.js";
+import Header from "../sections/Header";
+import Footer from "../sections/Footer";
+import DevelopmentHero from "../sections/DevelopmentHero";
+import Why from "../sections/Why";
+import Technologies from "../sections/Technologies";
+import Tangible from "../sections/Tangible";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
