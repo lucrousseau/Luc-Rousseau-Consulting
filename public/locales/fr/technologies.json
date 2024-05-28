@@ -1,7 +1,7 @@
 {
-  "anchor": "langages",
-  "navigation-label": "Langages",
-  "title": "Les Langages et Technologies que Je Maîtrise",
+  "anchor": "competences",
+  "navigation-label": "Compétences",
+  "title": "Compétences et Technologies que je Maîtrise",
   "summary": "<p className=\"big\">Mon expertise s'étend du design au développement et à la gestion de projet, transformant les idées en solutions numériques clés.</p>",
   "items": [
     "React",
