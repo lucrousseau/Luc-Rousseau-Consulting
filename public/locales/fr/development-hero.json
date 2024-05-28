@@ -22,6 +22,6 @@
   ],
   "buy": {
     "legend": "Forfaits à partir de",
-    "more": "<p className=\"small\"><strong>Aucun contrat requis</strong> — vous pouvez partir à tout moment. Choisissez entre des forfaits <strong>hebdomadaires</strong> ou <strong>mensuels</strong>. Options incluant des <strong>journées complètes</strong>, <strong>demi-journées</strong> ou des forfaits personnalisés. <a href=\"https://calendly.com/_lucrousseau/30min/\">Planifions une discussion</a> avec moi pour plus de détails.</p>"
+    "more": "<p className=\"small\"><strong>Aucun contrat requis</strong> — vous pouvez partir à tout moment. Choisissez entre des forfaits <strong>hebdomadaires</strong> ou <strong>mensuels</strong>. Options incluant des <strong>journées complètes</strong>, <strong>demi-journées</strong> ou des forfaits personnalisés. <a href=\"https://calendly.com/_lucrousseau/30min/\">Planifions une discussion</a> pour plus de détails.</p>"
   }
 }
