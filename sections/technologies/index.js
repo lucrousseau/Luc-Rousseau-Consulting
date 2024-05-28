@@ -7,7 +7,7 @@ import Container from "../../components/Layout/Container";
 import Button from "../../components/Button";
 import Tags from "../../components/Tags";
 
-export default function Technologies() {
+export default function Technologies({ backgroundColor, cta }) {
   const { t } = useTranslation();
 
   const items = t("technologies:items", { returnObjects: true }).map(
@@ -18,7 +18,12 @@ export default function Technologies() {
   );
 
   return (
-    <Container id={t("technologies:anchor")} align={"center"} halign={"center"}>
+    <Container
+      id={t("technologies:anchor")}
+      align={"center"}
+      halign={"center"}
+      backgroundColor={backgroundColor}
+    >
       <Row
         halign={"center"}
         style={{
@@ -58,8 +63,8 @@ export default function Technologies() {
               <p>
                 <Button
                   variant={"primary"}
-                  href={t("hello@lucrousseau.com")}
-                  label={t("technologies:footer-cta-label")}
+                  href={cta?.link ?? t("hello@lucrousseau.com")}
+                  label={cta?.label ?? t("technologies:footer-cta-label")}
                 />
               </p>
             ),

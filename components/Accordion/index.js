@@ -5,13 +5,23 @@ import { alignments } from "../../commons/alignments";
 
 import "./style.scss";
 
-export default function Accordion({ className, items, ...props }) {
+export default function Accordion({
+  className,
+  items,
+  callback = () => {},
+  ...props
+}) {
   const [activeIndex, setActiveIndex] = useState(null);
   const alignmentsClass = alignments({ props });
+  const accordionRef = useRef();
   const accordionRefs = useRef([]);
 
   const toggleItem = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
+    const getActiveIndex = activeIndex === index ? null : index;
+    const open = getActiveIndex !== null;
+
+    setActiveIndex(getActiveIndex);
+    callback({ open });
   };
 
   useEffect(() => {
@@ -30,6 +40,7 @@ export default function Accordion({ className, items, ...props }) {
         className,
         alignmentsClass
       )}
+      ref={accordionRef}
     >
       {items.map((item, index) => (
         <div

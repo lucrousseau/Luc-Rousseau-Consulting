@@ -6,7 +6,7 @@ import Container from "../../components/Layout/Container";
 
 import Button from "../../components/Button";
 
-export default function Why() {
+export default function Why({ backgroundColor, cta }) {
   const { t } = useTranslation();
 
   return (
@@ -20,6 +20,7 @@ export default function Why() {
         width: 2528,
         height: 1264,
       }}
+      backgroundColor={backgroundColor}
     >
       <Row
         halign={"center"}
@@ -59,8 +60,8 @@ export default function Why() {
                         <p>
                           <Button
                             variant={"primary"}
-                            href={t("hello@lucrousseau.com")}
-                            label={t("why:footer-cta-label")}
+                            href={cta?.link ?? t("hello@lucrousseau.com")}
+                            label={cta?.label ?? t("why:footer-cta-label")}
                           />
                         </p>
                       ),

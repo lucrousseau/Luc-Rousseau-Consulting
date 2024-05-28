@@ -16,23 +16,29 @@ export default function Product({
   ...props
 }) {
   const alignmentsClass = alignments({ props });
+  const hasNoLabel = label ? false : true;
 
   return (
     <div
       className={classNames(
         "component component__product",
         className,
-        alignmentsClass
+        alignmentsClass,
+        {
+          "component__product--has-nolabel": hasNoLabel,
+        }
       )}
     >
       <h3 className="h4">{title}</h3>
       {children}
-      <Buy
-        price={price}
-        legend={legend}
-        label={label}
-        className={"align--lg-right"}
-      />
+      {!hasNoLabel && (
+        <Buy
+          price={price}
+          legend={legend}
+          label={label}
+          className={"align--lg-right"}
+        />
+      )}
     </div>
   );
 }

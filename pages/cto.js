@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "next-i18next";
 
 import SEO from "../components/SEO";
@@ -6,22 +5,25 @@ import Container from "../components/Layout/Container";
 
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
-import DevelopmentHero from "../sections/DevelopmentHero";
-import Why from "../sections/Why";
-import Technologies from "../sections/Technologies";
+import HomeHero from "../sections/HomeHero";
 import Tangible from "../sections/Tangible";
+import Why from "../sections/Why";
+import Services from "../sections/Services";
+import Technologies from "../sections/Technologies";
+import Benefits from "../sections/Benefits";
+import Passion from "../sections/Passion";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-export default function Development() {
-  const { t } = useTranslation(["development", "hero-development", "common"]);
+export default function Home() {
+  const { t } = useTranslation(["home", "common"]);
 
   return (
     <>
       <SEO
-        title={t("development-seo-title")}
-        description={t("development-seo-description")}
-        image={t("development-seo-image")}
+        title={t("home-seo-title")}
+        description={t("home-seo-description")}
+        image={t("home-seo-image")}
         url="/"
       />
       <Container
@@ -36,42 +38,33 @@ export default function Development() {
         <Header
           navigation={[
             {
-              href: `#${t("development-hero:anchor")}`,
-              label: t("development-hero:navigation-label"),
+              href: `#${t("tangible:anchor")}`,
+              label: t("tangible:navigation-label"),
+            },
+            { href: `#${t("why:anchor")}`, label: t("why:navigation-label") },
+            {
+              href: `#${t("services:anchor")}`,
+              label: t("services:navigation-label"),
             },
             {
               href: `#${t("technologies:anchor")}`,
               label: t("technologies:navigation-label"),
             },
-            { href: `#${t("why:anchor")}`, label: t("why:navigation-label") },
             {
-              href: `#${t("tangible:anchor")}`,
-              label: t("tangible:navigation-label"),
+              href: `#${t("benefits:anchor")}`,
+              label: t("benefits:navigation-label"),
             },
           ]}
-          cta={false}
         />
       </Container>
       <main>
-        <DevelopmentHero />
-        <Technologies
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
-        <Why
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
-        <Tangible
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
+        <HomeHero />
+        <Tangible />
+        <Why />
+        <Services />
+        <Technologies />
+        <Benefits />
+        <Passion />
       </main>
       <Container
         tag={"footer"}
@@ -90,9 +83,9 @@ export const getServerSideProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, [
       "common",
-      "development",
+      "home",
       "benefits",
-      "development-hero",
+      "home-hero",
       "passion",
       "services",
       "tangible",

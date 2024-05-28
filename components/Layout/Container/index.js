@@ -12,23 +12,23 @@ export default function Container({
   id,
   className,
   background,
+  backgroundColor,
   style,
   ...props
 }) {
   const Tag = tag;
   const alignmentsClass = alignments({ prefix: "container", props });
-
   const tagProps = {
     className: classNames("container", className, alignmentsClass),
-    style: style,
+    style,
     ...(id && { id }),
   };
 
   return (
     <Tag {...tagProps}>
-      {background && (
-        <div className="container__background">
-          {background.src && (
+      {(background || backgroundColor) && (
+        <div className="container__background" style={{ backgroundColor }}>
+          {background && background.src && (
             <Picture
               src={background.src}
               width={background.width}

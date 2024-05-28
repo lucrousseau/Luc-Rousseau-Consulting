@@ -31,7 +31,8 @@
     #{$parent}.smaller,
     #{$parent}.small,
     #{$parent}.big,
-    #{$parent}.bigger {
+    #{$parent}.bigger,
+    #{$parent}.biggest {
       font-size: initial;
     }
   } @else {
@@ -40,6 +41,7 @@
       "small": 0.9,
       "big": 1.1,
       "bigger": 1.2,
+      "biggest": 1.5,
     );
 
     @each $size, $value in $font-sizes {

@@ -1,6 +1,6 @@
 {
-  "anchor": "development",
-  "navigation-label": "Development",
+  "anchor": "languages",
+  "navigation-label": "Languages",
   "title": "The Languages and Technologies I Master",
   "summary": "</h2><p className=\"big\">My expertise spans design, development, and project management, transforming ideas into key digital solutions.</p>",
   "items": [
@@ -9,9 +9,9 @@
     "PHP",
     "Webpack",
     "Design",
-    "ChatGPT",
     "Evaluation",
     "Copilot",
+    "Twig",
     "WordPress",
     "GraphQL",
     "REST API",
@@ -21,11 +21,13 @@
     "BEM",
     "SCSS",
     "Planning",
+    "JavaScript",
     "Docker",
     "Tailwind",
     "Budgeting",
     "Next.js",
     "Figma",
+    "ChatGPT",
     "Leadership"
   ],
   "footer-cta-label": "Let’s discuss your project!"

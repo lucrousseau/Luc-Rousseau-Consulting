@@ -15,6 +15,7 @@ import Button from "../../components/Button";
 import "./style.scss";
 
 export default function Header({ ...props }) {
+  const { navigation, cta } = props;
   const { t, i18n } = useTranslation();
   const lang = i18n.language === "en" ? "fr" : "en";
   const alignmentsClass = alignments({ props });
@@ -46,9 +47,11 @@ export default function Header({ ...props }) {
                                 valign={"middle"}
                                 halign={"right"}
                                 columns={[
-                                  {
+                                  navigation !== false && {
                                     className: "component__header__nav",
-                                    content: <Navigation />,
+                                    content: (
+                                      <Navigation navigation={navigation} />
+                                    ),
                                   },
                                   {
                                     className: "component__header__right",
@@ -78,7 +81,7 @@ export default function Header({ ...props }) {
                                               />
                                             ),
                                           },
-                                          {
+                                          cta !== false && {
                                             pull: "right",
                                             cols: { xs: 0 },
                                             content: (
@@ -102,15 +105,15 @@ export default function Header({ ...props }) {
                                               />
                                             ),
                                           },
-                                        ]}
+                                        ].filter(Boolean)}
                                       />
                                     ),
                                   },
-                                ]}
+                                ].filter(Boolean)}
                               />
                             ),
                           },
-                        ]}
+                        ].filter(Boolean)}
                       />
                     ),
                   },

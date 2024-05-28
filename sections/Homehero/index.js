@@ -75,7 +75,7 @@ export default function HomeHero() {
                           <Button
                             variant={"primary"}
                             href={t("schedule-me")}
-                            label={t("home-hero:footer-cta-label")}
+                            label={t("schedule-me-label")}
                           />
                         </p>
                       </>

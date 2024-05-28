@@ -7,7 +7,7 @@ import Container from "../../components/Layout/Container";
 import Button from "../../components/Button";
 import Accordion from "../../components/Accordion";
 
-export default function Tangible() {
+export default function Tangible({ cta }) {
   const { t } = useTranslation();
 
   const items = t("tangible:items", { returnObjects: true }).map((item) => {
@@ -77,8 +77,8 @@ export default function Tangible() {
               <p>
                 <Button
                   variant={"primary"}
-                  label={t("tangible:footer-cta-label")}
-                  href={t("hello@lucrousseau.com")}
+                  label={cta?.label ?? t("tangible:footer-cta-label")}
+                  href={cta?.link ?? t("hello@lucrousseau.com")}
                 />
               </p>
             ),

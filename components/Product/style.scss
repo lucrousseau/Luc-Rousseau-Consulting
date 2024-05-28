@@ -5,6 +5,7 @@
 @import "./styles/abstracts/mixins";
 
 .component__product {
+  margin: 0;
   height: 100%;
   padding: var(--double-padding);
   padding-top: var(--double-padding);
@@ -12,6 +13,10 @@
 
   background-color: var(--secondary-background-color);
   border-radius: var(--border-radius);
+
+  &--has-nolabel {
+    padding-bottom: var(--double-padding);
+  }
 
   @include shadow();
 
