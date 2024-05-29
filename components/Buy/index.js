@@ -11,6 +11,7 @@ export default function Buy({
   className,
   price,
   legend,
+  prefix,
   label,
   size = "small",
   variant = "secondary",
@@ -33,7 +34,13 @@ export default function Buy({
       data-price={price}
     >
       <span>
-        {legend} {price && <strong>{priceFormatted}</strong>}
+        {legend}{" "}
+        {price && (
+          <>
+            <strong>{priceFormatted}</strong>
+            {prefix && <> {prefix}</>}
+          </>
+        )}
       </span>
       <Button
         href={t("schedule-me")}

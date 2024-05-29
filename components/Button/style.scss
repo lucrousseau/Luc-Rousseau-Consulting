@@ -27,14 +27,9 @@
 
   &.small,
   &.smaller {
-    $padding: 0.9em;
-    padding: calc(#{$padding} - var(--border-width) * 4)
-      calc(#{$padding * 2} - var(--border-width) * 4);
-
-    @media screen and (max-width: $sm) {
-      padding-top: calc(0.9em - var(--border-width) * 4);
-      padding-bottom: calc(0.9em - var(--border-width) * 4);
-    }
+    $padding: 0.7em;
+    padding: calc(#{$padding} - (var(--border-width) * 4))
+      calc((#{$padding * 2.5}) - (var(--border-width) * 4));
   }
 
   &--disabled {

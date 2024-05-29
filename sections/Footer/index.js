@@ -31,24 +31,20 @@ export default function Footer({ ...props }) {
               <Row
                 columns={[
                   {
+                    cols: { col: 6, xs: 12 },
                     content: (
-                      <p>
-                        <small>
-                          {moment().format("YYYY")} © Luc Rousseau   |  {" "}
-                          <a href={t("hello@lucrousseau.com")}>
-                            {getEmail(t("hello@lucrousseau.com"))}
-                          </a>
-                        </small>
-                      </p>
+                      <small>
+                        {moment().format("YYYY")} © Luc Rousseau   |  {" "}
+                        <a href={t("hello@lucrousseau.com")}>
+                          {getEmail(t("hello@lucrousseau.com"))}
+                        </a>
+                      </small>
                     ),
                   },
                   {
                     pull: "right",
-                    content: (
-                      <p>
-                        <small>{t("have-good-day")}</small>
-                      </p>
-                    ),
+                    cols: { col: 6, xs: 12 },
+                    content: <small>{t("have-good-day")}</small>,
                   },
                 ]}
               />

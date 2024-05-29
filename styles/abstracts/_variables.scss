@@ -145,7 +145,7 @@ $mobile-nav-tertiary-breakpoint: 480px;
   );
 
   --heading-1-font-size: calc(
-    var(--set-heading-1-font-size, 60) / var(--body-font-size) * 1rem
+    var(--set-heading-1-font-size, 52) / var(--body-font-size) * 1rem
   );
   --heading-2-font-size: calc(
     var(--set-heading-2-font-size, 36) / var(--body-font-size) * 1rem
@@ -188,7 +188,7 @@ $mobile-nav-tertiary-breakpoint: 480px;
   );
   --btn-secondary-background-color: var(
     --set-btn-secondary-background-color,
-    #131e61
+    #454c73
   );
   --btn-tertiary-background-color: var(
     --set-btn-tertiary-background-color,
