@@ -31,16 +31,16 @@ export default function Footer({ ...props }) {
               <Row
                 columns={[
                   {
-                    cols: { col: 6, xs: 12 },
+                    pull: "left",
                     content: (
                       <small>
-                        {moment().format("YYYY")}©{" | "}
+                        {moment().format("YYYY")} ©{" "}
                         <a href={t("hello@lucrousseau.com")}>Luc Rousseau</a>
                       </small>
                     ),
                   },
                   {
-                    cols: { col: 6, xs: 12 },
+                    pull: "right",
                     className: "align--right",
                     content: <small>{t("have-good-day")}</small>,
                   },
