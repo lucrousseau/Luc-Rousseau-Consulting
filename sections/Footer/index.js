@@ -34,16 +34,14 @@ export default function Footer({ ...props }) {
                     cols: { col: 6, xs: 12 },
                     content: (
                       <small>
-                        {moment().format("YYYY")} © Luc Rousseau   |  {" "}
-                        <a href={t("hello@lucrousseau.com")}>
-                          {getEmail(t("hello@lucrousseau.com"))}
-                        </a>
+                        {moment().format("YYYY")}©{" | "}
+                        <a href={t("hello@lucrousseau.com")}>Luc Rousseau</a>
                       </small>
                     ),
                   },
                   {
-                    pull: "right",
                     cols: { col: 6, xs: 12 },
+                    className: "align--right",
                     content: <small>{t("have-good-day")}</small>,
                   },
                 ]}
