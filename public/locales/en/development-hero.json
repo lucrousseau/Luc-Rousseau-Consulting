@@ -5,14 +5,14 @@
   "quote": "<h3>\"Whether you're a startup or an established business, my flexible service packages ensure you get the best value for your investment.\"</h3>",
   "items": [
     {
-      "emoji": "⭐️",
-      "title": "Full Stack Development",
-      "content": "<h4>Front-end Development</h4><p>Enhance user experience with stunning, responsive designs using React.js, other SPAs, or vanilla JavaScript. Benefit from seamless state management, RESTful API integration, and pixel-perfect design implementation.</p><h6>Tech Stack</h6><ul className=\"small\"><li>HTML, SCSS, JavaScript, React.js, Vue.js, SPA, Git, Webpack, Babel, NPM, ...</li></ul><h4>Back-end Development</h4><p>Ensure robust server-side functionality with PHP/MySQL, Laravel, or fully custom WordPress solutions. Enjoy smooth integration with front-end components, optimized performance, and reliable database management.</p><h6>Tech Stack</h6><ul className=\"small\"><li>PHP, Laravel, Twig, WordPress, MySQL, Composer, Git, ...</li></ul><h6>Methodology</h6><ul className=\"small\"><li><strong>Agile Approach</strong>: Task prioritization in a backlog, participation in sprints, and standups to keep your project on track.</li><li><strong>Consultation</strong>: Personalized guidance to help you achieve your business objectives efficiently. </li></ul>"
-    },
-    {
       "emoji": "🔧",
       "title": "WordPress Maintenance",
       "content": "<p>Get tailor-made custom themes, plugins, and Gutenberg blocks in React. Boost your site's performance with advanced caching and optimization techniques for a super fast WordPress experience.</p><p>Or you can opt for my WordPress Care + Maintenance package, which includes performance audits, security updates, and more. This package also includes online developer time for updates and modifications to your site.</p><h6>Tech Stack</h6><ul className=\"small\"><li><strong>Front-end</strong>: HTML, HTML, SCSS, JavaScript, React.js, Vue.js, SPA, Git, Webpack, Babel, NPM, ...</li><li><strong>Back-end</strong>: PHP, Twig, WordPress, MySQL</li><li><strong>Tools: </strong> PHP, Twig, MySQL, Composer, ...</li></ul><h6>Methodology</h6><ul className=\"small\"><li><strong>Agile Approach</strong>: Task prioritization in a backlog, participation in sprints, and standups to keep your project on track.</li><li><strong>Consultation</strong>: Personalized guidance to help you achieve your business objectives efficiently.</li></ul>"
+    },
+    {
+      "emoji": "⭐️",
+      "title": "Full Stack Development",
+      "content": "<h4>Front-end Development</h4><p>Enhance user experience with stunning, responsive designs using React.js, other SPAs, or vanilla JavaScript. Benefit from seamless state management, RESTful API integration, and pixel-perfect design implementation.</p><h6>Tech Stack</h6><ul className=\"small\"><li>HTML, SCSS, JavaScript, React.js, Vue.js, SPA, Git, Webpack, Babel, NPM, ...</li></ul><h4>Back-end Development</h4><p>Ensure robust server-side functionality with PHP/MySQL, Laravel, or fully custom WordPress solutions. Enjoy smooth integration with front-end components, optimized performance, and reliable database management.</p><h6>Tech Stack</h6><ul className=\"small\"><li>PHP, Laravel, Twig, WordPress, MySQL, Composer, Git, ...</li></ul><h6>Methodology</h6><ul className=\"small\"><li><strong>Agile Approach</strong>: Task prioritization in a backlog, participation in sprints, and standups to keep your project on track.</li><li><strong>Consultation</strong>: Personalized guidance to help you achieve your business objectives efficiently. </li></ul>"
     },
     {
       "emoji": "🚀",
