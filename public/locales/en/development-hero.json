@@ -11,7 +11,7 @@
     },
     {
       "emoji": "🔧",
-      "title": "WordPress Development",
+      "title": "WordPress Maintenance",
       "content": "<p>Get tailor-made custom themes, plugins, and Gutenberg blocks in React. Boost your site's performance with advanced caching and optimization techniques for a super fast WordPress experience.</p><p>Or you can opt for my WordPress Care + Maintenance package, which includes performance audits, security updates, and more. This package also includes online developer time for updates and modifications to your site.</p><h6>Tech Stack</h6><ul className=\"small\"><li><strong>Front-end</strong>: HTML, HTML, SCSS, JavaScript, React.js, Vue.js, SPA, Git, Webpack, Babel, NPM, ...</li><li><strong>Back-end</strong>: PHP, Twig, WordPress, MySQL</li><li><strong>Tools: </strong> PHP, Twig, MySQL, Composer, ...</li></ul><h6>Methodology</h6><ul className=\"small\"><li><strong>Agile Approach</strong>: Task prioritization in a backlog, participation in sprints, and standups to keep your project on track.</li><li><strong>Consultation</strong>: Personalized guidance to help you achieve your business objectives efficiently.</li></ul>"
     },
     {
@@ -23,6 +23,6 @@
   "buy": {
     "legend": "Package Starting at",
     "more": "<p className=\"small\"><strong>No contract required</strong>—you can leave anytime. Choose from <strong>weekly</strong> or <strong>monthly</strong> package agreements. Options include <strong>full-day</strong>, <strong>half-day</strong>, or custom packages. <a href=\"https://calendly.com/_lucrousseau/30min/\">schedule a chat</a> for more details.</p>",
-    "prefix": "p.m."
+    "prefix": "/month"
   }
 }

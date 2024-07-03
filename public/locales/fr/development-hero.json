@@ -11,7 +11,7 @@
     },
     {
       "emoji": "🔧",
-      "title": "Développement WordPress",
+      "title": "Maintenance Wordpress",
       "content": "<p>Obtenez des thèmes, plugins et blocs Gutenberg sur mesure en React. Améliorez les performances de votre site avec des techniques avancées de mise en cache et d'optimisation pour une expérience WordPress ultra-rapide.</p><p>Ou vous pouvez opter pour mon forfait de Maintenance + Soin WordPress, qui inclut des audits de performance, des mises à jour de sécurité, et plus encore. Ce forfait inclut également du temps de développeur en ligne pour les mises à jour et les modifications de votre site.</p><h6>Tech Stack</h6><ul className=\"small\"><li><strong>Front-end</strong> : HTML, SCSS, JavaScript, React.js, Vue.js, SPA, Git, Webpack, Babel, NPM, ...</li><li><strong>Back-end</strong> : PHP, Twig, WordPress, MySQL</li><li><strong>Outils :</strong> Composer, Git, Webpack, Babel</li></ul><h6>Méthodologie</h6><ul className=\"small\"><li><strong>Approche Agile</strong> : Priorisation des tâches dans un backlog, participation aux sprints et aux réunions quotidiennes pour garder votre projet sur la bonne voie.</li><li><strong>Consultation</strong> : Des conseils personnalisés pour vous aider à atteindre vos objectifs commerciaux efficacement.</li></ul>"
     },
     {
@@ -23,6 +23,6 @@
   "buy": {
     "legend": "Forfaits à partir de",
     "more": "<p className=\"small\"><strong>Aucun contrat requis</strong> — vous pouvez partir à tout moment. Choisissez entre des forfaits <strong>hebdomadaires</strong> ou <strong>mensuels</strong>. Options incluant des <strong>journées complètes</strong>, <strong>demi-journées</strong> ou des forfaits personnalisés. <a href=\"https://calendly.com/_lucrousseau/30min/\">Planifions une discussion</a> pour plus de détails.</p>",
-    "prefix": "p.m."
+    "prefix": "/mois"
   }
 }
