@@ -45,6 +45,7 @@ const column = (item, index) => {
 };
 
 export default function Row({
+  id,
   children,
   className,
   columns = [],
@@ -61,6 +62,7 @@ export default function Row({
 
   return (
     <Tag
+      id={id}
       className={classNames("row", className, alignmentsClass, reverseClass, {
         "row--nowrap": nowrap,
         "row--inline": inline,

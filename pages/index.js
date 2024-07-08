@@ -7,6 +7,7 @@ import Container from "../components/Layout/Container";
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 import DevelopmentHero from "../sections/DevelopmentHero";
+import WhatICanDo from "../sections/WhatICanDo";
 import Why from "../sections/Why";
 import Technologies from "../sections/Technologies";
 import Tangible from "../sections/Tangible";
@@ -40,6 +41,10 @@ export default function Development() {
               label: t("development-hero:navigation-label"),
             },
             {
+              href: `#${t("whaticando:anchor")}`,
+              label: t("whaticando:navigation-label"),
+            },
+            {
               href: `#${t("technologies:anchor")}`,
               label: t("technologies:navigation-label"),
             },
@@ -54,6 +59,7 @@ export default function Development() {
       </Container>
       <main>
         <DevelopmentHero />
+        <WhatICanDo />
         <Technologies
           cta={{
             label: t("common:schedule-me-label"),
@@ -97,6 +103,7 @@ export const getServerSideProps = async ({ locale }) => ({
       "services",
       "tangible",
       "technologies",
+      "whaticando",
       "why",
     ])),
   },

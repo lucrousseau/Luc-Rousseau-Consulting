@@ -29,7 +29,7 @@ export default function Product({
         }
       )}
     >
-      <h3 className="h4">{title}</h3>
+      <h3>{title}</h3>
       {children}
       {!hasNoLabel && (
         <Buy

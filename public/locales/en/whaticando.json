@@ -1,0 +1,34 @@
+{
+  "anchor": "whaticando",
+  "navigation-label": "Services",
+  "title": "What I Can Accomplish in a Half-Day",
+  "summary": "<p className=\"big\">Achieve significant progress in just a half-day with my expert solutions to update, secure, optimize, and enhance your digital presence.</p>",
+  "items": [
+    {
+      "title": "WordPress & Plugin Updates",
+      "content": "<p>I can update your WordPress site and plugins to ensure improved security and functionality.</p>"
+    },
+    {
+      "title": "Backup & Security Setup",
+      "content": "<p>I can configure your backups and security settings to protect your site against data loss and vulnerabilities.</p>"
+    },
+    {
+      "title": "Website Optimization for Speed",
+      "content": "<p>I can optimize your website’s performance and speed for a better user experience and improved SEO.</p>"
+    },
+    {
+      "title": "Build Custom Functionality",
+      "content": "<p>I can create unique, tailored functionalities to meet the specific needs of your website or application.</p>"
+    },
+    {
+      "title": "Debug Your Hacked Website",
+      "content": "<p>I can identify and fix issues in your hacked website to ensure smooth and efficient operation.</p>"
+    },
+    {
+      "title": "WordPress Migrations",
+      "content": "<p>I can handle seamless WordPress migrations to ensure your site is moved efficiently and without issues.</p>"
+    }
+  ],
+  "footer-content": "<p className=\"noMarginBottom\"><span className=\"biggest\">And so much more!</span></p><p>Discover additional ways I can assist with your digital development needs by <a href=\"https://calendly.com/_lucrousseau/30min/\">scheduling a chat</a> with me!</p>",
+  "footer-cta-label": "Schedule a Chat!"
+}

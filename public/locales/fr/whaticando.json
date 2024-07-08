@@ -1,0 +1,34 @@
+{
+  "anchor": "cequejepeuxfaire",
+  "navigation-label": "Prestations",
+  "title": "Ce Que Je Peux Accomplir en Une Demi-Journée",
+  "summary": "<p className=\"big\">Réalisez des progrès significatifs en seulement une demi-journée grâce à mes solutions expertes pour mettre à jour, sécuriser, optimiser et améliorer votre présence numérique.</p>",
+  "items": [
+    {
+      "title": "Mises à Jour de WordPress & Plugins",
+      "content": "<p>Je peux mettre à jour votre site WordPress et vos plugins pour garantir une sécurité et une fonctionnalité améliorées.</p>"
+    },
+    {
+      "title": "Configuration de Sauvegarde & Sécurité",
+      "content": "<p>Je peux configurer vos sauvegardes et vos paramètres de sécurité pour protéger votre site contre la perte de données et les vulnérabilités.</p>"
+    },
+    {
+      "title": "Optimisation de la Vitesse du Site Web",
+      "content": "<p>Je peux optimiser les performances et la vitesse de votre site web pour une meilleure expérience utilisateur et un SEO amélioré.</p>"
+    },
+    {
+      "title": "Développer des Fonctionnalités Personnalisées",
+      "content": "<p>Je peux créer des fonctionnalités uniques et sur mesure pour répondre aux besoins spécifiques de votre site web ou de votre application.</p>"
+    },
+    {
+      "title": "Débogage de Votre Site Web Piraté",
+      "content": "<p>Je peux identifier et corriger les problèmes sur votre site web piraté pour assurer un fonctionnement fluide et efficace.</p>"
+    },
+    {
+      "title": "Migrations WordPress",
+      "content": "<p>Je peux gérer des migrations WordPress transparentes pour assurer que votre site soit déplacé efficacement et sans problèmes.</p>"
+    }
+  ],
+  "footer-content": "<p className=\"noMarginBottom\"><span className=\"biggest\">Et bien plus encore !</span></p><p>Découvrez d'autres façons dont je peux vous aider dans vos besoins de développement numérique en <a href=\"https://calendly.com/_lucrousseau/30min/\">prenant rendez-vous</a> avec moi !</p>",
+  "footer-cta-label": "Planifions une discussion !"
+}

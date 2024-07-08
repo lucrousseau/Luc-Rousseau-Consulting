@@ -21,8 +21,10 @@
   @include shadow();
 
   @media screen and (max-width: $sm) {
-    padding: calc(var(--padding) * 2);
-    padding-bottom: calc(var(--padding) * 7);
+    &:not(&--has-nolabel) {
+      padding: calc(var(--padding) * 2);
+      padding-bottom: calc(var(--padding) * 7);
+    }
   }
 
   .component__buy {
