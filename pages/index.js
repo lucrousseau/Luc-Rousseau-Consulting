@@ -59,7 +59,12 @@ export default function Development() {
       </Container>
       <main>
         <DevelopmentHero />
-        <WhatICanDo />
+        <WhatICanDo
+          cta={{
+            label: t("common:schedule-me-label"),
+            link: t("common:schedule-me"),
+          }}
+        />
         <Technologies
           cta={{
             label: t("common:schedule-me-label"),
