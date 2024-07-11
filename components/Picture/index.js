@@ -14,6 +14,7 @@ export default function Picture({
   height = 500,
   layout,
   priority,
+  loading,
   absolute,
   rounded,
   ...props
@@ -40,6 +41,7 @@ export default function Picture({
         alt={alt}
         layout={layout}
         priority={priority}
+        loading={loading}
       />
     </div>
   );

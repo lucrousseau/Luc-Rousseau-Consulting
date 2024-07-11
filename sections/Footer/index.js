@@ -5,7 +5,6 @@ import { alignments } from "../../commons/alignments";
 import { useTranslation } from "next-i18next";
 
 import Row from "../../components/Layout/Row";
-import moment from "moment";
 
 export default function Footer({ ...props }) {
   const { t } = useTranslation();
@@ -34,7 +33,7 @@ export default function Footer({ ...props }) {
                     pull: "left",
                     content: (
                       <small>
-                        {moment().format("YYYY")} ©{" "}
+                        {new Date().getFullYear()} ©{" "}
                         <a href={t("hello@lucrousseau.com")}>Luc Rousseau</a>
                       </small>
                     ),

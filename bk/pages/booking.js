@@ -10,7 +10,6 @@ import Booking from "../components/Booking";
 export default function Home() {
   return null;
 
-  /*
   return (
     <>
       <Container
@@ -94,5 +93,4 @@ export default function Home() {
       </Container>
     </>
   );
-  */
 }
