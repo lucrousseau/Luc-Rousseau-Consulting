@@ -17,6 +17,7 @@ export default function Picture({
   loading,
   absolute,
   rounded,
+  sizes,
   ...props
 }) {
   const alignmentsClass = alignments({ props });
@@ -42,6 +43,7 @@ export default function Picture({
         layout={layout}
         priority={priority}
         loading={loading}
+        sizes={sizes}
       />
     </div>
   );

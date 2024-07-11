@@ -61,11 +61,12 @@ export default function DevelopmentHero() {
                                 content: (
                                   <Picture
                                     src={"/images/luc-profil-photo.jpg"}
-                                    width={400}
-                                    height={400}
+                                    width={600}
+                                    height={600}
                                     alt={"Luc Rousseau"}
                                     rounded={true}
                                     loading={"eager"}
+                                    sizes={"(max-width: 600px) 100vw, 400px"}
                                   />
                                 ),
                               },
