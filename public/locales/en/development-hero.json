@@ -22,7 +22,7 @@
   ],
   "buy": {
     "legend": "Package Starting at",
-    "more": "<p className=\"small\"><strong>No contract required</strong>—you can leave anytime. Choose from <strong>weekly</strong> or <strong>monthly</strong> package agreements. Options include <strong>full-day</strong>, <strong>half-day</strong>, or custom packages. <a href=\"https://calendly.com/_lucrousseau/30min/\">schedule a chat</a> for more details.</p>",
+    "more": "<p className=\"small\"><strong>No contract required</strong> — you can leave anytime. Choose from <strong>weekly</strong> or <strong>monthly</strong> agreements. Options include <strong>Essential</strong>, <strong>Half-Day</strong>, <strong>Full-Day</strong>, or custom packages. <a href=\"https://calendly.com/_lucrousseau/30min/\">Schedule a chat</a> for more details.</p>",
     "prefix": "/month"
   }
 }
