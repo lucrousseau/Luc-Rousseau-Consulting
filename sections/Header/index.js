@@ -15,7 +15,7 @@ import Button from "../../components/Button";
 import "./style.scss";
 
 export default function Header({ ...props }) {
-  const { navigation, cta } = props;
+  const { navigation = [], cta } = props;
   const { t, i18n } = useTranslation();
   const lang = i18n.language === "en" ? "fr" : "en";
   const alignmentsClass = alignments({ props });
