@@ -11,7 +11,7 @@ export default function Accordion({
   callback = () => {},
   ...props
 }) {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(null || props.activeIndex);
   const alignmentsClass = alignments({ props });
   const accordionRef = useRef();
   const accordionRefs = useRef([]);
