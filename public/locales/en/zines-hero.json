@@ -1,0 +1,15 @@
+{
+  "anchor": "zines",
+  "navigation-label": "Zines",
+  "title": "My Zines",
+  "quote": "<h3>\"Digital Nomad and Street Photographer, I spend half the year traveling around the world, capturing the essence of urban life through my lens.\"</h3>",
+  "items": [
+    {
+      "emoji": "📘",
+      "title": "01 Mex",
+      "content": "<p>During the winter of 2022/2023, I had the privilege of living in Mexico for six wonderful months. While I mainly stayed in Mexico City, I also took short trips to Querétaro, San Miguel de Allende, Taxco, and a few other places.</p><p>In this zine, I’ve curated a selection of street photographs that I love and that complement each other well. To see more images from this series, you can visit the gallery on my website.</p>",
+      "cta-label": "See the gallery",
+      "cta-link": "/zines/01_mex"
+    }
+  ]
+}
