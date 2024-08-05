@@ -22,7 +22,7 @@
   ],
   "buy": {
     "legend": "Package Starting at",
-    "more": "<p className=\"small\" style=\"font-size: 0.8rem;\">Options include <strong>Half-Day</strong> or <strong>Full-Day</strong> of work per week for the length of the engagement, or <strong>custom packages</strong> that can be negotiated. For a <strong>discount</strong>, sign a <strong>6-month contract</strong>. A <strong>no-contract solution</strong> is also available on a <strong>3-month basic engagement</strong> at <strong>full price</strong>. <a href=\"https://calendly.com/_lucrousseau/30min/\">Schedule a chat</a> for more details.</p>",
+    "more": "<p className=\"small\" style=\"font-size: 0.8rem;\">Options include <strong>Half-Day</strong> or <strong>Full-Day</strong> of work per week for the length of the engagement, or <strong>custom packages</strong> that can be negotiated. For a <strong>discount</strong>, sign a <strong>6-month contract</strong>. <a href=\"https://calendly.com/_lucrousseau/30min/\">Schedule a chat</a> for more details.</p>",
     "prefix": "/week"
   }
 }

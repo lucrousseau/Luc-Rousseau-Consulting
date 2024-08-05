@@ -22,7 +22,7 @@
   ],
   "buy": {
     "legend": "Forfaits à partir de",
-    "more": "<p className=\"small\" style=\"font-size: 0.8rem;\">Les options incluent <strong>une demi-journée</strong> ou <strong>une journée complète</strong> de travail par semaine pour la durée de l'engagement, ou des <strong>forfaits personnalisés</strong> qui peuvent être négociés. Pour une <strong>réduction</strong>, signez un <strong>contrat de 6 mois</strong>. Une <strong>solution sans contrat</strong> est également disponible avec un <strong>engagement de base de 3 mois</strong> au <strong>prix plein</strong>. <a href=\"https://calendly.com/_lucrousseau/30min/\">Planifions une discussion</a> pour plus de détails.</p>",
+    "more": "<p className=\"small\" style=\"font-size: 0.8rem;\">Les options incluent <strong>une demi-journée</strong> ou <strong>une journée complète</strong> de travail par semaine pour la durée de l'engagement, ou des <strong>forfaits personnalisés</strong> qui peuvent être négociés. Pour une <strong>réduction</strong>, signez un <strong>contrat de 6 mois</strong>. <a href=\"https://calendly.com/_lucrousseau/30min/\">Planifions une discussion</a> pour plus de détails.</p>",
     "prefix": "/semaine"
   }
 }
