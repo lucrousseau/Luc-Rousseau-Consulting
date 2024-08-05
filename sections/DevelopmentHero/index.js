@@ -94,7 +94,7 @@ export default function DevelopmentHero() {
                   halign={"center"}
                   columns={[
                     {
-                      cols: { col: 6, md: 12 },
+                      cols: { col: 8, md: 12 },
                       content: (
                         <>
                           <Buy

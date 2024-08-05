@@ -5,28 +5,28 @@
   "summary": "<p className=\"big\">Réalisez des progrès significatifs en seulement une demi-journée grâce à mes solutions expertes pour mettre à jour, sécuriser, optimiser et améliorer votre présence numérique. Voici quelques exemples de tâches que je peux accomplir :</p>",
   "items": [
     {
-      "title": "Mises à Jour de WordPress & Plugins",
-      "content": "<p>Je peux mettre à jour votre site WordPress et vos plugins pour garantir une sécurité et une fonctionnalité améliorées.</p>"
+      "title": "Développement de fonctionnalités sur mesure",
+      "content": "<p>Je peux développer et mettre en œuvre des fonctionnalités uniques et personnalisées pour répondre aux besoins spécifiques de votre site web ou application.</p>"
     },
     {
-      "title": "Configuration de Sauvegarde & Sécurité",
-      "content": "<p>Je peux configurer vos sauvegardes et vos paramètres de sécurité pour protéger votre site contre la perte de données et les vulnérabilités.</p>"
+      "title": "Évaluation et cadrage de projet",
+      "content": "<p>Je peux évaluer les exigences de votre projet et en définir le périmètre afin d'assurer un plan de développement clair et réalisable.</p>"
     },
     {
-      "title": "Optimisation de la Vitesse du Site Web",
+      "title": "Optimisation de la vitesse du site web",
       "content": "<p>Je peux optimiser les performances et la vitesse de votre site web pour une meilleure expérience utilisateur et un SEO amélioré.</p>"
     },
     {
-      "title": "Développer des Fonctionnalités Personnalisées",
-      "content": "<p>Je peux créer des fonctionnalités uniques et sur mesure pour répondre aux besoins spécifiques de votre site web ou de votre application.</p>"
+      "title": "Débogage et résolution de problèmes",
+      "content": "<p>Je peux identifier et résoudre les problèmes de votre site web ou application afin d'assurer un fonctionnement fluide et efficace.</p>"
     },
     {
-      "title": "Débogage de Votre Site Web Piraté",
-      "content": "<p>Je peux identifier et corriger les problèmes sur votre site web piraté pour assurer un fonctionnement fluide et efficace.</p>"
+      "title": "Mises à jour de WordPress et des plugins",
+      "content": "<p>Je peux mettre à jour votre site WordPress et ses plugins pour garantir une sécurité et une fonctionnalité améliorées.</p>"
     },
     {
-      "title": "Migrations WordPress",
-      "content": "<p>Je peux gérer des migrations WordPress transparentes pour assurer que votre site soit déplacé efficacement et sans problèmes.</p>"
+      "title": "Configuration des sauvegardes et de la sécurité",
+      "content": "<p>Je peux configurer vos sauvegardes et paramètres de sécurité pour protéger votre site contre les pertes de données et les vulnérabilités.</p>"
     }
   ],
   "footer-content": "<p className=\"noMarginBottom\"><span className=\"biggest\">Et bien plus encore !</span></p><p>Découvrez d'autres façons dont je peux vous aider dans vos besoins de développement numérique en <a href=\"https://calendly.com/_lucrousseau/30min/\">prenant rendez-vous</a> avec moi !</p>",
