@@ -98,7 +98,7 @@ export default function DevelopmentHero() {
                       content: (
                         <>
                           <Buy
-                            price={345}
+                            price={415}
                             legend={t("development-hero:buy:legend")}
                             prefix={parse(t("development-hero:buy:prefix"))}
                             label={t("common:schedule-me-label")}
