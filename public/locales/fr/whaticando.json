@@ -2,31 +2,31 @@
   "anchor": "cequejepeuxfaire",
   "navigation-label": "Prestations",
   "title": "Ce Que Je Peux Accomplir en Une Demi-Journée",
-  "summary": "<p className=\"big\">Réalisez des progrès significatifs en seulement une demi-journée grâce à mes solutions expertes pour mettre à jour, sécuriser, optimiser et améliorer votre présence numérique. Voici quelques exemples de tâches que je peux accomplir :</p>",
+  "summary": "<p className=\"big\">En seulement une demi-journée, je peux accomplir des tâches de haute importance qui améliorent la performance, la sécurité, et la qualité de votre site ou application. Grâce à mon expertise en WordPress, React, JavaScript, et PHP, et à mon expérience dans des environnements exigeants, voici quelques exemples de ce que je peux accomplir :</p>",
   "items": [
     {
-      "title": "Développement de fonctionnalités sur mesure",
-      "content": "<p>Je peux développer et mettre en œuvre des fonctionnalités uniques et personnalisées pour répondre aux besoins spécifiques de votre site web ou application.</p>"
+      "title": "Fonctionnalités sur mesure",
+      "content": "<p>Je peux concevoir et intégrer des fonctionnalités avancées sur mesure, répondant parfaitement aux besoins spécifiques de votre site ou application.</p>"
     },
     {
       "title": "Évaluation et cadrage de projet",
-      "content": "<p>Je peux évaluer les exigences de votre projet et en définir le périmètre afin d'assurer un plan de développement clair et réalisable.</p>"
+      "content": "<p>Je peux évaluer vos besoins et définir un périmètre clair pour votre projet, posant ainsi des bases solides pour un développement réussi.</p>"
     },
     {
-      "title": "Optimisation de la vitesse du site web",
-      "content": "<p>Je peux optimiser les performances et la vitesse de votre site web pour une meilleure expérience utilisateur et un SEO amélioré.</p>"
+      "title": "Optimisation des performances",
+      "content": "<p>Je peux améliorer les performances de votre site en optimisant le code et en mettant en œuvre des techniques avancées pour un chargement plus rapide et un meilleur SEO.</p>"
     },
     {
-      "title": "Débogage et résolution de problèmes",
-      "content": "<p>Je peux identifier et résoudre les problèmes de votre site web ou application afin d'assurer un fonctionnement fluide et efficace.</p>"
+      "title": "Débogage de problèmes complexes",
+      "content": "<p>Je peux identifier et résoudre rapidement des problèmes complexes affectant votre site ou application, garantissant ainsi une continuité de service optimale.</p>"
     },
     {
-      "title": "Mises à jour de WordPress et des plugins",
-      "content": "<p>Je peux mettre à jour votre site WordPress et ses plugins pour garantir une sécurité et une fonctionnalité améliorées.</p>"
+      "title": "Audit et amélioration du code",
+      "content": "<p>Je peux réaliser un audit approfondi de votre code pour identifier les inefficacités et implémenter des améliorations visant à rendre votre site plus performant et maintenable.</p>"
     },
     {
-      "title": "Configuration des sauvegardes et de la sécurité",
-      "content": "<p>Je peux configurer vos sauvegardes et paramètres de sécurité pour protéger votre site contre les pertes de données et les vulnérabilités.</p>"
+      "title": "Refactorisation du code existant",
+      "content": "<p>Je peux refactoriser et optimiser votre code existant pour améliorer la performance, la maintenabilité et l'évolutivité de votre site ou application, en utilisant les meilleures pratiques de développement.</p>"
     }
   ],
   "footer-content": "<p className=\"noMarginBottom\"><span className=\"biggest\">Et bien plus encore !</span></p><p>Découvrez d'autres façons dont je peux vous aider dans vos besoins de développement numérique en <a href=\"https://calendly.com/_lucrousseau/30min/\">prenant rendez-vous</a> avec moi !</p>",
