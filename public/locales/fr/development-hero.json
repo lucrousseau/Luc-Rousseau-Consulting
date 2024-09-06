@@ -22,7 +22,7 @@
   ],
   "buy": {
     "legend": "Forfait à partir de",
-    "more": "<p className=\"small\" style=\"font-size: 0.8rem;\"><em>*Le prix est basé sur un engagement de 6 mois pour une demi-journée par semaine.</em></p><p className=\"small\" style=\"font-size: 0.8rem;\">Choisissez entre <strong>une demi-journée ou une journée complète</strong> de travail par semaine pendant toute la durée de l'engagement, ou optez pour des <strong>forfaits personnalisés</strong> adaptés à vos besoins. Pour bénéficier du <strong>tarif réduit</strong>, faites un engagement de 6 mois. <em><strong><a href=\"https://calendly.com/_lucrousseau/30min/\">Planifiez une discussion</a></strong></em> pour plus de détails, ou si vous préférez garder de la flexibilité, ajoutez 10% au tarif régulier.</p>",
+    "more": "<p className=\"small\" style=\"font-size: 0.8rem;\"><em>*Le prix est basé sur un engagement de 6 mois pour une demi-journée par semaine.</em></p><p className=\"small\" style=\"font-size: 0.8rem;\">Choisissez entre <strong>une demi-journée ou une journée complète</strong> de travail par semaine pendant toute la durée de l'engagement, ou optez pour des <strong>forfaits personnalisés</strong> adaptés à vos besoins. Pour bénéficier du <strong>tarif réduit</strong>, faites un engagement de 6 mois. <em><strong><a href=\"https://calendly.com/_lucrousseau/30min/\">Planifiez une discussion</a></strong></em> pour plus de détails.</p>",
     "prefix": "/semaine"
   }
 }
