@@ -5,8 +5,15 @@
   "quote": "<h3>\"Digital nomade  et photographe de rue, je passe la moitié de l’année à voyager à travers le monde, capturant l’essence de la vie urbaine à travers mon objectif.\"</h3>",
   "items": [
     {
-      "emoji": "🔧",
-      "title": "Maintenance Wordpress",
+      "emoji": "📘",
+      "title": "02 Prt, Hun, Ita",
+      "content": "<p>Ce zine présente une collection de photographies de rue que j’ai prises entre la fin juillet et la fin octobre 2023, lors des trois premiers mois d’un voyage en trois étapes, étalé sur neuf mois. Cette partie couvre le Portugal, la Hongrie et l’Italie. Les photos ne sont pas dans l’ordre chronologique, mais elles ont été soigneusement associées pour créer une harmonie de couleurs et de styles.</p><p>Je ne dirais pas que c’est de la chance—j’ai fait des choix intentionnels pour construire la vie que j’ai aujourd’hui. Mais en parcourant cette série de photos, je ressens un profond sentiment d’accomplissement, de joie et de gratitude. Je peux honnêtement dire que je vis la meilleure version de ma vie.</p>",
+      "cta-label": "Voir la galerie",
+      "cta-link": "/zines/02_prt_hun_ita"
+    },
+    {
+      "emoji": "📘",
+      "title": "01 Mex",
       "content": "<p>Pendant l’hiver 2022/2023, j’ai eu le privilège de vivre six mois au Mexique. Bien que j’aie principalement résidé dans la ville de Mexico, j’ai aussi fait de courts séjours à Querétaro, San Miguel de Allende, Taxco et quelques autres endroits.</p><p>Dans ce zine, j’ai sélectionné une série de photographies de rue que j’aime et qui vont bien ensemble. Pour voir plus d’images de cette série, vous pouvez visiter la galerie sur mon site.</p>",
       "cta-label": "Voir la galerie",
       "cta-link": "/zines/01_mex"
