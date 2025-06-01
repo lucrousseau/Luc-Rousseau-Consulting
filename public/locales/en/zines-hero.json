@@ -6,9 +6,16 @@
   "items": [
     {
       "emoji": "📘",
+      "title": "04 Cai",
+      "content": "<p>Egypt has always fascinated me. Ever since I was a kid, I've watched documentaries about this mythical country, though I never really thought I'd go there one day. But since we knew we'd be in Istanbul — relatively close, at least compared to Québec — my partner and I decided to treat ourselves to a real vacation. A week in Egypt felt like the perfect choice.</p><p>It was a magnificent trip, with a cruise on the Nile serving as our honeymoon — a nice excuse to indulge in a slightly more luxurious getaway. We truly loved the places steeped in history and that feeling of being transported to another time.</p>",
+      "cta-label": "See the gallery",
+      "cta-link": "/zines/04_cai"
+    },
+    {
+      "emoji": "📘",
       "title": "03 Ist",
       "content": "<p>From October 2023 to the end of January 2024, we stayed in Istanbul, Turkey. We spent three fairly quiet months there, like a break before our upcoming vacation in Egypt. When traveling full-time, it’s also good to take some stays in slow travel mode—not rushing everywhere to see everything—because, as fantastic as this lifestyle may be, the pace can become exhausting.</p><p>I particularly enjoyed the ferries on the Bosphorus. Whenever I had the chance, I would take a round trip between the two shores.</p>",
-      "cta-label": "Voir la galerie",
+      "cta-label": "See the gallery",
       "cta-link": "/zines/03_ist"
     },
     {
