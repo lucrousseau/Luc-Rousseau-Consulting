@@ -9,6 +9,39 @@ const withBundleAnalyzer = (await import("@next/bundle-analyzer")).default({
 const nextConfig = {
   ...i18n,
   reactStrictMode: true,
+  async redirects() {
+    const hostCom = [{ type: "host", value: "lucrousseau.com" }];
+    const zineMappings = [
+      { from: "05_gre_esp_fra", to: "05-gre-esp-fra" },
+      { from: "04_cai", to: "04-cai" },
+      { from: "03_ist", to: "03-ist" },
+      { from: "02_prt_hun_ita", to: "02-prt-hun-ita" },
+      { from: "01_mex", to: "01-mex" },
+    ];
+
+    /** Start with the index redirect (handles optional fr/ and trailing slash) */
+    const rules = [
+      {
+        source: "/(fr/)?zines/?",
+        has: hostCom,
+        destination: "https://lucrousseau.ca/zines/",
+        permanent: true,
+      },
+    ];
+
+    /** Add one rule per zine (handles optional fr/ and trailing slash) */
+    for (const { from, to } of zineMappings) {
+      rules.push({
+        source: `/(fr/)?zines/${from}/?`,
+        has: hostCom,
+        destination: `https://lucrousseau.ca/zines/${to}`,
+        permanent: true,
+      });
+    }
+
+    return rules;
+  },
 };
 
 export default withBundleAnalyzer(nextConfig);
+
