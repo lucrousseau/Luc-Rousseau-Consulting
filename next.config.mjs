@@ -23,24 +23,39 @@ const nextConfig = {
       { from: "01_mex", to: "01-mex" },
     ];
 
-    /** Start with the index redirect (handles optional fr/ and trailing slash) */
-    const rules = [
-      {
-        source: "/(fr/)?zines/?",
+    /** Index redirects: explicit variants (no optional tokens allowed) */
+    const rules = [];
+    for (const base of ["/zines", "/fr/zines"]) {
+      rules.push({
+        source: base,
         has: hostCom,
         destination: "https://lucrousseau.ca/zines/",
         permanent: true,
-      },
-    ];
-
-    /** Add one rule per zine (handles optional fr/ and trailing slash) */
-    for (const { from, to } of zineMappings) {
+      });
       rules.push({
-        source: `/(fr/)?zines/${from}/?`,
+        source: `${base}/`,
         has: hostCom,
-        destination: `https://lucrousseau.ca/zines/${to}`,
+        destination: "https://lucrousseau.ca/zines/",
         permanent: true,
       });
+    }
+
+    /** Per-zine redirects: explicit fr/ and trailing-slash variants */
+    for (const { from, to } of zineMappings) {
+      for (const prefix of ["/zines", "/fr/zines"]) {
+        rules.push({
+          source: `${prefix}/${from}`,
+          has: hostCom,
+          destination: `https://lucrousseau.ca/zines/${to}`,
+          permanent: true,
+        });
+        rules.push({
+          source: `${prefix}/${from}/`,
+          has: hostCom,
+          destination: `https://lucrousseau.ca/zines/${to}`,
+          permanent: true,
+        });
+      }
     }
 
     return rules;
