@@ -7,7 +7,11 @@ const withBundleAnalyzer = (await import("@next/bundle-analyzer")).default({
 });
 
 const nextConfig = {
-  ...i18n,
+  i18n: {
+    defaultLocale: i18n.i18n.defaultLocale,
+    locales: i18n.i18n.locales,
+    localeDetection: i18n.i18n.localeDetection,
+  },
   reactStrictMode: true,
   async redirects() {
     const hostCom = [{ type: "host", value: "lucrousseau.com" }];
