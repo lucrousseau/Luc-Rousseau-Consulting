@@ -72,14 +72,20 @@ export default function Tangible({ cta }) {
         }}
         columns={[
           {
+            cols: { col: 10, sm: 12 },
             content: (
-              <p>
-                <Button
-                  variant={"primary"}
-                  label={cta?.label ?? t("tangible:footer-cta-label")}
-                  href={cta?.link ?? t("hello@lucrousseau.com")}
-                />
-              </p>
+              <div className="align align--center tangible__cta-block">
+                {t("tangible:ctaTeaser") && (
+                  <p className="big tangible__cta-teaser">{t("tangible:ctaTeaser")}</p>
+                )}
+                <p>
+                  <Button
+                    variant={"primary"}
+                    label={cta?.label ?? t("tangible:footer-cta-label")}
+                    href={cta?.link ?? t("hello@lucrousseau.com")}
+                  />
+                </p>
+              </div>
             ),
           },
         ]}
