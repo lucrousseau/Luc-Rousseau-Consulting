@@ -39,7 +39,7 @@ export default function Engagement({ cta }) {
               <>
                 <h2 className="underline underline--center">{t("engagement:headline")}</h2>
                 {t("engagement:subhead") && <p className="big">{t("engagement:subhead")}</p>}
-                <p>{t("engagement:valueStatement")}</p>
+                <p className="big">{t("engagement:valueStatement")}</p>
               </>
             ),
           },
