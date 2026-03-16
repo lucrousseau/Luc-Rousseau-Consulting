@@ -5,11 +5,22 @@ import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
 import Button from "../../components/Button";
 
-export default function WhoIWorkWith({ cta }) {
+export default function WhoIWorkWith({ backgroundColor, cta }) {
   const { t } = useTranslation();
 
   return (
-    <Container id={t("who-i-work-with:anchor")} align={"center"} halign={"center"}>
+    <Container
+      id={t("who-i-work-with:anchor")}
+      align={"center"}
+      halign={"center"}
+      background={{
+        src: "/images/rome-1.jpg",
+        alt: "Rome",
+        width: 2528,
+        height: 1264,
+      }}
+      backgroundColor={backgroundColor}
+    >
       <Row
         halign={"center"}
         style={{
@@ -46,7 +57,7 @@ export default function WhoIWorkWith({ cta }) {
                         <p>
                           <Button
                             variant={"primary"}
-                            href={cta?.link ?? t("schedule-me")}
+                            href={cta?.link ?? t("common:schedule-me")}
                             label={cta?.label ?? t("who-i-work-with:footer-cta-label")}
                           />
                         </p>
