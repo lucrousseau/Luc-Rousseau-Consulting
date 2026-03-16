@@ -3,8 +3,6 @@ import React, { useState, useRef, useEffect } from "react";
 
 import { alignments } from "../../commons/alignments";
 
-import "./style.scss";
-
 export default function Accordion({ className, items, callback = () => {}, ...props }) {
   const [activeIndex, setActiveIndex] = useState(null || props.activeIndex);
   const alignmentsClass = alignments({ props });

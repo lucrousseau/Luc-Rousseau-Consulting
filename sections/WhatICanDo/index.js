@@ -7,8 +7,6 @@ import Container from "../../components/Layout/Container";
 import Product from "../../components/Product";
 import Button from "../../components/Button";
 
-import "./style.scss";
-
 export default function WhatICanDo({ cta }) {
   const { t } = useTranslation();
 

@@ -10,8 +10,6 @@ import convertOpeningHoursTimeZone from "./commons/convertOpeningHoursTimeZone";
 
 import { TIMEZONE } from "./commons/constants";
 
-import "./styles/calendar.scss";
-
 export default function Calendar({ month, year }) {
   const { timezone } = getsCurrentUserTimezone();
 

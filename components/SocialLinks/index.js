@@ -7,8 +7,6 @@ import { alignments } from "../../commons/alignments";
 
 import Row from "../Layout/Row";
 
-import "./style.scss";
-
 export default function SocialLinks({ ...props }) {
   const { i18n } = useTranslation();
   const alignmentsClass = alignments({ props });

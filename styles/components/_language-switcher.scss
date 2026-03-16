@@ -1,0 +1,30 @@
+@use "sass:math";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.component__language-switcher {
+  ul {
+    list-style: none;
+  }
+
+  &__lang {
+    display: none;
+
+    &--current {
+      display: block;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    @media screen and (max-width: $sm) {
+      font-size: 1.2rem;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use "sass:math";
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+@use "commons" as *;
+
+.component__booking__calendar {
+  nav {
+    gap: 0;
+    display: flex;
+
+    span {
+      @include bookMeClickElement;
+
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+      flex: 0 0 math.div(100%, 7);
+
+      &:first-child {
+        flex-grow: 1;
+        text-align: left;
+        margin-left: initial;
+      }
+
+      svg {
+        height: 1em;
+        width: 0.65em;
+        line-height: 1em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        display: inline-block;
+        fill: var(--body-color);
+      }
+    }
+  }
+}

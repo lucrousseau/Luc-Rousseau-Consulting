@@ -4,8 +4,6 @@ import { alignments } from "../../commons/alignments";
 
 import Buy from "../Buy";
 
-import "./style.scss";
-
 export default function Product({ className, children, title, price, legend, label, ...props }) {
   const alignmentsClass = alignments({ props });
   const hasNoLabel = label ? false : true;

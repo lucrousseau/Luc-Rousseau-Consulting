@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import { alignments } from "../../commons/alignments";
 import Row from "../Layout/Row";
-import "./style.scss";
 
 export default function LanguageSwitcher({ current = "en", ...props }) {
   const alignmentsClass = alignments({ props });

@@ -1,5 +1,3 @@
-import "./styles/calendarNavigation.scss";
-
 export default function CalendarNavigation({ onPreviousClick, onNextClick, currentMonthYear }) {
   return (
     <nav className="component__booking__calendar__nav">

@@ -1,0 +1,31 @@
+@use "sass:math";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.component__header {
+  $this: &;
+
+  --margin-top: 0;
+  --margin-bottom: 0;
+
+  #{$this}__nav {
+    overflow: auto hidden;
+    -webkit-overflow-scrolling: touch;
+
+    .component__navigation {
+      min-width: min-content;
+    }
+  }
+
+  @media screen and (max-width: $mobile-nav-primary-breakpoint) {
+    .col #{$this}__nav {
+      display: none;
+    }
+  }
+
+  .row {
+    @media screen and (max-width: $sm) {
+      --gap: calc(var(--padding) * 1.5);
+    }
+  }
+}

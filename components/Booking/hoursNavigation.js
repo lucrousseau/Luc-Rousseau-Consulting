@@ -1,5 +1,3 @@
-import "./styles/hoursNavigation.scss";
-
 export default function HoursNavigation({
   currentPage,
   totalPages,

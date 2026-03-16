@@ -12,8 +12,6 @@ import SocialLinks from "../../components/SocialLinks";
 import LanguageSwitcher from "../../components/LanguageSwitcher";
 import Button from "../../components/Button";
 
-import "./style.scss";
-
 export default function Header({ ...props }) {
   const { navigation = [], cta } = props;
   const { t, i18n } = useTranslation();

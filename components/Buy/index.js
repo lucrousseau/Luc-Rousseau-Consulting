@@ -5,8 +5,6 @@ import { alignments } from "../../commons/alignments";
 
 import Button from "../Button";
 
-import "./style.scss";
-
 export default function Buy({
   className,
   price,

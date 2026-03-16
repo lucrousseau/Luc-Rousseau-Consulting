@@ -1,7 +1,5 @@
 import classNames from "classnames";
 
-import "./style.scss";
-
 export default function Table({ headers, rows, columnKeys, rowHeaderKey, className, ...props }) {
   if (!headers || !rows?.length) {
     return null;

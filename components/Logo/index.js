@@ -3,8 +3,6 @@ import Link from "next/link";
 
 import { alignments } from "../../commons/alignments";
 
-import "./style.scss";
-
 export default function Logo({ ...props }) {
   const alignmentsClass = alignments({ props });
 

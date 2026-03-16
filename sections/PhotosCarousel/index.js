@@ -4,11 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faAngleLeft } from "@fortawesome/pro-regular-svg-icons";
 
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 
 import Picture from "../../components/Picture";
-
-import "./style.scss";
 
 export default function PhotosCarousel({ images }) {
   const Arrow = (props) => {

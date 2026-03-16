@@ -3,8 +3,6 @@ import moment from "moment-timezone";
 import convertOpeningHoursTimeZone from "./commons/convertOpeningHoursTimeZone";
 import HoursNavigation from "./hoursNavigation";
 
-import "./styles/hours.scss";
-
 export default function Hours({ day, month, year, timezone, convertedHours }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentItems, setCurrentItems] = useState([]);

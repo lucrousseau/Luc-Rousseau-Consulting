@@ -6,8 +6,6 @@ import Label from "./label";
 import Input from "./input";
 import Select from "./select";
 
-import "./style.scss";
-
 export default function Fields({
   field = "input",
   required,

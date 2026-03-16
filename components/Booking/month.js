@@ -4,8 +4,6 @@ import moment from "moment";
 
 import { DAYS_OF_WEEK } from "./commons/constants";
 
-import "./styles/month.scss";
-
 export default function Month({ month, year, onSelectDay, convertedHours }) {
   const [selectedDay, setSelectedDay] = useState(null);
 

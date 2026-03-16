@@ -1,0 +1,35 @@
+@use "sass:math";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.component__product {
+  margin: 0;
+  height: 100%;
+  padding: var(--double-padding);
+  padding-bottom: calc(var(--padding) * 7);
+  background-color: var(--secondary-background-color);
+  border-radius: var(--border-radius);
+
+  &--has-nolabel {
+    padding-bottom: var(--double-padding);
+  }
+
+  @include shadow;
+
+  @media screen and (max-width: $sm) {
+    &:not(&--has-nolabel) {
+      padding: calc(var(--padding) * 2);
+      padding-bottom: calc(var(--padding) * 7);
+    }
+  }
+
+  .component__buy {
+    bottom: var(--double-padding);
+    position: absolute;
+    width: calc(100% - var(--double-padding) * 2);
+
+    @media screen and (max-width: $sm) {
+      width: calc(100% - var(--padding) * 4);
+    }
+  }
+}

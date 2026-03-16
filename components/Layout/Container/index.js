@@ -4,8 +4,6 @@ import { alignments } from "../../../commons/alignments";
 
 import Picture from "../../Picture";
 
-import "./style.scss";
-
 export default function Container({
   children,
   tag = "section",

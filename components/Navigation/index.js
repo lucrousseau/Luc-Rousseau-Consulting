@@ -3,7 +3,6 @@ import Link from "next/link";
 import classNames from "classnames";
 import { alignments } from "../../commons/alignments";
 import Row from "../Layout/Row";
-import "./style.scss";
 
 export default function Navigation({ ...props }) {
   const { navigation = {} } = props;

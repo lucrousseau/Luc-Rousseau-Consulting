@@ -4,8 +4,6 @@ import Image from "next/image";
 
 import { alignments } from "../../commons/alignments";
 
-import "./style.scss";
-
 export default function Picture({
   className,
   src,

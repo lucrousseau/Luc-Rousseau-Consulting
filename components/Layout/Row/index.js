@@ -2,8 +2,6 @@ import classNames from "classnames";
 
 import { alignments } from "../../../commons/alignments";
 
-import "./style.scss";
-
 const column = (item, index) => {
   const { className, tag = "div", cols = {}, auto, pull, style, content } = item;
 

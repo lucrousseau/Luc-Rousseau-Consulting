@@ -2,8 +2,6 @@ import Link from "next/link";
 
 import classNames from "classnames";
 
-import "./style.scss";
-
 export default function Button({
   className,
   tag,

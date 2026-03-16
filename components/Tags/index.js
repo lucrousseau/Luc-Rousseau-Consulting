@@ -2,8 +2,6 @@ import classNames from "classnames";
 
 import { alignments } from "../../commons/alignments";
 
-import "./style.scss";
-
 export default function Tags({ className, items, ...props }) {
   const alignmentsClass = alignments({ props });
 

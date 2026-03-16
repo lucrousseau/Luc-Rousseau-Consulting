@@ -1,0 +1,43 @@
+@use "sass:math";
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+
+.container {
+  --padding-top: var(--container-padding-top);
+  --padding-bottom: var(--container-padding-bottom);
+  --padding-left: var(--container-padding-left);
+  --padding-right: var(--container-padding-right);
+  --margin-right: auto;
+  --margin-left: auto;
+
+  width: 100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+  max-width: var(--container-max-width);
+
+  > * {
+    z-index: 1;
+    position: relative;
+  }
+
+  &__background {
+    inset: 0;
+    z-index: 0;
+    left: 50%;
+    width: 100dvw;
+    position: absolute;
+    transform: translateX(-50%);
+    max-width: var(--container-background-max-width);
+
+    &--include-padding {
+      top: var(--padding-top, var(--container-padding-top));
+      bottom: var(--padding-bottom, var(--container-padding-bottom));
+    }
+
+    > .component__picture {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@use "sass:math";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.component__buy {
+  > span {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+}
