@@ -14,7 +14,6 @@ import AIResponsible from "../sections/AIResponsible";
 import Differentiation from "../sections/Differentiation";
 import Engagement from "../sections/Engagement";
 import WhoIWorkWith from "../sections/WhoIWorkWith";
-import Why from "../sections/Why";
 import Technologies from "../sections/Technologies";
 import Tangible from "../sections/Tangible";
 
@@ -72,10 +71,6 @@ export default function Development() {
               label: t("differentiation:navigation-label-short"),
             },
             {
-              href: `#${t("why:anchor")}`,
-              label: t("why:navigation-label-short"),
-            },
-            {
               href: `#${t("technologies:anchor")}`,
               label: t("technologies:navigation-label-short"),
             },
@@ -113,12 +108,6 @@ export default function Development() {
           }}
         />
         <Differentiation />
-        <Why
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
         <Technologies
           cta={{
             label: t("common:schedule-me-label"),
@@ -167,7 +156,6 @@ export const getServerSideProps = async ({ locale }) => {
         "tangible",
         "technologies",
         "who-i-work-with",
-        "why",
       ])),
     },
   };
