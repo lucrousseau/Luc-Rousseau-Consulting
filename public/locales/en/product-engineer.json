@@ -4,9 +4,11 @@
   "navigation-label-short": "Role",
   "badge": "In short",
   "title": "What is a Product Engineer?",
-  "paragraph1": "<p>A Product Engineer <strong>helps you decide what to build and why</strong>, designs how the system should work so it fits your goals, and <strong>builds it themselves—or has the team build it</strong>. They <em>don't just take tickets</em>: they help shape the plan, the technical choices, and the delivery. <strong>One person</strong> who can take you from \"we're not sure what we need\" or \"our tech is a mess\" to a <strong>clear plan and a product that works</strong>. In 2026 <strong>AI is everywhere</strong>, and that boosts this profile: the one who decides where AI fits in the system, where the guardrails are, and what actually goes out the door—instead of just prompting.</p>",
-  "paragraph2": "<p><strong>In practice:</strong> one person who can talk product with you, make the technical decisions, and get the work delivered. <strong>No handoff, no black box.</strong> With AI, needs and scope can be identified in conversation and carried through to development—the wall between \"what we want\" and \"what we build\" shrinks, and <strong>productivity goes up</strong>. Not an \"AI operator\": the person who steers how the product and the system use AI. <strong>In 2026 that’s the profile that wins.</strong></p>",
+  "paragraph": "<p>A Product Engineer <strong>helps you decide what to build and why</strong>, designs how the system should work, and <strong>builds it—or has the team build it</strong>. They <em>don't just take tickets</em>: they shape the plan, the technical choices, and the delivery. <strong>One person</strong> who can take you from \"we're not sure what we need\" or \"our tech is a mess\" to a <strong>clear plan and a product that works</strong>. With AI everywhere, this profile decides where it fits, where the guardrails are, and what ships—<strong>no handoff, no black box</strong>. In 2026 that's the profile that wins.</p>",
   "table-caption": "How the role compares",
+  "intro": "Developer, Tech Lead, Product Manager, Product Engineer—same words, <em>different scope</em>. Below: where each role sits on <strong>focus, ownership, depth, and delivery</strong>.",
+  "ctaTeaser": "Want to see how this fits your context? Let's talk about your product and technical goals.",
+  "footer-cta-label": "Schedule a conversation",
   "table": {
     "headers": {
       "dimension": "Dimension",

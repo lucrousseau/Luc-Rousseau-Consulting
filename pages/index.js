@@ -9,7 +9,6 @@ import Footer from "../sections/Footer";
 import About from "../sections/About";
 import HomeHero from "../sections/HomeHero";
 import ProductEngineerDefinition from "../sections/ProductEngineerDefinition";
-import RoleComparison from "../sections/RoleComparison";
 import AIResponsible from "../sections/AIResponsible";
 import Engagement from "../sections/Engagement";
 import WhoIWorkWith from "../sections/WhoIWorkWith";
@@ -54,10 +53,6 @@ export default function Home() {
               label: t("product-engineer:navigation-label-short"),
             },
             {
-              href: `#${t("role-comparison:anchor")}`,
-              label: t("role-comparison:navigation-label-short"),
-            },
-            {
               href: `#${t("ai-responsible:anchor")}`,
               label: t("ai-responsible:navigation-label-short"),
             },
@@ -83,8 +78,7 @@ export default function Home() {
       </Container>
       <main className="page-home">
         <HomeHero />
-        <ProductEngineerDefinition />
-        <RoleComparison
+        <ProductEngineerDefinition
           cta={{
             label: t("common:schedule-me-label"),
             link: t("common:schedule-me"),
@@ -148,7 +142,6 @@ export const getServerSideProps = async ({ locale }) => {
         "ai-responsible",
         "engagement",
         "product-engineer",
-        "role-comparison",
         "passion",
         "services",
         "tangible",

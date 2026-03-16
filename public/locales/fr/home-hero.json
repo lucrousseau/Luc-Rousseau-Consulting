@@ -29,7 +29,6 @@
   ],
   "buy": {
     "legend": "Prêt à aligner stratégie et exécution ?",
-    "more": "<p className=\"small\" style=\"font-size: 0.8rem;\"><a href=\"https://calendly.com/_lucrousseau/30min/\">Planifier un échange</a> pour discuter de vos objectifs produit et techniques.</p>",
     "prefix": ""
   }
 }

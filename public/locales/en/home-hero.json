@@ -29,7 +29,6 @@
   ],
   "buy": {
     "legend": "Ready to align strategy and execution?",
-    "more": "<p className=\"small\" style=\"font-size: 0.8rem;\"><a href=\"https://calendly.com/_lucrousseau/30min/\">Schedule a conversation</a> to discuss your product and technical goals.</p>",
     "prefix": ""
   }
 }

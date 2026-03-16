@@ -97,7 +97,6 @@ export default function HomeHero() {
                             variant={"primary"}
                             size={null}
                           />
-                          {parse(t("home-hero:buy:more"))}
                         </>
                       ),
                     },
