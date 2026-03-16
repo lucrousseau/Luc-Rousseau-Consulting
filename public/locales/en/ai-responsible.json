@@ -12,19 +12,19 @@
     },
     {
       "title": "AI requires guardrails",
-      "content": "Output is reviewed, tested, and aligned with your architecture and standards. Nothing ships without human verification. No blind copy-paste into production."
+      "content": "Output is reviewed, tested, and aligned with your architecture and standards. <strong>Nothing ships without human verification.</strong> No blind copy-paste into production."
     },
     {
       "title": "AI does not replace architecture thinking",
-      "content": "System design, API contracts, technical debt prioritisation, and build-vs-buy decisions stay with the engineer. Tools suggest; people decide."
+      "content": "System design, API contracts, technical debt prioritisation, and build-vs-buy decisions stay with the engineer. <em>Tools suggest; people decide.</em>"
     },
     {
       "title": "Experience matters more than tools",
-      "content": "Knowing what \"good\" looks like, when to push back on a spec, and how systems fail in production comes from years of shipping—not from a model."
+      "content": "Knowing what \"good\" looks like, when to push back on a spec, and how systems fail in production comes from <strong>years of shipping</strong>—not from a model."
     },
     {
       "title": "Senior supervision prevents AI-driven chaos",
-      "content": "Unsupervised AI output leads to inconsistent patterns, hidden debt, and rework. A senior Product Engineer keeps the bar high and the system coherent."
+      "content": "Unsupervised AI output leads to inconsistent patterns, hidden debt, and rework. A senior Product Engineer <strong>keeps the bar high</strong> and the system coherent."
     }
   ],
   "closing": "So: <strong>AI as leverage, not identity.</strong> Clear boundaries, human ownership, and no hype.",

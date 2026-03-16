@@ -8,11 +8,11 @@
   "items": [
     {
       "title": "Product and engineering leaders",
-      "content": "You want a senior partner to structure the roadmap, challenge the architecture, and deliver—not just execute tickets."
+      "content": "You want a senior partner to structure the roadmap, challenge the architecture, and <strong>deliver—not just execute tickets</strong>."
     },
     {
       "title": "Teams with legacy or tangled systems",
-      "content": "You want to reduce debt, clarify structure, and stabilize without a full rewrite."
+      "content": "You want to reduce debt, clarify structure, and stabilize <em>without a full rewrite</em>."
     },
     {
       "title": "WordPress / CMS-heavy organisations",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Startups and scale-ups",
-      "content": "You want a responsible technical voice, able to hold the line from strategy to delivery."
+      "content": "You want a responsible technical voice, able to <strong>hold the line from strategy to delivery</strong>."
     }
   ],
   "footer-cta-label": "Schedule a conversation"

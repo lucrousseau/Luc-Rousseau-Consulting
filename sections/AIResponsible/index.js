@@ -13,7 +13,7 @@ export default function AIResponsible({ cta }) {
     cols: { col: 4, lg: 10, sm: 12 },
     content: (
       <Product key={item.title} title={item.title} className={"align--lg-left"}>
-        <p>{item.content}</p>
+        <p>{parse(item.content)}</p>
       </Product>
     ),
   }));

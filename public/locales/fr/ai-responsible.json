@@ -12,19 +12,19 @@
     },
     {
       "title": "L'IA exige des garde-fous",
-      "content": "La sortie est revue, testée et alignée avec votre architecture et vos standards. Rien ne part en prod sans vérification humaine. Pas de copier-coller aveugle."
+      "content": "La sortie est revue, testée et alignée avec votre architecture et vos standards. <strong>Rien ne part en prod sans vérification humaine.</strong> Pas de copier-coller aveugle."
     },
     {
       "title": "L'IA ne remplace pas la pensée architecturale",
-      "content": "La conception système, les contrats d'API, la priorisation de la dette technique et les décisions build-vs-buy restent du ressort de l'ingénieur. Les outils suggèrent ; les humains décident."
+      "content": "La conception système, les contrats d'API, la priorisation de la dette technique et les décisions build-vs-buy restent du ressort de l'ingénieur. <em>Les outils suggèrent ; les humains décident.</em>"
     },
     {
       "title": "L'expérience compte plus que les outils",
-      "content": "Savoir à quoi ressemble le « bon », quand contester un spec et comment les systèmes échouent en prod vient des années de livraison—pas d'un modèle."
+      "content": "Savoir à quoi ressemble le « bon », quand contester un spec et comment les systèmes échouent en prod vient des <strong>années de livraison</strong>—pas d'un modèle."
     },
     {
       "title": "La supervision senior évite le chaos piloté par l'IA",
-      "content": "Une sortie IA non supervisée mène à des patterns incohérents, une dette cachée et du rework. Un Product Engineer senior garde la barre haute et le système cohérent."
+      "content": "Une sortie IA non supervisée mène à des patterns incohérents, une dette cachée et du rework. Un Product Engineer senior <strong>garde la barre haute</strong> et le système cohérent."
     }
   ],
   "closing": "Donc : <strong>l'IA comme levier, pas comme identité.</strong> Limites claires, ownership humain, et pas de hype.",

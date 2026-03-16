@@ -4,7 +4,7 @@
   "navigation-label-short": "Réalisations",
   "badge": "Preuves",
   "title": "Réalisations choisies",
-  "summary": "<p className=\"big\">Quelques engagements où la responsabilité de l'architecture, l'impact produit et la livraison ont compté. Les résultats avant les tâches.</p>",
+  "summary": "<p className=\"big\">Quelques engagements où <strong>la responsabilité de l'architecture, l'impact produit et la livraison</strong> ont compté. <em>Les résultats avant les tâches.</em></p>",
   "items": [
     {
       "title": "Milesopedia",
@@ -31,6 +31,6 @@
       "cta-link": "https://www.nesto.ca/fr/taux-hypothecaires/renouvellement/"
     }
   ],
-  "ctaTeaser": "Vous voulez parler de votre prochain défi produit ou technique ? Alignons-nous sur ce qui compte et sur la façon de travailler ensemble.",
+  "ctaTeaser": "Vous voulez parler de votre <strong>prochain défi produit ou technique</strong> ? Alignons-nous sur <em>ce qui compte</em> et sur la façon de travailler ensemble.",
   "footer-cta-label": "Planifier un échange !"
 }

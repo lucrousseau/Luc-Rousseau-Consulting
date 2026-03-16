@@ -40,7 +40,7 @@ export default function Engagement({ cta }) {
                 <p className="section__badge">{t("engagement:badge")}</p>
                 <h2 className="underline underline--center">{t("engagement:headline")}</h2>
                 {t("engagement:subhead") && <p className="big">{t("engagement:subhead")}</p>}
-                <p className="big">{t("engagement:valueStatement")}</p>
+                <p className="big">{parse(t("engagement:valueStatement"))}</p>
               </>
             ),
           },
@@ -55,8 +55,8 @@ export default function Engagement({ cta }) {
             cols: { col: 10, sm: 12 },
             content: (
               <>
-                <p className="big">{t("engagement:differentiator")}</p>
-                <p>{t("engagement:ctaTeaser")}</p>
+                <p className="big">{parse(t("engagement:differentiator"))}</p>
+                <p>{parse(t("engagement:ctaTeaser"))}</p>
                 <p>
                   <Button
                     variant={"primary"}

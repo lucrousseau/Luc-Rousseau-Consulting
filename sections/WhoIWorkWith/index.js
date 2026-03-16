@@ -50,7 +50,7 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
                   {t("who-i-work-with:items", { returnObjects: true }).map((item) => (
                     <li key={item.title}>
                       <h3 className="h3">{item.title}</h3>
-                      <p>{item.content}</p>
+                      <p>{parse(item.content)}</p>
                     </li>
                   ))}
                 </ul>

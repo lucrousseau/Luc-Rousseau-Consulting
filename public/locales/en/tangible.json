@@ -4,7 +4,7 @@
   "navigation-label-short": "Work",
   "badge": "Proof",
   "title": "Selected work",
-  "summary": "<p className=\"big\">A few engagements where ownership of architecture, product impact, and delivery mattered. Outcomes over tasks.</p>",
+  "summary": "<p className=\"big\">A few engagements where <strong>ownership of architecture, product impact, and delivery</strong> mattered. <em>Outcomes over tasks.</em></p>",
   "items": [
     {
       "title": "Milesopedia",
@@ -31,6 +31,6 @@
       "cta-link": "https://www.nesto.ca/mortgage-rates/renewal-rates/#payment-shock"
     }
   ],
-  "ctaTeaser": "Want to discuss your next product or technical challenge? Let's align on what matters and how we can work together.",
+  "ctaTeaser": "Want to discuss your <strong>next product or technical challenge</strong>? Let's align on <em>what matters</em> and how we can work together.",
   "footer-cta-label": "Schedule a conversation"
 }

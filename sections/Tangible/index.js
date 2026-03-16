@@ -76,7 +76,7 @@ export default function Tangible({ cta }) {
             content: (
               <div className="align align--center tangible__cta-block">
                 {t("tangible:ctaTeaser") && (
-                  <p className="big tangible__cta-teaser">{t("tangible:ctaTeaser")}</p>
+                  <p className="big tangible__cta-teaser">{parse(t("tangible:ctaTeaser"))}</p>
                 )}
                 <p>
                   <Button

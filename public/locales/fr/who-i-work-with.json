@@ -8,11 +8,11 @@
   "items": [
     {
       "title": "Responsables produit et technique",
-      "content": "Vous voulez un partenaire senior pour structurer la roadmap, challenger l'architecture et livrer — pas seulement exécuter des tickets."
+      "content": "Vous voulez un partenaire senior pour structurer la roadmap, challenger l'architecture et <strong>livrer — pas seulement exécuter des tickets</strong>."
     },
     {
       "title": "Équipes avec du legacy ou des systèmes enchevêtrés",
-      "content": "Vous voulez réduire la dette, clarifier la structure et stabiliser sans tout réécrire."
+      "content": "Vous voulez réduire la dette, clarifier la structure et stabiliser <em>sans tout réécrire</em>."
     },
     {
       "title": "Organisations WordPress / CMS",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Startups et scale-ups",
-      "content": "Vous voulez une voix technique responsable, de la stratégie à la livraison."
+      "content": "Vous voulez une voix technique responsable, <strong>de la stratégie à la livraison</strong>."
     }
   ],
   "footer-cta-label": "Planifier un échange"
