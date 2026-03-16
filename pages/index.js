@@ -11,7 +11,6 @@ import HomeHero from "../sections/HomeHero";
 import ProductEngineerDefinition from "../sections/ProductEngineerDefinition";
 import RoleComparison from "../sections/RoleComparison";
 import AIResponsible from "../sections/AIResponsible";
-import Differentiation from "../sections/Differentiation";
 import Engagement from "../sections/Engagement";
 import WhoIWorkWith from "../sections/WhoIWorkWith";
 import Technologies from "../sections/Technologies";
@@ -59,6 +58,10 @@ export default function Home() {
               label: t("role-comparison:navigation-label-short"),
             },
             {
+              href: `#${t("ai-responsible:anchor")}`,
+              label: t("ai-responsible:navigation-label-short"),
+            },
+            {
               href: `#${t("engagement:anchor")}`,
               label: t("engagement:navigation-label-short"),
             },
@@ -67,16 +70,8 @@ export default function Home() {
               label: t("who-i-work-with:navigation-label-short"),
             },
             {
-              href: `#${t("differentiation:anchor")}`,
-              label: t("differentiation:navigation-label-short"),
-            },
-            {
               href: `#${t("technologies:anchor")}`,
               label: t("technologies:navigation-label-short"),
-            },
-            {
-              href: `#${t("ai-responsible:anchor")}`,
-              label: t("ai-responsible:navigation-label-short"),
             },
             {
               href: `#${t("tangible:anchor")}`,
@@ -95,6 +90,12 @@ export default function Home() {
             link: t("common:schedule-me"),
           }}
         />
+        <AIResponsible
+          cta={{
+            label: t("common:schedule-me-label"),
+            link: t("common:schedule-me"),
+          }}
+        />
         <Engagement
           cta={{
             label: t("engagement:ctaLabel"),
@@ -107,14 +108,12 @@ export default function Home() {
             link: t("common:schedule-me"),
           }}
         />
-        <Differentiation />
         <Technologies
           cta={{
             label: t("common:schedule-me-label"),
             link: t("common:schedule-me"),
           }}
         />
-        <AIResponsible />
         <Tangible
           cta={{
             label: t("common:schedule-me-label"),
@@ -147,7 +146,6 @@ export const getServerSideProps = async ({ locale }) => {
         "benefits",
         "home-hero",
         "ai-responsible",
-        "differentiation",
         "engagement",
         "product-engineer",
         "role-comparison",

@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as *;
+
+// AI Responsible: flagship section with distinct background and stronger hierarchy
+.section-ai-responsible {
+  background-color: var(--section-ai-responsible-bg, rgb(100 126 114 / 8%));
+
+  // Reuse page-home section rhythm (Container inside gets same padding via .page-home > .container)
+  .container {
+    --set-container-padding-top: 48;
+    --set-container-padding-bottom: 48;
+
+    @media screen and (max-width: $md) {
+      --set-container-padding-top: 36;
+      --set-container-padding-bottom: 36;
+    }
+
+    @media screen and (max-width: $sm) {
+      --set-container-padding-top: 28;
+      --set-container-padding-bottom: 28;
+    }
+  }
+
+  &__badge {
+    margin: 0 0 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-accent-color);
+    text-align: center;
+  }
+
+  .underline--center {
+    margin-top: 0;
+  }
+
+  .component__product {
+    height: 100%;
+  }
+
+  &__cta {
+    margin: 0;
+  }
+
+  &__cta-teaser {
+    margin: 0 0 0.75rem;
+  }
+}

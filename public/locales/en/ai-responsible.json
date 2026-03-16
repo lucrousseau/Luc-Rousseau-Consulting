@@ -2,8 +2,31 @@
   "anchor": "ai-responsible",
   "navigation-label": "AI & execution",
   "navigation-label-short": "AI",
+  "badge": "AI & execution",
   "title": "How a senior Product Engineer uses AI responsibly",
   "summary": "AI can speed up execution—but it doesn't replace judgment, architecture, or experience. Here's how I use it: with guardrails, clear boundaries, and senior oversight so it amplifies delivery instead of creating chaos.",
-  "content": "<ul className=\"align--left\"><li><strong>AI accelerates execution.</strong> I use it for boilerplate, refactors, tests, and documentation when it saves time without compromising quality. The gain is in throughput on well-defined work, not in replacing design or decision-making.</li><li><strong>AI requires guardrails.</strong> Output is reviewed, tested, and aligned with your architecture and standards. Nothing ships without human verification. No blind copy-paste into production.</li><li><strong>AI does not replace architecture thinking.</strong> System design, API contracts, technical debt prioritisation, and build-vs-buy decisions stay with the engineer. Tools suggest; people decide.</li><li><strong>Experience matters more than tools.</strong> Knowing what \"good\" looks like, when to push back on a spec, and how systems fail in production comes from years of shipping—not from a model.</li><li><strong>Senior supervision prevents AI-driven chaos.</strong> Unsupervised AI output leads to inconsistent patterns, hidden debt, and rework. A senior Product Engineer keeps the bar high and the system coherent.</li></ul>",
-  "closing": "So: AI as leverage, not identity. Clear boundaries, human ownership, and no hype."
+  "items": [
+    {
+      "title": "AI accelerates execution",
+      "content": "I use it for boilerplate, refactors, tests, and documentation when it saves time without compromising quality. The gain is in throughput on well-defined work, not in replacing design or decision-making."
+    },
+    {
+      "title": "AI requires guardrails",
+      "content": "Output is reviewed, tested, and aligned with your architecture and standards. Nothing ships without human verification. No blind copy-paste into production."
+    },
+    {
+      "title": "AI does not replace architecture thinking",
+      "content": "System design, API contracts, technical debt prioritisation, and build-vs-buy decisions stay with the engineer. Tools suggest; people decide."
+    },
+    {
+      "title": "Experience matters more than tools",
+      "content": "Knowing what \"good\" looks like, when to push back on a spec, and how systems fail in production comes from years of shipping—not from a model."
+    },
+    {
+      "title": "Senior supervision prevents AI-driven chaos",
+      "content": "Unsupervised AI output leads to inconsistent patterns, hidden debt, and rework. A senior Product Engineer keeps the bar high and the system coherent."
+    }
+  ],
+  "closing": "So: AI as leverage, not identity. Clear boundaries, human ownership, and no hype.",
+  "ctaTeaser": "Want to see how this works in practice?"
 }

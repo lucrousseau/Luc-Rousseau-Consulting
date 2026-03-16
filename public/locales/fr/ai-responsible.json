@@ -2,8 +2,31 @@
   "anchor": "ai-responsible",
   "navigation-label": "IA et exécution",
   "navigation-label-short": "IA",
+  "badge": "IA et exécution",
   "title": "Comment un Product Engineer senior utilise l'IA de façon responsable",
   "summary": "L'IA peut accélérer l'exécution—elle ne remplace pas le jugement, l'architecture ni l'expérience. Voici comment je l'utilise : avec des garde-fous, des limites claires et une supervision senior pour qu'elle amplifie la livraison au lieu de créer le chaos.",
-  "content": "<ul className=\"align--left\"><li><strong>L'IA accélère l'exécution.</strong> Je l'utilise pour le boilerplate, les refactors, les tests et la doc quand ça fait gagner du temps sans compromettre la qualité. Le gain est sur le débit de travail bien défini, pas sur le remplacement de la conception ou des décisions.</li><li><strong>L'IA exige des garde-fous.</strong> La sortie est revue, testée et alignée avec votre architecture et vos standards. Rien ne part en prod sans vérification humaine. Pas de copier-coller aveugle.</li><li><strong>L'IA ne remplace pas la pensée architecturale.</strong> La conception système, les contrats d'API, la priorisation de la dette technique et les décisions build-vs-buy restent du ressort de l'ingénieur. Les outils suggèrent ; les humains décident.</li><li><strong>L'expérience compte plus que les outils.</strong> Savoir à quoi ressemble le « bon », quand contester un spec et comment les systèmes échouent en prod vient des années de livraison—pas d'un modèle.</li><li><strong>La supervision senior évite le chaos piloté par l'IA.</strong> Une sortie IA non supervisée mène à des patterns incohérents, une dette cachée et du rework. Un Product Engineer senior garde la barre haute et le système cohérent.</li></ul>",
-  "closing": "Donc : l'IA comme levier, pas comme identité. Limites claires, ownership humain, et pas de hype."
+  "items": [
+    {
+      "title": "L'IA accélère l'exécution",
+      "content": "Je l'utilise pour le boilerplate, les refactors, les tests et la doc quand ça fait gagner du temps sans compromettre la qualité. Le gain est sur le débit de travail bien défini, pas sur le remplacement de la conception ou des décisions."
+    },
+    {
+      "title": "L'IA exige des garde-fous",
+      "content": "La sortie est revue, testée et alignée avec votre architecture et vos standards. Rien ne part en prod sans vérification humaine. Pas de copier-coller aveugle."
+    },
+    {
+      "title": "L'IA ne remplace pas la pensée architecturale",
+      "content": "La conception système, les contrats d'API, la priorisation de la dette technique et les décisions build-vs-buy restent du ressort de l'ingénieur. Les outils suggèrent ; les humains décident."
+    },
+    {
+      "title": "L'expérience compte plus que les outils",
+      "content": "Savoir à quoi ressemble le « bon », quand contester un spec et comment les systèmes échouent en prod vient des années de livraison—pas d'un modèle."
+    },
+    {
+      "title": "La supervision senior évite le chaos piloté par l'IA",
+      "content": "Une sortie IA non supervisée mène à des patterns incohérents, une dette cachée et du rework. Un Product Engineer senior garde la barre haute et le système cohérent."
+    }
+  ],
+  "closing": "Donc : l'IA comme levier, pas comme identité. Limites claires, ownership humain, et pas de hype.",
+  "ctaTeaser": "Vous voulez voir comment ça se traduit en pratique ?"
 }
