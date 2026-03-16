@@ -1,3 +1,4 @@
+/* Plain CSS import (Sass @use does not apply to .css files) */
 @import "../node_modules/minireset.css";
 
 ul,
@@ -8,6 +9,7 @@ ol {
 ul {
   list-style: disc;
 }
+
 ol {
   list-style: decimal;
 }

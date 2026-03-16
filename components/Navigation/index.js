@@ -10,13 +10,7 @@ export default function Navigation({ ...props }) {
   const alignmentsClass = alignments({ props });
 
   return (
-    <nav
-      className={classNames(
-        "component component__navigation",
-        "big",
-        alignmentsClass
-      )}
-    >
+    <nav className={classNames("component component__navigation", "big", alignmentsClass)}>
       <Row
         tag={"ul"}
         valign={"middle"}

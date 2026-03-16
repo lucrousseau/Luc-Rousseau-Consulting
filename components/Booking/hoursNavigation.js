@@ -10,11 +10,7 @@ export default function HoursNavigation({
     <div className="component__booking__hours__pagination small">
       <span>
         {currentPage > 1 && (
-          <a
-            href="#"
-            onClick={handlePreviousClick}
-            disabled={currentPage === 1}
-          >
+          <a href="#" onClick={handlePreviousClick} disabled={currentPage === 1}>
             Previous
           </a>
         )}
@@ -24,11 +20,7 @@ export default function HoursNavigation({
       </span>
       <span>
         {currentPage < totalPages && (
-          <a
-            href="#"
-            onClick={handleNextClick}
-            disabled={currentPage === totalPages}
-          >
+          <a href="#" onClick={handleNextClick} disabled={currentPage === totalPages}>
             Next
           </a>
         )}

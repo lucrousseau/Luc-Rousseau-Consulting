@@ -49,9 +49,7 @@ export default function Header({ ...props }) {
                                 columns={[
                                   navigation !== false && {
                                     className: "component__header__nav",
-                                    content: (
-                                      <Navigation navigation={navigation} />
-                                    ),
+                                    content: <Navigation navigation={navigation} />,
                                   },
                                   {
                                     className: "component__header__right",
@@ -61,8 +59,7 @@ export default function Header({ ...props }) {
                                         valign={"middle"}
                                         columns={[
                                           {
-                                            className:
-                                              "component__header__tools",
+                                            className: "component__header__tools",
                                             content: (
                                               <Row
                                                 valign={"middle"}
@@ -71,11 +68,7 @@ export default function Header({ ...props }) {
                                                     content: <SocialLinks />,
                                                   },
                                                   {
-                                                    content: (
-                                                      <LanguageSwitcher
-                                                        current={lang}
-                                                      />
-                                                    ),
+                                                    content: <LanguageSwitcher current={lang} />,
                                                   },
                                                 ]}
                                               />
@@ -95,9 +88,7 @@ export default function Header({ ...props }) {
                                                         variant={"primary"}
                                                         size={"small"}
                                                         label={t("contact-me")}
-                                                        href={t(
-                                                          "hello@lucrousseau.com"
-                                                        )}
+                                                        href={t("hello@lucrousseau.com")}
                                                       />
                                                     ),
                                                   },

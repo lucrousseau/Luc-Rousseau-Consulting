@@ -1,0 +1,62 @@
+{
+  "anchor": "quest-ce-quun-product-engineer",
+  "navigation-label": "Qu'est-ce qu'un Product Engineer ?",
+  "navigation-label-short": "Rôle",
+  "title": "Qu'est-ce qu'un Product Engineer ?",
+  "paragraph1": "<p>Un Product Engineer <strong>vous aide à décider quoi construire et pourquoi</strong>, conçoit comment le système doit fonctionner, et <strong>le construit—ou le fait construire par l'équipe</strong>. Pas de prise de tickets : il contribue au plan, aux choix techniques et à la livraison. <strong>Une seule personne</strong> pour passer de « on ne sait pas ce qu'il nous faut » ou « notre technique part en vrille » à un <strong>plan clair et un produit qui marche</strong>. En 2026 <strong>l'IA est partout</strong>—ce profil est celui qui décide où l'IA a sa place, où sont les garde-fous et ce qui part en prod, au lieu de se contenter de prompter.</p>",
+  "paragraph2": "<p><strong>Concrètement :</strong> une voix pour le produit, les décisions techniques et la livraison. <strong>Pas de handoff, pas de boîte noire.</strong> Avec l'IA, les besoins et le périmètre passent de la discussion au dev ; l'écart entre « ce qu'on veut » et « ce qu'on construit » se réduit. Pas un « opérateur IA »—celui qui pilote comment le produit et le système utilisent l'IA.</p>",
+  "table-caption": "Comparaison des rôles",
+  "table": {
+    "headers": {
+      "dimension": "Dimension",
+      "developer": "Développeur",
+      "techLead": "Tech Lead",
+      "productManager": "Product Manager",
+      "productEngineer": "Product Engineer"
+    },
+    "rows": [
+      {
+        "dimension": "Focus",
+        "developer": "Fonctionnalités et bugs, dans un périmètre donné.",
+        "techLead": "Livraison équipe, décisions tech, personnes.",
+        "productManager": "Quoi construire, pour qui, dans quel ordre.",
+        "productEngineer": "Quoi construire et comment ; produit et tech en un rôle."
+      },
+      {
+        "dimension": "Possède",
+        "developer": "Tâches et tickets.",
+        "techLead": "Résultats équipe, qualité, direction tech.",
+        "productManager": "Roadmap, priorités, alignement.",
+        "productEngineer": "Résultats, architecture, livraison ; le comment et une partie du quoi."
+      },
+      {
+        "dimension": "Profondeur",
+        "developer": "Code, tests, ce qui est assigné.",
+        "techLead": "Large et profonde ; guide la stack et le design.",
+        "productManager": "Souvent légère ; s'appuie sur l'équipe pour le comment.",
+        "productEngineer": "Profonde : code, systèmes, APIs, scale."
+      },
+      {
+        "dimension": "Business",
+        "developer": "Via specs et priorités.",
+        "techLead": "Arbitrages et ressources.",
+        "productManager": "Roadmap, métriques, utilisateurs.",
+        "productEngineer": "Choix techniques liés au produit et au business."
+      },
+      {
+        "dimension": "Architecture",
+        "developer": "Suit les patterns ; peut améliorer localement.",
+        "techLead": "Définit ou affine pour l'équipe/le produit.",
+        "productManager": "Possède rarement ; travaille avec l'équipe.",
+        "productEngineer": "Possède ou co-possède structure, frontières, dette."
+      },
+      {
+        "dimension": "Livraison",
+        "developer": "Leur travail.",
+        "techLead": "Permet à l'équipe de livrer.",
+        "productManager": "Définit quoi ; ne construit pas.",
+        "productEngineer": "Livre et façonne quoi et comment."
+      }
+    ]
+  }
+}

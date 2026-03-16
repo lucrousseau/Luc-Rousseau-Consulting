@@ -1,8 +1,6 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
+@use "../../../styles/abstracts/variables" as *;
+@use "../../../styles/abstracts/mixins" as *;
 
 @mixin colWidth($prefix: null, $size) {
   $prefix: getPrefix($prefix);
@@ -14,8 +12,7 @@
       flex: 0
         0
         calc(
-          ((100% / #{$columns}) * #{$size}) -
-            (var(--gap) * #{1 - math.div(1, $columns) * $size})
+          ((100% / #{$columns}) * #{$size}) - (var(--gap) * #{1 - math.div(1, $columns) * $size})
         );
     }
   }
@@ -24,19 +21,21 @@
 .row {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   gap: var(--gap);
-  flex-direction: row;
 
   &--nowrap {
     flex-wrap: nowrap;
   }
+
   &--reverse {
     flex-direction: row-reverse;
   }
+
   &--column {
     flex-direction: column;
   }
+
   &--inline {
     display: inline-flex;
   }
@@ -60,6 +59,7 @@
 
   > .col {
     $that: &;
+
     flex: 1;
     display: flex;
     position: relative;
@@ -74,9 +74,11 @@
     &--top {
       align-self: flex-start;
     }
+
     &--middle {
       align-self: center;
     }
+
     &--bottom {
       align-self: flex-end;
     }
@@ -86,9 +88,11 @@
     &--pull-left {
       flex: none;
     }
+
     &--pull-right {
       margin-left: auto;
     }
+
     &--pull-left {
       margin-right: auto;
     }

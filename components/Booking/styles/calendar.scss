@@ -1,7 +1,4 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
-
-@import "./commons";
+@use "../../../styles/abstracts/variables" as *;
+@use "../../../styles/abstracts/mixins" as *;
+@use "./commons";

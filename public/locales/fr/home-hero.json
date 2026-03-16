@@ -2,7 +2,7 @@
   "anchor": "apropos",
   "navigation-label": "À propos",
   "title": "Luc Rousseau",
-  "subtitle": "Développeur à la Demande et Spécialiste de la Création de Produits Numériques",
-  "content": "<h4>De l'UX/UI au développement freelance, mes 25 ans d'expérience m'ont doté d'une expertise transversale que je mets à votre disposition.</h4><p>En tant que consultant et développeur à la demande, je guide les startups et les PME dans le développement de leur MVP (Produit Minimum Viable). Fort de mon expertise en développement web, direction artistique et expérience utilisateur, tout en respectant les contraintes de délais et de budget, j'accompagne mes clients dans la création de produits qui répondent véritablement aux besoins des utilisateurs.</p><p><strong>Transformons votre vision en réalité.</strong></p>",
-  "footer-cta-label": "Planifions un entretien !"
+  "subtitle": "Product Engineer — Systèmes, architecture et exécution produit",
+  "content": "<p className=\"big\">Je travaille à l'intersection de la stratégie produit, de l'architecture système et de l'exécution concrète. WordPress et headless, APIs, plateformes multi-sites, dette technique et livraison—avec un partenaire redevable pour la clarté et la cohérence.</p><p>Basé au Québec, j'accompagne les responsables produit et technique qui veulent un partenariat technique stratégique, pas du travail à l'heure ou par tâches.</p>",
+  "footer-cta-label": "Planifier un échange"
 }

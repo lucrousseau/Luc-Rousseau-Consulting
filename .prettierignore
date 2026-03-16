@@ -1,0 +1,20 @@
+# Dependencies & build
+node_modules
+.next
+out
+build
+dist
+
+# Lock & cache
+package-lock.json
+*.lock
+.cache
+
+# Generated / assets
+public/images/*.webp
+*.min.js
+*.min.css
+
+# Misc
+coverage
+.vercel

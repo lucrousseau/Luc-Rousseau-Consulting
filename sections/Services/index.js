@@ -13,11 +13,7 @@ export default function Services() {
     return {
       cols: { col: 4, lg: 10, sm: 12 },
       content: (
-        <Product
-          title={item.title}
-          label={item["cta-label"]}
-          className={"align--lg-left"}
-        >
+        <Product title={item.title} label={item["cta-label"]} className={"align--lg-left"}>
           <>
             <p>{item.subtitle}</p>
             {parse(item.content)}
@@ -37,9 +33,7 @@ export default function Services() {
             cols: { col: 11, xl: 12, sm: 12 },
             content: (
               <>
-                <h2 className="underline underline--center">
-                  {t("services:title")}
-                </h2>
+                <h2 className="underline underline--center">{t("services:title")}</h2>
                 {parse(t("services:summary"))}
               </>
             ),

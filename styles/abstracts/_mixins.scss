@@ -1,3 +1,8 @@
+@use "variables" as *;
+
+// Sass function names are case-sensitive. Always call with exact casing:
+// findPreviousBreakepoint (not findpreviousbreakepoint), getPrefix (not getprefix).
+
 @function findPreviousBreakepoint($prefix, $return: "prefix") {
   $previousPrefix: null;
   $previousBreakpoint: null;

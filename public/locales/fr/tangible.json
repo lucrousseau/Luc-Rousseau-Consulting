@@ -1,8 +1,9 @@
 {
   "anchor": "projets",
   "navigation-label": "Projets",
-  "title": "Rendre le Possible Tangible",
-  "summary": "<p className=\"big\">Je transforme les défis du développement de produits numériques en opportunités claires et réalisables, catalysant ainsi l&apos;innovation et assurant la réussite.</p>",
+  "navigation-label-short": "Réalisations",
+  "title": "Réalisations choisies",
+  "summary": "<p className=\"big\">Quelques engagements où la responsabilité de l'architecture, l'impact produit et la livraison ont compté. Les résultats avant les tâches.</p>",
   "items": [
     {
       "title": "Nesto",
@@ -23,5 +24,5 @@
       "cta-link": "https://www.nesto.ca/fr/taux-hypothecaires/renouvellement/"
     }
   ],
-  "footer-cta-label": "Innovons dès maintenant !"
+  "footer-cta-label": "Planifier un échange !"
 }

@@ -1,5 +1,5 @@
-# Use Node.js version 18 as the base image
-FROM node:18 
+# Align with package.json engines and .nvmrc (Node 22)
+FROM node:22-alpine 
 
 # Set the working directory inside the container
 WORKDIR /app

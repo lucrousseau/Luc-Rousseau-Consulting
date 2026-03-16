@@ -1,12 +1,11 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
+@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
 
 #whaticando__items {
   @media screen and (max-width: $sm) {
     flex-direction: column;
+
     > .col {
       flex: 1;
     }

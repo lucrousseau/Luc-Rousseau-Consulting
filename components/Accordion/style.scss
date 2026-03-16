@@ -1,16 +1,15 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
+@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
 
 .component__accordion {
   $parent: &;
+
   padding: var(--double-padding);
   border-radius: var(--border-radius);
   background-color: var(--secondary-background-color);
 
-  @include shadow();
+  @include shadow;
 
   &__content {
     display: none;
@@ -22,6 +21,7 @@
     margin-top: var(--border-width);
     margin-bottom: var(--border-width);
     scroll-margin-top: var(--padding);
+
     &::after {
       top: 0;
       content: "";
@@ -104,6 +104,7 @@
     &:hover {
       > *:first-child {
         background-color: var(--body-background-color);
+
         i {
           background-color: var(--secondary-background-color);
 

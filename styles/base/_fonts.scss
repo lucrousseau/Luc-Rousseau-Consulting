@@ -1,6 +1,7 @@
 @font-face {
-  font-family: "QuincyCF";
-  src: url("/fonts/QuincyCF-Black.woff2") format("woff2"),
+  font-family: QuincyCF;
+  src:
+    url("/fonts/QuincyCF-Black.woff2") format("woff2"),
     url("/fonts/QuincyCF-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
@@ -8,8 +9,9 @@
 }
 
 @font-face {
-  font-family: "QuincyCF";
-  src: url("/fonts/QuincyCF-Medium.woff2") format("woff2"),
+  font-family: QuincyCF;
+  src:
+    url("/fonts/QuincyCF-Medium.woff2") format("woff2"),
     url("/fonts/QuincyCF-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;

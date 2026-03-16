@@ -1,8 +1,6 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
+@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
 
 .component__buy {
   > span {

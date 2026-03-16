@@ -5,21 +5,12 @@ import { alignments } from "../../../commons/alignments";
 import "./style.scss";
 
 const column = (item, index) => {
-  const {
-    className,
-    tag = "div",
-    cols = {},
-    auto,
-    pull,
-    style,
-    content,
-  } = item;
+  const { className, tag = "div", cols = {}, auto, pull, style, content } = item;
 
   const colClasses = !auto
     ? Object.entries(cols).map(([key, value]) => {
         const prefix = key === "col" ? "" : `${key}-`;
-        if (value !== undefined && value !== null)
-          return `col--${prefix}${value}`;
+        if (value !== undefined && value !== null) return `col--${prefix}${value}`;
       })
     : [];
 
@@ -30,13 +21,7 @@ const column = (item, index) => {
   return (
     <Tag
       key={index}
-      className={classNames(
-        { col: !auto },
-        className,
-        ...colClasses,
-        alignmentsClass,
-        pullClass
-      )}
+      className={classNames({ col: !auto }, className, ...colClasses, alignmentsClass, pullClass)}
       style={style}
     >
       {content}

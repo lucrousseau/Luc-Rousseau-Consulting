@@ -1,0 +1,9 @@
+{
+  "anchor": "qui-je-accompagne",
+  "navigation-label": "Qui j'accompagne",
+  "navigation-label-short": "Qui",
+  "title": "Avec qui je travaille le mieux",
+  "summary": "<p className=\"big\">Je suis le plus utile quand le contexte correspond à ma façon de travailler : stratégie et exécution au même endroit, clarté plutôt que buzzwords, et de la marge pour réduire la complexité.</p>",
+  "content": "<ul className=\"align--left\"><li><strong>Responsables produit et technique</strong> qui veulent un partenaire senior pour structurer la roadmap, challenger l'architecture et livrer — pas seulement exécuter des tickets.</li><li><strong>Équipes avec du legacy ou des systèmes enchevêtrés</strong> qui veulent réduire la dette, clarifier la structure et stabiliser sans tout réécrire.</li><li><strong>Organisations WordPress avancées</strong> qui veulent évoluer vers du headless, moderniser Gutenberg et structurer des APIs propres, avec une vision claire à long terme.</li><li><strong>Entreprises multi-marques ou multi-marchés</strong> qui doivent gérer complexité, cohérence et performance sans multiplier les couches inutiles.</li><li><strong>Petites équipes (2–4 devs)</strong> sous pression qui ont besoin de priorisation claire, de standards techniques solides et d'un cadre structurant pour livrer proprement.</li><li><strong>Organisations qui ont besoin d'un pont réel entre business et technique</strong>, avec quelqu'un capable d'adapter son langage et de garder tout aligné.</li><li><strong>Startups et scale-ups</strong> qui veulent une voix technique responsable, capable de tenir la ligne de la stratégie à la livraison.</li></ul>",
+  "footer-cta-label": "Planifier un échange"
+}

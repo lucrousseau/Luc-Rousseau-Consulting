@@ -1,14 +1,21 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
+@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
 
 .component__header {
   $this: &;
 
   --margin-top: 0;
   --margin-bottom: 0;
+
+  #{$this}__nav {
+    overflow: auto hidden;
+    -webkit-overflow-scrolling: touch;
+
+    .component__navigation {
+      min-width: min-content;
+    }
+  }
 
   @media screen and (max-width: $mobile-nav-primary-breakpoint) {
     .col #{$this}__nav {

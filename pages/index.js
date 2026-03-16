@@ -6,13 +6,20 @@ import Container from "../components/Layout/Container";
 
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
+import About from "../sections/About";
 import DevelopmentHero from "../sections/DevelopmentHero";
-import WhatICanDo from "../sections/WhatICanDo";
+import ProductEngineerDefinition from "../sections/ProductEngineerDefinition";
+import RoleComparison from "../sections/RoleComparison";
+import AIResponsible from "../sections/AIResponsible";
+import Differentiation from "../sections/Differentiation";
+import Engagement from "../sections/Engagement";
+import WhoIWorkWith from "../sections/WhoIWorkWith";
 import Why from "../sections/Why";
 import Technologies from "../sections/Technologies";
 import Tangible from "../sections/Tangible";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { clearI18nServerCache } from "../utils/i18n-dev-reload";
 
 export default function Development() {
   const { t } = useTranslation(["development", "hero-development", "common"]);
@@ -38,28 +45,70 @@ export default function Development() {
           navigation={[
             {
               href: `#${t("development-hero:anchor")}`,
-              label: t("development-hero:navigation-label"),
+              label: t("development-hero:navigation-label-short"),
             },
             {
-              href: `#${t("whaticando:anchor")}`,
-              label: t("whaticando:navigation-label"),
+              href: `#${t("about:anchor")}`,
+              label: t("about:navigation-label-short"),
+            },
+            {
+              href: `#${t("product-engineer:anchor")}`,
+              label: t("product-engineer:navigation-label-short"),
+            },
+            {
+              href: `#${t("role-comparison:anchor")}`,
+              label: t("role-comparison:navigation-label-short"),
+            },
+            {
+              href: `#${t("engagement:anchor")}`,
+              label: t("engagement:navigation-label-short"),
+            },
+            {
+              href: `#${t("who-i-work-with:anchor")}`,
+              label: t("who-i-work-with:navigation-label-short"),
+            },
+            {
+              href: `#${t("differentiation:anchor")}`,
+              label: t("differentiation:navigation-label-short"),
+            },
+            {
+              href: `#${t("why:anchor")}`,
+              label: t("why:navigation-label-short"),
             },
             {
               href: `#${t("technologies:anchor")}`,
-              label: t("technologies:navigation-label"),
+              label: t("technologies:navigation-label-short"),
             },
-            { href: `#${t("why:anchor")}`, label: t("why:navigation-label") },
+            {
+              href: `#${t("ai-responsible:anchor")}`,
+              label: t("ai-responsible:navigation-label-short"),
+            },
             {
               href: `#${t("tangible:anchor")}`,
-              label: t("tangible:navigation-label"),
+              label: t("tangible:navigation-label-short"),
             },
           ]}
           cta={false}
         />
       </Container>
-      <main>
+      <main className="page-home">
         <DevelopmentHero />
-        <WhatICanDo
+        <ProductEngineerDefinition />
+        <RoleComparison />
+        <Engagement
+          cta={{
+            label: t("engagement:ctaLabel"),
+            link: t("common:schedule-me"),
+          }}
+        />
+        <WhoIWorkWith
+          cta={{
+            label: t("common:schedule-me-label"),
+            link: t("common:schedule-me"),
+          }}
+        />
+        <Differentiation />
+        <Why
           cta={{
             label: t("common:schedule-me-label"),
             link: t("common:schedule-me"),
@@ -71,18 +120,14 @@ export default function Development() {
             link: t("common:schedule-me"),
           }}
         />
-        <Why
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
+        <AIResponsible />
         <Tangible
           cta={{
             label: t("common:schedule-me-label"),
             link: t("common:schedule-me"),
           }}
         />
+        <About />
       </main>
       <Container
         tag={"footer"}
@@ -97,19 +142,28 @@ export default function Development() {
   );
 }
 
-export const getServerSideProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, [
-      "common",
-      "development",
-      "benefits",
-      "development-hero",
-      "passion",
-      "services",
-      "tangible",
-      "technologies",
-      "whaticando",
-      "why",
-    ])),
-  },
-});
+export const getServerSideProps = async ({ locale }) => {
+  clearI18nServerCache();
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        "about",
+        "common",
+        "development",
+        "benefits",
+        "development-hero",
+        "ai-responsible",
+        "differentiation",
+        "engagement",
+        "product-engineer",
+        "role-comparison",
+        "passion",
+        "services",
+        "tangible",
+        "technologies",
+        "who-i-work-with",
+        "why",
+      ])),
+    },
+  };
+};

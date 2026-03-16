@@ -24,9 +24,7 @@ export default function Passion() {
             cols: { col: 11, xl: 12, sm: 12 },
             content: (
               <>
-                <h2 className="underline underline--center">
-                  {t("passion:title")}
-                </h2>
+                <h2 className="underline underline--center">{t("passion:title")}</h2>
                 {parse(t("passion:summary"))}
               </>
             ),

@@ -2,14 +2,15 @@
   position: relative;
   width: 100%;
   aspect-ratio: 16/12;
+
   .component__picture {
     margin: 0;
     width: 100%;
     height: 100%;
     display: flex;
-
     align-items: center;
     justify-content: center;
+
     img {
       width: auto;
       height: 100%;
@@ -18,19 +19,23 @@
       max-height: initial;
     }
   }
+
   .slick-slider {
     inset: 0;
     width: 100%;
     height: 100%;
     position: absolute;
   }
+
   .slick-list {
     height: 100%;
   }
+
   .slick-track {
     display: flex;
     height: 100%;
   }
+
   .slick-track .slick-slide {
     display: flex;
     height: auto;
@@ -38,6 +43,7 @@
 
   .slick-slide {
     height: auto;
+
     > div {
       display: flex;
       height: 100%;
@@ -46,8 +52,10 @@
       align-items: center;
     }
   }
+
   .slick-arrow {
     $w: 2em;
+
     top: 50%;
     width: 3em;
     height: 3em;
@@ -67,6 +75,7 @@
     &.slick-prev {
       left: $w * 0.5;
     }
+
     &.slick-next {
       right: $w * 0.5;
     }

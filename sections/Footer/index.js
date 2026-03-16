@@ -40,7 +40,7 @@ export default function Footer({ ...props }) {
                   },
                   {
                     pull: "right",
-                    className: "align--right",
+                    className: "align align--right",
                     content: <small>{t("have-good-day")}</small>,
                   },
                 ]}

@@ -1,8 +1,9 @@
 {
   "anchor": "why",
-  "navigation-label": "Why",
-  "title": "Why Opt for a Developer On-Demand",
-  "summary": "<p className=\"big\">Choosing a developer on-demand means securing a partner who understands your vision and provides tailored technical expertise to guide innovation and optimize development at every stage.</p>",
-  "content": "<ol className=\"align--center\"><li className=\"h3\">Prevents costly mistakes, contributes to risk reduction, and secures your project.</li><li className=\"h3\">Ensures technical excellence and consistency at every development stage.</li><li className=\"h3\">Provides tailored leadership for building a high-performing team and selecting technologies.</li><li className=\"h3\">Plays a central role in the success of your digital ambitions.</li><li className=\"h3\">Combines technical expertise and managerial skills.</li><li className=\"h3\">Constantly monitors trends to keep you at the forefront.</li></ol>",
-  "footer-cta-label": "Secure Expert Guidance!"
+  "navigation-label": "Why work with me",
+  "navigation-label-short": "Why me",
+  "title": "Why work with me",
+  "summary": "<p className=\"big\">I bring <strong>systems thinking, technical depth</strong>, and a focus on alignment: your product strategy and your technical choices should support each other. <strong>No black boxes, no hype</strong>—clear architecture and delivery you can count on.</p>",
+  "content": "<ol className=\"align--center\"><li className=\"h3\">Reduce risk and cost by clarifying structure, dependencies, and roadmap before scaling.</li><li className=\"h3\">Get technical decisions that match business goals—architecture and product aligned.</li><li className=\"h3\">Ship with consistency: performance, reliability, and maintainability built in.</li><li className=\"h3\">One senior partner for strategy and execution—no handoff theatre.</li><li className=\"h3\">Technical debt tackled in a prioritised way, not ignored or rewritten blindly.</li></ol>",
+  "footer-cta-label": "Schedule a conversation"
 }

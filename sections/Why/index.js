@@ -33,9 +33,7 @@ export default function Why({ backgroundColor, cta }) {
             cols: { col: 11, xl: 12, sm: 12 },
             content: (
               <>
-                <h2 className="underline underline--center">
-                  {t("why:title")}
-                </h2>
+                <h2 className="underline underline--center">{t("why:title")}</h2>
                 {parse(t("why:summary"))}
               </>
             ),

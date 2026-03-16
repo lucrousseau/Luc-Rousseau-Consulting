@@ -25,13 +25,7 @@ export default function PhotosCarousel({ images }) {
     const { width, height, src } = image;
 
     return (
-      <Picture
-        src={src}
-        key={index}
-        width={width}
-        height={height}
-        alt={`Image ${index + 1}`}
-      />
+      <Picture src={src} key={index} width={width} height={height} alt={`Image ${index + 1}`} />
     );
   });
 

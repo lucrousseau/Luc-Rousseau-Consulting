@@ -1,0 +1,22 @@
+{
+  "anchor": "differentiation",
+  "navigation-label": "Pourquoi c'est différent",
+  "navigation-label-short": "Différent",
+  "title": "Pourquoi travailler avec moi est différent",
+  "summary": "Vous avez des options quand vous avez besoin de leadership produit et technique. Voici en quoi un Product Engineer senior diffère des alternatives habituelles—et ce que ça change pour votre produit et votre équipe.",
+  "items": [
+    {
+      "title": "vs. Faire appel à une agence",
+      "content": "Les agences excellent sur des projets définis et du resourcing ; elles ne sont pas faites pour posséder votre direction technique sur la durée ni pour être la voix unique sur l'architecture et la roadmap. Les handoffs, la rotation des équipes et les périmètres de scope créent souvent des trous en cohérence et continuité. Avec moi vous avez un senior qui reste redevable du même système dans le temps : une personne, un modèle mental, pas de rotation. La pensée système et la cohérence technique ne se perdent pas entre les projets ou les account managers."
+    },
+    {
+      "title": "vs. Engager un développeur freelance",
+      "content": "Un dev freelance exécute en général ce qui est spécifié—tickets, features, périmètre fixe. On ne l'engage rarement pour contester le spec, posséder l'architecture ou aligner roadmap et dette technique sur les résultats business. Avec moi vous avez quelqu'un qui conçoit et exécute : stratégie et implémentation dans un seul rôle. La profondeur d'expérience permet de repérer ce qui manque ou ce qui ne va pas dans le plan avant que ça devienne du rework, et je suis redevable de la cohérence technique sur la durée, pas seulement du sprint en cours."
+    },
+    {
+      "title": "vs. Engager un Product Manager pur",
+      "content": "Un PM possède le « quoi » et le backlog ; il dépend de l'équipe technique pour le « comment ». Cette séparation fonctionne jusqu'à ce que le « comment » contredise ou limite le « quoi », ou que la dette technique et l'architecture deviennent le vrai goulot. Avec moi vous avez une seule personne qui fait le pont : pensée produit et capacité à valider, affiner et implémenter le chemin technique. Moins de friction politique—pas de « produit n'a pas spécifié » contre « la technique n'a pas livré »—parce qu'une seule personne possède le lien entre les deux."
+    }
+  ],
+  "closing": "Même focus sur les résultats. Un partenaire redevable. Moins de coordination, plus de cohérence dans le temps."
+}

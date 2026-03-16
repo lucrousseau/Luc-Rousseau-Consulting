@@ -1,17 +1,15 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
-
-@import "./styles/commons";
+@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
+@use "./styles/commons";
 
 .component__booking {
   &__hours {
     &__list {
       display: grid;
-      grid-gap: 1em;
+      gap: 1em;
       grid-template-columns: repeat(2, 1fr);
+
       span {
         @include bookMeClickElement(true);
 

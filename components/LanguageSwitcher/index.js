@@ -11,15 +11,12 @@ export default function LanguageSwitcher({ current = "en", ...props }) {
     fr: { label: "French", href: "/fr" },
   };
 
-  const currentLanguage = languages[current];
+  // safe: current is locale prop ("en" | "fr"), fallback to en
+  // eslint-disable-next-line security/detect-object-injection
+  const currentLanguage = languages[current] ?? languages.en;
 
   return (
-    <div
-      className={classNames(
-        "component component__language-switcher",
-        alignmentsClass
-      )}
-    >
+    <div className={classNames("component component__language-switcher", alignmentsClass)}>
       <Row
         tag={"ul"}
         halign={"middle"}

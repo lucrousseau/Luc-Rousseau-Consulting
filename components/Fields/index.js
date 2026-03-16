@@ -39,13 +39,7 @@ export default function Fields({
       <label>
         {label && <Label required={required} label={label} />}
         {field === "input" && (
-          <Input
-            prefix={prefix}
-            type={type}
-            value={value}
-            defaultValue={defaultValue}
-            {...props}
-          />
+          <Input prefix={prefix} type={type} value={value} defaultValue={defaultValue} {...props} />
         )}
         {field === "select" && (
           <Select

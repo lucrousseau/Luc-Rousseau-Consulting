@@ -1,15 +1,13 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
+@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
 
 .btn {
   $this: &;
+
   border: none;
   display: inline-block;
-  padding: calc(1em - var(--border-width) * 4)
-    calc(2em - var(--border-width) * 4);
+  padding: calc(1em - var(--border-width) * 4) calc(2em - var(--border-width) * 4);
   border-radius: 100em;
   text-align: center;
   cursor: pointer;
@@ -28,6 +26,7 @@
   &.small,
   &.smaller {
     $padding: 0.7em;
+
     padding: calc(#{$padding} - (var(--border-width) * 4))
       calc((#{$padding * 2.5}) - (var(--border-width) * 4));
   }
@@ -46,8 +45,7 @@
   }
 
   &--primary {
-    border: calc(var(--border-width) * 2) solid
-      var(--btn-primary-background-color);
+    border: calc(var(--border-width) * 2) solid var(--btn-primary-background-color);
     color: var(--btn-primary-color);
     background-color: var(--btn-primary-background-color);
 
@@ -55,8 +53,7 @@
     &:active {
       color: var(--btn-primary-background-color);
       background-color: transparent;
-      border: calc(var(--border-width) * 2) solid
-        var(--btn-primary-background-color);
+      border: calc(var(--border-width) * 2) solid var(--btn-primary-background-color);
     }
     &#{$this}--disabled {
       border-color: var(--body-color);
@@ -65,8 +62,7 @@
   }
 
   &--secondary {
-    border: calc(var(--border-width) * 2) solid
-      var(--btn-secondary-background-color);
+    border: calc(var(--border-width) * 2) solid var(--btn-secondary-background-color);
     color: var(--btn-secondary-color);
     background-color: var(--btn-secondary-background-color);
 
@@ -74,8 +70,7 @@
     &:active {
       color: var(--btn-primary-background-color);
       background-color: transparent;
-      border: calc(var(--border-width) * 2) solid
-        var(--btn-primary-background-color);
+      border: calc(var(--border-width) * 2) solid var(--btn-primary-background-color);
     }
 
     &#{$this}--disabled {
@@ -85,8 +80,7 @@
   }
 
   &--tertiary {
-    border: calc(var(--border-width) * 2) solid
-      var(--btn-tertiary-background-color);
+    border: calc(var(--border-width) * 2) solid var(--btn-tertiary-background-color);
     color: var(--btn-tertiary-color);
     background-color: var(--btn-tertiary-background-color);
 
@@ -94,8 +88,7 @@
     &:active {
       color: var(--btn-primary-background-color);
       background-color: transparent;
-      border: calc(var(--border-width) * 2) solid
-        var(--btn-primary-background-color);
+      border: calc(var(--border-width) * 2) solid var(--btn-primary-background-color);
     }
 
     &#{$this}--disabled {

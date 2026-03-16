@@ -8,13 +8,7 @@ export default function Booking({ className, ...props }) {
   const alignmentsClass = alignments({ props });
 
   return (
-    <div
-      className={classNames(
-        "component component__booking",
-        className,
-        alignmentsClass
-      )}
-    >
+    <div className={classNames("component component__booking", className, alignmentsClass)}>
       <form action="/" method="post">
         <Calendar />
       </form>

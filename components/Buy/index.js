@@ -19,35 +19,28 @@ export default function Buy({
 }) {
   const { t, i18n } = useTranslation();
   const alignmentsClass = alignments({ props });
-  const priceFormatted = new Intl.NumberFormat(`${i18n.language}-CA`, {
-    style: "currency",
-    currency: "CAD",
-  }).format(price);
+  const showPrice = price != null && typeof price === "number" && price > 0;
+  const priceFormatted = showPrice
+    ? new Intl.NumberFormat(`${i18n.language}-CA`, {
+        style: "currency",
+        currency: "CAD",
+      }).format(price)
+    : null;
 
   return (
     <p
-      className={classNames(
-        "component component__buy",
-        className,
-        alignmentsClass
-      )}
+      className={classNames("component component__buy", className, alignmentsClass)}
       data-price={price}
     >
       <span>
         {legend}{" "}
-        {price && (
+        {showPrice && (
           <>
-            <strong>{priceFormatted}</strong>
-            {prefix && <> {prefix}</>}
+            <strong>{priceFormatted}</strong> {prefix && <> {prefix}</>}
           </>
         )}
       </span>
-      <Button
-        href={t("schedule-me")}
-        size={size}
-        variant={variant}
-        label={label}
-      />
+      <Button href={t("schedule-me")} size={size} variant={variant} label={label} />
     </p>
   );
 }

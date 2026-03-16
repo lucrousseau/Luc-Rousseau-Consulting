@@ -1,8 +1,6 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
+@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
 
 .component__fields {
   $this: &;
@@ -14,12 +12,14 @@
       padding: calc(var(--input-padding) * 0.5);
     }
   }
+
   label {
     width: 100%;
     display: block;
     font-weight: 500;
     position: relative;
   }
+
   input,
   select,
   textarea {
@@ -39,6 +39,7 @@
       outline: none;
     }
   }
+
   svg {
     width: 1em;
     height: 1em;
@@ -54,9 +55,11 @@
         }
       }
     }
+
     select {
       padding-left: 2em;
     }
+
     label > svg {
       right: 0.5em;
       position: absolute;

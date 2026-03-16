@@ -1,8 +1,6 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .component {
   --margin-top: var(--padding);

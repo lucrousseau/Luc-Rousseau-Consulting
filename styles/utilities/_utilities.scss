@@ -1,1 +1,2 @@
-@include fontSizes(null, false, 'rem');
+@use "../abstracts/mixins" as *;
+@include fontSizes(null, false, "rem");

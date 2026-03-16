@@ -9,6 +9,7 @@ import Footer from "../../sections/Footer";
 import ZinesHero from "../../sections/ZinesHero";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { clearI18nServerCache } from "../../utils/i18n-dev-reload";
 
 export default function Development() {
   const { t } = useTranslation(["common", "zines", "zines-hero"]);
@@ -48,12 +49,11 @@ export default function Development() {
   );
 }
 
-export const getServerSideProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, [
-      "common",
-      "zines",
-      "zines-hero",
-    ])),
-  },
-});
+export const getServerSideProps = async ({ locale }) => {
+  clearI18nServerCache();
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "zines", "zines-hero"])),
+    },
+  };
+};

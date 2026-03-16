@@ -1,12 +1,18 @@
 /** @type {import('next').NextConfig} */
 
+import path from "path";
+import { fileURLToPath } from "url";
 import i18n from "./next-i18next.config.js";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const withBundleAnalyzer = (await import("@next/bundle-analyzer")).default({
   enabled: process.env.ANALYZE === "true",
 });
 
 const nextConfig = {
+  outputFileTracingRoot: __dirname,
+  serverExternalPackages: ["image-size"],
   i18n: {
     defaultLocale: i18n.i18n.defaultLocale,
     locales: i18n.i18n.locales,
@@ -63,4 +69,3 @@ const nextConfig = {
 };
 
 export default withBundleAnalyzer(nextConfig);
-

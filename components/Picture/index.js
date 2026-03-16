@@ -25,15 +25,10 @@ export default function Picture({
   return (
     <div
       tag={"picture"}
-      className={classNames(
-        "component component__picture",
-        className,
-        alignmentsClass,
-        {
-          "component__picture--absolute": absolute,
-          "component__picture--rounded": rounded,
-        }
-      )}
+      className={classNames("component component__picture", className, alignmentsClass, {
+        "component__picture--absolute": absolute,
+        "component__picture--rounded": rounded,
+      })}
     >
       <Image
         src={src}

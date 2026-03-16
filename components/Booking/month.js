@@ -14,10 +14,7 @@ export default function Month({ month, year, onSelectDay, convertedHours }) {
   const currentMoment = moment();
 
   const isBeforeToday = (day) => {
-    const dayToCompare = moment(
-      `${year}-${month + 1}-${day}`,
-      "YYYY-MM-DD"
-    ).startOf("day");
+    const dayToCompare = moment(`${year}-${month + 1}-${day}`, "YYYY-MM-DD").startOf("day");
 
     return dayToCompare.isBefore(currentMoment.startOf("day"));
   };
@@ -30,8 +27,9 @@ export default function Month({ month, year, onSelectDay, convertedHours }) {
   };
 
   const isAvailable = (day) => {
-    const weekdayIndex =
-      moment(`${year}-${month + 1}-${day}`, "YYYY-MM-DD").isoWeekday() - 1;
+    const weekdayIndex = moment(`${year}-${month + 1}-${day}`, "YYYY-MM-DD").isoWeekday() - 1;
+    // safe: weekdayIndex is 0-6 from isoWeekday()
+    // eslint-disable-next-line security/detect-object-injection
     const availability = convertedHours[weekdayIndex];
 
     if (!availability) {
@@ -49,9 +47,7 @@ export default function Month({ month, year, onSelectDay, convertedHours }) {
   // Generate days of the month using moment.js
   const days = Array.from({ length: daysInMonth }, (_, i) => {
     const day = i + 1;
-    const dateStr = moment(`${year}-${month + 1}-${day}`, "YYYY-MM-DD").format(
-      "YYYY-MM-DD"
-    );
+    const dateStr = moment(`${year}-${month + 1}-${day}`, "YYYY-MM-DD").format("YYYY-MM-DD");
 
     const isInactive = isBeforeToday(day) || !isAvailable(day);
 

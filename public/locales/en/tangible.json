@@ -1,8 +1,9 @@
 {
   "anchor": "projects",
   "navigation-label": "Projects",
-  "title": "Making the Possible Tangible",
-  "summary": "<p className=\"big\">I transform digital product development challenges into distinct, achievable opportunities to fuel innovation and ensure success.</p>",
+  "navigation-label-short": "Work",
+  "title": "Selected work",
+  "summary": "<p className=\"big\">A few engagements where ownership of architecture, product impact, and delivery mattered. Outcomes over tasks.</p>",
   "items": [
     {
       "title": "Nesto",
@@ -23,5 +24,5 @@
       "cta-link": "https://www.nesto.ca/mortgage-rates/renewal-rates/#payment-shock"
     }
   ],
-  "footer-cta-label": "Start Innovating Now!"
+  "footer-cta-label": "Schedule a conversation"
 }

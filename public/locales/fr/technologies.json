@@ -1,8 +1,9 @@
 {
-  "anchor": "competences",
-  "navigation-label": "Compétences",
-  "title": "Compétences et Technologies que je Maîtrise",
-  "summary": "<p className=\"big\">Mon expertise s'étend du design au développement et à la gestion de projet, transformant les idées en solutions numériques clés.</p>",
+  "anchor": "technical-foundations",
+  "navigation-label": "Fondations techniques",
+  "navigation-label-short": "Tech",
+  "title": "Fondations techniques",
+  "summary": "<p className=\"big\">La stack avec laquelle je travaille sert les résultats produit et architecture : clarté, scalabilité et livraison soutenable. Les outils servent le système—pas l'inverse.</p>",
   "items": [
     "WordPress",
     "WooCommerce",
@@ -21,7 +22,7 @@
     "Docker",
     "Tailwind",
     "Figma",
-    "Et bien d'autres!"
+    "Et plus"
   ],
-  "footer-cta-label": "Discutons de votre projet !"
+  "footer-cta-label": "Planifier un échange"
 }

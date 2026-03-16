@@ -1,0 +1,64 @@
+import { useTranslation } from "next-i18next";
+import parse from "html-react-parser";
+
+import Row from "../../components/Layout/Row";
+import Container from "../../components/Layout/Container";
+import Button from "../../components/Button";
+
+export default function WhoIWorkWith({ cta }) {
+  const { t } = useTranslation();
+
+  return (
+    <Container id={t("who-i-work-with:anchor")} align={"center"} halign={"center"}>
+      <Row
+        halign={"center"}
+        style={{
+          "--padding-bottom": "2rem",
+          "--sm-padding-bottom": "0rem",
+        }}
+        columns={[
+          {
+            cols: { col: 11, xl: 12, sm: 12 },
+            content: (
+              <>
+                <h2 className="underline underline--center">{t("who-i-work-with:title")}</h2>
+                {parse(t("who-i-work-with:summary"))}
+              </>
+            ),
+          },
+        ]}
+      />
+      <Row
+        columns={[
+          {
+            cols: { col: 10, sm: 12 },
+            content: (
+              <>
+                {parse(t("who-i-work-with:content"))}
+                <Row
+                  style={{
+                    "--padding-top": "2rem",
+                    "--sm-padding-top": "2rem",
+                  }}
+                  columns={[
+                    {
+                      content: (
+                        <p>
+                          <Button
+                            variant={"primary"}
+                            href={cta?.link ?? t("schedule-me")}
+                            label={cta?.label ?? t("who-i-work-with:footer-cta-label")}
+                          />
+                        </p>
+                      ),
+                    },
+                  ]}
+                />
+              </>
+            ),
+          },
+        ]}
+      />
+    </Container>
+  );
+}

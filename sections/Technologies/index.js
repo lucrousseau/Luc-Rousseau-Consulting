@@ -10,12 +10,10 @@ import Tags from "../../components/Tags";
 export default function Technologies({ backgroundColor, cta }) {
   const { t } = useTranslation();
 
-  const items = t("technologies:items", { returnObjects: true }).map(
-    (item) => ({
-      content: item,
-      emoji: "⭐️",
-    })
-  );
+  const items = t("technologies:items", { returnObjects: true }).map((item) => ({
+    content: item,
+    emoji: "⭐️",
+  }));
 
   return (
     <Container
@@ -35,9 +33,7 @@ export default function Technologies({ backgroundColor, cta }) {
             cols: { col: 11, xl: 12, sm: 12 },
             content: (
               <>
-                <h2 className="underline underline--center">
-                  {t("technologies:title")}
-                </h2>
+                <h2 className="underline underline--center">{t("technologies:title")}</h2>
                 {parse(t("technologies:summary"))}
               </>
             ),

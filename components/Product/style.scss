@@ -1,16 +1,12 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
+@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
 
 .component__product {
   margin: 0;
   height: 100%;
   padding: var(--double-padding);
-  padding-top: var(--double-padding);
   padding-bottom: calc(var(--padding) * 7);
-
   background-color: var(--secondary-background-color);
   border-radius: var(--border-radius);
 
@@ -18,7 +14,7 @@
     padding-bottom: var(--double-padding);
   }
 
-  @include shadow();
+  @include shadow;
 
   @media screen and (max-width: $sm) {
     &:not(&--has-nolabel) {
@@ -31,6 +27,7 @@
     bottom: var(--double-padding);
     position: absolute;
     width: calc(100% - var(--double-padding) * 2);
+
     @media screen and (max-width: $sm) {
       width: calc(100% - var(--padding) * 4);
     }

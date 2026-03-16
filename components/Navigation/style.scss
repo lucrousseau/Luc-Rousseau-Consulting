@@ -1,16 +1,18 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
+@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
 
 .component__navigation {
   ul {
     padding: 0;
     list-style: none;
+    flex-wrap: nowrap;
   }
+
   a {
     text-decoration: none;
+    white-space: nowrap;
+
     &:hover,
     &:active {
       text-decoration: underline;

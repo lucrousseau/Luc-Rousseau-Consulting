@@ -1,8 +1,6 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
+@use "../../../styles/abstracts/variables" as *;
+@use "../../../styles/abstracts/mixins" as *;
 
 @mixin gridSpan($prefix: null, $size) {
   $prefix: getPrefix($prefix);
@@ -18,7 +16,7 @@
 .grid {
   width: 100%;
   display: grid;
-  grid-gap: var(--gap);
+  gap: var(--gap);
   grid-template-columns: repeat($columns, 1fr);
   grid-template-rows: repeat($columns, 1fr);
 

@@ -21,9 +21,7 @@ export default function Hours({ day, month, year, timezone, convertedHours }) {
       const itemsPerPage = 12;
       const indexOfLastItem = currentPage * itemsPerPage;
       const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-      setCurrentItems(
-        hoursForDay.hours.slice(indexOfFirstItem, indexOfLastItem)
-      );
+      setCurrentItems(hoursForDay.hours.slice(indexOfFirstItem, indexOfLastItem));
       setTotalPages(Math.ceil(hoursForDay.hours.length / itemsPerPage));
     } else {
       setCurrentItems([]);
@@ -43,16 +41,10 @@ export default function Hours({ day, month, year, timezone, convertedHours }) {
 
   return (
     <>
-      <h3>
-        {moment
-          .tz(`${year}-${month}-${day}`, "YYYY-MM-DD", timezone)
-          .format("dddd, MMMM D")}
-      </h3>
+      <h3>{moment.tz(`${year}-${month}-${day}`, "YYYY-MM-DD", timezone).format("dddd, MMMM D")}</h3>
       <div className="component__booking__hours__list">
         {currentItems.map((hour, index) => (
-          <span key={index}>
-            {moment.tz(hour, "HH:mm", timezone).format("h:mm A")}
-          </span>
+          <span key={index}>{moment.tz(hour, "HH:mm", timezone).format("h:mm A")}</span>
         ))}
         {currentItems.length === 0 && <span>Closed</span>}
       </div>

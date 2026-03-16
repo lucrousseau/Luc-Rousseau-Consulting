@@ -1,3 +1,7 @@
+@use "sass:list";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 @mixin paddingMargin($reset: false) {
   $all-directions: (top, right, bottom, left);
   $all-properties: ("padding", "margin");
@@ -38,9 +42,7 @@
       @each $prefix, $breakpoint in $breakpoints {
         $prefix: getPrefix($prefix);
 
-        --#{$prefix}#{$property}-#{$direction}: var(
-          --#{$property}-#{$direction}
-        );
+        --#{$prefix}#{$property}-#{$direction}: var(--#{$property}-#{$direction});
       }
     }
   }
@@ -73,7 +75,7 @@
 
     @each $direction in $all-directions {
       $value: var(--get-#{$prefix}#{$property}-#{$direction});
-      $values: append($values, $value, space);
+      $values: list.append($values, $value, space);
     }
 
     #{$property}: $values;
@@ -83,15 +85,19 @@
 .noMargin {
   margin: 0;
 }
+
 .noMarginTop {
   margin-top: 0;
 }
+
 .noMarginRight {
   margin-right: 0;
 }
+
 .noMarginBottom {
   margin-bottom: 0;
 }
+
 .noMarginLeft {
   margin-left: 0;
 }
@@ -102,7 +108,7 @@
 .grid,
 .row > .grid,
 .component {
-  @include paddingMargin();
+  @include paddingMargin;
 }
 
 .container,
@@ -117,18 +123,23 @@
       &--left {
         justify-content: flex-start;
       }
+
       &--center {
         justify-content: center;
       }
+
       &--right {
         justify-content: flex-end;
       }
+
       &--top {
         align-items: flex-start;
       }
+
       &--middle {
         align-items: center;
       }
+
       &--bottom {
         align-items: flex-end;
       }
@@ -165,9 +176,11 @@
       &--left {
         text-align: left;
       }
+
       &--center {
         text-align: center;
       }
+
       &--right {
         text-align: right;
       }

@@ -1,8 +1,9 @@
 {
   "anchor": "pourquoi",
-  "navigation-label": "Pourquoi",
-  "title": "Pourquoi Opter pour un Développeur à la Demande",
-  "summary": "<p className=\"big\">Choisir un développeur à la demande, c'est sécuriser un partenaire qui comprend votre vision et apporte une expertise technique personnalisée pour guider l'innovation et optimiser le développement à chaque étape.</p>",
-  "content": "<ol className=\"align--center\"><li className=\"h3\">Prévention des erreurs coûteuses, contribution à la réduction des risques et sécurisation de votre projet.</li><li className=\"h3\">Garantie d'excellence technique et de cohérence à chaque étape du développement.</li><li className=\"h3\">Leadership sur mesure pour constituer une équipe performante et sélectionner les technologies adéquates.</li><li className=\"h3\">Un rôle clé dans le succès de vos ambitions numériques.</li><li className=\"h3\">Une combinaison d'expertise technique et de compétences managériales.</li><li className=\"h3\">Une veille constante sur les tendances pour vous maintenir à l'avant-garde.</li></ol>",
-  "footer-cta-label": "Sécuriser votre expert !"
+  "navigation-label": "Pourquoi travailler avec moi",
+  "navigation-label-short": "Pourquoi moi",
+  "title": "Pourquoi travailler avec moi",
+  "summary": "<p className=\"big\">J'apporte une <strong>pensée système, une vraie profondeur technique</strong> et un focus sur l'alignement : votre stratégie produit et vos choix techniques doivent se renforcer. <strong>Pas de boîte noire, pas de hype</strong> — une architecture claire et une livraison sur laquelle vous pouvez compter.</p>",
+  "content": "<ol className=\"align--center\"><li className=\"h3\">Réduire le risque et le coût en clarifiant structure, dépendances et feuille de route avant de scaler.</li><li className=\"h3\">Des décisions techniques alignées avec les objectifs business — architecture et produit en phase.</li><li className=\"h3\">Livrer avec constance : performance, fiabilité et maintenabilité intégrées.</li><li className=\"h3\">Un seul partenaire senior pour la stratégie et l'exécution — pas de handoff inutile.</li><li className=\"h3\">Une dette technique traitée de façon priorisée, ni ignorée ni réécrite à l'aveugle.</li></ol>",
+  "footer-cta-label": "Planifier un échange"
 }

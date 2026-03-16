@@ -1,11 +1,4 @@
-export default function Input({
-  name,
-  type,
-  value,
-  defaultValue,
-  required,
-  placeholder,
-}) {
+export default function Input({ name, type, value, defaultValue, required, placeholder }) {
   return (
     <input
       type={type}

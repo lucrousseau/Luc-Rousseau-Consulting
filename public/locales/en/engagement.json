@@ -1,0 +1,31 @@
+{
+  "anchor": "engagement",
+  "navigation-label": "Engagement",
+  "navigation-label-short": "Engagement",
+  "headline": "Strategic technical partnership.",
+  "subhead": "",
+  "valueStatement": "I prefer to work with one or a few clients over time, not one-off projects. My sweet spot is one day per week or half a day per week, for at least six months. I can join your dailies and weekly ceremonies so the work stays aligned with the team.",
+  "differentiator": "You get a technical partner who thinks in systems and outcomes, and who can both shape the plan and deliver. Not a freelancer dropping in for a few hours—someone who stays and owns the coherence over time.",
+  "ctaTeaser": "I offer a few ways to work together, all built around recurring, long-term collaboration.",
+  "ctaLabel": "See which engagement model fits",
+  "models": [
+    {
+      "title": "Ongoing partnership",
+      "subtitle": "Half a day or one day per week, 6+ months",
+      "value": "A clear technical partner who keeps the plan, the architecture and the backlog aligned with where you want to go.",
+      "content": "<p>Recurring rhythm: we review where things stand, make the key decisions, and I do hands-on work on what matters most. I can join your dailies and weekly rituals so nothing drifts.</p><p><strong>Good fit:</strong> Teams that want one accountable technical voice without a full-time hire; product-led teams that need consistency over time.</p>"
+    },
+    {
+      "title": "Phased work, then optional ongoing",
+      "subtitle": "Clear phases with outcomes (e.g. clarify roadmap → build foundations → hand over)",
+      "value": "You move from confusion or overload to a clear plan and solid base, then choose whether to continue with ongoing support.",
+      "content": "<p>Each phase has clear deliverables. After the main work is done, we can switch to a lighter ongoing rhythm (e.g. half a day per week) if that helps.</p><p><strong>Good fit:</strong> Teams about to do a rebuild or a big platform change; organisations that need to clean up before scaling.</p>"
+    },
+    {
+      "title": "A partner dedicated to one team",
+      "subtitle": "When the project needs regular presence and one clear technical owner. 6+ months.",
+      "value": "One team gets a single technical partner in the loop on roadmap, architecture and delivery—present for dailies and key ceremonies so nothing drifts.",
+      "content": "<p>Useful when the stakes are high or the team benefits from having the same person fully in the loop. One accountable voice, continuity without a full-time hire.</p><p><strong>Good fit:</strong> Teams that need a steady technical partner; projects that require closer alignment between direction and execution.</p>"
+    }
+  ]
+}

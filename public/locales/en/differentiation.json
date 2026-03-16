@@ -1,0 +1,22 @@
+{
+  "anchor": "differentiation",
+  "navigation-label": "Why different",
+  "navigation-label-short": "Different",
+  "title": "Why working with me is different",
+  "summary": "You have options when you need product and technical leadership. Here's how a senior Product Engineer differs from the usual alternatives—and what that means for your product and your team.",
+  "items": [
+    {
+      "title": "vs. Hiring an agency",
+      "content": "Agencies excel at defined projects and resourcing; they're not built to own your technical direction long-term or to be the single voice for architecture and roadmap. Handoffs, rotation of staff, and scope boundaries often create gaps in coherence and continuity. You get a senior who stays accountable for the same system over time: one person, one mental model, no rotation. Systems thinking and technical coherence don't get lost between projects or account managers."
+    },
+    {
+      "title": "vs. Hiring a freelance developer",
+      "content": "A freelance developer typically executes what's specified—tickets, features, or a fixed scope. They're rarely hired to challenge the spec, own the architecture, or align roadmap and technical debt with business outcomes. You get someone who both designs and executes: strategy and implementation in one role. Depth of experience means I can spot what's missing or wrong in the plan before it becomes rework, and I'm accountable for long-term technical coherence, not just the current sprint."
+    },
+    {
+      "title": "vs. Hiring a pure Product Manager",
+      "content": "A PM owns the \"what\" and the backlog; they depend on engineering for the \"how.\" That split works until the \"how\" constrains or contradicts the \"what,\" or until technical debt and architecture become the real bottleneck. You get a single person who bridges both: product-level thinking with the ability to validate, refine, and implement the technical path. Reduced political friction—no blame between \"product didn't specify it\" and \"engineering didn't build it\"—because one person owns the connection between the two."
+    }
+  ],
+  "closing": "Same outcome focus. One accountable partner. Less coordination overhead, more coherence over time."
+}

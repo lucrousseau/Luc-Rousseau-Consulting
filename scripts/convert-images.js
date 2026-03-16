@@ -8,6 +8,10 @@ const directoryPath = path.join(__dirname, "../public/images");
 // Read the contents of the specified directory.
 fs.readdir(directoryPath, (err, files) => {
   if (err) {
+    if (err.code === "ENOENT") {
+      console.log("convert-images: public/images not found, skipping.");
+      return;
+    }
     console.error("Error getting directory information.", err);
     return;
   }

@@ -23,13 +23,7 @@ const cells = (item, index) => {
   return (
     <Tag
       key={index}
-      className={classNames(
-        "col",
-        className,
-        ...colClasses,
-        ...rowClasses,
-        alignmentsClass
-      )}
+      className={classNames("col", className, ...colClasses, ...rowClasses, alignmentsClass)}
       style={style}
     >
       {content}
@@ -41,10 +35,7 @@ export default function Grid({ className, template = [], style, ...props }) {
   const alignmentsClass = alignments({ props });
 
   return (
-    <div
-      className={classNames("grid", className, alignmentsClass)}
-      style={style}
-    >
+    <div className={classNames("grid", className, alignmentsClass)} style={style}>
       {template.map(cells)}
     </div>
   );

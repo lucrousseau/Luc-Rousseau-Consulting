@@ -3,15 +3,7 @@ import moment from "moment-timezone";
 import { OPENING_HOURS, TIMEZONE } from "./constants";
 
 export default function convertOpeningHoursTimeZone(toTimeZone) {
-  const daysOfWeek = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
+  const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
   let adjustedOpeningHours = OPENING_HOURS.map((day) => ({
     ...day,
@@ -26,6 +18,8 @@ export default function convertOpeningHoursTimeZone(toTimeZone) {
 
       const dayIndex = daysOfWeek.indexOf(convertedDayOfWeek);
       if (dayIndex !== -1) {
+        // safe: dayIndex is 0-6 from indexOf on daysOfWeek
+        // eslint-disable-next-line security/detect-object-injection
         adjustedOpeningHours[dayIndex].hours.push(convertedTime);
       }
     });

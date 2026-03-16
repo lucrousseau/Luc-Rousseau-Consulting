@@ -31,9 +31,7 @@ export default function Calendar({ month, year }) {
   }, [currentUserTimezone]);
 
   const initialDate =
-    month && year
-      ? moment.tz(`${year}-${month}-01`, "YYYY-MM-DD", TIMEZONE)
-      : moment.tz(TIMEZONE);
+    month && year ? moment.tz(`${year}-${month}-01`, "YYYY-MM-DD", TIMEZONE) : moment.tz(TIMEZONE);
 
   const [currentDate, setCurrentDate] = useState(initialDate);
   const [selectedDate, setSelectedDate] = useState(initialDate);
@@ -54,11 +52,7 @@ export default function Calendar({ month, year }) {
   };
 
   const handleSelectDay = (day) => {
-    const newDate = moment.tz(
-      `${year}-${month}-${day}`,
-      "YYYY-MM-DD",
-      TIMEZONE
-    );
+    const newDate = moment.tz(`${year}-${month}-${day}`, "YYYY-MM-DD", TIMEZONE);
     setSelectedDate(newDate);
   };
 

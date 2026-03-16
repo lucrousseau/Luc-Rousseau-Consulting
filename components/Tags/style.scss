@@ -1,11 +1,10 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
+@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
 
 .component__tags {
   $parent: &;
+
   display: flex;
   gap: calc(var(--gap) * 0.5);
 
@@ -16,7 +15,7 @@
     border-radius: calc(var(--border-radius) * 0.5);
     background-color: var(--secondary-background-color);
 
-    @include shadow();
+    @include shadow;
 
     i {
       font-size: 1em;

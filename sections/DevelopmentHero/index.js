@@ -13,22 +13,17 @@ export default function DevelopmentHero() {
   const [opened, setOpened] = useState(false);
   const accordionCallback = ({ open }) => setOpened(open);
 
-  const items = t("development-hero:items", { returnObjects: true }).map(
-    (item) => {
-      return {
-        ...item,
-        content: parse(item.content),
-      };
-    }
-  );
+  const items = t("development-hero:items", { returnObjects: true }).map((item) => {
+    return {
+      ...item,
+      content: parse(item.content),
+    };
+  });
 
   return (
-    <Container
-      id={t("development-hero:anchor")}
-      align={"center"}
-      halign={"center"}
-    >
+    <Container id={t("development-hero:anchor")} align={"center"} halign={"center"}>
       <h1>{t("development-hero:title")}</h1>
+      <h2>{t("development-hero:quote")}</h2>
       <Row
         halign={"center"}
         columns={[
@@ -72,7 +67,7 @@ export default function DevelopmentHero() {
                               },
                             ]}
                           />
-                          {parse(t("development-hero:quote"))}
+                          <h3>{t("development-hero:manifesto")}</h3>
                         </div>
                       ),
                     },
@@ -80,11 +75,7 @@ export default function DevelopmentHero() {
                       cols: { col: 6, lg: 10, md: 12 },
                       content: (
                         <>
-                          <Accordion
-                            align={"left"}
-                            callback={accordionCallback}
-                            items={items}
-                          />
+                          <Accordion align={"left"} callback={accordionCallback} items={items} />
                         </>
                       ),
                     },
@@ -98,7 +89,7 @@ export default function DevelopmentHero() {
                       content: (
                         <>
                           <Buy
-                            price={395}
+                            price={null}
                             legend={t("development-hero:buy:legend")}
                             prefix={parse(t("development-hero:buy:prefix"))}
                             label={t("common:schedule-me-label")}

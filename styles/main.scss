@@ -1,18 +1,18 @@
 @use "sass:math";
 
 // Abstracts: Variables, Mixins, Functions
-@import "abstracts/functions";
-@import "abstracts/variables";
-@import "abstracts/mixins";
+@use "abstracts/functions";
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
 
 // Base Styles: Typography, Base Elements
-@import "base/reset";
-@import "base/fonts";
-@import "base/typography";
-@import "base/base";
+@use "base/reset";
+@use "base/fonts";
+@use "base/typography";
+@use "base/base";
 
 // Utilities: Margin, Padding, Display, Text Utilities
-@import "utilities/utilities";
-
-@import "layout/commons";
-@import "layout/component";
+@use "utilities/utilities";
+@use "layout/commons";
+@use "layout/component";
+@use "pages/home";

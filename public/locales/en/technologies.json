@@ -1,8 +1,9 @@
 {
-  "anchor": "skills",
-  "navigation-label": "Skills",
-  "title": "Skills and Technologies I Master",
-  "summary": "</h2><p className=\"big\">My expertise spans design, development, and project management, transforming ideas into key digital solutions.</p>",
+  "anchor": "technical-foundations",
+  "navigation-label": "Technical foundations",
+  "navigation-label-short": "Tech",
+  "title": "Technical foundations",
+  "summary": "<p className=\"big\">The stack I work with supports product and architecture outcomes: clarity, scalability, and sustainable delivery. Tools serve the system—not the other way around.</p>",
   "items": [
     "WordPress",
     "WooCommerce",
@@ -21,7 +22,7 @@
     "Docker",
     "Tailwind",
     "Figma",
-    "And many more!"
+    "And more"
   ],
-  "footer-cta-label": "Let’s discuss your project!"
+  "footer-cta-label": "Schedule a conversation"
 }

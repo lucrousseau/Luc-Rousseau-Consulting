@@ -1,20 +1,18 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
-
-@import "./commons";
+@use "../../../styles/abstracts/variables" as *;
+@use "../../../styles/abstracts/mixins" as *;
+@use "./commons";
 
 .component__booking__calendar {
   nav {
-    gap: 0em;
+    gap: 0;
     display: flex;
-    span {
-      @include bookMeClickElement();
 
-      padding-left: 0em;
-      padding-right: 0em;
+    span {
+      @include bookMeClickElement;
+
+      padding-left: 0;
+      padding-right: 0;
       text-align: center;
       flex: 0 0 math.div(100%, 7);
 

@@ -1,17 +1,16 @@
 @use "sass:math";
-
-@import "./styles/abstracts/functions";
-@import "./styles/abstracts/variables";
-@import "./styles/abstracts/mixins";
-
-@import "./commons";
+@use "../../../styles/abstracts/variables" as *;
+@use "../../../styles/abstracts/mixins" as *;
+@use "./commons";
 
 .component__booking__hours__pagination {
   width: 100%;
   display: flex;
   margin-top: 1em;
+
   span {
     flex: 1;
+
     &:last-child {
       text-align: right;
     }

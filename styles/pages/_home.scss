@@ -1,0 +1,94 @@
+// Home page: spacing, rhythm, readability (align with prod look)
+@use "../abstracts/variables" as *;
+
+.page-home {
+  // Section rhythm: more breathing room between blocks (like prod)
+  > section.container,
+  > .container {
+    --set-container-padding-top: 48;
+    --set-container-padding-bottom: 48;
+
+    @media screen and (max-width: $md) {
+      --set-container-padding-top: 36;
+      --set-container-padding-bottom: 36;
+    }
+
+    @media screen and (max-width: $sm) {
+      --set-container-padding-top: 28;
+      --set-container-padding-bottom: 28;
+    }
+  }
+
+  // Hero: extra top padding, clear h1 separation, manifesto readability
+  > section.container:first-of-type,
+  > .container:first-of-type {
+    --set-container-padding-top: 32;
+
+    @media screen and (min-width: $md) {
+      --set-container-padding-top: 48;
+    }
+
+    h1 {
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: 0.75em;
+      margin-bottom: 0.5em;
+      line-height: 1.3;
+    }
+
+    .big {
+      max-width: 52ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  // CTA block under hero: use layout system variables (.component has paddingMargin)
+  .component__buy {
+    --margin-top: 1.5rem;
+    --margin-bottom: 0.5rem;
+  }
+
+  // Section titles: consistent spacing (no .component on h2, keep minimal override)
+  h2.underline {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  h2.underline + .big,
+  h2.underline + p {
+    margin-top: 0.5rem;
+  }
+
+  // Intro/summary paragraphs: limit line length, left-align for readability
+  .container .big,
+  .container p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Keep section titles and CTAs centered
+  h1,
+  h2.underline {
+    text-align: center;
+  }
+
+  // Cards: use layout system --margin-bottom (.component has paddingMargin)
+  .component__product,
+  .component__accordion {
+    --margin-bottom: var(--gap, 1.5rem);
+  }
+
+  // Engagement / Differentiation: card grid spacing
+  .component__product h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .component__product p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}

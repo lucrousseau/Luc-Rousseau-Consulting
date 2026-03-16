@@ -16,7 +16,7 @@ export default function Tangible({ cta }) {
         {parse(item.content)}
 
         {item["cta-link"] && item["cta-label"] && (
-          <p align="right">
+          <p className="align align--right">
             <Button
               variant={"secondary"}
               size={"small"}
@@ -49,9 +49,7 @@ export default function Tangible({ cta }) {
             cols: { col: 11, xl: 12, sm: 12 },
             content: (
               <>
-                <h2 className="underline underline--center">
-                  {t("tangible:title")}
-                </h2>
+                <h2 className="underline underline--center">{t("tangible:title")}</h2>
                 {parse(t("tangible:summary"))}
               </>
             ),
