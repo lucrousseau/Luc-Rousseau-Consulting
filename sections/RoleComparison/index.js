@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
 import Table from "../../components/Table";
+import Button from "../../components/Button";
 
 const TABLE_COLUMN_KEYS = [
   "dimension",
@@ -12,8 +13,8 @@ const TABLE_COLUMN_KEYS = [
   "productEngineer",
 ];
 
-export default function RoleComparison() {
-  const { t } = useTranslation(["role-comparison", "product-engineer"]);
+export default function RoleComparison({ cta }) {
+  const { t } = useTranslation(["role-comparison", "product-engineer", "common"]);
   const table = t("product-engineer:table", { returnObjects: true });
 
   if (!table?.headers || !table?.rows?.length) {
@@ -54,6 +55,24 @@ export default function RoleComparison() {
                 columnKeys={TABLE_COLUMN_KEYS}
                 rowHeaderKey="dimension"
               />
+            ),
+          },
+        ]}
+      />
+      <Row
+        halign={"center"}
+        style={{ "--padding-top": "2rem", "--padding-bottom": "2rem" }}
+        columns={[
+          {
+            cols: { col: 10, sm: 12 },
+            content: (
+              <p>
+                <Button
+                  variant={"primary"}
+                  href={cta?.link ?? t("common:schedule-me")}
+                  label={cta?.label ?? t("role-comparison:footer-cta-label")}
+                />
+              </p>
             ),
           },
         ]}

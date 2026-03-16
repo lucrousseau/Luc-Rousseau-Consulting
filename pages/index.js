@@ -94,7 +94,12 @@ export default function Development() {
       <main className="page-home">
         <DevelopmentHero />
         <ProductEngineerDefinition />
-        <RoleComparison />
+        <RoleComparison
+          cta={{
+            label: t("common:schedule-me-label"),
+            link: t("common:schedule-me"),
+          }}
+        />
         <Engagement
           cta={{
             label: t("engagement:ctaLabel"),
