@@ -2,6 +2,7 @@
   "anchor": "projects",
   "navigation-label": "Projects",
   "navigation-label-short": "Work",
+  "badge": "Proof",
   "title": "Selected work",
   "summary": "<p className=\"big\">A few engagements where ownership of architecture, product impact, and delivery mattered. Outcomes over tasks.</p>",
   "items": [

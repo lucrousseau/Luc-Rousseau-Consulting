@@ -49,6 +49,7 @@ export default function Tangible({ cta }) {
             cols: { col: 11, xl: 12, sm: 12 },
             content: (
               <>
+                <p className="section__badge">{t("tangible:badge")}</p>
                 <h2 className="underline underline--center">{t("tangible:title")}</h2>
                 {parse(t("tangible:summary"))}
               </>

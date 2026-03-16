@@ -33,6 +33,7 @@ export default function Technologies({ backgroundColor, cta }) {
             cols: { col: 11, xl: 12, sm: 12 },
             content: (
               <>
+                <p className="section__badge">{t("technologies:badge")}</p>
                 <h2 className="underline underline--center">{t("technologies:title")}</h2>
                 {parse(t("technologies:summary"))}
               </>

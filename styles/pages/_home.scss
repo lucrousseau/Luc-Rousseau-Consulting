@@ -52,6 +52,17 @@
     --margin-bottom: 0.5rem;
   }
 
+  // Section pre-title badge (e.g. "AI & execution" above main title)
+  .section__badge {
+    margin: 0 0 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-accent-color);
+    text-align: center;
+  }
+
   // Section titles: consistent spacing (no .component on h2, keep minimal override)
   h2.underline {
     margin-top: 0;
@@ -90,5 +101,40 @@
   .component__product p {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+  }
+
+  // Who I work with: list with h3 headings, 2 columns on desktop
+  .who-i-work-with__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2.5rem;
+    row-gap: 1.25rem;
+
+    @media screen and (max-width: $md) {
+      grid-template-columns: 1fr;
+      gap: 1.25rem 0;
+    }
+
+    li {
+      margin-bottom: 0;
+    }
+
+    .h3 {
+      margin-top: 0;
+      margin-bottom: 0.25rem;
+    }
+
+    .h3 + p {
+      margin-top: 0;
+    }
+  }
+
+  // About: CTA spacing
+  .about__cta {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
   }
 }

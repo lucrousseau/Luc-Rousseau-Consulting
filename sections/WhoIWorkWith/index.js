@@ -32,6 +32,7 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
             cols: { col: 11, xl: 12, sm: 12 },
             content: (
               <>
+                <p className="section__badge">{t("who-i-work-with:badge")}</p>
                 <h2 className="underline underline--center">{t("who-i-work-with:title")}</h2>
                 {parse(t("who-i-work-with:summary"))}
               </>
@@ -45,7 +46,14 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
             cols: { col: 10, sm: 12 },
             content: (
               <>
-                {parse(t("who-i-work-with:content"))}
+                <ul className="align--left who-i-work-with__list">
+                  {t("who-i-work-with:items", { returnObjects: true }).map((item) => (
+                    <li key={item.title}>
+                      <h3 className="h3">{item.title}</h3>
+                      <p>{item.content}</p>
+                    </li>
+                  ))}
+                </ul>
                 <Row
                   style={{
                     "--padding-top": "2rem",

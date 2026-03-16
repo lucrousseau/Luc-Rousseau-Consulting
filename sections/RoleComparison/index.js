@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
@@ -36,8 +37,9 @@ export default function RoleComparison({ cta }) {
             cols: { col: 11, xl: 12, sm: 12 },
             content: (
               <>
+                <p className="section__badge">{t("role-comparison:badge")}</p>
                 <h2 className="underline underline--center">{t("role-comparison:title")}</h2>
-                <p className="big">{t("role-comparison:intro")}</p>
+                <p className="big">{parse(t("role-comparison:intro"))}</p>
               </>
             ),
           },

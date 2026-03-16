@@ -2,6 +2,7 @@
   "anchor": "quest-ce-quun-product-engineer",
   "navigation-label": "Qu'est-ce qu'un Product Engineer ?",
   "navigation-label-short": "Rôle",
+  "badge": "En bref",
   "title": "Qu'est-ce qu'un Product Engineer ?",
   "paragraph1": "<p>Un Product Engineer <strong>vous aide à décider quoi construire et pourquoi</strong>, conçoit comment le système doit fonctionner, et <strong>le construit—ou le fait construire par l'équipe</strong>. Pas de prise de tickets : il contribue au plan, aux choix techniques et à la livraison. <strong>Une seule personne</strong> pour passer de « on ne sait pas ce qu'il nous faut » ou « notre technique part en vrille » à un <strong>plan clair et un produit qui marche</strong>. En 2026 <strong>l'IA est partout</strong>—ce profil est celui qui décide où l'IA a sa place, où sont les garde-fous et ce qui part en prod, au lieu de se contenter de prompter.</p>",
   "paragraph2": "<p><strong>Concrètement :</strong> une voix pour le produit, les décisions techniques et la livraison. <strong>Pas de handoff, pas de boîte noire.</strong> Avec l'IA, les besoins et le périmètre passent de la discussion au dev ; l'écart entre « ce qu'on veut » et « ce qu'on construit » se réduit. Pas un « opérateur IA »—celui qui pilote comment le produit et le système utilisent l'IA.</p>",

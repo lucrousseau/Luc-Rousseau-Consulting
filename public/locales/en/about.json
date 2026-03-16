@@ -2,6 +2,8 @@
   "anchor": "about",
   "navigation-label": "About",
   "navigation-label-short": "About",
+  "badge": "Who I am",
   "title": "About",
-  "content": "<p>Luc Rousseau is a Product Engineer with 20+ years in digital product development. He works at the intersection of product strategy, system architecture, and hands-on execution—WordPress and headless, APIs, multi-site platforms, technical debt, and delivery.</p><p>Based in Montreal, Quebec, he works with product and engineering leaders who want one accountable partner for systems, architecture, and product execution.</p>"
+  "content": "<p><strong>Creative director and design</strong> for several years, then <strong>programmer</strong>, now <strong>product and technical leadership</strong>—that path gives me a perspective that’s <em>rare</em>. I’ve been on both sides of the brief: from pixels and UX to systems, APIs, and roadmap. I know what gets lost when “design” and “engineering” talk past each other, and how to keep things aligned.</p><p>I care about <strong>clarity over buzzwords</strong>, <strong>reducing complexity</strong> instead of adding layers, and <strong>one person</strong> owning the thread from strategy to delivery. That’s why I work as a Product Engineer: <em>not</em> a consultant who leaves a deck, <em>not</em> a dev who only takes tickets—someone who <strong>structures, challenges, and ships</strong>.</p><p>Based in Quebec, I work with product and engineering leaders who want <strong>one accountable partner</strong> for the full stack: strategy, architecture, and execution.</p>",
+  "ctaLinkedinLabel": "See my LinkedIn profile"
 }

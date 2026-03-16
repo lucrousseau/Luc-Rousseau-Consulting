@@ -67,7 +67,7 @@ export default function HomeHero() {
                               },
                             ]}
                           />
-                          <h3>{t("home-hero:manifesto")}</h3>
+                          <h3>{parse(t("home-hero:manifesto"))}</h3>
                         </div>
                       ),
                     },

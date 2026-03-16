@@ -4,7 +4,7 @@
   "navigation-label-short": "Offre",
   "title": "Product Engineer",
   "quote": "Un partenaire pour la roadmap, l'architecture et la livraison.",
-  "manifesto": "Avec le recul et le terrain, j'ai appris que les meilleures décisions produit arrivent quand quelqu'un dans la pièce peut à la fois dessiner l'architecture et livrer le code.",
+  "manifesto": "Avec le recul et le terrain, j'ai appris que les meilleures décisions produit arrivent quand quelqu'un dans la pièce peut <strong>à la fois dessiner l'architecture et livrer le code</strong>.",
   "items": [
     {
       "emoji": "🗺️",

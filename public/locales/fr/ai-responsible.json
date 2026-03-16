@@ -4,7 +4,7 @@
   "navigation-label-short": "IA",
   "badge": "IA et exécution",
   "title": "Comment un Product Engineer senior utilise l'IA de façon responsable",
-  "summary": "L'IA peut accélérer l'exécution—elle ne remplace pas le jugement, l'architecture ni l'expérience. Voici comment je l'utilise : avec des garde-fous, des limites claires et une supervision senior pour qu'elle amplifie la livraison au lieu de créer le chaos.",
+  "summary": "L'IA peut accélérer l'exécution—elle ne remplace pas le <strong>jugement, l'architecture ni l'expérience</strong>. Voici comment je l'utilise : avec des <strong>garde-fous</strong>, des limites claires et une supervision senior pour qu'elle <em>amplifie la livraison</em> au lieu de créer le chaos.",
   "items": [
     {
       "title": "L'IA accélère l'exécution",
@@ -27,6 +27,6 @@
       "content": "Une sortie IA non supervisée mène à des patterns incohérents, une dette cachée et du rework. Un Product Engineer senior garde la barre haute et le système cohérent."
     }
   ],
-  "closing": "Donc : l'IA comme levier, pas comme identité. Limites claires, ownership humain, et pas de hype.",
+  "closing": "Donc : <strong>l'IA comme levier, pas comme identité.</strong> Limites claires, ownership humain, et pas de hype.",
   "ctaTeaser": "Vous voulez voir comment ça se traduit en pratique ?"
 }

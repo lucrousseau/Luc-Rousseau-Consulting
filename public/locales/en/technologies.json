@@ -2,8 +2,9 @@
   "anchor": "technical-foundations",
   "navigation-label": "Technical foundations",
   "navigation-label-short": "Tech",
+  "badge": "How I build",
   "title": "Technical foundations",
-  "summary": "<p className=\"big\">One partner across the stack. The technologies I work with support product and architecture outcomes: clarity, scalability, and sustainable delivery. Tools serve the system—not the other way around.</p>",
+  "summary": "<p className=\"big\"><strong>One partner across the stack.</strong> The technologies I work with support product and architecture outcomes: clarity, scalability, and sustainable delivery. <em>Tools serve the system</em>—not the other way around.</p>",
   "items": [
     "Roadmap & prioritization",
     "Architecture & APIs",

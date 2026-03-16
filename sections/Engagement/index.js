@@ -37,6 +37,7 @@ export default function Engagement({ cta }) {
             cols: { col: 11, xl: 12, sm: 12 },
             content: (
               <>
+                <p className="section__badge">{t("engagement:badge")}</p>
                 <h2 className="underline underline--center">{t("engagement:headline")}</h2>
                 {t("engagement:subhead") && <p className="big">{t("engagement:subhead")}</p>}
                 <p className="big">{t("engagement:valueStatement")}</p>

@@ -2,6 +2,7 @@
   "anchor": "projets",
   "navigation-label": "Projets",
   "navigation-label-short": "Réalisations",
+  "badge": "Preuves",
   "title": "Réalisations choisies",
   "summary": "<p className=\"big\">Quelques engagements où la responsabilité de l'architecture, l'impact produit et la livraison ont compté. Les résultats avant les tâches.</p>",
   "items": [

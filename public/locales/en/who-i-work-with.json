@@ -2,8 +2,34 @@
   "anchor": "who-i-work-with",
   "navigation-label": "Who I work with",
   "navigation-label-short": "Who",
+  "badge": "Ideal fit",
   "title": "Who I work best with",
-  "summary": "<p className=\"big\">I'm most effective when the context matches how I work: strategy and execution in one place, clarity over buzzwords, and room to reduce complexity.</p>",
-  "content": "<ul className=\"align--left\"><li><strong>Product and engineering leaders</strong> who want a senior partner to structure the roadmap, challenge the architecture, and deliver—not just execute tickets.</li><li><strong>Teams with legacy or tangled systems</strong> who want to reduce debt, clarify structure, and stabilize without a full rewrite.</li><li><strong>Advanced WordPress organisations</strong> who want to move towards headless, modernize Gutenberg, and structure clean APIs, with a clear long-term vision.</li><li><strong>Multi-brand or multi-market companies</strong> that need to manage complexity, consistency, and performance without adding unnecessary layers.</li><li><strong>Small teams (2–4 devs)</strong> under pressure who need clear prioritization, solid technical standards, and a structured framework to ship cleanly.</li><li><strong>Organisations that need a real bridge between business and tech</strong>, with someone who can adapt their language and keep everything aligned.</li><li><strong>Startups and scale-ups</strong> who want a responsible technical voice, able to hold the line from strategy to delivery.</li></ul>",
+  "summary": "<p className=\"big\">I'm most effective when the context fits how I work: <strong>strategy and execution in one place</strong>, <strong>clarity over buzzwords</strong>, and room to <strong>reduce complexity</strong>.</p>",
+  "items": [
+    {
+      "title": "Product and engineering leaders",
+      "content": "You want a senior partner to structure the roadmap, challenge the architecture, and deliver—not just execute tickets."
+    },
+    {
+      "title": "Teams with legacy or tangled systems",
+      "content": "You want to reduce debt, clarify structure, and stabilize without a full rewrite."
+    },
+    {
+      "title": "WordPress / CMS-heavy organisations",
+      "content": "You want to move towards headless, modernize Gutenberg, and structure clean APIs with a clear long-term vision."
+    },
+    {
+      "title": "Multi-brand or multi-market companies",
+      "content": "You need to manage complexity, consistency, and performance without adding unnecessary layers."
+    },
+    {
+      "title": "Small teams (2–4 devs) under pressure",
+      "content": "You need clear prioritization, solid technical standards, and a structured framework to ship cleanly."
+    },
+    {
+      "title": "Startups and scale-ups",
+      "content": "You want a responsible technical voice, able to hold the line from strategy to delivery."
+    }
+  ],
   "footer-cta-label": "Schedule a conversation"
 }

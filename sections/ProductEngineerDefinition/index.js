@@ -20,6 +20,7 @@ export default function ProductEngineerDefinition() {
             cols: { col: 10, sm: 12 },
             content: (
               <>
+                <p className="section__badge">{t("product-engineer:badge")}</p>
                 <h2 className="underline underline--center">{t("product-engineer:title")}</h2>
                 {parse(t("product-engineer:paragraph1"))}
                 {parse(t("product-engineer:paragraph2"))}

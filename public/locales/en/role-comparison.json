@@ -2,7 +2,8 @@
   "anchor": "role-comparison",
   "navigation-label": "How the role compares",
   "navigation-label-short": "Compare",
+  "badge": "Context",
   "title": "How the role compares",
-  "intro": "Developer, Tech Lead, Product Manager, Product Engineer—same words, different scope. Below: where each role sits on focus, ownership, depth, and delivery.",
+  "intro": "Developer, Tech Lead, Product Manager, Product Engineer—same words, <em>different scope</em>. Below: where each role sits on <strong>focus, ownership, depth, and delivery</strong>.",
   "footer-cta-label": "Schedule a conversation"
 }

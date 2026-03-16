@@ -1,9 +1,35 @@
 {
-  "anchor": "qui-je-accompagne",
+  "anchor": "who-i-work-with",
   "navigation-label": "Qui j'accompagne",
   "navigation-label-short": "Qui",
+  "badge": "Profil idéal",
   "title": "Avec qui je travaille le mieux",
-  "summary": "<p className=\"big\">Je suis le plus utile quand le contexte correspond à ma façon de travailler : stratégie et exécution au même endroit, clarté plutôt que buzzwords, et de la marge pour réduire la complexité.</p>",
-  "content": "<ul className=\"align--left\"><li><strong>Responsables produit et technique</strong> qui veulent un partenaire senior pour structurer la roadmap, challenger l'architecture et livrer — pas seulement exécuter des tickets.</li><li><strong>Équipes avec du legacy ou des systèmes enchevêtrés</strong> qui veulent réduire la dette, clarifier la structure et stabiliser sans tout réécrire.</li><li><strong>Organisations WordPress avancées</strong> qui veulent évoluer vers du headless, moderniser Gutenberg et structurer des APIs propres, avec une vision claire à long terme.</li><li><strong>Entreprises multi-marques ou multi-marchés</strong> qui doivent gérer complexité, cohérence et performance sans multiplier les couches inutiles.</li><li><strong>Petites équipes (2–4 devs)</strong> sous pression qui ont besoin de priorisation claire, de standards techniques solides et d'un cadre structurant pour livrer proprement.</li><li><strong>Organisations qui ont besoin d'un pont réel entre business et technique</strong>, avec quelqu'un capable d'adapter son langage et de garder tout aligné.</li><li><strong>Startups et scale-ups</strong> qui veulent une voix technique responsable, capable de tenir la ligne de la stratégie à la livraison.</li></ul>",
+  "summary": "<p className=\"big\">Je suis le plus utile quand le contexte correspond à ma façon de travailler : <strong>stratégie et exécution au même endroit</strong>, <strong>clarté plutôt que buzzwords</strong>, et de la marge pour <strong>réduire la complexité</strong>.</p>",
+  "items": [
+    {
+      "title": "Responsables produit et technique",
+      "content": "Vous voulez un partenaire senior pour structurer la roadmap, challenger l'architecture et livrer — pas seulement exécuter des tickets."
+    },
+    {
+      "title": "Équipes avec du legacy ou des systèmes enchevêtrés",
+      "content": "Vous voulez réduire la dette, clarifier la structure et stabiliser sans tout réécrire."
+    },
+    {
+      "title": "Organisations WordPress / CMS",
+      "content": "Vous voulez évoluer vers le headless, moderniser Gutenberg et structurer des APIs propres, avec une vision claire à long terme."
+    },
+    {
+      "title": "Entreprises multi-marques ou multi-marchés",
+      "content": "Vous devez gérer complexité, cohérence et performance sans multiplier les couches inutiles."
+    },
+    {
+      "title": "Petites équipes (2–4 devs) sous pression",
+      "content": "Vous avez besoin de priorisation claire, de standards techniques solides et d'un cadre structurant pour livrer proprement."
+    },
+    {
+      "title": "Startups et scale-ups",
+      "content": "Vous voulez une voix technique responsable, de la stratégie à la livraison."
+    }
+  ],
   "footer-cta-label": "Planifier un échange"
 }
