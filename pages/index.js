@@ -7,7 +7,7 @@ import Container from "../components/Layout/Container";
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 import About from "../sections/About";
-import DevelopmentHero from "../sections/DevelopmentHero";
+import HomeHero from "../sections/HomeHero";
 import ProductEngineerDefinition from "../sections/ProductEngineerDefinition";
 import RoleComparison from "../sections/RoleComparison";
 import AIResponsible from "../sections/AIResponsible";
@@ -20,15 +20,15 @@ import Tangible from "../sections/Tangible";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { clearI18nServerCache } from "../utils/i18n-dev-reload";
 
-export default function Development() {
-  const { t } = useTranslation(["development", "hero-development", "common"]);
+export default function Home() {
+  const { t } = useTranslation(["home", "home-hero", "common"]);
 
   return (
     <>
       <SEO
-        title={t("development-seo-title")}
-        description={t("development-seo-description")}
-        image={t("development-seo-image")}
+        title={t("home-seo-title")}
+        description={t("home-seo-description")}
+        image={t("home-seo-image")}
         url="/"
       />
       <Container
@@ -43,8 +43,8 @@ export default function Development() {
         <Header
           navigation={[
             {
-              href: `#${t("development-hero:anchor")}`,
-              label: t("development-hero:navigation-label-short"),
+              href: `#${t("home-hero:anchor")}`,
+              label: t("home-hero:navigation-label-short"),
             },
             {
               href: `#${t("about:anchor")}`,
@@ -87,7 +87,7 @@ export default function Development() {
         />
       </Container>
       <main className="page-home">
-        <DevelopmentHero />
+        <HomeHero />
         <ProductEngineerDefinition />
         <RoleComparison
           cta={{
@@ -143,9 +143,9 @@ export const getServerSideProps = async ({ locale }) => {
       ...(await serverSideTranslations(locale, [
         "about",
         "common",
-        "development",
+        "home",
         "benefits",
-        "development-hero",
+        "home-hero",
         "ai-responsible",
         "differentiation",
         "engagement",

@@ -11,7 +11,7 @@ import ZinesHero from "../../sections/ZinesHero";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { clearI18nServerCache } from "../../utils/i18n-dev-reload";
 
-export default function Development() {
+export default function Zines() {
   const { t } = useTranslation(["common", "zines", "zines-hero"]);
 
   return (

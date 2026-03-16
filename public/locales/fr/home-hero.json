@@ -1,8 +1,35 @@
 {
-  "anchor": "apropos",
-  "navigation-label": "À propos",
-  "title": "Luc Rousseau",
-  "subtitle": "Product Engineer — Systèmes, architecture et exécution produit",
-  "content": "<p className=\"big\">Je travaille à l'intersection de la stratégie produit, de l'architecture système et de l'exécution concrète. WordPress et headless, APIs, plateformes multi-sites, dette technique et livraison—avec un partenaire redevable pour la clarté et la cohérence.</p><p>Basé au Québec, j'accompagne les responsables produit et technique qui veulent un partenariat technique stratégique, pas du travail à l'heure ou par tâches.</p>",
-  "footer-cta-label": "Planifier un échange"
+  "anchor": "comment-je-travaille",
+  "navigation-label": "Comment je travaille",
+  "navigation-label-short": "Offre",
+  "title": "Product Engineer",
+  "quote": "Un partenaire pour la roadmap, l'architecture et la livraison.",
+  "manifesto": "Avec le recul et le terrain, j'ai appris que les meilleures décisions produit arrivent quand quelqu'un dans la pièce peut à la fois dessiner l'architecture et livrer le code.",
+  "items": [
+    {
+      "emoji": "🗺️",
+      "title": "Clarté produit et roadmap",
+      "content": "<p>J'interviens pour transformer objectifs produit et attentes des parties prenantes en un plan clair et séquencé. Les priorités sont explicites, les dépendances cartographiées, et la roadmap technique alignée sur ce que le business doit livrer.</p><p><strong>Résultats :</strong> Une roadmap technique liée aux jalons produit ; un backlog structuré par impact et dépendances ; un langage commun entre produit et technique sur le périmètre et les critères de succès.</p><p><strong>Résout :</strong> Roadmaps chaotiques ou pilotées par le politique ; désalignement sur le « done » ou le « next » ; pas de cadre clair pour dire « pas encore ».</p>"
+    },
+    {
+      "emoji": "🏗️",
+      "title": "Architecture et conception système",
+      "content": "<p>Je définis ou clarifie comment votre système est structuré : frontières entre services ou modules, APIs et contrats, évolution de la stack. L'objectif est une architecture qui sert le produit aujourd'hui et peut scaler—pas de complexité accidentelle.</p><p><strong>Résultats :</strong> Architecture documentée et contrats d'API clairs ; décisions build-vs-buy et plateforme justifiées ; un modèle mental partagé pour que le nouveau travail s'intègre au système.</p><p><strong>Résout :</strong> « Personne ne sait comment tout s'articule » ; sprawl et intégrations ad-hoc ; grosses refontes sans chemin clair ; décisions headless ou multi-site qui ressemblent à du tâtonnement.</p>"
+    },
+    {
+      "emoji": "🔧",
+      "title": "Réduction de la dette technique",
+      "content": "<p>La dette technique est traitée comme un enjeu produit et risque. J'aide à prioriser son remboursement de façon à soutenir la livraison au lieu de la bloquer—la bonne dette dans le bon ordre, avec des critères clairs de « assez bien ».</p><p><strong>Résultats :</strong> Un backlog de dette priorisé aligné produit et risque ; amélioration incrémentale sans réécriture « stop the world » ; moins d'incidents et de rework liés à une dette négligée.</p><p><strong>Résout :</strong> Dette ignorée ou déclenchant des refontes paniques ; l'équipe se bat avec la codebase au lieu de livrer ; dépendances cachées et problèmes récurrents de sécurité ou performance.</p>"
+    },
+    {
+      "emoji": "⚡",
+      "title": "Supervision de la livraison et de l'exécution",
+      "content": "<p>J'assure une supervision senior de la façon dont le travail est fait : barre de qualité, discipline de release, et adéquation entre ce qui est construit et l'architecture/roadmap. Quand j'écris du code, c'est sur les sujets à plus fort levier ; le reste du temps je m'assure que le processus permet une livraison soutenable.</p><p><strong>Résultats :</strong> Qualité et alignement constants ; critères de « done » clairs ; pratiques CI/CD et de release pour des déploiements sûrs ; une voix responsable pour « comment on construit ».</p><p><strong>Résout :</strong> Qualité incohérente et « on nettoiera plus tard » ; releases risquées ou manuelles ; écart entre décidé et livré ; pas de référence technique senior pour les standards.</p>"
+    }
+  ],
+  "buy": {
+    "legend": "Prêt à aligner stratégie et exécution ?",
+    "more": "<p className=\"small\" style=\"font-size: 0.8rem;\"><a href=\"https://calendly.com/_lucrousseau/30min/\">Planifier un échange</a> pour discuter de vos objectifs produit et techniques.</p>",
+    "prefix": ""
+  }
 }

@@ -1,8 +1,35 @@
 {
-  "anchor": "about",
-  "navigation-label": "About",
-  "title": "Luc Rousseau",
-  "subtitle": "Product Engineer — Systems, architecture & product execution",
-  "content": "<p className=\"big\">I work at the intersection of product strategy, system architecture, and hands-on execution. WordPress and headless, APIs, multi-site platforms, technical debt, and delivery—with one accountable partner for clarity and coherence.</p><p>Based in Quebec, I work with product and engineering leaders who want strategic technical partnership, not hourly or task-based work.</p>",
-  "footer-cta-label": "Schedule a conversation"
+  "anchor": "how-i-work",
+  "navigation-label": "How I work",
+  "navigation-label-short": "Offer",
+  "title": "Product Engineer",
+  "quote": "One partner for roadmap, architecture, and delivery.",
+  "manifesto": "Over the years, I've learned that the strongest product decisions happen when someone in the room can both design the architecture and deliver production-ready code.",
+  "items": [
+    {
+      "emoji": "🗺️",
+      "title": "Product & roadmap clarity",
+      "content": "<p>I work with you to turn product goals and stakeholder expectations into a clear, sequenced plan. Priorities are explicit, dependencies are mapped, and the technical roadmap is aligned with what the business needs to ship.</p><p><strong>Outcomes:</strong> A technical roadmap tied to product milestones; backlog structured by impact and dependency; shared language between product and engineering on scope and success criteria.</p><p><strong>Solves:</strong> Chaotic or politically-driven roadmaps; misalignment on what \"done\" or \"next\" means; no clear way to say \"not yet.\"</p>"
+    },
+    {
+      "emoji": "🏗️",
+      "title": "Architecture & system design",
+      "content": "<p>I define or clarify how your system is structured: boundaries between services or modules, APIs and contracts, and how the stack can evolve. The goal is an architecture that supports the product today and can scale—not accidental complexity.</p><p><strong>Outcomes:</strong> Documented architecture and clear API contracts; justified build-vs-buy and platform decisions; a shared mental model so new work fits the system.</p><p><strong>Solves:</strong> \"Nobody knows how it all fits together\"; sprawl and ad-hoc integrations; big rewrites with no clear path; headless or multi-site decisions that feel like guesswork.</p>"
+    },
+    {
+      "emoji": "🔧",
+      "title": "Technical debt reduction",
+      "content": "<p>Technical debt is treated as a product and risk concern. I help you prioritise paydown in a way that supports delivery instead of blocking it—the right debt in the right order, with clear criteria for \"good enough.\"</p><p><strong>Outcomes:</strong> A prioritised debt backlog aligned with product and risk; incremental improvement without \"stop the world\" rewrites; fewer incidents and rework from neglected debt.</p><p><strong>Solves:</strong> Debt ignored or triggering panic rewrites; team fighting the codebase instead of building; hidden dependencies and recurring security or performance issues.</p>"
+    },
+    {
+      "emoji": "⚡",
+      "title": "Delivery & execution supervision",
+      "content": "<p>I provide senior oversight of how work gets done: quality bar, release discipline, and whether what's built matches the architecture and roadmap. When I write code, it's on the highest-leverage items; the rest of the time I ensure the process supports sustainable delivery.</p><p><strong>Outcomes:</strong> Consistent quality and alignment; clear \"done\" criteria; CI/CD and release practices that support safe deployments; one accountable voice for \"how we build.\"</p><p><strong>Solves:</strong> Inconsistent quality and \"we'll clean it up later\"; risky or manual releases; gap between what was decided and what was built; no senior technical reference for standards.</p>"
+    }
+  ],
+  "buy": {
+    "legend": "Ready to align strategy and execution?",
+    "more": "<p className=\"small\" style=\"font-size: 0.8rem;\"><a href=\"https://calendly.com/_lucrousseau/30min/\">Schedule a conversation</a> to discuss your product and technical goals.</p>",
+    "prefix": ""
+  }
 }
