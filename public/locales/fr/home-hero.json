@@ -19,7 +19,7 @@
     {
       "emoji": "🔧",
       "title": "Réduction de la dette technique",
-      "content": "<p>La dette technique est traitée comme un enjeu produit et risque. J'aide à prioriser son remboursement de façon à soutenir la livraison au lieu de la bloquer—la bonne dette dans le bon ordre, avec des critères clairs de « assez bien ».</p><p><strong>Résultats :</strong> Un backlog de dette priorisé aligné produit et risque ; amélioration incrémentale sans réécriture « stop the world » ; moins d'incidents et de rework liés à une dette négligée.</p><p><strong>Résout :</strong> Dette ignorée ou déclenchant des refontes paniques ; l'équipe se bat avec la codebase au lieu de livrer ; dépendances cachées et problèmes récurrents de sécurité ou performance.</p>"
+      "content": "<p>La dette technique est traitée comme un enjeu produit et risque. J'aide à prioriser son remboursement de façon à soutenir la livraison au lieu de la bloquer—la bonne dette dans le bon ordre, avec des critères clairs de « assez bien ».</p><p><strong>Résultats :</strong> Un backlog de dette priorisé aligné produit et risque ; amélioration incrémentale sans réécriture « stop the world » ; moins d'incidents et de rework liés à une dette négligée.</p><p><strong>Résout :</strong> Dette ignorée ou qui déclenche des refontes paniques ; l'équipe se bat avec la codebase au lieu de livrer ; dépendances cachées et problèmes récurrents de sécurité ou performance.</p>"
     },
     {
       "emoji": "⚡",
