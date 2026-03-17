@@ -1,9 +1,0 @@
-{
-  "anchor": "pourquoi",
-  "navigation-label": "Pourquoi travailler avec moi",
-  "navigation-label-short": "Pourquoi moi",
-  "title": "Pourquoi travailler avec moi",
-  "summary": "<p className=\"big\">J'apporte une <strong>pensée système, une vraie profondeur technique</strong> et un focus sur l'alignement : votre stratégie produit et vos choix techniques doivent se renforcer. <strong>Pas de boîte noire, pas de hype</strong> — une architecture claire et une livraison sur laquelle vous pouvez compter.</p>",
-  "content": "<ol className=\"align--center\"><li className=\"h3\">Réduire le risque et le coût en clarifiant structure, dépendances et feuille de route avant de scaler.</li><li className=\"h3\">Des décisions techniques alignées avec les objectifs business — architecture et produit en phase.</li><li className=\"h3\">Livrer avec constance : performance, fiabilité et maintenabilité intégrées.</li><li className=\"h3\">Un seul partenaire senior pour la stratégie et l'exécution — pas de handoff inutile.</li><li className=\"h3\">Une dette technique traitée de façon priorisée, ni ignorée ni réécrite à l'aveugle.</li></ol>",
-  "footer-cta-label": "Planifier un échange"
-}

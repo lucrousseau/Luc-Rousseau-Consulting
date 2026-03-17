@@ -20,7 +20,6 @@
 @use "components/accordion";
 @use "components/button";
 @use "components/buy";
-@use "components/fields";
 @use "components/language-switcher";
 @use "components/logo";
 @use "components/navigation";
@@ -35,7 +34,5 @@
 
 // Sections
 @use "sections/header";
-@use "sections/whaticando";
-@use "sections/photos-carousel";
 @use "sections/ai-responsible";
 @use "pages/home";
