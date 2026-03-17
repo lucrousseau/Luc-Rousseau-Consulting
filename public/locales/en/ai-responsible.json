@@ -4,7 +4,7 @@
   "navigation-label-short": "AI",
   "badge": "AI & execution",
   "title": "How a senior Product Engineer uses AI responsibly",
-  "summary": "AI can speed up execution—but it doesn't replace <strong>judgment, architecture, or experience</strong>. Here's how I use it: with <strong>guardrails</strong>, clear boundaries, and senior oversight so it <em>amplifies delivery</em> instead of creating chaos.",
+  "summary": "AI can speed up execution—but it doesn't replace <strong>judgment, architecture, or experience</strong>. Here's how I use it: with <strong>guardrails</strong>, <strong>CI/CD</strong> rules and process, clear boundaries, and senior oversight so it <em>amplifies delivery</em> instead of creating chaos.",
   "items": [
     {
       "title": "AI accelerates execution",
@@ -12,7 +12,7 @@
     },
     {
       "title": "AI requires guardrails",
-      "content": "Output is reviewed, tested, and aligned with your architecture and standards. <strong>Nothing ships without human verification.</strong> No blind copy-paste into production."
+      "content": "Output is reviewed, tested, run through CI/CD rules and process, and aligned with your architecture and standards. <strong>Nothing ships without human verification.</strong> No blind copy-paste into production."
     },
     {
       "title": "AI does not replace architecture thinking",
