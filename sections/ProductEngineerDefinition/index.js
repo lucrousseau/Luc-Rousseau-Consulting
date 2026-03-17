@@ -90,6 +90,7 @@ export default function ProductEngineerDefinition({ cta }) {
                     variant="primary"
                     href={cta?.link ?? t("common:schedule-me")}
                     label={cta?.label ?? t("product-engineer:footer-cta-label")}
+                    trackSection="product-engineer"
                   />
                 </p>
               </div>

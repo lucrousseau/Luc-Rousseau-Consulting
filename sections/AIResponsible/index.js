@@ -71,6 +71,7 @@ export default function AIResponsible({ cta }) {
                       variant={"primary"}
                       href={cta?.link}
                       label={cta?.label ?? t("common:schedule-me-label")}
+                      trackSection={"ai-responsible"}
                     />
                   </p>
                 </div>

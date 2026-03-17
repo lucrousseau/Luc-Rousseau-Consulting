@@ -60,8 +60,9 @@ export default function Technologies({ backgroundColor, cta }) {
               <p>
                 <Button
                   variant={"primary"}
-                  href={cta?.link ?? t("hello@lucrousseau.com")}
+                  href={cta?.link ?? t("common:schedule-me")}
                   label={cta?.label ?? t("technologies:footer-cta-label")}
+                  trackSection={"technologies"}
                 />
               </p>
             ),

@@ -96,6 +96,7 @@ export default function HomeHero() {
                             className={"biggest"}
                             variant={"primary"}
                             size={null}
+                            trackSection="hero"
                           />
                         </>
                       ),

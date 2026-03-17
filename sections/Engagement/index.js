@@ -60,8 +60,9 @@ export default function Engagement({ cta }) {
                 <p>
                   <Button
                     variant={"primary"}
-                    href={cta?.link ?? t("schedule-me")}
+                    href={cta?.link ?? t("common:schedule-me")}
                     label={cta?.label ?? t("engagement:ctaLabel")}
+                    trackSection={"engagement"}
                   />
                 </p>
               </>

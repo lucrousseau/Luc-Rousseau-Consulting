@@ -5,7 +5,7 @@ import { getSiteOrigin } from "../../utils/siteOrigin";
 
 const SITE_NAME = "Luc Rousseau";
 
-const SEO = ({ title, description, image, url: urlProp }) => {
+const SEO = ({ title, description, image, url: urlProp, sameAs }) => {
   const base = getSiteOrigin();
   const router = useRouter();
   const { locale, asPath } = router;
@@ -17,9 +17,27 @@ const SEO = ({ title, description, image, url: urlProp }) => {
   const alternateEn = `${base}${path}`;
   const alternateFr = `${base}/fr${path}`;
 
+  const jsonLdPerson =
+    sameAs && sameAs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: SITE_NAME,
+          url: canonical,
+          sameAs: sameAs,
+          jobTitle: "Product Engineer",
+        }
+      : null;
+
   return (
     <Head>
       <title>{title}</title>
+      {jsonLdPerson && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }}
+        />
+      )}
       <meta name="description" content={description} />
       <link rel="canonical" href={canonical} />
 

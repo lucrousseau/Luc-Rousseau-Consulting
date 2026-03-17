@@ -38,7 +38,13 @@ export default function Buy({
           </>
         )}
       </span>
-      <Button href={t("schedule-me")} size={size} variant={variant} label={label} />
+      <Button
+        href={t("common:schedule-me")}
+        size={size}
+        variant={variant}
+        label={label}
+        trackSection={props.trackSection}
+      />
     </p>
   );
 }

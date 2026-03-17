@@ -82,7 +82,8 @@ export default function Tangible({ cta }) {
                   <Button
                     variant={"primary"}
                     label={cta?.label ?? t("tangible:footer-cta-label")}
-                    href={cta?.link ?? t("hello@lucrousseau.com")}
+                    href={cta?.link ?? t("common:schedule-me")}
+                    trackSection={"tangible"}
                   />
                 </p>
               </div>

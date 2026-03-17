@@ -67,6 +67,7 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
                             variant={"primary"}
                             href={cta?.link ?? t("common:schedule-me")}
                             label={cta?.label ?? t("who-i-work-with:footer-cta-label")}
+                            trackSection={"who-i-work-with"}
                           />
                         </p>
                       ),
