@@ -13,6 +13,12 @@ const withBundleAnalyzer = (await import("@next/bundle-analyzer")).default({
 const nextConfig = {
   outputFileTracingRoot: __dirname,
   serverExternalPackages: ["image-size"],
+  async rewrites() {
+    return [
+      { source: "/sitemap.xml", destination: "/api/sitemap" },
+      { source: "/robots.txt", destination: "/api/robots" },
+    ];
+  },
   i18n: {
     defaultLocale: i18n.i18n.defaultLocale,
     locales: i18n.i18n.locales,
@@ -35,13 +41,13 @@ const nextConfig = {
       rules.push({
         source: base,
         has: hostCom,
-        destination: "https://lucrousseau.ca/zines/",
+        destination: "https://lucrousseau.com/zines/",
         permanent: true,
       });
       rules.push({
         source: `${base}/`,
         has: hostCom,
-        destination: "https://lucrousseau.ca/zines/",
+        destination: "https://lucrousseau.com/zines/",
         permanent: true,
       });
     }
@@ -52,13 +58,13 @@ const nextConfig = {
         rules.push({
           source: `${prefix}/${from}`,
           has: hostCom,
-          destination: `https://lucrousseau.ca/zines/${to}`,
+          destination: `https://lucrousseau.com/zines/${to}`,
           permanent: true,
         });
         rules.push({
           source: `${prefix}/${from}/`,
           has: hostCom,
-          destination: `https://lucrousseau.ca/zines/${to}`,
+          destination: `https://lucrousseau.com/zines/${to}`,
           permanent: true,
         });
       }

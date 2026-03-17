@@ -1,39 +1,54 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 
-const SEO = ({ title, description, image, url }) => {
-  const domain = process.env.NEXT_PUBLIC_DOMAIN;
+import { getSiteOrigin } from "../../utils/siteOrigin";
+
+const SITE_NAME = "Luc Rousseau";
+
+const SEO = ({ title, description, image, url: urlProp }) => {
+  const base = getSiteOrigin();
+  const router = useRouter();
+  const { locale, asPath } = router;
+  const path = asPath || urlProp || "/";
+  const canonicalPath = locale === "fr" ? `/fr${path}` : path;
+  const canonical = `${base}${canonicalPath}`;
+  const ogLocale = locale === "fr" ? "fr_CA" : "en_CA";
+  const ogLocaleAlternate = locale === "fr" ? "en_CA" : "fr_CA";
+  const alternateEn = `${base}${path}`;
+  const alternateFr = `${base}/fr${path}`;
 
   return (
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <link rel="canonical" href={canonical} />
+
+      {/* Open Graph */}
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={`${domain}${image}`} />
-      <meta property="og:url" content={`${domain}${url}`} />
+      <meta property="og:image" content={`${base}${image}`} />
+      <meta property="og:url" content={canonical} />
+      <meta property="og:locale" content={ogLocale} />
+      <meta property="og:locale:alternate" content={ogLocaleAlternate} />
+
+      {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${domain}${image}`} />
-      <link rel="canonical" href={`${domain}${url}`} />
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href={`${domain}/favicon/apple-touch-icon.png`}
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href={`${domain}/favicon/favicon-32x32.png`}
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href={`${domain}/favicon/favicon-16x16.png`}
-      />
-      <link rel="manifest" href={`${domain}/favicon/site.webmanifest`} />
+      <meta name="twitter:image" content={`${base}${image}`} />
+
+      {/* Hreflang */}
+      <link rel="alternate" hrefLang="en" href={alternateEn} />
+      <link rel="alternate" hrefLang="fr" href={alternateFr} />
+      <link rel="alternate" hrefLang="x-default" href={alternateEn} />
+
+      {/* Favicons */}
+      <link rel="apple-touch-icon" sizes="180x180" href={`${base}/favicon/apple-touch-icon.png`} />
+      <link rel="icon" type="image/png" sizes="32x32" href={`${base}/favicon/favicon-32x32.png`} />
+      <link rel="icon" type="image/png" sizes="16x16" href={`${base}/favicon/favicon-16x16.png`} />
+      <link rel="manifest" href={`${base}/favicon/site.webmanifest`} />
     </Head>
   );
 };
