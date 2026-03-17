@@ -39,43 +39,7 @@ export default function Home() {
           "--xs-padding-bottom": "0rem",
         }}
       >
-        <Header
-          navigation={[
-            {
-              href: `#${t("home-hero:anchor")}`,
-              label: t("home-hero:navigation-label-short"),
-            },
-            {
-              href: `#${t("about:anchor")}`,
-              label: t("about:navigation-label-short"),
-            },
-            {
-              href: `#${t("product-engineer:anchor")}`,
-              label: t("product-engineer:navigation-label-short"),
-            },
-            {
-              href: `#${t("ai-responsible:anchor")}`,
-              label: t("ai-responsible:navigation-label-short"),
-            },
-            {
-              href: `#${t("engagement:anchor")}`,
-              label: t("engagement:navigation-label-short"),
-            },
-            {
-              href: `#${t("who-i-work-with:anchor")}`,
-              label: t("who-i-work-with:navigation-label-short"),
-            },
-            {
-              href: `#${t("technologies:anchor")}`,
-              label: t("technologies:navigation-label-short"),
-            },
-            {
-              href: `#${t("tangible:anchor")}`,
-              label: t("tangible:navigation-label-short"),
-            },
-          ]}
-          cta={false}
-        />
+        <Header navigation={false} cta={false} />
       </Container>
       <main className="page-home">
         <HomeHero />

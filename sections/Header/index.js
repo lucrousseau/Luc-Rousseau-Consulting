@@ -31,7 +31,6 @@ export default function Header({ ...props }) {
                 columns={[
                   {
                     pull: "left",
-                    cols: { sm: 0 },
                     content: <Logo />,
                   },
                   {
