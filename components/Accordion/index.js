@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import React, { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 
 import { alignments } from "../../commons/alignments";
 
@@ -48,9 +49,15 @@ export default function Accordion({ className, items, callback = () => {}, ...pr
         >
           <h3 onClick={() => toggleItem(index)}>
             {item.title}{" "}
-            {item.emoji && (
+            {(item.logo || item.emoji) && (
               <i>
-                {item.emoji}
+                {item.logo ? (
+                  <span className="component__accordion__logo">
+                    <Image src={item.logo} alt="" width={40} height={40} />
+                  </span>
+                ) : (
+                  item.emoji
+                )}
                 <em>
                   {activeIndex !== index ? (
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

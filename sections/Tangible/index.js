@@ -7,10 +7,17 @@ import Container from "../../components/Layout/Container";
 import Button from "../../components/Button";
 import Accordion from "../../components/Accordion";
 
+const PROJECT_LOGOS = [
+  "/images/milesopedia.png",
+  "/images/nesto.png",
+  "/images/comparemortgage.png",
+  "/images/nestogroup.png", // BrightWize
+];
+
 export default function Tangible({ cta }) {
   const { t } = useTranslation();
 
-  const items = t("tangible:items", { returnObjects: true }).map((item) => {
+  const items = t("tangible:items", { returnObjects: true }).map((item, index) => {
     const content = (
       <>
         {parse(item.content)}
@@ -31,7 +38,9 @@ export default function Tangible({ cta }) {
 
     return {
       title: item.title,
-      emoji: item.emoji || "🧠",
+      // index from .map over static locale items
+      // eslint-disable-next-line security/detect-object-injection
+      logo: PROJECT_LOGOS[index] ?? null,
       content: content,
     };
   });

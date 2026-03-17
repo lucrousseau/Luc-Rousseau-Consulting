@@ -57,6 +57,19 @@
         padding: calc(var(--padding) * 1.5);
         background-color: var(--body-background-color);
 
+        .component__accordion__logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 1.5rem;
+            height: auto;
+            max-height: 1.5rem;
+            object-fit: contain;
+          }
+        }
+
         em {
           top: 50%;
           width: 0.9em;
