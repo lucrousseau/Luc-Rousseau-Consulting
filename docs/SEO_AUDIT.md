@@ -3,6 +3,8 @@
 **Date:** mars 2025  
 **Objectif:** repérer les manques (sitemap, meta, title, géo, etc.) et prioriser les corrections.
 
+> **Note :** Les pages zines ont été retirées du site (contenu hébergé ailleurs). Seules les redirections `/zines` et `/zines/:slug` sont conservées dans `next.config.mjs` pour éviter les 404.
+
 ---
 
 ## 1. Ce qui est déjà en place
