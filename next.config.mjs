@@ -41,7 +41,7 @@ const nextConfig = {
     ];
   },
   async redirects() {
-    const hostCom = [{ type: "host", value: "lucrousseau.com" }];
+    const zinesBase = "https://lucrousseau.ca/zines";
     const zineMappings = [
       { from: "05_gre_esp_fra", to: "05-gre-esp-fra" },
       { from: "04_cai", to: "04-cai" },
@@ -50,36 +50,32 @@ const nextConfig = {
       { from: "01_mex", to: "01-mex" },
     ];
 
-    /** Index redirects: explicit variants (no optional tokens allowed) */
+    /** Index redirects: /zines and /fr/zines → external zines site */
     const rules = [];
     for (const base of ["/zines", "/fr/zines"]) {
       rules.push({
         source: base,
-        has: hostCom,
-        destination: "https://lucrousseau.com/zines/",
+        destination: `${zinesBase}/`,
         permanent: true,
       });
       rules.push({
         source: `${base}/`,
-        has: hostCom,
-        destination: "https://lucrousseau.com/zines/",
+        destination: `${zinesBase}/`,
         permanent: true,
       });
     }
 
-    /** Per-zine redirects: explicit fr/ and trailing-slash variants */
+    /** Per-zine redirects: slug variants with underscore or trailing slash */
     for (const { from, to } of zineMappings) {
       for (const prefix of ["/zines", "/fr/zines"]) {
         rules.push({
           source: `${prefix}/${from}`,
-          has: hostCom,
-          destination: `https://lucrousseau.com/zines/${to}`,
+          destination: `${zinesBase}/${to}`,
           permanent: true,
         });
         rules.push({
           source: `${prefix}/${from}/`,
-          has: hostCom,
-          destination: `https://lucrousseau.com/zines/${to}`,
+          destination: `${zinesBase}/${to}`,
           permanent: true,
         });
       }
