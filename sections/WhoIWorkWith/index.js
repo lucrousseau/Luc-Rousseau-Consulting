@@ -5,6 +5,8 @@ import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
 import Button from "../../components/Button";
 
+import romeImage from "./images/rome-1.jpg";
+
 export default function WhoIWorkWith({ backgroundColor, cta }) {
   const { t } = useTranslation();
 
@@ -14,7 +16,7 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
       align={"center"}
       halign={"center"}
       background={{
-        src: "/images/rome-1.jpg",
+        src: romeImage,
         alt: "Rome",
         width: 2528,
         height: 1264,

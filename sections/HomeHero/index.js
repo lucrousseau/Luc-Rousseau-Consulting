@@ -8,6 +8,8 @@ import Buy from "../../components/Buy";
 import Accordion from "../../components/Accordion";
 import Container from "../../components/Layout/Container";
 
+import lucProfilPhoto from "./images/luc-profil-photo.jpg";
+
 export default function HomeHero() {
   const { t } = useTranslation();
   const [opened, setOpened] = useState(false);
@@ -55,7 +57,7 @@ export default function HomeHero() {
                                 cols: { col: 6, sm: 9 },
                                 content: (
                                   <Picture
-                                    src={"/images/luc-profil-photo.jpg"}
+                                    src={lucProfilPhoto}
                                     width={600}
                                     height={600}
                                     alt={"Luc Rousseau"}

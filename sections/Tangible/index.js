@@ -7,12 +7,12 @@ import Container from "../../components/Layout/Container";
 import Button from "../../components/Button";
 import Accordion from "../../components/Accordion";
 
-const PROJECT_LOGOS = [
-  "/images/milesopedia.png",
-  "/images/nesto.png",
-  "/images/comparemortgage.png",
-  "/images/nestogroup.png", // BrightWize
-];
+import milesopediaLogo from "./images/milesopedia.png";
+import nestoLogo from "./images/nesto.png";
+import comparemortgageLogo from "./images/comparemortgage.png";
+import nestogroupLogo from "./images/nestogroup.png";
+
+const PROJECT_LOGOS = [milesopediaLogo, nestoLogo, comparemortgageLogo, nestogroupLogo];
 
 export default function Tangible({ cta }) {
   const { t } = useTranslation();

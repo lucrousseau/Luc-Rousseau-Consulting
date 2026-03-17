@@ -2,38 +2,35 @@ const sharp = require("sharp");
 const fs = require("fs");
 const path = require("path");
 
-// Specify the directory containing the images to be converted.
-const directoryPath = path.join(__dirname, "../public/images");
+const ROOT = path.join(__dirname, "..");
 
-// Read the contents of the specified directory.
-fs.readdir(directoryPath, (err, files) => {
-  if (err) {
-    if (err.code === "ENOENT") {
-      console.log("convert-images: public/images not found, skipping.");
-      return;
-    }
-    console.error("Error getting directory information.", err);
-    return;
-  }
+// Colocated image dirs: sections/*/images, components/*/images, and legacy public/images
+const IMAGE_DIRS = [
+  path.join(ROOT, "public", "images"),
+  path.join(ROOT, "sections", "HomeHero", "images"),
+  path.join(ROOT, "sections", "WhoIWorkWith", "images"),
+  path.join(ROOT, "sections", "Tangible", "images"),
+];
 
-  // Process each file in the directory.
-  files.forEach((file) => {
-    // Check if the file is an image with a supported extension.
-    if (file.match(/\.(jpg|jpeg|png)$/)) {
-      // Define the source and destination file paths.
+async function convertDir(directoryPath) {
+  // directoryPath from IMAGE_DIRS constant, not user input
+  /* eslint-disable security/detect-non-literal-fs-filename */
+  if (!fs.existsSync(directoryPath)) return;
+  const files = fs.readdirSync(directoryPath);
+  /* eslint-enable security/detect-non-literal-fs-filename */
+  const tasks = files
+    .filter((file) => file.match(/\.(jpg|jpeg|png)$/))
+    .map(async (file) => {
       const sourceFilePath = path.join(directoryPath, file);
       const targetFilePath = `${sourceFilePath}.webp`;
+      await sharp(sourceFilePath).webp({ quality: 90 }).toFile(targetFilePath);
+      console.log(`Converted ${path.relative(ROOT, sourceFilePath)} to WebP`);
+    });
+  await Promise.all(tasks);
+}
 
-      // Use sharp to convert the image to WebP format.
-      sharp(sourceFilePath)
-        .webp({ quality: 90 })
-        .toFile(targetFilePath, (err) => {
-          if (err) {
-            console.error("Error converting image to WebP", err);
-          } else {
-            console.log(`Converted ${file} to WebP`);
-          }
-        });
-    }
-  });
-});
+(async () => {
+  for (const dir of IMAGE_DIRS) {
+    await convertDir(dir);
+  }
+})();

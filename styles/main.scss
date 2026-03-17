@@ -16,22 +16,24 @@
 @use "layout/commons";
 @use "layout/component";
 
-// Components (moved here because Next.js Pages Router forbids global CSS imports from components)
-@use "components/accordion";
-@use "components/button";
-@use "components/buy";
-@use "components/language-switcher";
-@use "components/logo";
-@use "components/navigation";
-@use "components/picture";
-@use "components/product";
-@use "components/social-links";
-@use "components/table";
-@use "components/tags";
-@use "components/layout/container";
-@use "components/layout/row";
+// Components (colocated: each component’s style in its folder)
+@use "../components/Accordion/style" as accordion;
+@use "../components/Button/style" as button;
+@use "../components/Buy/style" as buy;
+@use "../components/LanguageSwitcher/style" as language-switcher;
+@use "../components/Logo/style" as logo;
+@use "../components/Navigation/style" as navigation;
+@use "../components/Picture/style" as picture;
+@use "../components/Product/style" as product;
+@use "../components/SocialLinks/style" as social-links;
+@use "../components/Table/style" as table;
+@use "../components/Tags/style" as tags;
+@use "../components/Layout/Container/style" as container;
+@use "../components/Layout/Row/style" as row;
 
-// Sections
-@use "sections/header";
-@use "sections/ai-responsible";
-@use "pages/home";
+// Sections (colocated)
+@use "../sections/Header/style" as header;
+@use "../sections/AIResponsible/style" as ai-responsible;
+
+// Pages (colocated)
+@use "../pages/home" as home;
