@@ -45,7 +45,7 @@ Le script `prebuild` convertit les images dans `public/images` en WebP (via Shar
 
 ### Tests
 
-Quelques tests unitaires (Jest + React Testing Library) couvrent les utilitaires : `commons/alignments`, `components/Booking/commons/convertOpeningHoursTimeZone`. Commande : `npm run test`.
+Quelques tests unitaires (Jest + React Testing Library) couvrent les utilitaires (ex. `commons/alignments`). Commande : `npm run test`.
 
 ### Git hooks (Husky)
 

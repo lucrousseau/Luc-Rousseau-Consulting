@@ -48,7 +48,7 @@ Le site a bien basculé vers le positionnement **Product Engineer — Systems, a
 ### 3.3 Contenu legacy (home-hero)
 
 - **Fichiers :** `public/locales/en/home-hero.json`, `public/locales/fr/home-hero.json`.
-- **Utilisation :** `sections/HomeHero` et `bk/pages/cto.js` (page de backup).
+- **Utilisation :** `sections/HomeHero`.
 - **Contenu actuel :** « consultant and developer on-demand », « freelance development », « 25 years », « MVPs », « Transform your vision into reality » — **non aligné** avec Product Engineer.
 
 **Recommandation :** Soit mettre à jour home-hero (EN/FR) avec le même positionnement que development-hero/about, soit documenter que HomeHero est déprécié et ne pas l’utiliser sur la page principale.

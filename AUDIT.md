@@ -44,10 +44,9 @@ Rapport d’audit et actions effectuées pour mettre le projet en ordre.
 - **Problème** : Présence du boilerplate create-next-app (`app/layout.tsx`, `app/_page.tsx`, `app/globals.css`) alors que l’application réelle utilise uniquement le **Pages Router** (`pages/`). Risque de métadonnées par défaut (“Create Next App”) et de confusion.
 - **Action** : Suppression de `app/_page.tsx`, `app/layout.tsx` et `app/globals.css`. Référence à `app/` retirée de `tailwind.config.ts`.
 
-### 3.2 Dossier `bk/` (ignoré)
+### 3.2 Dossier `bk/` (supprimé)
 
-- **Constat** : `bk/` contient des pages de backup (`cto.js`, `booking.js`).
-- **Action** : Ajout de `/bk` dans `.gitignore` pour ne pas les versionner. Si ces fichiers ne sont plus utiles, vous pouvez supprimer le dossier `bk/` du dépôt après coup.
+- Le dossier `bk/` (pages de backup `cto.js`, `booking.js`) et le composant `Booking` associé ont été retirés du dépôt.
 
 ---
 

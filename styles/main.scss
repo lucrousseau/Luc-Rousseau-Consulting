@@ -32,13 +32,6 @@
 @use "components/layout/container";
 @use "components/layout/grid";
 @use "components/layout/row";
-@use "components/booking/commons" as booking-commons;
-@use "components/booking/booking";
-@use "components/booking/calendar";
-@use "components/booking/calendar-navigation";
-@use "components/booking/hours";
-@use "components/booking/hours-navigation";
-@use "components/booking/month";
 
 // Sections
 @use "sections/header";
