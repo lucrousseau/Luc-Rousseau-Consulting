@@ -8,14 +8,6 @@
   --margin-top: 0;
   --margin-bottom: 0;
 
-  .component__logo {
-    @media screen and (max-width: $md) {
-      a {
-        font-size: 0.8em;
-      }
-    }
-  }
-
   #{$this}__nav {
     overflow: auto hidden;
     -webkit-overflow-scrolling: touch;

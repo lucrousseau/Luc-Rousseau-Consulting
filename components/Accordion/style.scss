@@ -50,7 +50,7 @@
       border-radius: calc(var(--border-radius) * 0.5);
       border-bottom: var(--border-width) solid transparent;
 
-      i {
+      i.component__accordion__icon {
         margin-left: auto;
         line-height: 0em;
         font-style: normal;
@@ -58,6 +58,10 @@
         border-radius: 100rem;
         padding: calc(var(--padding) * 1.5);
         background-color: var(--body-background-color);
+
+        &--logo {
+          padding: calc(var(--padding) * 0.5) calc(var(--padding) * 1.5);
+        }
 
         .component__accordion__logo {
           display: flex;

@@ -2,8 +2,6 @@
 
 // AI Responsible: flagship section with distinct background and stronger hierarchy
 .section-ai-responsible {
-  background-color: var(--section-ai-responsible-bg, rgb(100 126 114 / 8%));
-
   // Reuse page-home section rhythm (Container inside gets same padding via .page-home > .container)
   .container {
     --set-container-padding-top: 48;

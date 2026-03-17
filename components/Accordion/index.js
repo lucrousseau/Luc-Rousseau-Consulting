@@ -50,7 +50,14 @@ export default function Accordion({ className, items, callback = () => {}, ...pr
           <h3 onClick={() => toggleItem(index)}>
             {item.title}{" "}
             {(item.logo || item.emoji) && (
-              <i>
+              <i
+                className={classNames(
+                  "component__accordion__icon",
+                  item.logo
+                    ? "component__accordion__icon--logo"
+                    : "component__accordion__icon--emoji"
+                )}
+              >
                 {item.logo ? (
                   <span className="component__accordion__logo">
                     <Image src={item.logo} alt="" width={40} height={40} />

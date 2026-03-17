@@ -6,7 +6,11 @@
   $parent: &;
 
   display: flex;
-  gap: calc(var(--gap) * 0.5);
+
+  // Override .row gap when Tags also has .row class (same element)
+  &.row {
+    gap: calc(var(--gap) * 0.5);
+  }
 
   strong {
     line-height: 1em;

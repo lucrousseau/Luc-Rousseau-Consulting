@@ -6,4 +6,15 @@
   a {
     text-decoration: none;
   }
+
+  @media screen and (max-width: $md) {
+    a {
+      font-size: 1.45em;
+
+      &:link,
+      &:visited {
+        color: var(--primary-accent-color);
+      }
+    }
+  }
 }
