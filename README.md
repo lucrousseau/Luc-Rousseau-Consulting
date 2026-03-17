@@ -5,7 +5,6 @@ Site Next.js (Pages Router) avec i18n (en/fr), SCSS et Tailwind.
 ## Prérequis
 
 - **Node.js** 22.x (voir `.nvmrc`)
-- Pour les icônes Font Awesome Pro : définir `FONTAWESOME_NPM_TOKEN` ou créer un `.npmrc.local` avec le token (ne pas committer le token).
 
 ## Installation
 
@@ -42,6 +41,7 @@ Le script `prebuild` convertit les images dans `public/images` en WebP (via Shar
 - **`npm run audit:fix`** — Met à jour les dépendances pour corriger ce qui peut l’être sans changement majeur.
 - **`npm run fix:security`** — Lance `audit:fix` puis `lint:fix` (règles ESLint sécurité).
 - **ESLint** — Le plugin `eslint-plugin-security` ajoute des règles (eval, buffer, injection, etc.) ; les alertes s’affichent en warning au lint.
+- **Contenu HTML** — Les textes rendus via `html-react-parser` viennent uniquement des locales (`public/locales/`) ; voir `docs/SECURITY.md` pour la règle et les précautions si l’origine du contenu change.
 
 ### Tests
 

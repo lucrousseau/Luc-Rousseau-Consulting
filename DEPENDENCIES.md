@@ -24,7 +24,7 @@ Dernière mise à jour : mars 2025.
 ## Commandes utiles
 
 ```bash
-# Voir les paquets obsolètes (hors registry Font Awesome si token non défini)
+# Voir les paquets obsolètes
 npm outdated
 
 # Mettre à jour tous les patch/mineur dans les plages ^
@@ -33,7 +33,3 @@ npm update
 # Réinstaller après modification du package.json
 npm install
 ```
-
-## Font Awesome
-
-Les paquets `@fortawesome/*` sont en 6.5.x. Les versions 6.x restent à jour en patch. Pour une mise à jour majeure (ex. 7.x), consulter la doc Font Awesome et les breaking changes.
