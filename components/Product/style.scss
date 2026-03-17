@@ -3,6 +3,8 @@
 @use "../../styles/abstracts/mixins" as *;
 
 .component__product {
+  --margin-bottom: var(--gap, 1.5rem);
+
   margin: 0;
   height: 100%;
   padding: var(--double-padding);
@@ -15,6 +17,15 @@
   }
 
   @include shadow;
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 
   @media screen and (max-width: $sm) {
     &:not(&--has-nolabel) {

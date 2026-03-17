@@ -5,6 +5,8 @@
 .component__accordion {
   $parent: &;
 
+  --margin-bottom: var(--gap, 1.5rem);
+
   padding: var(--double-padding);
   border-radius: var(--border-radius);
   background-color: var(--secondary-background-color);

@@ -23,7 +23,12 @@ export default function HomeHero() {
   });
 
   return (
-    <Container id={t("home-hero:anchor")} align={"center"} halign={"center"}>
+    <Container
+      id={t("home-hero:anchor")}
+      className="section-home-hero"
+      align={"center"}
+      halign={"center"}
+    >
       <h1>{t("home-hero:title")}</h1>
       <h2>{t("home-hero:quote")}</h2>
       <Row

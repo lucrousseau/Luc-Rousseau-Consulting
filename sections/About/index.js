@@ -9,7 +9,7 @@ export default function About() {
   const { t } = useTranslation();
 
   return (
-    <Container id={t("about:anchor")} align={"center"} halign={"center"}>
+    <Container id={t("about:anchor")} className="section-about" align={"center"} halign={"center"}>
       <Row
         halign={"center"}
         columns={[

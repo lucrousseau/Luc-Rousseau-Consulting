@@ -16,7 +16,7 @@
 @use "layout/commons";
 @use "layout/component";
 
-// Components (colocated: each component’s style in its folder)
+// Components (colocated: styles in their folder, loaded here; Next.js allows global CSS only from _app)
 @use "../components/Accordion/style" as accordion;
 @use "../components/Button/style" as button;
 @use "../components/Buy/style" as buy;
@@ -33,7 +33,12 @@
 
 // Sections (colocated)
 @use "../sections/Header/style" as header;
+@use "../sections/HomeHero/style" as home-hero;
 @use "../sections/AIResponsible/style" as ai-responsible;
+@use "../sections/About/style" as about;
+@use "../sections/WhoIWorkWith/style" as who-i-work-with;
+@use "../sections/Tangible/style" as tangible;
+@use "../sections/ProductEngineerDefinition/style" as product-engineer;
 
-// Pages (colocated)
+// Pages
 @use "../pages/home" as home;

@@ -13,6 +13,7 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
   return (
     <Container
       id={t("who-i-work-with:anchor")}
+      className="section-who-i-work-with"
       align={"center"}
       halign={"center"}
       background={{

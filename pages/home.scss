@@ -1,4 +1,4 @@
-// Home page: spacing, rhythm, readability (align with prod look)
+// Home page: section rhythm, shared typography (section-specific styles live in each section)
 @use "../styles/abstracts/variables" as *;
 
 .page-home {
@@ -19,39 +19,6 @@
     }
   }
 
-  // Hero: extra top padding, clear h1 separation, manifesto readability
-  > section.container:first-of-type,
-  > .container:first-of-type {
-    --set-container-padding-top: 32;
-
-    @media screen and (min-width: $md) {
-      --set-container-padding-top: 48;
-    }
-
-    h1 {
-      margin-bottom: 0.5em;
-      text-align: center;
-    }
-
-    h3 {
-      margin-top: 0.75em;
-      margin-bottom: 0.5em;
-      line-height: 1.3;
-    }
-
-    .big {
-      max-width: 52ch;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  // CTA block under hero: use layout system variables (.component has paddingMargin)
-  .component__buy {
-    --margin-top: 1.5rem;
-    --margin-bottom: 0.5rem;
-  }
-
   // Section pre-title badge (e.g. "AI & execution" above main title)
   .section__badge {
     margin: 0 0 0.5rem;
@@ -63,7 +30,7 @@
     text-align: center;
   }
 
-  // Section titles: consistent spacing (no .component on h2, keep minimal override)
+  // Section titles: consistent spacing
   h2.underline {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -74,7 +41,7 @@
     margin-top: 0.5rem;
   }
 
-  // Intro/summary paragraphs: limit line length, left-align for readability
+  // Intro/summary paragraphs: limit line length
   .container .big,
   .container p {
     margin-left: auto;
@@ -85,66 +52,5 @@
   h1,
   h2.underline {
     text-align: center;
-  }
-
-  // Cards: use layout system --margin-bottom (.component has paddingMargin)
-  .component__product,
-  .component__accordion {
-    --margin-bottom: var(--gap, 1.5rem);
-  }
-
-  // Engagement / Differentiation: card grid spacing
-  .component__product h3 {
-    margin-bottom: 0.5rem;
-  }
-
-  .component__product p {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  // Who I work with: list with h3 headings, 2 columns on desktop
-  .who-i-work-with__list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 2.5rem;
-    row-gap: 1.25rem;
-
-    @media screen and (max-width: $md) {
-      grid-template-columns: 1fr;
-      gap: 1.25rem 0;
-    }
-
-    li {
-      margin-bottom: 0;
-    }
-
-    .h3 {
-      margin-top: 0;
-      margin-bottom: 0.25rem;
-    }
-
-    .h3 + p {
-      margin-top: 0;
-    }
-  }
-
-  // About: CTA spacing
-  .about__cta {
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-  }
-
-  // Tangible: CTA block with teaser
-  .tangible__cta-teaser {
-    margin: 0 0 1rem;
-  }
-
-  // Product Engineer (merged with role comparison): CTA teaser
-  .product-engineer__cta-teaser {
-    margin: 0 0 1rem;
   }
 }

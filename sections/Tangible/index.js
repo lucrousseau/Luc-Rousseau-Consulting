@@ -46,7 +46,12 @@ export default function Tangible({ cta }) {
   });
 
   return (
-    <Container id={t("tangible:anchor")} align={"center"} halign={"center"}>
+    <Container
+      id={t("tangible:anchor")}
+      className="section-tangible"
+      align={"center"}
+      halign={"center"}
+    >
       <Row
         halign={"center"}
         style={{

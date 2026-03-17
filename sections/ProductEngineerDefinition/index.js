@@ -22,7 +22,12 @@ export default function ProductEngineerDefinition({ cta }) {
   const { headers, rows } = hasTable ? table : { headers: null, rows: [] };
 
   return (
-    <Container id={t("product-engineer:anchor")} align={"center"} halign={"center"}>
+    <Container
+      id={t("product-engineer:anchor")}
+      className="section-product-engineer"
+      align={"center"}
+      halign={"center"}
+    >
       <Row
         halign={"center"}
         style={{
