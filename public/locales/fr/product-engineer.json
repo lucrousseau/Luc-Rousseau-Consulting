@@ -23,20 +23,20 @@
         "developer": "Fonctionnalités et bugs, dans un périmètre donné.",
         "techLead": "Livraison équipe, décisions tech, personnes.",
         "productManager": "Quoi construire, pour qui, dans quel ordre.",
-        "productEngineer": "Quoi construire et comment ; produit et tech en un rôle."
+        "productEngineer": "Quoi construire et comment; produit et tech en un rôle."
       },
       {
         "dimension": "Possède",
         "developer": "Tâches et tickets.",
         "techLead": "Résultats équipe, qualité, direction tech.",
         "productManager": "Roadmap, priorités, alignement.",
-        "productEngineer": "Résultats, architecture, livraison ; le comment et une partie du quoi."
+        "productEngineer": "Résultats, architecture, livraison; le comment et une partie du quoi."
       },
       {
         "dimension": "Profondeur",
         "developer": "Code, tests, ce qui est assigné.",
-        "techLead": "Large et profonde ; guide la stack et le design.",
-        "productManager": "Souvent légère ; s'appuie sur l'équipe pour le comment.",
+        "techLead": "Large et profonde; guide la stack et le design.",
+        "productManager": "Souvent légère; s'appuie sur l'équipe pour le comment.",
         "productEngineer": "Profonde : code, systèmes, APIs, scale."
       },
       {
@@ -48,16 +48,16 @@
       },
       {
         "dimension": "Architecture",
-        "developer": "Suit les patterns ; peut améliorer localement.",
+        "developer": "Suit les patterns; peut améliorer localement.",
         "techLead": "Définit ou affine pour l'équipe/le produit.",
-        "productManager": "Possède rarement ; travaille avec l'équipe.",
+        "productManager": "Possède rarement; travaille avec l'équipe.",
         "productEngineer": "Possède ou co-possède structure, frontières, dette."
       },
       {
         "dimension": "Livraison",
         "developer": "Leur travail.",
         "techLead": "Permet à l'équipe de livrer.",
-        "productManager": "Définit quoi ; ne construit pas.",
+        "productManager": "Définit quoi; ne construit pas.",
         "productEngineer": "Livre et façonne quoi et comment."
       }
     ]
