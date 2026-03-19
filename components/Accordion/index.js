@@ -60,7 +60,12 @@ export default function Accordion({ className, items, callback = () => {}, ...pr
               >
                 {item.logo ? (
                   <span className="component__accordion__logo">
-                    <Image src={item.logo} alt="" width={40} height={40} />
+                    <Image
+                      src={item.logo}
+                      alt={item.title ? `${item.title} logo` : ""}
+                      width={40}
+                      height={40}
+                    />
                   </span>
                 ) : (
                   item.emoji

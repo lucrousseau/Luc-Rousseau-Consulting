@@ -17,6 +17,7 @@ const SEO = ({ title, description, image, url: urlProp, sameAs }) => {
   const alternateEn = `${base}${path}`;
   const alternateFr = `${base}/fr${path}`;
 
+  // Person schema with location
   const jsonLdPerson =
     sameAs && sameAs.length > 0
       ? {
@@ -26,20 +27,62 @@ const SEO = ({ title, description, image, url: urlProp, sameAs }) => {
           url: canonical,
           sameAs: sameAs,
           jobTitle: "Product Engineer",
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "QC",
+            addressCountry: "CA",
+            addressLocality: "Montreal",
+          },
         }
       : null;
+
+  // WebSite schema for better site discovery
+  const jsonLdWebSite = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: base,
+    description:
+      locale === "fr"
+        ? "Consultant WordPress & Product Engineer au Québec. Architecture technique, systèmes scalables et exécution produit."
+        : "WordPress consultant & Product Engineer in Quebec. Technical architecture, scalable systems, and product execution.",
+    inLanguage: [locale === "fr" ? "fr-CA" : "en-CA"],
+    areaServed: {
+      "@type": "Country",
+      name: "Canada",
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${base}/search?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
 
   return (
     <Head>
       <title>{title}</title>
+      {/* JSON-LD Schemas */}
       {jsonLdPerson && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }}
         />
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }}
+      />
       <meta name="description" content={description} />
       <link rel="canonical" href={canonical} />
+
+      {/* Geo-targeting meta tags */}
+      <meta name="geo.region" content="CA-QC" />
+      <meta name="geo.placename" content="Quebec, Montreal" />
+      <meta name="geo.position" content="45.5017;-73.5673" />
+      <meta name="ICBM" content="45.5017, -73.5673" />
 
       {/* Open Graph */}
       <meta property="og:type" content="website" />

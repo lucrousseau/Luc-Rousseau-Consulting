@@ -34,7 +34,7 @@ export default function Picture({
         height={height}
         alt={alt}
         layout={layout}
-        priority={priority}
+        priority={priority || loading === "eager"}
         loading={loading}
         sizes={sizes}
       />

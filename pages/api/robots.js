@@ -13,6 +13,8 @@ User-agent: *
 Allow: /
 
 Sitemap: ${base}/sitemap.xml
+# Geo-targeting: KML file for geographic location
+# KML: ${base}/geo.kml
 `;
 
   res.setHeader("Content-Type", "text/plain; charset=utf-8");

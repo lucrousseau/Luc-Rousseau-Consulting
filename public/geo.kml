@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Luc Rousseau — Product Engineer — Quebec, Canada</name>
+    <description>Fractional Product Engineer based in Quebec, Canada. Technical architecture, systems design, and product execution.</description>
+    <Placemark>
+      <name>Montreal, Quebec, Canada</name>
+      <description>Product Engineer services — Quebec & Canada</description>
+      <Point>
+        <coordinates>-73.5673,45.5017,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

@@ -17,6 +17,8 @@ const nextConfig = {
     return [
       { source: "/sitemap.xml", destination: "/api/sitemap" },
       { source: "/robots.txt", destination: "/api/robots" },
+      { source: "/.well-known/ai.txt", destination: "/api/ai.txt" },
+      { source: "/ai.txt", destination: "/api/ai.txt" },
     ];
   },
   i18n: {
