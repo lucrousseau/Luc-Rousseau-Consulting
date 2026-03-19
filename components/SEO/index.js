@@ -44,8 +44,8 @@ const SEO = ({ title, description, image, url: urlProp, sameAs }) => {
     url: base,
     description:
       locale === "fr"
-        ? "Consultant WordPress & Product Engineer au Québec, Canada. Architecture WordPress, optimisation de performance, design d'API et systèmes techniques."
-        : "WordPress consultant & Product Engineer in Quebec, Canada. WordPress architecture, performance optimization, API design, and technical systems.",
+        ? "Product Engineer au Québec, Canada. Architecture headless (WordPress, Laravel), frontends modernes (React, Vue) et systèmes techniques à l'échelle."
+        : "Product Engineer in Quebec, Canada. Headless architecture (WordPress, Laravel), modern frontends (React, Vue), and technical systems at scale.",
     inLanguage: [locale === "fr" ? "fr-CA" : "en-CA"],
     areaServed: [
       {
