@@ -7,7 +7,9 @@
   "summary": "<p className=\"big\"><strong>Un partenaire sur l'ensemble du stack.</strong> Les technologies avec lesquelles je travaille servent les résultats produit et architecture : clarté, scalabilité et livraison soutenable. <em>Les outils servent le système</em>—pas l'inverse.</p>",
   "items": [
     "Roadmap et priorisation",
-    "Architecture et APIs",
+    "Architecture WordPress et APIs",
+    "Optimisation de performance WordPress",
+    "Design d'API WordPress et REST",
     "React · Next.js · Vue",
     "WordPress et headless",
     "Dette technique et legacy",

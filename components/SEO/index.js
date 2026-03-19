@@ -44,13 +44,23 @@ const SEO = ({ title, description, image, url: urlProp, sameAs }) => {
     url: base,
     description:
       locale === "fr"
-        ? "Consultant WordPress & Product Engineer au Québec. Architecture technique, systèmes scalables et exécution produit."
-        : "WordPress consultant & Product Engineer in Quebec. Technical architecture, scalable systems, and product execution.",
+        ? "Consultant WordPress & Product Engineer au Québec, Canada. Architecture WordPress, optimisation de performance, design d'API et systèmes techniques."
+        : "WordPress consultant & Product Engineer in Quebec, Canada. WordPress architecture, performance optimization, API design, and technical systems.",
     inLanguage: [locale === "fr" ? "fr-CA" : "en-CA"],
-    areaServed: {
-      "@type": "Country",
-      name: "Canada",
-    },
+    areaServed: [
+      {
+        "@type": "Country",
+        name: "Canada",
+      },
+      {
+        "@type": "State",
+        name: "Quebec",
+      },
+      {
+        "@type": "City",
+        name: "Montreal",
+      },
+    ],
     potentialAction: {
       "@type": "SearchAction",
       target: {
