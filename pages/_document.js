@@ -1,16 +1,16 @@
 import { Head, Html, Main, NextScript } from "next/document";
 
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+import { GTM_CONTAINER_ID, isGtmEnabled } from "../utils/gtm";
 
 export default function Document() {
   return (
     <Html>
       <Head />
       <body>
-        {GTM_ID ? (
+        {isGtmEnabled() ? (
           <noscript>
             <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}`}
               height="0"
               width="0"
               title="Google Tag Manager"
