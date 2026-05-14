@@ -36,11 +36,11 @@ Services:
 
 # Languages
 Languages: English (en), French (fr)
-Default Language: English
+Default Language: French
 
 # Key Pages
-Main Page: ${base}/
-French Page: ${base}/fr
+Main Page (French): ${base}/
+English Page: ${base}/en
 
 # Contact
 Contact: hello@lucrousseau.com

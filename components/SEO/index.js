@@ -5,17 +5,30 @@ import { getSiteOrigin } from "../../utils/siteOrigin";
 
 const SITE_NAME = "Luc Rousseau";
 
-const SEO = ({ title, description, image, url: urlProp, sameAs }) => {
+/** Path for SEO URLs: default locale has no prefix (`/`), others use `/${locale}`. */
+function localizedPath(locale, defaultLocale, pathname) {
+  const p = pathname && pathname !== "" ? pathname : "/";
+  if (locale === defaultLocale) {
+    return p;
+  }
+  return p === "/" ? `/${locale}` : `/${locale}${p}`;
+}
+
+const SEO = ({ title, description, image, sameAs }) => {
   const base = getSiteOrigin();
   const router = useRouter();
-  const { locale, asPath } = router;
-  const path = asPath || urlProp || "/";
-  const canonicalPath = locale === "fr" ? `/fr${path}` : path;
-  const canonical = `${base}${canonicalPath}`;
+  const { locale, pathname, defaultLocale } = router;
+  const defaultLoc = defaultLocale ?? "fr";
+  const pathOnly = pathname || "/";
+
+  const canonicalPath = localizedPath(locale, defaultLoc, pathOnly);
+  const canonical = canonicalPath === "/" ? `${base}/` : `${base}${canonicalPath}`;
+
   const ogLocale = locale === "fr" ? "fr_CA" : "en_CA";
   const ogLocaleAlternate = locale === "fr" ? "en_CA" : "fr_CA";
-  const alternateEn = `${base}${path}`;
-  const alternateFr = `${base}/fr${path}`;
+  const alternateEn = `${base}${localizedPath("en", defaultLoc, pathOnly)}`;
+  const alternateFr = `${base}${localizedPath("fr", defaultLoc, pathOnly)}`;
+  const alternateDefault = `${base}${localizedPath(defaultLoc, defaultLoc, pathOnly)}`;
 
   // Person schema with location
   const jsonLdPerson =
@@ -113,7 +126,7 @@ const SEO = ({ title, description, image, url: urlProp, sameAs }) => {
       {/* Hreflang */}
       <link rel="alternate" hrefLang="en" href={alternateEn} />
       <link rel="alternate" hrefLang="fr" href={alternateFr} />
-      <link rel="alternate" hrefLang="x-default" href={alternateEn} />
+      <link rel="alternate" hrefLang="x-default" href={alternateDefault} />
 
       {/* Favicons */}
       <link rel="apple-touch-icon" sizes="180x180" href={`${base}/favicon/apple-touch-icon.png`} />

@@ -29,7 +29,6 @@ export default function Home() {
         title={t("home-seo-title")}
         description={t("home-seo-description")}
         image={t("home-seo-image")}
-        url="/"
         sameAs={[t("common:linkedin")]}
       />
       <Container

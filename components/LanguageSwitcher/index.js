@@ -2,17 +2,18 @@ import classNames from "classnames";
 import { alignments } from "../../commons/alignments";
 import Row from "../Layout/Row";
 
-export default function LanguageSwitcher({ current = "en", ...props }) {
+export default function LanguageSwitcher({ current = "fr", ...props }) {
   const alignmentsClass = alignments({ props });
 
+  /** Default locale is `fr` (see `next-i18next.config.js`): FR at `/`, EN at `/en`. */
   const languages = {
-    en: { label: "English", href: "/" },
-    fr: { label: "French", href: "/fr" },
+    en: { label: "English", href: "/en" },
+    fr: { label: "French", href: "/" },
   };
 
-  // safe: current is locale prop ("en" | "fr"), fallback to en
+  // safe: current is locale prop ("en" | "fr"), fallback to default site locale
   // eslint-disable-next-line security/detect-object-injection
-  const currentLanguage = languages[current] ?? languages.en;
+  const currentLanguage = languages[current] ?? languages.fr;
 
   return (
     <div className={classNames("component component__language-switcher", alignmentsClass)}>

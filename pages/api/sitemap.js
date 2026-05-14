@@ -21,7 +21,7 @@ export default function handler(req, res) {
 
   const urls = [
     { path: "", priority: "1.0", changefreq: "weekly", geo: true },
-    { path: "fr", priority: "1.0", changefreq: "weekly", geo: true },
+    { path: "en", priority: "1.0", changefreq: "weekly", geo: true },
   ];
 
   const urlset = urls
