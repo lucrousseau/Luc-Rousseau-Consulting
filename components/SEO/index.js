@@ -44,8 +44,8 @@ const SEO = ({ title, description, image, url: urlProp, sameAs }) => {
     url: base,
     description:
       locale === "fr"
-        ? "Product Engineer au Québec, Canada. Architecture headless (WordPress, Laravel), frontends modernes (React, Vue) et systèmes techniques à l'échelle."
-        : "Product Engineer in Quebec, Canada. Headless architecture (WordPress, Laravel), modern frontends (React, Vue), and technical systems at scale.",
+        ? "Product Engineer au Québec, Canada. Architecture produit et APIs, systèmes découpés, Laravel, WordPress headless quand l'édition l'exige, React/Vue. Systèmes à l'échelle."
+        : "Product Engineer in Quebec, Canada. Product-facing architecture and APIs, decoupled systems, Laravel, WordPress headless when editorial scale demands it, React/Vue. Systems at scale.",
     inLanguage: [locale === "fr" ? "fr-CA" : "en-CA"],
     areaServed: [
       {

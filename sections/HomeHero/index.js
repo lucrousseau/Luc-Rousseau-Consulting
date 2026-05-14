@@ -65,7 +65,7 @@ export default function HomeHero() {
                                     src={lucProfilPhoto}
                                     width={600}
                                     height={600}
-                                    alt={"Luc Rousseau — WordPress Consultant & Product Engineer"}
+                                    alt={t("home-hero:profile-image-alt")}
                                     rounded={true}
                                     loading={"eager"}
                                     sizes={"(max-width: 600px) 100vw, 400px"}

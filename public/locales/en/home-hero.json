@@ -4,6 +4,7 @@
   "navigation-label-short": "Offer",
   "title": "Product Engineer",
   "quote": "Design background, hands-on engineering, product accountability—one thread from choices to what ships.",
+  "profile-image-alt": "Luc Rousseau — Product Engineer",
   "manifesto": "Over the years, I've learned that the strongest product decisions happen when someone in the room can <strong>both shape how the product is built and deliver the code</strong>.",
   "items": [
     {
@@ -14,7 +15,7 @@
     {
       "emoji": "🏗️",
       "title": "Architecture & system design",
-      "content": "<p>I define or clarify how your system is structured: boundaries between services or modules, APIs and contracts, and how the stack can evolve. This includes <strong>headless architecture</strong> decisions (WordPress, Laravel, or custom APIs as backend with React/Vue frontends), <strong>API design</strong>, and <strong>performance</strong> considerations. The goal is an architecture that supports the product today and can scale—not accidental complexity.</p><p><strong>Outcomes:</strong> Documented architecture and clear API contracts; justified build-vs-buy and platform decisions; a shared mental model so new work fits the system.</p><p><strong>Solves:</strong> \"Nobody knows how it all fits together\"; sprawl and ad-hoc integrations; big rewrites with no clear path; headless or multi-site decisions that feel like guesswork.</p>"
+      "content": "<p>I define or clarify how your system is structured: boundaries between services or modules, APIs and contracts, and how the stack can evolve. That includes <strong>decoupled and headless</strong> setups where the backend—<strong>custom APIs</strong>, <strong>Laravel</strong>, or a <strong>CMS used as a content platform</strong> (including <strong>WordPress headless</strong> when it fits the editorial model)—pairs with <strong>React or Vue</strong> frontends, plus <strong>API design</strong> and <strong>performance</strong> trade-offs. The goal is an architecture that supports the product today and can scale—not accidental complexity.</p><p><strong>Outcomes:</strong> Documented architecture and clear API contracts; justified build-vs-buy and platform decisions; a shared mental model so new work fits the system.</p><p><strong>Solves:</strong> \"Nobody knows how it all fits together\"; sprawl and ad-hoc integrations; big rewrites with no clear path; headless or multi-site decisions that feel like guesswork.</p>"
     },
     {
       "emoji": "🔧",

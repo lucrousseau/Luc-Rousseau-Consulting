@@ -4,6 +4,7 @@
   "navigation-label-short": "Offre",
   "title": "Product Engineer",
   "quote": "Formation design, ingénierie terrain, arbitrage produit assumé—un seul fil des choix jusqu'à ce qui est livré.",
+  "profile-image-alt": "Luc Rousseau — Product Engineer",
   "manifesto": "Avec le recul et le terrain, j'ai appris que les meilleures décisions produit arrivent quand quelqu'un dans la pièce peut <strong>à la fois définir comment le produit est construit et livrer le code</strong>.",
   "items": [
     {
@@ -14,7 +15,7 @@
     {
       "emoji": "🏗️",
       "title": "Architecture et conception système",
-      "content": "<p>Je définis ou clarifie comment votre système est structuré : frontières entre services ou modules, APIs et contrats, évolution de la stack. Cela inclut les décisions d'<strong>architecture headless</strong> (WordPress, Laravel, ou APIs custom en backend avec frontends React/Vue), le <strong>design d'API</strong>, et les considérations de <strong>performance</strong>. L'objectif est une architecture qui sert le produit aujourd'hui et peut scaler—pas de complexité accidentelle.</p><p><strong>Résultats :</strong> Architecture documentée et contrats d'API clairs; décisions build-vs-buy et plateforme justifiées; un modèle mental partagé pour que le nouveau travail s'intègre au système.</p><p><strong>Résout :</strong> « Personne ne sait comment tout s'articule »; sprawl et intégrations ad-hoc; grosses refontes sans chemin clair; décisions headless ou multi-site qui ressemblent à du tâtonnement.</p>"
+      "content": "<p>Je définis ou clarifie comment votre système est structuré : frontières entre services ou modules, APIs et contrats, évolution de la stack. Cela inclut les architectures <strong>découplées et headless</strong> où le backend—<strong>APIs sur mesure</strong>, <strong>Laravel</strong>, ou un <strong>CMS comme plateforme de contenu</strong> (dont <strong>WordPress headless</strong> quand le modèle éditorial le justifie)—s'appuie sur des frontends <strong>React ou Vue</strong>, ainsi que le <strong>design d'API</strong> et les arbitrages de <strong>performance</strong>. L'objectif est une architecture qui sert le produit aujourd'hui et peut scaler—pas de complexité accidentelle.</p><p><strong>Résultats :</strong> Architecture documentée et contrats d'API clairs; décisions build-vs-buy et plateforme justifiées; un modèle mental partagé pour que le nouveau travail s'intègre au système.</p><p><strong>Résout :</strong> « Personne ne sait comment tout s'articule »; sprawl et intégrations ad-hoc; grosses refontes sans chemin clair; décisions headless ou multi-site qui ressemblent à du tâtonnement.</p>"
     },
     {
       "emoji": "🔧",

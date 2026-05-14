@@ -50,10 +50,10 @@ Not Available: Hourly rates, one-off projects, day rates
 
 # Expertise
 Expertise:
-- WordPress architecture and systems
-- Product engineering
+- Product engineering and technical architecture
+- Decoupled systems, APIs, and CMS platforms (WordPress headless when editorial scale warrants it)
+- Laravel and custom backend systems
 - Technical leadership
-- System design and APIs
 - CI/CD and delivery processes
 - Multi-site and multi-market platforms
 
