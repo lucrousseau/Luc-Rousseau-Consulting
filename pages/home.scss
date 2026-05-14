@@ -2,6 +2,11 @@
 @use "../styles/abstracts/variables" as *;
 
 .page-home {
+  // Row vertical rhythm (see `commons/homePageRowSpacing.js`)
+  --page-home-row-pad: 2rem;
+  --page-home-row-pad-sm: 1.5rem;
+  --page-home-row-pad-inner: 1.5rem;
+
   // Section rhythm: more breathing room between blocks (like prod)
   > section.container,
   > .container {
@@ -52,5 +57,18 @@
   h1,
   h2.underline {
     text-align: center;
+  }
+
+  // CTA teaser lines above primary buttons (same gap in every section)
+  .product-engineer__cta-teaser,
+  .tangible__cta-teaser,
+  .section-ai-responsible__cta-teaser,
+  .section-collaboration-fit__cta-teaser {
+    margin: 0 auto 0.875rem;
+    max-width: 52ch;
+  }
+
+  .section-about .about__cta {
+    margin-top: var(--page-home-row-pad-inner);
   }
 }

@@ -3,6 +3,7 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/homePageRowSpacing";
 import Accordion from "../../components/Accordion";
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
@@ -19,10 +20,7 @@ export default function HomeFaq({ cta }) {
     <Container id={t("faq:anchor")} className="section-home-faq" align={"center"} halign={"center"}>
       <Row
         halign={"center"}
-        style={{
-          "--padding-bottom": "2rem",
-          "--sm-padding-bottom": "1.5rem",
-        }}
+        style={homeIntroRowStyle}
         columns={[
           {
             cols: { col: 11, xl: 12, sm: 12 },
@@ -46,10 +44,7 @@ export default function HomeFaq({ cta }) {
       />
       <Row
         halign={"center"}
-        style={{
-          "--padding-top": "2rem",
-          "--sm-padding-top": "2rem",
-        }}
+        style={homeCtaRowStyle}
         columns={[
           {
             cols: { col: 10, sm: 12 },

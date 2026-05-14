@@ -3,6 +3,11 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import {
+  homeCtaRowStyle,
+  homeIntroRowStyle,
+  homeIntroSubRowStyle,
+} from "../../commons/homePageRowSpacing";
 import Table from "../../components/Table";
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
@@ -32,10 +37,7 @@ export default function ProductEngineerDefinition({ cta }) {
     >
       <Row
         halign={"center"}
-        style={{
-          "--padding-bottom": "2rem",
-          "--sm-padding-bottom": "0rem",
-        }}
+        style={homeIntroRowStyle}
         columns={[
           {
             cols: { col: 10, sm: 12 },
@@ -55,7 +57,7 @@ export default function ProductEngineerDefinition({ cta }) {
         <>
           <Row
             halign={"center"}
-            style={{ "--padding-bottom": "2rem" }}
+            style={homeIntroSubRowStyle}
             columns={[
               {
                 cols: { col: 11, xl: 12, sm: 12 },
@@ -83,7 +85,7 @@ export default function ProductEngineerDefinition({ cta }) {
       )}
       <Row
         halign={"center"}
-        style={{ "--padding-top": "2rem", "--padding-bottom": "2rem" }}
+        style={homeCtaRowStyle}
         columns={[
           {
             cols: { col: 10, sm: 12 },

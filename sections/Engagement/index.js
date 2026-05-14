@@ -3,6 +3,11 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import {
+  homeBlockRowStyle,
+  homeIntroRowStyle,
+  homePreCtaContentRowStyle,
+} from "../../commons/homePageRowSpacing";
 import Product from "../../components/Product";
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
@@ -41,10 +46,7 @@ export default function Engagement({ cta }) {
     >
       <Row
         halign={"center"}
-        style={{
-          "--padding-bottom": "2rem",
-          "--sm-padding-bottom": "0rem",
-        }}
+        style={homeIntroRowStyle}
         columns={[
           {
             cols: { col: 11, xl: 12, sm: 12 },
@@ -62,7 +64,7 @@ export default function Engagement({ cta }) {
       <Row columns={columns} />
       <Row
         halign={"center"}
-        style={{ "--padding-top": "2rem", "--padding-bottom": "1rem" }}
+        style={homeBlockRowStyle}
         columns={[
           {
             cols: { col: 10, sm: 12 },
@@ -111,7 +113,7 @@ export default function Engagement({ cta }) {
       />
       <Row
         halign={"center"}
-        style={{ "--padding-top": "1rem", "--padding-bottom": "2rem" }}
+        style={homePreCtaContentRowStyle}
         columns={[
           {
             cols: { col: 10, sm: 12 },

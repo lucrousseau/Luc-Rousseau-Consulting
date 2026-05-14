@@ -7,6 +7,7 @@ import Picture from "../../components/Picture";
 import Buy from "../../components/Buy";
 import Accordion from "../../components/Accordion";
 import Container from "../../components/Layout/Container";
+import { homeCtaRowStyle } from "../../commons/homePageRowSpacing";
 
 import lucProfilPhoto from "./images/luc-profil-photo.jpg";
 
@@ -41,10 +42,7 @@ export default function HomeHero() {
                 <Row
                   halign={"center"}
                   valign={!opened ? "middle" : null}
-                  style={{
-                    "--padding-top": "2rem",
-                    "--padding-bottom": "2rem",
-                  }}
+                  style={homeCtaRowStyle}
                   columns={[
                     {
                       cols: { col: 6, lg: 8, md: 12 },
