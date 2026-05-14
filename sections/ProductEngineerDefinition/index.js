@@ -11,6 +11,7 @@ const TABLE_COLUMN_KEYS = [
   "developer",
   "techLead",
   "productManager",
+  "fractionalCto",
   "productEngineer",
 ];
 
@@ -41,6 +42,8 @@ export default function ProductEngineerDefinition({ cta }) {
               <>
                 <p className="section__badge">{t("product-engineer:badge")}</p>
                 <h2 className="underline underline--center">{t("product-engineer:title")}</h2>
+                {t("product-engineer:paragraphOpening") &&
+                  parse(t("product-engineer:paragraphOpening"))}
                 {parse(t("product-engineer:paragraph"))}
               </>
             ),

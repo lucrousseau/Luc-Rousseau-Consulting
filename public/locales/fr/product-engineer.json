@@ -4,9 +4,10 @@
   "navigation-label-short": "Rôle",
   "badge": "En bref",
   "title": "Qu'est-ce qu'un Product Engineer ?",
+  "paragraphOpening": "<p class=\"big product-engineer__opening\">Si vous partez du « fractional CTO », vous êtes au bon endroit : leadership technique senior sans embauche à temps plein. Ce libellé s'arrête souvent à la direction, aux escalades et au pilotage des partenaires techniques. Je garde <strong>Product Engineer</strong> parce que les arbitrages produit, l'architecture et l'exécution terrain restent sur le même fil—pour que la roadmap et ce qui part en prod ne se détachent pas.</p>",
   "paragraph": "<p>Un Product Engineer <strong>vous aide à décider quoi construire et pourquoi</strong>, conçoit comment le système doit fonctionner, et <strong>le construit—ou le fait construire par l'équipe</strong>. Pas de prise de tickets : il contribue au plan, aux choix techniques et à la livraison. <strong>Une seule personne</strong> pour passer de « on ne sait pas ce qu'il nous faut » ou « notre technique part en vrille » à un <strong>plan clair et un produit qui marche</strong>. Avec l'IA partout, ce profil décide où elle a sa place, où sont les garde-fous et ce qui part en prod—<strong>pas de handoff, pas de boîte noire</strong>. En 2026 c'est le profil qui gagne.</p>",
   "table-caption": "Comparaison des rôles",
-  "intro": "Développeur, Tech Lead, Product Manager, Product Engineer—mêmes mots, <em>périmètre différent</em>. Ci-dessous : où se situe chaque rôle sur le <strong>focus, la responsabilité, la profondeur et la livraison</strong>.",
+  "intro": "Développeur, Tech Lead, Product Manager, fractional CTO, Product Engineer—des libellés qu'on croise souvent, <em>périmètre différent</em>. Ci-dessous : où se situe chaque rôle sur le <strong>focus, la responsabilité, la profondeur et la livraison</strong>.",
   "ctaTeaser": "Vous voulez voir comment ça s'applique à votre contexte ? Parlons de vos objectifs produit et techniques.",
   "footer-cta-label": "Planifier un échange",
   "table": {
@@ -15,6 +16,7 @@
       "developer": "Développeur",
       "techLead": "Tech Lead",
       "productManager": "Product Manager",
+      "fractionalCto": "Fractional CTO",
       "productEngineer": "Product Engineer"
     },
     "rows": [
@@ -23,6 +25,7 @@
         "developer": "Fonctionnalités et bugs, dans un périmètre donné.",
         "techLead": "Livraison équipe, décisions tech, personnes.",
         "productManager": "Quoi construire, pour qui, dans quel ordre.",
+        "fractionalCto": "Leadership et pilotage : risques, fournisseurs, santé de l'ingénierie—part mains-on très variable.",
         "productEngineer": "Quoi construire et comment; produit et tech en un rôle."
       },
       {
@@ -30,6 +33,7 @@
         "developer": "Tâches et tickets.",
         "techLead": "Résultats équipe, qualité, direction tech.",
         "productManager": "Roadmap, priorités, alignement.",
+        "fractionalCto": "Direction, gouvernance, escalades ; livraison en général par l'équipe ou les partenaires.",
         "productEngineer": "Résultats, architecture, livraison; le comment et une partie du quoi."
       },
       {
@@ -37,6 +41,7 @@
         "developer": "Code, tests, ce qui est assigné.",
         "techLead": "Large et profonde; guide la stack et le design.",
         "productManager": "Souvent légère; s'appuie sur l'équipe pour le comment.",
+        "fractionalCto": "Large ; code souvent optionnel et peu dans le détail produit.",
         "productEngineer": "Profonde : code, systèmes, APIs, scale."
       },
       {
@@ -44,6 +49,7 @@
         "developer": "Via specs et priorités.",
         "techLead": "Arbitrages et ressources.",
         "productManager": "Roadmap, métriques, utilisateurs.",
+        "fractionalCto": "Narratif budget et recrutement, histoire technique côté direction.",
         "productEngineer": "Choix techniques liés au produit et au business."
       },
       {
@@ -51,6 +57,7 @@
         "developer": "Suit les patterns; peut améliorer localement.",
         "techLead": "Définit ou affine pour l'équipe/le produit.",
         "productManager": "Possède rarement; travaille avec l'équipe.",
+        "fractionalCto": "Pose les garde-fous ; le détail système au quotidien est souvent délégué.",
         "productEngineer": "Possède ou co-possède structure, frontières, dette."
       },
       {
@@ -58,6 +65,7 @@
         "developer": "Leur travail.",
         "techLead": "Permet à l'équipe de livrer.",
         "productManager": "Définit quoi; ne construit pas.",
+        "fractionalCto": "Par l'équipe ou les partenaires ; rarement propriétaire de bout en bout sur les features.",
         "productEngineer": "Livre et façonne quoi et comment."
       }
     ]
