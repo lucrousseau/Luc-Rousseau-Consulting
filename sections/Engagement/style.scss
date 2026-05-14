@@ -1,0 +1,73 @@
+@use "../../styles/abstracts/variables" as *;
+
+.section-engagement {
+  .engagement__terms-title {
+    margin: 0 0 0.75rem;
+    text-align: center;
+  }
+
+  .engagement__terms-facts-wrap {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgb(0 0 0 / 8%);
+  }
+
+  .engagement__terms-facts-label {
+    margin: 0 0 0.5rem;
+    font-weight: 600;
+  }
+
+  .engagement__terms-facts-list {
+    margin: 0;
+    padding-left: 1.1rem;
+    font-size: 0.9375rem;
+    line-height: 1.45;
+  }
+
+  .engagement__terms-facts-list li + li {
+    margin-top: 0.35rem;
+  }
+
+  .engagement__terms p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .engagement__terms p + p {
+    margin-top: 0.85rem;
+  }
+
+  .engagement__terms-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 2rem;
+    margin: 1.25rem 0 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgb(0 0 0 / 8%);
+
+    @media screen and (max-width: $sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .engagement__terms-column-heading {
+    margin: 0 0 0.4rem;
+  }
+
+  .engagement__terms-ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    font-size: 0.9375rem;
+    line-height: 1.45;
+  }
+
+  .engagement__terms-ul li + li {
+    margin-top: 0.35rem;
+  }
+
+  .engagement__terms .engagement__terms-columns + .small {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgb(0 0 0 / 8%);
+  }
+}

@@ -5,10 +5,34 @@
   "badge": "Comment on travaille",
   "headline": "Partenariat technique stratégique.",
   "subhead": "",
-  "valueStatement": "Je travaille comme <strong>Fractional Product Engineer</strong> avec <strong>un ou quelques clients</strong> dans la durée, <em>pas</em> en one-shot. <strong>Collaboration récurrente</strong> pour rester dans la boucle : aligné sur votre roadmap, l'architecture et l'équipe. Je peux participer à vos dailies et cérémonies hebdomadaires pour que le travail reste cohérent.",
+  "valueStatement": "Je travaille comme <strong>Fractional Product Engineer</strong> avec <strong>un ou quelques clients</strong> dans la durée. La <strong>collaboration récurrente</strong>, c'est ce qui me permet de rester dans la boucle : aligné sur votre roadmap, l'architecture et l'équipe. Je peux participer à vos dailies et cérémonies hebdomadaires pour que le travail reste cohérent.",
   "differentiator": "Vous avez un Fractional Product Engineer qui <strong>pense en systèmes et en résultats</strong>, et qui peut à la fois <strong>définir le cap et livrer</strong>. <em>Pas</em> un freelance qui passe deux heures : quelqu'un qui <strong>reste et assure la cohérence</strong> dans le temps.",
-  "ctaTeaser": "Je propose plusieurs façons de travailler ensemble, toutes basées sur une <strong>collaboration récurrente et à long terme</strong>.",
+  "ctaTeaser": "La plupart du temps, c'est un partenariat qui dure; quelques jours ou quelques semaines, c'est possible quand le besoin est clair et écrit.",
   "ctaLabel": "Voir quel modèle d'engagement vous convient",
+  "termsTitle": "Sur le papier, concrètement",
+  "termsLead": "<p class=\"big\">Dans la majorité des cas, je suis avec vous sur la durée, quelques jours par semaine, pour que le fil ne se perde pas entre la roadmap, l'architecture et ce qui part en production. Pour les missions courtes—audit, processus, ou sujet technique bien cadré sur quelques jours—on passe en <strong>facturation à la journée</strong>.</p>",
+  "termsFactsLabel": "Quand on formalise une formule au mois, le cadre ressemble souvent à ceci—on l'ajuste à votre situation :",
+  "termsFactsItems": [
+    "En pratique, souvent deux jours par semaine avec vous",
+    "Un contrat par trimestre, renouvelable si on continue ensemble",
+    "Trente jours de préavis pour arrêter, pour vous comme pour moi",
+    "Une facture par mois, payée avant le travail du mois"
+  ],
+  "termsBudget": "<p>Je ne publie pas de <strong>total mensuel</strong> ni de grille tarifaire en ligne : ça dépend du nombre de jours, du type de mandat et du contexte. On évite les comparaisons toutes faites qui ne tiendraient pas une fois qu'on ouvre le capot. Les montants se parlent calmement et se figent <strong>par écrit, avant signature</strong>.</p>",
+  "termsIncludedHeading": "Ce que couvre la formule au mois",
+  "termsIncluded": [
+    "Les jours convenus avec vous, et les réunions que vous voulez que je prenne dans ce temps",
+    "Du travail concret sur le code ou l'architecture quand c'est là que ça compte",
+    "Des notes ou des décisions écrites quand ça aide tout le monde à s'y retrouver"
+  ],
+  "termsExcludedHeading": "Ce qui reste en dehors",
+  "termsExcluded": [
+    "Être « sur appel » pour des urgences qui ne font pas partie de ce qu'on a défini ensemble",
+    "Faire le recrutement ou des longues rondes d'entrevues à votre place",
+    "Former toute l'organisation sur plusieurs jours",
+    "Un sauvetage vague, sans mandat écrit ni fin claire"
+  ],
+  "termsFootnote": "<p class=\"small\">Pour la formule au mois qui se renouvelle, on part sur <strong>trois mois minimum</strong>. Au-delà, ça continue si ça vous convient. Les missions très courtes, ce n'est qu'avec un périmètre écrit—audit, processus, ou autre sujet bien délimité.</p>",
   "models": [
     {
       "title": "Partenariat continu",

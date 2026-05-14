@@ -5,10 +5,34 @@
   "badge": "How we work",
   "headline": "Strategic technical partnership.",
   "subhead": "",
-  "valueStatement": "I work as a <strong>Fractional Product Engineer</strong> with <strong>one or a few clients</strong> over time, <em>not</em> one-off projects. <strong>Recurring collaboration</strong> so I stay in the loop: aligned with your roadmap, architecture and team. I can join your dailies and weekly ceremonies so the work stays coherent.",
+  "valueStatement": "I work as a <strong>Fractional Product Engineer</strong> with <strong>one or a few clients</strong> over time. <strong>Recurring collaboration</strong> is how I stay in the loop: aligned with your roadmap, architecture and team. I can join your dailies and weekly ceremonies so the work stays coherent.",
   "differentiator": "You get a Fractional Product Engineer who <strong>thinks in systems and outcomes</strong>, and who can both <strong>shape the plan and deliver</strong>. <em>Not</em> a freelancer dropping in for a few hours—someone who <strong>stays and owns the coherence</strong> over time.",
-  "ctaTeaser": "I offer a few ways to work together, all built around <strong>recurring, long-term collaboration</strong>.",
+  "ctaTeaser": "Most of the time it's an ongoing partnership; a few days or weeks is possible when the need is clear and written down.",
   "ctaLabel": "See which engagement model fits",
+  "termsTitle": "What it looks like on paper",
+  "termsLead": "<p class=\"big\">Most of the time I work with you over months, a few days a week, so roadmap, architecture, and what ships don't drift apart. For short work—an audit, process, or a tightly defined technical piece over a few days—billing switches to <strong>by the day</strong>.</p>",
+  "termsFactsLabel": "When we put a monthly arrangement in writing, it often looks like this—we tune it to your situation:",
+  "termsFactsItems": [
+    "In practice, often two days a week with you",
+    "A quarterly agreement you can renew if we keep going",
+    "Thirty days' notice to end it, for you or for me",
+    "One invoice per month, paid before the month's work"
+  ],
+  "termsBudget": "<p>I don't publish a <strong>monthly total</strong> or a rate card online: it depends on how many days we agree on, the type of mandate, and your context. I avoid neat comparisons that fall apart once we open the hood. We talk numbers calmly and lock them <strong>in writing, before anything is signed</strong>.</p>",
+  "termsIncludedHeading": "What the monthly arrangement covers",
+  "termsIncluded": [
+    "The days we agree on, and the meetings you want me in during that time",
+    "Hands-on work in code or architecture when that's where the leverage is",
+    "Short written notes or decisions when they help everyone stay aligned"
+  ],
+  "termsExcludedHeading": "What stays outside",
+  "termsExcluded": [
+    "Being on call for emergencies that aren't part of what we defined together",
+    "Running hiring or long interview loops for you",
+    "Multi-day training for the entire organisation",
+    "Vague \"save us\" work without a written scope or a clear end"
+  ],
+  "termsFootnote": "<p class=\"small\">For the renewable monthly arrangement, we start with <strong>three months minimum</strong>. After that, it continues if it still makes sense. Very short work only comes with a written scope—audit, process, or another well-bounded topic.</p>",
   "models": [
     {
       "title": "Ongoing partnership",
