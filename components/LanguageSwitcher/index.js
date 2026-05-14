@@ -7,6 +7,7 @@ export default function LanguageSwitcher({ current = "fr", ...props }) {
   const alignmentsClass = alignments({ props });
 
   /** Default locale is `fr` (see `next-i18next.config.js`): FR at `/`, EN at `/en`. */
+  /** `setLocalePreferenceClient` writes localStorage and mirrors a cookie for Edge middleware. */
   const languages = {
     en: { label: "English", href: "/en" },
     fr: { label: "French", href: "/" },

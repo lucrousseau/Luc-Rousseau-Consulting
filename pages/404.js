@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import { localeFromDocumentCookie } from "../utils/localePreference";
+import { getLocalePreferenceClient } from "../utils/setLocalePreferenceClient";
 
 /**
  * Unknown routes redirect to the localized home (default: `/`, English: `/en`).
- * Honors `lrc-locale` cookie when set via the language switcher.
+ * Uses the same preference as the rest of the app: **localStorage** first, then cookie.
  * Zines paths are handled by `next.config.mjs` redirects and never reach this page.
  */
 export default function NotFound() {
@@ -14,13 +14,12 @@ export default function NotFound() {
 
   useEffect(() => {
     const defaultLocale = router.defaultLocale ?? "fr";
-    const fromCookie =
-      typeof document !== "undefined" ? localeFromDocumentCookie(document.cookie) : null;
+    const pref = getLocalePreferenceClient();
 
     let homePath = "/";
-    if (fromCookie === "en") {
+    if (pref === "en") {
       homePath = "/en";
-    } else if (fromCookie === "fr") {
+    } else if (pref === "fr") {
       homePath = "/";
     } else {
       homePath = router.locale === defaultLocale ? "/" : "/en";

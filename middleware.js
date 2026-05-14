@@ -8,9 +8,11 @@ import {
 } from "./utils/localePreference";
 
 /**
- * Locale routing (cookie + Accept-Language) without hurting SEO:
+ * Locale routing for humans (cookie + Accept-Language on `/`):
  * - Search-engine / preview / Lighthouse bots: no redirect (they crawl the URL they request).
- * - Explicit cookie (language switcher): honor `en` ↔ `/en`, `fr` ↔ `/`.
+ * - Cookie `lrc-locale` is synced from **localStorage** on the client (`setLocalePreferenceClient`,
+ *   `LocalePreferenceEffect`) so Edge can still redirect before paint.
+ * - Explicit cookie: honor `en` ↔ `/en`, `fr` ↔ `/`.
  * - No cookie, human on `/`: if Accept-Language prefers English → temporary redirect to `/en`.
  *
  * Uses 302 so `/` is not "permanently" another URL for crawlers that ignore middleware.
