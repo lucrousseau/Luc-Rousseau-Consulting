@@ -4,20 +4,20 @@
   "navigation-label-short": "Tech",
   "badge": "Comment je construis",
   "title": "Fondations techniques",
-  "summary": "<p className=\"big\"><strong>Un partenaire sur l'ensemble du stack.</strong> Les technologies avec lesquelles je travaille servent les résultats produit et architecture : clarté, scalabilité et livraison soutenable. <em>Les outils servent le système</em>—pas l'inverse.</p>",
+  "summary": "<p className=\"big\"><strong>Un partenaire sur l'ensemble du stack.</strong> Je pars de <strong>frontières nettes, contrats et boucles de livraison</strong>—qui porte quelles données, comment les services dialoguent, comment on avance sans va-et-vient inutile. Les technos soutiennent ça : clarté, évolutivité, livraison soutenable. <em>Les outils servent le système</em>—pas l'inverse.</p>",
   "items": [
-    "Roadmap et priorisation",
-    "Architecture headless (WordPress, Laravel, APIs)",
-    "React · Next.js · Vue",
-    "WordPress (headless et traditionnel)",
-    "Laravel",
-    "Design d'API et REST",
-    "Performance et scaling",
-    "Dette technique et legacy",
-    "Backlog et livraison",
-    "Alignement produit–tech",
-    "CI/CD et shipping",
+    "Roadmap et priorisation produit",
+    "Alignement produit–tech et discipline de backlog",
+    "Architecture : frontières, contrats, trajectoire d'évolution",
+    "Systèmes découpés et headless (APIs d'abord)",
+    "Plateformes CMS & éditoriales : WordPress headless/traditionnel, Gutenberg/blocs quand c'est pertinent",
+    "Backends sur mesure : Laravel ; APIs dédiées",
+    "Frontends : React, Next.js, Vue",
+    "Design d'API (REST/HTTP) et intégrations",
+    "Performance, cache et arbitrages de montée en charge",
+    "Dette technique et changement legacy par étapes",
+    "CI/CD et livraison soutenable",
     "JavaScript · PHP"
   ],
-  "footer-cta-label": "Planifier un échange"
+  "footer-cta-label": "Planifier un appel"
 }

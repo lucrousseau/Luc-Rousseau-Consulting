@@ -3,7 +3,9 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/homePageRowSpacing";
 import Button from "../../components/Button";
+import ContactAlternates from "../../components/ContactAlternates";
 
 import romeImage from "./images/rome-1.jpg";
 
@@ -26,10 +28,7 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
     >
       <Row
         halign={"center"}
-        style={{
-          "--padding-bottom": "2rem",
-          "--sm-padding-bottom": "0rem",
-        }}
+        style={homeIntroRowStyle}
         columns={[
           {
             cols: { col: 11, xl: 12, sm: 12 },
@@ -58,21 +57,21 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
                   ))}
                 </ul>
                 <Row
-                  style={{
-                    "--padding-top": "2rem",
-                    "--sm-padding-top": "2rem",
-                  }}
+                  style={homeCtaRowStyle}
                   columns={[
                     {
                       content: (
-                        <p>
-                          <Button
-                            variant={"primary"}
-                            href={cta?.link ?? t("common:schedule-me")}
-                            label={cta?.label ?? t("who-i-work-with:footer-cta-label")}
-                            trackSection={"who-i-work-with"}
-                          />
-                        </p>
+                        <>
+                          <p>
+                            <Button
+                              variant={"primary"}
+                              href={cta?.link ?? t("common:schedule-me")}
+                              label={cta?.label ?? t("who-i-work-with:footer-cta-label")}
+                              trackSection={"who-i-work-with"}
+                            />
+                          </p>
+                          <ContactAlternates trackSection="who-i-work-with" />
+                        </>
                       ),
                     },
                   ]}

@@ -15,8 +15,8 @@
       "content": "You want to reduce debt, clarify structure, and stabilize <em>without a full rewrite</em>."
     },
     {
-      "title": "WordPress / CMS-heavy organisations",
-      "content": "You want to move towards headless, modernize Gutenberg, and structure clean APIs with a clear long-term vision."
+      "title": "Teams with a strong CMS or editorial footprint",
+      "content": "You want decoupled options, a sustainable block editor and editorial model (including Gutenberg where WordPress is already the backbone), and APIs your team can evolve—without a bespoke integration snowstorm every launch."
     },
     {
       "title": "Multi-brand or multi-market companies",
@@ -31,5 +31,5 @@
       "content": "You want a responsible technical voice, able to <strong>hold the line from strategy to delivery</strong>."
     }
   ],
-  "footer-cta-label": "Schedule a conversation"
+  "footer-cta-label": "Book a call"
 }

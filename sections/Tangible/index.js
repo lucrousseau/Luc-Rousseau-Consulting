@@ -3,8 +3,10 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/homePageRowSpacing";
 
 import Button from "../../components/Button";
+import ContactAlternates from "../../components/ContactAlternates";
 import Accordion from "../../components/Accordion";
 
 import milesopediaLogo from "./images/milesopedia.png";
@@ -12,6 +14,7 @@ import nestoLogo from "./images/nesto.png";
 import comparemortgageLogo from "./images/comparemortgage.png";
 import nestogroupLogo from "./images/nestogroup.png";
 
+/** Order matches `tangible.json` items (Milesopedia → Nesto → Compare → BrightWize). */
 const PROJECT_LOGOS = [milesopediaLogo, nestoLogo, comparemortgageLogo, nestogroupLogo];
 
 export default function Tangible({ cta }) {
@@ -54,10 +57,7 @@ export default function Tangible({ cta }) {
     >
       <Row
         halign={"center"}
-        style={{
-          "--padding-bottom": "2rem",
-          "--sm-padding-bottom": "2rem",
-        }}
+        style={homeIntroRowStyle}
         columns={[
           {
             cols: { col: 11, xl: 12, sm: 12 },
@@ -80,10 +80,7 @@ export default function Tangible({ cta }) {
         ]}
       />
       <Row
-        style={{
-          "--padding-top": "2rem",
-          "--sm-padding-top": "2rem",
-        }}
+        style={homeCtaRowStyle}
         columns={[
           {
             cols: { col: 10, sm: 12 },
@@ -100,6 +97,7 @@ export default function Tangible({ cta }) {
                     trackSection={"tangible"}
                   />
                 </p>
+                <ContactAlternates trackSection="tangible" />
               </div>
             ),
           },

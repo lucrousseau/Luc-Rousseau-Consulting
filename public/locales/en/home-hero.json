@@ -3,7 +3,8 @@
   "navigation-label": "How I work",
   "navigation-label-short": "Offer",
   "title": "Product Engineer",
-  "quote": "One partner for roadmap, architecture, and delivery.",
+  "quote": "Design, engineering, product—one thread from decisions to ship.",
+  "profile-image-alt": "Luc Rousseau — Product Engineer",
   "manifesto": "Over the years, I've learned that the strongest product decisions happen when someone in the room can <strong>both shape how the product is built and deliver the code</strong>.",
   "items": [
     {
@@ -14,12 +15,12 @@
     {
       "emoji": "🏗️",
       "title": "Architecture & system design",
-      "content": "<p>I define or clarify how your system is structured: boundaries between services or modules, APIs and contracts, and how the stack can evolve. This includes <strong>headless architecture</strong> decisions (WordPress, Laravel, or custom APIs as backend with React/Vue frontends), <strong>API design</strong>, and <strong>performance</strong> considerations. The goal is an architecture that supports the product today and can scale—not accidental complexity.</p><p><strong>Outcomes:</strong> Documented architecture and clear API contracts; justified build-vs-buy and platform decisions; a shared mental model so new work fits the system.</p><p><strong>Solves:</strong> \"Nobody knows how it all fits together\"; sprawl and ad-hoc integrations; big rewrites with no clear path; headless or multi-site decisions that feel like guesswork.</p>"
+      "content": "<p>I define or clarify how your system is structured: boundaries between services or modules, APIs and contracts, and how the stack can evolve. That includes <strong>decoupled and headless</strong> setups where the backend—<strong>custom APIs</strong>, <strong>Laravel</strong>, or a <strong>CMS used as a content platform</strong> (including <strong>WordPress headless</strong> when it fits the editorial model)—pairs with <strong>React or Vue</strong> frontends, plus <strong>API design</strong> and <strong>performance</strong> trade-offs. The goal is an architecture that supports the product today and can scale—not accidental complexity.</p><p><strong>Outcomes:</strong> Documented architecture and clear API contracts; justified build-vs-buy and platform decisions; a shared mental model so new work fits the system.</p><p><strong>Solves:</strong> \"Nobody knows how it all fits together\"; sprawl and ad-hoc integrations; big rewrites with no clear path; headless or multi-site decisions that feel like guesswork.</p>"
     },
     {
       "emoji": "🔧",
       "title": "Technical debt reduction",
-      "content": "<p>Technical debt is treated as a product and risk concern. I help you prioritise paydown in a way that supports delivery instead of blocking it—the right debt in the right order, with clear criteria for \"good enough.\"</p><p><strong>Outcomes:</strong> A prioritised debt backlog aligned with product and risk; incremental improvement without \"stop the world\" rewrites; fewer incidents and rework from neglected debt.</p><p><strong>Solves:</strong> Debt ignored or triggering panic rewrites; team fighting the codebase instead of building; hidden dependencies and recurring security or performance issues.</p>"
+      "content": "<p>Technical debt is treated as a product and risk concern. I help you prioritize paydown in a way that supports delivery instead of blocking it—the right debt in the right order, with clear criteria for \"good enough.\"</p><p><strong>Outcomes:</strong> A prioritized debt backlog aligned with product and risk; incremental improvement without \"stop the world\" rewrites; fewer incidents and rework from neglected debt.</p><p><strong>Solves:</strong> Debt ignored or triggering panic rewrites; team fighting the codebase instead of building; hidden dependencies and recurring security or performance issues.</p>"
     },
     {
       "emoji": "⚡",

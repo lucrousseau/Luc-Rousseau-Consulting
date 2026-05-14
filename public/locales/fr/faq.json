@@ -1,0 +1,38 @@
+{
+  "anchor": "faq",
+  "navigation-label": "FAQ",
+  "navigation-label-short": "FAQ",
+  "badge": "Réponses directes",
+  "title": "Les questions qu'on pose moins souvent à voix haute",
+  "intro": "<p class=\"big\">Des réponses claires—le genre qu'on se donne une fois en appel, quand on appuie sur les angles morts.</p>",
+  "items": [
+    {
+      "title": "Remplacez-vous mon CTO, mon lead dev ou mon agence ?",
+      "content": "<p>Non. Ces rôles restent les vôtres.</p><p>J'interviens à côté, comme partenaire senior produit et systèmes : arbitrages plus clairs, moins d'écart entre la roadmap et ce qui part en prod, et propriété explicite quand une décision pourrait se retrouver entre deux chaises. On pose cette limite au départ pour éviter qu'on se dispute le « qui décide ».</p>"
+    },
+    {
+      "title": "Quelle part du temps en développement et en cadrage ?",
+      "content": "<p>Ça bouge selon la phase.</p><p>Au début, il y a plus de cadrage, de séquencement et de réduction de risque ; dans un rythme stable, c'est un mix entre exécution sur ce qui compte le plus et garder l'architecture et la livraison cohérentes. Je ne suis pas là pour enfiler des tickets, et pas non plus pour disparaître dans des présentations.</p>"
+    },
+    {
+      "title": "Et si vous n'êtes pas disponible—vacances, maladie, urgence ailleurs ?",
+      "content": "<p>Les absences longues se planifient avec préavis pour éviter les mauvaises surprises.</p><p>Pour un court trou, je le signale tôt et je rééquilibre les jours dans la même fenêtre quand ça protège encore le résultat. Ce qui est en cours se referme proprement—pas de vide silencieux.</p>"
+    },
+    {
+      "title": "Exclusif pour nous, ou plusieurs clients en parallèle ?",
+      "content": "<p>Je limite volontairement la charge : quelques clients au long cours, pas un carnet surchargé.</p><p>Le modèle récurrent ne tient que s'il y a de la continuité réelle avec vous. Si la charge ou le focus change, on le traite franchement au lieu d'étirer la corde.</p>"
+    },
+    {
+      "title": "Combien de temps avant un impact concret ?",
+      "content": "<p>Si je suis dans vos rituels et que je vois les vraies contraintes—pas seulement ce qui tient sur un slide—vous avez en général un signal utile en quelques semaines : moins de va-et-vient, quelques décisions débloquées, prochaines étapes plus claires.</p><p>Les gains structurels plus gros dépendent du périmètre ; je préfère rester honnête sur la séquence qu'annoncer un délai que je ne pourrais pas défendre.</p>"
+    },
+    {
+      "title": "Comment on arrête si le partenariat ne convient pas ?",
+      "content": "<p>Le contrat prévoit une sortie claire—en pratique, souvent trente jours de préavis de chaque côté, symétrique.</p><p>On referme proprement : petit transfert, ce qui est documenté, et ce qui reste chez vous.</p>"
+    },
+    {
+      "title": "NDA—et qui possède le code et l'IP ?",
+      "content": "<p>NDA avant accès sensible, c'est la norme.</p><p>Le travail dans vos dépôts et sur vos comptes est à vous ; je ne garde pas une copie privée de votre produit comme assurance. Tout autre cas s'écrit noir sur blanc avant de commencer.</p>"
+    }
+  ]
+}

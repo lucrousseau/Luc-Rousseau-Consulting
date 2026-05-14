@@ -1,8 +1,11 @@
 {
   "contact-me": "Contact",
   "hello@lucrousseau.com": "mailto:bonjour@lucrousseau.com?subject=Demande%20de%20Rendez-Vous",
+  "contact-email-display": "bonjour@lucrousseau.com",
+  "contact-email-mailto": "mailto:bonjour@lucrousseau.com?subject=Message%20depuis%20lucrousseau.com",
+  "linkedin-contact-label": "LinkedIn",
   "schedule-me": "https://calendly.com/_lucrousseau/30min/",
-  "schedule-me-label": "Planifier un échange\u00a0!",
+  "schedule-me-label": "Planifier un appel",
   "linkedin": "https://www.linkedin.com/in/lucrousseau/",
   "have-good-day": "Passez une bonne journée\u00a0!"
 }

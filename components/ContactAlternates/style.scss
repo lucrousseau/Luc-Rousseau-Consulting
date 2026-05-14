@@ -1,0 +1,28 @@
+@use "../../styles/abstracts/variables" as *;
+
+.contact-alternates {
+  display: block;
+  margin-top: 0.65rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+
+  &--center {
+    text-align: center;
+  }
+
+  &__sep {
+    opacity: 0.4;
+    user-select: none;
+  }
+
+  &__link {
+    color: var(--body-color);
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--btn-primary-background-color);
+    }
+  }
+}

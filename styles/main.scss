@@ -20,6 +20,7 @@
 @use "../components/Accordion/style" as accordion;
 @use "../components/Button/style" as button;
 @use "../components/Buy/style" as buy;
+@use "../components/ContactAlternates/style" as contact-alternates;
 @use "../components/LanguageSwitcher/style" as language-switcher;
 @use "../components/Logo/style" as logo;
 @use "../components/Navigation/style" as navigation;
@@ -33,12 +34,14 @@
 
 // Sections (colocated)
 @use "../sections/Header/style" as header;
+@use "../sections/Engagement/style" as engagement;
 @use "../sections/HomeHero/style" as home-hero;
 @use "../sections/AIResponsible/style" as ai-responsible;
 @use "../sections/About/style" as about;
 @use "../sections/WhoIWorkWith/style" as who-i-work-with;
-@use "../sections/Tangible/style" as tangible;
 @use "../sections/ProductEngineerDefinition/style" as product-engineer;
+@use "../sections/CollaborationFit/style" as collaboration-fit;
+@use "../sections/HomeFaq/style" as home-faq;
 
 // Pages
 @use "../pages/home" as home;

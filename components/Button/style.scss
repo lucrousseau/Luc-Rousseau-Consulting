@@ -17,8 +17,13 @@
   font-family: var(--body-font-family);
 
   @media screen and (max-width: $sm) {
-    padding-top: calc(0.8em - var(--border-width) * 4);
-    padding-bottom: calc(0.8em - var(--border-width) * 4);
+    font-size: 0.9rem;
+    padding: calc(0.8em - var(--border-width) * 4) calc(1.35em - var(--border-width) * 4);
+  }
+
+  @media screen and (max-width: $xs) {
+    font-size: 0.85rem;
+    padding: calc(0.8em - var(--border-width) * 4) calc(1.15em - var(--border-width) * 4);
   }
 
   @include fontSizes(&, false, "rem");
@@ -29,6 +34,14 @@
 
     padding: calc(#{$padding} - (var(--border-width) * 4))
       calc((#{$padding * 2.5}) - (var(--border-width) * 4));
+
+    @media screen and (max-width: $sm) {
+      padding: calc(0.62em - (var(--border-width) * 4)) calc(1.35em - (var(--border-width) * 4));
+    }
+
+    @media screen and (max-width: $xs) {
+      padding: calc(0.58em - (var(--border-width) * 4)) calc(1.1em - (var(--border-width) * 4));
+    }
   }
 
   &--disabled {

@@ -7,10 +7,12 @@ import Container from "../components/Layout/Container";
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 import About from "../sections/About";
+import HomeFaq from "../sections/HomeFaq";
 import HomeHero from "../sections/HomeHero";
 import ProductEngineerDefinition from "../sections/ProductEngineerDefinition";
 import AIResponsible from "../sections/AIResponsible";
 import Engagement from "../sections/Engagement";
+import CollaborationFit from "../sections/CollaborationFit";
 import WhoIWorkWith from "../sections/WhoIWorkWith";
 import Technologies from "../sections/Technologies";
 import Tangible from "../sections/Tangible";
@@ -61,6 +63,12 @@ export default function Home() {
             link: t("common:schedule-me"),
           }}
         />
+        <CollaborationFit
+          cta={{
+            label: t("common:schedule-me-label"),
+            link: t("common:schedule-me"),
+          }}
+        />
         <WhoIWorkWith
           cta={{
             label: t("common:schedule-me-label"),
@@ -79,7 +87,18 @@ export default function Home() {
             link: t("common:schedule-me"),
           }}
         />
-        <About />
+        <About
+          cta={{
+            label: t("common:schedule-me-label"),
+            link: t("common:schedule-me"),
+          }}
+        />
+        <HomeFaq
+          cta={{
+            label: t("common:schedule-me-label"),
+            link: t("common:schedule-me"),
+          }}
+        />
       </main>
       <Container
         tag={"footer"}
@@ -100,11 +119,13 @@ export const getServerSideProps = async ({ locale }) => {
     props: {
       ...(await serverSideTranslations(locale, [
         "about",
+        "faq",
         "common",
         "home",
         "home-hero",
         "ai-responsible",
         "engagement",
+        "collaboration-fit",
         "product-engineer",
         "tangible",
         "technologies",

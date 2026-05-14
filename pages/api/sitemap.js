@@ -5,9 +5,12 @@
  * Includes geo:geo namespace for geographic targeting (Quebec, Canada).
  */
 
+import { apiRequireGet } from "../../utils/apiRequireGet";
 import { getSiteOrigin } from "../../utils/siteOrigin";
 
 export default function handler(req, res) {
+  if (!apiRequireGet(req, res)) return;
+
   const base = getSiteOrigin(req);
   const now = new Date().toISOString().slice(0, 10);
 
