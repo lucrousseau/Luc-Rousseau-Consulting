@@ -58,9 +58,9 @@ const nextConfig = {
       { from: "01_mex", to: "01-mex" },
     ];
 
-    /** Index redirects: /zines and /fr/zines → external zines site */
+    /** Index redirects: /zines, /fr/zines, /en/zines → external zines site */
     const rules = [];
-    for (const base of ["/zines", "/fr/zines"]) {
+    for (const base of ["/zines", "/fr/zines", "/en/zines"]) {
       rules.push({
         source: base,
         destination: `${zinesBase}/`,
@@ -75,7 +75,7 @@ const nextConfig = {
 
     /** Per-zine redirects: slug variants with underscore or trailing slash */
     for (const { from, to } of zineMappings) {
-      for (const prefix of ["/zines", "/fr/zines"]) {
+      for (const prefix of ["/zines", "/fr/zines", "/en/zines"]) {
         rules.push({
           source: `${prefix}/${from}`,
           destination: `${zinesBase}/${to}`,
