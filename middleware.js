@@ -20,6 +20,21 @@ import {
  */
 export function middleware(request) {
   const { pathname } = request.nextUrl;
+
+  if (pathname.startsWith("/fr/zines")) {
+    return NextResponse.next();
+  }
+
+  /**
+   * Legacy `/fr` home URLs: Next i18n can answer 200 here before `next.config` redirects run.
+   * `/fr/zines` is excluded above.
+   */
+  if (pathname === "/fr" || pathname === "/fr/") {
+    const url = request.nextUrl.clone();
+    url.pathname = "/";
+    return NextResponse.redirect(url, 308);
+  }
+
   const ua = request.headers.get("user-agent") || "";
 
   if (isLikelyBot(ua)) {
@@ -53,5 +68,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/", "/en", "/en/:path*"],
+  matcher: ["/", "/en", "/en/:path*", "/fr", "/fr/", "/fr/:path*"],
 };

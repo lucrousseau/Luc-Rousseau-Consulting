@@ -89,12 +89,6 @@ const nextConfig = {
       }
     }
 
-    /** Legacy French URLs: /fr and /fr/ now canonical on / (default locale is fr) */
-    rules.push(
-      { source: "/fr", destination: "/", permanent: true },
-      { source: "/fr/", destination: "/", permanent: true }
-    );
-
     return rules;
   },
 };
