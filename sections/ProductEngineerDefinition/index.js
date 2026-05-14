@@ -5,6 +5,7 @@ import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
 import Table from "../../components/Table";
 import Button from "../../components/Button";
+import ContactAlternates from "../../components/ContactAlternates";
 
 const TABLE_COLUMN_KEYS = [
   "dimension",
@@ -101,6 +102,7 @@ export default function ProductEngineerDefinition({ cta }) {
                     trackSection="product-engineer"
                   />
                 </p>
+                <ContactAlternates trackSection="product-engineer" />
               </div>
             ),
           },

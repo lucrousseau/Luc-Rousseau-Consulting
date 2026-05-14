@@ -5,6 +5,7 @@ import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
 
 import Button from "../../components/Button";
+import ContactAlternates from "../../components/ContactAlternates";
 import Accordion from "../../components/Accordion";
 
 import milesopediaLogo from "./images/milesopedia.png";
@@ -100,6 +101,7 @@ export default function Tangible({ cta }) {
                     trackSection={"tangible"}
                   />
                 </p>
+                <ContactAlternates trackSection="tangible" />
               </div>
             ),
           },

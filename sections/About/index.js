@@ -4,6 +4,7 @@ import parse from "html-react-parser";
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
 import Button from "../../components/Button";
+import ContactAlternates from "../../components/ContactAlternates";
 
 export default function About() {
   const { t } = useTranslation();
@@ -28,6 +29,7 @@ export default function About() {
                     target="_blank"
                   />
                 </p>
+                <ContactAlternates hideLinkedIn trackSection="about" />
               </>
             ),
           },

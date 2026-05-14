@@ -1,6 +1,9 @@
 {
   "contact-me": "Contact",
   "hello@lucrousseau.com": "mailto:hello@lucrousseau.com?subject=Appointment%20Request",
+  "contact-email-display": "hello@lucrousseau.com",
+  "contact-email-mailto": "mailto:hello@lucrousseau.com?subject=Inquiry%20from%20lucrousseau.com",
+  "linkedin-contact-label": "LinkedIn",
   "schedule-me": "https://calendly.com/_lucrousseau/30min/",
   "schedule-me-label": "Schedule a conversation",
   "linkedin": "https://www.linkedin.com/in/lucrousseau/",

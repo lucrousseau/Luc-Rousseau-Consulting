@@ -5,6 +5,7 @@ import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
 
 import Button from "../../components/Button";
+import ContactAlternates from "../../components/ContactAlternates";
 import Tags from "../../components/Tags";
 
 export default function Technologies({ backgroundColor, cta }) {
@@ -57,14 +58,17 @@ export default function Technologies({ backgroundColor, cta }) {
         columns={[
           {
             content: (
-              <p>
-                <Button
-                  variant={"primary"}
-                  href={cta?.link ?? t("common:schedule-me")}
-                  label={cta?.label ?? t("technologies:footer-cta-label")}
-                  trackSection={"technologies"}
-                />
-              </p>
+              <>
+                <p>
+                  <Button
+                    variant={"primary"}
+                    href={cta?.link ?? t("common:schedule-me")}
+                    label={cta?.label ?? t("technologies:footer-cta-label")}
+                    trackSection={"technologies"}
+                  />
+                </p>
+                <ContactAlternates trackSection="technologies" />
+              </>
             ),
           },
         ]}

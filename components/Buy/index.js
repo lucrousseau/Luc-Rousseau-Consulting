@@ -4,6 +4,7 @@ import { useTranslation } from "next-i18next";
 import { alignments } from "../../commons/alignments";
 
 import Button from "../Button";
+import ContactAlternates from "../ContactAlternates";
 
 export default function Buy({
   className,
@@ -45,6 +46,7 @@ export default function Buy({
         label={label}
         trackSection={props.trackSection}
       />
+      {props.trackSection && <ContactAlternates trackSection={props.trackSection} />}
     </p>
   );
 }

@@ -5,6 +5,7 @@ import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
 import Product from "../../components/Product";
 import Button from "../../components/Button";
+import ContactAlternates from "../../components/ContactAlternates";
 
 export default function Engagement({ cta }) {
   const { t } = useTranslation();
@@ -126,6 +127,7 @@ export default function Engagement({ cta }) {
                     trackSection={"engagement"}
                   />
                 </p>
+                <ContactAlternates trackSection="engagement" />
               </>
             ),
           },

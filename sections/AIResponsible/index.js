@@ -5,6 +5,7 @@ import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
 import Product from "../../components/Product";
 import Button from "../../components/Button";
+import ContactAlternates from "../../components/ContactAlternates";
 
 export default function AIResponsible({ cta }) {
   const { t } = useTranslation();
@@ -74,6 +75,7 @@ export default function AIResponsible({ cta }) {
                       trackSection={"ai-responsible"}
                     />
                   </p>
+                  <ContactAlternates trackSection="ai-responsible" />
                 </div>
               ),
             },
