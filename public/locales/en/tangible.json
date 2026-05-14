@@ -7,30 +7,30 @@
   "summary": "<p class=\"big\">A few engagements where <strong>ownership of architecture, product impact, and delivery</strong> mattered. <em>Outcomes over tasks.</em> The mix spans <strong>Laravel/React</strong> product builds and <strong>large-scale CMS</strong> platforms—same thread: clear boundaries, what ships, and how it stays operable.</p>",
   "items": [
     {
-      "title": "BrightWize",
-      "content": "<p><strong>Context:</strong> A mortgage-industry product needed a clear go/no-go frame, a defensible architecture, and steady technical oversight before and during build.</p><p><strong>My role:</strong> I ran feasibility and phasing, selected the stack and shaped the technical prerequisites, and stayed close during delivery—Laravel and React calculators, data modelling, reviews, and integration patterns (including public-facing rate experiences).</p><p><strong>Outcomes:</strong></p><ul><li>An execution strategy and architecture decision record before heavy spend—less rework when constraints change mid-flight.</li><li>Mortgage-rate and calculator experiences integrated where users already compare (example live on Nesto).</li><li>Code and integration reviews stayed close to production risk—fewer surprises when rates data or partner rules change.</li></ul><h5>Tech stack</h5><p><strong>Laravel</strong>, complex <strong>MySQL</strong> schemas and queries, <strong>React</strong> calculators for mortgage flows, scraping where required, project <strong>scoping</strong>, <strong>estimation</strong>, and <strong>code reviews</strong>.</p>",
-      "cta-label": "See an Integration Example",
-      "cta-link": "https://www.nesto.ca/mortgage-rates/"
-    },
-    {
       "title": "Milesopedia",
       "content": "<p><strong>Context:</strong> A multi-site, multi-brand comparison network had to grow into new markets without splitting the stack, while editorial work was hitting the limits of legacy page patterns.</p><p><strong>My role:</strong> I owned the architecture direction for a centralized data path (API foundation), the editorial layer (Gutenberg and block patterns), and the operational discipline—CI/CD and releases—so plugins, themes, and sites stayed aligned across the network.</p><p><strong>Outcomes:</strong></p><ul><li>One technical base that supports Canada, France, and the United States as one system to operate, instead of parallel silos per market.</li><li>Editorial can ship complex comparison experiences with a repeatable block model—less bespoke HTML per launch, fewer one-off maintenance paths.</li><li>Progressive migration off legacy components toward a modern block stack: value shipped in slices rather than pausing for a full rewrite.</li><li>Release and performance work stayed tied to editorial and revenue priorities—so improvements land where they move the business, not as random tech projects.</li></ul><h5>Tech stack</h5><p><strong>WordPress</strong> and custom plugins, <strong>PHP</strong> and <strong>JavaScript (ES6+)</strong>, <strong>Gutenberg</strong> block development, <strong>REST</strong> and centralized <strong>API</strong> design, advanced <strong>caching</strong>, <strong>CI/CD</strong> and automated deployments, multi-site and multi-brand architecture, custom financial comparators, integrations with external data sources.</p>",
-      "cta-label": "Visit the Website",
+      "cta-label": "Visit site",
       "cta-link": "https://milesopedia.com"
     },
     {
       "title": "Nesto",
       "content": "<p><strong>Context:</strong> Several product initiatives needed one shared backbone so teams did not reinvent foundations for each release.</p><p><strong>My role:</strong> I defined and implemented the centralized system architecture (including an adaptable layout grid), set technical guardrails for teams, supported hiring with structured technical evaluation, and kept monitoring and evolution loops in place.</p><p><strong>Outcomes:</strong></p><ul><li>One architecture spine reused across projects—less drift between teams and faster onboarding when a new surface ships.</li><li>A large library of React-based Gutenberg blocks so marketing and product surfaces stay consistent without a custom front-end per page.</li><li>Lead capture wired to <strong>Salesforce</strong> with clear server-side paths—fewer ad-hoc integrations per initiative.</li><li>Hiring support stayed practical: structured technical exercises so candidates are evaluated on real constraints, not trivia.</li></ul><h5>Tech stack</h5><p>Vanilla <strong>PHP</strong> and <strong>JavaScript (ES6+)</strong>, <strong>React</strong> blocks for <strong>Gutenberg</strong>, <strong>transients</strong> and advanced <strong>caching</strong>, sessions and local storage, <strong>REST</strong> routes, external <strong>API</strong> integration, custom <strong>WordPress</strong> rewrite rules, advanced <strong>MySQL</strong>, <strong>Salesforce</strong> for lead creation, <strong>Webpack</strong> builds for theme variants via CLI.</p>",
-      "cta-label": "Visit the Website",
+      "cta-label": "Visit site",
       "cta-link": "https://www.nesto.ca"
     },
     {
       "title": "Compare Mortgages",
       "content": "<p><strong>Context:</strong> A mortgage comparison flow had to move from planning to production with tight coordination between design, back-end, and front-end—without losing quality on the way to launch.</p><p><strong>My role:</strong> I shaped the system architecture for comparison logic, sequenced phases and deliverables, coordinated design through development, and shipped tooling for experimentation and analysis.</p><p><strong>Outcomes:</strong></p><ul><li>Phased delivery with explicit priorities and timelines so the build advanced without thrash between design and engineering.</li><li>Functional prototypes and UI work aligned to what engineering could ship—fewer late surprises in scope.</li><li>A/B and analytics tooling integrated so the team can tune the funnel after launch without bolting on another stack.</li></ul><h5>Tech stack</h5><p>Vanilla <strong>PHP</strong> and <strong>JavaScript (ES6+)</strong>, <strong>REST</strong> routes and external <strong>API</strong> integration, custom <strong>WordPress</strong> rewrite rules, advanced <strong>MySQL</strong>, <strong>Salesforce</strong> for lead creation, <strong>Webpack</strong> for theme build variants via CLI.</p>",
-      "cta-label": "Visit the Website",
+      "cta-label": "Visit site",
       "cta-link": "https://comparemortgages.ca/quotes/purchase/"
+    },
+    {
+      "title": "BrightWize",
+      "content": "<p><strong>Context:</strong> A mortgage-industry product needed a clear go/no-go frame, a defensible architecture, and steady technical oversight before and during build.</p><p><strong>My role:</strong> I ran feasibility and phasing, selected the stack and shaped the technical prerequisites, and stayed close during delivery—Laravel and React calculators, data modelling, reviews, and integration patterns (including public-facing rate experiences).</p><p><strong>Outcomes:</strong></p><ul><li>An execution strategy and architecture decision record before heavy spend—less rework when constraints change mid-flight.</li><li>Mortgage-rate and calculator experiences integrated where users already compare (example live on Nesto).</li><li>Code and integration reviews stayed close to production risk—fewer surprises when rates data or partner rules change.</li></ul><h5>Tech stack</h5><p><strong>Laravel</strong>, complex <strong>MySQL</strong> schemas and queries, <strong>React</strong> calculators for mortgage flows, scraping where required, project <strong>scoping</strong>, <strong>estimation</strong>, and <strong>code reviews</strong>.</p>",
+      "cta-label": "See example",
+      "cta-link": "https://www.nesto.ca/mortgage-rates/"
     }
   ],
   "ctaTeaser": "Want to discuss your <strong>next product or technical challenge</strong>? Let's align on <em>what matters</em> and how we can work together.",
-  "footer-cta-label": "Schedule a conversation"
+  "footer-cta-label": "Book a call"
 }

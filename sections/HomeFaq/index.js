@@ -4,8 +4,10 @@ import parse from "html-react-parser";
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
 import Accordion from "../../components/Accordion";
+import Button from "../../components/Button";
+import ContactAlternates from "../../components/ContactAlternates";
 
-export default function HomeFaq() {
+export default function HomeFaq({ cta }) {
   const { t } = useTranslation();
 
   const items = t("faq:items", { returnObjects: true }).map((item) => ({
@@ -39,6 +41,31 @@ export default function HomeFaq() {
           {
             cols: { col: 10, sm: 12 },
             content: <Accordion align={"left"} items={items} />,
+          },
+        ]}
+      />
+      <Row
+        halign={"center"}
+        style={{
+          "--padding-top": "2rem",
+          "--sm-padding-top": "2rem",
+        }}
+        columns={[
+          {
+            cols: { col: 10, sm: 12 },
+            content: (
+              <div className="align align--center section-home-faq__cta">
+                <p>
+                  <Button
+                    variant={"primary"}
+                    href={cta?.link ?? t("common:schedule-me")}
+                    label={cta?.label ?? t("common:schedule-me-label")}
+                    trackSection={"faq"}
+                  />
+                </p>
+                <ContactAlternates trackSection="faq" />
+              </div>
+            ),
           },
         ]}
       />

@@ -87,8 +87,18 @@ export default function Home() {
             link: t("common:schedule-me"),
           }}
         />
-        <About />
-        <HomeFaq />
+        <About
+          cta={{
+            label: t("common:schedule-me-label"),
+            link: t("common:schedule-me"),
+          }}
+        />
+        <HomeFaq
+          cta={{
+            label: t("common:schedule-me-label"),
+            link: t("common:schedule-me"),
+          }}
+        />
       </main>
       <Container
         tag={"footer"}

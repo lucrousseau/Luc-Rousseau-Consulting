@@ -61,8 +61,7 @@ export default function CollaborationFit({ cta }) {
                 )}
                 <p>
                   <Button
-                    variant={"secondary"}
-                    size={"small"}
+                    variant={"primary"}
                     href={cta?.link ?? t("common:schedule-me")}
                     label={cta?.label ?? t("collaboration-fit:footer-cta-label")}
                     trackSection={"collaboration-fit"}

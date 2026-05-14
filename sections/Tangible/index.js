@@ -13,8 +13,8 @@ import nestoLogo from "./images/nesto.png";
 import comparemortgageLogo from "./images/comparemortgage.png";
 import nestogroupLogo from "./images/nestogroup.png";
 
-/** Order matches `tangible.json` items (BrightWize first for stack diversity). */
-const PROJECT_LOGOS = [nestogroupLogo, milesopediaLogo, nestoLogo, comparemortgageLogo];
+/** Order matches `tangible.json` items (Milesopedia → Nesto → Compare → BrightWize). */
+const PROJECT_LOGOS = [milesopediaLogo, nestoLogo, comparemortgageLogo, nestogroupLogo];
 
 export default function Tangible({ cta }) {
   const { t } = useTranslation();
