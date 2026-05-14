@@ -4,9 +4,12 @@
  * Provides structured information about the site for AI agents.
  */
 
+import { apiRequireGet } from "../../utils/apiRequireGet";
 import { getSiteOrigin } from "../../utils/siteOrigin";
 
 export default function handler(req, res) {
+  if (!apiRequireGet(req, res)) return;
+
   const base = getSiteOrigin(req);
   const body = `# ai.txt - Information for AI crawlers and agents
 # https://ai.txt.org/

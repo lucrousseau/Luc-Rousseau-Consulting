@@ -5,7 +5,15 @@ import { GTM_CONTAINER_ID, isGtmEnabled } from "../utils/gtm";
 export default function Document() {
   return (
     <Html>
-      <Head />
+      <Head>
+        <link
+          rel="preload"
+          href="/fonts/QuincyCF-Medium.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </Head>
       <body>
         {isGtmEnabled() ? (
           <noscript>

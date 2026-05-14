@@ -4,9 +4,12 @@
  * Sitemap URL uses request host (or NEXT_PUBLIC_DOMAIN).
  */
 
+import { apiRequireGet } from "../../utils/apiRequireGet";
 import { getSiteOrigin } from "../../utils/siteOrigin";
 
 export default function handler(req, res) {
+  if (!apiRequireGet(req, res)) return;
+
   const base = getSiteOrigin(req);
   const body = `# https://www.robotstxt.org/robotstxt.html
 User-agent: *
