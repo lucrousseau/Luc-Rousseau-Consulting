@@ -20,7 +20,7 @@
     {
       "emoji": "🔧",
       "title": "Technical debt reduction",
-      "content": "<p>Technical debt is treated as a product and risk concern. I help you prioritise paydown in a way that supports delivery instead of blocking it—the right debt in the right order, with clear criteria for \"good enough.\"</p><p><strong>Outcomes:</strong> A prioritised debt backlog aligned with product and risk; incremental improvement without \"stop the world\" rewrites; fewer incidents and rework from neglected debt.</p><p><strong>Solves:</strong> Debt ignored or triggering panic rewrites; team fighting the codebase instead of building; hidden dependencies and recurring security or performance issues.</p>"
+      "content": "<p>Technical debt is treated as a product and risk concern. I help you prioritize paydown in a way that supports delivery instead of blocking it—the right debt in the right order, with clear criteria for \"good enough.\"</p><p><strong>Outcomes:</strong> A prioritized debt backlog aligned with product and risk; incremental improvement without \"stop the world\" rewrites; fewer incidents and rework from neglected debt.</p><p><strong>Solves:</strong> Debt ignored or triggering panic rewrites; team fighting the codebase instead of building; hidden dependencies and recurring security or performance issues.</p>"
     },
     {
       "emoji": "⚡",

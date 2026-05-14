@@ -4,7 +4,7 @@
   "navigation-label-short": "Réalisations",
   "badge": "Preuves",
   "title": "Réalisations choisies",
-  "summary": "<p class=\"big\">Quelques engagements où <strong>la responsabilité de l'architecture, l'impact produit et la livraison</strong> ont compté. <em>Les résultats avant les tâches.</em> Le spectre va des produits <strong>Laravel/React</strong> aux <strong>plateformes CMS</strong> à grande échelle—même fil conducteur : frontières nettes, ce qui part en prod, et comment ça reste opérable.</p>",
+  "summary": "<p class=\"big\">Quelques engagements où <strong>la responsabilité de l'architecture, l'impact produit et la livraison</strong> ont compté. <em>Les résultats avant les tâches.</em> Les mandats couvrent des produits <strong>Laravel/React</strong> et des <strong>plateformes CMS</strong> à grande échelle—même fil conducteur : frontières nettes, ce qui part en prod, et comment ça reste opérable.</p>",
   "items": [
     {
       "title": "BrightWize",

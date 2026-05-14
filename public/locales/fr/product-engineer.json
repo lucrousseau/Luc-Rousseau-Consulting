@@ -25,8 +25,8 @@
         "developer": "Fonctionnalités et bugs, dans un périmètre donné.",
         "techLead": "Livraison équipe, décisions tech, personnes.",
         "productManager": "Quoi construire, pour qui, dans quel ordre.",
-        "fractionalCto": "Leadership et pilotage : risques, fournisseurs, santé de l'ingénierie—part mains-on très variable.",
-        "productEngineer": "Quoi construire et comment; produit et tech en un rôle."
+        "fractionalCto": "Leadership et pilotage : risques, fournisseurs, santé de l'ingénierie—niveau hands-on très variable.",
+        "productEngineer": "Quoi construire et comment : produit et tech en un rôle."
       },
       {
         "dimension": "Possède",
@@ -34,7 +34,7 @@
         "techLead": "Résultats équipe, qualité, direction tech.",
         "productManager": "Roadmap, priorités, alignement.",
         "fractionalCto": "Direction, gouvernance, escalades ; livraison en général par l'équipe ou les partenaires.",
-        "productEngineer": "Résultats, architecture, livraison; le comment et une partie du quoi."
+        "productEngineer": "Résultats, architecture, livraison : le comment et une partie du quoi."
       },
       {
         "dimension": "Profondeur",
