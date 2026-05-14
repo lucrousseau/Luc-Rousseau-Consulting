@@ -7,6 +7,7 @@ import Container from "../components/Layout/Container";
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 import About from "../sections/About";
+import HomeFaq from "../sections/HomeFaq";
 import HomeHero from "../sections/HomeHero";
 import ProductEngineerDefinition from "../sections/ProductEngineerDefinition";
 import AIResponsible from "../sections/AIResponsible";
@@ -87,6 +88,7 @@ export default function Home() {
           }}
         />
         <About />
+        <HomeFaq />
       </main>
       <Container
         tag={"footer"}
@@ -107,6 +109,7 @@ export const getServerSideProps = async ({ locale }) => {
     props: {
       ...(await serverSideTranslations(locale, [
         "about",
+        "faq",
         "common",
         "home",
         "home-hero",
