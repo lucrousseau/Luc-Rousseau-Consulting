@@ -11,6 +11,7 @@ import HomeHero from "../sections/HomeHero";
 import ProductEngineerDefinition from "../sections/ProductEngineerDefinition";
 import AIResponsible from "../sections/AIResponsible";
 import Engagement from "../sections/Engagement";
+import CollaborationFit from "../sections/CollaborationFit";
 import WhoIWorkWith from "../sections/WhoIWorkWith";
 import Technologies from "../sections/Technologies";
 import Tangible from "../sections/Tangible";
@@ -61,6 +62,12 @@ export default function Home() {
             link: t("common:schedule-me"),
           }}
         />
+        <CollaborationFit
+          cta={{
+            label: t("common:schedule-me-label"),
+            link: t("common:schedule-me"),
+          }}
+        />
         <WhoIWorkWith
           cta={{
             label: t("common:schedule-me-label"),
@@ -105,6 +112,7 @@ export const getServerSideProps = async ({ locale }) => {
         "home-hero",
         "ai-responsible",
         "engagement",
+        "collaboration-fit",
         "product-engineer",
         "tangible",
         "technologies",

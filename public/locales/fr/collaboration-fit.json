@@ -1,0 +1,24 @@
+{
+  "anchor": "collaboration-avec-equipe-existante",
+  "navigation-label": "Équipes et agences",
+  "navigation-label-short": "Équipes",
+  "badge": "Rôles et limites",
+  "title": "Vos développeurs ou votre agence : où j'interviens",
+  "intro": "<p class=\"big\">Si vous avez déjà un ou deux développeurs—ou si vous dépendez d'une agence—vous avez besoin d'une réponse directe : est-ce que ce rôle senior aide, ou ajoute du bruit. Je ne m'insère pas au-dessus de votre tech lead pour piloter l'équipe au quotidien, et je ne remets pas en cause d'anciennes décisions sans raison stratégique.</p><p class=\"big\">Je travaille sur la cohérence entre roadmap, architecture et livraison, pendant que les vôtres gardent la main sur leur périmètre. Le partage d'autorité est explicite : je propose des choix de niveau système avec une justification claire ; votre équipe tranche ce qui colle à son rythme et à ses contraintes, et je reste redevable de la cohérence d'ensemble.</p>",
+  "items": [
+    {
+      "title": "Avec une équipe interne",
+      "content": "<p>Je ne remplace pas votre tech lead ni vos seniors : ils portent le rythme de sprint, les standards terrain, et la façon dont le travail traverse l'équipe. J'apporte un regard produit et système—arbitrages, séquencement, risque—et je m'aligne sur vos rituels existants plutôt que d'imposer un processus parallèle.</p><p>Quand je regarde du code ou des specs, c'est pour la cohérence et le risque, pas pour tenir un guichet punitif.</p>"
+    },
+    {
+      "title": "Avec une agence ou des prestataires externes",
+      "content": "<p>Je ne suis pas là pour remplacer votre agence. Souvent la bonne forme est complémentaire : briefs plus nets, critères d'acceptation clairs, et points techniques de contrôle pour que ce qui part en prod corresponde à ce que vous vous êtes engagés en interne.</p><p>Si une transition progressive ou un changement de mix prestataires a du sens, on le planifie ouvertement. L'objectif : moins de malentendus coûteux, pas une guerre de territoire.</p>"
+    },
+    {
+      "title": "Ce que je n'enlève pas à votre équipe",
+      "content": "<p>Pas de micro-management sur les tâches, pas de revue de code utilisée comme levier de pouvoir, pas de remise en cause des choix passés sans raison stratégique de changer de cap.</p><p>Votre équipe conserve sa crédibilité auprès des parties prenantes. Je reste redevable du fait que l'ensemble du système suive encore la roadmap et reste maintenable.</p>"
+    }
+  ],
+  "ctaTeaser": "Si votre contexte mélange devs internes et agence, on peut cartographier les rôles et les limites en un seul échange.",
+  "footer-cta-label": "Planifier un échange"
+}

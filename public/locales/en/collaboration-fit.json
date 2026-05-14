@@ -1,0 +1,24 @@
+{
+  "anchor": "collaboration-with-existing-team",
+  "navigation-label": "Teams & agencies",
+  "navigation-label-short": "Teams",
+  "badge": "Roles & boundaries",
+  "title": "Your developers or your agency: how I add value",
+  "intro": "<p class=\"big\">If you already have one or two developers—or you rely on an agency—you need a straight answer on whether a senior external role helps or adds friction. I do not slot in above your tech lead to run the team day-to-day, and I do not relitigate old decisions without a strategic reason.</p><p class=\"big\">I work on coherence across roadmap, architecture, and delivery while your people keep ownership of their scope. How we split authority is explicit: I propose system-level choices with clear rationale; your team decides what fits your cadence and constraints, and I stay accountable for overall consistency.</p>",
+  "items": [
+    {
+      "title": "With an internal team",
+      "content": "<p>I am not a substitute for your tech lead or senior developers: they own sprint cadence, day-to-day standards, and how work flows through the team. I bring a product-and-system lens—tradeoffs, sequencing, risk—and I join your existing rituals instead of installing a parallel process.</p><p>When I look at code or specs, it is to protect coherence and risk, not to run a punitive gate.</p>"
+    },
+    {
+      "title": "With an agency or external vendors",
+      "content": "<p>I am not here to replace your agency. Often the right shape is complementary: sharper briefs, clear acceptance criteria, and technical checkpoints so what ships matches what you committed to internally.</p><p>If a gradual handoff or a change in vendor mix makes sense, we plan it openly. The aim is fewer expensive misunderstandings, not a turf fight.</p>"
+    },
+    {
+      "title": "What I don't take from your team",
+      "content": "<p>I do not micromanage tickets, I do not use reviews as a power move, and I do not undermine past technical choices without a strategic reason to change course.</p><p>Your team keeps its standing with stakeholders. I stay accountable for whether the whole system still matches the roadmap and stays maintainable.</p>"
+    }
+  ],
+  "ctaTeaser": "If your setup mixes internal devs and an agency, we can map roles and boundaries in one conversation.",
+  "footer-cta-label": "Schedule a conversation"
+}
