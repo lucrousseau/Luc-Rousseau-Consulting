@@ -59,6 +59,11 @@ function hostnameOnly(hostHeader) {
   return hostHeader.split(":")[0].replace(/\/+$/, "").toLowerCase();
 }
 
+/** Canonical hostname for SEO URLs (apex only; www is redirected at the edge). */
+function canonicalHostname(hostname) {
+  return hostname.startsWith("www.") ? hostname.slice(4) : hostname;
+}
+
 /**
  * @param {import("http").IncomingMessage} [req] - Request object (API route handler). Omit in components.
  * @returns {string} Origin without trailing slash (e.g. https://lucrousseau.com)
@@ -81,7 +86,9 @@ export function getSiteOrigin(req = null) {
     const proto = (Array.isArray(rawProto) ? rawProto[0] : String(rawProto || "https"))
       .split(",")[0]
       .trim();
-    return `${proto}://${hostHeader}`.replace(/\/$/, "");
+    const port = hostHeader.includes(":") ? `:${hostHeader.split(":")[1]}` : "";
+    const hostForOrigin = `${canonicalHostname(hostname)}${port}`;
+    return `${proto}://${hostForOrigin}`.replace(/\/$/, "");
   }
 
   return (process.env.NEXT_PUBLIC_DOMAIN || FALLBACK_ORIGIN).replace(/\/$/, "");

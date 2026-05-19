@@ -27,7 +27,17 @@ const nextConfig = {
   },
   reactStrictMode: true,
   async headers() {
+    const cacheableHtml = "public, s-maxage=86400, stale-while-revalidate=604800";
+
     return [
+      {
+        source: "/",
+        headers: [{ key: "Cache-Control", value: cacheableHtml }],
+      },
+      {
+        source: "/en",
+        headers: [{ key: "Cache-Control", value: cacheableHtml }],
+      },
       {
         source: "/(.*)",
         headers: [
@@ -48,6 +58,27 @@ const nextConfig = {
     ];
   },
   async redirects() {
+    const rules = [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.lucrousseau.com" }],
+        destination: "https://lucrousseau.com/:path*",
+        permanent: true,
+      },
+      {
+        source: "/fr",
+        destination: "/",
+        permanent: true,
+        locale: false,
+      },
+      {
+        source: "/fr/",
+        destination: "/",
+        permanent: true,
+        locale: false,
+      },
+    ];
+
     const zinesBase = "https://lucrousseau.ca/zines";
     const zineMappings = [
       { from: "05_gre_esp_fra", to: "05-gre-esp-fra" },
@@ -58,7 +89,6 @@ const nextConfig = {
     ];
 
     /** Index redirects: /zines, /fr/zines, /en/zines → external zines site */
-    const rules = [];
     for (const base of ["/zines", "/fr/zines", "/en/zines"]) {
       rules.push({
         source: base,

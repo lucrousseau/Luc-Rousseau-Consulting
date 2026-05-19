@@ -19,33 +19,44 @@ export default function handler(req, res) {
   const geoLat = "45.5017";
   const geoLong = "-73.5673";
 
+  const frUrl = `${base}/`;
+  const enUrl = `${base}/en`;
+
+  const hreflangLinks = (
+    defaultUrl
+  ) => `    <xhtml:link rel="alternate" hreflang="fr" href="${frUrl}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="${enUrl}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${defaultUrl}"/>`;
+
   const urls = [
-    { path: "", priority: "1.0", changefreq: "weekly", geo: true },
-    { path: "en", priority: "1.0", changefreq: "weekly", geo: true },
+    { loc: frUrl, priority: "1.0", changefreq: "weekly", geo: true, hreflangDefault: frUrl },
+    { loc: enUrl, priority: "1.0", changefreq: "weekly", geo: true, hreflangDefault: frUrl },
   ];
 
   const urlset = urls
     .map(
-      ({ path, priority, changefreq, geo }) =>
+      ({ loc, priority, changefreq, geo, hreflangDefault }) =>
         `  <url>
-    <loc>${base}/${path}</loc>
+    <loc>${loc}</loc>
     <lastmod>${now}</lastmod>
     <changefreq>${changefreq}</changefreq>
-    <priority>${priority}</priority>${
-      geo
-        ? `
+    <priority>${priority}</priority>
+${hreflangLinks(hreflangDefault)}${
+          geo
+            ? `
     <geo:geo xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
       <geo:format>kml</geo:format>
     </geo:geo>`
-        : ""
-    }
+            : ""
+        }
   </url>`
     )
     .join("\n");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
+        xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urlset}
 </urlset>`;
 
