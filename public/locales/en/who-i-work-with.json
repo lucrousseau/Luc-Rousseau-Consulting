@@ -31,5 +31,16 @@
       "content": "You want a responsible technical voice, able to <strong>hold the line from strategy to delivery</strong>."
     }
   ],
-  "footer-cta-label": "Book a call"
+  "footer-cta-label": "Book a call",
+  "guideLinks": [
+    {
+      "slug": "premier-dev-fractionnel",
+      "label": "After a raise: before your first full-time developer →"
+    },
+    {
+      "slug": "dev-unique-backup",
+      "label": "One developer owns all the tech →"
+    }
+  ],
+  "guides-index-label": "All guides"
 }

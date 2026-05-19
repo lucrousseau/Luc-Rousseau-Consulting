@@ -1,0 +1,111 @@
+{
+  "seoTitle": "First dev after funding: 2 days/week instead of full-time | Luc Rousseau",
+  "seoDescription": "Post-raise startup: before hiring your first full-time developer, why a fractional Product Engineer two days a week can deliver more value in the same budget band.",
+  "hero": {
+    "badge": "Post-funding startup",
+    "title": "Before hiring your first full-time developer, consider two days a week",
+    "lede": "<p>You just raised. The pressure is on: <strong>ship faster</strong>, prove traction, show the team is growing. Hiring a first full-time developer feels natural — but it's often the <strong>most expensive and slowest</strong> way to get solid technical leadership.</p><p>An <strong>experienced Product Engineer two days a week</strong> can own technical direction, architecture, and delivery — in a comparable budget band, with less risk if the product pivots.</p>",
+    "buy": {
+      "legend": "Let's talk about your context",
+      "prefix": "— no commitment",
+      "label": "Book a 30-minute call"
+    }
+  },
+  "blocks": [
+    {
+      "type": "intro",
+      "badge": "The trap",
+      "title": "Why the first tech hire is risky",
+      "lede": "<p class=\"big\">A junior or mid full-time developer means <strong>salary + payroll burden + onboarding + management</strong> — often before the roadmap is clear enough. The founder still arbitrates product and tech alone. A bad hire is brutally expensive for a young company.</p>"
+    },
+    {
+      "type": "cards",
+      "badge": "The offer",
+      "title": "What two days a week give you",
+      "items": [
+        {
+          "title": "Same budget band, more seniority",
+          "content": "<p>A budget planned for a first employee can fund <strong>two days a week of a senior profile</strong>: someone who has already shaped products, teams, and delivery — not just executed tickets.</p>"
+        },
+        {
+          "title": "Technical direction + delivery",
+          "content": "<p>I help decide <strong>what to build and why</strong>, design the architecture, and ship code or guide the team. No handoff between « the strategy person » and « the delivery person ».</p>"
+        },
+        {
+          "title": "Flexibility if you pivot",
+          "content": "<p>Before locking in a full internal team, you validate pace, stack, and priorities with someone who can <strong>adapt without a layoff or emergency re-hire</strong>.</p>"
+        },
+        {
+          "title": "Bridge to a future team",
+          "content": "<p>When it's time to hire, you already have <strong>standards, a clearer backlog, and a realistic job spec</strong> — and possibly a developer I've helped onboard.</p>"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "badge": "Compare",
+      "title": "First full-time dev vs fractional partnership",
+      "intro": "Ballpark for a Quebec startup — we refine on a call.",
+      "columnKeys": ["dimension", "fullTimeJunior", "fractionalSenior"],
+      "table": {
+        "headers": {
+          "dimension": "Dimension",
+          "fullTimeJunior": "First full-time dev (junior–mid)",
+          "fractionalSenior": "Product Engineer, 2 days / week"
+        },
+        "rows": [
+          {
+            "dimension": "Total annual cost",
+            "fullTimeJunior": "Salary + burden + benefits; often the heaviest line in the company.",
+            "fractionalSenior": "Comparable band for ~40% of an experienced senior's time."
+          },
+          {
+            "dimension": "Time-to-value",
+            "fullTimeJunior": "2–4 months hiring, onboarding, learning your domain.",
+            "fractionalSenior": "Start in weeks; architecture and delivery impact from month one."
+          },
+          {
+            "dimension": "Technical direction",
+            "fullTimeJunior": "Depends on level; founder often remains default decision-maker.",
+            "fractionalSenior": "Explicit ownership of direction, trade-offs, and production quality."
+          },
+          {
+            "dimension": "Risk if the product pivots",
+            "fullTimeJunior": "Person to reposition, lay off, or replace.",
+            "fractionalSenior": "Scope or days adjust without a major social rupture."
+          },
+          {
+            "dimension": "Weekly coverage",
+            "fullTimeJunior": "5 days on code — useful when scope is already well defined.",
+            "fractionalSenior": "2 focused days + async between sessions; enough for direction and unblocking when framed well."
+          }
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "badge": "Objections",
+      "title": "Common questions",
+      "items": [
+        {
+          "title": "We need someone on code every day",
+          "content": "<p>Often what you need daily is <strong>clear decisions and a backlog that moves</strong> — not yet five days of unsupervised development. Two days from a senior who structures and unblocks often beats five days from someone still learning your context.</p><p>When code volume truly justifies full-time, we'll see it together — and you'll hire with criteria already tested.</p>"
+        },
+        {
+          "title": "Will we still hire full-time later?",
+          "content": "<p>Yes, if that's the right model. My role is to get you to that moment <strong>better prepared</strong>: architecture, process, realistic job description. I can support onboarding so continuity doesn't break.</p>"
+        },
+        {
+          "title": "How does this work with the founder or CEO?",
+          "content": "<p>I partner with you: product priorities, technical reviews, ceremonies when useful. You keep the vision; I bring <strong>technical translation and delivery</strong> without turning you into a default CTO.</p>"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "trackSection": "guide-premier-dev",
+      "label": "Talk about your first tech hire",
+      "teaser": "<p class=\"big\">Post-raise and torn between hiring and going fractional? A 30-minute call is enough to see if two days a week make sense for you.</p>"
+    }
+  ]
+}

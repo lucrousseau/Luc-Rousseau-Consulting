@@ -7,6 +7,7 @@
 
 import { apiRequireGet } from "../../utils/apiRequireGet";
 import { getSiteOrigin } from "../../utils/siteOrigin";
+import { GUIDES } from "../../commons/guidesManifest";
 
 export default function handler(req, res) {
   if (!apiRequireGet(req, res)) return;
@@ -14,43 +15,86 @@ export default function handler(req, res) {
   const base = getSiteOrigin(req);
   const now = new Date().toISOString().slice(0, 10);
 
-  // Geo coordinates for Quebec, Montreal
-  // Latitude: 45.5017, Longitude: -73.5673
-  const geoLat = "45.5017";
-  const geoLong = "-73.5673";
-
   const frUrl = `${base}/`;
   const enUrl = `${base}/en`;
 
-  const hreflangLinks = (
-    defaultUrl
-  ) => `    <xhtml:link rel="alternate" hreflang="fr" href="${frUrl}"/>
-    <xhtml:link rel="alternate" hreflang="en" href="${enUrl}"/>
+  const hreflangLinks = (frLoc, enLoc, defaultUrl) =>
+    `    <xhtml:link rel="alternate" hreflang="fr" href="${frLoc}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="${enLoc}"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="${defaultUrl}"/>`;
 
   const urls = [
-    { loc: frUrl, priority: "1.0", changefreq: "weekly", geo: true, hreflangDefault: frUrl },
-    { loc: enUrl, priority: "1.0", changefreq: "weekly", geo: true, hreflangDefault: frUrl },
+    {
+      loc: frUrl,
+      priority: "1.0",
+      changefreq: "weekly",
+      geo: true,
+      hreflang: { fr: frUrl, en: enUrl, default: frUrl },
+    },
+    {
+      loc: enUrl,
+      priority: "1.0",
+      changefreq: "weekly",
+      geo: true,
+      hreflang: { fr: frUrl, en: enUrl, default: frUrl },
+    },
+    {
+      loc: `${base}/guides`,
+      priority: "0.8",
+      changefreq: "monthly",
+      hreflang: { fr: `${base}/guides`, en: `${base}/en/guides`, default: `${base}/guides` },
+    },
+    {
+      loc: `${base}/en/guides`,
+      priority: "0.8",
+      changefreq: "monthly",
+      hreflang: { fr: `${base}/guides`, en: `${base}/en/guides`, default: `${base}/guides` },
+    },
+    ...GUIDES.flatMap((guide) => [
+      {
+        loc: `${base}/guides/${guide.slug}`,
+        priority: "0.7",
+        changefreq: "monthly",
+        lastmod: guide.publishedAt,
+        hreflang: {
+          fr: `${base}/guides/${guide.slug}`,
+          en: `${base}/en/guides/${guide.slug}`,
+          default: `${base}/guides/${guide.slug}`,
+        },
+      },
+      {
+        loc: `${base}/en/guides/${guide.slug}`,
+        priority: "0.7",
+        changefreq: "monthly",
+        lastmod: guide.publishedAt,
+        hreflang: {
+          fr: `${base}/guides/${guide.slug}`,
+          en: `${base}/en/guides/${guide.slug}`,
+          default: `${base}/guides/${guide.slug}`,
+        },
+      },
+    ]),
   ];
 
   const urlset = urls
-    .map(
-      ({ loc, priority, changefreq, geo, hreflangDefault }) =>
-        `  <url>
-    <loc>${loc}</loc>
-    <lastmod>${now}</lastmod>
+    .map(({ loc, priority, changefreq, geo, lastmod, hreflang }) => {
+      const lastmodTag = lastmod
+        ? `\n    <lastmod>${lastmod}</lastmod>`
+        : `\n    <lastmod>${now}</lastmod>`;
+      return `  <url>
+    <loc>${loc}</loc>${lastmodTag}
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
-${hreflangLinks(hreflangDefault)}${
-          geo
-            ? `
+${hreflangLinks(hreflang.fr, hreflang.en, hreflang.default)}${
+        geo
+          ? `
     <geo:geo xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
       <geo:format>kml</geo:format>
     </geo:geo>`
-            : ""
-        }
-  </url>`
-    )
+          : ""
+      }
+  </url>`;
+    })
     .join("\n");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

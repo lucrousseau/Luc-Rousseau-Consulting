@@ -1,0 +1,17 @@
+{
+  "seoTitle": "Guides — Luc Rousseau, Product Engineer",
+  "seoDescription": "Audience-specific pages: first dev hire after funding, or securing a solo technical owner. Practical advice and how I can help.",
+  "badge": "Guides",
+  "title": "Who it's for, and how I can help",
+  "lede": "<p class=\"big\">Every context has its traps. These pages cover two common situations — and why a fractional partnership can beat a rushed hire or a « we'll deal with it later ».</p>",
+  "guides": {
+    "premier-dev-fractionnel": {
+      "title": "After your first raise: before hiring a full-time developer",
+      "teaser": "Why two days a week with an experienced Product Engineer can deliver more value than a first junior hire — within the same budget band."
+    },
+    "dev-unique-backup": {
+      "title": "One developer owns all the tech",
+      "teaser": "How one day a week reduces bus factor, adds day-to-day value, and covers you when your main developer is on vacation."
+    }
+  }
+}

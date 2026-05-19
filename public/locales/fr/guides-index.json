@@ -1,0 +1,17 @@
+{
+  "seoTitle": "Guides — Luc Rousseau, Product Engineer",
+  "seoDescription": "Pages par profil : première embauche dev après financement, ou une seule personne technique à sécuriser. Conseils concrets et comment je peux aider.",
+  "badge": "Guides",
+  "title": "Pour qui, et comment je peux aider",
+  "lede": "<p class=\"big\">Chaque contexte a ses pièges. Ces pages décrivent deux situations fréquentes — et pourquoi un partenariat fractionnel peut valoir mieux qu'une embauche ou qu'un « on verra plus tard ».</p>",
+  "guides": {
+    "premier-dev-fractionnel": {
+      "title": "Après votre première levée : avant d'embaucher un dev à temps plein",
+      "teaser": "Pourquoi deux jours par semaine avec un Product Engineer expérimenté peut donner plus de valeur qu'un premier salarié junior — dans la même enveloppe budgétaire."
+    },
+    "dev-unique-backup": {
+      "title": "Un seul dev fait tout le technique",
+      "teaser": "Comment une journée par semaine réduit le bus factor, apporte de la valeur au quotidien et assure une présence quand votre dev principal est en vacances."
+    }
+  }
+}
