@@ -18,7 +18,6 @@ import Technologies from "../sections/Technologies";
 import Tangible from "../sections/Tangible";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { clearI18nServerCache } from "../utils/i18n-dev-reload";
 
 export default function Home() {
   const { t } = useTranslation(["home", "home-hero", "common"]);
@@ -113,7 +112,19 @@ export default function Home() {
 }
 
 export const getServerSideProps = async ({ locale }) => {
-  clearI18nServerCache();
+  // Dev-only: bust next-i18next server cache so locale JSON edits apply without restart.
+  if (process.env.NODE_ENV === "development") {
+    try {
+      const resolved = require.resolve("next-i18next/dist/commonjs/createClient/node.js");
+      /* eslint-disable security/detect-object-injection -- resolved from require.resolve */
+      if (require.cache[resolved]) {
+        delete require.cache[resolved];
+      }
+      /* eslint-enable security/detect-object-injection */
+    } catch {
+      // Ignore if module path or cache clear fails
+    }
+  }
   return {
     props: {
       ...(await serverSideTranslations(locale, [
