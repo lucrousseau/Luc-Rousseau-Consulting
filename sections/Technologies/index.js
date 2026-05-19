@@ -3,11 +3,10 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import SectionIntro from "../../components/SectionIntro";
+import SectionCta from "../../components/SectionCta";
 import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
-
-import Button from "../../components/Button";
-import ContactAlternates from "../../components/ContactAlternates";
 import Tags from "../../components/Tags";
 
 export default function Technologies({ backgroundColor, cta }) {
@@ -26,21 +25,11 @@ export default function Technologies({ backgroundColor, cta }) {
       halign={"center"}
       backgroundColor={backgroundColor}
     >
-      <Row
-        halign={"center"}
-        style={homeIntroRowStyle}
-        columns={[
-          {
-            cols: { col: 11, xl: 12, sm: 12 },
-            content: (
-              <>
-                <p className="section__badge">{t("technologies:badge")}</p>
-                <h2 className="underline underline--center">{t("technologies:title")}</h2>
-                {parse(t("technologies:summary"))}
-              </>
-            ),
-          },
-        ]}
+      <SectionIntro
+        badge={t("technologies:badge")}
+        title={t("technologies:title")}
+        lede={parse(t("technologies:summary"))}
+        rowStyle={homeIntroRowStyle}
       />
       <Row
         columns={[
@@ -50,25 +39,13 @@ export default function Technologies({ backgroundColor, cta }) {
           },
         ]}
       />
-      <Row
-        style={homeCtaRowStyle}
-        columns={[
-          {
-            content: (
-              <>
-                <p>
-                  <Button
-                    variant={"primary"}
-                    href={cta?.link ?? scheduleCta.link}
-                    label={cta?.label ?? t("technologies:footer-cta-label")}
-                    trackSection={"technologies"}
-                  />
-                </p>
-                <ContactAlternates trackSection="technologies" />
-              </>
-            ),
-          },
-        ]}
+      <SectionCta
+        bare
+        trackSection="technologies"
+        href={cta?.link ?? scheduleCta.link}
+        label={cta?.label ?? t("technologies:footer-cta-label")}
+        rowStyle={homeCtaRowStyle}
+        cols={null}
       />
     </Container>
   );

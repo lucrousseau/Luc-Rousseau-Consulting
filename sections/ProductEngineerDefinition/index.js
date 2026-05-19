@@ -3,6 +3,8 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import SectionIntro from "../../components/SectionIntro";
+import SectionCta from "../../components/SectionCta";
 import {
   homeCtaRowStyle,
   homeIntroRowStyle,
@@ -10,8 +12,6 @@ import {
 } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
 import Table from "../../components/Table";
-import Button from "../../components/Button";
-import ContactAlternates from "../../components/ContactAlternates";
 
 const TABLE_COLUMN_KEYS = [
   "dimension",
@@ -37,24 +37,15 @@ export default function ProductEngineerDefinition({ cta }) {
       align={"center"}
       halign={"center"}
     >
-      <Row
-        halign={"center"}
-        style={homeIntroRowStyle}
-        columns={[
-          {
-            cols: { col: 10, sm: 12 },
-            content: (
-              <>
-                <p className="section__badge">{t("product-engineer:badge")}</p>
-                <h2 className="underline underline--center">{t("product-engineer:title")}</h2>
-                {t("product-engineer:paragraphOpening") &&
-                  parse(t("product-engineer:paragraphOpening"))}
-                {parse(t("product-engineer:paragraph"))}
-              </>
-            ),
-          },
-        ]}
-      />
+      <SectionIntro
+        badge={t("product-engineer:badge")}
+        title={t("product-engineer:title")}
+        cols={{ col: 10, sm: 12 }}
+        rowStyle={homeIntroRowStyle}
+      >
+        {t("product-engineer:paragraphOpening") && parse(t("product-engineer:paragraphOpening"))}
+        {parse(t("product-engineer:paragraph"))}
+      </SectionIntro>
       {hasTable && (
         <>
           <Row
@@ -85,32 +76,20 @@ export default function ProductEngineerDefinition({ cta }) {
           />
         </>
       )}
-      <Row
-        halign={"center"}
-        style={homeCtaRowStyle}
-        columns={[
-          {
-            cols: { col: 10, sm: 12 },
-            content: (
-              <div className="align align--center product-engineer__cta-block">
-                {t("product-engineer:ctaTeaser") && (
-                  <p className="big product-engineer__cta-teaser">
-                    {parse(t("product-engineer:ctaTeaser"))}
-                  </p>
-                )}
-                <p>
-                  <Button
-                    variant="primary"
-                    href={cta?.link ?? scheduleCta.link}
-                    label={cta?.label ?? t("product-engineer:footer-cta-label")}
-                    trackSection="product-engineer"
-                  />
-                </p>
-                <ContactAlternates trackSection="product-engineer" />
-              </div>
-            ),
-          },
-        ]}
+      <SectionCta
+        halign="center"
+        trackSection="product-engineer"
+        href={cta?.link ?? scheduleCta.link}
+        label={cta?.label ?? t("product-engineer:footer-cta-label")}
+        rowStyle={homeCtaRowStyle}
+        className="product-engineer__cta-block"
+        teaser={
+          t("product-engineer:ctaTeaser") ? (
+            <p className="big product-engineer__cta-teaser">
+              {parse(t("product-engineer:ctaTeaser"))}
+            </p>
+          ) : null
+        }
       />
     </Container>
   );

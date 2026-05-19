@@ -3,15 +3,15 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import SectionIntro from "../../components/SectionIntro";
+import SectionCta from "../../components/SectionCta";
+import ProductGrid from "../../components/ProductGrid";
 import {
   homeBlockRowStyle,
   homeIntroRowStyle,
   homePreCtaContentRowStyle,
 } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
-import Product from "../../components/Product";
-import Button from "../../components/Button";
-import ContactAlternates from "../../components/ContactAlternates";
 
 export default function Engagement({ cta }) {
   const { t } = useTranslation();
@@ -23,21 +23,7 @@ export default function Engagement({ cta }) {
   const includedList = Array.isArray(termsIncluded) ? termsIncluded : [];
   const excludedList = Array.isArray(termsExcluded) ? termsExcluded : [];
   const factsList = Array.isArray(termsFactsItems) ? termsFactsItems : [];
-
-  const columns = t("engagement:models", { returnObjects: true }).map((model) => ({
-    cols: { col: 4, lg: 10, sm: 12 },
-    content: (
-      <Product key={model.title} title={model.title} className={"align--lg-left"}>
-        <>
-          <p className="small">{model.subtitle}</p>
-          <p>
-            <strong>{model.value}</strong>
-          </p>
-          {parse(model.content)}
-        </>
-      </Product>
-    ),
-  }));
+  const models = t("engagement:models", { returnObjects: true });
 
   return (
     <Container
@@ -46,24 +32,26 @@ export default function Engagement({ cta }) {
       align={"center"}
       halign={"center"}
     >
-      <Row
-        halign={"center"}
-        style={homeIntroRowStyle}
-        columns={[
-          {
-            cols: { col: 11, xl: 12, sm: 12 },
-            content: (
-              <>
-                <p className="section__badge">{t("engagement:badge")}</p>
-                <h2 className="underline underline--center">{t("engagement:headline")}</h2>
-                {t("engagement:subhead") && <p className="big">{t("engagement:subhead")}</p>}
-                <p className="big">{parse(t("engagement:valueStatement"))}</p>
-              </>
-            ),
-          },
-        ]}
+      <SectionIntro
+        badge={t("engagement:badge")}
+        title={t("engagement:headline")}
+        rowStyle={homeIntroRowStyle}
+      >
+        {t("engagement:subhead") && <p className="big">{t("engagement:subhead")}</p>}
+        <p className="big">{parse(t("engagement:valueStatement"))}</p>
+      </SectionIntro>
+      <ProductGrid
+        items={models}
+        renderItem={(model) => (
+          <>
+            <p className="small">{model.subtitle}</p>
+            <p>
+              <strong>{model.value}</strong>
+            </p>
+            {parse(model.content)}
+          </>
+        )}
       />
-      <Row columns={columns} />
       <Row
         halign={"center"}
         style={homeBlockRowStyle}
@@ -113,29 +101,19 @@ export default function Engagement({ cta }) {
           },
         ]}
       />
-      <Row
-        halign={"center"}
-        style={homePreCtaContentRowStyle}
-        columns={[
-          {
-            cols: { col: 10, sm: 12 },
-            content: (
-              <>
-                <p className="big">{parse(t("engagement:differentiator"))}</p>
-                <p>{parse(t("engagement:ctaTeaser"))}</p>
-                <p>
-                  <Button
-                    variant={"primary"}
-                    href={cta?.link ?? scheduleCta.link}
-                    label={cta?.label ?? t("engagement:ctaLabel")}
-                    trackSection={"engagement"}
-                  />
-                </p>
-                <ContactAlternates trackSection="engagement" />
-              </>
-            ),
-          },
-        ]}
+      <SectionCta
+        bare
+        halign="center"
+        trackSection="engagement"
+        href={cta?.link ?? scheduleCta.link}
+        label={cta?.label ?? t("engagement:ctaLabel")}
+        rowStyle={homePreCtaContentRowStyle}
+        beforeCTA={
+          <>
+            <p className="big">{parse(t("engagement:differentiator"))}</p>
+            <p>{parse(t("engagement:ctaTeaser"))}</p>
+          </>
+        }
       />
     </Container>
   );

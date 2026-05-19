@@ -125,11 +125,11 @@ commons/
 
 ### 3A — `SectionIntro`
 
-| #    | Tâche                                                                   | Statut |
-| ---- | ----------------------------------------------------------------------- | ------ |
-| 3A.1 | Créer `components/SectionIntro/index.js` (+ `style.scss` si nécessaire) | [ ]    |
-| 3A.2 | Importer styles dans `styles/main.scss` si fichier dédié                | [ ]    |
-| 3A.3 | API : `badge`, `title`, `lede`/`children`, `cols`, `rowStyle`, `halign` | [ ]    |
+| #    | Tâche                                                                   | Statut                                         |
+| ---- | ----------------------------------------------------------------------- | ---------------------------------------------- |
+| 3A.1 | Créer `components/SectionIntro/index.js` (+ `style.scss` si nécessaire) | [x]                                            |
+| 3A.2 | Importer styles dans `styles/main.scss` si fichier dédié                | [x] _(N/A — styles globaux `.section__badge`)_ |
+| 3A.3 | API : `badge`, `title`, `lede`/`children`, `cols`, `rowStyle`, `halign` | [x]                                            |
 
 **API cible (référence)**
 
@@ -146,11 +146,11 @@ commons/
 
 ### 3B — `SectionCta`
 
-| #    | Tâche                                                                                                       | Statut |
-| ---- | ----------------------------------------------------------------------------------------------------------- | ------ |
-| 3B.1 | Créer `components/SectionCta/index.js` (+ styles si nécessaire)                                             | [ ]    |
-| 3B.2 | Importer dans `styles/main.scss`                                                                            | [ ]    |
-| 3B.3 | Encapsuler `Row` + `Button` + `ContactAlternates` ; props `teaser`, `trackSection`, `rowStyle`, `className` | [ ]    |
+| #    | Tâche                                                                                                       | Statut      |
+| ---- | ----------------------------------------------------------------------------------------------------------- | ----------- |
+| 3B.1 | Créer `components/SectionCta/index.js` (+ styles si nécessaire)                                             | [x]         |
+| 3B.2 | Importer dans `styles/main.scss`                                                                            | [x] _(N/A)_ |
+| 3B.3 | Encapsuler `Row` + `Button` + `ContactAlternates` ; props `teaser`, `trackSection`, `rowStyle`, `className` | [x]         |
 
 **API cible (référence)**
 
@@ -170,8 +170,8 @@ commons/
 
 | #    | Tâche                                                     | Statut |
 | ---- | --------------------------------------------------------- | ------ |
-| 3C.1 | Créer `components/ProductGrid/index.js`                   | [ ]    |
-| 3C.2 | Map items → `Row` columns + `Product` avec `cols` unifiés | [ ]    |
+| 3C.1 | Créer `components/ProductGrid/index.js`                   | [x]    |
+| 3C.2 | Map items → `Row` columns + `Product` avec `cols` unifiés | [x]    |
 
 ### 3D — Migration des sections
 
@@ -179,29 +179,29 @@ Cocher chaque section une fois migrée vers `SectionIntro` / `SectionCta` / `Pro
 
 | Section                   | SectionIntro | SectionCta         | ProductGrid | Statut |
 | ------------------------- | ------------ | ------------------ | ----------- | ------ |
-| HomeFaq                   | [ ]          | [ ]                | —           | [ ]    |
-| About                     | [ ]          | [ ]                | —           | [ ]    |
-| Technologies              | [ ]          | [ ]                | —           | [ ]    |
-| ProductEngineerDefinition | [ ]          | [ ]                | —           | [ ]    |
-| CollaborationFit          | [ ]          | [ ]                | [ ]         | [ ]    |
-| AIResponsible             | [ ]          | [ ]                | [ ]         | [ ]    |
-| Engagement                | [ ]          | [ ]                | [ ]         | [ ]    |
-| Tangible                  | [ ]          | [ ]                | —           | [ ]    |
-| WhoIWorkWith              | [ ]          | [ ] _(CTA nested)_ | —           | [ ]    |
+| HomeFaq                   | [x]          | [x]                | —           | [x]    |
+| About                     | [x]          | [x]                | —           | [x]    |
+| Technologies              | [x]          | [x]                | —           | [x]    |
+| ProductEngineerDefinition | [x]          | [x]                | —           | [x]    |
+| CollaborationFit          | [x]          | [x]                | [x]         | [x]    |
+| AIResponsible             | [x]          | [x]                | [x]         | [x]    |
+| Engagement                | [x]          | [x]                | [x]         | [x]    |
+| Tangible                  | [x]          | [x]                | —           | [x]    |
+| WhoIWorkWith              | [x]          | [x] _(CTA nested)_ | —           | [x]    |
 
 **Ordre de migration recommandé**
 
-1. [ ] Lot 1 : HomeFaq, About, Technologies
-2. [ ] Lot 2 : ProductEngineerDefinition
-3. [ ] Lot 3 : CollaborationFit, AIResponsible, Engagement
-4. [ ] Lot 4 : Tangible, WhoIWorkWith
+1. [x] Lot 1 : HomeFaq, About, Technologies
+2. [x] Lot 2 : ProductEngineerDefinition
+3. [x] Lot 3 : CollaborationFit, AIResponsible, Engagement
+4. [x] Lot 4 : Tangible, WhoIWorkWith
 
 **Critères d’acceptation phase 3**
 
-- [ ] Aucune section ne duplique le bloc `Button` + `ContactAlternates` en entier
-- [ ] ≥ 7 sections utilisent `SectionIntro`
-- [ ] AIResponsible, CollaborationFit, Engagement utilisent `ProductGrid` (si créé)
-- [ ] `npm run validate` vert
+- [x] Aucune section ne duplique le bloc `Button` + `ContactAlternates` en entier
+- [x] ≥ 7 sections utilisent `SectionIntro`
+- [x] AIResponsible, CollaborationFit, Engagement utilisent `ProductGrid` (si créé)
+- [x] `npm run validate` vert
 
 ---
 
@@ -298,7 +298,7 @@ Cocher chaque section une fois migrée vers `SectionIntro` / `SectionCta` / `Pro
 
 ## Checklist finale — structure saine
 
-- [ ] Composants de composition : `SectionIntro`, `SectionCta`, `ProductGrid`
+- [x] Composants de composition : `SectionIntro`, `SectionCta`, `ProductGrid`
 - [x] `commons/pageRowSpacing` + `commons/scheduleCta`
 - [ ] `pages/index.js` minimal (pas 8× le même objet `cta`)
 - [ ] Wrappers cohérents : `Container` partout
