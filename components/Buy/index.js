@@ -4,17 +4,23 @@ import { useTranslation } from "next-i18next";
 import { alignments } from "../../commons/alignments";
 import { getScheduleCta } from "../../commons/scheduleCta";
 
-import Button from "../Button";
-import ContactAlternates from "../ContactAlternates";
+import SectionCta from "../SectionCta";
 
+/**
+ * Price/legend block with a schedule CTA. Reuses {@link SectionCta} for Button +
+ * ContactAlternates (same Calendly path as sections); keeps its own layout because
+ * of inline pricing copy (DRY-ARCHITECTURE-PLAN phase 4).
+ */
 export default function Buy({
   className,
   price,
   legend,
   prefix,
   label,
+  href,
   size = "small",
   variant = "secondary",
+  trackSection,
   ...props
 }) {
   const { t, i18n } = useTranslation();
@@ -41,14 +47,17 @@ export default function Buy({
           </>
         )}
       </span>
-      <Button
-        href={scheduleCta.link}
-        size={size}
+      <SectionCta
+        wrapRow={false}
+        bare
+        wrapButtonInP={false}
+        showContactAlternates={Boolean(trackSection)}
+        trackSection={trackSection}
+        href={href ?? scheduleCta.link}
+        label={label ?? scheduleCta.label}
         variant={variant}
-        label={label}
-        trackSection={props.trackSection}
+        size={size}
       />
-      {props.trackSection && <ContactAlternates trackSection={props.trackSection} />}
     </p>
   );
 }

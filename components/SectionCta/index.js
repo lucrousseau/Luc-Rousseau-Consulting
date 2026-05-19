@@ -27,6 +27,7 @@ export default function SectionCta({
   className,
   align = "center",
   variant = "primary",
+  size,
   showContactAlternates = true,
   wrapRow = true,
   wrapButtonInP = true,
@@ -34,7 +35,9 @@ export default function SectionCta({
 }) {
   const teaserNode = renderTeaser(teaser, teaserClassName);
 
-  const button = <Button variant={variant} href={href} label={label} trackSection={trackSection} />;
+  const button = (
+    <Button variant={variant} size={size} href={href} label={label} trackSection={trackSection} />
+  );
 
   const ctaContent = bare ? (
     <>
