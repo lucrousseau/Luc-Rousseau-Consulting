@@ -63,7 +63,7 @@ Après `npm install`, le script `prepare` installe les hooks Husky automatiqueme
 - `styles/` — SCSS global (variables, base, layout)
 - `public/locales/` — Fichiers de traduction (next-i18next)
 
-Plan de refactor DRY : [`docs/DRY-ARCHITECTURE-PLAN.md`](docs/DRY-ARCHITECTURE-PLAN.md). Conventions contributeur : [`CONTRIBUTING.md`](CONTRIBUTING.md).
+Conventions contributeur : [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ### Réutiliser une section sur une autre page
 
