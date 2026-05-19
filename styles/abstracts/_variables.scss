@@ -136,9 +136,9 @@ $mobile-nav-tertiary-breakpoint: 480px;
   --heading-5-color: var(--set-heading-5-color, #131e61);
   --heading-6-color: var(--set-heading-6-color, #131e61);
 
-  // Links
-  --link-color: var(--set-link-color, #647e72);
-  --link-color-hover: var(--set-link-color-hover, #647e72);
+  // Links (≥4.5:1 on --body-background-color for WCAG AA)
+  --link-color: var(--set-link-color, #4a6359);
+  --link-color-hover: var(--set-link-color-hover, #3d5249);
   --external-link-color: var(--set-external-link-color, #131e61);
   --external-link-color-hover: var(--set-external-link-color-hover, #131e61);
 
@@ -146,7 +146,7 @@ $mobile-nav-tertiary-breakpoint: 480px;
   --btn-primary-color: var(--set-btn-primary-color, #f6f5f5);
   --btn-secondary-color: var(--set-btn-secondary-color, #f6f5f5);
   --btn-tertiary-color: var(--set-btn-tertiary-color, #f6f5f5);
-  --btn-primary-background-color: var(--set-btn-primary-background-color, #647e72);
+  --btn-primary-background-color: var(--set-btn-primary-background-color, #4a6359);
   --btn-secondary-background-color: var(--set-btn-secondary-background-color, #454c73);
   --btn-tertiary-background-color: var(--set-btn-tertiary-background-color, #454c73);
 
@@ -187,7 +187,7 @@ $mobile-nav-tertiary-breakpoint: 480px;
   --border-radius: calc(var(--set-border-radius, 30) / var(--body-font-size) * 1rem);
   --shadow-color: var(--set-shadow-color, rgb(0 0 0 / 5%));
   --shadow-size: calc(var(--set-shadow-size, 10) / var(--body-font-size) * 1rem);
-  --primary-accent-color: var(--set-accent-color, #647e72);
+  --primary-accent-color: var(--set-accent-color, #4a6359);
   --secondary-accent-color: var(--set-secondary-accent-color, #ee6f57);
   --secondary-background-color: var(--set-light-background-color, #fff);
 
