@@ -35,7 +35,8 @@ export default function Picture({
         alt={alt}
         layout={layout}
         priority={Boolean(priority)}
-        loading={priority ? undefined : loading}
+        fetchPriority={priority ? "high" : undefined}
+        loading={priority ? "eager" : (loading ?? "lazy")}
         sizes={sizes}
         quality={priority ? 85 : 75}
       />
