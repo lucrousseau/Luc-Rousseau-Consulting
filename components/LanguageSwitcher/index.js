@@ -1,4 +1,6 @@
 import classNames from "classnames";
+import Link from "next/link";
+
 import { alignments } from "../../commons/alignments";
 import Row from "../Layout/Row";
 
@@ -29,9 +31,9 @@ export default function LanguageSwitcher({ current = "fr", ...props }) {
               "component__language-switcher__lang--current"
             ),
             content: (
-              <a href={currentLanguage.href} aria-label={currentLanguage.label}>
+              <Link href={currentLanguage.href} aria-label={currentLanguage.label}>
                 {current.toUpperCase()}
-              </a>
+              </Link>
             ),
           },
         ]}

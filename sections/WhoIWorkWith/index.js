@@ -7,7 +7,7 @@ import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/homePageRowSpa
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
 
-import romeImage from "./images/rome-1.jpg";
+import romeImage from "./images/rome-1.jpg.webp";
 
 export default function WhoIWorkWith({ backgroundColor, cta }) {
   const { t } = useTranslation();
