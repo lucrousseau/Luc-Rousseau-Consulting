@@ -7,7 +7,8 @@ import {
   homeCtaRowStyle,
   homeIntroRowStyle,
   homeIntroSubRowStyle,
-} from "../../commons/homePageRowSpacing";
+} from "../../commons/pageRowSpacing";
+import { getScheduleCta } from "../../commons/scheduleCta";
 import Table from "../../components/Table";
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
@@ -23,6 +24,7 @@ const TABLE_COLUMN_KEYS = [
 
 export default function ProductEngineerDefinition({ cta }) {
   const { t } = useTranslation(["product-engineer", "common"]);
+  const scheduleCta = getScheduleCta(t);
   const table = t("product-engineer:table", { returnObjects: true });
 
   const hasTable = table?.headers && table?.rows?.length > 0;
@@ -99,7 +101,7 @@ export default function ProductEngineerDefinition({ cta }) {
                 <p>
                   <Button
                     variant="primary"
-                    href={cta?.link ?? t("common:schedule-me")}
+                    href={cta?.link ?? scheduleCta.link}
                     label={cta?.label ?? t("product-engineer:footer-cta-label")}
                     trackSection="product-engineer"
                   />

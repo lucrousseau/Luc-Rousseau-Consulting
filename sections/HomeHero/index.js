@@ -6,12 +6,14 @@ import Picture from "../../components/Picture";
 import Buy from "../../components/Buy";
 import Accordion from "../../components/Accordion";
 import Container from "../../components/Layout/Container";
-import { homeCtaRowStyle } from "../../commons/homePageRowSpacing";
+import { homeCtaRowStyle } from "../../commons/pageRowSpacing";
+import { getScheduleCta } from "../../commons/scheduleCta";
 
 import lucProfilPhoto from "./images/luc-profil-photo.jpg";
 
 export default function HomeHero() {
   const { t } = useTranslation();
+  const scheduleCta = getScheduleCta(t);
 
   const items = t("home-hero:items", { returnObjects: true }).map((item) => {
     return {
@@ -95,7 +97,7 @@ export default function HomeHero() {
                             price={null}
                             legend={t("home-hero:buy:legend")}
                             prefix={parse(t("home-hero:buy:prefix"))}
-                            label={t("common:schedule-me-label")}
+                            label={scheduleCta.label}
                             className={"biggest"}
                             variant={"primary"}
                             size={null}

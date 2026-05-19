@@ -2,6 +2,7 @@ import classNames from "classnames";
 import { useTranslation } from "next-i18next";
 
 import { alignments } from "../../commons/alignments";
+import { getScheduleCta } from "../../commons/scheduleCta";
 
 import Button from "../Button";
 import ContactAlternates from "../ContactAlternates";
@@ -17,6 +18,7 @@ export default function Buy({
   ...props
 }) {
   const { t, i18n } = useTranslation();
+  const scheduleCta = getScheduleCta(t);
   const alignmentsClass = alignments({ props });
   const showPrice = price != null && typeof price === "number" && price > 0;
   const priceFormatted = showPrice
@@ -40,7 +42,7 @@ export default function Buy({
         )}
       </span>
       <Button
-        href={t("common:schedule-me")}
+        href={scheduleCta.link}
         size={size}
         variant={variant}
         label={label}

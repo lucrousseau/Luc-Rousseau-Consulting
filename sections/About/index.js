@@ -3,12 +3,14 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
-import { homeIntroRowStyle } from "../../commons/homePageRowSpacing";
+import { homeIntroRowStyle } from "../../commons/pageRowSpacing";
+import { getScheduleCta } from "../../commons/scheduleCta";
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
 
 export default function About({ cta }) {
   const { t } = useTranslation();
+  const scheduleCta = getScheduleCta(t);
 
   return (
     <Container id={t("about:anchor")} className="section-about" align={"center"} halign={"center"}>
@@ -38,8 +40,8 @@ export default function About({ cta }) {
                 <p>
                   <Button
                     variant="primary"
-                    href={cta?.link ?? t("common:schedule-me")}
-                    label={cta?.label ?? t("common:schedule-me-label")}
+                    href={cta?.link ?? scheduleCta.link}
+                    label={cta?.label ?? scheduleCta.label}
                     trackSection="about"
                   />
                 </p>

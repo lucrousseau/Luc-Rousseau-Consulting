@@ -7,13 +7,15 @@ import {
   homeBlockRowStyle,
   homeIntroRowStyle,
   homePreCtaContentRowStyle,
-} from "../../commons/homePageRowSpacing";
+} from "../../commons/pageRowSpacing";
+import { getScheduleCta } from "../../commons/scheduleCta";
 import Product from "../../components/Product";
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
 
 export default function Engagement({ cta }) {
   const { t } = useTranslation();
+  const scheduleCta = getScheduleCta(t);
 
   const termsIncluded = t("engagement:termsIncluded", { returnObjects: true });
   const termsExcluded = t("engagement:termsExcluded", { returnObjects: true });
@@ -124,7 +126,7 @@ export default function Engagement({ cta }) {
                 <p>
                   <Button
                     variant={"primary"}
-                    href={cta?.link ?? t("common:schedule-me")}
+                    href={cta?.link ?? scheduleCta.link}
                     label={cta?.label ?? t("engagement:ctaLabel")}
                     trackSection={"engagement"}
                   />

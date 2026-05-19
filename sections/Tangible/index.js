@@ -3,7 +3,8 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
-import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/homePageRowSpacing";
+import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/pageRowSpacing";
+import { getScheduleCta } from "../../commons/scheduleCta";
 
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
@@ -19,6 +20,7 @@ const PROJECT_LOGOS = [milesopediaLogo, nestoLogo, comparemortgageLogo, nestogro
 
 export default function Tangible({ cta }) {
   const { t } = useTranslation();
+  const scheduleCta = getScheduleCta(t);
 
   const items = t("tangible:items", { returnObjects: true }).map((item, index) => {
     const content = (
@@ -93,7 +95,7 @@ export default function Tangible({ cta }) {
                   <Button
                     variant={"primary"}
                     label={cta?.label ?? t("tangible:footer-cta-label")}
-                    href={cta?.link ?? t("common:schedule-me")}
+                    href={cta?.link ?? scheduleCta.link}
                     trackSection={"tangible"}
                   />
                 </p>

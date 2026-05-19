@@ -7,13 +7,15 @@ import {
   homeIntroRowStyle,
   homePreCtaContentRowStyle,
   homeStackContinueStyle,
-} from "../../commons/homePageRowSpacing";
+} from "../../commons/pageRowSpacing";
+import { getScheduleCta } from "../../commons/scheduleCta";
 import Product from "../../components/Product";
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
 
 export default function AIResponsible({ cta }) {
   const { t } = useTranslation();
+  const scheduleCta = getScheduleCta(t);
 
   const columns = t("ai-responsible:items", { returnObjects: true }).map((item) => ({
     cols: { col: 4, lg: 10, sm: 12 },
@@ -76,8 +78,8 @@ export default function AIResponsible({ cta }) {
                 <p>
                   <Button
                     variant={"primary"}
-                    href={cta?.link ?? t("common:schedule-me")}
-                    label={cta?.label ?? t("common:schedule-me-label")}
+                    href={cta?.link ?? scheduleCta.link}
+                    label={cta?.label ?? scheduleCta.label}
                     trackSection={"ai-responsible"}
                   />
                 </p>

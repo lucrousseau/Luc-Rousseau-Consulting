@@ -3,7 +3,8 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
-import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/homePageRowSpacing";
+import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/pageRowSpacing";
+import { getScheduleCta } from "../../commons/scheduleCta";
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
 
@@ -11,6 +12,7 @@ import romeImage from "./images/rome-1.jpg";
 
 export default function WhoIWorkWith({ backgroundColor, cta }) {
   const { t } = useTranslation();
+  const scheduleCta = getScheduleCta(t);
 
   return (
     <Container
@@ -65,7 +67,7 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
                           <p>
                             <Button
                               variant={"primary"}
-                              href={cta?.link ?? t("common:schedule-me")}
+                              href={cta?.link ?? scheduleCta.link}
                               label={cta?.label ?? t("who-i-work-with:footer-cta-label")}
                               trackSection={"who-i-work-with"}
                             />

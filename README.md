@@ -57,10 +57,13 @@ Après `npm install`, le script `prepare` installe les hooks Husky automatiqueme
 ## Structure
 
 - `pages/` — Routes Next.js (Pages Router)
-- `components/` — Composants réutilisables
-- `sections/` — Blocs de page (Header, Footer, Hero, etc.)
+- `components/` — UI réutilisable (Button, layout, Accordion, etc.) ; pas de texte métier ni clés i18n propres à une page
+- `sections/` — Blocs de page (Header, Hero, Engagement…) ; composition + `useTranslation` pour le contenu
+- `commons/` — Helpers partagés sans UI (`alignments`, `pageRowSpacing`, `scheduleCta`)
 - `styles/` — SCSS global (variables, base, layout)
 - `public/locales/` — Fichiers de traduction (next-i18next)
+
+Plan de refactor DRY : [`docs/DRY-ARCHITECTURE-PLAN.md`](docs/DRY-ARCHITECTURE-PLAN.md).
 
 ## Docker
 
