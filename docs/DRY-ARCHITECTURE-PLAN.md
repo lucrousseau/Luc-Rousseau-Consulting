@@ -261,15 +261,15 @@ Cocher chaque section une fois migrée vers `SectionIntro` / `SectionCta` / `Pro
 
 | #   | Tâche                                                                                                        | Statut |
 | --- | ------------------------------------------------------------------------------------------------------------ | ------ |
-| 6.1 | Tests : `getScheduleCta`, `SectionIntro`, `SectionCta` (fallback href)                                       | [ ]    |
-| 6.2 | Test léger `ProductGrid` (1 item)                                                                            | [ ]    |
-| 6.3 | Note CONTRIBUTING ou commentaire : pas de `Button` + `ContactAlternates` adjacents hors `SectionCta` / `Buy` | [ ]    |
-| 6.4 | `npm run validate` vert sur toute la codebase                                                                | [ ]    |
+| 6.1 | Tests : `getScheduleCta`, `SectionIntro`, `SectionCta` (fallback href)                                       | [x]    |
+| 6.2 | Test léger `ProductGrid` (1 item)                                                                            | [x]    |
+| 6.3 | Note CONTRIBUTING ou commentaire : pas de `Button` + `ContactAlternates` adjacents hors `SectionCta` / `Buy` | [x]    |
+| 6.4 | `npm run validate` vert sur toute la codebase                                                                | [x]    |
 
 **Critères d’acceptation phase 6**
 
-- [ ] Tests ajoutés passent en CI / pre-push
-- [ ] Convention documentée
+- [x] Tests ajoutés passent en CI / pre-push
+- [x] Convention documentée
 
 ---
 
@@ -303,19 +303,20 @@ Cocher chaque section une fois migrée vers `SectionIntro` / `SectionCta` / `Pro
 - [x] `pages/index.js` minimal (pas 8× le même objet `cta`)
 - [x] Wrappers cohérents : `Container` partout
 - [x] Sections : props documentées, réutilisables sur une 2e route
-- [ ] Tests sur helpers + composants de composition
+- [x] Tests sur helpers + composants de composition
 - [x] README à jour
 
 ---
 
 ## Journal de progression (optionnel)
 
-| Date       | Phase / PR | Commit / PR #                | Notes                                             |
-| ---------- | ---------- | ---------------------------- | ------------------------------------------------- |
-| 2026-05-19 | Phase 2    | PR #19                       | pageRowSpacing rename, scheduleCta helper + tests |
-| 2026-05-19 | Phase 3    | PR #20                       | SectionIntro, SectionCta, ProductGrid             |
-| 2026-05-19 | Phase 4    | PR #21                       | Buy → SectionCta, hero documented                 |
-| 2026-05-19 | Phase 5    | `cursor/phase-5-section-api` | sectionTypes, Header, pages/services.js           |
+| Date       | Phase / PR | Commit / PR #                     | Notes                                             |
+| ---------- | ---------- | --------------------------------- | ------------------------------------------------- |
+| 2026-05-19 | Phase 2    | PR #19                            | pageRowSpacing rename, scheduleCta helper + tests |
+| 2026-05-19 | Phase 3    | PR #20                            | SectionIntro, SectionCta, ProductGrid             |
+| 2026-05-19 | Phase 4    | PR #21                            | Buy → SectionCta, hero documented                 |
+| 2026-05-19 | Phase 5    | PR #22                            | sectionTypes, Header, pages/services.js           |
+| 2026-05-19 | Phase 6    | `cursor/phase-6-tests-guardrails` | RTL tests + CONTRIBUTING.md                       |
 
 ---
 
