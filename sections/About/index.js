@@ -8,6 +8,10 @@ import SectionCta from "../../components/SectionCta";
 import { homeIntroRowStyle } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
 
+/**
+ * About section. Requires i18n namespaces: `about`, `common`.
+ * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
+ */
 export default function About({ cta }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);

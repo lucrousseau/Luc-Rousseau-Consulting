@@ -22,6 +22,10 @@ const TABLE_COLUMN_KEYS = [
   "productEngineer",
 ];
 
+/**
+ * Product engineer definition section. Requires i18n: `product-engineer`, `common`.
+ * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
+ */
 export default function ProductEngineerDefinition({ cta }) {
   const { t } = useTranslation(["product-engineer", "common"]);
   const scheduleCta = getScheduleCta(t);

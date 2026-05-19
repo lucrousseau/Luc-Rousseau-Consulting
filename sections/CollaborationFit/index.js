@@ -8,6 +8,10 @@ import ProductGrid from "../../components/ProductGrid";
 import { homeIntroRowStyle, homePreCtaContentRowStyle } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
 
+/**
+ * Collaboration fit section. Requires i18n: `collaboration-fit`, `common`.
+ * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
+ */
 export default function CollaborationFit({ cta }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);

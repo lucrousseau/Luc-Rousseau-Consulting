@@ -10,6 +10,10 @@ import { getScheduleCta } from "../../commons/scheduleCta";
 
 import romeImage from "./images/rome-1.jpg";
 
+/**
+ * Who I work with section. Requires i18n: `who-i-work-with`, `common`.
+ * @param {import('../../commons/sectionTypes').SectionWithBackgroundProps} props
+ */
 export default function WhoIWorkWith({ backgroundColor, cta }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);

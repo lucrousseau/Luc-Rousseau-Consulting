@@ -65,6 +65,24 @@ Après `npm install`, le script `prepare` installe les hooks Husky automatiqueme
 
 Plan de refactor DRY : [`docs/DRY-ARCHITECTURE-PLAN.md`](docs/DRY-ARCHITECTURE-PLAN.md).
 
+### Réutiliser une section sur une autre page
+
+Les sections acceptent des props documentées dans `commons/sectionTypes.js` (JSDoc). Exemple : [`pages/services.js`](pages/services.js) affiche `About` avec seulement les namespaces `about` et `common` :
+
+```js
+import About from "../sections/About";
+
+export default function ServicesPage() {
+  return <About />;
+}
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["about", "common"])),
+  },
+});
+```
+
 ## Docker
 
 ```bash

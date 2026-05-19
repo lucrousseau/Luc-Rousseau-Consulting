@@ -13,6 +13,10 @@ import {
 } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
 
+/**
+ * AI Responsible section. Requires i18n: `ai-responsible`, `common`.
+ * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
+ */
 export default function AIResponsible({ cta }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);

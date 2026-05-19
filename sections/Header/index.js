@@ -12,8 +12,20 @@ import SocialLinks from "../../components/SocialLinks";
 import LanguageSwitcher from "../../components/LanguageSwitcher";
 import Button from "../../components/Button";
 
-export default function Header({ ...props }) {
-  const { navigation = [], cta } = props;
+/**
+ * Site header (logo, optional nav, social, language, contact CTA).
+ *
+ * @param {object} props
+ * @param {boolean} [props.showNavigation=true] - Render main navigation
+ * @param {boolean} [props.showCta=true] - Render contact email button
+ * @param {Array} [props.navigation=[]] - Nav items when showNavigation is true
+ */
+export default function Header({
+  showNavigation = true,
+  showCta = true,
+  navigation = [],
+  ...props
+}) {
   const { t, i18n } = useTranslation();
   const lang = i18n.language === "en" ? "fr" : "en";
   const alignmentsClass = alignments({ props });
@@ -44,7 +56,7 @@ export default function Header({ ...props }) {
                                 valign={"middle"}
                                 halign={"right"}
                                 columns={[
-                                  navigation !== false && {
+                                  showNavigation && {
                                     className: "component__header__nav",
                                     content: <Navigation navigation={navigation} />,
                                   },
@@ -71,7 +83,7 @@ export default function Header({ ...props }) {
                                               />
                                             ),
                                           },
-                                          cta !== false && {
+                                          showCta && {
                                             pull: "right",
                                             cols: { xs: 0 },
                                             content: (

@@ -9,6 +9,10 @@ import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/pageRowSpacing
 import { getScheduleCta } from "../../commons/scheduleCta";
 import Tags from "../../components/Tags";
 
+/**
+ * Technologies section. Requires i18n: `technologies`, `common`.
+ * @param {import('../../commons/sectionTypes').SectionWithBackgroundProps} props
+ */
 export default function Technologies({ backgroundColor, cta }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
