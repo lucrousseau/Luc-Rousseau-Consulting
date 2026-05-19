@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import parse from "html-react-parser";
 
@@ -17,6 +18,8 @@ import romeImage from "./images/rome-1.jpg";
 export default function WhoIWorkWith({ backgroundColor, cta }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
+  const guideLinks = t("who-i-work-with:guideLinks", { returnObjects: true });
+  const guideLinkList = Array.isArray(guideLinks) ? guideLinks : [];
 
   return (
     <Container
@@ -44,6 +47,21 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
             cols: { col: 10, sm: 12 },
             content: (
               <>
+                {guideLinkList.length > 0 && (
+                  <div className="who-i-work-with__guides align--left">
+                    <p className="big">{t("common:guides-home-teaser")}</p>
+                    <ul className="who-i-work-with__guide-links">
+                      {guideLinkList.map((link) => (
+                        <li key={link.slug}>
+                          <Link href={`/guides/${link.slug}`}>{link.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <p>
+                      <Link href="/guides">{t("who-i-work-with:guides-index-label")}</Link>
+                    </p>
+                  </div>
+                )}
                 <ul className="align--left who-i-work-with__list">
                   {t("who-i-work-with:items", { returnObjects: true }).map((item) => (
                     <li key={item.title}>

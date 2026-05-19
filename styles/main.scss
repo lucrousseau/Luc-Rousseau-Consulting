@@ -42,6 +42,8 @@
 @use "../sections/ProductEngineerDefinition/style" as product-engineer;
 @use "../sections/CollaborationFit/style" as collaboration-fit;
 @use "../sections/HomeFaq/style" as home-faq;
+@use "../sections/guides/style" as guides;
 
 // Pages
 @use "../pages/home" as home;
+@use "../pages/guides" as guides-page;

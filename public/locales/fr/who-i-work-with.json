@@ -31,5 +31,16 @@
       "content": "Vous voulez une voix technique responsable, <strong>de la stratégie à la livraison</strong>."
     }
   ],
-  "footer-cta-label": "Planifier un appel"
+  "footer-cta-label": "Planifier un appel",
+  "guideLinks": [
+    {
+      "slug": "premier-dev-fractionnel",
+      "label": "Après une levée : avant le premier dev à temps plein →"
+    },
+    {
+      "slug": "dev-unique-backup",
+      "label": "Un seul dev porte tout le technique →"
+    }
+  ],
+  "guides-index-label": "Tous les guides"
 }
