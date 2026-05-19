@@ -4,14 +4,12 @@ import Script from "next/script";
 
 import { appWithTranslation } from "next-i18next";
 
-import LocalePreferenceEffect from "../components/LocalePreferenceEffect";
 import "../styles/main.scss";
 import { GTM_CONTAINER_ID, isGtmEnabled } from "../utils/gtm";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <LocalePreferenceEffect />
       {isGtmEnabled() ? (
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

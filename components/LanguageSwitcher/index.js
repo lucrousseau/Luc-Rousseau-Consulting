@@ -1,13 +1,11 @@
 import classNames from "classnames";
 import { alignments } from "../../commons/alignments";
 import Row from "../Layout/Row";
-import { setLocalePreferenceClient } from "../../utils/setLocalePreferenceClient";
 
 export default function LanguageSwitcher({ current = "fr", ...props }) {
   const alignmentsClass = alignments({ props });
 
   /** Default locale is `fr` (see `next-i18next.config.js`): FR at `/`, EN at `/en`. */
-  /** `setLocalePreferenceClient` writes localStorage and mirrors a cookie for Edge middleware. */
   const languages = {
     en: { label: "English", href: "/en" },
     fr: { label: "French", href: "/" },
@@ -31,11 +29,7 @@ export default function LanguageSwitcher({ current = "fr", ...props }) {
               "component__language-switcher__lang--current"
             ),
             content: (
-              <a
-                href={currentLanguage.href}
-                aria-label={currentLanguage.label}
-                onClick={() => setLocalePreferenceClient(current)}
-              >
+              <a href={currentLanguage.href} aria-label={currentLanguage.label}>
                 {current.toUpperCase()}
               </a>
             ),
