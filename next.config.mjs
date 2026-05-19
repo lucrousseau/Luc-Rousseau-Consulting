@@ -10,9 +10,22 @@ const withBundleAnalyzer = (await import("@next/bundle-analyzer")).default({
   enabled: process.env.ANALYZE === "true",
 });
 
+const nextPolyfillModule = path.join(
+  __dirname,
+  "node_modules/next/dist/build/polyfills/polyfill-module.js"
+);
+
 const nextConfig = {
   outputFileTracingRoot: __dirname,
   serverExternalPackages: ["image-size"],
+  webpack(config) {
+    // Next bundles baseline polyfills into `main` for all browsers; we target modern only.
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      [nextPolyfillModule]: path.join(__dirname, "lib/empty-polyfill.js"),
+    };
+    return config;
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [384, 640, 750, 828, 1080, 1200],

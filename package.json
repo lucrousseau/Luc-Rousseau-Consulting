@@ -27,7 +27,6 @@
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "classnames": "^2.5.1",
-    "core-js": "^3.37.1",
     "html-react-parser": "^5.1.10",
     "i18next": "^23.11.5",
     "image-size": "^1.1.1",
@@ -72,6 +71,12 @@
   "engines": {
     "node": "22.x"
   },
+  "browserslist": [
+    "chrome >= 111",
+    "edge >= 111",
+    "firefox >= 111",
+    "safari >= 16.4"
+  ],
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
