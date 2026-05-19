@@ -2,8 +2,8 @@
 
 // AI Responsible: flagship section with distinct background and stronger hierarchy
 .section-ai-responsible {
-  // Reuse page-home section rhythm (Container inside gets same padding via .page-home > .container)
-  .container {
+  // Section root is Container (tag=section): padding tokens apply on the same element
+  &.container {
     --set-container-padding-top: 48;
     --set-container-padding-bottom: 48;
 

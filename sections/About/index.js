@@ -3,6 +3,7 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import { homeIntroRowStyle } from "../../commons/homePageRowSpacing";
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
 
@@ -13,6 +14,7 @@ export default function About({ cta }) {
     <Container id={t("about:anchor")} className="section-about" align={"center"} halign={"center"}>
       <Row
         halign={"center"}
+        style={homeIntroRowStyle}
         columns={[
           {
             cols: { col: 10, sm: 12 },
@@ -21,18 +23,28 @@ export default function About({ cta }) {
                 <p className="section__badge">{t("about:badge")}</p>
                 <h2 className="underline underline--center">{t("about:title")}</h2>
                 <div className="big">{parse(t("about:content"))}</div>
-                <div className="about__cta align align--center">
-                  <p>
-                    <Button
-                      variant="primary"
-                      href={cta?.link ?? t("common:schedule-me")}
-                      label={cta?.label ?? t("common:schedule-me-label")}
-                      trackSection="about"
-                    />
-                  </p>
-                  <ContactAlternates trackSection="about" />
-                </div>
               </>
+            ),
+          },
+        ]}
+      />
+      <Row
+        halign={"center"}
+        columns={[
+          {
+            cols: { col: 10, sm: 12 },
+            content: (
+              <div className="about__cta align align--center">
+                <p>
+                  <Button
+                    variant="primary"
+                    href={cta?.link ?? t("common:schedule-me")}
+                    label={cta?.label ?? t("common:schedule-me-label")}
+                    trackSection="about"
+                  />
+                </p>
+                <ContactAlternates trackSection="about" />
+              </div>
             ),
           },
         ]}

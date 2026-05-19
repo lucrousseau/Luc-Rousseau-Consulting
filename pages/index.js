@@ -45,60 +45,20 @@ export default function Home() {
       </Container>
       <main className="page-home">
         <HomeHero />
-        <ProductEngineerDefinition
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
-        <AIResponsible
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
+        <ProductEngineerDefinition />
+        <AIResponsible />
         <Engagement
           cta={{
             label: t("engagement:ctaLabel"),
             link: t("common:schedule-me"),
           }}
         />
-        <CollaborationFit
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
-        <WhoIWorkWith
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
-        <Technologies
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
-        <Tangible
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
-        <About
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
-        <HomeFaq
-          cta={{
-            label: t("common:schedule-me-label"),
-            link: t("common:schedule-me"),
-          }}
-        />
+        <CollaborationFit />
+        <WhoIWorkWith />
+        <Technologies />
+        <Tangible />
+        <About />
+        <HomeFaq />
       </main>
       <Container
         tag={"footer"}
