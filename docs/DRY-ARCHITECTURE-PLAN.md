@@ -210,17 +210,17 @@ Cocher chaque section une fois migrée vers `SectionIntro` / `SectionCta` / `Pro
 **But :** un seul chemin pour « réserver un appel ».  
 **PR suggérée :** PR5
 
-| #   | Tâche                                                                                   | Statut |
-| --- | --------------------------------------------------------------------------------------- | ------ |
-| 4.1 | `Buy` : `href` via prop ou `getScheduleCta` (plus de hardcode seul dans le composant)   | [ ]    |
-| 4.2 | Décision documentée : `Buy` réutilise `SectionCta` ou partage uniquement la logique CTA | [ ]    |
-| 4.3 | `HomeHero` : exception documentée (h1/h2, pas `SectionIntro`)                           | [ ]    |
+| #   | Tâche                                                                                   | Statut                                        |
+| --- | --------------------------------------------------------------------------------------- | --------------------------------------------- |
+| 4.1 | `Buy` : `href` via prop ou `getScheduleCta` (plus de hardcode seul dans le composant)   | [x]                                           |
+| 4.2 | Décision documentée : `Buy` réutilise `SectionCta` ou partage uniquement la logique CTA | [x] _(réutilise `SectionCta` en mode `bare`)_ |
+| 4.3 | `HomeHero` : exception documentée (h1/h2, pas `SectionIntro`)                           | [x]                                           |
 
 **Critères d’acceptation phase 4**
 
-- [ ] URL Calendly définie de façon cohérente (`common` + helper)
-- [ ] Tracking `trackSection` cohérent hero vs sections
-- [ ] `npm run validate` vert
+- [x] URL Calendly définie de façon cohérente (`common` + helper)
+- [x] Tracking `trackSection` cohérent hero vs sections
+- [x] `npm run validate` vert
 
 ---
 
@@ -310,9 +310,11 @@ Cocher chaque section une fois migrée vers `SectionIntro` / `SectionCta` / `Pro
 
 ## Journal de progression (optionnel)
 
-| Date       | Phase / PR | Commit / PR #            | Notes                                             |
-| ---------- | ---------- | ------------------------ | ------------------------------------------------- |
-| 2026-05-19 | Phase 2    | `cursor/phase-2-commons` | pageRowSpacing rename, scheduleCta helper + tests |
+| Date       | Phase / PR | Commit / PR #             | Notes                                             |
+| ---------- | ---------- | ------------------------- | ------------------------------------------------- |
+| 2026-05-19 | Phase 2    | PR #19                    | pageRowSpacing rename, scheduleCta helper + tests |
+| 2026-05-19 | Phase 3    | PR #20                    | SectionIntro, SectionCta, ProductGrid             |
+| 2026-05-19 | Phase 4    | `cursor/phase-4-buy-hero` | Buy → SectionCta, hero documented                 |
 
 ---
 
