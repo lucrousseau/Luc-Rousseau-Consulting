@@ -33,7 +33,7 @@ npm install
 | `npm run test:watch`   | Tests en mode watch                                           |
 | `npm run validate`     | Lint + format:check + stylelint:check + test (tout le projet) |
 
-Le script `prebuild` convertit les images dans `public/images` en WebP (via Sharp).
+Les images sont servies au format d’origine (JPEG/PNG) ; Next.js et Vercel (`/_next/image`) gèrent WebP/AVIF à la volée.
 
 ### Audit de sécurité
 

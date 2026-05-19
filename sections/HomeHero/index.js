@@ -9,7 +9,7 @@ import Accordion from "../../components/Accordion";
 import Container from "../../components/Layout/Container";
 import { homeCtaRowStyle } from "../../commons/homePageRowSpacing";
 
-import lucProfilPhoto from "./images/luc-profil-photo.jpg.webp";
+import lucProfilPhoto from "./images/luc-profil-photo.jpg";
 
 export default function HomeHero() {
   const { t } = useTranslation();

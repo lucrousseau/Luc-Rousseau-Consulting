@@ -17,7 +17,6 @@
     "audit": "npm audit",
     "audit:fix": "npm audit fix",
     "fix:security": "npm audit fix && npm run lint:fix",
-    "prebuild": "node scripts/convert-images.js",
     "analyze": "ANALYZE=true next build",
     "test": "jest",
     "test:watch": "jest --watch",
