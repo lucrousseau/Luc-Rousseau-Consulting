@@ -58,26 +58,8 @@ const nextConfig = {
     ];
   },
   async redirects() {
-    const rules = [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.lucrousseau.com" }],
-        destination: "https://lucrousseau.com/:path*",
-        permanent: true,
-      },
-      {
-        source: "/fr",
-        destination: "/",
-        permanent: true,
-        locale: false,
-      },
-      {
-        source: "/fr/",
-        destination: "/",
-        permanent: true,
-        locale: false,
-      },
-    ];
+    /** www → apex is handled in vercel.json (edge), not here — avoids i18n redirect loops. */
+    const rules = [];
 
     const zinesBase = "https://lucrousseau.ca/zines";
     const zineMappings = [
