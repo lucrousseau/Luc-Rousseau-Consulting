@@ -42,7 +42,7 @@ export default function Home() {
           "--xs-padding-bottom": "0rem",
         }}
       >
-        <Header navigation={false} cta={false} />
+        <Header showNavigation={false} showCta={false} />
       </Container>
       <main className="page-home">
         <HomeHero />

@@ -6,6 +6,7 @@ import { useTranslation } from "next-i18next";
 
 import Row from "../../components/Layout/Row";
 
+/** Site footer. Requires i18n: `common`. */
 export default function Footer({ ...props }) {
   const { t } = useTranslation();
   const alignmentsClass = alignments({ props });

@@ -231,9 +231,9 @@ Cocher chaque section une fois migrée vers `SectionIntro` / `SectionCta` / `Pro
 
 | #   | Tâche                                                                                                   | Statut |
 | --- | ------------------------------------------------------------------------------------------------------- | ------ |
-| 5.1 | JSDoc en tête de chaque section : `cta`, `introRowStyle`, `ctaRowStyle`, `className`, `backgroundColor` | [ ]    |
-| 5.2 | `Header` : props explicites `showNavigation`, `showCta` (migration depuis `false`)                      | [ ]    |
-| 5.3 | Preuve de réutilisabilité : page stub `pages/services.js` **ou** exemple dans README                    | [ ]    |
+| 5.1 | JSDoc en tête de chaque section : `cta`, `introRowStyle`, `ctaRowStyle`, `className`, `backgroundColor` | [x]    |
+| 5.2 | `Header` : props explicites `showNavigation`, `showCta` (migration depuis `false`)                      | [x]    |
+| 5.3 | Preuve de réutilisabilité : page stub `pages/services.js` **ou** exemple dans README                    | [x]    |
 
 **Props standard cibles (référence)**
 
@@ -249,8 +249,8 @@ Cocher chaque section une fois migrée vers `SectionIntro` / `SectionCta` / `Pro
 
 **Critères d’acceptation phase 5**
 
-- [ ] Au moins une section utilisable sur une 2e route sans modifier son fichier
-- [ ] `getStaticProps` de la nouvelle page ne charge que les namespaces nécessaires
+- [x] Au moins une section utilisable sur une 2e route sans modifier son fichier
+- [x] `getStaticProps` de la nouvelle page ne charge que les namespaces nécessaires
 
 ---
 
@@ -300,9 +300,9 @@ Cocher chaque section une fois migrée vers `SectionIntro` / `SectionCta` / `Pro
 
 - [x] Composants de composition : `SectionIntro`, `SectionCta`, `ProductGrid`
 - [x] `commons/pageRowSpacing` + `commons/scheduleCta`
-- [ ] `pages/index.js` minimal (pas 8× le même objet `cta`)
-- [ ] Wrappers cohérents : `Container` partout
-- [ ] Sections : props documentées, réutilisables sur une 2e route
+- [x] `pages/index.js` minimal (pas 8× le même objet `cta`)
+- [x] Wrappers cohérents : `Container` partout
+- [x] Sections : props documentées, réutilisables sur une 2e route
 - [ ] Tests sur helpers + composants de composition
 - [x] README à jour
 
@@ -310,11 +310,12 @@ Cocher chaque section une fois migrée vers `SectionIntro` / `SectionCta` / `Pro
 
 ## Journal de progression (optionnel)
 
-| Date       | Phase / PR | Commit / PR #             | Notes                                             |
-| ---------- | ---------- | ------------------------- | ------------------------------------------------- |
-| 2026-05-19 | Phase 2    | PR #19                    | pageRowSpacing rename, scheduleCta helper + tests |
-| 2026-05-19 | Phase 3    | PR #20                    | SectionIntro, SectionCta, ProductGrid             |
-| 2026-05-19 | Phase 4    | `cursor/phase-4-buy-hero` | Buy → SectionCta, hero documented                 |
+| Date       | Phase / PR | Commit / PR #                | Notes                                             |
+| ---------- | ---------- | ---------------------------- | ------------------------------------------------- |
+| 2026-05-19 | Phase 2    | PR #19                       | pageRowSpacing rename, scheduleCta helper + tests |
+| 2026-05-19 | Phase 3    | PR #20                       | SectionIntro, SectionCta, ProductGrid             |
+| 2026-05-19 | Phase 4    | PR #21                       | Buy → SectionCta, hero documented                 |
+| 2026-05-19 | Phase 5    | `cursor/phase-5-section-api` | sectionTypes, Header, pages/services.js           |
 
 ---
 

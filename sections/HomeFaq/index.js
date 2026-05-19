@@ -9,6 +9,10 @@ import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/pageRowSpacing
 import { getScheduleCta } from "../../commons/scheduleCta";
 import Accordion from "../../components/Accordion";
 
+/**
+ * FAQ section. Requires i18n: `faq`, `common`.
+ * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
+ */
 export default function HomeFaq({ cta }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);

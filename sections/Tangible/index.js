@@ -18,6 +18,10 @@ import nestogroupLogo from "./images/nestogroup.png";
 /** Order matches `tangible.json` items (Milesopedia → Nesto → Compare → BrightWize). */
 const PROJECT_LOGOS = [milesopediaLogo, nestoLogo, comparemortgageLogo, nestogroupLogo];
 
+/**
+ * Tangible work section. Requires i18n: `tangible`, `common`.
+ * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
+ */
 export default function Tangible({ cta }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);

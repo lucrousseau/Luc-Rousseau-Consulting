@@ -11,8 +11,8 @@ import { homeCtaRowStyle } from "../../commons/pageRowSpacing";
 import lucProfilPhoto from "./images/luc-profil-photo.jpg";
 
 /**
- * Home hero: h1/h2 + split layout — intentionally not using SectionIntro (phase 4).
- * Schedule CTA goes through Buy → SectionCta → getScheduleCta.
+ * Home hero (h1/h2, accordion, Buy). Requires i18n: `home-hero`, `common`.
+ * Intentionally not using SectionIntro; CTA via Buy → SectionCta.
  */
 export default function HomeHero() {
   const { t } = useTranslation();

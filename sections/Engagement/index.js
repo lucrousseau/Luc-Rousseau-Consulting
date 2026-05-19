@@ -13,6 +13,10 @@ import {
 } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
 
+/**
+ * Engagement models section. Requires i18n: `engagement`, `common`.
+ * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
+ */
 export default function Engagement({ cta }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
