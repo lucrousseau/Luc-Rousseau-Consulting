@@ -9,7 +9,7 @@ import SectionCta from "../SectionCta";
 /**
  * Price/legend block with a schedule CTA. Reuses {@link SectionCta} for Button +
  * ContactAlternates (same Calendly path as sections); keeps its own layout because
- * of inline pricing copy (DRY-ARCHITECTURE-PLAN phase 4).
+ * of inline pricing copy alongside the schedule CTA.
  */
 export default function Buy({
   className,
