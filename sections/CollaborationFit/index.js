@@ -3,13 +3,15 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
-import { homeIntroRowStyle, homePreCtaContentRowStyle } from "../../commons/homePageRowSpacing";
+import { homeIntroRowStyle, homePreCtaContentRowStyle } from "../../commons/pageRowSpacing";
+import { getScheduleCta } from "../../commons/scheduleCta";
 import Product from "../../components/Product";
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
 
 export default function CollaborationFit({ cta }) {
   const { t } = useTranslation();
+  const scheduleCta = getScheduleCta(t);
 
   const columns = t("collaboration-fit:items", { returnObjects: true }).map((item) => ({
     cols: { col: 4, lg: 10, sm: 12 },
@@ -60,7 +62,7 @@ export default function CollaborationFit({ cta }) {
                 <p>
                   <Button
                     variant={"primary"}
-                    href={cta?.link ?? t("common:schedule-me")}
+                    href={cta?.link ?? scheduleCta.link}
                     label={cta?.label ?? t("collaboration-fit:footer-cta-label")}
                     trackSection={"collaboration-fit"}
                   />

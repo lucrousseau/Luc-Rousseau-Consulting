@@ -3,13 +3,15 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
-import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/homePageRowSpacing";
+import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/pageRowSpacing";
+import { getScheduleCta } from "../../commons/scheduleCta";
 import Accordion from "../../components/Accordion";
 import Button from "../../components/Button";
 import ContactAlternates from "../../components/ContactAlternates";
 
 export default function HomeFaq({ cta }) {
   const { t } = useTranslation();
+  const scheduleCta = getScheduleCta(t);
 
   const items = t("faq:items", { returnObjects: true }).map((item) => ({
     title: item.title,
@@ -53,8 +55,8 @@ export default function HomeFaq({ cta }) {
                 <p>
                   <Button
                     variant={"primary"}
-                    href={cta?.link ?? t("common:schedule-me")}
-                    label={cta?.label ?? t("common:schedule-me-label")}
+                    href={cta?.link ?? scheduleCta.link}
+                    label={cta?.label ?? scheduleCta.label}
                     trackSection={"faq"}
                   />
                 </p>

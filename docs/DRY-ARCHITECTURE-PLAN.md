@@ -98,9 +98,9 @@ Document de suivi pour refactoriser le site vers une structure saine, alignée s
 
 | #   | Tâche                                                                                               | Livrable                    | Statut |
 | --- | --------------------------------------------------------------------------------------------------- | --------------------------- | ------ |
-| 2.1 | Renommer `commons/homePageRowSpacing.js` → `commons/pageRowSpacing.js` et mettre à jour les imports | `commons/pageRowSpacing.js` | [ ]    |
-| 2.2 | Ajouter `commons/scheduleCta.js` : `getScheduleCta(t, overrides?)` → `{ link, label }`              | `commons/scheduleCta.js`    | [ ]    |
-| 2.3 | Mettre à jour README « Structure » (components vs sections vs commons)                              | `README.md`                 | [ ]    |
+| 2.1 | Renommer `commons/homePageRowSpacing.js` → `commons/pageRowSpacing.js` et mettre à jour les imports | `commons/pageRowSpacing.js` | [x]    |
+| 2.2 | Ajouter `commons/scheduleCta.js` : `getScheduleCta(t, overrides?)` → `{ link, label }`              | `commons/scheduleCta.js`    | [x]    |
+| 2.3 | Mettre à jour README « Structure » (components vs sections vs commons)                              | `README.md`                 | [x]    |
 
 **Structure cible `commons/`**
 
@@ -113,8 +113,8 @@ commons/
 
 **Critères d’acceptation phase 2**
 
-- [ ] Toutes les sections importent `pageRowSpacing` (plus d’import `homePageRowSpacing`)
-- [ ] Helper `scheduleCta` utilisé là où c’est pertinent (pages / sections)
+- [x] Toutes les sections importent `pageRowSpacing` (plus d’import `homePageRowSpacing`)
+- [x] Helper `scheduleCta` utilisé là où c’est pertinent (pages / sections)
 
 ---
 
@@ -299,20 +299,20 @@ Cocher chaque section une fois migrée vers `SectionIntro` / `SectionCta` / `Pro
 ## Checklist finale — structure saine
 
 - [ ] Composants de composition : `SectionIntro`, `SectionCta`, `ProductGrid`
-- [ ] `commons/pageRowSpacing` + `commons/scheduleCta`
+- [x] `commons/pageRowSpacing` + `commons/scheduleCta`
 - [ ] `pages/index.js` minimal (pas 8× le même objet `cta`)
 - [ ] Wrappers cohérents : `Container` partout
 - [ ] Sections : props documentées, réutilisables sur une 2e route
 - [ ] Tests sur helpers + composants de composition
-- [ ] README à jour
+- [x] README à jour
 
 ---
 
 ## Journal de progression (optionnel)
 
-| Date | Phase / PR | Commit / PR # | Notes |
-| ---- | ---------- | ------------- | ----- |
-|      |            |               |       |
+| Date       | Phase / PR | Commit / PR #            | Notes                                             |
+| ---------- | ---------- | ------------------------ | ------------------------------------------------- |
+| 2026-05-19 | Phase 2    | `cursor/phase-2-commons` | pageRowSpacing rename, scheduleCta helper + tests |
 
 ---
 

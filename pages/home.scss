@@ -2,7 +2,7 @@
 @use "../styles/abstracts/variables" as *;
 
 .page-home {
-  // Row vertical rhythm (see `commons/homePageRowSpacing.js`)
+  // Row vertical rhythm (see `commons/pageRowSpacing.js`)
   --page-home-row-pad: 2rem;
   --page-home-row-pad-sm: 1.5rem;
   --page-home-row-pad-inner: 1.5rem;

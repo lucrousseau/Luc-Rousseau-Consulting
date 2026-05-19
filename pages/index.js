@@ -4,6 +4,7 @@ import { useTranslation } from "next-i18next";
 
 import SEO from "../components/SEO";
 import Container from "../components/Layout/Container";
+import { getScheduleCta } from "../commons/scheduleCta";
 
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
@@ -47,12 +48,7 @@ export default function Home() {
         <HomeHero />
         <ProductEngineerDefinition />
         <AIResponsible />
-        <Engagement
-          cta={{
-            label: t("engagement:ctaLabel"),
-            link: t("common:schedule-me"),
-          }}
-        />
+        <Engagement cta={getScheduleCta(t, { label: t("engagement:ctaLabel") })} />
         <CollaborationFit />
         <WhoIWorkWith />
         <Technologies />
