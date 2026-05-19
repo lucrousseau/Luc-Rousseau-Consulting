@@ -68,10 +68,10 @@ describe("getSiteOrigin", () => {
     expect(getSiteOrigin(req)).toBe("https://lucrousseau.com");
   });
 
-  it("allows www when apex is in fallback allowlist", () => {
+  it("normalizes www host to apex origin", () => {
     delete process.env.NEXT_PUBLIC_DOMAIN;
     const req = { headers: { host: "www.lucrousseau.com" } };
-    expect(getSiteOrigin(req)).toBe("https://www.lucrousseau.com");
+    expect(getSiteOrigin(req)).toBe("https://lucrousseau.com");
   });
 
   it("allows hostname from NEXT_PUBLIC_DOMAIN on incoming requests", () => {

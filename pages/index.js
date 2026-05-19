@@ -111,7 +111,7 @@ export default function Home() {
   );
 }
 
-export const getServerSideProps = async ({ locale }) => {
+export const getStaticProps = async ({ locale }) => {
   // Dev-only: bust next-i18next server cache so locale JSON edits apply without restart.
   if (process.env.NODE_ENV === "development") {
     try {
@@ -142,5 +142,6 @@ export const getServerSideProps = async ({ locale }) => {
         "who-i-work-with",
       ])),
     },
+    revalidate: 86400,
   };
 };
