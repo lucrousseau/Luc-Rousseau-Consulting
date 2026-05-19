@@ -3,28 +3,20 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import SectionIntro from "../../components/SectionIntro";
+import SectionCta from "../../components/SectionCta";
+import ProductGrid from "../../components/ProductGrid";
 import {
   homeIntroRowStyle,
   homePreCtaContentRowStyle,
   homeStackContinueStyle,
 } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
-import Product from "../../components/Product";
-import Button from "../../components/Button";
-import ContactAlternates from "../../components/ContactAlternates";
 
 export default function AIResponsible({ cta }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
-
-  const columns = t("ai-responsible:items", { returnObjects: true }).map((item) => ({
-    cols: { col: 4, lg: 10, sm: 12 },
-    content: (
-      <Product key={item.title} title={item.title} className={"align--lg-left"}>
-        <p>{parse(item.content)}</p>
-      </Product>
-    ),
-  }));
+  const items = t("ai-responsible:items", { returnObjects: true });
 
   return (
     <Container
@@ -33,23 +25,13 @@ export default function AIResponsible({ cta }) {
       align={"center"}
       halign={"center"}
     >
-      <Row
-        halign={"center"}
-        style={homeIntroRowStyle}
-        columns={[
-          {
-            cols: { col: 11, xl: 12, sm: 12 },
-            content: (
-              <>
-                <p className="section__badge">{t("ai-responsible:badge")}</p>
-                <h2 className="underline underline--center">{t("ai-responsible:title")}</h2>
-                <p className="big">{parse(t("ai-responsible:summary"))}</p>
-              </>
-            ),
-          },
-        ]}
+      <SectionIntro
+        badge={t("ai-responsible:badge")}
+        title={t("ai-responsible:title")}
+        lede={<p className="big">{parse(t("ai-responsible:summary"))}</p>}
+        rowStyle={homeIntroRowStyle}
       />
-      <Row columns={columns} />
+      <ProductGrid items={items} renderItem={(item) => <p>{parse(item.content)}</p>} />
       <Row
         halign={"center"}
         style={homeStackContinueStyle}
@@ -62,32 +44,16 @@ export default function AIResponsible({ cta }) {
           },
         ]}
       />
-      <Row
-        halign={"center"}
-        style={homePreCtaContentRowStyle}
-        columns={[
-          {
-            cols: { col: 12, sm: 12 },
-            content: (
-              <div className="align align--center section-ai-responsible__cta">
-                {t("ai-responsible:ctaTeaser") && (
-                  <p className="section-ai-responsible__cta-teaser">
-                    {t("ai-responsible:ctaTeaser")}
-                  </p>
-                )}
-                <p>
-                  <Button
-                    variant={"primary"}
-                    href={cta?.link ?? scheduleCta.link}
-                    label={cta?.label ?? scheduleCta.label}
-                    trackSection={"ai-responsible"}
-                  />
-                </p>
-                <ContactAlternates trackSection="ai-responsible" />
-              </div>
-            ),
-          },
-        ]}
+      <SectionCta
+        halign="center"
+        trackSection="ai-responsible"
+        href={cta?.link ?? scheduleCta.link}
+        label={cta?.label ?? scheduleCta.label}
+        rowStyle={homePreCtaContentRowStyle}
+        cols={{ col: 12, sm: 12 }}
+        className="section-ai-responsible__cta"
+        teaser={t("ai-responsible:ctaTeaser") || null}
+        teaserClassName="section-ai-responsible__cta-teaser"
       />
     </Container>
   );

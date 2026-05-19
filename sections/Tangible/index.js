@@ -3,11 +3,11 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import SectionIntro from "../../components/SectionIntro";
+import SectionCta from "../../components/SectionCta";
 import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
-
 import Button from "../../components/Button";
-import ContactAlternates from "../../components/ContactAlternates";
 import Accordion from "../../components/Accordion";
 
 import milesopediaLogo from "./images/milesopedia.png";
@@ -57,21 +57,11 @@ export default function Tangible({ cta }) {
       align={"center"}
       halign={"center"}
     >
-      <Row
-        halign={"center"}
-        style={homeIntroRowStyle}
-        columns={[
-          {
-            cols: { col: 11, xl: 12, sm: 12 },
-            content: (
-              <>
-                <p className="section__badge">{t("tangible:badge")}</p>
-                <h2 className="underline underline--center">{t("tangible:title")}</h2>
-                {parse(t("tangible:summary"))}
-              </>
-            ),
-          },
-        ]}
+      <SectionIntro
+        badge={t("tangible:badge")}
+        title={t("tangible:title")}
+        lede={parse(t("tangible:summary"))}
+        rowStyle={homeIntroRowStyle}
       />
       <Row
         columns={[
@@ -81,29 +71,18 @@ export default function Tangible({ cta }) {
           },
         ]}
       />
-      <Row
-        style={homeCtaRowStyle}
-        columns={[
-          {
-            cols: { col: 10, sm: 12 },
-            content: (
-              <div className="align align--center tangible__cta-block">
-                {t("tangible:ctaTeaser") && (
-                  <p className="big tangible__cta-teaser">{parse(t("tangible:ctaTeaser"))}</p>
-                )}
-                <p>
-                  <Button
-                    variant={"primary"}
-                    label={cta?.label ?? t("tangible:footer-cta-label")}
-                    href={cta?.link ?? scheduleCta.link}
-                    trackSection={"tangible"}
-                  />
-                </p>
-                <ContactAlternates trackSection="tangible" />
-              </div>
-            ),
-          },
-        ]}
+      <SectionCta
+        halign="center"
+        trackSection="tangible"
+        href={cta?.link ?? scheduleCta.link}
+        label={cta?.label ?? t("tangible:footer-cta-label")}
+        rowStyle={homeCtaRowStyle}
+        className="tangible__cta-block"
+        teaser={
+          t("tangible:ctaTeaser") ? (
+            <p className="big tangible__cta-teaser">{parse(t("tangible:ctaTeaser"))}</p>
+          ) : null
+        }
       />
     </Container>
   );

@@ -3,10 +3,10 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import SectionIntro from "../../components/SectionIntro";
+import SectionCta from "../../components/SectionCta";
 import { homeIntroRowStyle } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
-import Button from "../../components/Button";
-import ContactAlternates from "../../components/ContactAlternates";
 
 export default function About({ cta }) {
   const { t } = useTranslation();
@@ -14,21 +14,12 @@ export default function About({ cta }) {
 
   return (
     <Container id={t("about:anchor")} className="section-about" align={"center"} halign={"center"}>
-      <Row
-        halign={"center"}
-        style={homeIntroRowStyle}
-        columns={[
-          {
-            cols: { col: 10, sm: 12 },
-            content: (
-              <>
-                <p className="section__badge">{t("about:badge")}</p>
-                <h2 className="underline underline--center">{t("about:title")}</h2>
-                <div className="big">{parse(t("about:content"))}</div>
-              </>
-            ),
-          },
-        ]}
+      <SectionIntro
+        badge={t("about:badge")}
+        title={t("about:title")}
+        lede={<div className="big">{parse(t("about:content"))}</div>}
+        cols={{ col: 10, sm: 12 }}
+        rowStyle={homeIntroRowStyle}
       />
       <Row
         halign={"center"}
@@ -36,17 +27,13 @@ export default function About({ cta }) {
           {
             cols: { col: 10, sm: 12 },
             content: (
-              <div className="about__cta align align--center">
-                <p>
-                  <Button
-                    variant="primary"
-                    href={cta?.link ?? scheduleCta.link}
-                    label={cta?.label ?? scheduleCta.label}
-                    trackSection="about"
-                  />
-                </p>
-                <ContactAlternates trackSection="about" />
-              </div>
+              <SectionCta
+                wrapRow={false}
+                trackSection="about"
+                href={cta?.link ?? scheduleCta.link}
+                label={cta?.label ?? scheduleCta.label}
+                className="about__cta"
+              />
             ),
           },
         ]}

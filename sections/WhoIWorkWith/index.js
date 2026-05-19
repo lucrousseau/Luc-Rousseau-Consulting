@@ -3,10 +3,10 @@ import parse from "html-react-parser";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
+import SectionIntro from "../../components/SectionIntro";
+import SectionCta from "../../components/SectionCta";
 import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
-import Button from "../../components/Button";
-import ContactAlternates from "../../components/ContactAlternates";
 
 import romeImage from "./images/rome-1.jpg";
 
@@ -28,21 +28,11 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
       }}
       backgroundColor={backgroundColor}
     >
-      <Row
-        halign={"center"}
-        style={homeIntroRowStyle}
-        columns={[
-          {
-            cols: { col: 11, xl: 12, sm: 12 },
-            content: (
-              <>
-                <p className="section__badge">{t("who-i-work-with:badge")}</p>
-                <h2 className="underline underline--center">{t("who-i-work-with:title")}</h2>
-                {parse(t("who-i-work-with:summary"))}
-              </>
-            ),
-          },
-        ]}
+      <SectionIntro
+        badge={t("who-i-work-with:badge")}
+        title={t("who-i-work-with:title")}
+        lede={parse(t("who-i-work-with:summary"))}
+        rowStyle={homeIntroRowStyle}
       />
       <Row
         columns={[
@@ -63,17 +53,13 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
                   columns={[
                     {
                       content: (
-                        <>
-                          <p>
-                            <Button
-                              variant={"primary"}
-                              href={cta?.link ?? scheduleCta.link}
-                              label={cta?.label ?? t("who-i-work-with:footer-cta-label")}
-                              trackSection={"who-i-work-with"}
-                            />
-                          </p>
-                          <ContactAlternates trackSection="who-i-work-with" />
-                        </>
+                        <SectionCta
+                          wrapRow={false}
+                          bare
+                          trackSection="who-i-work-with"
+                          href={cta?.link ?? scheduleCta.link}
+                          label={cta?.label ?? t("who-i-work-with:footer-cta-label")}
+                        />
                       ),
                     },
                   ]}
