@@ -19,15 +19,25 @@ export default function Accordion({ className, items, callback = () => {}, ...pr
   };
 
   useEffect(() => {
+    if (activeIndex === null) return;
+
     // safe: activeIndex is component state (number), accordionRefs is our ref array
     // eslint-disable-next-line security/detect-object-injection
-    if (activeIndex !== null && accordionRefs.current[activeIndex]) {
-      // eslint-disable-next-line security/detect-object-injection
-      accordionRefs.current[activeIndex].scrollIntoView({
-        behavior: "smooth",
-        block: "start",
+    const el = accordionRefs.current[activeIndex];
+    if (!el) return;
+
+    // Defer until after expand layout so scrollIntoView does not force sync reflow.
+    let active = true;
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (!active) return;
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
       });
-    }
+    });
+
+    return () => {
+      active = false;
+    };
   }, [activeIndex]);
 
   return (

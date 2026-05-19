@@ -31,6 +31,15 @@
     line-height: 1.3;
   }
 
+  // Align photo + accordion without toggling valign in JS (avoids forced reflow).
+  &__split.row--middle {
+    align-items: center;
+
+    &:has(.component__accordion__item--active) {
+      align-items: flex-start;
+    }
+  }
+
   .component__accordion .component__accordion__item > h3 {
     margin-top: 0;
     margin-bottom: 0;

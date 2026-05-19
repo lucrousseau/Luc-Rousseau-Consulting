@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
 import parse from "html-react-parser";
 
@@ -13,8 +12,6 @@ import lucProfilPhoto from "./images/luc-profil-photo.jpg";
 
 export default function HomeHero() {
   const { t } = useTranslation();
-  const [opened, setOpened] = useState(false);
-  const accordionCallback = ({ open }) => setOpened(open);
 
   const items = t("home-hero:items", { returnObjects: true }).map((item) => {
     return {
@@ -40,8 +37,9 @@ export default function HomeHero() {
             content: (
               <>
                 <Row
+                  className="section-home-hero__split"
                   halign={"center"}
-                  valign={!opened ? "middle" : null}
+                  valign={"middle"}
                   style={homeCtaRowStyle}
                   columns={[
                     {
@@ -80,7 +78,7 @@ export default function HomeHero() {
                       cols: { col: 6, lg: 10, md: 12 },
                       content: (
                         <>
-                          <Accordion align={"left"} callback={accordionCallback} items={items} />
+                          <Accordion align={"left"} items={items} />
                         </>
                       ),
                     },
