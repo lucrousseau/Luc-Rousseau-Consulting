@@ -33,6 +33,8 @@ export default function Container({
               height={background.height}
               alt={background.alt}
               absolute={true}
+              loading="lazy"
+              sizes="100vw"
             />
           )}
         </div>

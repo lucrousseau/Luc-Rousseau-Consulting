@@ -9,7 +9,7 @@ import Accordion from "../../components/Accordion";
 import Container from "../../components/Layout/Container";
 import { homeCtaRowStyle } from "../../commons/homePageRowSpacing";
 
-import lucProfilPhoto from "./images/luc-profil-photo.jpg";
+import lucProfilPhoto from "./images/luc-profil-photo.jpg.webp";
 
 export default function HomeHero() {
   const { t } = useTranslation();
@@ -61,12 +61,12 @@ export default function HomeHero() {
                                 content: (
                                   <Picture
                                     src={lucProfilPhoto}
-                                    width={600}
-                                    height={600}
+                                    width={480}
+                                    height={480}
                                     alt={t("home-hero:profile-image-alt")}
                                     rounded={true}
-                                    loading={"eager"}
-                                    sizes={"(max-width: 600px) 100vw, 400px"}
+                                    priority={true}
+                                    sizes={"(max-width: 600px) 90vw, 400px"}
                                   />
                                 ),
                               },

@@ -34,9 +34,10 @@ export default function Picture({
         height={height}
         alt={alt}
         layout={layout}
-        priority={priority || loading === "eager"}
-        loading={loading}
+        priority={Boolean(priority)}
+        loading={priority ? undefined : loading}
         sizes={sizes}
+        quality={priority ? 85 : 75}
       />
     </div>
   );

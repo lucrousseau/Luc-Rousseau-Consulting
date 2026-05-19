@@ -8,6 +8,13 @@ export default function Document() {
       <Head>
         <link
           rel="preload"
+          href="/fonts/QuincyCF-Black.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
           href="/fonts/QuincyCF-Medium.woff2"
           as="font"
           type="font/woff2"

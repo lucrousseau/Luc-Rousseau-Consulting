@@ -1,4 +1,5 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import { useTranslation } from "next-i18next";
 
 import SEO from "../components/SEO";
@@ -6,18 +7,19 @@ import Container from "../components/Layout/Container";
 
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
-import About from "../sections/About";
-import HomeFaq from "../sections/HomeFaq";
 import HomeHero from "../sections/HomeHero";
-import ProductEngineerDefinition from "../sections/ProductEngineerDefinition";
-import AIResponsible from "../sections/AIResponsible";
-import Engagement from "../sections/Engagement";
-import CollaborationFit from "../sections/CollaborationFit";
-import WhoIWorkWith from "../sections/WhoIWorkWith";
-import Technologies from "../sections/Technologies";
-import Tangible from "../sections/Tangible";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+const ProductEngineerDefinition = dynamic(() => import("../sections/ProductEngineerDefinition"));
+const AIResponsible = dynamic(() => import("../sections/AIResponsible"));
+const Engagement = dynamic(() => import("../sections/Engagement"));
+const CollaborationFit = dynamic(() => import("../sections/CollaborationFit"));
+const WhoIWorkWith = dynamic(() => import("../sections/WhoIWorkWith"));
+const Technologies = dynamic(() => import("../sections/Technologies"));
+const Tangible = dynamic(() => import("../sections/Tangible"));
+const About = dynamic(() => import("../sections/About"));
+const HomeFaq = dynamic(() => import("../sections/HomeFaq"));
 
 export default function Home() {
   const { t } = useTranslation(["home", "home-hero", "common"]);

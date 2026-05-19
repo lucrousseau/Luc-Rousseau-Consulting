@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import { useTranslation } from "next-i18next";
-import { track } from "@vercel/analytics";
 
 export default function ContactAlternates({
   className,
@@ -11,9 +10,14 @@ export default function ContactAlternates({
   const { t } = useTranslation("common");
 
   const handleClick = (variant) => () => {
-    if (trackSection && typeof track === "function") {
-      track("cta_click", { section: `${trackSection}:${variant}` });
-    }
+    if (!trackSection) return;
+    import("@vercel/analytics")
+      .then(({ track }) => {
+        if (typeof track === "function") {
+          track("cta_click", { section: `${trackSection}:${variant}` });
+        }
+      })
+      .catch(() => {});
   };
 
   return (

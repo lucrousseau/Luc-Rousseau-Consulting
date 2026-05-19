@@ -1,7 +1,11 @@
 import Link from "next/link";
 
 import classNames from "classnames";
-import { track } from "@vercel/analytics";
+
+function isExternalHref(href) {
+  if (!href || typeof href !== "string") return false;
+  return /^(https?:|mailto:|tel:)/i.test(href);
+}
 
 export default function Button({
   className,
@@ -14,20 +18,36 @@ export default function Button({
   target,
   trackSection,
 }) {
-  const Tag = tag || Link;
+  const useNativeAnchor = isExternalHref(href);
+  const Tag = tag || (useNativeAnchor ? "a" : Link);
   const variantClass = variant ? `btn--${variant}` : "";
 
   const handleClick = () => {
-    if (trackSection && typeof track === "function") {
-      track("cta_click", { section: trackSection });
-    }
+    if (!trackSection) return;
+    import("@vercel/analytics")
+      .then(({ track }) => {
+        if (typeof track === "function") {
+          track("cta_click", { section: trackSection });
+        }
+      })
+      .catch(() => {});
   };
+
+  const externalProps =
+    useNativeAnchor && href?.startsWith("http")
+      ? {
+          target: target ?? "_blank",
+          rel: "noopener noreferrer",
+        }
+      : target
+        ? { target }
+        : {};
 
   return (
     <Tag
       href={href}
       type={type}
-      {...(target ? { target: target } : {})}
+      {...externalProps}
       {...(trackSection ? { onClick: handleClick } : {})}
       className={classNames("btn", className, variantClass, size)}
     >
