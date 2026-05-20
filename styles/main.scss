@@ -38,6 +38,7 @@
 
 // Sections (colocated)
 @use "../sections/Header/style" as header;
+@use "../sections/Footer/style" as footer;
 @use "../sections/Engagement/style" as engagement;
 @use "../sections/HomeHero/style" as home-hero;
 @use "../sections/AIResponsible/style" as ai-responsible;
@@ -47,6 +48,7 @@
 @use "../sections/CollaborationFit/style" as collaboration-fit;
 @use "../sections/HomeSituationFinder/style" as home-situation-finder;
 @use "../sections/HomeFaq/style" as home-faq;
+@use "../sections/Contact/style" as contact;
 @use "../sections/situations/style" as situations;
 
 // Pages

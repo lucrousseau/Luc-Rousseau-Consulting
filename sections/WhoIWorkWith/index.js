@@ -14,7 +14,7 @@ import romeImage from "./images/rome-1.jpg";
  * Who I work with section. Requires i18n: `who-i-work-with`, `common`.
  * @param {import('../../commons/sectionTypes').SectionWithBackgroundProps} props
  */
-export default function WhoIWorkWith({ backgroundColor, cta }) {
+export default function WhoIWorkWith({ backgroundColor, cta, showCta = true }) {
   const { t } = useTranslation(["who-i-work-with", "common"]);
   const scheduleCta = getScheduleCta(t);
 
@@ -65,16 +65,18 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
                   </ul>
                 </section>
 
-                <div className="who-i-work-with__cta align--center">
-                  <SectionCta
-                    wrapRow={false}
-                    bare
-                    align="center"
-                    trackSection="who-i-work-with"
-                    href={cta?.link ?? scheduleCta.link}
-                    label={cta?.label ?? t("who-i-work-with:footer-cta-label")}
-                  />
-                </div>
+                {showCta && (
+                  <div className="who-i-work-with__cta align--center">
+                    <SectionCta
+                      wrapRow={false}
+                      bare
+                      align="center"
+                      trackSection="who-i-work-with"
+                      href={cta?.link ?? scheduleCta.link}
+                      label={cta?.label ?? t("who-i-work-with:footer-cta-label")}
+                    />
+                  </div>
+                )}
               </div>
             ),
           },

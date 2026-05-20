@@ -22,7 +22,7 @@ const PROJECT_LOGOS = [milesopediaLogo, nestoLogo, comparemortgageLogo, nestogro
  * Tangible work section. Requires i18n: `tangible`, `common`.
  * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
  */
-export default function Tangible({ cta }) {
+export default function Tangible({ cta, showCta = true }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
 
@@ -75,19 +75,21 @@ export default function Tangible({ cta }) {
           },
         ]}
       />
-      <SectionCta
-        halign="center"
-        trackSection="tangible"
-        href={cta?.link ?? scheduleCta.link}
-        label={cta?.label ?? t("tangible:footer-cta-label")}
-        rowStyle={homeCtaRowStyle}
-        className="tangible__cta-block"
-        teaser={
-          t("tangible:ctaTeaser") ? (
-            <p className="big tangible__cta-teaser">{parse(t("tangible:ctaTeaser"))}</p>
-          ) : null
-        }
-      />
+      {showCta && (
+        <SectionCta
+          halign="center"
+          trackSection="tangible"
+          href={cta?.link ?? scheduleCta.link}
+          label={cta?.label ?? t("tangible:footer-cta-label")}
+          rowStyle={homeCtaRowStyle}
+          className="tangible__cta-block"
+          teaser={
+            t("tangible:ctaTeaser") ? (
+              <p className="big tangible__cta-teaser">{parse(t("tangible:ctaTeaser"))}</p>
+            ) : null
+          }
+        />
+      )}
     </Container>
   );
 }

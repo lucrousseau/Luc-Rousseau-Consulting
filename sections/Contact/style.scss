@@ -1,0 +1,144 @@
+@use "../../styles/abstracts/variables" as *;
+
+.section-contact {
+  .section-contact__meta {
+    margin: 0 auto 1.5rem;
+    max-width: 48ch;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: rgb(69 76 115 / 78%);
+  }
+
+  .section-contact__layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1.25rem, 3vw, 2.5rem);
+    align-items: center;
+    text-align: left;
+
+    @media screen and (max-width: $md) {
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+    }
+  }
+
+  .section-contact__primary {
+    padding-right: clamp(1rem, 3vw, 2rem);
+    border-right: 1px solid rgb(19 30 97 / 8%);
+    text-align: center;
+
+    @media screen and (max-width: $md) {
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+
+  .section-contact__cta {
+    margin: 0;
+
+    p {
+      margin: 0;
+    }
+
+    p:has(.btn) {
+      margin-top: 0.875rem;
+    }
+  }
+
+  .section-contact__cta-teaser {
+    margin: 0 auto 0.25rem;
+    max-width: 34ch;
+    line-height: 1.5;
+  }
+
+  .section-contact__channels {
+    padding-left: clamp(1rem, 3vw, 2rem);
+
+    @media screen and (max-width: $md) {
+      padding-left: 0;
+    }
+  }
+
+  .section-contact__channel-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 1.75rem;
+
+    @media screen and (max-width: $xs) {
+      grid-template-columns: 1fr;
+      gap: 1.15rem;
+    }
+  }
+
+  .section-contact__channel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0;
+  }
+
+  .section-contact__channel-title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--heading-2-color);
+  }
+
+  .section-contact__channel-hint {
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    color: rgb(69 76 115 / 70%);
+  }
+
+  .section-contact__channel-link {
+    margin-top: 0.15rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--link-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    overflow-wrap: anywhere;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--link-color-hover);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--primary-accent-color);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+  }
+
+  .section-contact__footnote {
+    margin-top: 1.75rem;
+    color: rgb(69 76 115 / 82%);
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+}
+
+.page-home {
+  .section-contact__footnote {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 52ch;
+    text-align: center;
+  }
+}
+
+.page-situation,
+.page-situations {
+  .section-contact__footnote {
+    text-align: center;
+  }
+}

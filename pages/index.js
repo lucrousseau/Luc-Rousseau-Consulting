@@ -22,6 +22,7 @@ const Technologies = dynamic(() => import("../sections/Technologies"));
 const Tangible = dynamic(() => import("../sections/Tangible"));
 const About = dynamic(() => import("../sections/About"));
 const HomeFaq = dynamic(() => import("../sections/HomeFaq"));
+const Contact = dynamic(() => import("../sections/Contact"));
 
 export default function Home() {
   const { t } = useTranslation(["home", "home-hero", "common"]);
@@ -43,20 +44,21 @@ export default function Home() {
           "--xs-padding-bottom": "0rem",
         }}
       >
-        <Header showNavigation={false} showCta={false} />
+        <Header showNavigation showCta={false} />
       </Container>
       <main className="page-home">
         <HomeHero />
         <HomeSituationFinder />
-        <ProductEngineerDefinition />
-        <AIResponsible />
+        <ProductEngineerDefinition showCta={false} />
+        <AIResponsible showCta={false} />
         <Engagement cta={getScheduleCta(t, { label: t("engagement:ctaLabel") })} />
-        <CollaborationFit />
-        <WhoIWorkWith />
-        <Technologies />
-        <Tangible />
-        <About />
-        <HomeFaq />
+        <CollaborationFit showCta={false} />
+        <WhoIWorkWith showCta={false} />
+        <Technologies showCta={false} />
+        <Tangible showCta={false} />
+        <About showCta={false} />
+        <HomeFaq showCta={false} />
+        <Contact />
       </main>
       <Container
         tag={"footer"}
@@ -102,6 +104,7 @@ export const getStaticProps = async ({ locale }) => {
         "home-situation-finder",
         "who-i-work-with",
         "situations-index",
+        "contact",
       ])),
     },
     revalidate: 86400,

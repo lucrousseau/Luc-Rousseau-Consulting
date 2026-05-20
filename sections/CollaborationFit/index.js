@@ -12,7 +12,7 @@ import { getScheduleCta } from "../../commons/scheduleCta";
  * Collaboration fit section. Requires i18n: `collaboration-fit`, `common`.
  * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
  */
-export default function CollaborationFit({ cta }) {
+export default function CollaborationFit({ cta, showCta = true }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
   const items = t("collaboration-fit:items", { returnObjects: true });
@@ -31,16 +31,18 @@ export default function CollaborationFit({ cta }) {
         rowStyle={homeIntroRowStyle}
       />
       <ProductGrid items={items} renderItem={(item) => <>{parse(item.content)}</>} />
-      <SectionCta
-        halign="center"
-        trackSection="collaboration-fit"
-        href={cta?.link ?? scheduleCta.link}
-        label={cta?.label ?? t("collaboration-fit:footer-cta-label")}
-        rowStyle={homePreCtaContentRowStyle}
-        className="section-collaboration-fit__cta"
-        teaser={t("collaboration-fit:ctaTeaser") || null}
-        teaserClassName="section-collaboration-fit__cta-teaser"
-      />
+      {showCta && (
+        <SectionCta
+          halign="center"
+          trackSection="collaboration-fit"
+          href={cta?.link ?? scheduleCta.link}
+          label={cta?.label ?? t("collaboration-fit:footer-cta-label")}
+          rowStyle={homePreCtaContentRowStyle}
+          className="section-collaboration-fit__cta"
+          teaser={t("collaboration-fit:ctaTeaser") || null}
+          teaserClassName="section-collaboration-fit__cta-teaser"
+        />
+      )}
     </Container>
   );
 }

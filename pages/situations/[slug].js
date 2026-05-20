@@ -7,6 +7,7 @@ import Container from "../../components/Layout/Container";
 import Header from "../../sections/Header";
 import Footer from "../../sections/Footer";
 import SituationShell from "../../sections/situations/SituationShell";
+import Contact from "../../sections/Contact";
 import { getAllSituationSlugs, getSituationBySlug } from "../../commons/situationsManifest";
 import { buildSituationPageJsonLd } from "../../commons/situationsStructuredData";
 import { absoluteUrl, localizedPath } from "../../commons/localizedPath";
@@ -54,10 +55,11 @@ export default function SituationPage({ namespace, slug, publishedAt }) {
         jsonLd={situationJsonLd}
       />
       <Container tag="header" style={PAGE_SHELL_STYLE}>
-        <Header showNavigation={false} showCta={false} />
+        <Header showNavigation showCta={false} />
       </Container>
       <main className="page-home page-situation">
         <SituationShell namespace={namespace} />
+        <Contact />
       </main>
       <Container tag="footer" style={PAGE_SHELL_STYLE}>
         <Footer />
@@ -87,7 +89,7 @@ export async function getStaticProps({ params, locale }) {
       namespace: situation.namespace,
       slug: situation.slug,
       publishedAt: situation.publishedAt,
-      ...(await serverSideTranslations(locale, [situation.namespace, "common"])),
+      ...(await serverSideTranslations(locale, [situation.namespace, "contact", "common"])),
     },
     revalidate: 86400,
   };

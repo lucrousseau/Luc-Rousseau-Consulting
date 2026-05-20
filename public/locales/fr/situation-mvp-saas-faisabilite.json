@@ -98,7 +98,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "Lancer direct avec agence/devs vs cadrage produit-système d'abord",
-      "intro": "Ce comparatif concerne le <strong>lancement d'un SaaS ou d'un MVP</strong> (faisabilité, stack, prototypes). Contexte différent de la fiche <a href=\"/situations/premier-dev-fractionnel\">Après la levée : avant votre premier dev à temps plein</a>, dans Situations, pour les startups qui préparent une première embauche technique plutôt qu'un produit à cadrer.",
+      "intro": "Ce comparatif concerne le <strong>lancement d'un SaaS ou d'un MVP</strong> (faisabilité, stack, prototypes). Contexte différent de la fiche <a href=\"/situations/premier-dev-fractionnel\">Après la levée : avant votre premier dev à temps plein</a>, pour les startups qui préparent une première embauche technique plutôt qu'un produit à cadrer. Offre où l'<strong>IA est centrale</strong> : voir <a href=\"/situations/ia-produit-garde-fous\">IA dans votre produit</a>.",
       "columnKeys": ["dimension", "buildFirst", "phaseFirst"],
       "table": {
         "headers": {
@@ -192,11 +192,11 @@
         },
         {
           "title": "Et si on lève des fonds après ?",
-          "content": "<p>Vous arrivez avec <strong>plan, stack et preuves de validation</strong>, moins de due diligence technique embarrassante. Je peux aider à préciser la fiche du premier profil tech ou produit à embaucher.</p>"
+          "content": "<p>Vous arrivez avec <strong>plan, stack et preuves de validation</strong>, moins de due diligence technique embarrassante. Je peux aider à préciser la fiche du premier profil tech ou produit à embaucher (voir <a href=\"/situations/premier-dev-fractionnel\">Après la levée : avant votre premier dev à temps plein</a>).</p>"
         },
         {
           "title": "Et après le cadrage ?",
-          "content": "<p>Handover documenté vers vos devs ou votre agence ; suivi fractionnel optionnel si vous voulez garder la cohérence sans poste permanent, même logique que les autres mandats par phases sur le site.</p>"
+          "content": "<p>Handover documenté vers vos devs ou votre agence ; suivi fractionnel optionnel si vous voulez garder la cohérence sans poste permanent. Autres mandats par phases : <a href=\"/situations/refonte-produit-par-phases\">refonte WordPress</a>, <a href=\"/situations/plateforme-editoriale-produit\">plateforme éditoriale</a>, ou <a href=\"/situations\">toutes les situations</a>.</p>"
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",

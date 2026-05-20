@@ -27,7 +27,7 @@ const TABLE_COLUMN_KEYS = [
  * Product engineer definition section. Requires i18n: `product-engineer`, `common`.
  * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
  */
-export default function ProductEngineerDefinition({ cta }) {
+export default function ProductEngineerDefinition({ cta, showCta = true }) {
   const { t } = useTranslation(["product-engineer", "common"]);
   const scheduleCta = getScheduleCta(t);
   const table = t("product-engineer:table", { returnObjects: true });
@@ -82,21 +82,23 @@ export default function ProductEngineerDefinition({ cta }) {
           />
         </>
       )}
-      <SectionCta
-        halign="center"
-        trackSection="product-engineer"
-        href={cta?.link ?? scheduleCta.link}
-        label={cta?.label ?? t("product-engineer:footer-cta-label")}
-        rowStyle={homeCtaRowStyle}
-        className="product-engineer__cta-block"
-        teaser={
-          t("product-engineer:ctaTeaser") ? (
-            <p className="big product-engineer__cta-teaser">
-              {parse(t("product-engineer:ctaTeaser"))}
-            </p>
-          ) : null
-        }
-      />
+      {showCta && (
+        <SectionCta
+          halign="center"
+          trackSection="product-engineer"
+          href={cta?.link ?? scheduleCta.link}
+          label={cta?.label ?? t("product-engineer:footer-cta-label")}
+          rowStyle={homeCtaRowStyle}
+          className="product-engineer__cta-block"
+          teaser={
+            t("product-engineer:ctaTeaser") ? (
+              <p className="big product-engineer__cta-teaser">
+                {parse(t("product-engineer:ctaTeaser"))}
+              </p>
+            ) : null
+          }
+        />
+      )}
     </Container>
   );
 }

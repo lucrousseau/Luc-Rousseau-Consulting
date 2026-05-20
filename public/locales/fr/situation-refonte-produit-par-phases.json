@@ -84,7 +84,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "Refonte pilotée en interne vs partenaire produit-système externe",
-      "intro": "Chaque mandat se cadre par phases écrites.",
+      "intro": "Chaque mandat se cadre par phases écrites. Plateforme éditoriale à fort trafic sur WordPress : la fiche <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a> complète cette approche refonte.",
       "columnKeys": ["dimension", "internalOnly", "phasedPartner"],
       "table": {
         "headers": {
@@ -167,7 +167,7 @@
         },
         {
           "title": "Et après la refonte ?",
-          "content": "<p>Handover documenté ; suivi fractionnel optionnel si vous voulez garder la cohérence sans poste permanent, même logique que les autres mandats par phases sur le site.</p>"
+          "content": "<p>Handover documenté ; suivi fractionnel optionnel si vous voulez garder la cohérence sans poste permanent. Proche du modèle <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a> ou <a href=\"/situations/mvp-saas-faisabilite\">Lancer un SaaS ou un MVP</a> ; voir aussi <a href=\"/situations\">toutes les situations</a>.</p>"
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",

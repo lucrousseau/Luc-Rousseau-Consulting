@@ -84,7 +84,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "Internal rebuild vs external product-system partner",
-      "intro": "Each engagement is scoped in written phases.",
+      "intro": "Each engagement is scoped in written phases. High-traffic editorial WordPress: <a href=\"/en/situations/plateforme-editoriale-produit\">Editorial product at scale</a> complements this phased rebuild approach.",
       "columnKeys": ["dimension", "internalOnly", "phasedPartner"],
       "table": {
         "headers": {
@@ -167,7 +167,7 @@
         },
         {
           "title": "What after the rebuild?",
-          "content": "<p>Documented handover; optional fractional follow-up to keep coherence without a permanent role, same phased logic as elsewhere on the site.</p>"
+          "content": "<p>Documented handover; optional fractional follow-up to keep coherence without a permanent role. Similar model: <a href=\"/en/situations/plateforme-editoriale-produit\">Editorial product at scale</a> or <a href=\"/en/situations/mvp-saas-faisabilite\">Launch a SaaS or MVP</a>; see also <a href=\"/en/situations\">all situations</a>.</p>"
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",

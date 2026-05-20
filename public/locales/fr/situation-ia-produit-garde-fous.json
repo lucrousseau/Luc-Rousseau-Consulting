@@ -98,7 +98,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "Feature IA vite vs cadrage produit IA d'abord",
-      "intro": "Ce comparatif concerne l'<strong>IA dans le produit</strong> (usage, APIs, build vs buy). Pour un besoin PM/PO au quotidien, voir la fiche <a href=\"/situations/product-manager-fractionnel\">Besoin de PM ou PO, sans temps plein</a> dans Situations.",
+      "intro": "Ce comparatif concerne l'<strong>IA dans le produit</strong> (usage, APIs, build vs buy). Pour un besoin PM/PO au quotidien, voir <a href=\"/situations/product-manager-fractionnel\">Besoin de PM ou PO, sans temps plein</a>. Lancement d'offre IA ou MVP : voir aussi <a href=\"/situations/mvp-saas-faisabilite\">Lancer un SaaS ou un MVP</a>. Produit WordPress en ligne : <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>.",
       "columnKeys": ["dimension", "hypeFirst", "framedFirst"],
       "table": {
         "headers": {
@@ -176,7 +176,7 @@
         },
         {
           "title": "On a déjà un PM : ce n'est pas redondant ?",
-          "content": "<p>Souvent non. Le guide PM couvre prioritisation et rituels quotidiens. Ici : <strong>où l'IA a sa place, build vs buy, APIs, risques</strong> et POC avant prod. Les deux se complètent.</p>"
+          "content": "<p>Souvent non. La fiche <a href=\"/situations/product-manager-fractionnel\">Besoin de PM ou PO, sans temps plein</a> couvre prioritisation et rituels quotidiens. Ici : <strong>où l'IA a sa place, build vs buy, APIs, risques</strong> et POC avant prod. Les deux se complètent.</p>"
         },
         {
           "title": "Vous codez ou vous pilotez notre équipe ?",

@@ -73,7 +73,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "First full-time dev vs fractional partnership",
-      "intro": "Ballpark for a Quebec startup, we refine on a call.",
+      "intro": "Ballpark for a Quebec startup, we refine on a call. If your challenge is <strong>launching a product</strong> before hiring, see <a href=\"/en/situations/mvp-saas-faisabilite\">Launch a SaaS or MVP</a>.",
       "columnKeys": ["dimension", "fullTimeJunior", "fractionalSenior"],
       "table": {
         "headers": {
@@ -122,7 +122,7 @@
     },
     {
       "type": "stack",
-      "badge": "How I work",
+      "badge": "How I build",
       "title": "Product and technical foundations",
       "lede": "<p class=\"big\"><strong>Product, technical direction, and production development</strong> on your two days: clear priorities, a ready-to-build backlog, and <strong>code I ship myself</strong> (foundations, priority features), plus criteria for your first hire.</p>",
       "items": [
