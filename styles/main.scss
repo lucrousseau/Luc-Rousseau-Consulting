@@ -18,6 +18,7 @@
 
 // Components (colocated: styles in their folder, loaded here; Next.js allows global CSS only from _app)
 @use "../components/Accordion/style" as accordion;
+@use "../components/RoutingQuiz/style" as routing-quiz;
 @use "../components/Button/style" as button;
 @use "../components/Buy/style" as buy;
 @use "../components/ContactAlternates/style" as contact-alternates;
@@ -42,8 +43,8 @@
 @use "../sections/ProductEngineerDefinition/style" as product-engineer;
 @use "../sections/CollaborationFit/style" as collaboration-fit;
 @use "../sections/HomeFaq/style" as home-faq;
-@use "../sections/guides/style" as guides;
+@use "../sections/situations/style" as situations;
 
 // Pages
 @use "../pages/home" as home;
-@use "../pages/guides" as guides-page;
+@use "../pages/situations" as situations-page;

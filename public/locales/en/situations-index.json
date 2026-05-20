@@ -1,0 +1,109 @@
+{
+  "seoTitle": "Situations — product & technical support | Luc Rousseau",
+  "seoDescription": "Two quick questions to find the page that fits your situation: tech team, PM/PO, live product, SaaS MVP, or product AI.",
+  "badge": "Situations",
+  "title": "Which situation fits you?",
+  "lede": "<p class=\"big\">In under a minute, find the page that matches your situation — then practical pointers and how fractional senior support can help.</p>",
+  "quiz": {
+    "progress": "Question {{current}} of {{total}}",
+    "back": "Back",
+    "q1": {
+      "question": "Which situation sounds most like you today?"
+    },
+    "q2": {
+      "team": {
+        "question": "On the technical side, what fits you best?"
+      },
+      "live": {
+        "question": "For this live product, your main priority is…"
+      },
+      "launch": {
+        "question": "For this launch, you're mainly looking to…"
+      }
+    },
+    "options": {
+      "team": {
+        "label": "Strengthen the technical team",
+        "hint": "First dev hire after funding, or one developer carrying everything"
+      },
+      "product": {
+        "label": "Structure product leadership (PM / PO)",
+        "hint": "Priorities, roadmap, prerequisites, dev alignment — without a full-time role"
+      },
+      "live": {
+        "label": "Evolve a product already in production",
+        "hint": "Rebuild, editorial platform at scale, or AI in what you already ship"
+      },
+      "launch": {
+        "label": "Launch something new",
+        "hint": "MVP or SaaS, or an offer where AI is central"
+      },
+      "first-hire": {
+        "label": "Post-funding, before your first full-time developer",
+        "hint": "Compare fractional senior vs first hire within the same budget band"
+      },
+      "solo-dev": {
+        "label": "One developer owns all the tech",
+        "hint": "Reduce bus factor, day-to-day relief, vacation coverage"
+      },
+      "rebuild": {
+        "label": "Rebuild or change stack",
+        "hint": "Phasing and architecture without big bang or running the team day to day"
+      },
+      "editorial": {
+        "label": "Run an editorial product at scale",
+        "hint": "Comparator, multi-brand, content and business journeys — not a brochure site"
+      },
+      "ai-live": {
+        "label": "Clarify AI in your existing product",
+        "hint": "Where it fits, guardrails, POC before you commit to build"
+      },
+      "mvp": {
+        "label": "Frame an MVP or SaaS before building big",
+        "hint": "Feasibility, stack, scope, and prerequisites for your devs or agency"
+      },
+      "ai-launch": {
+        "label": "Launch an AI-centric offer",
+        "hint": "Product and technical decisions — not a checkbox « we have AI » feature"
+      }
+    },
+    "result": {
+      "eyebrow": "For your situation",
+      "cta": "View the situation page",
+      "restart": "Retake the quiz"
+    },
+    "browseAll": {
+      "summary": "Browse all situations"
+    }
+  },
+  "situations": {
+    "premier-dev-fractionnel": {
+      "title": "Post-funding: before your first full-time developer",
+      "teaser": "You're weighing a first technical hire — here's how two days a week with a senior can out-deliver a junior within a comparable budget."
+    },
+    "dev-unique-backup": {
+      "title": "One developer owns all the tech",
+      "teaser": "You want less bus factor without a second full-time hire — here's what one day a week adds day to day and when they're away."
+    },
+    "product-manager-fractionnel": {
+      "title": "PM or PO need, without full-time",
+      "teaser": "You need real product leadership, not a 40-hour seat — here's how dense fractional PM covers priorities, prerequisites, and ceremonies."
+    },
+    "refonte-produit-par-phases": {
+      "title": "Product rebuild or stack change",
+      "teaser": "You need to modernize without stopping everything — here's feasibility, phasing, and architecture without becoming your team's tech lead."
+    },
+    "plateforme-editoriale-produit": {
+      "title": "Editorial product at scale",
+      "teaser": "Comparator, multi-brand, or content that drives the product — here's a platform built for editorial pace, not ad-hoc integrations every launch."
+    },
+    "mvp-saas-faisabilite": {
+      "title": "Launching a SaaS or MVP",
+      "teaser": "You want a clear map before months of dev — here's feasibility, stack, prototypes, and handover to your devs or agency."
+    },
+    "ia-produit-garde-fous": {
+      "title": "AI in your product",
+      "teaser": "« We need AI » pressure without a clear frame — here's where it fits, guardrails, and a POC before prod."
+    }
+  }
+}

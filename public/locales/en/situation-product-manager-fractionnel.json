@@ -1,0 +1,138 @@
+{
+  "seoTitle": "Product Manager or Product Owner: prioritization, AI, ceremonies | Luc Rousseau",
+  "seoDescription": "PM or PO need without full-time: priorities, prerequisites, prototyping, and dev ceremonies — about four days per week in dense fractional support.",
+  "hero": {
+    "badge": "Product & delivery",
+    "title": "PM or PO need, without full-time",
+    "lede": "<p><strong>You need a PM or PO, without a 40-hour hire.</strong> The team ships code; what's missing is <strong>quarterly prioritization</strong>, clear prerequisites, dev rituals, and hypotheses tested before build. It's not « too early for a PM » — it's <strong>too heavy or too rigid full-time</strong>.</p><p>That fits as <strong>dense fractional support</strong>: about <strong>four days per week</strong>, often as <strong>half-days</strong> (stand-up in the morning, backlog or prerequisites in the afternoon), plus <strong>full days</strong> to evaluate, prototype, or validate before the dev team commits.</p>",
+    "buy": {
+      "legend": "Clarify your product need",
+      "prefix": "— no commitment",
+      "label": "Book a 30-minute call"
+    }
+  },
+  "blocks": [
+    {
+      "type": "intro",
+      "badge": "The gap",
+      "title": "When developers wait on product decisions",
+      "lede": "<p class=\"big\">Without a PM or PO, the founder arbitrates between customer fires, tech debt, and « the next big feature ». Developers move tickets, but <strong>the why and the order</strong> stay implicit. Each quarter, the roadmap looks like a wish list — not a plan the team can hold.</p>"
+    },
+    {
+      "type": "cards",
+      "badge": "The rhythm",
+      "title": "Covering a PM without full-time",
+      "items": [
+        {
+          "title": "About four days per week, as half-days",
+          "content": "<p>Stand-up in the morning, backlog review in the afternoon, prerequisite workshops, quarter sync — the rhythm fits <strong>your team calendar</strong>. Four days of product presence, split into half-days when that's more efficient, without hiring a fixed fifth day in-house.</p>"
+        },
+        {
+          "title": "Full days when you need to go deeper",
+          "content": "<p>When <strong>several hypotheses or features</strong> must be evaluated, prototyped, or tested before build, we stack full days: AI prototypes, clickable flows, light POCs — to validate fast, not to replace production delivery.</p>"
+        },
+        {
+          "title": "Not an employee — a senior partner",
+          "content": "<p>Same person for <strong>prioritization, prerequisites, and technical judgment</strong> — no handoff between « the PM » and « someone who gets the code ». Scope and rhythm adjustable without hiring or layoffs.</p>"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "badge": "What you need",
+      "title": "Four responsibilities a strong PM/PO owns",
+      "items": [
+        {
+          "title": "Quarterly prioritization",
+          "content": "<p>Quarter goals, explicit trade-offs, what you <strong>won't do</strong> as much as what you will. A review rhythm (monthly or quarterly) the team understands and the business can defend.</p>"
+        },
+        {
+          "title": "Prerequisites and ready-to-build",
+          "content": "<p>User stories, acceptance criteria, dependencies, open questions — <strong>before</strong> devs spend days on ambiguity. Fewer loops, fewer « we misunderstood » at sprint end.</p>"
+        },
+        {
+          "title": "AI prototypes before full build",
+          "content": "<p>Someone comfortable with AI who ships <strong>fast prototypes</strong> (flows, interactive mocks, light POCs) to validate hypotheses and test functionality with users — before committing weeks of development.</p>"
+        },
+        {
+          "title": "Daily ceremonies with developers",
+          "content": "<p>Stand-up, unblocking, sprint alignment: someone who <strong>facilitates and keeps rituals on track</strong>, follows impediments, and connects product priority to what's happening in code.</p>"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "badge": "Compare",
+      "title": "Full-time PM/PO vs dense fractional support",
+      "intro": "Ballpark — exact calendar (half-days vs full days) is set on a call.",
+      "columnKeys": ["dimension", "fullTimePm", "fractionalLead"],
+      "table": {
+        "headers": {
+          "dimension": "Dimension",
+          "fullTimePm": "Full-time PM or PO",
+          "fractionalLead": "Senior Product Engineer (~4 days / week, often as half-days + full days as needed)"
+        },
+        "rows": [
+          {
+            "dimension": "Weekly presence",
+            "fullTimePm": "5 days; fixed role even in quieter weeks.",
+            "fractionalLead": "~4 days per week (often as half-days); full days when deep prototyping or validation is needed."
+          },
+          {
+            "dimension": "Technical fluency",
+            "fullTimePm": "Varies; frequent handoffs with the dev team.",
+            "fractionalLead": "Same person for prioritization, prerequisites, and realistic technical trade-offs."
+          },
+          {
+            "dimension": "Prototypes & validation",
+            "fullTimePm": "Often Figma mocks; few executable POCs without dev time.",
+            "fractionalLead": "AI prototypes and POCs on dedicated full days — before committing build."
+          },
+          {
+            "dimension": "Cost & flexibility",
+            "fullTimePm": "Salary + benefits; costly to reposition if the product pivots.",
+            "fractionalLead": "Fractional budget; intensity scaled up or down without layoffs."
+          },
+          {
+            "dimension": "Ceremonies & delivery",
+            "fullTimePm": "Present every business day.",
+            "fractionalLead": "Half-days aligned to stand-up and key rituals; async follow-up between sessions."
+          }
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "badge": "Objections",
+      "title": "Common questions",
+      "items": [
+        {
+          "title": "We already have an « implicit » head of product (the founder)",
+          "content": "<p>Common — and draining. My role is to <strong>structure what the founder already carries</strong>: backlog, quarter, prerequisites, rituals — so you keep vision without being the bottleneck every morning.</p>"
+        },
+        {
+          "title": "Why half-days instead of full days?",
+          "content": "<p>To <strong>match real rhythm</strong>: stand-up and unblocking in the morning, prerequisite or prioritization workshops in the afternoon — without paying a full day when a half-day is enough. Full days come when validation or prototyping volume warrants it.</p>"
+        },
+        {
+          "title": "Four days a week — isn't that almost full-time?",
+          "content": "<p>It's <strong>substantial product capacity</strong> — on purpose, because the need is real. Versus an employee: no employer costs, flexible calendar (half-days vs full days), and ability to adjust intensity by phase (discovery vs steady execution).</p>"
+        },
+        {
+          "title": "AI prototypes aren't « real » product",
+          "content": "<p>Exactly: the goal is to <strong>reduce risk before code</strong>. A clickable flow or minimal POC lets you say no early, yes with confidence — not replace production delivery.</p>"
+        },
+        {
+          "title": "What if we hire a PM/PO later?",
+          "content": "<p>Even better if you arrive with <strong>roadmap, rituals, and ready-to-build standards</strong> already proven. I can help define the role and hand off to the internal hire.</p>"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "trackSection": "situation-product-manager",
+      "label": "Discuss your PM/PO need",
+      "teaser": "<p class=\"big\">Need a PM without full-time? A 30-minute call is enough to see if about four days per week — as half-days, with full days for prototyping — fits your team.</p>"
+    }
+  ]
+}

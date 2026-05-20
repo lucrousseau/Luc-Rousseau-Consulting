@@ -48,17 +48,17 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
             content: (
               <>
                 {guideLinkList.length > 0 && (
-                  <div className="who-i-work-with__guides align--left">
-                    <p className="big">{t("common:guides-home-teaser")}</p>
-                    <ul className="who-i-work-with__guide-links">
+                  <div className="who-i-work-with__situations align--left">
+                    <p className="big">{t("common:situations-home-teaser")}</p>
+                    <ul className="who-i-work-with__situation-links">
                       {guideLinkList.map((link) => (
                         <li key={link.slug}>
-                          <Link href={`/guides/${link.slug}`}>{link.label}</Link>
+                          <Link href={`/situations/${link.slug}`}>{link.label}</Link>
                         </li>
                       ))}
                     </ul>
                     <p>
-                      <Link href="/guides">{t("who-i-work-with:guides-index-label")}</Link>
+                      <Link href="/situations">{t("who-i-work-with:situations-index-label")}</Link>
                     </p>
                   </div>
                 )}

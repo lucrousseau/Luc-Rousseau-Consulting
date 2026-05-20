@@ -1,0 +1,109 @@
+{
+  "seoTitle": "Situations — accompagnement produit & technique | Luc Rousseau",
+  "seoDescription": "Trouvez en deux questions la fiche qui correspond à votre situation : équipe tech, PM/PO, produit en ligne, MVP SaaS ou IA produit.",
+  "badge": "Situations",
+  "title": "Quelle situation vous concerne ?",
+  "lede": "<p class=\"big\">En moins d'une minute, identifiez la page qui correspond à votre situation — puis des repères concrets et comment un accompagnement senior en fractionnel peut aider.</p>",
+  "quiz": {
+    "progress": "Question {{current}} sur {{total}}",
+    "back": "Retour",
+    "q1": {
+      "question": "Quelle situation vous ressemble le plus aujourd'hui ?"
+    },
+    "q2": {
+      "team": {
+        "question": "Côté technique, qu'est-ce qui vous correspond le mieux ?"
+      },
+      "live": {
+        "question": "Sur ce produit déjà en ligne, votre priorité c'est surtout…"
+      },
+      "launch": {
+        "question": "Pour ce lancement, vous cherchez surtout à…"
+      }
+    },
+    "options": {
+      "team": {
+        "label": "Renforcer l'équipe technique",
+        "hint": "Première embauche dev après levée, ou un seul dev qui tient tout"
+      },
+      "product": {
+        "label": "Structurer le pilotage produit (PM / PO)",
+        "hint": "Priorités, roadmap, prérequis et lien avec les devs — sans poste temps plein"
+      },
+      "live": {
+        "label": "Faire évoluer un produit déjà en production",
+        "hint": "Refonte, plateforme contenu à l'échelle, ou IA dans l'existant"
+      },
+      "launch": {
+        "label": "Lancer un nouveau produit",
+        "hint": "MVP ou SaaS, ou une offre où l'IA est au cœur"
+      },
+      "first-hire": {
+        "label": "Après une levée, avant le premier dev à temps plein",
+        "hint": "Comparer senior en fractionnel et premier salarié dans la même enveloppe"
+      },
+      "solo-dev": {
+        "label": "Un seul dev porte tout le technique",
+        "hint": "Réduire le bus factor, soulager le quotidien, couvrir les vacances"
+      },
+      "rebuild": {
+        "label": "Refondre ou changer de stack",
+        "hint": "Phasage et architecture sans big bang ni piloter l'équipe au jour le jour"
+      },
+      "editorial": {
+        "label": "Faire tenir un produit éditorial à l'échelle",
+        "hint": "Comparateur, multi-marques, contenu et parcours métier — pas un site vitrine"
+      },
+      "ai-live": {
+        "label": "Clarifier l'IA dans le produit existant",
+        "hint": "Où l'intégrer, garde-fous, POC avant d'engager le build"
+      },
+      "mvp": {
+        "label": "Cadrer un MVP ou un SaaS avant de builder fort",
+        "hint": "Faisabilité, stack, périmètre et prérequis pour vos devs ou votre agence"
+      },
+      "ai-launch": {
+        "label": "Lancer une offre où l'IA est centrale",
+        "hint": "Décisions produit et technique — pas une feature « pour dire qu'on a de l'IA »"
+      }
+    },
+    "result": {
+      "eyebrow": "Pour votre situation",
+      "cta": "Voir la fiche situation",
+      "restart": "Refaire le quiz"
+    },
+    "browseAll": {
+      "summary": "Parcourir toutes les situations"
+    }
+  },
+  "situations": {
+    "premier-dev-fractionnel": {
+      "title": "Après la levée : avant votre premier dev à temps plein",
+      "teaser": "Vous envisagez une première embauche technique — voici comment deux jours par semaine avec un senior peuvent livrer plus qu'un junior, dans une enveloppe comparable."
+    },
+    "dev-unique-backup": {
+      "title": "Un seul dev porte tout le technique",
+      "teaser": "Vous voulez limiter le bus factor sans un second temps plein — voici ce qu'une journée par semaine apporte au quotidien et en absence."
+    },
+    "product-manager-fractionnel": {
+      "title": "Besoin de PM ou PO, sans temps plein",
+      "teaser": "Vous avez besoin d'un vrai pilotage produit, pas d'un poste à 40 h — voici comment un PM fractionnel dense tient priorités, prérequis et cérémonies."
+    },
+    "refonte-produit-par-phases": {
+      "title": "Refonte ou changement de stack",
+      "teaser": "Vous devez moderniser sans tout arrêter — voici faisabilité, phasage et architecture sans devenir tech lead de votre équipe."
+    },
+    "plateforme-editoriale-produit": {
+      "title": "Produit éditorial à l'échelle",
+      "teaser": "Comparateur, multi-marques ou contenu qui pilote le produit — voici une plateforme qui tient la cadence éditoriale, pas des intégrations ad hoc à chaque lancement."
+    },
+    "mvp-saas-faisabilite": {
+      "title": "Lancer un SaaS ou un MVP",
+      "teaser": "Vous voulez une carte claire avant les mois de dev — voici faisabilité, stack, prototypes et handover vers vos devs ou votre agence."
+    },
+    "ia-produit-garde-fous": {
+      "title": "IA dans votre produit",
+      "teaser": "Pression « il faut de l'IA » sans cadre clair — voici où ça a sa place, les garde-fous et un POC avant la prod."
+    }
+  }
+}
