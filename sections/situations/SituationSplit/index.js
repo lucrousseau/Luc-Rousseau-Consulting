@@ -1,6 +1,5 @@
-import parse from "html-react-parser";
-
 import Row from "../../../components/Layout/Row";
+import { parseHtmlContent } from "../../../commons/parseHtmlContent";
 import TermsTwoColumn from "../../../components/TermsTwoColumn";
 import { homeIntroRowStyle } from "../../../commons/pageRowSpacing";
 
@@ -38,7 +37,7 @@ export default function SituationSplit({ block }) {
                       {block.title}
                     </h3>
                   )}
-                  {block.intro ? parse(block.intro) : null}
+                  {block.intro ? parseHtmlContent(block.intro) : null}
                   {block.columnsLabel != null && block.columnsLabel !== "" && (
                     <h4 className="h4 situation-split__columns-label">{block.columnsLabel}</h4>
                   )}

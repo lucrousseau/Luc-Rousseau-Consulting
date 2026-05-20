@@ -20,6 +20,19 @@ a {
   }
 }
 
+// Inline links in parsed HTML copy (situations, about, tangible, etc.)
+a.text-link {
+  color: var(--btn-primary-background-color);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--link-color-hover);
+  }
+}
+
 img {
   vertical-align: top;
 }

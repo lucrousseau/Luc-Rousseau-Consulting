@@ -1,6 +1,4 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
-
 import Row from "../../../components/Layout/Row";
 import Container from "../../../components/Layout/Container";
 import SectionCta from "../../../components/SectionCta";
@@ -91,8 +89,8 @@ function SituationBlock({ block, scheduleCta }) {
           block={block}
           introChildren={
             <>
-              {block.intro && <p className="big">{parse(block.intro)}</p>}
-              {block.lede && parse(block.lede)}
+              {block.intro && <p className="big">{parseHtmlContent(block.intro)}</p>}
+              {block.lede && parseHtmlContent(block.lede)}
             </>
           }
         >
@@ -157,7 +155,7 @@ function SituationBlock({ block, scheduleCta }) {
             trackSection={block.trackSection ?? "situation"}
             href={block.href ?? scheduleCta.link}
             label={block.label ?? scheduleCta.label}
-            teaser={block.teaser ? parse(block.teaser) : null}
+            teaser={block.teaser ? parseHtmlContent(block.teaser) : null}
             teaserClassName="big"
             beforeCTA={block.badge ? <p className="section__badge">{block.badge}</p> : null}
             rowStyle={homeSituationCtaRowStyle}

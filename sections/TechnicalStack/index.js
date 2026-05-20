@@ -1,7 +1,6 @@
 import classNames from "classnames";
-import parse from "html-react-parser";
-
 import Row from "../../components/Layout/Row";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 import Container from "../../components/Layout/Container";
 import SectionIntro from "../../components/SectionIntro";
 import SectionCta from "../../components/SectionCta";
@@ -45,7 +44,7 @@ export default function TechnicalStack({
   }));
   const hasTagGroups = Array.isArray(groups) && groups.length > 0;
 
-  const ledeContent = typeof lede === "string" ? parse(lede) : lede;
+  const ledeContent = typeof lede === "string" ? parseHtmlContent(lede) : lede;
 
   const renderTagRow = (list) => {
     const rowItems = list.map((content) => ({

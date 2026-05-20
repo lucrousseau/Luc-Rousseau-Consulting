@@ -9,6 +9,15 @@ function isExternalHttpHref(href) {
 }
 
 /**
+ * @param {string | undefined} existing
+ * @param {string} extra
+ * @returns {string}
+ */
+function mergeClassName(existing, extra) {
+  return [existing, extra].filter(Boolean).join(" ");
+}
+
+/**
  * @param {string | import('react').ReactNode | null | undefined} content
  * @returns {import('react').ReactNode | null}
  */
@@ -27,16 +36,17 @@ export function parseHtmlContent(content) {
       }
 
       const href = domNode.attribs?.href;
-      if (!isExternalHttpHref(href)) {
-        return undefined;
-      }
-
       const props = attributesToProps(domNode.attribs);
+      const className = mergeClassName(props.className, "text-link");
+      const linkProps = { ...props, href, className };
+
+      if (!isExternalHttpHref(href)) {
+        return <a {...linkProps}>{domToReact(domNode.children)}</a>;
+      }
 
       return (
         <a
-          {...props}
-          href={href}
+          {...linkProps}
           target={domNode.attribs.target ?? "_blank"}
           rel={domNode.attribs.rel ?? "noopener noreferrer"}
         >
