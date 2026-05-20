@@ -102,7 +102,7 @@
         },
         {
           "title": "Une journée par semaine, c'est suffisant ?",
-          "content": "<p>Pour <strong>connaissance progressive et filet de sécurité</strong>, oui, si le périmètre est cadré. Ce n'est pas un deuxième temps plein ; c'est une assurance et un accélérateur. La journée structure le build en profondeur ; la joignabilité et l'urgence sont détaillées dans la section en tête de page. Si le volume justifie plus, on en parle ; souvent une journée bien utilisée suffit longtemps.</p>"
+          "content": "<p>Souvent oui, pour <strong>connaissance progressive et filet de sécurité</strong>, si le périmètre est cadré. Ce n'est pas un deuxième temps plein : c'est une assurance et un accélérateur. La journée structure le build en profondeur ; entre deux, la joignabilité et l'urgence suivent un cadre défini dès le départ, pas une attente jusqu'au prochain créneau.</p>"
         },
         {
           "title": "Votre stack est-elle compatible (Laravel, React, autre) ?",
@@ -110,11 +110,11 @@
         },
         {
           "title": "Confidentialité et accès",
-          "content": "<p>Accès au repo et aux outils selon votre politique ; NDA si requis. Je ne publie rien de votre code ; le travail reste dans vos systèmes. On définit <strong>qui voit quoi</strong> dès le départ.</p>"
+          "content": "<p>Accès au repo et aux outils selon votre politique, NDA si requis. Je ne publie rien de votre code : le travail reste dans vos systèmes. On définit <strong>qui voit quoi</strong> dès le premier échange.</p>"
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",
-          "content": "<p>Le rythme convenu (ex. une journée par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous. Le détail est dans la section <strong>« Joignable et fiable »</strong> en tête de page ; en résumé : joignable en continu en semaine, cadre d'urgence si votre dev principal ne répond pas, week-end négocié avec plages claires.</p>"
+          "content": "<p>Le rythme convenu (ex. une journée par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Si votre dev principal ne répond pas en urgence, on applique un <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais), pas une astreinte 24/7 floue.</p>"
         }
       ]
     },

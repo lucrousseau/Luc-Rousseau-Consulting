@@ -142,12 +142,12 @@
       "title": "Common questions",
       "items": [
         {
-          "title": "Do you code yourself or lead our team?",
-          "content": "<p>Both are possible, depending on what you already have. <strong>I code</strong> when a technical phase must move fast and no one is available to do it properly. <strong>I orchestrate</strong> when your devs or agency have capacity: I prioritize, sequence, clarify prerequisites, and validate coherence, without micro-managing tickets.</p>"
+          "title": "Do you code yourself or steer our team?",
+          "content": "<p>Both are possible, depending on what you already have. <strong>I code</strong> when a technical phase must move fast and no one is available to do it properly. <strong>I steer</strong> when your devs or agency have capacity: I prioritize, sequence, clarify prerequisites, and validate coherence, without micro-managing tickets.</p>"
         },
         {
           "title": "Headless WordPress or full move to Laravel?",
-          "content": "<p>Depends on content, team, and debt. Often: <strong>headless</strong> (WPGraphQL or REST + modern front) if WordPress editorial still helps; <strong>Laravel admin + API</strong> (REST or GraphQL) if core business logic must leave the CMS. Sometimes both, in phases. We decide in writing before build.</p>"
+          "content": "<p>It depends on content, team, and debt. Often: <strong>headless</strong> (WPGraphQL or REST + modern front) if WordPress editorial still helps; <strong>Laravel admin + API</strong> (REST or GraphQL) if core business logic must leave the CMS. Sometimes both, in phases. We decide in writing before build.</p>"
         },
         {
           "title": "GraphQL or REST for this project?",

@@ -53,7 +53,7 @@
       },
       "editorial": {
         "label": "Faire tenir un produit éditorial à l'échelle",
-        "hint": "Comparateur, multi-marques, contenu et parcours métier, pas un site vitrine"
+        "hint": "Comparateur, conversion, partenariats et monétisation : édition et marketing sur le même système"
       },
       "ai-live": {
         "label": "Clarifier l'IA dans le produit existant",
@@ -96,7 +96,7 @@
     },
     "plateforme-editoriale-produit": {
       "title": "Produit éditorial à l'échelle",
-      "teaser": "Comparateur, multi-marques ou contenu qui pilote le produit : voici une plateforme qui tient la cadence éditoriale, pas des intégrations ad hoc à chaque lancement."
+      "teaser": "Comparateur ou multi-marques : conversion, partenariats visibles, monétisation, sans intégration ad hoc à chaque lancement."
     },
     "mvp-saas-faisabilite": {
       "title": "Lancer un SaaS ou un MVP",

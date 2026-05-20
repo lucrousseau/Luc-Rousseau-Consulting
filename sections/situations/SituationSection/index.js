@@ -1,6 +1,5 @@
-import parse from "html-react-parser";
-
 import Container from "../../../components/Layout/Container";
+import { parseHtmlContent } from "../../../commons/parseHtmlContent";
 import SectionIntro from "../../../components/SectionIntro";
 import { homeIntroRowStyle } from "../../../commons/pageRowSpacing";
 import { situationBlockClassName } from "../situationBlockClassName";
@@ -21,7 +20,7 @@ export default function SituationSection({ block, children, introChildren = null
         <SectionIntro
           badge={block.badge}
           title={block.title}
-          lede={block.lede ? parse(block.lede) : null}
+          lede={block.lede ? parseHtmlContent(block.lede) : null}
           rowStyle={homeIntroRowStyle}
         >
           {introChildren}

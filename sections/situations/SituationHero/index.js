@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 import parse from "html-react-parser";
 
+import { parseHtmlContent } from "../../../commons/parseHtmlContent";
 import Row from "../../../components/Layout/Row";
 import Buy from "../../../components/Buy";
 import Breadcrumbs from "../../../components/Breadcrumbs";
@@ -37,7 +38,7 @@ export default function SituationHero({ namespace }) {
           columns={[
             {
               cols: { col: 10, sm: 12 },
-              content: <div className="big">{parse(hero.lede)}</div>,
+              content: <div className="big">{parseHtmlContent(hero.lede)}</div>,
             },
           ]}
         />

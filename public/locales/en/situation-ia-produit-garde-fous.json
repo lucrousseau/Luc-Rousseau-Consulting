@@ -113,11 +113,11 @@
       "items": [
         {
           "title": "Do you implement the models yourself?",
-          "content": "<p>I can build <strong>POCs and targeted integrations</strong> on high-leverage topics; long-term run stays with you or your agency, with a spec they can execute.</p>"
+          "content": "<p>Yes, on high-leverage topics: I can build <strong>POCs and targeted integrations</strong>; long-term run stays with you or your agency, with a spec they can execute.</p>"
         },
         {
-          "title": "We already have a PM guide for prototypes",
-          "content": "<p>The PM guide covers prioritization and rituals. This one covers <strong>where AI fits, risks, and architecture</strong>, both complement if you have both needs.</p>"
+          "title": "We already have a PM: isn't that redundant?",
+          "content": "<p>Often no. A PM covers prioritization and day-to-day rituals. This work covers <strong>where AI fits, risks, architecture</strong>, and prototypes before prod. The two complement each other if you need both.</p>"
         },
         {
           "title": "AI changes too fast, why plan?",

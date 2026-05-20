@@ -31,4 +31,21 @@ describe("situationSeoMeta", () => {
     expect(en.description).not.toMatch(/1–3 days/i);
     expect(en.description).not.toMatch(/one to three days/i);
   });
+
+  it("exposes editorial platform conversion and Quebec references for plateforme-editoriale-produit", () => {
+    const fr = getSituationSeo("fr", "situation-plateforme-editoriale-produit");
+    const en = getSituationSeo("en", "situation-plateforme-editoriale-produit");
+
+    expect(fr.headline).toMatch(/éditorial/i);
+    expect(fr.metaTitle).toMatch(/comparateurs/i);
+    expect(fr.description).toMatch(/conversion/i);
+    expect(fr.description).toMatch(/Milesopedia/i);
+    expect(fr.description).toMatch(/Québec/i);
+
+    expect(en.headline).toMatch(/Editorial product/i);
+    expect(en.metaTitle).toMatch(/comparators/i);
+    expect(en.description).toMatch(/conversion/i);
+    expect(en.description).toMatch(/Milesopedia/i);
+    expect(en.description).toMatch(/Quebec/i);
+  });
 });

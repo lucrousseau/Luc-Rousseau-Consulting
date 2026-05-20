@@ -21,7 +21,7 @@ Location: Quebec, Canada (Montreal). Languages: French (default), English. Engag
 
 Services: product engineering, technical architecture, systems design, technical roadmap planning, technical debt reduction, delivery and execution supervision.
 
-Expertise: decoupled systems, APIs, and CMS platforms (archaic WordPress modernization: headless WPGraphQL/REST, Laravel admin and API, phased migration without big bang; headless WordPress when editorial scale warrants it); Laravel and custom backend systems; technical leadership; CI/CD and delivery processes; multi-site and multi-market platforms.
+Expertise: decoupled systems, APIs, and CMS platforms (archaic WordPress modernization: headless WPGraphQL/REST, Laravel admin and API, phased migration without big bang; headless WordPress when editorial scale warrants it); editorial product platforms at scale (comparators, conversion, partnerships, monetization, Gutenberg blocks, high-traffic journeys); Laravel and custom backend systems; technical leadership; CI/CD and delivery processes; multi-site and multi-market platforms.
 
 ## Pages
 

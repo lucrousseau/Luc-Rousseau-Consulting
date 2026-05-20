@@ -27,7 +27,9 @@ export default function SituationPage({ namespace, slug, publishedAt }) {
   const pageName =
     hero && typeof hero === "object" && hero.title ? hero.title : t(`${namespace}:seoTitle`);
   const pageDescription = t(`${namespace}:seoDescription`);
-  const pageUrl = absoluteUrl(base, localizedPath(locale, defaultLocale, `/situations/${slug}`));
+  const situationPath = `/situations/${slug}`;
+  const canonicalPath = localizedPath(locale, defaultLocale, situationPath);
+  const pageUrl = absoluteUrl(base, canonicalPath);
 
   const situationJsonLd = buildSituationPageJsonLd({
     base,
@@ -47,6 +49,7 @@ export default function SituationPage({ namespace, slug, publishedAt }) {
       <SEO
         title={t(`${namespace}:seoTitle`)}
         description={pageDescription}
+        path={situationPath}
         sameAs={[t("common:linkedin")]}
         jsonLd={situationJsonLd}
       />

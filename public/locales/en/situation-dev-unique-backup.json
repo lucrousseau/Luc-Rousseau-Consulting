@@ -102,7 +102,7 @@
         },
         {
           "title": "Is one day a week enough?",
-          "content": "<p>For <strong>gradual knowledge and a safety net</strong>, yes, with clear scope. It's not a second full-time role; it's insurance and acceleration. The scheduled day structures deep build work; reachability and emergencies are covered in the section at the top of the page. If volume truly needs more, we discuss it; often one well-used day is enough for a long time.</p>"
+          "content": "<p>Often yes, for <strong>gradual knowledge and a safety net</strong>, with clear scope. It's not a second full-time role: it's insurance and acceleration. Mission day structures deep build; in between, reachability and emergencies follow a frame defined up front, not waiting until the next slot.</p>"
         },
         {
           "title": "Is your stack a fit (Laravel, React, other)?",
@@ -110,11 +110,11 @@
         },
         {
           "title": "Confidentiality and access",
-          "content": "<p>Repo and tool access per your policy; NDA if required. I don't publish your code; work stays in your systems. We define <strong>who sees what</strong> from day one.</p>"
+          "content": "<p>Repo and tool access per your policy, NDA if required. I don't publish your code: work stays in your systems. We define <strong>who sees what</strong> on the first conversation.</p>"
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
-          "content": "<p>The agreed rhythm (e.g. one day a week) structures deep work, not whether you can reach me. Details are in the <strong>« Reachable and dependable »</strong> section at the top of the page; in short: reachable throughout the week, emergency frame when your main developer doesn't answer, weekends agreed with clear windows.</p>"
+          "content": "<p>The agreed rhythm (e.g. one day a week) structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. If your main developer doesn't answer in an emergency, we apply a <strong>shared urgency frame</strong> we define up front (scope, priority, response time), not a vague 24/7 on-call promise.</p>"
         }
       ]
     },
