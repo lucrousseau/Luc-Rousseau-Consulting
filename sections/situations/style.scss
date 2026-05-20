@@ -15,3 +15,14 @@
     text-align: left;
   }
 }
+
+.component__breadcrumbs--situations-hub,
+.component__breadcrumbs--situation {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.component__breadcrumbs--situations-hub .component__breadcrumbs__list,
+.component__breadcrumbs--situation .component__breadcrumbs__list {
+  justify-content: flex-start;
+}

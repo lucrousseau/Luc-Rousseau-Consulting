@@ -18,6 +18,7 @@
 
 // Components (colocated: styles in their folder, loaded here; Next.js allows global CSS only from _app)
 @use "../components/Accordion/style" as accordion;
+@use "../components/Breadcrumbs/style" as breadcrumbs;
 @use "../components/RoutingQuiz/style" as routing-quiz;
 @use "../components/Button/style" as button;
 @use "../components/Buy/style" as buy;

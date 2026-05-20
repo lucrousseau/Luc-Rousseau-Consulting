@@ -11,7 +11,10 @@ export default function SectionIntro({
   rowStyle,
   halign = "center",
   titleClassName = "underline underline--center",
+  titleAs = "h2",
 }) {
+  const TitleTag = titleAs === "h1" ? "h1" : "h2";
+
   return (
     <Row
       halign={halign}
@@ -22,7 +25,9 @@ export default function SectionIntro({
           content: (
             <>
               {badge != null && badge !== "" && <p className="section__badge">{badge}</p>}
-              {title != null && title !== "" && <h2 className={titleClassName}>{title}</h2>}
+              {title != null && title !== "" && (
+                <TitleTag className={titleClassName}>{title}</TitleTag>
+              )}
               {lede}
               {children}
             </>
