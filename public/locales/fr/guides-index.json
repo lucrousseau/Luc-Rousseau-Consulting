@@ -1,5 +1,5 @@
 {
-  "seoTitle": "Guides — Luc Rousseau, Product Engineer",
+  "seoTitle": "Guides — Luc Rousseau, consultant produit et développeur senior",
   "seoDescription": "Pages par profil : première embauche dev après financement, ou une seule personne technique à sécuriser. Conseils concrets et comment je peux aider.",
   "badge": "Guides",
   "title": "Pour qui, et comment je peux aider",
@@ -7,7 +7,7 @@
   "guides": {
     "premier-dev-fractionnel": {
       "title": "Après votre première levée : avant d'embaucher un dev à temps plein",
-      "teaser": "Pourquoi deux jours par semaine avec un Product Engineer expérimenté peut donner plus de valeur qu'un premier salarié junior — dans la même enveloppe budgétaire."
+      "teaser": "Pourquoi deux jours par semaine avec un consultant produit et développeur senior expérimenté peut donner plus de valeur qu'un premier salarié junior — dans la même enveloppe budgétaire."
     },
     "dev-unique-backup": {
       "title": "Un seul dev fait tout le technique",
