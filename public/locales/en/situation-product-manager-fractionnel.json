@@ -25,8 +25,7 @@
       "lede": "<p class=\"big\">Not a generalist PM far from the codebase. I understand <strong>how things get built</strong>, what business logic demands, and what the experience must carry, through a <strong>designer → developer → product</strong> path. Credible with your devs, clear for the business; with AI, we can <strong>test hypotheses in days</strong>, not months of fuzzy specs.</p>"
     },
     {
-      "type": "highlights",
-      "sectionKey": "rhythm",
+      "type": "cards",
       "badge": "The rhythm",
       "title": "Covering a PM without full-time",
       "lede": "<p class=\"big\">About <strong>four days per week</strong>, as half-days or full days depending on what needs coverage, without hiring a fixed 40-hour role.</p>",
