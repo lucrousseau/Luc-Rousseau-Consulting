@@ -1,13 +1,13 @@
 {
   "seoTitle": "AI in the product: where, guardrails, and POC before build | Luc Rousseau",
-  "seoDescription": "AI in your product (live or new): where it fits, guardrails, POC before prod — product and technical decisions, not hype.",
+  "seoDescription": "AI in your product (live or new): where it fits, guardrails, POC before prod, product and technical decisions, not hype.",
   "hero": {
     "badge": "AI & product",
     "title": "AI in your product",
-    "lede": "<p><strong>AI is on the table — whether your product is already live or in launch.</strong> « We need AI » on the roadmap, agency proposes a fuzzy feature, team experiments without <strong>guardrails</strong>. Risk: cost, data, UX, and debt — without clear business value.</p><p>I work on <strong>where AI belongs</strong>, how to prototype and test fast, what criteria for prod — <strong>not</strong> hype, <strong>not</strong> a black box. Same thread: product, architecture, and execution on high-leverage topics.</p>",
+    "lede": "<p><strong>AI is on the table, whether your product is already live or in launch.</strong> « We need AI » on the roadmap, agency proposes a fuzzy feature, team experiments without <strong>guardrails</strong>. Risk: cost, data, UX, and debt, without clear business value.</p><p>I work on <strong>where AI belongs</strong>, how to prototype and test fast, what criteria for prod, <strong>not</strong> hype, <strong>not</strong> a black box. Same thread: product, architecture, and execution on high-leverage topics.</p>",
     "buy": {
       "legend": "Frame AI in your product",
-      "prefix": "— no commitment",
+      "prefix": "No commitment",
       "label": "Book a 30-minute call"
     }
   },
@@ -16,7 +16,7 @@
       "type": "intro",
       "badge": "The trap",
       "title": "AI feature because the market asks",
-      "lede": "<p class=\"big\">Without clear criteria, you ship a chatbot or auto-summary <strong>nobody uses</strong>, or can't maintain. Data, cost, quality, fallback when the model changes — unanswered until incident.</p>"
+      "lede": "<p class=\"big\">Without clear criteria, you ship a chatbot or auto-summary <strong>nobody uses</strong>, or can't maintain. Data, cost, quality, fallback when the model changes, unanswered until incident.</p>"
     },
     {
       "type": "cards",
@@ -25,19 +25,19 @@
       "items": [
         {
           "title": "Where AI actually helps the product",
-          "content": "<p>Use-case map: user gain, frequency, error tolerance, <strong>non-AI alternative</strong> — to say no to decorative ideas.</p>"
+          "content": "<p>Use-case map: user gain, frequency, error tolerance, <strong>non-AI alternative</strong>, to say no to decorative ideas.</p>"
         },
         {
           "title": "Guardrails and prod criteria",
-          "content": "<p>Data, privacy, cost per request, fallback, monitoring, human review if needed — <strong>written before build</strong>, not after first complaint.</p>"
+          "content": "<p>Data, privacy, cost per request, fallback, monitoring, human review if needed, <strong>written before build</strong>, not after first complaint.</p>"
         },
         {
           "title": "POC and fast prototypes",
-          "content": "<p>Test hypotheses with POCs or AI flows — <strong>before</strong> committing the team to months of dev. Unlike the PM guide: angle here is <strong>product + technical + risk</strong>.</p>"
+          "content": "<p>Test hypotheses with POCs or AI flows, <strong>before</strong> committing the team to months of dev. Unlike the PM guide: angle here is <strong>product + technical + risk</strong>.</p>"
         },
         {
           "title": "Fit with architecture",
-          "content": "<p>Where logic lives (API, async, cache), how it integrates with the rest of the SaaS — <strong>not</strong> a brick glued beside the product.</p>"
+          "content": "<p>Where logic lives (API, async, cache), how it integrates with the rest of the SaaS, <strong>not</strong> a brick glued beside the product.</p>"
         }
       ]
     },
@@ -71,7 +71,7 @@
           },
           {
             "dimension": "My role",
-            "hypeFirst": "—",
+            "hypeFirst": ": ",
             "framedFirst": "Product-tech trade-offs; not daily dev management."
           }
         ]
@@ -84,15 +84,15 @@
       "items": [
         {
           "title": "Do you implement the models yourself?",
-          "content": "<p>I can build <strong>POCs and targeted integrations</strong> on high-leverage topics; long-term run stays with you or your agency — with a spec they can execute.</p>"
+          "content": "<p>I can build <strong>POCs and targeted integrations</strong> on high-leverage topics; long-term run stays with you or your agency, with a spec they can execute.</p>"
         },
         {
           "title": "We already have a PM guide for prototypes",
-          "content": "<p>The PM guide covers prioritization and rituals. This one covers <strong>where AI fits, risks, and architecture</strong> — both complement if you have both needs.</p>"
+          "content": "<p>The PM guide covers prioritization and rituals. This one covers <strong>where AI fits, risks, and architecture</strong>, both complement if you have both needs.</p>"
         },
         {
-          "title": "AI changes too fast — why plan?",
-          "content": "<p>Exactly: <strong>product criteria and guardrails</strong> stay stable even when the model changes — that's what avoids rebuilding on every vendor announcement.</p>"
+          "title": "AI changes too fast, why plan?",
+          "content": "<p>Exactly: <strong>product criteria and guardrails</strong> stay stable even when the model changes, that's what avoids rebuilding on every vendor announcement.</p>"
         }
       ]
     },

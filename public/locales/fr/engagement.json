@@ -5,13 +5,13 @@
   "badge": "Comment on travaille",
   "headline": "Partenariat technique stratégique.",
   "subhead": "Accompagnement technique senior : produit, architecture et livraison sur le terrain.",
-  "valueStatement": "Je travaille comme <strong>lead produit technique externe</strong> avec <strong>un ou quelques clients</strong> dans la durée—<strong>architecture, produit et code</strong> sur le même fil. La <strong>collaboration récurrente</strong>, c'est ce qui me permet de rester dans la boucle : aligné sur votre roadmap, l'architecture et l'équipe. Je peux participer à vos dailies et cérémonies hebdomadaires pour que le travail reste cohérent.",
+  "valueStatement": "Je travaille comme <strong>lead produit technique externe</strong> avec <strong>un ou quelques clients</strong> dans la durée : <strong>architecture, produit et code</strong> sur le même fil. La <strong>collaboration récurrente</strong>, c'est ce qui me permet de rester dans la boucle : aligné sur votre roadmap, l'architecture et l'équipe. Je peux participer à vos dailies et cérémonies hebdomadaires pour que le travail reste cohérent.",
   "differentiator": "Vous avez un consultant produit et développeur senior qui <strong>pense en systèmes et en résultats</strong>, et qui peut à la fois <strong>définir le cap et livrer</strong>. <em>Pas</em> un freelance qui passe deux heures : quelqu'un qui <strong>reste et assure la cohérence</strong> dans le temps.",
   "ctaTeaser": "La plupart du temps, c'est un partenariat qui dure; quelques jours ou quelques semaines, c'est possible quand le besoin est clair et écrit.",
   "ctaLabel": "Options d'engagement",
   "termsTitle": "Sur le papier, concrètement",
-  "termsLead": "<p class=\"big\">Dans la majorité des cas, je suis avec vous sur la durée, quelques jours par semaine, pour que le fil ne se perde pas entre la roadmap, l'architecture et ce qui part en production. Pour les missions courtes—audit, processus, ou sujet technique bien cadré sur quelques jours—on passe en <strong>facturation à la journée</strong>.</p>",
-  "termsFactsLabel": "Quand on formalise une formule au mois, le cadre ressemble souvent à ceci—on l'ajuste à votre situation :",
+  "termsLead": "<p class=\"big\">Dans la majorité des cas, je suis avec vous sur la durée, quelques jours par semaine, pour que le fil ne se perde pas entre la roadmap, l'architecture et ce qui part en production. Pour les missions courtes, audit, processus, ou sujet technique bien cadré sur quelques jours, on passe en <strong>facturation à la journée</strong>.</p>",
+  "termsFactsLabel": "Quand on formalise une formule au mois, le cadre ressemble souvent à ceci, on l'ajuste à votre situation :",
   "termsFactsItems": [
     "En pratique, souvent deux jours par semaine avec vous",
     "Un contrat par trimestre, renouvelable si on continue ensemble",
@@ -32,7 +32,7 @@
     "Former toute l'organisation sur plusieurs jours",
     "Un sauvetage vague, sans mandat écrit ni fin claire"
   ],
-  "termsFootnote": "<p class=\"small\">Pour la formule au mois qui se renouvelle, on part sur <strong>trois mois minimum</strong>. Au-delà, ça continue si ça vous convient. Les missions très courtes, ce n'est qu'avec un périmètre écrit—audit, processus, ou autre sujet bien délimité.</p>",
+  "termsFootnote": "<p class=\"small\">Pour la formule au mois qui se renouvelle, on part sur <strong>trois mois minimum</strong>. Au-delà, ça continue si ça vous convient. Les missions très courtes, ce n'est qu'avec un périmètre écrit, audit, processus, ou autre sujet bien délimité.</p>",
   "models": [
     {
       "title": "Partenariat continu",
@@ -49,7 +49,7 @@
     {
       "title": "Un partenaire dédié à une équipe",
       "subtitle": "Quand le projet a besoin d'une présence régulière et d'un seul owner technique clair.",
-      "value": "Une équipe a un seul partenaire technique dans la boucle sur la roadmap, l'architecture et la livraison—présent aux dailies et aux cérémonies clés pour que rien ne parte en vrille.",
+      "value": "Une équipe a un seul partenaire technique dans la boucle sur la roadmap, l'architecture et la livraison, présent aux dailies et aux cérémonies clés pour que rien ne parte en vrille.",
       "content": "<p>Utile quand les enjeux sont forts ou que l'équipe gagne à avoir la même personne pleinement dans la boucle. Une voix redevable, de la continuité sans embauche à temps plein.</p><p><strong>Pour qui :</strong> Équipes qui ont besoin d'un partenaire technique régulier; projets qui demandent un alignement plus serré entre la direction et l'exécution.</p>"
     }
   ]

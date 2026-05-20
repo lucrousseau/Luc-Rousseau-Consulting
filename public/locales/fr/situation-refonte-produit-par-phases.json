@@ -4,10 +4,10 @@
   "hero": {
     "badge": "Refonte & migration",
     "title": "Refonte ou changement de stack",
-    "lede": "<p><strong>Votre produit en ligne doit évoluer : refonte, nouvelle stack, ou les deux.</strong> La pression monte : headless, Laravel, nouveau front — ou « on ne peut plus vivre avec ce système ». Tout refaire d'un coup semble la seule sortie, mais le <strong>coût d'un arrêt monde</strong> et le risque de dérapage effraient.</p><p>Je travaille sur <strong>la décision, le phasage et l'architecture produit</strong> : faisabilité, jalons, frontières, ordre de migration — <em>sans</em> prendre la chaise de tech lead ni manager vos devs au jour le jour. Votre équipe (ou agence) livre ; je garde le fil stratégique et la cohérence du système.</p>",
+    "lede": "<p><strong>Votre produit en ligne doit évoluer : refonte, nouvelle stack, ou les deux.</strong> La pression monte : headless, Laravel, nouveau front, ou « on ne peut plus vivre avec ce système ». Tout refaire d'un coup semble la seule sortie, mais le <strong>coût d'un arrêt monde</strong> et le risque de dérapage effraient.</p><p>Je travaille sur <strong>la décision, le phasage et l'architecture produit</strong> : faisabilité, jalons, frontières, ordre de migration, <em>sans</em> prendre la chaise de tech lead ni manager vos devs au jour le jour. Votre équipe (ou agence) livre ; je garde le fil stratégique et la cohérence du système.</p>",
     "buy": {
       "legend": "Cadrer votre refonte",
-      "prefix": "— sans engagement",
+      "prefix": "Sans engagement",
       "label": "Planifier un appel de 30 min"
     }
   },
@@ -25,19 +25,19 @@
       "items": [
         {
           "title": "Faisabilité et go/no-go",
-          "content": "<p>Avant le gros investissement : contraintes réelles, options de stack, risques, <strong>est-ce que la refonte est la bonne réponse</strong> — ou une extraction ciblée suffit.</p>"
+          "content": "<p>Avant le gros investissement : contraintes réelles, options de stack, risques, <strong>est-ce que la refonte est la bonne réponse</strong>, ou une extraction ciblée suffit.</p>"
         },
         {
           "title": "Phasage avec livrables",
-          "content": "<p>Découper en tranches qui <strong>livrent de la valeur</strong> (comme une migration progressive vers une stack à blocs) — pas un tunnel de 18 mois sans rien montrer.</p>"
+          "content": "<p>Découper en tranches qui <strong>livrent de la valeur</strong> (comme une migration progressive vers une stack à blocs), pas un tunnel de 18 mois sans rien montrer.</p>"
         },
         {
           "title": "Architecture et frontières",
-          "content": "<p>APIs, modules, contrats, dette à traiter en premier — <strong>documentés</strong> pour que devs et prestataires construisent dans le même modèle mental.</p>"
+          "content": "<p>APIs, modules, contrats, dette à traiter en premier, <strong>documentés</strong> pour que devs et prestataires construisent dans le même modèle mental.</p>"
         },
         {
           "title": "Supervision de cohérence, pas de personnes",
-          "content": "<p>Revues ciblées sur alignement roadmap ↔ architecture ↔ prod — <strong>sans</strong> stand-up quotidien à votre place ni micro-management des tâches.</p>"
+          "content": "<p>Revues ciblées sur alignement roadmap ↔ architecture ↔ prod, <strong>sans</strong> stand-up quotidien à votre place ni micro-management des tâches.</p>"
         }
       ]
     },
@@ -88,11 +88,11 @@
         },
         {
           "title": "On n'a pas le luxe de ralentir pour planifier",
-          "content": "<p>Deux à quatre semaines de cadrage évitent souvent <strong>des mois de rework</strong>. La première phase peut être précisément ce cadrage — avec un livrable : plan, architecture cible, ordre de migration.</p>"
+          "content": "<p>Deux à quatre semaines de cadrage évitent souvent <strong>des mois de rework</strong>. La première phase peut être précisément ce cadrage, avec un livrable : plan, architecture cible, ordre de migration.</p>"
         },
         {
           "title": "Et après la refonte ?",
-          "content": "<p>Handover documenté ; suivi fractionnel optionnel si vous voulez garder la cohérence sans poste permanent — même logique que les autres mandats par phases sur le site.</p>"
+          "content": "<p>Handover documenté ; suivi fractionnel optionnel si vous voulez garder la cohérence sans poste permanent, même logique que les autres mandats par phases sur le site.</p>"
         }
       ]
     },

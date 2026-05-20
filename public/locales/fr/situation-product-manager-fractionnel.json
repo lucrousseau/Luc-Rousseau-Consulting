@@ -1,13 +1,13 @@
 {
   "seoTitle": "Product Manager ou Product Owner : priorisation, IA et cérémonies | Luc Rousseau",
-  "seoDescription": "Besoin de PM ou PO sans temps plein : priorités, prérequis, prototypage et cérémonies avec les devs — environ quatre jours par semaine en fractionnel dense.",
+  "seoDescription": "Besoin de PM ou PO sans temps plein : priorités, prérequis, prototypage et cérémonies avec les devs, environ quatre jours par semaine en fractionnel dense.",
   "hero": {
     "badge": "Produit & delivery",
     "title": "Besoin de PM ou PO, sans temps plein",
-    "lede": "<p><strong>Vous avez besoin d'un PM ou PO, sans embauche à 40 h.</strong> L'équipe code ; il manque <strong>priorisation au trimestre</strong>, des prérequis clairs, des rituels avec les devs et des hypothèses testées avant le build. Ce n'est pas « trop tôt pour un PM » — c'est <strong>trop lourd ou trop rigide en temps plein</strong>.</p><p>Ça tient en <strong>fractionnel dense</strong> : environ <strong>quatre jours par semaine</strong>, souvent en <strong>demi-journées</strong> (stand-up le matin, backlog ou prérequis l'après-midi), et des <strong>journées complètes</strong> pour évaluer, prototyper ou faire valider avant d'engager l'équipe dev.</p>",
+    "lede": "<p><strong>Vous avez besoin d'un PM ou PO, sans embauche à 40 h.</strong> L'équipe code ; il manque <strong>priorisation au trimestre</strong>, des prérequis clairs, des rituels avec les devs et des hypothèses testées avant le build. Ce n'est pas « trop tôt pour un PM », c'est <strong>trop lourd ou trop rigide en temps plein</strong>.</p><p>Ça tient en <strong>fractionnel dense</strong> : environ <strong>quatre jours par semaine</strong>, souvent en <strong>demi-journées</strong> (stand-up le matin, backlog ou prérequis l'après-midi), et des <strong>journées complètes</strong> pour évaluer, prototyper ou faire valider avant d'engager l'équipe dev.</p>",
     "buy": {
       "legend": "Clarifier votre besoin produit",
-      "prefix": "— sans engagement",
+      "prefix": "Sans engagement",
       "label": "Planifier un appel de 30 min"
     }
   },
@@ -16,7 +16,7 @@
       "type": "intro",
       "badge": "Le vide",
       "title": "Quand les devs attendent des décisions produit",
-      "lede": "<p class=\"big\">Sans PM ou PO, le fondateur arbitre entre urgences client, dette technique et « la prochaine grosse feature ». Les développeurs avancent sur des tickets, mais <strong>le pourquoi et l'ordre</strong> restent implicites. Au trimestre, la roadmap ressemble à une liste de souhaits — pas à un plan qu'on peut tenir.</p>"
+      "lede": "<p class=\"big\">Sans PM ou PO, le fondateur arbitre entre urgences client, dette technique et « la prochaine grosse feature ». Les développeurs avancent sur des tickets, mais <strong>le pourquoi et l'ordre</strong> restent implicites. Au trimestre, la roadmap ressemble à une liste de souhaits, pas à un plan qu'on peut tenir.</p>"
     },
     {
       "type": "cards",
@@ -25,15 +25,15 @@
       "items": [
         {
           "title": "Environ quatre jours par semaine, en demi-journées",
-          "content": "<p>Stand-up le matin, revue de backlog l'après-midi, atelier prérequis, sync trimestre — le rythme s'adapte à <strong>votre calendrier d'équipe</strong>. Quatre jours de présence produit, découpés en demi-journées quand c'est plus efficace, sans embaucher un cinquième jour fixe en interne.</p>"
+          "content": "<p>Stand-up le matin, revue de backlog l'après-midi, atelier prérequis, sync trimestre, le rythme s'adapte à <strong>votre calendrier d'équipe</strong>. Quatre jours de présence produit, découpés en demi-journées quand c'est plus efficace, sans embaucher un cinquième jour fixe en interne.</p>"
         },
         {
           "title": "Journées complètes quand il faut aller plus loin",
-          "content": "<p>Quand <strong>plusieurs hypothèses ou fonctionnalités</strong> doivent être évaluées, prototypées ou testées avant le build, on enchaîne des journées pleines : prototypes IA, flows cliquables, POCs — pour valider vite, pas pour remplacer la livraison en prod.</p>"
+          "content": "<p>Quand <strong>plusieurs hypothèses ou fonctionnalités</strong> doivent être évaluées, prototypées ou testées avant le build, on enchaîne des journées pleines : prototypes IA, flows cliquables, POCs, pour valider vite, pas pour remplacer la livraison en prod.</p>"
         },
         {
           "title": "Pas un salarié, un partenaire senior",
-          "content": "<p>Même personne pour <strong>priorisation, prérequis et recul technique</strong> — pas de handoff entre « le PM » et « celui qui comprend le code ». Périmètre et rythme ajustables sans recrutement ni licenciement.</p>"
+          "content": "<p>Même personne pour <strong>priorisation, prérequis et recul technique</strong>, pas de handoff entre « le PM » et « celui qui comprend le code ». Périmètre et rythme ajustables sans recrutement ni licenciement.</p>"
         }
       ]
     },
@@ -48,11 +48,11 @@
         },
         {
           "title": "Sortir les prérequis et le « prêt à construire »",
-          "content": "<p>User stories, critères d'acceptation, dépendances, questions ouvertes — <strong>avant</strong> que les devs passent des jours sur l'ambigu. Moins de allers-retours, moins de « on a mal compris » en fin de sprint.</p>"
+          "content": "<p>User stories, critères d'acceptation, dépendances, questions ouvertes, <strong>avant</strong> que les devs passent des jours sur l'ambigu. Moins de allers-retours, moins de « on a mal compris » en fin de sprint.</p>"
         },
         {
           "title": "Prototypes IA pour tester avant de builder",
-          "content": "<p>Quelqu'un à l'aise avec l'IA qui monte des <strong>prototypes rapides</strong> (flows, maquettes interactives, POCs) pour valider des hypothèses et tester des fonctionnalités avec des utilisateurs — avant d'engager des semaines de développement.</p>"
+          "content": "<p>Quelqu'un à l'aise avec l'IA qui monte des <strong>prototypes rapides</strong> (flows, maquettes interactives, POCs) pour valider des hypothèses et tester des fonctionnalités avec des utilisateurs, avant d'engager des semaines de développement.</p>"
         },
         {
           "title": "Cérémonies journalières avec les devs",
@@ -64,7 +64,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "PM/PO à temps plein vs accompagnement fractionnel dense",
-      "intro": "Ordres de grandeur — le calendrier exact (demi-journées vs journées pleines) se cale à l'appel.",
+      "intro": "Ordres de grandeur, le calendrier exact (demi-journées vs journées pleines) se cale à l'appel.",
       "columnKeys": ["dimension", "fullTimePm", "fractionalLead"],
       "table": {
         "headers": {
@@ -86,7 +86,7 @@
           {
             "dimension": "Prototypes & validation",
             "fullTimePm": "Souvent maquettes Figma ; peu de POC exécutable sans dev.",
-            "fractionalLead": "Prototypes IA et POCs sur journées pleines dédiées — avant d'engager le build."
+            "fractionalLead": "Prototypes IA et POCs sur journées pleines dédiées, avant d'engager le build."
           },
           {
             "dimension": "Coût & flexibilité",
@@ -108,19 +108,19 @@
       "items": [
         {
           "title": "On a déjà un chef de produit « implicite » (le fondateur)",
-          "content": "<p>C'est fréquent — et épuisant. Mon rôle est de <strong>structurer ce que le fondateur porte déjà</strong> : backlog, trimestre, prérequis, rituels — pour que vous gardiez la vision sans être le goulot chaque matin.</p>"
+          "content": "<p>C'est fréquent, et épuisant. Mon rôle est de <strong>structurer ce que le fondateur porte déjà</strong> : backlog, trimestre, prérequis, rituels, pour que vous gardiez la vision sans être le goulot chaque matin.</p>"
         },
         {
           "title": "Pourquoi des demi-journées plutôt que des journées entières ?",
-          "content": "<p>Pour <strong>coller au rythme réel</strong> : stand-up et déblocage le matin, ateliers prérequis ou priorisation l'après-midi — sans payer une journée pleine quand une demi-journée suffit. Les journées complètes arrivent quand le volume de validation ou de prototypage le justifie.</p>"
+          "content": "<p>Pour <strong>coller au rythme réel</strong> : stand-up et déblocage le matin, ateliers prérequis ou priorisation l'après-midi, sans payer une journée pleine quand une demi-journée suffit. Les journées complètes arrivent quand le volume de validation ou de prototypage le justifie.</p>"
         },
         {
           "title": "Quatre jours par semaine, ce n'est pas presque un temps plein ?",
-          "content": "<p>C'est une <strong>charge produit importante</strong> — volontairement, parce que le besoin est réel. La différence avec un salarié : pas de charges employeur, calendrier flexible (demi-journées vs journées pleines), et possibilité d'ajuster l'intensité selon la phase (discovery vs exécution stable).</p>"
+          "content": "<p>C'est une <strong>charge produit importante</strong>, volontairement, parce que le besoin est réel. La différence avec un salarié : pas de charges employeur, calendrier flexible (demi-journées vs journées pleines), et possibilité d'ajuster l'intensité selon la phase (discovery vs exécution stable).</p>"
         },
         {
           "title": "Les prototypes IA, ce n'est pas du « vrai » produit",
-          "content": "<p>Justement : l'objectif est de <strong>réduire le risque avant le code</strong>. Un flow cliquable ou un POC minimal permet de dire non tôt, oui avec confiance — pas de remplacer la livraison en production.</p>"
+          "content": "<p>Justement : l'objectif est de <strong>réduire le risque avant le code</strong>. Un flow cliquable ou un POC minimal permet de dire non tôt, oui avec confiance, pas de remplacer la livraison en production.</p>"
         },
         {
           "title": "Et si on embauche un vrai PM/PO plus tard ?",
@@ -132,7 +132,7 @@
       "type": "cta",
       "trackSection": "situation-product-manager",
       "label": "Parler de votre besoin PM/PO",
-      "teaser": "<p class=\"big\">Besoin d'un PM sans temps plein ? Un appel de 30 minutes suffit pour voir si environ quatre jours par semaine — en demi-journées, avec des journées complètes pour prototyper — correspond à votre équipe.</p>"
+      "teaser": "<p class=\"big\">Besoin d'un PM sans temps plein ? Un appel de 30 minutes suffit pour voir si environ quatre jours par semaine, en demi-journées, avec des journées complètes pour prototyper, correspond à votre équipe.</p>"
     }
   ]
 }

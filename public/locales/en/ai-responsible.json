@@ -4,7 +4,7 @@
   "navigation-label-short": "AI",
   "badge": "AI & execution",
   "title": "How a senior Product Engineer uses AI responsibly",
-  "summary": "AI can speed up execution—but it doesn't replace <strong>judgment, architecture, or experience</strong>. Here's how I use it: with <strong>guardrails</strong>, <strong>CI/CD</strong> rules and process, clear boundaries, and senior oversight so it <em>amplifies delivery</em> instead of creating chaos.",
+  "summary": "AI can speed up execution, but it doesn't replace <strong>judgment, architecture, or experience</strong>. Here's how I use it: with <strong>guardrails</strong>, <strong>CI/CD</strong> rules and process, clear boundaries, and senior oversight so it <em>amplifies delivery</em> instead of creating chaos.",
   "items": [
     {
       "title": "AI accelerates execution",
@@ -20,7 +20,7 @@
     },
     {
       "title": "Experience matters more than tools",
-      "content": "Knowing what \"good\" looks like, when to push back on a spec, and how systems fail in production comes from <strong>years of shipping</strong>—not from a model."
+      "content": "Knowing what \"good\" looks like, when to push back on a spec, and how systems fail in production comes from <strong>years of shipping</strong>: not from a model."
     },
     {
       "title": "Senior supervision prevents AI-driven chaos",

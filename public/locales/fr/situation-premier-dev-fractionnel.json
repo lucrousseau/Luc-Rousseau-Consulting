@@ -4,10 +4,10 @@
   "hero": {
     "badge": "Startup post-financement",
     "title": "Après la levée : avant votre premier dev à temps plein",
-    "lede": "<p><strong>Vous êtes en post-levée et vous pesez votre premier recrutement technique.</strong> La pression est là : <strong>livrer plus vite</strong>, prouver la traction, montrer que l'équipe grossit. Un premier développeur à temps plein semble le geste naturel — c'est souvent le <strong>plus cher et le plus lent</strong> moyen d'avoir une direction technique solide.</p><p>Un <strong>consultant produit et développeur senior à deux jours par semaine</strong> peut couvrir cap technique, architecture et livraison — dans une enveloppe comparable, avec moins de risque si le produit pivote.</p>",
+    "lede": "<p><strong>Vous êtes en post-levée et vous pesez votre premier recrutement technique.</strong> La pression est là : <strong>livrer plus vite</strong>, prouver la traction, montrer que l'équipe grossit. Un premier développeur à temps plein semble le geste naturel ; c'est souvent le <strong>plus cher et le plus lent</strong> moyen d'avoir une direction technique solide.</p><p>Un <strong>consultant produit et développeur senior à deux jours par semaine</strong> peut couvrir cap technique, architecture et livraison, dans une enveloppe comparable, avec moins de risque si le produit pivote.</p>",
     "buy": {
       "legend": "Parlons de votre contexte",
-      "prefix": "— sans engagement",
+      "prefix": "Sans engagement",
       "label": "Planifier un appel de 30 min"
     }
   },
@@ -16,7 +16,7 @@
       "type": "intro",
       "badge": "Le piège",
       "title": "Pourquoi la première embauche tech est risquée",
-      "lede": "<p class=\"big\">Un dev junior ou mid à temps plein, c'est <strong>salaire + charges + onboarding + management</strong> — souvent avant que la roadmap soit assez claire. Le fondateur reste seul à arbitrer produit et technique. Si le profil ne convient pas, le coût d'une erreur de recrutement est énorme pour une jeune structure.</p>"
+      "lede": "<p class=\"big\">Un dev junior ou mid à temps plein, c'est <strong>salaire + charges + onboarding + management</strong>, souvent avant que la roadmap soit assez claire. Le fondateur reste seul à arbitrer produit et technique. Si le profil ne convient pas, le coût d'une erreur de recrutement est énorme pour une jeune structure.</p>"
     },
     {
       "type": "cards",
@@ -25,7 +25,7 @@
       "items": [
         {
           "title": "Même ordre de budget, plus de seniorité",
-          "content": "<p>Une enveloppe pensée pour un premier salarié peut financer <strong>deux jours par semaine d'un profil senior</strong> : quelqu'un qui a déjà structuré des produits, des équipes et des livraisons — pas seulement exécuté des tickets.</p>"
+          "content": "<p>Une enveloppe pensée pour un premier salarié peut financer <strong>deux jours par semaine d'un profil senior</strong> : quelqu'un qui a déjà structuré des produits, des équipes et des livraisons, pas seulement exécuté des tickets.</p>"
         },
         {
           "title": "Cap technique + livraison",
@@ -37,7 +37,7 @@
         },
         {
           "title": "Pont vers une future équipe",
-          "content": "<p>Quand le moment d'embaucher arrive, vous avez déjà <strong>standards, backlog clarifié et critères de profil</strong> — et éventuellement un dev en place que j'ai aidé à intégrer.</p>"
+          "content": "<p>Quand le moment d'embaucher arrive, vous avez déjà <strong>standards, backlog clarifié et critères de profil</strong>, et éventuellement un dev en place que j'ai aidé à intégrer.</p>"
         }
       ]
     },
@@ -45,7 +45,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "Premier dev à temps plein vs lead technique externe",
-      "intro": "Ordres de grandeur pour une startup québécoise — chaque cas se affine à l'appel.",
+      "intro": "Ordres de grandeur pour une startup québécoise, chaque cas se affine à l'appel.",
       "columnKeys": ["dimension", "fullTimeJunior", "fractionalSenior"],
       "table": {
         "headers": {
@@ -76,7 +76,7 @@
           },
           {
             "dimension": "Couverture hebdomadaire",
-            "fullTimeJunior": "5 jours sur le code — utile si le périmètre est déjà cadré.",
+            "fullTimeJunior": "5 jours sur le code, utile si le périmètre est déjà cadré.",
             "fractionalSenior": "2 jours ciblés + échanges asynchrones entre les sessions ; suffisant pour cap et déblocage si bien cadré."
           }
         ]
@@ -89,7 +89,7 @@
       "items": [
         {
           "title": "On a besoin de quelqu'un tous les jours sur le code",
-          "content": "<p>Souvent, ce dont vous avez besoin tous les jours, c'est de <strong>décisions claires et un backlog qui avance</strong> — pas encore de cinq jours de développement non supervisé. Deux jours d'un senior qui structure et débloque valent souvent plus que cinq jours d'un profil qu'il faut encore former à votre contexte.</p><p>Quand le volume de code justifie vraiment un temps plein, on le voit ensemble — et vous embauchez avec des critères déjà éprouvés.</p>"
+          "content": "<p>Souvent, ce dont vous avez besoin tous les jours, c'est de <strong>décisions claires et un backlog qui avance</strong>, pas encore de cinq jours de développement non supervisé. Deux jours d'un senior qui structure et débloque valent souvent plus que cinq jours d'un profil qu'il faut encore former à votre contexte.</p><p>Quand le volume de code justifie vraiment un temps plein, on le voit ensemble, et vous embauchez avec des critères déjà éprouvés.</p>"
         },
         {
           "title": "Et après, on embauche quand même ?",

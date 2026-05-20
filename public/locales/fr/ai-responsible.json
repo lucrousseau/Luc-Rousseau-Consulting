@@ -4,7 +4,7 @@
   "navigation-label-short": "IA",
   "badge": "IA et exécution",
   "title": "Comment un consultant produit et développeur senior utilise l'IA de façon responsable",
-  "summary": "L'IA peut accélérer l'exécution—elle ne remplace pas le <strong>jugement, l'architecture ni l'expérience</strong>. Voici comment je l'utilise : avec des <strong>garde-fous</strong>, des règles et processus <strong>CI/CD</strong>, des limites claires et une supervision senior pour qu'elle <em>amplifie la livraison</em> au lieu de créer le chaos.",
+  "summary": "L'IA peut accélérer l'exécution, elle ne remplace pas le <strong>jugement, l'architecture ni l'expérience</strong>. Voici comment je l'utilise : avec des <strong>garde-fous</strong>, des règles et processus <strong>CI/CD</strong>, des limites claires et une supervision senior pour qu'elle <em>amplifie la livraison</em> au lieu de créer le chaos.",
   "items": [
     {
       "title": "L'IA accélère l'exécution",
@@ -20,7 +20,7 @@
     },
     {
       "title": "L'expérience compte plus que les outils",
-      "content": "Savoir à quoi ressemble le « bon », quand contester une spec et comment les systèmes échouent en prod vient des <strong>années de livraison</strong>—pas d'un modèle."
+      "content": "Savoir à quoi ressemble le « bon », quand contester une spec et comment les systèmes échouent en prod vient des <strong>années de livraison</strong>: pas d'un modèle."
     },
     {
       "title": "La supervision senior évite le chaos piloté par l'IA",

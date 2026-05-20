@@ -4,10 +4,10 @@
   "hero": {
     "badge": "Rebuild & migration",
     "title": "Product rebuild or stack change",
-    "lede": "<p><strong>Your live product must evolve: rebuild, new stack, or both.</strong> Pressure builds: headless, Laravel, new front — or « we can't live with this system anymore ». A full rewrite feels like the only way out, but <strong>stop-the-world cost</strong> and overrun risk are real.</p><p>I work on <strong>decision, phasing, and product architecture</strong>: feasibility, milestones, boundaries, migration order — <em>without</em> becoming tech lead or managing your devs daily. Your team (or agency) ships; I keep strategic thread and system coherence.</p>",
+    "lede": "<p><strong>Your live product must evolve: rebuild, new stack, or both.</strong> Pressure builds: headless, Laravel, new front, or « we can't live with this system anymore ». A full rewrite feels like the only way out, but <strong>stop-the-world cost</strong> and overrun risk are real.</p><p>I work on <strong>decision, phasing, and product architecture</strong>: feasibility, milestones, boundaries, migration order, <em>without</em> becoming tech lead or managing your devs daily. Your team (or agency) ships; I keep strategic thread and system coherence.</p>",
     "buy": {
       "legend": "Frame your rebuild",
-      "prefix": "— no commitment",
+      "prefix": "No commitment",
       "label": "Book a 30-minute call"
     }
   },
@@ -25,19 +25,19 @@
       "items": [
         {
           "title": "Feasibility and go/no-go",
-          "content": "<p>Before major spend: real constraints, stack options, risks, <strong>whether rebuild is the right answer</strong> — or targeted extraction is enough.</p>"
+          "content": "<p>Before major spend: real constraints, stack options, risks, <strong>whether rebuild is the right answer</strong>, or targeted extraction is enough.</p>"
         },
         {
           "title": "Phasing with deliverables",
-          "content": "<p>Slices that <strong>ship value</strong> (like progressive migration to a block-based stack) — not an 18-month tunnel with nothing to show.</p>"
+          "content": "<p>Slices that <strong>ship value</strong> (like progressive migration to a block-based stack), not an 18-month tunnel with nothing to show.</p>"
         },
         {
           "title": "Architecture and boundaries",
-          "content": "<p>APIs, modules, contracts, debt to tackle first — <strong>documented</strong> so devs and vendors build in the same mental model.</p>"
+          "content": "<p>APIs, modules, contracts, debt to tackle first, <strong>documented</strong> so devs and vendors build in the same mental model.</p>"
         },
         {
           "title": "Coherence oversight, not people management",
-          "content": "<p>Targeted reviews on roadmap ↔ architecture ↔ prod alignment — <strong>without</strong> running stand-up for you or micro-managing tasks.</p>"
+          "content": "<p>Targeted reviews on roadmap ↔ architecture ↔ prod alignment, <strong>without</strong> running stand-up for you or micro-managing tasks.</p>"
         }
       ]
     },
@@ -88,11 +88,11 @@
         },
         {
           "title": "We can't afford to slow down to plan",
-          "content": "<p>Two to four weeks of framing often avoids <strong>months of rework</strong>. Phase one can be exactly that — deliverable: plan, target architecture, migration order.</p>"
+          "content": "<p>Two to four weeks of framing often avoids <strong>months of rework</strong>. Phase one can be exactly that, deliverable: plan, target architecture, migration order.</p>"
         },
         {
           "title": "What after the rebuild?",
-          "content": "<p>Documented handover; optional fractional follow-up to keep coherence without a permanent role — same phased logic as elsewhere on the site.</p>"
+          "content": "<p>Documented handover; optional fractional follow-up to keep coherence without a permanent role, same phased logic as elsewhere on the site.</p>"
         }
       ]
     },

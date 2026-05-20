@@ -1,9 +1,9 @@
 {
-  "seoTitle": "Situations — product & technical support | Luc Rousseau",
+  "seoTitle": "Situations | product & technical support | Luc Rousseau",
   "seoDescription": "Two quick questions to find the page that fits your situation: tech team, PM/PO, live product, SaaS MVP, or product AI.",
   "badge": "Situations",
   "title": "Which situation fits you?",
-  "lede": "<p class=\"big\">In under a minute, find the page that matches your situation — then practical pointers and how fractional senior support can help.</p>",
+  "lede": "<p class=\"big\">In under a minute, find the page that matches your situation, then practical pointers and how fractional senior support can help.</p>",
   "quiz": {
     "progress": "Question {{current}} of {{total}}",
     "back": "Back",
@@ -28,7 +28,7 @@
       },
       "product": {
         "label": "Structure product leadership (PM / PO)",
-        "hint": "Priorities, roadmap, prerequisites, dev alignment — without a full-time role"
+        "hint": "Priorities, roadmap, prerequisites, dev alignment, without a full-time role"
       },
       "live": {
         "label": "Evolve a product already in production",
@@ -52,7 +52,7 @@
       },
       "editorial": {
         "label": "Run an editorial product at scale",
-        "hint": "Comparator, multi-brand, content and business journeys — not a brochure site"
+        "hint": "Comparator, multi-brand, content and business journeys, not a brochure site"
       },
       "ai-live": {
         "label": "Clarify AI in your existing product",
@@ -64,7 +64,7 @@
       },
       "ai-launch": {
         "label": "Launch an AI-centric offer",
-        "hint": "Product and technical decisions — not a checkbox « we have AI » feature"
+        "hint": "Product and technical decisions, not a checkbox « we have AI » feature"
       }
     },
     "result": {
@@ -79,31 +79,31 @@
   "situations": {
     "premier-dev-fractionnel": {
       "title": "Post-funding: before your first full-time developer",
-      "teaser": "You're weighing a first technical hire — here's how two days a week with a senior can out-deliver a junior within a comparable budget."
+      "teaser": "You're weighing a first technical hire : here's how two days a week with a senior can out-deliver a junior within a comparable budget."
     },
     "dev-unique-backup": {
       "title": "One developer owns all the tech",
-      "teaser": "You want less bus factor without a second full-time hire — here's what one day a week adds day to day and when they're away."
+      "teaser": "You want less bus factor without a second full-time hire : here's what one day a week adds day to day and when they're away."
     },
     "product-manager-fractionnel": {
       "title": "PM or PO need, without full-time",
-      "teaser": "You need real product leadership, not a 40-hour seat — here's how dense fractional PM covers priorities, prerequisites, and ceremonies."
+      "teaser": "You need real product leadership, not a 40-hour seat : here's how dense fractional PM covers priorities, prerequisites, and ceremonies."
     },
     "refonte-produit-par-phases": {
       "title": "Product rebuild or stack change",
-      "teaser": "You need to modernize without stopping everything — here's feasibility, phasing, and architecture without becoming your team's tech lead."
+      "teaser": "You need to modernize without stopping everything : here's feasibility, phasing, and architecture without becoming your team's tech lead."
     },
     "plateforme-editoriale-produit": {
       "title": "Editorial product at scale",
-      "teaser": "Comparator, multi-brand, or content that drives the product — here's a platform built for editorial pace, not ad-hoc integrations every launch."
+      "teaser": "Comparator, multi-brand, or content that drives the product : here's a platform built for editorial pace, not ad-hoc integrations every launch."
     },
     "mvp-saas-faisabilite": {
       "title": "Launching a SaaS or MVP",
-      "teaser": "You want a clear map before months of dev — here's feasibility, stack, prototypes, and handover to your devs or agency."
+      "teaser": "You want a clear map before months of dev : here's feasibility, stack, prototypes, and handover to your devs or agency."
     },
     "ia-produit-garde-fous": {
       "title": "AI in your product",
-      "teaser": "« We need AI » pressure without a clear frame — here's where it fits, guardrails, and a POC before prod."
+      "teaser": "« We need AI » pressure without a clear frame : here's where it fits, guardrails, and a POC before prod."
     }
   }
 }

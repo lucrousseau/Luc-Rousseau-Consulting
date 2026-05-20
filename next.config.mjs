@@ -82,7 +82,7 @@ const nextConfig = {
     ];
   },
   async redirects() {
-    /** www → apex is handled in vercel.json (edge), not here — avoids i18n redirect loops. */
+    /** www → apex is handled in vercel.json (edge), not here; avoids i18n redirect loops. */
     const rules = [];
 
     const zinesBase = "https://lucrousseau.ca/zines";

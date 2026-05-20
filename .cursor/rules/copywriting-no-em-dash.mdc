@@ -1,0 +1,30 @@
+---
+description: Copywriting - avoid em dashes in user-facing text
+globs: public/locales/**/*
+alwaysApply: true
+---
+
+# Copywriting — no em dash (—)
+
+Do **not** use the em dash (—) in site copy, UI strings, SEO text, or marketing content unless it is strictly necessary (rare).
+
+Em dashes are often read as generic “AI slop”; prefer natural French/English punctuation:
+
+| Instead of | Use |
+|------------|-----|
+| `X — Y` (contrast / aside) | comma, colon, or parentheses |
+| `X — voici…` | `X : voici…` |
+| Title / SEO separator | pipe `\|` or colon `:` |
+| `Phase 1 — Title` | `Phase 1 : Title` |
+| CTA prefix `— sans engagement` | `Sans engagement` (no leading dash) |
+| Glued `word—word` | comma or rephrase |
+
+**Examples**
+
+- ❌ `livrer — pas seulement exécuter`
+- ✅ `livrer, pas seulement exécuter`
+
+- ❌ `Situations — accompagnement produit`
+- ✅ `Situations \| accompagnement produit` (SEO) or `Situations : accompagnement produit`
+
+When editing `public/locales/`, scan for `—` (U+2014) before finishing.

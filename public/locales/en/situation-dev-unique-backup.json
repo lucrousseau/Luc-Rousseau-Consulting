@@ -1,13 +1,13 @@
 {
   "seoTitle": "Solo technical owner: backup and value at 1 day/week | Luc Rousseau",
-  "seoDescription": "One developer owns all the tech: one day a week for bus factor, day-to-day relief, and vacations — without a second full-time hire.",
+  "seoDescription": "One developer owns all the tech: one day a week for bus factor, day-to-day relief, and vacations, without a second full-time hire.",
   "hero": {
     "badge": "Small technical team",
     "title": "One developer owns all the tech",
-    "lede": "<p><strong>One developer concentrates all the tech at your company.</strong> Risk isn't theoretical: illness, departure, vacation, burnout. You don't need a second full-time hire — you need <strong>continuity, perspective, and a safety net</strong>.</p><p><strong>One day a week</strong> is enough to learn the codebase, add day-to-day value, and agree on coverage when your main developer is away — without replacing them.</p>",
+    "lede": "<p><strong>One developer concentrates all the tech at your company.</strong> Risk isn't theoretical: illness, departure, vacation, burnout. You don't need a second full-time hire, you need <strong>continuity, perspective, and a safety net</strong>.</p><p><strong>One day a week</strong> is enough to learn the codebase, add day-to-day value, and agree on coverage when your main developer is away, without replacing them.</p>",
     "buy": {
       "legend": "Assess your technical risk",
-      "prefix": "— 30-minute call",
+      "prefix": "30-minute call",
       "label": "Book a call"
     }
   },
@@ -16,7 +16,7 @@
       "type": "intro",
       "badge": "The risk",
       "title": "Bus factor, in practice",
-      "lede": "<p class=\"big\">Your main developer stays <strong>owner of the code and decisions</strong>. My role isn't to compete: it's to reduce single-point dependency, speed up reviews, and <strong>hold the line in a bounded way</strong> when they're unavailable — because we prepared together.</p>"
+      "lede": "<p class=\"big\">Your main developer stays <strong>owner of the code and decisions</strong>. My role isn't to compete: it's to reduce single-point dependency, speed up reviews, and <strong>hold the line in a bounded way</strong> when they're unavailable, because we prepared together.</p>"
     },
     {
       "type": "cards",
@@ -25,15 +25,15 @@
       "items": [
         {
           "title": "Learning the codebase",
-          "content": "<p>Light documentation, tour of critical areas, access and conventions — <strong>without reading every line</strong>. Goal: intervene on essentials within weeks, not duplicate your lead's head.</p>"
+          "content": "<p>Light documentation, tour of critical areas, access and conventions, <strong>without reading every line</strong>. Goal: intervene on essentials within weeks, not duplicate your lead's head.</p>"
         },
         {
           "title": "Value from the first weeks",
-          "content": "<p>Architecture reviews, unblocking, prioritization, targeted debt. Your dev gets a <strong>senior peer</strong> one day a week — not an auditor who shows up once a year.</p>"
+          "content": "<p>Architecture reviews, unblocking, prioritization, targeted debt. Your dev gets a <strong>senior peer</strong> one day a week, not an auditor who shows up once a year.</p>"
         },
         {
           "title": "Light backup, not a clone",
-          "content": "<p>We define what's covered when your dev is away: fixes, deploys, level-2 support — <strong>written scope</strong>, not a vague promise to « always be available ».</p>"
+          "content": "<p>We define what's covered when your dev is away: fixes, deploys, level-2 support, <strong>written scope</strong>, not a vague promise to « always be available ».</p>"
         },
         {
           "title": "Vacation and agreed on-call",
@@ -52,7 +52,7 @@
         },
         {
           "title": "Is one day a week enough?",
-          "content": "<p>For <strong>gradual knowledge and a safety net</strong>, yes — with clear scope. It's not a second full-time role; it's insurance and acceleration. If volume truly needs more, we discuss it; often one well-used day is enough for a long time.</p>"
+          "content": "<p>For <strong>gradual knowledge and a safety net</strong>, yes, with clear scope. It's not a second full-time role; it's insurance and acceleration. If volume truly needs more, we discuss it; often one well-used day is enough for a long time.</p>"
         },
         {
           "title": "Confidentiality and access",
@@ -64,7 +64,7 @@
       "type": "cta",
       "trackSection": "situation-solo-dev",
       "label": "Discuss your bus factor risk",
-      "teaser": "<p class=\"big\">One developer carries everything? One call is enough to see if one day a week gives you margin — without disrupting your team.</p>"
+      "teaser": "<p class=\"big\">One developer carries everything? One call is enough to see if one day a week gives you margin, without disrupting your team.</p>"
     }
   ]
 }

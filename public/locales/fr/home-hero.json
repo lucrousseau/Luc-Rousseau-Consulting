@@ -4,7 +4,7 @@
   "navigation-label-short": "Offre",
   "title": "Consultant produit et développeur senior",
   "quote": "Vision produit, architecture technique et développement web sur mesure.",
-  "profile-image-alt": "Luc Rousseau — consultant produit et développeur senior",
+  "profile-image-alt": "Luc Rousseau, consultant produit et développeur senior",
   "manifesto": "Avec le recul et le terrain, j'ai appris que les meilleures décisions produit arrivent quand quelqu'un dans la pièce peut <strong>structurer l'architecture, clarifier le cap produit et livrer le code</strong>.",
   "items": [
     {
@@ -15,12 +15,12 @@
     {
       "emoji": "🏗️",
       "title": "Architecture et conception système",
-      "content": "<p>Je définis ou clarifie comment votre système est structuré : frontières entre services ou modules, APIs et contrats, évolution de la stack. Cela inclut les architectures <strong>découplées et headless</strong> où le backend—<strong>APIs sur mesure</strong>, <strong>Laravel</strong>, ou un <strong>CMS comme plateforme de contenu</strong> (dont <strong>WordPress headless</strong> quand le modèle éditorial le justifie)—s'appuie sur des frontends <strong>React ou Vue</strong>, ainsi que le <strong>design d'API</strong> et les arbitrages de <strong>performance</strong>. L'objectif est une architecture qui sert le produit aujourd'hui et peut scaler—pas de complexité accidentelle.</p><p><strong>Résultats :</strong> Architecture documentée et contrats d'API clairs; décisions build-vs-buy et plateforme justifiées; un modèle mental partagé pour que le nouveau travail s'intègre au système.</p><p><strong>Résout :</strong> « Personne ne sait comment tout s'articule »; sprawl et intégrations ad-hoc; grosses refontes sans chemin clair; décisions headless ou multi-site qui ressemblent à du tâtonnement.</p>"
+      "content": "<p>Je définis ou clarifie comment votre système est structuré : frontières entre services ou modules, APIs et contrats, évolution de la stack. Cela inclut les architectures <strong>découplées et headless</strong> où le backend (<strong>APIs sur mesure</strong>, <strong>Laravel</strong>, ou un <strong>CMS comme plateforme de contenu</strong>, dont <strong>WordPress headless</strong> quand le modèle éditorial le justifie) s'appuie sur des frontends <strong>React ou Vue</strong>, ainsi que le <strong>design d'API</strong> et les arbitrages de <strong>performance</strong>. L'objectif est une architecture qui sert le produit aujourd'hui et peut scaler, pas de complexité accidentelle.</p><p><strong>Résultats :</strong> Architecture documentée et contrats d'API clairs; décisions build-vs-buy et plateforme justifiées; un modèle mental partagé pour que le nouveau travail s'intègre au système.</p><p><strong>Résout :</strong> « Personne ne sait comment tout s'articule »; sprawl et intégrations ad-hoc; grosses refontes sans chemin clair; décisions headless ou multi-site qui ressemblent à du tâtonnement.</p>"
     },
     {
       "emoji": "🔧",
       "title": "Réduction de la dette technique",
-      "content": "<p>La dette technique est traitée comme un enjeu produit et risque. J'aide à prioriser son remboursement de façon à soutenir la livraison au lieu de la bloquer—la bonne dette dans le bon ordre, avec des critères clairs de « assez bien ».</p><p><strong>Résultats :</strong> Un backlog de dette priorisé aligné produit et risque; amélioration incrémentale sans réécriture « stop the world »; moins d'incidents et de rework liés à une dette négligée.</p><p><strong>Résout :</strong> Dette ignorée ou qui déclenche des refontes paniques; l'équipe se bat avec la codebase au lieu de livrer; dépendances cachées et problèmes récurrents de sécurité ou performance.</p>"
+      "content": "<p>La dette technique est traitée comme un enjeu produit et risque. J'aide à prioriser son remboursement de façon à soutenir la livraison au lieu de la bloquer : la bonne dette dans le bon ordre, avec des critères clairs de « assez bien ».</p><p><strong>Résultats :</strong> Un backlog de dette priorisé aligné produit et risque; amélioration incrémentale sans réécriture « stop the world »; moins d'incidents et de rework liés à une dette négligée.</p><p><strong>Résout :</strong> Dette ignorée ou qui déclenche des refontes paniques; l'équipe se bat avec la codebase au lieu de livrer; dépendances cachées et problèmes récurrents de sécurité ou performance.</p>"
     },
     {
       "emoji": "⚡",
