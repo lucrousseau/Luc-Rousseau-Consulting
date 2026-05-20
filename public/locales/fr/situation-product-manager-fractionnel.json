@@ -19,10 +19,25 @@
       "lede": "<p class=\"big\">Sans PM ou PO, le fondateur arbitre entre urgences client, dette technique et « la prochaine grosse feature ». Les développeurs avancent sur des tickets, mais <strong>le pourquoi et l'ordre</strong> restent implicites. Au trimestre, la roadmap ressemble à une liste de souhaits, pas à un plan qu'on peut tenir.</p>"
     },
     {
-      "type": "intro",
+      "type": "highlights",
+      "sectionKey": "rhythm",
       "badge": "Le rythme",
       "title": "Comment couvrir un PM sans temps plein",
-      "lede": "<p class=\"big\">Environ <strong>quatre jours par semaine</strong>, souvent en demi-journées (stand-up le matin, backlog ou prérequis l'après-midi), avec des <strong>journées complètes</strong> quand il faut prototyper ou valider en profondeur.</p><p><strong>Demi-journées calées sur votre équipe.</strong> Stand-up, revue de backlog, atelier prérequis, sync trimestre : le calendrier s'adapte à vous, sans embaucher un cinquième jour fixe en interne.</p><p><strong>Journées pleines pour aller plus loin.</strong> Quand plusieurs hypothèses ou features doivent être testées avant le build : prototypes IA, flows cliquables, POCs, pour valider vite, pas pour remplacer la livraison en prod.</p><p><strong>Partenaire senior, pas salarié.</strong> Même personne pour priorisation, prérequis et recul technique, sans handoff entre « le PM » et « celui qui comprend le code ». Périmètre et rythme ajustables sans recrutement ni licenciement.</p>"
+      "lede": "<p class=\"big\">Environ <strong>quatre jours par semaine</strong>, en demi-journées ou journées pleines selon ce qu'il faut couvrir, sans embaucher un poste fixe à 40 h.</p>",
+      "items": [
+        {
+          "title": "Environ quatre jours par semaine, en demi-journées",
+          "content": "<p>Stand-up le matin, revue de backlog l'après-midi, atelier prérequis, sync trimestre : le calendrier s'adapte à <strong>votre équipe</strong>, sans cinquième jour fixe en interne.</p>"
+        },
+        {
+          "title": "Journées complètes quand il faut aller plus loin",
+          "content": "<p>Quand <strong>plusieurs hypothèses ou fonctionnalités</strong> doivent être évaluées, prototypées ou testées avant le build : prototypes IA, flows cliquables, POCs, pour valider vite, pas pour remplacer la livraison en prod.</p>"
+        },
+        {
+          "title": "Pas un salarié, un partenaire senior",
+          "content": "<p>Même personne pour <strong>priorisation, prérequis et recul technique</strong>, sans handoff entre « le PM » et « celui qui comprend le code ». Périmètre et rythme ajustables sans recrutement ni licenciement.</p>"
+        }
+      ]
     },
     {
       "type": "highlights",
