@@ -46,3 +46,11 @@ export const homeIntroSubRowStyle = {
   "--padding-bottom": rowPad,
   "--sm-padding-bottom": rowPadSm,
 };
+
+/** Main body row after SectionIntro (intro already adds bottom padding) */
+export const homeBodyRowStyle = {
+  "--padding-top": "0",
+  "--sm-padding-top": "0",
+  "--padding-bottom": "0",
+  "--sm-padding-bottom": "0",
+};

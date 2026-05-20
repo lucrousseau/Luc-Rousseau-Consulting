@@ -32,35 +32,7 @@
     }
   ],
   "footer-cta-label": "Planifier un appel",
-  "guideLinks": [
-    {
-      "slug": "premier-dev-fractionnel",
-      "label": "Après une levée : avant le premier dev à temps plein →"
-    },
-    {
-      "slug": "dev-unique-backup",
-      "label": "Un seul dev porte tout le technique →"
-    },
-    {
-      "slug": "product-manager-fractionnel",
-      "label": "Besoin de PM ou PO sans temps plein →"
-    },
-    {
-      "slug": "refonte-produit-par-phases",
-      "label": "Refonte produit par phases →"
-    },
-    {
-      "slug": "plateforme-editoriale-produit",
-      "label": "Plateforme éditoriale (comparateur, multi-marques) →"
-    },
-    {
-      "slug": "mvp-saas-faisabilite",
-      "label": "Lancer un SaaS ou MVP →"
-    },
-    {
-      "slug": "ia-produit-garde-fous",
-      "label": "IA dans le produit →"
-    }
-  ],
-  "situations-index-label": "Toutes les situations"
+  "profiles-heading": "Profils qui collent le mieux",
+  "situations-quiz-badge": "Votre situation",
+  "situations-quiz-lede": "Trouvez en deux questions la fiche qui correspond à votre contexte."
 }

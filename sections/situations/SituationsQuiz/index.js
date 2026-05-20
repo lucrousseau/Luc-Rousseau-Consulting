@@ -12,9 +12,10 @@ const situationTitleKey = (slug) => `situations.${slug}.title`;
  * Situations hub quiz: thin wrapper around {@link RoutingQuiz}.
  * Requires i18n: `situations-index` (keys under `quiz.*` and `situations.*`).
  */
-export default function SituationsQuiz() {
+export default function SituationsQuiz({ className }) {
   return (
     <RoutingQuiz
+      className={className}
       steps={SITUATIONS_QUIZ_STEPS}
       rootStepId={SITUATIONS_QUIZ_ROOT_STEP_ID}
       i18nNamespace="situations-index"
