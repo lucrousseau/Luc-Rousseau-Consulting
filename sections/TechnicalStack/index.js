@@ -22,7 +22,6 @@ import SituationGroups from "../situations/SituationGroups";
  * @param {{ label: string; href: string; trackSection?: string }} [props.footerCta]
  * @param {string} [props.backgroundColor]
  * @param {"rome"} [props.background]
- * @param {string} [props.tagEmoji]
  */
 export default function TechnicalStack({
   id,
@@ -35,22 +34,15 @@ export default function TechnicalStack({
   footerCta,
   backgroundColor,
   background,
-  tagEmoji = "⭐️",
 }) {
   const imageBackground = background === "rome" ? ROME_BACKGROUND : undefined;
-  const tagItems = items.map((content) => ({
-    content,
-    emoji: tagEmoji,
-  }));
+  const tagItems = items.map((content) => ({ content }));
   const hasTagGroups = Array.isArray(groups) && groups.length > 0;
 
   const ledeContent = typeof lede === "string" ? parseHtmlContent(lede) : lede;
 
   const renderTagRow = (list) => {
-    const rowItems = list.map((content) => ({
-      content,
-      emoji: tagEmoji,
-    }));
+    const rowItems = list.map((content) => ({ content }));
     if (rowItems.length === 0) {
       return null;
     }
