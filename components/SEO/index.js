@@ -39,7 +39,8 @@ const SEO = ({ title, description, image, sameAs }) => {
           name: SITE_NAME,
           url: canonical,
           sameAs: sameAs,
-          jobTitle: "Product Engineer",
+          jobTitle:
+            locale === "fr" ? "Consultant produit et développeur senior" : "Product Engineer",
           address: {
             "@type": "PostalAddress",
             addressRegion: "QC",
@@ -57,7 +58,7 @@ const SEO = ({ title, description, image, sameAs }) => {
     url: base,
     description:
       locale === "fr"
-        ? "Product Engineer au Québec, Canada. Architecture produit et APIs, systèmes découpés, Laravel, WordPress headless quand l'édition l'exige, React/Vue. Systèmes à l'échelle."
+        ? "Consultant produit et développeur senior au Québec, Canada. Architecture produit et APIs, systèmes découpés, Laravel, WordPress headless quand l'édition l'exige, React/Vue. Systèmes à l'échelle."
         : "Product Engineer in Quebec, Canada. Product-facing architecture and APIs, decoupled systems, Laravel, WordPress headless when editorial scale demands it, React/Vue. Systems at scale.",
     inLanguage: [locale === "fr" ? "fr-CA" : "en-CA"],
     areaServed: [

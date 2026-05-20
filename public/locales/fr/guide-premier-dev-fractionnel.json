@@ -1,10 +1,10 @@
 {
   "seoTitle": "Premier dev après financement : 2 jours/semaine plutôt qu'un temps plein | Luc Rousseau",
-  "seoDescription": "Startup post-levée : avant d'embaucher votre premier développeur à temps plein, pourquoi un Product Engineer fractionnel à deux jours par semaine peut offrir plus de valeur dans la même enveloppe.",
+  "seoDescription": "Startup post-levée : avant d'embaucher votre premier développeur à temps plein, pourquoi un consultant produit et développeur senior en mandat fractionnel à deux jours par semaine peut offrir plus de valeur dans la même enveloppe.",
   "hero": {
     "badge": "Startup post-financement",
     "title": "Avant d'embaucher votre premier dev à temps plein, considérez deux jours par semaine",
-    "lede": "<p>Vous venez de lever des fonds. La pression est là : <strong>livrer plus vite</strong>, prouver la traction, montrer que l'équipe grossit. Embaucher un premier développeur à temps plein semble le geste naturel — mais c'est souvent le <strong>plus cher et le plus lent</strong> moyen d'avoir une direction technique solide.</p><p>Un <strong>Product Engineer expérimenté à deux jours par semaine</strong> peut couvrir cap technique, architecture et livraison — dans une enveloppe comparable, avec moins de risque si le produit pivote.</p>",
+    "lede": "<p>Vous venez de lever des fonds. La pression est là : <strong>livrer plus vite</strong>, prouver la traction, montrer que l'équipe grossit. Embaucher un premier développeur à temps plein semble le geste naturel — mais c'est souvent le <strong>plus cher et le plus lent</strong> moyen d'avoir une direction technique solide.</p><p>Un <strong>consultant produit et développeur senior expérimenté à deux jours par semaine</strong> peut couvrir cap technique, architecture et livraison — dans une enveloppe comparable, avec moins de risque si le produit pivote.</p>",
     "buy": {
       "legend": "Parlons de votre contexte",
       "prefix": "— sans engagement",
@@ -51,7 +51,7 @@
         "headers": {
           "dimension": "Dimension",
           "fullTimeJunior": "Premier dev à temps plein (junior–mid)",
-          "fractionalSenior": "Product Engineer, 2 j / semaine"
+          "fractionalSenior": "Consultant produit et développeur senior, 2 j / semaine"
         },
         "rows": [
           {
