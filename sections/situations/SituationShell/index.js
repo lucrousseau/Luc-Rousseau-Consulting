@@ -3,13 +3,13 @@ import parse from "html-react-parser";
 
 import Row from "../../../components/Layout/Row";
 import Container from "../../../components/Layout/Container";
-import SectionIntro from "../../../components/SectionIntro";
 import SectionCta from "../../../components/SectionCta";
 import ProductGrid from "../../../components/ProductGrid";
+import NumberedHighlightList from "../../../components/NumberedHighlightList";
 import Accordion from "../../../components/Accordion";
 import Table from "../../../components/Table";
+import { parseHtmlContent, parseHtmlItems } from "../../../commons/parseHtmlContent";
 import {
-  homeCtaRowStyle,
   homeIntroRowStyle,
   homeTableRowStyle,
   homeSituationCtaRowStyle,
@@ -19,83 +19,42 @@ import { getScheduleCta } from "../../../commons/scheduleCta";
 import TechnicalStack from "../../TechnicalStack";
 import SituationHero from "../SituationHero";
 import SituationGroups from "../SituationGroups";
-import SituationHighlights from "../SituationHighlights";
+import SituationSection from "../SituationSection";
+import { situationBlockClassName } from "../situationBlockClassName";
 
 function hasGroups(block) {
   return Array.isArray(block?.groups) && block.groups.length > 0;
 }
 
-function blockClassName(block) {
-  const parts = ["section-situation-block", `section-situation-block--${block.type}`];
-  if (block.sectionKey) {
-    parts.push(`section-situation-block--${block.sectionKey}`);
-  }
-  return parts.join(" ");
-}
-
-function parseBlockItems(items) {
-  if (!Array.isArray(items)) {
-    return [];
-  }
-  return items.map((item) => ({
-    ...item,
-    content: item.content ? parse(item.content) : null,
-  }));
-}
-
-function SituationBlock({ block, namespace, scheduleCta }) {
+function SituationBlock({ block, scheduleCta }) {
   if (!block?.type) {
     return null;
   }
 
   switch (block.type) {
     case "intro":
-      return (
-        <Container className={blockClassName(block)} align="center" halign="center">
-          <SectionIntro
-            badge={block.badge}
-            title={block.title}
-            lede={block.lede ? parse(block.lede) : null}
-            rowStyle={homeIntroRowStyle}
-          />
-        </Container>
-      );
+      return <SituationSection block={block}>{null}</SituationSection>;
 
     case "highlights":
       return (
-        <Container className={blockClassName(block)} align="center" halign="center">
-          {(block.badge || block.title) && (
-            <SectionIntro
-              badge={block.badge}
-              title={block.title}
-              lede={block.lede ? parse(block.lede) : null}
-              rowStyle={homeIntroRowStyle}
-            />
-          )}
-          <SituationHighlights items={block.items} />
-        </Container>
+        <SituationSection block={block}>
+          <NumberedHighlightList items={block.items} />
+        </SituationSection>
       );
 
     case "cards": {
       const cardGroups = hasGroups(block) ? block.groups : null;
       const cardItems = cardGroups ? null : block.items;
+
       return (
-        <Container className={blockClassName(block)} align="center" halign="center">
-          {(block.badge || block.title) && (
-            <SectionIntro
-              badge={block.badge}
-              title={block.title}
-              lede={block.lede ? parse(block.lede) : null}
-              rowStyle={homeIntroRowStyle}
-            />
-          )}
+        <SituationSection block={block}>
           {cardGroups ? (
             <SituationGroups
               groups={cardGroups}
               renderGroup={(group) => (
                 <ProductGrid
                   items={group.items}
-                  renderItem={(item) => parse(item.content)}
+                  renderItem={(item) => parseHtmlContent(item.content)}
                   cols={{ col: 4, lg: 10, sm: 12 }}
                 />
               )}
@@ -103,11 +62,11 @@ function SituationBlock({ block, namespace, scheduleCta }) {
           ) : (
             <ProductGrid
               items={cardItems}
-              renderItem={(item) => parse(item.content)}
+              renderItem={(item) => parseHtmlContent(item.content)}
               cols={{ col: 4, lg: 10, sm: 12 }}
             />
           )}
-        </Container>
+        </SituationSection>
       );
     }
 
@@ -118,12 +77,17 @@ function SituationBlock({ block, namespace, scheduleCta }) {
       if (!hasTable) {
         return null;
       }
+
       return (
-        <Container className={blockClassName(block)} align="center" halign="center">
-          <SectionIntro badge={block.badge} title={block.title} rowStyle={homeIntroRowStyle}>
-            {block.intro && <p className="big">{parse(block.intro)}</p>}
-            {block.lede && parse(block.lede)}
-          </SectionIntro>
+        <SituationSection
+          block={block}
+          introChildren={
+            <>
+              {block.intro && <p className="big">{parse(block.intro)}</p>}
+              {block.lede && parse(block.lede)}
+            </>
+          }
+        >
           <Row
             halign="center"
             style={homeTableRowStyle}
@@ -141,20 +105,15 @@ function SituationBlock({ block, namespace, scheduleCta }) {
               },
             ]}
           />
-        </Container>
+        </SituationSection>
       );
     }
 
     case "faq": {
-      const faqItems = parseBlockItems(block.items);
+      const faqItems = parseHtmlItems(block.items);
+
       return (
-        <Container className={blockClassName(block)} align="center" halign="center">
-          <SectionIntro
-            badge={block.badge}
-            title={block.title}
-            lede={block.lede ? parse(block.lede) : null}
-            rowStyle={homeIntroRowStyle}
-          />
+        <SituationSection block={block}>
           <Row
             halign="center"
             style={homeTableRowStyle}
@@ -165,14 +124,14 @@ function SituationBlock({ block, namespace, scheduleCta }) {
               },
             ]}
           />
-        </Container>
+        </SituationSection>
       );
     }
 
     case "stack":
       return (
         <TechnicalStack
-          className={blockClassName(block)}
+          className={situationBlockClassName(block)}
           badge={block.badge}
           title={block.title}
           lede={block.lede}
@@ -184,7 +143,7 @@ function SituationBlock({ block, namespace, scheduleCta }) {
 
     case "cta":
       return (
-        <Container className={blockClassName(block)} align="center" halign="center">
+        <Container className={situationBlockClassName(block)} align="center" halign="center">
           <SectionCta
             halign="center"
             trackSection={block.trackSection ?? "situation"}
@@ -218,9 +177,8 @@ export default function SituationShell({ namespace }) {
       <SituationHero namespace={namespace} />
       {blockList.map((block, index) => (
         <SituationBlock
-          key={`${block.type}-${index}`}
+          key={`${block.type}-${block.sectionKey ?? index}`}
           block={block}
-          namespace={namespace}
           scheduleCta={scheduleCta}
         />
       ))}
