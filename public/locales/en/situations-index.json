@@ -4,7 +4,7 @@
   "seoImage": "/og/image-en.jpg",
   "badge": "Situations",
   "title": "Which situation fits you?",
-  "lede": "<p class=\"big\">In under a minute, find the page that matches your context: fractional product and technical support in Quebec. Same quiz as on the <a href=\"/\">home page</a> (Your situation section).</p><p class=\"big\">Seven profiles covered: post-funding and first dev hire, solo developer, fractional PM or PO, phased rebuild, editorial platform, SaaS MVP, and product AI with guardrails.</p>",
+  "lede": "<p class=\"big\">In under a minute, find the page that matches your context: fractional product and technical support in Quebec.</p><p class=\"big\">Seven profiles covered: post-funding and first dev hire, solo developer, fractional PM or PO, phased rebuild, editorial platform, SaaS MVP, and product AI with guardrails.</p>",
   "quiz": {
     "progress": "Question {{current}} of {{total}}",
     "back": "Back",

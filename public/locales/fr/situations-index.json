@@ -4,7 +4,7 @@
   "seoImage": "/og/image-fr.jpg",
   "badge": "Situations",
   "title": "Quelle situation vous concerne ?",
-  "lede": "<p class=\"big\">En moins d'une minute, identifiez la fiche qui vous correspond : accompagnement produit et technique en fractionnel au Québec. Même quiz que sur <a href=\"/\">l'accueil</a> (section Votre situation).</p><p class=\"big\">Sept profils couverts : levée et premier recrutement dev, développeur unique, PM ou PO fractionnel, refonte par phases, plateforme éditoriale, MVP SaaS, et IA produit avec garde-fous.</p>",
+  "lede": "<p class=\"big\">En moins d'une minute, identifiez la fiche qui vous correspond : accompagnement produit et technique en fractionnel au Québec.</p><p class=\"big\">Sept profils couverts : levée et premier recrutement dev, développeur unique, PM ou PO fractionnel, refonte par phases, plateforme éditoriale, MVP SaaS, et IA produit avec garde-fous.</p>",
   "quiz": {
     "progress": "Question {{current}} sur {{total}}",
     "back": "Retour",
