@@ -1,10 +1,10 @@
 {
   "seoTitle": "Product Manager or Product Owner: prioritization, AI, ceremonies | Luc Rousseau",
-  "seoDescription": "PM or PO need without full-time: priorities, prerequisites, prototyping, and dev ceremonies, about four days per week in dense fractional support.",
+  "seoDescription": "Technical PM/PO fractional: product, design, code, and AI prototypes, priorities and dev ceremonies, about four days per week.",
   "hero": {
     "badge": "Product & delivery",
     "title": "PM or PO need, without full-time",
-    "lede": "<p><strong>You need a PM or PO, without a 40-hour hire.</strong> The team ships code; what's missing is <strong>quarterly prioritization</strong>, clear prerequisites, dev rituals, and hypotheses tested before build. It's not « too early for a PM », it's <strong>too heavy or too rigid full-time</strong>.</p><p>That fits as <strong>dense fractional support</strong>: about <strong>four days per week</strong>, often as <strong>half-days</strong> (stand-up in the morning, backlog or prerequisites in the afternoon), plus <strong>full days</strong> to evaluate, prototype, or validate before the dev team commits.</p>",
+    "lede": "<p><strong>You need a PM or PO, without a 40-hour hire.</strong> The team ships code; what's missing is <strong>quarterly prioritization</strong>, clear prerequisites, dev rituals, and hypotheses tested before build. It's not « too early for a PM », it's <strong>too heavy or too rigid full-time</strong>.</p><p>I work as a <strong>technical PM/PO</strong>: development, business logic, technical trade-offs, and <strong>product sense</strong> (background in design, then engineering, then product leadership). In the AI era, that combination is a real edge to frame, prototype, and decide without losing your team.</p><p>That fits as <strong>dense fractional support</strong>: about <strong>four days per week</strong>, often as <strong>half-days</strong> (stand-up in the morning, backlog or prerequisites in the afternoon), plus <strong>full days</strong> to evaluate, prototype, or validate before the dev team commits.</p>",
     "buy": {
       "legend": "Clarify your product need",
       "prefix": "No commitment",
@@ -17,6 +17,12 @@
       "badge": "The gap",
       "title": "When developers wait on product decisions",
       "lede": "<p class=\"big\">Without a PM or PO, the founder arbitrates between customer fires, tech debt, and « the next big feature ». Developers move tickets, but <strong>the why and the order</strong> stay implicit. Each quarter, the roadmap looks like a wish list, not a plan the team can hold.</p>"
+    },
+    {
+      "type": "intro",
+      "badge": "The profile",
+      "title": "Technical PM/PO: product, design, and code",
+      "lede": "<p class=\"big\">Not a generalist PM far from the codebase. I understand <strong>how things get built</strong>, what business logic demands, and what the experience must carry, through a <strong>designer → developer → product</strong> path. Credible with your devs, clear for the business; with AI, we can <strong>test hypotheses in days</strong>, not months of fuzzy specs.</p>"
     },
     {
       "type": "highlights",
@@ -34,8 +40,8 @@
           "content": "<p>When <strong>several hypotheses or features</strong> must be evaluated, prototyped, or tested before build: AI prototypes, clickable flows, light POCs, to validate fast, not to replace production delivery.</p>"
         },
         {
-          "title": "Not an employee, a senior partner",
-          "content": "<p>Same person for <strong>prioritization, prerequisites, and technical judgment</strong>, without a handoff between « the PM » and « someone who gets the code ». Scope and rhythm adjustable without hiring or layoffs.</p>"
+          "title": "Senior technical PM/PO, not an employee",
+          "content": "<p>Same person for <strong>prioritization, prerequisites, UX, and technical judgment</strong>, without a handoff between « the PM » and « someone who gets the code ». Scope and rhythm adjustable without hiring or layoffs.</p>"
         }
       ]
     },
@@ -55,7 +61,7 @@
         },
         {
           "title": "AI prototypes before full build",
-          "content": "<p>Someone comfortable with AI who ships <strong>fast prototypes</strong> (flows, interactive mocks, light POCs) to validate hypotheses and test functionality with users, before committing weeks of development.</p>"
+          "content": "<p>Technical PM/PO <strong>and</strong> comfortable with AI: clickable flows, interactive mocks, light POCs, with design eye and business rigor to validate hypotheses before committing weeks of development.</p>"
         },
         {
           "title": "Daily ceremonies with developers",
@@ -73,7 +79,7 @@
         "headers": {
           "dimension": "Dimension",
           "fullTimePm": "Full-time PM or PO",
-          "fractionalLead": "Senior Product Engineer (~4 days / week, often as half-days + full days as needed)"
+          "fractionalLead": "Technical PM/PO, senior product engineer (~4 days / week, half-days + full days as needed)"
         },
         "rows": [
           {
@@ -84,12 +90,12 @@
           {
             "dimension": "Technical fluency",
             "fullTimePm": "Varies; frequent handoffs with the dev team.",
-            "fractionalLead": "Same person for prioritization, prerequisites, and realistic technical trade-offs."
+            "fractionalLead": "Technical PM/PO: business logic, code, debt, APIs; same language as your devs."
           },
           {
-            "dimension": "Prototypes & validation",
-            "fullTimePm": "Often Figma mocks; few executable POCs without dev time.",
-            "fractionalLead": "AI prototypes and POCs on dedicated full days, before committing build."
+            "dimension": "Product, design & AI",
+            "fullTimePm": "Often slides or Figma; weak link to build reality.",
+            "fractionalLead": "Design + dev background; AI prototypes and user validation before build."
           },
           {
             "dimension": "Cost & flexibility",
@@ -108,11 +114,12 @@
       "type": "stack",
       "badge": "How I build",
       "title": "Technical foundations",
-      "lede": "<p class=\"big\"><strong>Product and tech in one loop</strong>: clear prerequisites, prototypes before build, stack aligned with your developers.</p>",
+      "lede": "<p class=\"big\"><strong>Technical PM/PO</strong>: product, design, business logic, and stack aligned with your developers, AI prototypes before build.</p>",
       "groups": [
         {
           "badge": "Product",
           "items": [
+            "Product and design lens (creative background)",
             "AI prototypes and clickable flows",
             "Prerequisites and acceptance criteria",
             "Backlog structured for developers",
@@ -152,6 +159,10 @@
           "content": "<p>It's <strong>substantial product capacity</strong>, on purpose, because the need is real. Versus an employee: no employer costs, flexible calendar (half-days vs full days), and ability to adjust intensity by phase (discovery vs steady execution).</p>"
         },
         {
+          "title": "What does a « technical » PM/PO change?",
+          "content": "<p>I speak <strong>development, business logic, and product</strong> in one conversation. Your devs don't translate fuzzy specs; the business doesn't pick between « pretty slides » and « buildable ». With AI, I can ship <strong>credible prototypes</strong> fast because I understand both sides.</p>"
+        },
+        {
           "title": "AI prototypes aren't « real » product",
           "content": "<p>Exactly: the goal is to <strong>reduce risk before code</strong>. A clickable flow or minimal POC lets you say no early, yes with confidence, not replace production delivery.</p>"
         },
@@ -170,7 +181,7 @@
       "badge": "Next step",
       "trackSection": "situation-product-manager",
       "label": "Discuss PM/PO need",
-      "teaser": "<p class=\"big\">Need a PM without full-time? A 30-minute call is enough to see if about four days per week, as half-days, with full days for prototyping, fits your team.</p>"
+      "teaser": "<p class=\"big\">Need a technical PM/PO without full-time? A 30-minute call is enough to see if about four days per week, product + code + AI prototypes, fits your team.</p>"
     }
   ]
 }
