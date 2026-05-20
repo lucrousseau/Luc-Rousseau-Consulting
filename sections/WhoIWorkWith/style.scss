@@ -1,18 +1,20 @@
 @use "../../styles/abstracts/variables" as *;
 
 .section-who-i-work-with {
-  .who-i-work-with__situations {
-    margin-bottom: 2rem;
+  --who-i-work-with-gap: var(--page-home-row-pad, 2rem);
+  --who-i-work-with-gap-inner: var(--page-home-row-pad-inner, 1.5rem);
+  --who-i-work-with-gap-sm: var(--page-home-row-pad-sm, 1.5rem);
+
+  .who-i-work-with__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
   }
 
-  .who-i-work-with__situation-links {
-    list-style: none;
-    padding-left: 0;
-    margin: 0.75rem 0 1rem;
-
-    li + li {
-      margin-top: 0.5rem;
-    }
+  .who-i-work-with__subheading {
+    margin: 0 0 var(--who-i-work-with-gap-inner);
+    text-align: left;
   }
 
   .who-i-work-with__list {
@@ -21,25 +23,70 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0 2.5rem;
-    row-gap: 1.25rem;
+    gap: var(--who-i-work-with-gap-inner) var(--gap, 1.5rem);
+    row-gap: var(--who-i-work-with-gap-inner);
 
     @media screen and (max-width: $md) {
       grid-template-columns: 1fr;
-      gap: 1.25rem 0;
+      gap: var(--who-i-work-with-gap-sm) 0;
     }
 
     li {
       margin-bottom: 0;
     }
 
-    .h3 {
+    .h4 {
       margin-top: 0;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.35rem;
     }
 
-    .h3 + p {
+    .h4 + p {
       margin-top: 0;
+      font-size: 0.9375rem;
+      line-height: 1.45;
     }
+  }
+
+  .who-i-work-with__situations {
+    margin-top: var(--who-i-work-with-gap);
+    padding-top: var(--who-i-work-with-gap);
+    border-top: var(--border-width) solid rgb(255 255 255 / 12%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .who-i-work-with__situations-intro {
+    margin-bottom: var(--who-i-work-with-gap-inner);
+    max-width: 42ch;
+    text-align: center;
+  }
+
+  .who-i-work-with__situations-badge {
+    margin: 0 0 0.5rem;
+    text-align: center;
+  }
+
+  .who-i-work-with__situations-lede {
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.45;
+    text-align: center;
+  }
+
+  .who-i-work-with__routing-quiz {
+    width: 100%;
+    max-width: 42rem;
+  }
+
+  .who-i-work-with__cta {
+    margin-top: var(--who-i-work-with-gap);
+    width: 100%;
+  }
+}
+
+.page-home .section-who-i-work-with {
+  .who-i-work-with__situations-badge.section__badge {
+    margin-bottom: 0.5rem;
   }
 }

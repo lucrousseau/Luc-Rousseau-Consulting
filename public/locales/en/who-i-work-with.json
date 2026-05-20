@@ -32,35 +32,7 @@
     }
   ],
   "footer-cta-label": "Book a call",
-  "guideLinks": [
-    {
-      "slug": "premier-dev-fractionnel",
-      "label": "After a raise: before your first full-time developer →"
-    },
-    {
-      "slug": "dev-unique-backup",
-      "label": "One developer owns all the tech →"
-    },
-    {
-      "slug": "product-manager-fractionnel",
-      "label": "PM or PO need without full-time →"
-    },
-    {
-      "slug": "refonte-produit-par-phases",
-      "label": "Phased product rebuild →"
-    },
-    {
-      "slug": "plateforme-editoriale-produit",
-      "label": "Editorial product platform →"
-    },
-    {
-      "slug": "mvp-saas-faisabilite",
-      "label": "Launching a SaaS or MVP →"
-    },
-    {
-      "slug": "ia-produit-garde-fous",
-      "label": "AI in your product →"
-    }
-  ],
-  "situations-index-label": "All situations"
+  "profiles-heading": "Profiles that tend to fit best",
+  "situations-quiz-badge": "Your situation",
+  "situations-quiz-lede": "Find the situation page that matches your context in two questions."
 }

@@ -98,6 +98,7 @@ export const getStaticProps = async ({ locale }) => {
         "tangible",
         "technologies",
         "who-i-work-with",
+        "situations-index",
       ])),
     },
     revalidate: 86400,
