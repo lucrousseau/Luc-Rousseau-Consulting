@@ -75,29 +75,19 @@
       "badge": "How I build",
       "title": "Technical foundations",
       "lede": "<p class=\"big\"><strong>Backup on your existing stack</strong>: we check early whether I'm aligned with your languages, frameworks, and tooling, then reviews, runbooks, and prioritization without disrupting your primary developer's day to day.</p>",
-      "groups": [
-        {
-          "badge": "On your live product",
-          "items": [
-            "Repo, CI/CD, hosting, and integration map",
-            "Architecture and code reviews on the current stack",
-            "Documentation and backup runbooks",
-            "Tests, regression, and targeted technical debt",
-            "Pairing and handover with your primary developer"
-          ]
-        },
-        {
-          "badge": "Languages & stacks I cover",
-          "items": [
-            "PHP · Laravel · REST APIs",
-            "JavaScript · TypeScript · Node.js",
-            "React · Next.js · Vue",
-            "WordPress · headless · Gutenberg/blocks",
-            "SQL · Redis · queues · third-party webhooks",
-            "CI/CD · Docker · monitoring",
-            "JavaScript · PHP"
-          ]
-        }
+      "items": [
+        "Repo, CI/CD, hosting, and integration map",
+        "Architecture and code reviews on the current stack",
+        "Documentation and backup runbooks",
+        "Tests, regression, and targeted technical debt",
+        "Pairing and handover with your primary developer",
+        "PHP · Laravel · REST APIs",
+        "JavaScript · TypeScript · Node.js",
+        "React · Next.js · Vue",
+        "WordPress · headless · Gutenberg/blocks",
+        "SQL · Redis · queues · third-party webhooks",
+        "CI/CD · Docker · monitoring",
+        "JavaScript · PHP"
       ],
       "background": "rome"
     },
