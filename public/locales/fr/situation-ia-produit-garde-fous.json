@@ -113,11 +113,11 @@
       "items": [
         {
           "title": "Vous implémentez les modèles vous-même ?",
-          "content": "<p>Je peux monter des <strong>POCs et intégrations ciblées</strong> sur les sujets à fort levier ; le run long terme reste chez vous ou votre agence, avec une spec qu'ils peuvent exécuter.</p>"
+          "content": "<p>Oui, sur les sujets à fort levier : je monte des <strong>POCs et intégrations ciblées</strong> ; le run long terme reste chez vous ou votre agence, avec une spec qu'ils peuvent exécuter.</p>"
         },
         {
-          "title": "On a déjà un guide / besoin PM pour les prototypes",
-          "content": "<p>Le guide PM couvre priorisation et rituels. Celui-ci couvre <strong>où l'IA a sa place, les risques et l'architecture</strong>, les deux se complètent si vous avez les deux besoins.</p>"
+          "title": "On a déjà un PM : ce n'est pas redondant ?",
+          "content": "<p>Souvent non. Le guide PM couvre prioritisation et rituels quotidiens. Ici, c'est <strong>où l'IA a sa place, les risques, l'architecture</strong> et les prototypes avant la prod. Les deux se complètent si vous avez les deux besoins.</p>"
         },
         {
           "title": "L'IA change trop vite, pourquoi planifier ?",

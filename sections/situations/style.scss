@@ -25,10 +25,35 @@
     }
   }
 
-  .section-situation-block--faq .component__accordion,
   .section-situation-block--comparison .component__table {
     --margin-top: 0;
     --margin-bottom: 0;
+  }
+
+  .section-situation-block--faq {
+    .component__accordion {
+      --margin-top: 0;
+      --margin-bottom: 0;
+    }
+
+    .component__accordion__item > h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .component__accordion__content {
+      p {
+        margin: 0 0 1rem;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      p + p {
+        margin-top: 0.85rem;
+      }
+    }
   }
 
   .section-situation-block--split {

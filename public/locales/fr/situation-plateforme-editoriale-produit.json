@@ -1,10 +1,10 @@
 {
   "seoTitle": "Plateforme éditoriale produit : comparateurs, blocs, APIs | Luc Rousseau",
-  "seoDescription": "Produit éditorial à l'échelle : comparateur, multi-marques, blocs et APIs, tenir la cadence éditoriale sans intégrations ad hoc à chaque lancement.",
+  "seoDescription": "Plateforme éditoriale : conversion, partenariats visibles, monétisation. Milesopedia, Nesto : fort trafic, édition et marketing sur le même système au Québec.",
   "hero": {
     "badge": "Produit éditorial",
     "title": "Produit éditorial à l'échelle",
-    "lede": "<p><strong>Votre produit, c'est le contenu et les parcours, pas une vitrine statique.</strong> Comparateur, réseau multi-marques, parcours métier riche : <strong>l'édition livre le produit</strong> chaque semaine. Ce n'est pas un site corporate qu'on refait tous les trois ans ; c'est un système où contenu, règles métier et technique doivent tenir ensemble.</p><p>Je travaille sur ce type de <strong>plateforme produit</strong> : modèle de blocs durable (dont Gutenberg quand WordPress est l'épine dorsale), APIs et frontières claires, headless si le débit éditorial ou le multi-surface le justifie, <strong>moins d'intégrations sur mesure à chaque lancement</strong>.</p>",
+    "lede": "<p><strong>Votre produit, c'est le contenu et les parcours qui convertissent</strong>, pas une vitrine statique. Comparateur, multi-marques, parcours métier riche : <strong>l'édition livre le produit</strong> chaque semaine, le <strong>marketing doit vendre</strong> (offres, campagnes, partenariats), et le business attend des <strong>leads, des soumissions ou des ventes</strong> derrière le trafic.</p><p>Je travaille sur ce type de <strong>plateforme produit</strong> pour que ce qui doit <strong>apparaître et monétiser</strong> soit en avant sur les bons parcours : blocs réutilisables, partenariats et placements mesurables, APIs stables (Gutenberg, headless ou Laravel selon le cas). Édition, marketing et technique sur le <strong>même système</strong>, pas trois silos.</p><p>Selon le mandat, j'interviens en <strong>mode produit</strong>, en <strong>mode dev ou hybride</strong>, ou je <strong>pilote vos devs en mode produit</strong> : rythme et mobilisation se calent à l'appel.</p>",
     "buy": {
       "legend": "Parler de votre plateforme",
       "prefix": "Sans engagement",
@@ -13,31 +13,76 @@
   },
   "blocks": [
     {
+      "type": "split",
+      "sectionKey": "context",
+      "title": "Le contexte plateforme éditoriale",
+      "intro": "<p class=\"big\">L'édition et le marketing doivent livrer chaque semaine sans sacrifier la <strong>conversion ni la monétisation</strong>. On part de ce qui bloque aujourd'hui et de la cible : une plateforme qui met en avant ce qui doit vendre, sur du trafic qui tient.</p>",
+      "panels": [
+        {
+          "heading": "Le piège des one-offs",
+          "items": [
+            "HTML ad hoc, plugins fragiles et silos par marché à chaque lancement",
+            "Édition en attente de la tech, ou tech qui court après les demandes éditoriales",
+            "Marketing qui ne peut pas mettre en avant offres et partenariats sans refaire une intégration custom"
+          ]
+        },
+        {
+          "heading": "La cible : convertir et monétiser",
+          "items": [
+            "Blocs éditoriaux et modules marketing (offres, partenariats, CTA) : ce qui doit apparaître est configurable",
+            "Parcours à fort trafic pensés pour la conversion : priorité à ce qui génère leads et revenu",
+            "APIs, CRM et analytics : chaque campagne ou partenariat reste mesurable et opérable"
+          ]
+        }
+      ]
+    },
+    {
       "type": "intro",
-      "badge": "Le piège",
-      "title": "Chaque campagne = une intégration custom",
-      "lede": "<p class=\"big\">L'équipe éditoriale veut de la vitesse ; la technique accumule des <strong>one-offs</strong> : HTML ad hoc, plugins fragiles, silos par marché. Le « produit » devient impossible à faire évoluer sans casser la prod ou retarder chaque lancement.</p>"
+      "badge": "Terrain Québec",
+      "title": "Déjà livré à cette échelle",
+      "lede": "<p class=\"big\">Ce n'est pas théorique : j'ai porté ce type de plateforme sur <strong><a href=\"https://milesopedia.com\" target=\"_blank\" rel=\"noopener noreferrer\">Milesopedia</a></strong> (comparateurs multi-marques, <strong>millions de visites</strong>, parcours de comparaison à fort trafic) et sur l'écosystème <strong><a href=\"https://www.nesto.ca/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Nesto</a></strong> au Québec (blocs Gutenberg, APIs, <strong>capture de leads</strong> vers CRM, surfaces marketing et produit cohérentes). Au Québec, sur ce créneau, la conversion et la prod sous charge ne sont pas négociables.</p>"
     },
     {
       "type": "cards",
-      "badge": "Ce que je construis avec vous",
-      "title": "Plateforme, pas page web",
+      "badge": "Comment j'interviens",
+      "title": "Produit, dev, hybride ou pilotage d'équipe",
+      "lede": "<p class=\"big\">Pas une agence vitrine : mandat <strong>fractionnel</strong>, rythme défini après échange. Je m'insère selon ce que vous avez déjà en interne.</p>",
       "items": [
         {
-          "title": "Modèle de blocs et parcours répétables",
-          "content": "<p>Patterns Gutenberg (ou équivalent) pour des parcours de comparaison, landings produit, modules métier, <strong>l'édition compose</strong>, la tech stabilise les briques.</p>"
+          "title": "Mode produit : éditorial, marketing, monétisation",
+          "content": "<p><strong>Modèle de blocs</strong>, zones partenariats et offres, règles de ce qui apparaît où sur les parcours à fort trafic. Arbitrages édition-marketing-tech avant d'accélérer le build.</p>"
         },
         {
-          "title": "API et fondation centralisée",
-          "content": "<p>Données, contenu, règles partagées entre marques ou marchés, <strong>un système à opérer</strong>, pas un site par pays recâblé à la main.</p>"
+          "title": "Mode dev ou hybride : je build les briques clés",
+          "content": "<p>APIs, patterns Gutenberg, intégrations, couche headless ou services Laravel : <strong>je code</strong> les parties à fort levier quand la bande passante interne manque.</p>"
         },
         {
-          "title": "Headless ou couplé : selon le produit",
-          "content": "<p>WordPress headless, Laravel, front React/Vue : le choix suit le <strong>débit éditorial et les surfaces</strong>, pas la mode stack.</p>"
+          "title": "Équipe dev : je pilote en mode produit",
+          "content": "<p>Vos devs ou votre agence gardent le rythme opérationnel. Je priorise, séquence, revue les livrables et tiens la <strong>cohérence produit-tech</strong>, sans stand-up ni tickets au quotidien.</p>"
+        }
+      ]
+    },
+    {
+      "type": "highlights",
+      "sectionKey": "phasing",
+      "badge": "Le déroulé",
+      "title": "Quatre étapes typiques sur une plateforme éditoriale",
+      "items": [
+        {
+          "title": "Cadrage produit, conversion et monétisation",
+          "content": "<p>Comparateur, multi-marques, objectifs business (conversion, partenariats, offres à mettre en avant), dette actuelle. On définit <strong>ce qui doit apparaître pour monétiser</strong>, ce qui tient en prod et ce qu'on mesure par tranche.</p>"
         },
         {
-          "title": "Releases et perf accrochées au business",
-          "content": "<p>CI/CD, cache, discipline de release, les gains vont où l'<strong>édition et le revenu</strong> en ont besoin, pas en projets tech isolés.</p>"
+          "title": "Modèle de blocs et contrats",
+          "content": "<p>Patterns éditoriaux, schéma de contenu, APIs : <strong>livrable écrit</strong> avant gros chantier. Gutenberg, headless ou Laravel selon le cas.</p>"
+        },
+        {
+          "title": "Build par phases avec valeur en prod",
+          "content": "<p>Livraison par <strong>votre équipe ou par moi</strong> : premier parcours en blocs, couche API, marché pilote. Chaque tranche laisse l'édition livrer <strong>et</strong> garde les funnels de conversion suivables (analytics, A/B si pertinent).</p>"
+        },
+        {
+          "title": "Gouvernance et handover",
+          "content": "<p>Standards, documentation, formation courte des équipes. Suivi fractionnel optionnel pour tenir la cohérence quand les lancements s'accélèrent.</p>"
         }
       ]
     },
@@ -70,9 +115,19 @@
             "productPlatform": "Fondation partagée, marchés comme variantes du même système."
           },
           {
+            "dimension": "Conversion",
+            "vitrineAgency": "Beau design, peu de lien avec leads ou revenu.",
+            "productPlatform": "Parcours, formulaires et intégrations pensés pour convertir et se mesurer."
+          },
+          {
+            "dimension": "Marketing et monétisation",
+            "vitrineAgency": "Campagne isolée, partenariats difficiles à répéter sur le site.",
+            "productPlatform": "Offres et partenariats intégrés au produit : visibles, mesurables, sans one-off à chaque lancement."
+          },
+          {
             "dimension": "Mon rôle",
             "vitrineAgency": "Hors périmètre.",
-            "productPlatform": "Architecture, produit, livraison sur le fil, pas direction d'équipe dev."
+            "productPlatform": "Mode produit, dev ou hybride ; pilotage d'équipe en mode produit, pas direction des personnes."
           }
         ]
       }
@@ -81,17 +136,18 @@
       "type": "stack",
       "badge": "Comment je construis",
       "title": "Fondations techniques",
-      "lede": "<p class=\"big\"><strong>Plateformes éditoriales à l'échelle</strong> : contenu, APIs et front découplés pour tenir la cadence multi-marques.</p>",
+      "lede": "<p class=\"big\"><strong>Plateformes éditoriales à l'échelle</strong> : blocs et APIs au service de la <strong>conversion</strong> et de la cadence multi-marques.</p>",
       "items": [
-        "WordPress headless ou Gutenberg/blocs",
-        "APIs contenu et orchestration éditoriale",
-        "Front React ou Next.js",
-        "Multi-marques et parcours métier",
-        "Cache, CDN et performance éditoriale",
-        "Laravel pour services et middleware",
-        "Intégrations CRM, analytics, partenaires",
-        "CI/CD et previews de contenu",
-        "Gouvernance des modèles de contenu",
+        "Cadrage comparateur · offres · partenariats · monétisation",
+        "WordPress · Gutenberg · blocs et patterns éditoriaux",
+        "WordPress headless · WPGraphQL · REST",
+        "Front React · Next.js · TypeScript",
+        "Laravel · services · middleware · APIs",
+        "Formulaires · leads · CRM (ex. Salesforce)",
+        "Analytics · A/B · événements produit",
+        "Cache · CDN · performance sous trafic",
+        "Modèle de contenu · gouvernance éditoriale",
+        "CI/CD · previews de contenu",
         "JavaScript · PHP"
       ],
       "background": "rome"
@@ -102,16 +158,32 @@
       "title": "Questions fréquentes",
       "items": [
         {
+          "title": "Vous codez vous-même ou vous pilotez notre équipe ?",
+          "content": "<p>Les deux sont possibles, selon ce que vous avez déjà. <strong>Je code</strong> les briques à fort levier (APIs, blocs Gutenberg, intégrations) quand personne n'est disponible pour livrer proprement. <strong>Je pilote</strong> quand vos devs ou votre agence ont la capacité : je priorise, séquence, clarifie les prérequis et valide la cohérence, sans micro-manager les tickets.</p>"
+        },
+        {
           "title": "On est déjà sur WordPress : faut-il tout jeter ?",
-          "content": "<p>Souvent non. On <strong>extrait et structure</strong> : blocs, API, migration par tranches, comme sur des réseaux multi-sites déjà en production, sans big bang.</p>"
+          "content": "<p>Souvent non. On <strong>extrait et structure</strong> : blocs, APIs, migration par tranches, comme sur des réseaux multi-sites déjà en production, sans big bang. C'est le même traitement qu'à fort trafic chez <strong>Milesopedia</strong> ou sur l'écosystème <strong>Nesto</strong>.</p>"
+        },
+        {
+          "title": "Headless ou WordPress couplé pour notre cas ?",
+          "content": "<p>Ça dépend du volume de publication, des surfaces et de l'équipe. Souvent : <strong>headless</strong> (WPGraphQL ou REST + front React/Next.js) si l'édition reste dans WordPress et le front doit évoluer vite ; <strong>couplé</strong> quand la simplicité et l'équipe le favorisent. On tranche à l'écrit avant de coder.</p>"
+        },
+        {
+          "title": "Et la conversion, le marketing, la monétisation ?",
+          "content": "<p>Oui, c'est le même produit que l'éditorial. Le marketing doit pouvoir <strong>mettre en avant</strong> offres et partenariats sur les parcours à fort trafic ; la plateforme doit <strong>convertir</strong> (formulaires, CRM, analytics) sans une intégration sur mesure à chaque campagne. Pas « publier vite » d'un côté et « vendre » de l'autre.</p>"
         },
         {
           "title": "Ce n'est pas juste du « CMS marketing » ?",
-          "content": "<p>Quand le CMS est le <strong>moteur du produit</strong> (édition à haute fréquence, parcours complexes), c'est de l'ingénierie produit, pas une plaquette. Je traite le débit éditorial comme contrainte de première classe.</p>"
+          "content": "<p>Quand le CMS est le <strong>moteur du produit</strong> (comparateur, multi-marques, parcours complexes), c'est de l'ingénierie produit. Le débit éditorial et la conversion sont des contraintes de première classe, pas une plaquette remise à jour par campagne.</p>"
         },
         {
-          "title": "Vous managez notre équipe éditoriale ou dev ?",
-          "content": "<p>Non. Je clarifie le <strong>système et les standards</strong> ; vos équipes gardent leurs rôles. Je facilite les arbitrages produit-tech quand ça bloque la livraison.</p>"
+          "title": "Vous allez devenir notre tech lead ?",
+          "content": "<p>Non. Vos devs ou votre agence gardent le rythme opérationnel. Je clarifie <strong>le système, les standards et la séquence</strong> ; je ne gère pas les personnes, l'équipe éditoriale ni les tickets au quotidien.</p>"
+        },
+        {
+          "title": "On n'a pas le luxe de ralentir pour structurer",
+          "content": "<p>Deux à quatre semaines de cadrage (modèle de blocs, APIs, priorités conversion) évitent souvent <strong>des mois de one-offs</strong>. La première tranche peut être précisément ce cadrage, avec un livrable écrit avant le gros build.</p>"
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",
@@ -124,7 +196,7 @@
       "badge": "Prochaine étape",
       "trackSection": "situation-plateforme-editoriale",
       "label": "Discuter plateforme",
-      "teaser": "<p class=\"big\">Comparateur, multi-marques ou parcours contenu complexe ? Un appel pour voir si une plateforme produit, pas une refonte vitrine, correspond à votre contexte.</p>"
+      "teaser": "<p class=\"big\">Comparateur ou multi-marques : conversion, partenariats visibles, monétisation ? Un appel pour voir si une plateforme produit vaut mieux qu'une vitrine qui ne vend pas.</p>"
     }
   ]
 }

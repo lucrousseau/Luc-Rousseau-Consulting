@@ -1,10 +1,10 @@
 {
   "seoTitle": "Editorial product platform: comparators, blocks, APIs | Luc Rousseau",
-  "seoDescription": "Editorial product at scale: comparator, multi-brand, blocks and APIs, keep editorial pace without ad-hoc integrations every launch.",
+  "seoDescription": "Editorial platform: conversion, visible partnerships, monetization. Milesopedia, Nesto: high traffic, editorial and marketing on one system in Quebec.",
   "hero": {
     "badge": "Editorial product",
     "title": "Editorial product at scale",
-    "lede": "<p><strong>Your product is content and journeys, not a static brochure.</strong> Comparator, multi-brand network, rich business journey: <strong>editorial ships the product</strong> every week. This isn't a corporate site redone every few years; it's a system where content, business rules, and tech must hold together.</p><p>I work on this kind of <strong>product platform</strong>: durable block model (including Gutenberg when WordPress is the backbone), clear APIs and boundaries, headless when editorial throughput or multi-surface warrants it, <strong>fewer custom integrations per launch</strong>.</p>",
+    "lede": "<p><strong>Your product is content and journeys that convert</strong>, not a static brochure. Comparator, multi-brand network, rich business journey: <strong>editorial ships the product</strong> every week, <strong>marketing must sell</strong> (offers, campaigns, partnerships), and the business expects <strong>leads, submissions, or sales</strong> behind that traffic.</p><p>I work on this kind of <strong>product platform</strong> so what must <strong>show up and monetize</strong> is front and center on the right journeys: reusable blocks, measurable partnerships and placements, stable APIs (Gutenberg, headless, or Laravel as needed). Editorial, marketing, and engineering on <strong>one system</strong>, not three silos.</p><p>Depending on the mandate, I work in <strong>product mode</strong>, <strong>dev or hybrid mode</strong>, or <strong>steer your devs in product mode</strong>: rhythm and mobilization are set on the first call.</p>",
     "buy": {
       "legend": "Discuss your platform",
       "prefix": "No commitment",
@@ -13,31 +13,76 @@
   },
   "blocks": [
     {
+      "type": "split",
+      "sectionKey": "context",
+      "title": "Editorial platform context",
+      "intro": "<p class=\"big\">Editorial and marketing must ship every week without sacrificing <strong>conversion or monetization</strong>. We start from what blocks you today and the target: a platform that foregrounds what must sell, on traffic that holds up.</p>",
+      "panels": [
+        {
+          "heading": "The one-off trap",
+          "items": [
+            "Ad-hoc HTML, fragile plugins, and silos per market on every launch",
+            "Editorial waiting on engineering, or engineering chasing editorial requests",
+            "Marketing can't spotlight offers and partnerships without another custom integration"
+          ]
+        },
+        {
+          "heading": "The target: convert and monetize",
+          "items": [
+            "Editorial blocks and marketing modules (offers, partnerships, CTAs): what must show is configurable",
+            "High-traffic journeys built for conversion: priority on what drives leads and revenue",
+            "APIs, CRM, and analytics: every campaign or partnership stays measurable and operable"
+          ]
+        }
+      ]
+    },
+    {
       "type": "intro",
-      "badge": "The trap",
-      "title": "Every campaign = a custom integration",
-      "lede": "<p class=\"big\">Editorial wants speed; engineering accumulates <strong>one-offs</strong>: ad-hoc HTML, fragile plugins, silos per market. The « product » becomes hard to evolve without breaking prod or delaying every launch.</p>"
+      "badge": "Quebec track record",
+      "title": "Already delivered at this scale",
+      "lede": "<p class=\"big\">This isn't theoretical: I've run this kind of platform on <strong><a href=\"https://milesopedia.com\" target=\"_blank\" rel=\"noopener noreferrer\">Milesopedia</a></strong> (multi-brand comparators, <strong>millions of visits</strong>, high-traffic comparison journeys) and on the <strong><a href=\"https://www.nesto.ca\" target=\"_blank\" rel=\"noopener noreferrer\">Nesto</a></strong> ecosystem in Quebec (Gutenberg blocks, APIs, <strong>lead capture</strong> into CRM, consistent marketing and product surfaces). In Quebec, in this space, conversion and prod under load are non-negotiable.</p>"
     },
     {
       "type": "cards",
-      "badge": "What we build",
-      "title": "Platform, not web page",
+      "badge": "How I engage",
+      "title": "Product, dev, hybrid, or team steering",
+      "lede": "<p class=\"big\">Not a brochure agency: <strong>fractional</strong> mandate, rhythm set after a first conversation. I fit how you work internally today.</p>",
       "items": [
         {
-          "title": "Blocks and repeatable journeys",
-          "content": "<p>Gutenberg patterns (or equivalent) for comparison flows, product landings, business modules, <strong>editorial composes</strong>, engineering stabilizes bricks.</p>"
+          "title": "Product mode: editorial, marketing, monetization",
+          "content": "<p><strong>Block model</strong>, partnership and offer zones, rules for what appears where on high-traffic journeys. Editorial-marketing-tech trade-offs before build accelerates.</p>"
         },
         {
-          "title": "API and shared foundation",
-          "content": "<p>Data, content, rules shared across brands or markets, <strong>one system to operate</strong>, not a site per country rewired by hand.</p>"
+          "title": "Dev or hybrid mode: I build key bricks",
+          "content": "<p>APIs, Gutenberg patterns, integrations, headless layer or Laravel services: <strong>I code</strong> high-leverage parts when internal bandwidth is thin.</p>"
         },
         {
-          "title": "Headless or coupled, product-led",
-          "content": "<p>Headless WordPress, Laravel, React/Vue front: choice follows <strong>editorial throughput and surfaces</strong>, not stack fashion.</p>"
+          "title": "Dev team: I steer in product mode",
+          "content": "<p>Your devs or agency keep operational rhythm. I prioritize, sequence, review deliverables, and hold <strong>product-tech coherence</strong>, without daily stand-up or tickets.</p>"
+        }
+      ]
+    },
+    {
+      "type": "highlights",
+      "sectionKey": "phasing",
+      "badge": "The flow",
+      "title": "Four typical steps on an editorial platform",
+      "items": [
+        {
+          "title": "Product framing, conversion, and monetization",
+          "content": "<p>Comparator, multi-brand, business goals (conversion, partnerships, offers to foreground), current debt. We define <strong>what must show to monetize</strong>, what stays live in prod, and what we measure per slice.</p>"
         },
         {
-          "title": "Releases and perf tied to business",
-          "content": "<p>CI/CD, cache, release discipline, gains go where <strong>editorial and revenue</strong> need them, not isolated tech projects.</p>"
+          "title": "Block model and contracts",
+          "content": "<p>Editorial patterns, content schema, APIs: <strong>written deliverable</strong> before a large build. Gutenberg, headless, or Laravel as the case requires.</p>"
+        },
+        {
+          "title": "Phased build with prod value",
+          "content": "<p>Delivery by <strong>your team or by me</strong>: first block-based journey, API layer, pilot market. Each slice keeps editorial shipping <strong>and</strong> conversion funnels trackable (analytics, A/B when it pays off).</p>"
+        },
+        {
+          "title": "Governance and handover",
+          "content": "<p>Standards, documentation, short team enablement. Optional fractional follow-up to hold coherence when launches accelerate.</p>"
         }
       ]
     },
@@ -70,9 +115,19 @@
             "productPlatform": "Shared foundation; markets as variants of one system."
           },
           {
+            "dimension": "Conversion",
+            "vitrineAgency": "Polished design, weak tie to leads or revenue.",
+            "productPlatform": "Journeys, forms, and integrations built to convert and be measured."
+          },
+          {
+            "dimension": "Marketing and monetization",
+            "vitrineAgency": "Isolated campaign; partnerships hard to repeat on the site.",
+            "productPlatform": "Offers and partnerships built into the product: visible, measurable, no one-off per launch."
+          },
+          {
             "dimension": "My role",
             "vitrineAgency": "Out of scope.",
-            "productPlatform": "Architecture, product, delivery on one thread, not dev team management."
+            "productPlatform": "Product, dev, or hybrid mode; team steering in product mode, not people management."
           }
         ]
       }
@@ -81,17 +136,18 @@
       "type": "stack",
       "badge": "How I build",
       "title": "Technical foundations",
-      "lede": "<p class=\"big\"><strong>Editorial platforms at scale</strong>: decoupled content, APIs, and frontends for multi-brand editorial pace.</p>",
+      "lede": "<p class=\"big\"><strong>Editorial platforms at scale</strong>: blocks and APIs in service of <strong>conversion</strong> and multi-brand publishing pace.</p>",
       "items": [
-        "WordPress headless or Gutenberg/blocks",
-        "Content APIs and editorial orchestration",
-        "React or Next.js frontends",
-        "Multi-brand and business journeys",
-        "Cache, CDN, and editorial performance",
-        "Laravel for services and middleware",
-        "CRM, analytics, partner integrations",
-        "CI/CD and content previews",
-        "Content model governance",
+        "Framing comparator · offers · partnerships · monetization",
+        "WordPress · Gutenberg · editorial blocks and patterns",
+        "Headless WordPress · WPGraphQL · REST",
+        "React · Next.js · TypeScript front",
+        "Laravel · services · middleware · APIs",
+        "Forms · leads · CRM (e.g. Salesforce)",
+        "Analytics · A/B · product events",
+        "Cache · CDN · performance under traffic",
+        "Content model · editorial governance",
+        "CI/CD · content previews",
         "JavaScript · PHP"
       ],
       "background": "rome"
@@ -102,16 +158,32 @@
       "title": "Common questions",
       "items": [
         {
+          "title": "Do you code yourself or steer our team?",
+          "content": "<p>Both are possible, depending on what you already have. <strong>I code</strong> high-leverage bricks (APIs, Gutenberg blocks, integrations) when no one is available to ship cleanly. <strong>I steer</strong> when your devs or agency have capacity: I prioritize, sequence, clarify prerequisites, and validate coherence, without micro-managing tickets.</p>"
+        },
+        {
           "title": "We're already on WordPress, do we throw it away?",
-          "content": "<p>Often no. We <strong>extract and structure</strong>: blocks, API, slice migration, like multi-site networks already in prod, without big bang.</p>"
+          "content": "<p>Often no. We <strong>extract and structure</strong>: blocks, APIs, slice migration, like multi-site networks already in prod, without big bang. Same treatment at high traffic on <strong>Milesopedia</strong> and the <strong>Nesto</strong> ecosystem.</p>"
+        },
+        {
+          "title": "Headless or coupled WordPress for our case?",
+          "content": "<p>It depends on publishing volume, surfaces, and the team. Often: <strong>headless</strong> (WPGraphQL or REST + React/Next.js front) when editorial stays in WordPress and the front must move fast; <strong>coupled</strong> when simplicity and the team favor it. We decide in writing before build.</p>"
+        },
+        {
+          "title": "What about conversion, marketing, monetization?",
+          "content": "<p>Yes, it's the same product as editorial. Marketing must be able to <strong>foreground</strong> offers and partnerships on high-traffic journeys; the platform must <strong>convert</strong> (forms, CRM, analytics) without a custom integration every campaign. Not « publish fast » on one side and « sell » on the other.</p>"
         },
         {
           "title": "Isn't this just « marketing CMS »?",
-          "content": "<p>When the CMS is the <strong>product engine</strong> (high-frequency editing, complex journeys), it's product engineering, not a pamphlet. Editorial throughput is a first-class constraint.</p>"
+          "content": "<p>When the CMS is the <strong>product engine</strong> (comparator, multi-brand, complex journeys), it's product engineering. Editorial pace and conversion are first-class constraints, not a pamphlet refreshed per campaign.</p>"
         },
         {
-          "title": "Do you manage our editorial or dev team?",
-          "content": "<p>No. I clarify <strong>system and standards</strong>; your teams keep their roles. I facilitate product-tech trade-offs when delivery blocks.</p>"
+          "title": "Will you become our tech lead?",
+          "content": "<p>No. Your devs or agency keep operational rhythm. I clarify <strong>system, standards, and sequence</strong>; I don't manage people, the editorial team, or day-to-day tickets.</p>"
+        },
+        {
+          "title": "We can't afford to slow down to structure things",
+          "content": "<p>Two to four weeks of framing (block model, APIs, conversion priorities) often avoid <strong>months of one-offs</strong>. The first slice can be exactly that framing, with a written deliverable before the large build.</p>"
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
@@ -124,7 +196,7 @@
       "badge": "Next step",
       "trackSection": "situation-plateforme-editoriale",
       "label": "Discuss platform",
-      "teaser": "<p class=\"big\">Comparator, multi-brand, or complex content journey? One call to see if a product platform, not a brochure redesign, fits your context.</p>"
+      "teaser": "<p class=\"big\">Comparator or multi-brand: conversion, visible partnerships, monetization? One call to see if a product platform beats a brochure site that doesn't sell.</p>"
     }
   ]
 }

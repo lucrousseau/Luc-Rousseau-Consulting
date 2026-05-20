@@ -12,6 +12,29 @@ describe("parseHtmlContent", () => {
 
     expect(container.textContent).toBe("Hello");
   });
+
+  it("opens external http(s) links in a new tab", () => {
+    const { container } = render(
+      <>
+        {parseHtmlContent(
+          '<p>See <a href="https://milesopedia.com" rel="noopener noreferrer">Milesopedia</a>.</p>'
+        )}
+      </>
+    );
+
+    const link = container.querySelector("a");
+    expect(link).toHaveAttribute("href", "https://milesopedia.com");
+    expect(link).toHaveAttribute("target", "_blank");
+    expect(link).toHaveAttribute("rel", "noopener noreferrer");
+  });
+
+  it("keeps relative links in the same tab", () => {
+    const { container } = render(<>{parseHtmlContent('<a href="/situations">Situations</a>')}</>);
+
+    const link = container.querySelector("a");
+    expect(link).toHaveAttribute("href", "/situations");
+    expect(link).not.toHaveAttribute("target");
+  });
 });
 
 describe("parseHtmlItems", () => {

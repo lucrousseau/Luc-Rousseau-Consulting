@@ -7,12 +7,16 @@ import { getSiteOrigin } from "../../utils/siteOrigin";
 
 const SITE_NAME = "Luc Rousseau";
 
-const SEO = ({ title, description, image, sameAs, jsonLd = [] }) => {
+const SEO = ({ title, description, image, sameAs, jsonLd = [], path }) => {
   const base = getSiteOrigin();
   const router = useRouter();
-  const { locale, pathname, defaultLocale } = router;
+  const { locale, pathname, asPath, defaultLocale } = router;
   const defaultLoc = defaultLocale ?? "fr";
-  const pathOnly = pathname || "/";
+  const pathOnly =
+    path ??
+    (pathname && !pathname.includes("[")
+      ? pathname
+      : (typeof asPath === "string" ? asPath.split("?")[0] : null) || pathname || "/");
 
   const canonicalPath = localizedPath(locale, defaultLoc, pathOnly);
   const canonical = absoluteUrl(base, canonicalPath);
