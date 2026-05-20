@@ -1,6 +1,6 @@
 {
   "seoTitle": "Premier dev après financement : 2 jours/semaine plutôt qu'un temps plein | Luc Rousseau",
-  "seoDescription": "Startup post-levée : avant d'embaucher votre premier développeur à temps plein, pourquoi un consultant produit et développeur senior en mandat fractionnel à deux jours par semaine peut offrir plus de valeur dans la même enveloppe.",
+  "seoDescription": "Startup post-levée : avant d'embaucher votre premier développeur à temps plein, pourquoi un lead technique externe à deux jours par semaine peut offrir plus de valeur dans la même enveloppe.",
   "hero": {
     "badge": "Startup post-financement",
     "title": "Avant d'embaucher votre premier dev à temps plein, considérez deux jours par semaine",
@@ -44,7 +44,7 @@
     {
       "type": "comparison",
       "badge": "Comparer",
-      "title": "Premier dev à temps plein vs partenariat fractionnel",
+      "title": "Premier dev à temps plein vs lead technique externe",
       "intro": "Ordres de grandeur pour une startup québécoise — chaque cas se affine à l'appel.",
       "columnKeys": ["dimension", "fullTimeJunior", "fractionalSenior"],
       "table": {
@@ -77,7 +77,7 @@
           {
             "dimension": "Couverture hebdomadaire",
             "fullTimeJunior": "5 jours sur le code — utile si le périmètre est déjà cadré.",
-            "fractionalSenior": "2 jours ciblés + async entre les sessions ; suffisant pour cap et déblocage si bien cadré."
+            "fractionalSenior": "2 jours ciblés + échanges asynchrones entre les sessions ; suffisant pour cap et déblocage si bien cadré."
           }
         ]
       }
