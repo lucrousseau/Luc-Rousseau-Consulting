@@ -68,9 +68,9 @@ export default function Engagement({ cta }) {
                 {parse(t("engagement:termsLead"))}
                 {parse(t("engagement:termsBudget"))}
                 <div className="engagement__terms-facts-wrap">
-                  <p className="small engagement__terms-facts-label">
+                  <h4 className="h4 engagement__terms-subheading">
                     {t("engagement:termsFactsLabel")}
-                  </p>
+                  </h4>
                   <ul className="engagement__terms-facts-list">
                     {factsList.map((line) => (
                       <li key={line}>{line}</li>
@@ -79,9 +79,9 @@ export default function Engagement({ cta }) {
                 </div>
                 <div className="engagement__terms-columns">
                   <div className="engagement__terms-column">
-                    <p className="small engagement__terms-column-heading">
-                      <strong>{t("engagement:termsIncludedHeading")}</strong>
-                    </p>
+                    <h4 className="h4 engagement__terms-subheading">
+                      {t("engagement:termsIncludedHeading")}
+                    </h4>
                     <ul className="engagement__terms-ul">
                       {includedList.map((line) => (
                         <li key={line}>{line}</li>
@@ -89,9 +89,9 @@ export default function Engagement({ cta }) {
                     </ul>
                   </div>
                   <div className="engagement__terms-column">
-                    <p className="small engagement__terms-column-heading">
-                      <strong>{t("engagement:termsExcludedHeading")}</strong>
-                    </p>
+                    <h4 className="h4 engagement__terms-subheading">
+                      {t("engagement:termsExcludedHeading")}
+                    </h4>
                     <ul className="engagement__terms-ul">
                       {excludedList.map((line) => (
                         <li key={line}>{line}</li>
