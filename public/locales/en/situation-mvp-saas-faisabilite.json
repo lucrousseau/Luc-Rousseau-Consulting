@@ -1,10 +1,10 @@
 {
-  "seoTitle": "SaaS MVP: feasibility, stack, and phasing before big spend | Luc Rousseau",
-  "seoDescription": "Launching a SaaS or MVP: feasibility, stack, scope, and prototypes before months of dev, handover to your devs or agency.",
+  "seoTitle": "Fractional SaaS MVP: feasibility, phases, backlog | Luc Rousseau",
+  "seoDescription": "Fractional SaaS or MVP mandate: four steps, CEO/CTO validation (Lovable, Cursor), phases, backlog, and steering devs or agency. Go/no-go and stack before big spend.",
   "hero": {
     "badge": "New product",
     "title": "Launching a SaaS or MVP",
-    "lede": "<p><strong>You're preparing an MVP or SaaS and want to frame before investing heavily.</strong> Idea, market, sometimes budget or agency in sight, but <strong>no clear map yet</strong>: stack, first-release scope, risks, what to validate before months of dev.</p><p>I work in <strong>phased mandates</strong>: feasibility, go/no-go, defensible architecture, prototypes (including AI) to test hypotheses, then handover to your devs or agency. <strong>Not</strong> a CTO who takes over your team: someone who structures, challenges, and ships on high-leverage topics.</p>",
+    "lede": "<p><strong>You're preparing an MVP or SaaS and want to frame before investing heavily.</strong> Idea, market, sometimes budget or agency in sight, but <strong>no clear map yet</strong>: stack, first-release scope, risks, what to validate before months of dev.</p><p>I work in <strong>phased mandates</strong> with the CEO, CTO, or founders: feasibility, go/no-go, architecture, rapid prototypes (Lovable, Claude, Cursor: you prototype, I guide). I can also <strong>steer your devs or agency</strong>: define phases, structure the backlog, prioritize what you need for an MVP that works without derailing. <strong>Not</strong> an embedded CTO: direction, sequence, and product-tech coherence, not day-to-day ticket management.</p><p><strong>Fractional</strong> engagement, not full-time: typically <strong>half-days</strong> to frame and stay aligned, <strong>full days when needed</strong> for intensive prototype or architecture work, sometimes <strong>two days a week</strong> if I code key building blocks. Rhythm is set on the call, phase by phase.</p>",
     "buy": {
       "legend": "Frame your MVP",
       "prefix": "No commitment",
@@ -16,28 +16,81 @@
       "type": "intro",
       "badge": "The trap",
       "title": "Build too early, validate too late",
-      "lede": "<p class=\"big\">Without framing, v1 drifts: scope swells, default stack, agency or devs coding while <strong>what and why</strong> still move. Fixing after three months of build costs far more than a few weeks of feasibility.</p>"
+      "lede": "<p class=\"big\">Without framing, v1 drifts: scope swells, default stack, agency or devs coding while <strong>what and why</strong> still move. Fixing after three months of build costs far more than a few weeks of feasibility.</p><p class=\"big\">AI and tools like Lovable, Claude, or Cursor let you <strong>prototype fast</strong>: the stake is no longer waiting months to see if the idea holds, but validating before you commit heavily on time, team, and money.</p>"
+    },
+    {
+      "type": "split",
+      "sectionKey": "validation",
+      "title": "Validate with the CEO or CTO before the big build",
+      "intro": "<p class=\"big\">Close work with leadership and tech: you can <strong>prototype yourself</strong> with the right tools; I frame the sequence so experiments support decisions, not a future debt pile.</p>",
+      "panels": [
+        {
+          "heading": "Fast prototypes, guided",
+          "items": [
+            "CEO, CTO, or founders: we define which hypotheses to test before build",
+            "Lovable, Claude, Cursor, or similar: you explore, I guide scope, criteria, and next step",
+            "Clickable flows and POCs in days to test and validate, not months of fuzzy specs"
+          ]
+        },
+        {
+          "heading": "Less risk before time, team, and budget",
+          "items": [
+            "A framed, validated idea: investing in dev resources is much less risky",
+            "I steer the sequence so experiments don't scatter in every direction",
+            "Written phases, prioritized backlog, and steering devs or agency when build starts"
+          ]
+        }
+      ]
     },
     {
       "type": "cards",
-      "badge": "Phases",
-      "title": "From fog to executable plan",
+      "badge": "How we work",
+      "title": "Fractional, phased, with a plan",
+      "lede": "<p class=\"big\">Not an embedded CTO or an agency that starts build without a map: phased, <strong>fractional</strong> mandate. Feasibility often on half-days; a full day for intensive prototype or architecture; two days a week possible on a focused build phase. Calendar set on the call.</p>",
       "items": [
         {
-          "title": "Phase 1 : Feasibility and direction",
-          "content": "<p>Hypotheses, constraints, technical options, ballpark, <strong>go/no-go</strong>, deliverable: documented decision, not a vague deck.</p>"
+          "title": "I code, steer devs or agency",
+          "content": "<p><strong>Solo founder</strong>: prototypes and key blocks on demand. <strong>With devs or agency</strong>: I define phases, own the backlog, and prioritize the MVP, without micro-managing day-to-day tickets.</p>"
         },
         {
-          "title": "Phase 2 : Architecture and first scope",
-          "content": "<p>Boundaries, APIs, stack (Laravel, React/Next, headless if relevant), <strong>realistic MVP</strong>: what's in v1 and what waits.</p>"
+          "title": "Feasibility before the big build",
+          "content": "<p>Documented go/no-go, realistic stack, sharp v1 scope. You avoid funding months of build on fuzzy or never-validated assumptions with real users.</p>"
         },
         {
-          "title": "Phase 3 : Prototypes and prerequisites",
-          "content": "<p>Clickable flows, light AI or technical POCs, acceptance criteria, so agency or team <strong>builds without ambiguity</strong>.</p>"
+          "title": "Phases, backlog, and MVP priorities",
+          "content": "<p>Written delivery phases, structured backlog, must-have vs later: a plan for a <strong>working MVP</strong> your devs or agency can execute without scope spinning out of control.</p>"
         },
         {
-          "title": "Optional follow-up",
-          "content": "<p>After major framing, lighter rhythm to keep coherence during build, without a full-time role.</p>"
+          "title": "Fast prototypes, CEO or CTO",
+          "content": "<p>Lovable, Claude, Cursor: you <strong>prototype yourself</strong>; I structure hypotheses, scope, and criteria. Validation before big spend, without unmanageable technical debt.</p>"
+        },
+        {
+          "title": "Sequence and clear guardrails",
+          "content": "<p>Hypotheses, success criteria, throwaway vs prod: I hold the <strong>frame</strong> so fast experiments stay scoped and don't leave unmanageable debt behind you.</p>"
+        }
+      ]
+    },
+    {
+      "type": "highlights",
+      "sectionKey": "phasing",
+      "badge": "The path",
+      "title": "Four typical steps in an MVP or SaaS mandate",
+      "items": [
+        {
+          "title": "Feasibility and product direction",
+          "content": "<p>Hypotheses, constraints, technical options, ballpark, <strong>go/no-go</strong>. Deliverable: documented decision, not a vague deck.</p>"
+        },
+        {
+          "title": "Architecture and v1 scope",
+          "content": "<p>Boundaries, APIs, stack (Laravel, React/Next, headless if relevant). <strong>Realistic MVP</strong>: sharp v1, first phases and backlog sketched before the big build.</p>"
+        },
+        {
+          "title": "Prototypes and prerequisites",
+          "content": "<p>With the CEO or CTO: clickable flows, POCs via Lovable, Claude, Cursor, or targeted build. You prototype, I guide; acceptance criteria and <strong>validation before big budget</strong>. Agency or team gets a brief <strong>ready to build</strong>, not fuzzy specs.</p>"
+        },
+        {
+          "title": "Handover and optional follow-up",
+          "content": "<p>Documentation, prioritized backlog, pass-off or <strong>ongoing steering</strong> of your devs or agency by phase. Fractional follow-up to keep a coherent MVP during build, without a permanent role.</p>"
         }
       ]
     },
@@ -45,7 +98,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "Build straight with agency/devs vs product-system framing first",
-      "intro": "Complements the « first dev » guide when the stake is the SaaS product, not only first tech hire.",
+      "intro": "This comparison is about <strong>launching a SaaS or MVP</strong> (feasibility, stack, prototypes). Different from the <a href=\"/en/situations/premier-dev-fractionnel\">Post-funding: before your first full-time developer</a> situation page, for startups preparing a first tech hire rather than framing a product to launch.",
       "columnKeys": ["dimension", "buildFirst", "phaseFirst"],
       "table": {
         "headers": {
@@ -67,12 +120,17 @@
           {
             "dimension": "Validation",
             "buildFirst": "After months of build.",
-            "phaseFirst": "Prototypes and users early, AI where it makes sense."
+            "phaseFirst": "Early CEO/CTO prototypes (Lovable, Cursor, etc.), validation before big budget."
+          },
+          {
+            "dimension": "Phases and backlog",
+            "buildFirst": "Implicit or rewritten every sprint.",
+            "phaseFirst": "Written phases, prioritized backlog, steering devs or agency."
           },
           {
             "dimension": "External role",
             "buildFirst": "Execution without single product thread.",
-            "phaseFirst": "Same person from direction to prerequisites, not team manager."
+            "phaseFirst": "Same person from direction through build, not team manager."
           }
         ]
       }
@@ -82,27 +140,20 @@
       "badge": "How I build",
       "title": "Technical foundations",
       "lede": "<p class=\"big\"><strong>MVP and SaaS framed before big spend</strong>: realistic stack, sharp scope, and clean handover to your devs or agency.</p>",
-      "groups": [
-        {
-          "badge": "Before build",
-          "items": [
-            "Feasibility and stack selection",
-            "Prototypes and clickable journeys",
-            "MVP scope and success criteria",
-            "Handover documentation and backlog"
-          ]
-        },
-        {
-          "badge": "Stack & delivery",
-          "items": [
-            "Next.js, React, or Vue for the front",
-            "Laravel and APIs for the backend",
-            "Auth, roles, and data model",
-            "CI/CD and demo environments",
-            "Payment or third-party integrations",
-            "JavaScript · PHP"
-          ]
-        }
+      "items": [
+        "Feasibility and stack selection",
+        "Guided rapid prototyping (Lovable, Claude, Cursor) with CEO or CTO",
+        "Prototypes and clickable journeys",
+        "Delivery phases and MVP prioritization",
+        "Structured backlog and success criteria",
+        "Steering in-house devs or agency (product mode)",
+        "Handover documentation and pass-off",
+        "Next.js, React, or Vue for the front",
+        "Laravel and APIs for the backend",
+        "Auth, roles, and data model",
+        "CI/CD and demo environments",
+        "Payment or third-party integrations",
+        "JavaScript · PHP"
       ],
       "background": "rome"
     },
@@ -113,15 +164,39 @@
       "items": [
         {
           "title": "We already have an agency that can do everything",
-          "content": "<p>Better still if they get a <strong>solid brief and prerequisites</strong>. I stay on the client side: direction, architecture, go/no-go criteria. The agency builds the SaaS; I don't replace their team.</p>"
+          "content": "<p>Better still: I <strong>define phases</strong>, structure the backlog, prioritize MVP must-haves, and steer the agency on direction, prerequisites, and coherence. They execute; I don't replace the team.</p>"
         },
         {
           "title": "How long before we « really » code?",
-          "content": "<p>Often <strong>a few weeks</strong> of framing for more predictable months of build. On high-leverage topics I can code a POC, not take every ticket for you.</p>"
+          "content": "<p>Often <strong>a few weeks</strong> of framing for more predictable months of build. On high-leverage topics I can ship a POC; I don't take every ticket for you.</p>"
+        },
+        {
+          "title": "What rhythm: half-days, full days, two days a week?",
+          "content": "<p>It depends on the phase. <strong>Half-days</strong> for feasibility, CEO/CTO workshops, and light follow-up. A <strong>full day</strong> now and then for a prototype or architecture sprint. <strong>Two days a week</strong> only if I need to code foundations or critical POCs. No 40-hour role: we calibrate on the call.</p>"
+        },
+        {
+          "title": "Can we prototype ourselves with Lovable or Cursor?",
+          "content": "<p>Yes, and it's often a <strong>lever</strong>. I work with the CEO, CTO, or founders: you explore with Lovable, Claude, Cursor, or similar; I guide so it serves product and technical validation, not spaghetti to ship as-is to prod. Once the idea is <strong>framed and validated</strong>, investing in team and budget is much less risky.</p>"
+        },
+        {
+          "title": "Do you code yourself or steer our team?",
+          "content": "<p>Both. <strong>I code</strong> prototypes and key blocks when needed. <strong>I steer</strong> your devs or agency: phases, backlog, prioritization for an MVP that holds, product-tech reviews and trade-offs, without taking every ticket for you.</p>"
+        },
+        {
+          "title": "Will you become our CTO?",
+          "content": "<p>No. Your agency or devs keep operational pace. I clarify <strong>system, v1 scope, and sequence</strong>; I don't manage people or day-to-day tickets.</p>"
+        },
+        {
+          "title": "We can't afford to slow down for framing",
+          "content": "<p>Two to four weeks of feasibility often avoid <strong>months of rework</strong>. The first slice can be exactly that framing, with a written deliverable before the big build spend.</p>"
         },
         {
           "title": "What if we raise after?",
           "content": "<p>You arrive with <strong>plan, stack, and validation proof</strong>, less embarrassing technical due diligence. I can help sharpen the first tech or product hire profile.</p>"
+        },
+        {
+          "title": "What happens after framing?",
+          "content": "<p>Documented handover to your devs or agency; optional fractional follow-up if you want coherence without a permanent role, same logic as other phased mandates on the site.</p>"
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
