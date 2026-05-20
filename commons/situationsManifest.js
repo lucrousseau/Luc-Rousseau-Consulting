@@ -14,7 +14,7 @@ const SITUATIONS = [
   {
     slug: "dev-unique-backup",
     namespace: "situation-dev-unique-backup",
-    publishedAt: "2026-05-19",
+    publishedAt: "2026-05-20",
   },
   {
     slug: "product-manager-fractionnel",
