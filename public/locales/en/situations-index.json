@@ -29,11 +29,11 @@
       },
       "product": {
         "label": "Structure product leadership (PM / PO)",
-        "hint": "Priorities, roadmap, prerequisites, dev alignment, without a full-time role"
+        "hint": "Priorities, roadmap, and dev ceremonies: not a major stack rebuild or WordPress migration"
       },
       "live": {
         "label": "Evolve a product already in production",
-        "hint": "Rebuild, editorial platform at scale, or AI in what you already ship"
+        "hint": "Archaic or slow WordPress, editorial platform at scale, or AI in what you already ship"
       },
       "launch": {
         "label": "Launch something new",

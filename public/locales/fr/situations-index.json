@@ -29,11 +29,11 @@
       },
       "product": {
         "label": "Structurer le pilotage produit (PM / PO)",
-        "hint": "Priorités, roadmap, prérequis et lien avec les devs, sans poste temps plein"
+        "hint": "Priorités, roadmap et cérémonies avec les devs : pas une refonte de stack ni migration WordPress majeure"
       },
       "live": {
         "label": "Faire évoluer un produit déjà en production",
-        "hint": "Refonte, plateforme contenu à l'échelle, ou IA dans l'existant"
+        "hint": "WordPress archaïque ou lent, plateforme éditoriale à l'échelle, ou IA dans l'existant"
       },
       "launch": {
         "label": "Lancer un nouveau produit",
