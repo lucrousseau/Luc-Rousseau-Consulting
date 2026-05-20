@@ -8,7 +8,8 @@ import Header from "../../sections/Header";
 import Footer from "../../sections/Footer";
 import SituationShell from "../../sections/situations/SituationShell";
 import { getAllSituationSlugs, getSituationBySlug } from "../../commons/situationsManifest";
-import { buildSituationPageBreadcrumbJsonLd } from "../../commons/situationsStructuredData";
+import { buildSituationPageJsonLd } from "../../commons/situationsStructuredData";
+import { absoluteUrl, localizedPath } from "../../commons/localizedPath";
 import { getSiteOrigin } from "../../utils/siteOrigin";
 
 const PAGE_SHELL_STYLE = {
@@ -16,31 +17,38 @@ const PAGE_SHELL_STYLE = {
   "--padding-bottom": "1rem",
 };
 
-export default function SituationPage({ namespace, slug }) {
+export default function SituationPage({ namespace, slug, publishedAt }) {
   const { t } = useTranslation([namespace, "common"]);
   const router = useRouter();
   const locale = router.locale ?? "fr";
   const defaultLocale = router.defaultLocale ?? "fr";
+  const base = getSiteOrigin();
   const hero = t(`${namespace}:hero`, { returnObjects: true });
-  const situationTitle =
+  const pageName =
     hero && typeof hero === "object" && hero.title ? hero.title : t(`${namespace}:seoTitle`);
+  const pageDescription = t(`${namespace}:seoDescription`);
+  const pageUrl = absoluteUrl(base, localizedPath(locale, defaultLocale, `/situations/${slug}`));
 
-  const breadcrumbJsonLd = buildSituationPageBreadcrumbJsonLd({
-    base: getSiteOrigin(),
+  const situationJsonLd = buildSituationPageJsonLd({
+    base,
     locale,
     defaultLocale,
+    pageUrl,
+    pageName,
+    pageDescription,
     homeLabel: t("common:home-link-label"),
     situationsHubLabel: t("common:situations-link-label"),
-    situationTitle,
+    datePublished: publishedAt,
+    dateModified: publishedAt,
   });
 
   return (
     <>
       <SEO
         title={t(`${namespace}:seoTitle`)}
-        description={t(`${namespace}:seoDescription`)}
+        description={pageDescription}
         sameAs={[t("common:linkedin")]}
-        jsonLd={[breadcrumbJsonLd]}
+        jsonLd={situationJsonLd}
       />
       <Container tag="header" style={PAGE_SHELL_STYLE}>
         <Header showNavigation={false} showCta={false} />
@@ -75,6 +83,7 @@ export async function getStaticProps({ params, locale }) {
     props: {
       namespace: situation.namespace,
       slug: situation.slug,
+      publishedAt: situation.publishedAt,
       ...(await serverSideTranslations(locale, [situation.namespace, "common"])),
     },
     revalidate: 86400,
