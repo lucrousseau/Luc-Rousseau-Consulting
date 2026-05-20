@@ -102,6 +102,26 @@
       }
     },
     {
+      "type": "stack",
+      "badge": "How I build",
+      "title": "Technical foundations",
+      "lede": "<p class=\"big\"><strong>Product and tech in one loop</strong>: clear prerequisites, prototypes before build, stack aligned with your developers.</p>",
+      "items": [
+        "AI prototypes and clickable flows",
+        "Prerequisites and acceptance criteria",
+        "Backlog structured for developers",
+        "APIs and dependencies mapped",
+        "Third-party integrations scoped",
+        "Laravel · React · Next.js as in your stack",
+        "Technical feasibility assessment",
+        "Ceremonies and rituals with the dev team",
+        "Quarterly roadmap and trade-offs",
+        "Debt and risks visible to product",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Common questions",

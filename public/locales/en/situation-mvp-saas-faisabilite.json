@@ -78,6 +78,25 @@
       }
     },
     {
+      "type": "stack",
+      "badge": "How I build",
+      "title": "Technical foundations",
+      "lede": "<p class=\"big\"><strong>MVP and SaaS framed before big spend</strong>: realistic stack, sharp scope, and clean handover to your devs or agency.</p>",
+      "items": [
+        "Feasibility and stack selection",
+        "Next.js, React, or Vue for the front",
+        "Laravel and APIs for the backend",
+        "Auth, roles, and data model",
+        "Prototypes and clickable journeys",
+        "MVP scope and success criteria",
+        "CI/CD and demo environments",
+        "Payment or third-party integrations",
+        "Handover documentation and backlog",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Common questions",

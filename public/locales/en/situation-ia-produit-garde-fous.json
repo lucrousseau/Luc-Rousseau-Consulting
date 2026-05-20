@@ -78,6 +78,25 @@
       }
     },
     {
+      "type": "stack",
+      "badge": "How I build",
+      "title": "Technical foundations",
+      "lede": "<p class=\"big\"><strong>AI in your existing product</strong>: where it fits, guardrails, cost, and POC before production build.</p>",
+      "items": [
+        "AI use-case mapping",
+        "LLM APIs and orchestration",
+        "Guardrails, PII, and compliance",
+        "Quality evaluation and token costs",
+        "Targeted RAG or agent POCs",
+        "Observability and AI call logging",
+        "Laravel · React · API integration",
+        "Feature flags and progressive rollout",
+        "Handover to the internal dev team",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Common questions",

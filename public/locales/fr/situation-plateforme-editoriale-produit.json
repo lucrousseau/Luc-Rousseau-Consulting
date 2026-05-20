@@ -78,6 +78,25 @@
       }
     },
     {
+      "type": "stack",
+      "badge": "Comment je construis",
+      "title": "Fondations techniques",
+      "lede": "<p class=\"big\"><strong>Plateformes éditoriales à l'échelle</strong> : contenu, APIs et front découplés pour tenir la cadence multi-marques.</p>",
+      "items": [
+        "WordPress headless ou Gutenberg/blocs",
+        "APIs contenu et orchestration éditoriale",
+        "Front React ou Next.js",
+        "Multi-marques et parcours métier",
+        "Cache, CDN et performance éditoriale",
+        "Laravel pour services et middleware",
+        "Intégrations CRM, analytics, partenaires",
+        "CI/CD et previews de contenu",
+        "Gouvernance des modèles de contenu",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Questions fréquentes",
