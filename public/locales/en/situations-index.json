@@ -44,7 +44,7 @@
         "hint": "Product priorities, backlog, and fractional senior vs first hire within the same budget band"
       },
       "solo-dev": {
-        "label": "One developer owns all the tech",
+        "label": "One developer carries all technical responsibility",
         "hint": "Reduce bus factor, day-to-day relief, vacation coverage"
       },
       "rebuild": {
@@ -83,8 +83,8 @@
       "teaser": "You're weighing a first technical hire : here's how two days a week with a senior principal developer who builds can clarify priorities, backlog, and delivery, often better than a first junior hire within a comparable budget."
     },
     "dev-unique-backup": {
-      "title": "One developer owns all the tech",
-      "teaser": "You want less bus factor without a second full-time hire : here's what one day a week adds day to day and when they're away."
+      "title": "One developer carries all technical responsibility",
+      "teaser": "One developer carries all technical responsibility : here's what one day a week adds day to day and when they're away, without a second full-time hire."
     },
     "product-manager-fractionnel": {
       "title": "PM or PO need, without full-time",

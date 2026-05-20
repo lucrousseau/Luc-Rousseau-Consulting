@@ -44,7 +44,7 @@
         "hint": "Priorités produit, backlog et senior fractionnel vs premier salarié dans la même enveloppe"
       },
       "solo-dev": {
-        "label": "Un seul dev porte tout le technique",
+        "label": "Un seul dev porte toute la responsabilité technique",
         "hint": "Réduire le bus factor, soulager le quotidien, couvrir les vacances"
       },
       "rebuild": {
@@ -83,8 +83,8 @@
       "teaser": "Vous envisagez une première embauche technique : voici comment deux jours par semaine avec un senior dev principal qui build peuvent clarifier priorités, backlog et livraison, souvent mieux qu'un premier junior dans la même enveloppe."
     },
     "dev-unique-backup": {
-      "title": "Un seul dev porte tout le technique",
-      "teaser": "Vous voulez limiter le bus factor sans un second temps plein : voici ce qu'une journée par semaine apporte au quotidien et en absence."
+      "title": "Un seul dev porte toute la responsabilité technique",
+      "teaser": "Un seul dev porte toute la responsabilité technique : voici ce qu'une journée par semaine apporte au quotidien et en absence, sans second temps plein."
     },
     "product-manager-fractionnel": {
       "title": "Besoin de PM ou PO, sans temps plein",
