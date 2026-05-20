@@ -1,9 +1,9 @@
 {
   "seoTitle": "Guides — Luc Rousseau, consultant produit et développeur senior",
-  "seoDescription": "Pages par profil : première embauche dev après financement, ou une seule personne technique à sécuriser. Conseils concrets et comment je peux aider.",
+  "seoDescription": "Pages par profil : première embauche dev, seul dev technique, ou besoin PM/PO pour prioriser et animer l'équipe. Conseils concrets et comment je peux aider.",
   "badge": "Guides",
   "title": "Pour qui, et comment je peux aider",
-  "lede": "<p class=\"big\">Chaque contexte a ses pièges. Ces pages décrivent deux situations fréquentes — et pourquoi un accompagnement senior à temps partiel peut valoir mieux qu'une embauche ou qu'un « on verra plus tard ».</p>",
+  "lede": "<p class=\"big\">Chaque contexte a ses pièges. Ces pages décrivent trois situations fréquentes — et pourquoi un accompagnement senior à temps partiel peut valoir mieux qu'une embauche ou qu'un « on verra plus tard ».</p>",
   "guides": {
     "premier-dev-fractionnel": {
       "title": "Après votre première levée : avant d'embaucher un dev à temps plein",
@@ -12,6 +12,10 @@
     "dev-unique-backup": {
       "title": "Un seul dev fait tout le technique",
       "teaser": "Comment une journée par semaine réduit le bus factor, apporte de la valeur au quotidien et assure une présence quand votre dev principal est en vacances."
+    },
+    "product-manager-fractionnel": {
+      "title": "Vous cherchez un Product Manager ou Product Owner",
+      "teaser": "Besoin réel de PM, sans temps plein : environ quatre jours par semaine en demi-journées, journées complètes pour prototyper et valider, priorisation et cérémonies avec les devs."
     }
   }
 }

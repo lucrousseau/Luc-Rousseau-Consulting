@@ -15,6 +15,11 @@ export const GUIDES = [
     namespace: "guide-dev-unique-backup",
     publishedAt: "2026-05-19",
   },
+  {
+    slug: "product-manager-fractionnel",
+    namespace: "guide-product-manager-fractionnel",
+    publishedAt: "2026-05-20",
+  },
 ];
 
 /**
