@@ -16,6 +16,7 @@ const ProductEngineerDefinition = dynamic(() => import("../sections/ProductEngin
 const AIResponsible = dynamic(() => import("../sections/AIResponsible"));
 const Engagement = dynamic(() => import("../sections/Engagement"));
 const CollaborationFit = dynamic(() => import("../sections/CollaborationFit"));
+const HomeSituationFinder = dynamic(() => import("../sections/HomeSituationFinder"));
 const WhoIWorkWith = dynamic(() => import("../sections/WhoIWorkWith"));
 const Technologies = dynamic(() => import("../sections/Technologies"));
 const Tangible = dynamic(() => import("../sections/Tangible"));
@@ -46,6 +47,7 @@ export default function Home() {
       </Container>
       <main className="page-home">
         <HomeHero />
+        <HomeSituationFinder />
         <ProductEngineerDefinition />
         <AIResponsible />
         <Engagement cta={getScheduleCta(t, { label: t("engagement:ctaLabel") })} />
@@ -97,6 +99,7 @@ export const getStaticProps = async ({ locale }) => {
         "product-engineer",
         "tangible",
         "technologies",
+        "home-situation-finder",
         "who-i-work-with",
         "situations-index",
       ])),

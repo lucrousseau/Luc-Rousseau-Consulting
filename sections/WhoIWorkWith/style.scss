@@ -47,46 +47,8 @@
     }
   }
 
-  .who-i-work-with__situations {
-    margin-top: var(--who-i-work-with-gap);
-    padding-top: var(--who-i-work-with-gap);
-    border-top: var(--border-width) solid rgb(255 255 255 / 12%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .who-i-work-with__situations-intro {
-    margin-bottom: var(--who-i-work-with-gap-inner);
-    max-width: 42ch;
-    text-align: center;
-  }
-
-  .who-i-work-with__situations-badge {
-    margin: 0 0 0.5rem;
-    text-align: center;
-  }
-
-  .who-i-work-with__situations-lede {
-    margin: 0 auto;
-    font-size: 1rem;
-    line-height: 1.45;
-    text-align: center;
-  }
-
-  .who-i-work-with__routing-quiz {
-    width: 100%;
-    max-width: 42rem;
-  }
-
   .who-i-work-with__cta {
     margin-top: var(--who-i-work-with-gap);
     width: 100%;
-  }
-}
-
-.page-home .section-who-i-work-with {
-  .who-i-work-with__situations-badge.section__badge {
-    margin-bottom: 0.5rem;
   }
 }
