@@ -1,10 +1,10 @@
 {
-  "seoTitle": "IA dans le produit : où, garde-fous et POC avant le build | Luc Rousseau",
-  "seoDescription": "IA dans votre produit (existant ou nouveau) : où ça a sa place, garde-fous, POC avant la prod, décisions produit et technique, pas hype.",
+  "seoTitle": "IA produit fractionnelle : usage, APIs LLM, build vs buy | Luc Rousseau",
+  "seoDescription": "IA produit : prérequis, risques, périmètre et anti-hallucination avant build. APIs Claude/OpenAI, build vs buy, mandat en 4 étapes, POC. Pas MLOps.",
   "hero": {
     "badge": "IA & produit",
     "title": "IA dans votre produit",
-    "lede": "<p><strong>L'IA est sur la table, que votre produit soit déjà en ligne ou en lancement.</strong> « Il faut de l'IA » dans le roadmap, l'agence propose une feature floue, l'équipe expérimente sans <strong>garde-fous</strong>. Risque : coûts, données, UX et dette, sans valeur métier claire.</p><p>Je travaille sur <strong>où l'IA a sa place</strong>, comment prototyper et tester vite, quels critères pour la prod, <strong>pas</strong> de hype, <strong>pas</strong> de boîte noire. Même fil : produit, architecture et exécution sur les sujets à levier.</p>",
+    "lede": "<p><strong>L'IA est sur la table, que votre produit soit déjà en ligne ou en lancement.</strong> Pression « il faut de l'IA », feature floue proposée par l'agence, expérimentations sans cadre. Risque : coûts, données, UX et dette, sans valeur métier claire.</p><p>Mon angle est <strong>produit</strong> : identifier en amont les <strong>prérequis, risques et dépendances</strong>, trancher le <strong>périmètre IA</strong> pour éviter les dérapages et limiter les hallucinations, puis build vs buy et intégration des APIs (Claude, OpenAI, etc.) là où le code classique ne suffit pas. <strong>Pas</strong> MLOps ni exploitation de modèles : je m'occupe de l'usage dans le produit, pas de la machine.</p><p>Mandat <strong>fractionnel par phases</strong> : cartographie, garde-fous, POC, puis handover ou pilotage de vos devs ou agence sur le build. <strong>Demi-journées</strong> en cadrage, <strong>journée complète</strong> ponctuelle pour un POC, parfois <strong>deux jours par semaine</strong> si je code une intégration critique. Rythme calé à l'appel.</p>",
     "buy": {
       "legend": "Cadrer l'IA dans votre produit",
       "prefix": "Sans engagement",
@@ -16,36 +16,89 @@
       "type": "intro",
       "badge": "Le piège",
       "title": "Feature IA parce que le marché le demande",
-      "lede": "<p class=\"big\">Sans critères clairs, on shippe un chatbot ou un résumé automatique que <strong>personne n'utilise</strong>, ou qu'on ne peut pas maintenir. Les questions données, coût, qualité, repli si le modèle change, restent sans réponse jusqu'à l'incident.</p>"
+      "lede": "<p class=\"big\">Sans critères clairs, on shippe un chatbot ou un résumé automatique que <strong>personne n'utilise</strong>, ou qu'on ne peut pas maintenir. Les questions données, coût, qualité, repli si le modèle change, restent sans réponse jusqu'à l'incident.</p><p class=\"big\">Se lancer à tête perdue multiplie les surprises : prérequis oubliés, dépendances techniques, périmètre qui gonfle, hallucinations en prod. L'enjeu est de <strong>cadrer avant le build</strong> : où l'IA crée de la valeur, ce qu'il faut avoir en place, et comment limiter les risques.</p>"
+    },
+    {
+      "type": "split",
+      "sectionKey": "product-ai",
+      "title": "IA dans le produit, pas infra ML",
+      "intro": "<p class=\"big\">Je travaille le <strong>côté produit et intégration</strong> : décisions, APIs LLM, expérience utilisateur et garde-fous. Pas l'exploitation DevOps/MLOps des modèles (entraînement, GPU, pipelines ML ops).</p>",
+      "panels": [
+        {
+          "heading": "Avant de se lancer",
+          "items": [
+            "Prérequis, risques et dépendances (données, APIs tierces, équipe) identifiés en amont",
+            "Périmètre IA tranché : quelles features, quels parcours, ce qui est hors scope",
+            "Build vs buy et critères de succès avant d'engager des mois de dev"
+          ]
+        },
+        {
+          "heading": "Dans le produit, sans déraper",
+          "items": [
+            "Garde-fous anti-hallucination : contexte, sources, limites de ce que le modèle peut affirmer",
+            "APIs Claude, OpenAI, Anthropic : où brancher, quoi envoyer, repli UX si la réponse dérape",
+            "Contenus LLM par profil, POC rapide, puis spec et pilotage devs ou agence"
+          ]
+        }
+      ]
     },
     {
       "type": "cards",
-      "badge": "Ce que je fais",
-      "title": "Stratégie IA produit, pas labo parallèle",
+      "badge": "Comment on avance",
+      "title": "Fractionnel, par phases, angle produit",
+      "lede": "<p class=\"big\">Pas un labo IA parallèle ni un intégrateur MLOps : mandat fractionnel centré <strong>usage produit</strong>. Demi-journées en cadrage ; journée complète pour un POC ; deux jours par semaine possible sur une intégration ciblée.</p>",
       "items": [
         {
-          "title": "Où l'IA aide vraiment le produit",
-          "content": "<p>Cartographie des cas d'usage : gain utilisateur, fréquence, tolérance à l'erreur, <strong>alternative sans IA</strong>, pour dire non aux idées décoratives.</p>"
+          "title": "Prérequis, risques et périmètre",
+          "content": "<p>Avant le build : <strong>dépendances</strong>, données disponibles, contraintes légales, ce que l'équipe doit avoir en place. Périmètre IA écrit pour éviter le scope qui gonfle à chaque sprint.</p>"
         },
         {
-          "title": "Garde-fous et critères prod",
-          "content": "<p>Données, confidentialité, coût par requête, repli, monitoring, revue humaine si besoin, <strong>écrits avant le build</strong>, pas après la première plainte.</p>"
+          "title": "Build vs buy et garde-fous",
+          "content": "<p>API modèle, partenaire ou feature interne : arbitrage <strong>risque, coût et délai</strong>. Données, PII, repli, revue humaine et <strong>limites anti-hallucination</strong> définies avant la prod.</p>"
         },
         {
-          "title": "POC et prototypes rapides",
-          "content": "<p>Tester hypothèses avec des POCs ou flows IA, <strong>avant</strong> d'engager l'équipe sur des mois de développement. Différent du guide PM : ici l'angle est <strong>produit + technique + risque</strong>.</p>"
+          "title": "APIs LLM dans le produit",
+          "content": "<p>Claude, OpenAI ou autre : <strong>où brancher</strong> dans le SaaS, contrats de données, async et cache, ce que l'utilisateur voit. Là où le code classique ne tient pas le besoin.</p>"
         },
         {
-          "title": "Alignement avec l'architecture",
-          "content": "<p>Où vit la logique (API, async, cache), comment ça s'intègre au reste du SaaS, <strong>pas</strong> une brique collée à côté du produit.</p>"
+          "title": "Contenus et parcours par profil",
+          "content": "<p>Pages, blocs ou réponses <strong>adaptés au profil</strong> via LLM, avec garde-fous éditoriaux et techniques. Pas un chatbot générique posé sur le site.</p>"
+        },
+        {
+          "title": "POC ou pilotage de vos devs",
+          "content": "<p>Je monte des <strong>POCs produit</strong> à fort levier ou je pilote vos devs ou agence : phases, backlog IA, prérequis clairs, sans micro-manager les tickets.</p>"
+        }
+      ]
+    },
+    {
+      "type": "highlights",
+      "sectionKey": "phasing",
+      "badge": "Le déroulé",
+      "title": "Quatre étapes typiques d'un mandat IA produit",
+      "items": [
+        {
+          "title": "Cartographie et cas d'usage",
+          "content": "<p>Hypothèses, parcours, <strong>prérequis et dépendances</strong> listés, périmètre IA et go/no-go par feature. Livrable : où l'IA aide, où elle n'a pas sa place, et ce qu'il faut préparer avant de coder.</p>"
+        },
+        {
+          "title": "Garde-fous et build vs buy",
+          "content": "<p>Risques, données, coûts tokens, repli, conformité, <strong>stratégie anti-hallucination</strong> (contexte, sources, validation). Build vs buy documenté avant d'engager l'équipe dev.</p>"
+        },
+        {
+          "title": "POC produit et prérequis",
+          "content": "<p>Flows, intégration API, contenus LLM par profil : test en jours, critères d'acceptation. Brief <strong>prêt pour vos devs ou agence</strong>, pas une démo isolée.</p>"
+        },
+        {
+          "title": "Handover et suivi optionnel",
+          "content": "<p>Spec, backlog IA priorisé, passation ou <strong>pilotage continu</strong> du build avec vos devs. Suivi fractionnel pour garder la cohérence, sans poste permanent.</p>"
         }
       ]
     },
     {
       "type": "comparison",
       "badge": "Comparer",
-      "title": "« On ajoute de l'IA » vs cadrage produit IA",
-      "intro": "Complète un besoin PM/PO ; ici le focus est décision technique et risque produit.",
+      "title": "Feature IA vite vs cadrage produit IA d'abord",
+      "intro": "Ce comparatif concerne l'<strong>IA dans le produit</strong> (usage, APIs, build vs buy). Pour un besoin PM/PO au quotidien, voir la fiche <a href=\"/situations/product-manager-fractionnel\">Besoin de PM ou PO, sans temps plein</a> dans Situations.",
       "columnKeys": ["dimension", "hypeFirst", "framedFirst"],
       "table": {
         "headers": {
@@ -60,19 +113,29 @@
             "framedFirst": "Hypothèse et métrique définies avant le code."
           },
           {
-            "dimension": "Risque",
-            "hypeFirst": "Découvert en prod (données, coût, qualité).",
-            "framedFirst": "Garde-fous et repli définis en amont."
+            "dimension": "Build vs buy",
+            "hypeFirst": "Choix par défaut ou hype fournisseur.",
+            "framedFirst": "Arbitrage API, partenaire ou interne, avec coûts et risques."
           },
           {
-            "dimension": "Delivery",
-            "hypeFirst": "Boîte noire prestataire ou expérimentation dispersée.",
-            "framedFirst": "POC → prérequis → build avec critères d'acceptation clairs."
+            "dimension": "Risque prod",
+            "hypeFirst": "Découvert en prod (données, coût, qualité).",
+            "framedFirst": "Prérequis, risques et dépendances identifiés avant le build."
+          },
+          {
+            "dimension": "Hallucinations / qualité",
+            "hypeFirst": "Corrigé après plaintes utilisateurs ou presse.",
+            "framedFirst": "Périmètre, contexte, sources et garde-fous définis en amont."
+          },
+          {
+            "dimension": "Périmètre",
+            "hypeFirst": "MLOps, modèle, ou chatbot générique.",
+            "framedFirst": "Usage produit, intégration APIs, contenus et parcours ciblés."
           },
           {
             "dimension": "Mon rôle",
-            "hypeFirst": ": ",
-            "framedFirst": "Arbitrage produit-tech ; pas pilotage quotidien des devs."
+            "hypeFirst": "Prestataire boîte noire ou expériences dispersées.",
+            "framedFirst": "Arbitrage produit-tech ; POC ou pilotage devs, pas manager quotidien."
           }
         ]
       }
@@ -81,28 +144,20 @@
       "type": "stack",
       "badge": "Comment je construis",
       "title": "Fondations techniques",
-      "lede": "<p class=\"big\"><strong>IA dans le produit existant</strong> : où l'intégrer, garde-fous, coûts et POC avant engagement build en prod.</p>",
-      "groups": [
-        {
-          "badge": "Stratégie IA",
-          "items": [
-            "Cartographie des cas d'usage IA",
-            "Garde-fous, PII et conformité",
-            "Évaluation qualité et coûts tokens",
-            "POC RAG ou agents ciblés"
-          ]
-        },
-        {
-          "badge": "Intégration prod",
-          "items": [
-            "APIs LLM et orchestration",
-            "Observabilité et logs des appels IA",
-            "Intégration Laravel · React · APIs",
-            "Feature flags et déploiement progressif",
-            "Handover vers l'équipe dev interne",
-            "JavaScript · PHP"
-          ]
-        }
+      "lede": "<p class=\"big\"><strong>IA côté produit</strong> : cas d'usage, APIs LLM dans le SaaS, contenus par profil, POC avant prod. Pas MLOps ni exploitation de modèles.</p>",
+      "items": [
+        "Cartographie cas d'usage IA produit",
+        "Prérequis, risques et dépendances avant build",
+        "Périmètre IA et limites anti-hallucination",
+        "Build vs buy et garde-fous (données, coût, repli)",
+        "Intégration APIs Claude, OpenAI, Anthropic",
+        "Contenus et pages adaptés par profil (LLM)",
+        "RAG et agents ciblés dans le parcours",
+        "POC produit avant engagement build",
+        "Pilotage devs ou agence sur le build IA",
+        "Laravel · React · APIs REST",
+        "Feature flags et déploiement progressif",
+        "JavaScript · PHP"
       ],
       "background": "rome"
     },
@@ -112,16 +167,40 @@
       "title": "Questions fréquentes",
       "items": [
         {
-          "title": "Vous implémentez les modèles vous-même ?",
-          "content": "<p>Oui, sur les sujets à fort levier : je monte des <strong>POCs et intégrations ciblées</strong> ; le run long terme reste chez vous ou votre agence, avec une spec qu'ils peuvent exécuter.</p>"
+          "title": "Vous faites du MLOps ou DevOps modèle ?",
+          "content": "<p><strong>Non.</strong> Pas d'entraînement de modèles, pipelines ML ops, GPU ou exploitation infra modèle. Mon périmètre : <strong>usage dans le produit</strong>, décisions, APIs LLM, intégration et garde-fous côté SaaS.</p>"
+        },
+        {
+          "title": "Vous implémentez les APIs LLM dans le produit ?",
+          "content": "<p>Oui, sur les sujets à fort levier : <strong>POCs et intégrations ciblées</strong> (Claude, OpenAI, etc.), spec pour vos devs ou agence. Le run long terme reste chez votre équipe, avec un cadre produit clair.</p>"
         },
         {
           "title": "On a déjà un PM : ce n'est pas redondant ?",
-          "content": "<p>Souvent non. Le guide PM couvre prioritisation et rituels quotidiens. Ici, c'est <strong>où l'IA a sa place, les risques, l'architecture</strong> et les prototypes avant la prod. Les deux se complètent si vous avez les deux besoins.</p>"
+          "content": "<p>Souvent non. Le guide PM couvre prioritisation et rituels quotidiens. Ici : <strong>où l'IA a sa place, build vs buy, APIs, risques</strong> et POC avant prod. Les deux se complètent.</p>"
+        },
+        {
+          "title": "Vous codez ou vous pilotez notre équipe ?",
+          "content": "<p>Les deux. <strong>Je code</strong> des POCs produit (APIs, flows, contenus LLM) si besoin. <strong>Je pilote</strong> vos devs ou agence : phases, backlog IA, prérequis, sans prendre chaque ticket.</p>"
+        },
+        {
+          "title": "Vous allez devenir notre CTO IA ?",
+          "content": "<p>Non. Vos devs ou agence gardent le rythme opérationnel. Je clarifie <strong>cas d'usage, garde-fous et intégration produit</strong> ; je ne gère pas les personnes ni les tickets au quotidien.</p>"
+        },
+        {
+          "title": "Comment limiter les hallucinations et les dérapages ?",
+          "content": "<p>En <strong>cadrant le périmètre</strong> : quelles questions le produit peut traiter, quelles sources ou données le modèle reçoit, ce qu'on affiche ou non, repli et revue humaine si le risque l'exige. On teste en POC avant la prod, pas en espérant que « le modèle fera bien ».</p>"
+        },
+        {
+          "title": "Un chatbot générique suffit-il ?",
+          "content": "<p>Souvent non. On part du <strong>parcours et du job utilisateur</strong> : résumé ciblé, aide contextuelle, génération de contenu par profil, etc. Un widget collé sans critères finit souvent inutilisé ou coûteux.</p>"
+        },
+        {
+          "title": "Quel rythme : demi-journées, journées, deux jours ?",
+          "content": "<p>Ça dépend de la phase. <strong>Demi-journées</strong> pour cartographie et ateliers. <strong>Journée complète</strong> pour un POC API ou contenu LLM. <strong>Deux jours par semaine</strong> si je code une intégration critique. Calibré à l'appel.</p>"
         },
         {
           "title": "L'IA change trop vite, pourquoi planifier ?",
-          "content": "<p>Justement : les <strong>critères produit et garde-fous</strong> restent stables même quand le modèle change, c'est ce qui évite de tout refaire à chaque annonce OpenAI.</p>"
+          "content": "<p>Les <strong>critères produit et garde-fous</strong> restent stables même quand le modèle change : c'est ce qui évite de tout refaire à chaque annonce fournisseur.</p>"
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",
@@ -134,7 +213,7 @@
       "badge": "Prochaine étape",
       "trackSection": "situation-ia-produit",
       "label": "Discuter IA produit",
-      "teaser": "<p class=\"big\">Pression d'embarquer l'IA sans cadre ? Un appel pour voir où ça a du sens, comment prototyper, et ce qui mérite la prod.</p>"
+      "teaser": "<p class=\"big\">Pression d'embarquer l'IA sans cadre ? Un appel pour voir où ça a du sens dans le produit, build vs buy, et ce qui mérite un POC avant la prod.</p>"
     }
   ]
 }

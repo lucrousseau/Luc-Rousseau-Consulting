@@ -85,4 +85,23 @@ describe("situationSeoMeta", () => {
     expect(en.description).toMatch(/backlog/i);
     expect(en.description).toMatch(/steering|agency/i);
   });
+
+  it("exposes product AI scope (not MLOps) for ia-produit-garde-fous", () => {
+    const fr = getSituationSeo("fr", "situation-ia-produit-garde-fous");
+    const en = getSituationSeo("en", "situation-ia-produit-garde-fous");
+
+    expect(fr.metaTitle).toMatch(/fractionnel|produit/i);
+    expect(fr.description).toMatch(/4 étapes/i);
+    expect(fr.description).toMatch(/prérequis|périmètre/i);
+    expect(fr.description).toMatch(/hallucination/i);
+    expect(fr.description).toMatch(/MLOps/i);
+    expect(fr.description).toMatch(/Claude|OpenAI/i);
+
+    expect(en.metaTitle).toMatch(/Fractional|product/i);
+    expect(en.description).toMatch(/four-step/i);
+    expect(en.description).toMatch(/prerequisites|scope/i);
+    expect(en.description).toMatch(/hallucination/i);
+    expect(en.description).toMatch(/MLOps/i);
+    expect(en.description).toMatch(/Claude|OpenAI/i);
+  });
 });

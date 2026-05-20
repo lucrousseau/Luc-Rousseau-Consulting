@@ -104,7 +104,7 @@
     },
     "ia-produit-garde-fous": {
       "title": "IA dans votre produit",
-      "teaser": "Pression « il faut de l'IA » sans cadre clair : voici où ça a sa place, les garde-fous et un POC avant la prod."
+      "teaser": "IA produit : prérequis, risques, périmètre et anti-hallucination avant le build, APIs Claude/OpenAI, build vs buy. Mandat en 4 étapes, POC avant prod."
     }
   }
 }

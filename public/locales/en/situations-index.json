@@ -104,7 +104,7 @@
     },
     "ia-produit-garde-fous": {
       "title": "AI in your product",
-      "teaser": "« We need AI » pressure without a clear frame : here's where it fits, guardrails, and a POC before prod."
+      "teaser": "Product AI: prerequisites, risks, scope, and anti-hallucination before build, Claude/OpenAI APIs, build vs buy. Four-step mandate, POC before prod."
     }
   }
 }
