@@ -1,10 +1,10 @@
 {
-  "seoTitle": "MVP SaaS : faisabilité, stack et phasage avant gros investissement | Luc Rousseau",
-  "seoDescription": "Lancer un SaaS ou un MVP : faisabilité, stack, périmètre et prototypes avant les mois de dev, handover vers vos devs ou votre agence.",
+  "seoTitle": "MVP SaaS fractionnel : faisabilité, phases, backlog | Luc Rousseau",
+  "seoDescription": "MVP ou SaaS en mandat fractionnel : 4 étapes, validation CEO/CTO (Lovable, Cursor), phases, backlog et pilotage devs ou agence. Go/no-go et stack avant gros investissement.",
   "hero": {
     "badge": "Nouveau produit",
     "title": "Lancer un SaaS ou un MVP",
-    "lede": "<p><strong>Vous préparez un MVP ou un SaaS et vous voulez cadrer avant d'investir lourd.</strong> Idée, marché, parfois budget ou agence en vue, mais <strong>pas encore de carte claire</strong> : stack, périmètre du premier release, risques, ce qu'il faut valider avant les mois de dev.</p><p>J'interviens en <strong>mandat par phases</strong> : faisabilité, go/no-go, architecture défendable, prototypes (dont IA) pour tester les hypothèses, puis handover vers vos devs ou votre agence. <strong>Pas</strong> un CTO qui prend votre équipe : quelqu'un qui structure, challenge et livre sur les sujets à fort levier.</p>",
+    "lede": "<p><strong>Vous préparez un MVP ou un SaaS et vous voulez cadrer avant d'investir lourd.</strong> Idée, marché, parfois budget ou agence en vue, mais <strong>pas encore de carte claire</strong> : stack, périmètre du premier release, risques, ce qu'il faut valider avant les mois de dev.</p><p>J'interviens en <strong>mandat par phases</strong> avec le CEO, le CTO ou les fondateurs : faisabilité, go/no-go, architecture, prototypes rapides (Lovable, Claude, Cursor : vous prototypiez, je guide). Je peux aussi <strong>piloter vos devs ou votre agence</strong> : créer les phases, structurer le backlog, prioriser ce qu'il faut pour un MVP qui fonctionne sans déraper. <strong>Pas</strong> un CTO embarqué : cap, séquence et cohérence produit-tech, pas la gestion des tickets au quotidien.</p><p>Mandat <strong>fractionnel</strong>, pas temps plein : en pratique <strong>demi-journées</strong> pour cadrer et synchroniser, <strong>journées complètes ponctuelles</strong> pour prototyper ou trancher l'architecture, parfois <strong>deux jours par semaine</strong> si je code des briques clés. Le rythme se calibre à l'appel, phase par phase.</p>",
     "buy": {
       "legend": "Cadrer votre MVP",
       "prefix": "Sans engagement",
@@ -16,28 +16,81 @@
       "type": "intro",
       "badge": "Le piège",
       "title": "Builder trop tôt, valider trop tard",
-      "lede": "<p class=\"big\">Sans cadrage, la première version part en vrille : scope qui gonfle, stack choisie par défaut, agence ou devs qui codent pendant que le <strong>« quoi et pourquoi »</strong> bouge encore. Le coût d'une correction après trois mois de build dépasse largement quelques semaines de faisabilité.</p>"
+      "lede": "<p class=\"big\">Sans cadrage, la première version part en vrille : scope qui gonfle, stack choisie par défaut, agence ou devs qui codent pendant que le <strong>« quoi et pourquoi »</strong> bouge encore. Le coût d'une correction après trois mois de build dépasse largement quelques semaines de faisabilité.</p><p class=\"big\">L'IA et les outils du type Lovable, Claude ou Cursor permettent de <strong>prototyper vite</strong> : l'enjeu n'est plus d'attendre des mois pour savoir si l'idée tient, mais de valider avant d'engager massivement temps, équipe et argent.</p>"
+    },
+    {
+      "type": "split",
+      "sectionKey": "validation",
+      "title": "Valider avec le CEO ou le CTO avant le gros chantier",
+      "intro": "<p class=\"big\">Collaboration étroite avec la direction et la tech : vous pouvez <strong>prototyper vous-mêmes</strong> avec les bons outils, je cadre la séquence pour que l'expérimentation serve la décision, pas une future dette ingérable.</p>",
+      "panels": [
+        {
+          "heading": "Prototypes rapides, guidés",
+          "items": [
+            "CEO, CTO ou fondateurs : on définit quelles hypothèses tester avant le build",
+            "Lovable, Claude, Cursor ou équivalent : vous explorez, je guide périmètre, critères et prochaine étape",
+            "Flows cliquables et POCs en jours pour se tester et se valider, pas des mois de specs floues"
+          ]
+        },
+        {
+          "heading": "Moins de risque avant temps, équipe et budget",
+          "items": [
+            "Une idée cadrée et validée : investir en ressources devient beaucoup moins risqué",
+            "Je pilote la séquence pour que l'expérimentation ne parte pas dans tous les sens",
+            "Phases, backlog priorisé et pilotage devs ou agence quand le build démarre"
+          ]
+        }
+      ]
     },
     {
       "type": "cards",
-      "badge": "Les phases",
-      "title": "Du flou au plan exécutable",
+      "badge": "Comment on avance",
+      "title": "Fractionnel, par phases, avec un plan",
+      "lede": "<p class=\"big\">Pas un CTO embarqué ni une agence qui lance le build sans carte : mandat par phases et <strong>fractionnel</strong>. Faisabilité souvent en demi-journées ; journée complète si on prototype ou architecture en intensif ; deux jours par semaine possible sur une phase de build ciblé. Le calendrier se définit à l'appel.</p>",
       "items": [
         {
-          "title": "Phase 1 : Faisabilité et cap",
-          "content": "<p>Hypothèses, contraintes, options techniques, ordre de grandeur, <strong>go/no-go</strong>, livrable : décision documentée, pas un deck vague.</p>"
+          "title": "Je code, pilote devs ou agence",
+          "content": "<p><strong>Seul fondateur</strong> : prototypes et briques clés à la demande. <strong>Avec devs ou agence</strong> : je crée les phases, tiens le backlog et priorise le MVP, sans micro-manager les tickets au quotidien.</p>"
         },
         {
-          "title": "Phase 2 : Architecture et premier périmètre",
-          "content": "<p>Frontières, APIs, stack (Laravel, React/Next, headless si pertinent), <strong>MVP réaliste</strong> : ce qui entre dans la v1 et ce qui attend.</p>"
+          "title": "Faisabilité avant le gros build",
+          "content": "<p>Go/no-go documenté, stack réaliste, périmètre v1 tranché. On évite de financer des mois de build sur des hypothèses floues ou jamais validées avec les utilisateurs.</p>"
         },
         {
-          "title": "Phase 3 : Prototypes et prérequis",
-          "content": "<p>Flows cliquables, POCs IA ou techniques légers, critères d'acceptation, pour que l'agence ou l'équipe <strong>build sans ambiguïté</strong>.</p>"
+          "title": "Phases, backlog et priorités MVP",
+          "content": "<p>Phases de delivery écrites, backlog structuré, must-have vs plus tard : un plan pour un <strong>MVP fonctionnel</strong> que vos devs ou votre agence peuvent exécuter sans que le scope parte en vrille.</p>"
         },
         {
-          "title": "Suivi optionnel",
-          "content": "<p>Après le gros du cadrage, rythme plus léger pour garder la cohérence pendant la construction, sans poste temps plein.</p>"
+          "title": "Prototypes rapides, CEO ou CTO",
+          "content": "<p>Lovable, Claude, Cursor : vous <strong>prototypiez vous-mêmes</strong>, je structure hypothèses, périmètre et critères. Validation avant le gros investissement, sans dette technique ingérable.</p>"
+        },
+        {
+          "title": "Séquence et garde-fous clairs",
+          "content": "<p>Hypothèses, critères de succès, jetable vs prod : je tiens le <strong>cadre</strong> pour que les essais rapides restent cadrés et ne laissent pas une dette ingérable derrière vous.</p>"
+        }
+      ]
+    },
+    {
+      "type": "highlights",
+      "sectionKey": "phasing",
+      "badge": "Le déroulé",
+      "title": "Quatre étapes typiques d'un mandat MVP ou SaaS",
+      "items": [
+        {
+          "title": "Faisabilité et cap produit",
+          "content": "<p>Hypothèses, contraintes, options techniques, ordre de grandeur, <strong>go/no-go</strong>. Livrable : décision documentée, pas un deck vague.</p>"
+        },
+        {
+          "title": "Architecture et périmètre v1",
+          "content": "<p>Frontières, APIs, stack (Laravel, React/Next, headless si pertinent). <strong>MVP réaliste</strong> : v1 tranchée, premières phases et backlog esquissés avant le gros chantier.</p>"
+        },
+        {
+          "title": "Prototypes et prérequis",
+          "content": "<p>Avec le CEO ou le CTO : flows cliquables, POCs via Lovable, Claude, Cursor ou build ciblé. Vous prototypiez, je guide ; critères d'acceptation et <strong>validation avant gros budget</strong>. Brief prêt pour l'agence ou l'équipe, pas des specs floues.</p>"
+        },
+        {
+          "title": "Handover et suivi optionnel",
+          "content": "<p>Documentation, backlog priorisé, passation ou <strong>pilotage continu</strong> de vos devs ou agence par phases. Suivi fractionnel pour garder un MVP cohérent pendant le build, sans poste permanent.</p>"
         }
       ]
     },
@@ -45,7 +98,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "Lancer direct avec agence/devs vs cadrage produit-système d'abord",
-      "intro": "Complète le guide « premier dev » quand l'enjeu est le produit SaaS, pas seulement la première embauche tech.",
+      "intro": "Ce comparatif concerne le <strong>lancement d'un SaaS ou d'un MVP</strong> (faisabilité, stack, prototypes). Contexte différent de la fiche <a href=\"/situations/premier-dev-fractionnel\">Après la levée : avant votre premier dev à temps plein</a>, dans Situations, pour les startups qui préparent une première embauche technique plutôt qu'un produit à cadrer.",
       "columnKeys": ["dimension", "buildFirst", "phaseFirst"],
       "table": {
         "headers": {
@@ -67,12 +120,17 @@
           {
             "dimension": "Validation",
             "buildFirst": "Après des mois de build.",
-            "phaseFirst": "Prototypes et utilisateurs tôt, IA où ça a du sens."
+            "phaseFirst": "Prototypes CEO/CTO tôt (Lovable, Cursor, etc.), validation avant gros budget."
+          },
+          {
+            "dimension": "Phases et backlog",
+            "buildFirst": "Implicite ou réécrit à chaque sprint.",
+            "phaseFirst": "Phases écrites, backlog priorisé, pilotage devs ou agence."
           },
           {
             "dimension": "Rôle externe",
             "buildFirst": "Exécution sans fil produit unique.",
-            "phaseFirst": "Même personne du cap au prérequis, pas manager d'équipe."
+            "phaseFirst": "Même personne du cap au build, pas manager d'équipe."
           }
         ]
       }
@@ -82,27 +140,20 @@
       "badge": "Comment je construis",
       "title": "Fondations techniques",
       "lede": "<p class=\"big\"><strong>MVP et SaaS cadrés avant gros investissement</strong> : stack réaliste, périmètre tranché et handover propre vers vos devs ou agence.</p>",
-      "groups": [
-        {
-          "badge": "Avant le build",
-          "items": [
-            "Faisabilité et choix de stack",
-            "Prototypes et parcours cliquables",
-            "Scope MVP et critères de succès",
-            "Handover documentation et backlog"
-          ]
-        },
-        {
-          "badge": "Stack & livraison",
-          "items": [
-            "Next.js, React ou Vue pour le front",
-            "Laravel et APIs pour le backend",
-            "Auth, rôles et modèle de données",
-            "CI/CD et environnements de démo",
-            "Intégrations paiement ou tierces",
-            "JavaScript · PHP"
-          ]
-        }
+      "items": [
+        "Faisabilité et choix de stack",
+        "Prototypage rapide guidé (Lovable, Claude, Cursor) avec CEO ou CTO",
+        "Prototypes et parcours cliquables",
+        "Phases de delivery et priorisation MVP",
+        "Backlog structuré et critères de succès",
+        "Pilotage devs internes ou agence (mode produit)",
+        "Handover documentation et passation",
+        "Next.js, React ou Vue pour le front",
+        "Laravel et APIs pour le backend",
+        "Auth, rôles et modèle de données",
+        "CI/CD et environnements de démo",
+        "Intégrations paiement ou tierces",
+        "JavaScript · PHP"
       ],
       "background": "rome"
     },
@@ -113,15 +164,39 @@
       "items": [
         {
           "title": "On a déjà une agence qui peut tout faire",
-          "content": "<p>Tant mieux si elle reçoit un <strong>brief et des prérequis solides</strong>. Je reste côté commanditaire : cap, architecture, critères de go/no-go. L'agence build le SaaS ; je ne remplace pas son équipe.</p>"
+          "content": "<p>Tant mieux : je <strong>découpe les phases</strong>, structure le backlog, priorise le must-have MVP et pilote l'agence sur le cap, les prérequis et la cohérence. L'équipe exécute ; je ne la remplace pas.</p>"
         },
         {
           "title": "Combien de temps avant de « vraiment » coder ?",
-          "content": "<p>Souvent <strong>quelques semaines</strong> de cadrage pour des mois de build plus prévisibles. Sur les sujets à levier, je peux aussi coder un POC, pas enfiler tous les tickets à votre place.</p>"
+          "content": "<p>Souvent <strong>quelques semaines</strong> de cadrage pour des mois de build plus prévisibles. Sur les sujets à fort levier, je peux monter un POC ; je n'enfile pas tous les tickets à votre place.</p>"
+        },
+        {
+          "title": "Quel rythme : demi-journées, journées, deux jours ?",
+          "content": "<p>Ça dépend de la phase. <strong>Demi-journées</strong> pour faisabilité, ateliers CEO/CTO et suivi léger. <strong>Journée complète</strong> ponctuelle pour un sprint prototype ou architecture. <strong>Deux jours par semaine</strong> seulement si je dois coder des fondations ou POCs critiques. Pas de poste à 40 h : on calibre à l'appel.</p>"
+        },
+        {
+          "title": "On peut prototyper nous-mêmes avec Lovable ou Cursor ?",
+          "content": "<p>Oui, et c'est souvent un <strong>levier</strong>. Je collabore avec le CEO, le CTO ou les fondateurs : vous explorez avec Lovable, Claude, Cursor ou équivalent, je guide pour que ça serve la validation produit et technique, pas un spaghetti à transporter tel quel en prod. Une fois l'idée <strong>cadrée et validée</strong>, investir en équipe et en budget est beaucoup moins risqué.</p>"
+        },
+        {
+          "title": "Vous codez vous-même ou vous pilotez notre équipe ?",
+          "content": "<p>Les deux. <strong>Je code</strong> prototypes et briques clés si besoin. <strong>Je pilote</strong> vos devs ou votre agence : phases, backlog, priorisation pour un MVP qui tient, revues et arbitrages produit-tech, sans prendre chaque ticket à votre place.</p>"
+        },
+        {
+          "title": "Vous allez devenir notre CTO ?",
+          "content": "<p>Non. Votre agence ou vos devs gardent le rythme opérationnel. Je clarifie <strong>le système, le périmètre v1 et la séquence</strong> ; je ne gère pas les personnes ni les tickets au quotidien.</p>"
+        },
+        {
+          "title": "On n'a pas le luxe de ralentir pour cadrer",
+          "content": "<p>Deux à quatre semaines de faisabilité évitent souvent <strong>des mois de rework</strong>. La première tranche peut être précisément ce cadrage, avec un livrable écrit avant le gros investissement build.</p>"
         },
         {
           "title": "Et si on lève des fonds après ?",
           "content": "<p>Vous arrivez avec <strong>plan, stack et preuves de validation</strong>, moins de due diligence technique embarrassante. Je peux aider à préciser la fiche du premier profil tech ou produit à embaucher.</p>"
+        },
+        {
+          "title": "Et après le cadrage ?",
+          "content": "<p>Handover documenté vers vos devs ou votre agence ; suivi fractionnel optionnel si vous voulez garder la cohérence sans poste permanent, même logique que les autres mandats par phases sur le site.</p>"
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",

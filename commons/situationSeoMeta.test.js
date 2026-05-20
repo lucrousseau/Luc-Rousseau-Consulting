@@ -62,4 +62,27 @@ describe("situationSeoMeta", () => {
     expect(en.description).toMatch(/four-step/i);
     expect(en.description).toMatch(/hire prep/i);
   });
+
+  it("exposes four-step MVP/SaaS path for mvp-saas-faisabilite", () => {
+    const fr = getSituationSeo("fr", "situation-mvp-saas-faisabilite");
+    const en = getSituationSeo("en", "situation-mvp-saas-faisabilite");
+
+    expect(fr.metaTitle).toMatch(/fractionnel/i);
+    expect(fr.headline).toMatch(/SaaS|MVP/i);
+    expect(fr.description).toMatch(/4 étapes/i);
+    expect(fr.description).toMatch(/fractionnel/i);
+    expect(fr.description).toMatch(/CEO\/CTO/i);
+    expect(fr.description).toMatch(/Lovable|Cursor/i);
+    expect(fr.description).toMatch(/backlog/i);
+    expect(fr.description).toMatch(/pilotage|agence/i);
+
+    expect(en.metaTitle).toMatch(/Fractional/i);
+    expect(en.headline).toMatch(/SaaS|MVP/i);
+    expect(en.description).toMatch(/four steps/i);
+    expect(en.description).toMatch(/Fractional/i);
+    expect(en.description).toMatch(/CEO\/CTO/i);
+    expect(en.description).toMatch(/Lovable|Cursor/i);
+    expect(en.description).toMatch(/backlog/i);
+    expect(en.description).toMatch(/steering|agency/i);
+  });
 });
