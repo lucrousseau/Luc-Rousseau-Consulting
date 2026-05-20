@@ -19,6 +19,10 @@
       "content": "<p>Les absences longues se planifient avec préavis pour éviter les mauvaises surprises.</p><p>Pour un court trou, je le signale tôt et je rééquilibre les jours dans la même fenêtre quand ça protège encore le résultat. Ce qui est en cours se referme proprement, pas de vide silencieux.</p>"
     },
     {
+      "title": "Joignable en dehors des jours prévus, ou en urgence ?",
+      "content": "<p>Le rythme convenu (ex. deux jours par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Si une urgence survient en dehors des jours prévus, je reste joignable et j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais), pas une astreinte 24/7 floue.</p>"
+    },
+    {
       "title": "Exclusif pour nous, ou plusieurs clients en parallèle ?",
       "content": "<p>Je limite volontairement la charge : quelques clients au long cours, pas un carnet surchargé.</p><p>Le modèle récurrent ne tient que s'il y a de la continuité réelle avec vous. Si la charge ou le focus change, on le traite franchement au lieu d'étirer la corde.</p>"
     },

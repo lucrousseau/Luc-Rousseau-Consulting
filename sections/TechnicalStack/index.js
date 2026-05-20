@@ -8,6 +8,7 @@ import SectionCta from "../../components/SectionCta";
 import Tags from "../../components/Tags";
 import { ROME_BACKGROUND } from "../../commons/romeBackground";
 import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/pageRowSpacing";
+import SituationGroups from "../situations/SituationGroups";
 
 /**
  * Technical stack / foundations block (tags + optional CTA). Used on home and situation pages.
@@ -17,7 +18,8 @@ import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/pageRowSpacing
  * @param {string} props.badge
  * @param {string} props.title
  * @param {import('react').ReactNode | string} [props.lede]
- * @param {string[]} props.items
+ * @param {string[]} [props.items]
+ * @param {{ badge?: string; items?: string[] }[]} [props.groups]
  * @param {{ label: string; href: string; trackSection?: string }} [props.footerCta]
  * @param {string} [props.backgroundColor]
  * @param {"rome"} [props.background]
@@ -30,6 +32,7 @@ export default function TechnicalStack({
   title,
   lede,
   items = [],
+  groups,
   footerCta,
   backgroundColor,
   background,
@@ -40,8 +43,29 @@ export default function TechnicalStack({
     content,
     emoji: tagEmoji,
   }));
+  const hasTagGroups = Array.isArray(groups) && groups.length > 0;
 
   const ledeContent = typeof lede === "string" ? parse(lede) : lede;
+
+  const renderTagRow = (list) => {
+    const rowItems = list.map((content) => ({
+      content,
+      emoji: tagEmoji,
+    }));
+    if (rowItems.length === 0) {
+      return null;
+    }
+    return (
+      <Row
+        columns={[
+          {
+            cols: { col: 10, sm: 12 },
+            content: <Tags halign="center" items={rowItems} />,
+          },
+        ]}
+      />
+    );
+  };
 
   return (
     <Container
@@ -55,15 +79,10 @@ export default function TechnicalStack({
       backgroundColor={backgroundColor}
     >
       <SectionIntro badge={badge} title={title} lede={ledeContent} rowStyle={homeIntroRowStyle} />
-      {tagItems.length > 0 && (
-        <Row
-          columns={[
-            {
-              cols: { col: 10, sm: 12 },
-              content: <Tags halign="center" items={tagItems} />,
-            },
-          ]}
-        />
+      {hasTagGroups ? (
+        <SituationGroups groups={groups} renderGroup={(group) => renderTagRow(group.items ?? [])} />
+      ) : (
+        renderTagRow(tagItems.map((tag) => tag.content))
       )}
       {footerCta?.label && footerCta?.href && (
         <SectionCta

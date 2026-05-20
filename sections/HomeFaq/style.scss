@@ -1,4 +1,9 @@
 .section-home-faq {
+  .component__accordion {
+    --margin-top: 0;
+    --margin-bottom: 0;
+  }
+
   .section-home-faq__cta {
     margin: 0;
   }

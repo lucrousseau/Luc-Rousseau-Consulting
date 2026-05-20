@@ -19,6 +19,10 @@
       "content": "<p>Longer absences are planned with notice so you're not surprised without warning.</p><p>For short gaps I flag it early and rebalance days in the same window when that still protects the outcome. Work in flight gets a clean handoff, no silent gaps.</p>"
     },
     {
+      "title": "Reachable outside scheduled days, or in an emergency?",
+      "content": "<p>The agreed rhythm (e.g. two days a week) structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. If an emergency lands outside scheduled days, I stay reachable and step in under a <strong>shared urgency frame</strong> we define up front (scope, priority, response time), not a vague 24/7 on-call promise.</p>"
+    },
+    {
       "title": "Exclusive to us, or several clients at once?",
       "content": "<p>I keep the roster small: a few ongoing clients, not a packed calendar.</p><p>Recurring work only makes sense if there's real continuity with you. If load or focus shifts, we address it directly instead of stretching thin.</p>"
     },

@@ -23,5 +23,5 @@ export default function ProductGrid({
     ),
   }));
 
-  return <Row columns={columns} />;
+  return <Row halign="center" columns={columns} />;
 }

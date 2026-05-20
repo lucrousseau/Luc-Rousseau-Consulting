@@ -76,13 +76,18 @@
         {
           "title": "Confidentiality and access",
           "content": "<p>Repo and tool access per your policy; NDA if required. I don't publish your code; work stays in your systems. We define <strong>who sees what</strong> from day one.</p>"
+        },
+        {
+          "title": "Reachable outside scheduled days, or in an emergency?",
+          "content": "<p>The agreed rhythm (e.g. one day a week) structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. If an emergency lands outside scheduled days, I stay reachable and step in under a <strong>shared urgency frame</strong> we define up front (scope, priority, response time), not a vague 24/7 on-call promise.</p>"
         }
       ]
     },
     {
       "type": "cta",
+      "badge": "Next step",
       "trackSection": "situation-solo-dev",
-      "label": "Discuss your bus factor risk",
+      "label": "Discuss bus factor",
       "teaser": "<p class=\"big\">One developer carries everything? One call is enough to see if one day a week gives you margin, without disrupting your team.</p>"
     }
   ]

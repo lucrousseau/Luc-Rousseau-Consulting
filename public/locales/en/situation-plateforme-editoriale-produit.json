@@ -8,7 +8,7 @@
     "buy": {
       "legend": "Discuss your platform",
       "prefix": "No commitment",
-      "label": "Book a 30-minute call"
+      "label": "Book a call"
     }
   },
   "blocks": [
@@ -112,13 +112,18 @@
         {
           "title": "Do you manage our editorial or dev team?",
           "content": "<p>No. I clarify <strong>system and standards</strong>; your teams keep their roles. I facilitate product-tech trade-offs when delivery blocks.</p>"
+        },
+        {
+          "title": "Reachable outside scheduled days, or in an emergency?",
+          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. If an emergency lands outside scheduled days, I stay reachable and step in under a <strong>shared urgency frame</strong> we define up front (scope, priority, response time), not a vague 24/7 on-call promise.</p>"
         }
       ]
     },
     {
       "type": "cta",
+      "badge": "Next step",
       "trackSection": "situation-plateforme-editoriale",
-      "label": "Discuss your editorial platform",
+      "label": "Discuss platform",
       "teaser": "<p class=\"big\">Comparator, multi-brand, or complex content journey? One call to see if a product platform, not a brochure redesign, fits your context.</p>"
     }
   ]

@@ -8,7 +8,7 @@
     "buy": {
       "legend": "Cadrer l'IA dans votre produit",
       "prefix": "Sans engagement",
-      "label": "Planifier un appel de 30 min"
+      "label": "Planifier un appel"
     }
   },
   "blocks": [
@@ -82,17 +82,27 @@
       "badge": "Comment je construis",
       "title": "Fondations techniques",
       "lede": "<p class=\"big\"><strong>IA dans le produit existant</strong> : où l'intégrer, garde-fous, coûts et POC avant engagement build en prod.</p>",
-      "items": [
-        "Cartographie des cas d'usage IA",
-        "APIs LLM et orchestration",
-        "Garde-fous, PII et conformité",
-        "Évaluation qualité et coûts tokens",
-        "POC RAG ou agents ciblés",
-        "Observabilité et logs des appels IA",
-        "Intégration Laravel · React · APIs",
-        "Feature flags et déploiement progressif",
-        "Handover vers l'équipe dev interne",
-        "JavaScript · PHP"
+      "groups": [
+        {
+          "badge": "Stratégie IA",
+          "items": [
+            "Cartographie des cas d'usage IA",
+            "Garde-fous, PII et conformité",
+            "Évaluation qualité et coûts tokens",
+            "POC RAG ou agents ciblés"
+          ]
+        },
+        {
+          "badge": "Intégration prod",
+          "items": [
+            "APIs LLM et orchestration",
+            "Observabilité et logs des appels IA",
+            "Intégration Laravel · React · APIs",
+            "Feature flags et déploiement progressif",
+            "Handover vers l'équipe dev interne",
+            "JavaScript · PHP"
+          ]
+        }
       ],
       "background": "rome"
     },
@@ -112,13 +122,18 @@
         {
           "title": "L'IA change trop vite, pourquoi planifier ?",
           "content": "<p>Justement : les <strong>critères produit et garde-fous</strong> restent stables même quand le modèle change, c'est ce qui évite de tout refaire à chaque annonce OpenAI.</p>"
+        },
+        {
+          "title": "Joignable en dehors des jours prévus, ou en urgence ?",
+          "content": "<p>Le rythme convenu structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Si une urgence survient en dehors des jours prévus, je reste joignable et j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais), pas une astreinte 24/7 floue.</p>"
         }
       ]
     },
     {
       "type": "cta",
+      "badge": "Prochaine étape",
       "trackSection": "situation-ia-produit",
-      "label": "Parler d'IA dans votre produit",
+      "label": "Discuter IA produit",
       "teaser": "<p class=\"big\">Pression d'embarquer l'IA sans cadre ? Un appel pour voir où ça a du sens, comment prototyper, et ce qui mérite la prod.</p>"
     }
   ]

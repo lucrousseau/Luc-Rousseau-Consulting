@@ -2,7 +2,8 @@
 @use "../../styles/abstracts/mixins" as *;
 
 .component__table {
-  --margin-top: 1rem;
+  --margin-top: 0;
+  --margin-bottom: 0;
 
   padding: var(--double-padding);
   border-radius: var(--border-radius);

@@ -14,5 +14,6 @@ describe("ProductGrid", () => {
 
     expect(screen.getByRole("heading", { level: 3 })).toHaveTextContent("Card title");
     expect(screen.getByText("Card body")).toBeInTheDocument();
+    expect(document.querySelector(".row--center")).toBeInTheDocument();
   });
 });

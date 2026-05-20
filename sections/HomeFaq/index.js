@@ -5,7 +5,11 @@ import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
 import SectionIntro from "../../components/SectionIntro";
 import SectionCta from "../../components/SectionCta";
-import { homeCtaRowStyle, homeIntroRowStyle } from "../../commons/pageRowSpacing";
+import {
+  homeIntroRowStyle,
+  homeSituationCtaRowStyle,
+  homeTableRowStyle,
+} from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
 import Accordion from "../../components/Accordion";
 
@@ -31,6 +35,8 @@ export default function HomeFaq({ cta }) {
         rowStyle={homeIntroRowStyle}
       />
       <Row
+        halign="center"
+        style={homeTableRowStyle}
         columns={[
           {
             cols: { col: 10, sm: 12 },
@@ -43,7 +49,7 @@ export default function HomeFaq({ cta }) {
         trackSection="faq"
         href={cta?.link ?? scheduleCta.link}
         label={cta?.label ?? scheduleCta.label}
-        rowStyle={homeCtaRowStyle}
+        rowStyle={homeSituationCtaRowStyle}
         className="section-home-faq__cta"
       />
     </Container>

@@ -1,14 +1,14 @@
 {
   "seoTitle": "First dev after funding: 2 days/week instead of full-time | Luc Rousseau",
-  "seoDescription": "Post-funding, before your first full-time developer: why two days a week with a senior can beat a junior within the same budget band.",
+  "seoDescription": "Post-funding, before your first full-time developer: a senior two days a week as principal developer who builds, shapes the backlog, and owns technical direction, often better than a first junior hire in the same budget band.",
   "hero": {
     "badge": "Post-funding startup",
     "title": "Post-funding: before your first full-time developer",
-    "lede": "<p><strong>You're post-funding and weighing your first technical hire.</strong> The pressure is on: <strong>ship faster</strong>, prove traction, show the team is growing. A first full-time developer feels natural; it's often the <strong>most expensive and slowest</strong> way to get solid technical leadership.</p><p>An <strong>experienced Product Engineer two days a week</strong> can own technical direction, architecture, and delivery, in a comparable budget band, with less risk if the product pivots.</p>",
+    "lede": "<p><strong>You're post-funding and weighing your first technical hire.</strong> The pressure is on: <strong>ship faster</strong>, prove traction, show the team is growing. A first full-time developer feels natural; it's often the <strong>most expensive and slowest</strong> way to get solid product and technical leadership.</p><p>At <strong>two days a week</strong>, you can have a <strong>senior product engineer who is also your principal developer</strong>: <strong>prioritization, backlog, and requirements</strong>, then <strong>architecture and production code</strong> (Laravel, React, APIs). This isn't arms-length advice: <strong>I build</strong> the foundations and priority features, in a comparable budget band, with less risk if the product pivots.</p>",
     "buy": {
       "legend": "Let's talk about your context",
       "prefix": "No commitment",
-      "label": "Book a 30-minute call"
+      "label": "Book a call"
     }
   },
   "blocks": [
@@ -16,7 +16,7 @@
       "type": "intro",
       "badge": "The trap",
       "title": "Why the first tech hire is risky",
-      "lede": "<p class=\"big\">A junior or mid full-time developer means <strong>salary + payroll burden + onboarding + management</strong>, often before the roadmap is clear enough. The founder still arbitrates product and tech alone. A bad hire is brutally expensive for a young company.</p>"
+      "lede": "<p class=\"big\">A junior or mid full-time developer means <strong>salary + payroll burden + onboarding + management</strong>, often before priorities, backlog, and requirements are clear enough. The founder still arbitrates product and tech alone while the team ships tickets without a frame. A bad hire is brutally expensive for a young company.</p>"
     },
     {
       "type": "cards",
@@ -24,20 +24,24 @@
       "title": "What two days a week give you",
       "items": [
         {
-          "title": "Same budget band, more seniority",
-          "content": "<p>A budget planned for a first employee can fund <strong>two days a week of a senior profile</strong>: someone who has already shaped products, teams, and delivery, not just executed tickets.</p>"
+          "title": "Comparable budget, senior profile",
+          "content": "<p>A first-hire budget can fund <strong>two days a week of a senior</strong> who has been a <strong>principal developer</strong>: priorities, backlog, and code shipped to prod, not just tickets closed.</p>"
         },
         {
-          "title": "Technical direction + delivery",
-          "content": "<p>I help decide <strong>what to build and why</strong>, design the architecture, and ship code or guide the team. No handoff between « the strategy person » and « the delivery person ».</p>"
+          "title": "Clear priorities, solid backlog",
+          "content": "<p>I prioritize features, clarify <strong>requirements and specs</strong>, and arbitrate what ships now. The team builds from a <strong>ready-to-build backlog</strong>, not vague direction.</p>"
         },
         {
-          "title": "Flexibility if you pivot",
-          "content": "<p>Before locking in a full internal team, you validate pace, stack, and priorities with someone who can <strong>adapt without a layoff or emergency re-hire</strong>.</p>"
+          "title": "Principal dev: I build",
+          "content": "<p>On those two days, I'm the <strong>principal developer</strong>: architecture, reviews, and <strong>production code</strong>. If a team already exists, I take the critical paths or guide delivery with a clear frame, with no handoff between product and build.</p>"
         },
         {
-          "title": "Bridge to a future team",
-          "content": "<p>When it's time to hire, you already have <strong>standards, a clearer backlog, and a realistic job spec</strong>, and possibly a developer I've helped onboard.</p>"
+          "title": "Flexibility if the product pivots",
+          "content": "<p>Before locking in an internal team, you validate pace and scope with someone who can <strong>adapt without a layoff</strong> or emergency re-hire.</p>"
+        },
+        {
+          "title": "Bridge to your future dev team",
+          "content": "<p>When you hire, you already have <strong>standards, backlog, and job criteria</strong>; I can support onboarding your first full-time developer.</p>"
         }
       ]
     },
@@ -62,12 +66,17 @@
           {
             "dimension": "Time-to-value",
             "fullTimeJunior": "2–4 months hiring, onboarding, learning your domain.",
-            "fractionalSenior": "Start in weeks; architecture and delivery impact from month one."
+            "fractionalSenior": "Start in weeks; direction, backlog, and shipped code from month one."
+          },
+          {
+            "dimension": "Product leadership (priorities, backlog)",
+            "fullTimeJunior": "Rarely covered by a first dev hire; founder keeps ambiguity on order and ready-to-build.",
+            "fractionalSenior": "Prioritization, trade-offs, backlog, and requirements before days of code are spent."
           },
           {
             "dimension": "Technical direction",
             "fullTimeJunior": "Depends on level; founder often remains default decision-maker.",
-            "fractionalSenior": "Explicit ownership of direction, trade-offs, and production quality."
+            "fractionalSenior": "Explicit ownership of direction, technical trade-offs, and production quality."
           },
           {
             "dimension": "Risk if the product pivots",
@@ -75,21 +84,28 @@
             "fractionalSenior": "Scope or days adjust without a major social rupture."
           },
           {
+            "dimension": "Production code",
+            "fullTimeJunior": "5 days of dev, often while learning your stack.",
+            "fractionalSenior": "2 days where the senior is the one who builds (foundations, key features), not only who directs."
+          },
+          {
             "dimension": "Weekly coverage",
-            "fullTimeJunior": "5 days on code, useful when scope is already well defined.",
-            "fractionalSenior": "2 focused days + async between sessions; enough for direction and unblocking when framed well."
+            "fullTimeJunior": "Daily presence, useful when scope is already well defined.",
+            "fractionalSenior": "2 focused days + async between sessions; enough for direction, build, and unblocking when framed well."
           }
         ]
       }
     },
     {
       "type": "stack",
-      "badge": "How I build",
-      "title": "Technical foundations",
-      "lede": "<p class=\"big\"><strong>Technical leadership right after funding</strong>, without locking in a full team too early: clear architecture, sustainable delivery, and criteria for your first hire.</p>",
+      "badge": "How I work",
+      "title": "Product and technical foundations",
+      "lede": "<p class=\"big\"><strong>Product, technical direction, and production development</strong> on your two days: clear priorities, a ready-to-build backlog, and <strong>code I ship myself</strong> (foundations, priority features), plus criteria for your first hire.</p>",
       "items": [
+        "Feature prioritization and trade-offs",
+        "Backlog, requirements, and ready-to-build specs",
         "Initial architecture and service boundaries",
-        "Product-aligned technical roadmap",
+        "Product- and tech-aligned roadmap",
         "Laravel, REST APIs, and custom backends",
         "React, Next.js, or Vue frontends as needed",
         "CI/CD and reproducible environments",
@@ -108,7 +124,7 @@
       "items": [
         {
           "title": "We need someone on code every day",
-          "content": "<p>Often what you need daily is <strong>clear decisions and a backlog that moves</strong>, not yet five days of unsupervised development. Two days from a senior who structures and unblocks often beats five days from someone still learning your context.</p><p>When code volume truly justifies full-time, we'll see it together, and you'll hire with criteria already tested.</p>"
+          "content": "<p>Often what you need daily is <strong>clear decisions, a backlog that moves, and code shipping</strong>, not yet five days of unsupervised dev. On two days, <strong>I structure and I build</strong> the priorities: foundations, key features, unblocking. This isn't an advisory-only role.</p><p>When volume truly justifies full-time, we'll see it together, and you'll hire with criteria already tested.</p>"
         },
         {
           "title": "Will we still hire full-time later?",
@@ -116,15 +132,20 @@
         },
         {
           "title": "How does this work with the founder or CEO?",
-          "content": "<p>I partner with you: product priorities, technical reviews, ceremonies when useful. You keep the vision; I bring <strong>technical translation and delivery</strong> without turning you into a default CTO.</p>"
+          "content": "<p>I partner with you: product trade-offs, backlog, reviews, ceremonies when useful. You keep the vision; I bring <strong>prioritization, requirements, and I build</strong> without turning you into a default CTO or PO.</p>"
+        },
+        {
+          "title": "Reachable outside the two days, or in an emergency?",
+          "content": "<p>Two days a week is the rhythm for deep work, not a barrier to reaching me.</p><p><strong>Ongoing</strong>, I reply on Slack (or your usual channel). For emergencies outside those days, I stay reachable and step in under an <strong>urgency frame we define up front</strong>, not an open-ended 24/7 on-call.</p>"
         }
       ]
     },
     {
       "type": "cta",
+      "badge": "Next step",
       "trackSection": "situation-premier-dev",
-      "label": "Talk about your first tech hire",
-      "teaser": "<p class=\"big\">Post-raise and torn between hiring and going fractional? A 30-minute call is enough to see if two days a week make sense for you.</p>"
+      "label": "Discuss first tech hire",
+      "teaser": "<p class=\"big\">Post-raise and torn between hiring and going fractional? A 30-minute call is enough to see if two days a week with a principal developer who builds makes sense for you.</p>"
     }
   ]
 }

@@ -8,7 +8,7 @@
     "buy": {
       "legend": "Frame your rebuild",
       "prefix": "No commitment",
-      "label": "Book a 30-minute call"
+      "label": "Book a call"
     }
   },
   "blocks": [
@@ -112,13 +112,18 @@
         {
           "title": "What after the rebuild?",
           "content": "<p>Documented handover; optional fractional follow-up to keep coherence without a permanent role, same phased logic as elsewhere on the site.</p>"
+        },
+        {
+          "title": "Reachable outside scheduled days, or in an emergency?",
+          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. If an emergency lands outside scheduled days, I stay reachable and step in under a <strong>shared urgency frame</strong> we define up front (scope, priority, response time), not a vague 24/7 on-call promise.</p>"
         }
       ]
     },
     {
       "type": "cta",
+      "badge": "Next step",
       "trackSection": "situation-refonte-phases",
-      "label": "Discuss your product rebuild",
+      "label": "Discuss product rebuild",
       "teaser": "<p class=\"big\">Pressure to rewrite everything? One call to see if phased feasibility and clear architecture beat a tunnel without a map.</p>"
     }
   ]

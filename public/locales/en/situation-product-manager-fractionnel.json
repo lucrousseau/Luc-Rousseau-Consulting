@@ -8,7 +8,7 @@
     "buy": {
       "legend": "Clarify your product need",
       "prefix": "No commitment",
-      "label": "Book a 30-minute call"
+      "label": "Book a call"
     }
   },
   "blocks": [
@@ -106,18 +106,28 @@
       "badge": "How I build",
       "title": "Technical foundations",
       "lede": "<p class=\"big\"><strong>Product and tech in one loop</strong>: clear prerequisites, prototypes before build, stack aligned with your developers.</p>",
-      "items": [
-        "AI prototypes and clickable flows",
-        "Prerequisites and acceptance criteria",
-        "Backlog structured for developers",
-        "APIs and dependencies mapped",
-        "Third-party integrations scoped",
-        "Laravel · React · Next.js as in your stack",
-        "Technical feasibility assessment",
-        "Ceremonies and rituals with the dev team",
-        "Quarterly roadmap and trade-offs",
-        "Debt and risks visible to product",
-        "JavaScript · PHP"
+      "groups": [
+        {
+          "badge": "Product",
+          "items": [
+            "AI prototypes and clickable flows",
+            "Prerequisites and acceptance criteria",
+            "Backlog structured for developers",
+            "Quarterly roadmap and trade-offs",
+            "Ceremonies and rituals with the dev team",
+            "Debt and risks visible to product"
+          ]
+        },
+        {
+          "badge": "Technical",
+          "items": [
+            "APIs and dependencies mapped",
+            "Third-party integrations scoped",
+            "Laravel · React · Next.js as in your stack",
+            "Technical feasibility assessment",
+            "JavaScript · PHP"
+          ]
+        }
       ],
       "background": "rome"
     },
@@ -145,13 +155,18 @@
         {
           "title": "What if we hire a PM/PO later?",
           "content": "<p>Even better if you arrive with <strong>roadmap, rituals, and ready-to-build standards</strong> already proven. I can help define the role and hand off to the internal hire.</p>"
+        },
+        {
+          "title": "Reachable outside scheduled days, or in an emergency?",
+          "content": "<p>The agreed rhythm (e.g. about four days a week) structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. If an emergency lands outside scheduled days, I stay reachable and step in under a <strong>shared urgency frame</strong> we define up front (scope, priority, response time), not a vague 24/7 on-call promise.</p>"
         }
       ]
     },
     {
       "type": "cta",
+      "badge": "Next step",
       "trackSection": "situation-product-manager",
-      "label": "Discuss your PM/PO need",
+      "label": "Discuss PM/PO need",
       "teaser": "<p class=\"big\">Need a PM without full-time? A 30-minute call is enough to see if about four days per week, as half-days, with full days for prototyping, fits your team.</p>"
     }
   ]

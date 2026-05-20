@@ -71,4 +71,16 @@
   .section-about .about__cta {
     margin-top: var(--page-home-row-pad-inner);
   }
+
+  // FAQ accordion: spacing comes from the row wrapper, not component margin
+  .section-home-faq .component__accordion {
+    --margin-top: 0;
+    --margin-bottom: 0;
+  }
+
+  // Comparison tables: same rhythm as accordion (row wrapper owns vertical gap)
+  .component__table {
+    --margin-top: 0;
+    --margin-bottom: 0;
+  }
 }

@@ -41,7 +41,7 @@
       },
       "first-hire": {
         "label": "Après une levée, avant le premier dev à temps plein",
-        "hint": "Comparer senior en fractionnel et premier salarié dans la même enveloppe"
+        "hint": "Priorités produit, backlog et senior fractionnel vs premier salarié dans la même enveloppe"
       },
       "solo-dev": {
         "label": "Un seul dev porte tout le technique",
@@ -80,7 +80,7 @@
   "situations": {
     "premier-dev-fractionnel": {
       "title": "Après la levée : avant votre premier dev à temps plein",
-      "teaser": "Vous envisagez une première embauche technique : voici comment deux jours par semaine avec un senior peuvent livrer plus qu'un junior, dans une enveloppe comparable."
+      "teaser": "Vous envisagez une première embauche technique : voici comment deux jours par semaine avec un senior dev principal qui build peuvent clarifier priorités, backlog et livraison, souvent mieux qu'un premier junior dans la même enveloppe."
     },
     "dev-unique-backup": {
       "title": "Un seul dev porte tout le technique",
