@@ -1,6 +1,6 @@
 {
   "seoTitle": "Post-funding: fractional senior dev 2 days/wk | Luc Rousseau",
-  "seoDescription": "Before your first full-time developer: a senior two days a week as principal developer who builds, shapes the backlog, and owns technical direction, often better than a first junior hire in the same budget.",
+  "seoDescription": "Post-funding, before a first full-time dev: senior 2 days/wk, four-step mandate (frame, backlog, build, hire prep), often better than a junior in the same budget.",
   "hero": {
     "badge": "Post-funding startup",
     "title": "Post-funding: before your first full-time developer",
@@ -42,6 +42,30 @@
         {
           "title": "Bridge to your future dev team",
           "content": "<p>When you hire, you already have <strong>standards, backlog, and job criteria</strong>; I can support onboarding your first full-time developer.</p>"
+        }
+      ]
+    },
+    {
+      "type": "highlights",
+      "sectionKey": "phasing",
+      "badge": "The flow",
+      "title": "Four typical steps at two days a week",
+      "items": [
+        {
+          "title": "Post-funding framing and product priorities",
+          "content": "<p>Quarter goals, what proves traction, current debt and risks. We define <strong>what to build first</strong>, what waits, and how the two days a week are spent.</p>"
+        },
+        {
+          "title": "Backlog, requirements, and technical direction",
+          "content": "<p>User stories, acceptance criteria, initial architecture: a <strong>written deliverable</strong> before weeks of code. The founder keeps the vision; the backlog becomes ready to build.</p>"
+        },
+        {
+          "title": "Foundations and key features shipped",
+          "content": "<p>On those two days, <strong>I build</strong>: foundations, priority features, unblocking. Reviews and standards so the next hire does not start from zero.</p>"
+        },
+        {
+          "title": "Prepare the hire and handover",
+          "content": "<p>Realistic job description, profile criteria, documentation, and pass-off. Optional follow-up when the first employee joins so continuity holds.</p>"
         }
       ]
     },

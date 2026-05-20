@@ -1,6 +1,6 @@
 {
   "seoTitle": "Après la levée : dev senior fractionnel 2 j/sem | Luc Rousseau",
-  "seoDescription": "Après une levée, avant un premier dev à temps plein : senior 2 j/sem qui build, backlog et cap technique, souvent mieux qu'un junior à budget comparable.",
+  "seoDescription": "Post-levée, avant un 1er dev temps plein : senior 2 j/sem, mandat en 4 étapes (cadrage, backlog, build, embauche), souvent mieux qu'un junior au même budget.",
   "hero": {
     "badge": "Startup post-financement",
     "title": "Après la levée : avant votre premier dev à temps plein",
@@ -42,6 +42,30 @@
         {
           "title": "Pont vers votre future équipe",
           "content": "<p>À l'embauche, vous avez <strong>standards, backlog et critères de profil</strong> ; je peux accompagner l'intégration du premier dev salarié.</p>"
+        }
+      ]
+    },
+    {
+      "type": "highlights",
+      "sectionKey": "phasing",
+      "badge": "Le déroulé",
+      "title": "Quatre étapes typiques sur deux jours par semaine",
+      "items": [
+        {
+          "title": "Cadrage post-levée et priorités produit",
+          "content": "<p>Objectifs du trimestre, ce qui prouve la traction, dette et risques actuels. On définit <strong>ce qu'on build en premier</strong>, ce qu'on repousse, et comment les deux jours par semaine sont mobilisés.</p>"
+        },
+        {
+          "title": "Backlog, prérequis et cap technique",
+          "content": "<p>User stories, critères d'acceptation, architecture initiale : <strong>livrable écrit</strong> avant d'engager des semaines de code. Le fondateur garde la vision ; le backlog devient prêt à construire.</p>"
+        },
+        {
+          "title": "Build des fondations et features clés",
+          "content": "<p>Sur les deux jours, <strong>je build</strong> : fondations, features prioritaires, déblocage. Revues et standards pour que le prochain dev ne reparte pas de zéro.</p>"
+        },
+        {
+          "title": "Préparer l'embauche et handover",
+          "content": "<p>Fiche de poste réaliste, critères de profil, documentation et passation. Suivi optionnel à l'intégration du premier salarié pour que le fil ne se perde pas.</p>"
         }
       ]
     },

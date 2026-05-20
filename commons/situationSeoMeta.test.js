@@ -48,4 +48,18 @@ describe("situationSeoMeta", () => {
     expect(en.description).toMatch(/Milesopedia/i);
     expect(en.description).toMatch(/Quebec/i);
   });
+
+  it("exposes four-step post-funding path for premier-dev-fractionnel", () => {
+    const fr = getSituationSeo("fr", "situation-premier-dev-fractionnel");
+    const en = getSituationSeo("en", "situation-premier-dev-fractionnel");
+
+    expect(fr.headline).toMatch(/premier dev/i);
+    expect(fr.metaTitle).toMatch(/2 j\/sem/i);
+    expect(fr.description).toMatch(/4 étapes/i);
+    expect(fr.description).toMatch(/embauche/i);
+
+    expect(en.headline).toMatch(/first full-time developer/i);
+    expect(en.description).toMatch(/four-step/i);
+    expect(en.description).toMatch(/hire prep/i);
+  });
 });
