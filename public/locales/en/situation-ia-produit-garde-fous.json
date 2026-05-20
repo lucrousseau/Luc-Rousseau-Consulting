@@ -1,10 +1,10 @@
 {
-  "seoTitle": "AI in the product: where, guardrails, and POC before build | Luc Rousseau",
-  "seoDescription": "AI in your product (live or new): where it fits, guardrails, POC before prod, product and technical decisions, not hype.",
+  "seoTitle": "Fractional product AI: usage, LLM APIs, build vs buy | Luc Rousseau",
+  "seoDescription": "Product AI: prerequisites, risks, scope, anti-hallucination before build. Claude/OpenAI APIs, build vs buy, four-step mandate, POC. Not MLOps.",
   "hero": {
     "badge": "AI & product",
     "title": "AI in your product",
-    "lede": "<p><strong>AI is on the table, whether your product is already live or in launch.</strong> « We need AI » on the roadmap, agency proposes a fuzzy feature, team experiments without <strong>guardrails</strong>. Risk: cost, data, UX, and debt, without clear business value.</p><p>I work on <strong>where AI belongs</strong>, how to prototype and test fast, what criteria for prod, <strong>not</strong> hype, <strong>not</strong> a black box. Same thread: product, architecture, and execution on high-leverage topics.</p>",
+    "lede": "<p><strong>AI is on the table, whether your product is live or in launch.</strong> « We need AI » pressure, fuzzy agency feature, experiments without guardrails. Risk: cost, data, UX, and debt without clear business value.</p><p>My angle is <strong>product</strong>: identify <strong>prerequisites, risks, and dependencies</strong> upfront, define <strong>AI scope</strong> to avoid drift and limit hallucinations, then build vs buy and API integration (Claude, OpenAI, etc.) where classic code is not enough. <strong>Not</strong> MLOps or model operations: I work on usage in the product, not running the machine.</p><p><strong>Fractional, phased</strong> mandate: mapping, guardrails, POC, then handover or steering your devs or agency on the build. <strong>Half-days</strong> for framing, <strong>full days</strong> for a POC, sometimes <strong>two days a week</strong> if I code a critical integration. Rhythm set on the call.</p>",
     "buy": {
       "legend": "Frame AI in your product",
       "prefix": "No commitment",
@@ -16,36 +16,89 @@
       "type": "intro",
       "badge": "The trap",
       "title": "AI feature because the market asks",
-      "lede": "<p class=\"big\">Without clear criteria, you ship a chatbot or auto-summary <strong>nobody uses</strong>, or can't maintain. Data, cost, quality, fallback when the model changes, unanswered until incident.</p>"
+      "lede": "<p class=\"big\">Without clear criteria, you ship a chatbot or auto-summary <strong>nobody uses</strong>, or cannot maintain. Data, cost, quality, fallback when the model changes, unanswered until incident.</p><p class=\"big\">Rushing in multiplies surprises: forgotten prerequisites, technical dependencies, scope creep, hallucinations in prod. The stake is to <strong>frame before build</strong>: where AI creates value, what must be in place, and how to limit risk.</p>"
+    },
+    {
+      "type": "split",
+      "sectionKey": "product-ai",
+      "title": "AI in the product, not ML infra",
+      "intro": "<p class=\"big\">I work on <strong>product and integration</strong>: decisions, LLM APIs, user experience, and guardrails. Not model DevOps/MLOps (training, GPUs, ML ops pipelines).</p>",
+      "panels": [
+        {
+          "heading": "Before you rush in",
+          "items": [
+            "Prerequisites, risks, and dependencies (data, third-party APIs, team) identified upfront",
+            "AI scope defined: which features, which journeys, what is out of scope",
+            "Build vs buy and success criteria before committing to months of dev"
+          ]
+        },
+        {
+          "heading": "In the product, without drift",
+          "items": [
+            "Anti-hallucination guardrails: context, sources, limits on what the model may assert",
+            "Claude, OpenAI, Anthropic APIs: where to wire, what to send, UX fallback if the answer drifts",
+            "LLM content by profile, fast POC, then spec and steering devs or agency"
+          ]
+        }
+      ]
     },
     {
       "type": "cards",
-      "badge": "What I do",
-      "title": "Product AI strategy, not a parallel lab",
+      "badge": "How we work",
+      "title": "Fractional, phased, product angle",
+      "lede": "<p class=\"big\">Not a parallel AI lab or MLOps integrator: fractional mandate focused on <strong>product usage</strong>. Half-days for framing; full day for a POC; two days a week possible on a targeted integration.</p>",
       "items": [
         {
-          "title": "Where AI actually helps the product",
-          "content": "<p>Use-case map: user gain, frequency, error tolerance, <strong>non-AI alternative</strong>, to say no to decorative ideas.</p>"
+          "title": "Prerequisites, risks, and scope",
+          "content": "<p>Before build: <strong>dependencies</strong>, data available, legal constraints, what the team must have in place. Written AI scope so it does not swell every sprint.</p>"
         },
         {
-          "title": "Guardrails and prod criteria",
-          "content": "<p>Data, privacy, cost per request, fallback, monitoring, human review if needed, <strong>written before build</strong>, not after first complaint.</p>"
+          "title": "Build vs buy and guardrails",
+          "content": "<p>Model API, partner, or in-house feature: <strong>risk, cost, and timeline</strong> trade-offs. Data, PII, fallback, human review, and <strong>anti-hallucination limits</strong> defined before prod.</p>"
         },
         {
-          "title": "POC and fast prototypes",
-          "content": "<p>Test hypotheses with POCs or AI flows, <strong>before</strong> committing the team to months of dev. Unlike the PM guide: angle here is <strong>product + technical + risk</strong>.</p>"
+          "title": "LLM APIs in the product",
+          "content": "<p>Claude, OpenAI, or other: <strong>where to wire</strong> in the SaaS, data contracts, async and cache, what the user sees. Where classic code cannot meet the need.</p>"
         },
         {
-          "title": "Fit with architecture",
-          "content": "<p>Where logic lives (API, async, cache), how it integrates with the rest of the SaaS, <strong>not</strong> a brick glued beside the product.</p>"
+          "title": "Content and journeys by profile",
+          "content": "<p>Pages, blocks, or answers <strong>adapted to profile</strong> via LLM, with editorial and technical guardrails. Not a generic chatbot bolted onto the site.</p>"
+        },
+        {
+          "title": "POC or steering your devs",
+          "content": "<p>I ship <strong>product POCs</strong> on high-leverage topics or steer your devs or agency: phases, AI backlog, clear prerequisites, without micro-managing tickets.</p>"
+        }
+      ]
+    },
+    {
+      "type": "highlights",
+      "sectionKey": "phasing",
+      "badge": "The path",
+      "title": "Four typical steps in a product AI mandate",
+      "items": [
+        {
+          "title": "Mapping and use cases",
+          "content": "<p>Hypotheses, journeys, <strong>prerequisites and dependencies</strong> listed, AI scope and go/no-go per feature. Deliverable: where AI helps, where it does not, and what to prepare before coding.</p>"
+        },
+        {
+          "title": "Guardrails and build vs buy",
+          "content": "<p>Risks, data, token costs, fallback, compliance, <strong>anti-hallucination strategy</strong> (context, sources, validation). Build vs buy documented before the dev team commits.</p>"
+        },
+        {
+          "title": "Product POC and prerequisites",
+          "content": "<p>Flows, API integration, LLM content by profile: test in days, acceptance criteria. Brief <strong>ready for your devs or agency</strong>, not an isolated demo.</p>"
+        },
+        {
+          "title": "Handover and optional follow-up",
+          "content": "<p>Spec, prioritized AI backlog, pass-off or <strong>ongoing steering</strong> of the build with your devs. Fractional follow-up for coherence, without a permanent role.</p>"
         }
       ]
     },
     {
       "type": "comparison",
       "badge": "Compare",
-      "title": "« We'll add AI » vs product AI framing",
-      "intro": "Complements PM/PO need; here the focus is technical decision and product risk.",
+      "title": "Fast AI feature vs product AI framing first",
+      "intro": "This comparison is about <strong>AI in the product</strong> (usage, APIs, build vs buy). For day-to-day PM/PO needs, see <a href=\"/en/situations/product-manager-fractionnel\">Need a PM or PO, without full-time</a> in Situations.",
       "columnKeys": ["dimension", "hypeFirst", "framedFirst"],
       "table": {
         "headers": {
@@ -60,19 +113,29 @@
             "framedFirst": "Hypothesis and metric defined before code."
           },
           {
-            "dimension": "Risk",
-            "hypeFirst": "Discovered in prod (data, cost, quality).",
-            "framedFirst": "Guardrails and fallback defined upfront."
+            "dimension": "Build vs buy",
+            "hypeFirst": "Default choice or vendor hype.",
+            "framedFirst": "API, partner, or in-house trade-off with costs and risks."
           },
           {
-            "dimension": "Delivery",
-            "hypeFirst": "Vendor black box or scattered experiments.",
-            "framedFirst": "POC → prerequisites → build with clear acceptance criteria."
+            "dimension": "Production risk",
+            "hypeFirst": "Discovered in prod (data, cost, quality).",
+            "framedFirst": "Prerequisites, risks, and dependencies identified before build."
+          },
+          {
+            "dimension": "Hallucinations / quality",
+            "hypeFirst": "Fixed after user complaints or press.",
+            "framedFirst": "Scope, context, sources, and guardrails defined upfront."
+          },
+          {
+            "dimension": "Scope",
+            "hypeFirst": "MLOps, model ops, or generic chatbot.",
+            "framedFirst": "Product usage, API integration, targeted content and journeys."
           },
           {
             "dimension": "My role",
-            "hypeFirst": ": ",
-            "framedFirst": "Product-tech trade-offs; not daily dev management."
+            "hypeFirst": "Vendor black box or scattered experiments.",
+            "framedFirst": "Product-tech trade-offs; POC or dev steering, not daily manager."
           }
         ]
       }
@@ -81,28 +144,20 @@
       "type": "stack",
       "badge": "How I build",
       "title": "Technical foundations",
-      "lede": "<p class=\"big\"><strong>AI in your existing product</strong>: where it fits, guardrails, cost, and POC before production build.</p>",
-      "groups": [
-        {
-          "badge": "AI strategy",
-          "items": [
-            "AI use-case mapping",
-            "Guardrails, PII, and compliance",
-            "Quality evaluation and token costs",
-            "Targeted RAG or agent POCs"
-          ]
-        },
-        {
-          "badge": "Production integration",
-          "items": [
-            "LLM APIs and orchestration",
-            "Observability and AI call logging",
-            "Laravel · React · API integration",
-            "Feature flags and progressive rollout",
-            "Handover to the internal dev team",
-            "JavaScript · PHP"
-          ]
-        }
+      "lede": "<p class=\"big\"><strong>Product-side AI</strong>: use cases, LLM APIs in the SaaS, content by profile, POC before prod. Not MLOps or model operations.</p>",
+      "items": [
+        "Product AI use-case mapping",
+        "Prerequisites, risks, and dependencies before build",
+        "AI scope and anti-hallucination limits",
+        "Build vs buy and guardrails (data, cost, fallback)",
+        "Claude, OpenAI, Anthropic API integration",
+        "Content and pages by user profile (LLM)",
+        "Targeted RAG and agents in the journey",
+        "Product POC before production build",
+        "Steering devs or agency on the AI build",
+        "Laravel · React · REST APIs",
+        "Feature flags and progressive rollout",
+        "JavaScript · PHP"
       ],
       "background": "rome"
     },
@@ -112,16 +167,40 @@
       "title": "Common questions",
       "items": [
         {
-          "title": "Do you implement the models yourself?",
-          "content": "<p>Yes, on high-leverage topics: I can build <strong>POCs and targeted integrations</strong>; long-term run stays with you or your agency, with a spec they can execute.</p>"
+          "title": "Do you do MLOps or model DevOps?",
+          "content": "<p><strong>No.</strong> No model training, ML ops pipelines, GPUs, or model infra operations. My scope: <strong>usage in the product</strong>, decisions, LLM APIs, integration, and SaaS-side guardrails.</p>"
+        },
+        {
+          "title": "Do you implement LLM APIs in the product?",
+          "content": "<p>Yes, on high-leverage topics: <strong>POCs and targeted integrations</strong> (Claude, OpenAI, etc.), spec for your devs or agency. Long-term run stays with your team, with a clear product frame.</p>"
         },
         {
           "title": "We already have a PM: isn't that redundant?",
-          "content": "<p>Often no. A PM covers prioritization and day-to-day rituals. This work covers <strong>where AI fits, risks, architecture</strong>, and prototypes before prod. The two complement each other if you need both.</p>"
+          "content": "<p>Often no. A PM covers prioritization and day-to-day rituals. This work covers <strong>where AI fits, build vs buy, APIs, risks</strong>, and POC before prod. The two complement each other.</p>"
+        },
+        {
+          "title": "Do you code or steer our team?",
+          "content": "<p>Both. <strong>I code</strong> product POCs (APIs, flows, LLM content) when needed. <strong>I steer</strong> your devs or agency: phases, AI backlog, prerequisites, without taking every ticket.</p>"
+        },
+        {
+          "title": "Will you become our AI CTO?",
+          "content": "<p>No. Your devs or agency keep operational pace. I clarify <strong>use cases, guardrails, and product integration</strong>; I do not manage people or day-to-day tickets.</p>"
+        },
+        {
+          "title": "How do we limit hallucinations and drift?",
+          "content": "<p>By <strong>framing scope</strong>: which questions the product may handle, which sources or data the model receives, what you show or hide, fallback and human review when risk requires it. We test in a POC before prod, not by hoping « the model will behave ».</p>"
+        },
+        {
+          "title": "Is a generic chatbot enough?",
+          "content": "<p>Often no. We start from <strong>journey and user job</strong>: targeted summary, contextual help, content generation by profile, etc. A bolt-on widget without criteria often ends unused or expensive.</p>"
+        },
+        {
+          "title": "What rhythm: half-days, full days, two days a week?",
+          "content": "<p>Depends on the phase. <strong>Half-days</strong> for mapping and workshops. A <strong>full day</strong> for an API or LLM content POC. <strong>Two days a week</strong> if I code a critical integration. Set on the call.</p>"
         },
         {
           "title": "AI changes too fast, why plan?",
-          "content": "<p>Exactly: <strong>product criteria and guardrails</strong> stay stable even when the model changes, that's what avoids rebuilding on every vendor announcement.</p>"
+          "content": "<p><strong>Product criteria and guardrails</strong> stay stable even when the model changes: that is what avoids rebuilding on every vendor announcement.</p>"
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
@@ -134,7 +213,7 @@
       "badge": "Next step",
       "trackSection": "situation-ia-produit",
       "label": "Discuss product AI",
-      "teaser": "<p class=\"big\">Pressure to add AI without a frame? One call to see where it makes sense, how to prototype, and what deserves prod.</p>"
+      "teaser": "<p class=\"big\">Pressure to add AI without a frame? One call to see where it fits in the product, build vs buy, and what deserves a POC before prod.</p>"
     }
   ]
 }
