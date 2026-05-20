@@ -1,0 +1,106 @@
+{
+  "seoTitle": "Editorial product platform: comparators, blocks, APIs | Luc Rousseau",
+  "seoDescription": "Content-heavy product with business journeys — not a brochure site: block model, CMS as platform, APIs and multi-market without ad-hoc integrations every launch.",
+  "hero": {
+    "badge": "Editorial product",
+    "title": "When the product is content and journeys — not a brochure",
+    "lede": "<p>You run a <strong>comparator</strong>, multi-brand network, rich business journey, or a platform where <strong>editorial ships the product</strong> every week. This isn't a corporate site redone every few years: it's a system where content, business rules, and tech must hold together.</p><p>I work on this kind of <strong>product platform</strong>: durable block model (including Gutenberg when WordPress is the backbone), clear APIs and boundaries, headless when editorial throughput or multi-surface warrants it — <strong>fewer custom integrations per launch</strong>, not confused with a « brochure » agency.</p>",
+    "buy": {
+      "legend": "Discuss your platform",
+      "prefix": "— no commitment",
+      "label": "Book a 30-minute call"
+    }
+  },
+  "blocks": [
+    {
+      "type": "intro",
+      "badge": "The trap",
+      "title": "Every campaign = a custom integration",
+      "lede": "<p class=\"big\">Editorial wants speed; engineering accumulates <strong>one-offs</strong>: ad-hoc HTML, fragile plugins, silos per market. The « product » becomes hard to evolve without breaking prod or delaying every launch.</p>"
+    },
+    {
+      "type": "cards",
+      "badge": "What we build",
+      "title": "Platform, not web page",
+      "items": [
+        {
+          "title": "Blocks and repeatable journeys",
+          "content": "<p>Gutenberg patterns (or equivalent) for comparison flows, product landings, business modules — <strong>editorial composes</strong>, engineering stabilizes bricks.</p>"
+        },
+        {
+          "title": "API and shared foundation",
+          "content": "<p>Data, content, rules shared across brands or markets — <strong>one system to operate</strong>, not a site per country rewired by hand.</p>"
+        },
+        {
+          "title": "Headless or coupled — product-led",
+          "content": "<p>Headless WordPress, Laravel, React/Vue front: choice follows <strong>editorial throughput and surfaces</strong>, not stack fashion.</p>"
+        },
+        {
+          "title": "Releases and perf tied to business",
+          "content": "<p>CI/CD, cache, release discipline — gains go where <strong>editorial and revenue</strong> need them, not isolated tech projects.</p>"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "badge": "Compare",
+      "title": "Brochure agency vs editorial product platform",
+      "intro": "If your need is a brochure or one-off campaign, this isn't the right fit.",
+      "columnKeys": ["dimension", "vitrineAgency", "productPlatform"],
+      "table": {
+        "headers": {
+          "dimension": "Dimension",
+          "vitrineAgency": "Brochure / campaign agency",
+          "productPlatform": "Editorial product platform support"
+        },
+        "rows": [
+          {
+            "dimension": "Object",
+            "vitrineAgency": "Pages, branding, one-off launch.",
+            "productPlatform": "Comparator, business journey, recurring content at scale."
+          },
+          {
+            "dimension": "Evolution",
+            "vitrineAgency": "Redesign every N years.",
+            "productPlatform": "Blocks, APIs, editorial model that absorb launches."
+          },
+          {
+            "dimension": "Multi-market",
+            "vitrineAgency": "Duplicated sites.",
+            "productPlatform": "Shared foundation; markets as variants of one system."
+          },
+          {
+            "dimension": "My role",
+            "vitrineAgency": "Out of scope.",
+            "productPlatform": "Architecture, product, delivery on one thread — not dev team management."
+          }
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "badge": "Objections",
+      "title": "Common questions",
+      "items": [
+        {
+          "title": "We're already on WordPress — do we throw it away?",
+          "content": "<p>Often no. We <strong>extract and structure</strong>: blocks, API, slice migration — like multi-site networks already in prod, without big bang.</p>"
+        },
+        {
+          "title": "Isn't this just « marketing CMS »?",
+          "content": "<p>When the CMS is the <strong>product engine</strong> (high-frequency editing, complex journeys), it's product engineering — not a pamphlet. Editorial throughput is a first-class constraint.</p>"
+        },
+        {
+          "title": "Do you manage our editorial or dev team?",
+          "content": "<p>No. I clarify <strong>system and standards</strong>; your teams keep their roles. I facilitate product-tech trade-offs when delivery blocks.</p>"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "trackSection": "guide-plateforme-editoriale",
+      "label": "Discuss your editorial platform",
+      "teaser": "<p class=\"big\">Comparator, multi-brand, or complex content journey? One call to see if a product platform — not a brochure redesign — fits your context.</p>"
+    }
+  ]
+}
