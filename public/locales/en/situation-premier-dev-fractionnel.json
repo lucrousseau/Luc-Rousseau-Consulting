@@ -83,6 +83,25 @@
       }
     },
     {
+      "type": "stack",
+      "badge": "How I build",
+      "title": "Technical foundations",
+      "lede": "<p class=\"big\"><strong>Technical leadership right after funding</strong>, without locking in a full team too early: clear architecture, sustainable delivery, and criteria for your first hire.</p>",
+      "items": [
+        "Initial architecture and service boundaries",
+        "Product-aligned technical roadmap",
+        "Laravel, REST APIs, and custom backends",
+        "React, Next.js, or Vue frontends as needed",
+        "CI/CD and reproducible environments",
+        "Code standards and reviews for the future team",
+        "Documentation and handover to a first employee",
+        "Technical debt framed from day one",
+        "Baseline performance and observability",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Common questions",

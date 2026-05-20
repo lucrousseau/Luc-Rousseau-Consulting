@@ -78,6 +78,25 @@
       }
     },
     {
+      "type": "stack",
+      "badge": "How I build",
+      "title": "Technical foundations",
+      "lede": "<p class=\"big\"><strong>Phased rebuild</strong>: coexistence of stacks, stable contracts, and continuous delivery during migration.</p>",
+      "items": [
+        "Phasing and migration strategy",
+        "Strangler pattern and parallel APIs",
+        "Laravel, React, Next.js, or target stack",
+        "WordPress headless when editorial content",
+        "Regression tests and feature flags",
+        "CI/CD on legacy and new scope",
+        "Mapped legacy debt",
+        "Performance and cache per phase",
+        "Service boundary documentation",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Common questions",

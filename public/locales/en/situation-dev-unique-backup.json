@@ -42,6 +42,25 @@
       ]
     },
     {
+      "type": "stack",
+      "badge": "How I build",
+      "title": "Technical foundations",
+      "lede": "<p class=\"big\"><strong>Backup on your existing stack</strong>: reviews, runbooks, and prioritization without disrupting your primary developer's day to day.</p>",
+      "items": [
+        "Architecture and code reviews on the current stack",
+        "Documentation and backup runbooks",
+        "CI/CD and reliable deployments",
+        "Existing APIs and integrations",
+        "Targeted tests and regression",
+        "Prioritized technical debt",
+        "Security and planned patches",
+        "Pairing and handover with your developer",
+        "Performance and monitoring",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Common questions",

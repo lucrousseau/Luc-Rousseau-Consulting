@@ -78,6 +78,25 @@
       }
     },
     {
+      "type": "stack",
+      "badge": "Comment je construis",
+      "title": "Fondations techniques",
+      "lede": "<p class=\"big\"><strong>MVP et SaaS cadrés avant gros investissement</strong> : stack réaliste, périmètre tranché et handover propre vers vos devs ou agence.</p>",
+      "items": [
+        "Faisabilité et choix de stack",
+        "Next.js, React ou Vue pour le front",
+        "Laravel et APIs pour le backend",
+        "Auth, rôles et modèle de données",
+        "Prototypes et parcours cliquables",
+        "Scope MVP et critères de succès",
+        "CI/CD et environnements de démo",
+        "Intégrations paiement ou tierces",
+        "Handover documentation et backlog",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Questions fréquentes",

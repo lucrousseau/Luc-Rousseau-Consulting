@@ -78,6 +78,25 @@
       }
     },
     {
+      "type": "stack",
+      "badge": "How I build",
+      "title": "Technical foundations",
+      "lede": "<p class=\"big\"><strong>Editorial platforms at scale</strong>: decoupled content, APIs, and frontends for multi-brand editorial pace.</p>",
+      "items": [
+        "WordPress headless or Gutenberg/blocks",
+        "Content APIs and editorial orchestration",
+        "React or Next.js frontends",
+        "Multi-brand and business journeys",
+        "Cache, CDN, and editorial performance",
+        "Laravel for services and middleware",
+        "CRM, analytics, partner integrations",
+        "CI/CD and content previews",
+        "Content model governance",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Common questions",

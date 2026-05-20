@@ -16,6 +16,7 @@ import {
 } from "../../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../../commons/scheduleCta";
 
+import TechnicalStack from "../../TechnicalStack";
 import SituationHero from "../SituationHero";
 
 function parseBlockItems(items) {
@@ -147,6 +148,18 @@ function SituationBlock({ block, namespace, scheduleCta }) {
         </Container>
       );
     }
+
+    case "stack":
+      return (
+        <TechnicalStack
+          className="section-situation-block"
+          badge={block.badge}
+          title={block.title}
+          lede={block.lede}
+          items={Array.isArray(block.items) ? block.items : []}
+          background={block.background}
+        />
+      );
 
     case "cta":
       return (

@@ -42,6 +42,25 @@
       ]
     },
     {
+      "type": "stack",
+      "badge": "Comment je construis",
+      "title": "Fondations techniques",
+      "lede": "<p class=\"big\"><strong>Renfort sur votre stack existant</strong> : revues, runbooks et priorisation sans chambouler le quotidien de votre développeur principal.</p>",
+      "items": [
+        "Revues architecture et code du stack en place",
+        "Documentation et runbooks de secours",
+        "CI/CD et déploiements fiables",
+        "APIs et intégrations existantes",
+        "Tests et régression ciblés",
+        "Dette technique priorisée",
+        "Sécurité et correctifs planifiés",
+        "Pairing et handover avec votre dev",
+        "Performance et monitoring",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Questions fréquentes",

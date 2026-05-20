@@ -83,6 +83,25 @@
       }
     },
     {
+      "type": "stack",
+      "badge": "Comment je construis",
+      "title": "Fondations techniques",
+      "lede": "<p class=\"big\"><strong>Cap technique dès la post-levée</strong>, sans figer une équipe trop tôt : architecture claire, livraison soutenable et critères pour votre futur premier dev.</p>",
+      "items": [
+        "Architecture initiale et frontières de services",
+        "Roadmap technique alignée produit",
+        "Laravel, APIs REST et backends sur mesure",
+        "Frontends React, Next.js ou Vue selon le contexte",
+        "CI/CD et environnements reproductibles",
+        "Standards de code et revues pour la future équipe",
+        "Documentation et handover vers un premier salarié",
+        "Dette technique cadrée dès le départ",
+        "Performance et observabilité de base",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Questions fréquentes",

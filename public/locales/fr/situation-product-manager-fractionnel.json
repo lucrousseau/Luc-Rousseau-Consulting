@@ -102,6 +102,26 @@
       }
     },
     {
+      "type": "stack",
+      "badge": "Comment je construis",
+      "title": "Fondations techniques",
+      "lede": "<p class=\"big\"><strong>Produit et technique dans la même boucle</strong> : prérequis clairs, prototypes avant le build, stack alignée avec vos devs.</p>",
+      "items": [
+        "Prototypes IA et flows cliquables",
+        "Prérequis et critères d'acceptation",
+        "Backlog structuré pour les devs",
+        "APIs et dépendances cartographiées",
+        "Intégrations tierces cadrées",
+        "Laravel · React · Next.js selon l'existant",
+        "Évaluation faisabilité technique",
+        "Cérémonies et rituels avec l'équipe dev",
+        "Roadmap trimestre et arbitrages",
+        "Dette et risques visibles côté produit",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Questions fréquentes",

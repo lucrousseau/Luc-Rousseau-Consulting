@@ -78,6 +78,25 @@
       }
     },
     {
+      "type": "stack",
+      "badge": "Comment je construis",
+      "title": "Fondations techniques",
+      "lede": "<p class=\"big\"><strong>IA dans le produit existant</strong> : où l'intégrer, garde-fous, coûts et POC avant engagement build en prod.</p>",
+      "items": [
+        "Cartographie des cas d'usage IA",
+        "APIs LLM et orchestration",
+        "Garde-fous, PII et conformité",
+        "Évaluation qualité et coûts tokens",
+        "POC RAG ou agents ciblés",
+        "Observabilité et logs des appels IA",
+        "Intégration Laravel · React · APIs",
+        "Feature flags et déploiement progressif",
+        "Handover vers l'équipe dev interne",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Questions fréquentes",

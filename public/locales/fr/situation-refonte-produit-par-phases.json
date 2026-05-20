@@ -78,6 +78,25 @@
       }
     },
     {
+      "type": "stack",
+      "badge": "Comment je construis",
+      "title": "Fondations techniques",
+      "lede": "<p class=\"big\"><strong>Refonte par étapes</strong> : coexistence des stacks, contrats stables et livraison continue pendant la migration.</p>",
+      "items": [
+        "Phasage et stratégie de migration",
+        "Pattern strangler et APIs parallèles",
+        "Laravel, React, Next.js ou stack cible",
+        "WordPress headless si contenu éditorial",
+        "Tests de régression et feature flags",
+        "CI/CD sur ancien et nouveau périmètre",
+        "Dette legacy cartographiée",
+        "Performance et cache par phase",
+        "Documentation des frontières de services",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
       "type": "faq",
       "badge": "Objections",
       "title": "Questions fréquentes",
