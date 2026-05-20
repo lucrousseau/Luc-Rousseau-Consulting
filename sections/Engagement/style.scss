@@ -63,35 +63,11 @@
     margin-top: 0.85rem;
   }
 
-  .engagement__terms-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem 2.5rem;
-    margin: 2rem 0 0;
-
-    @media screen and (max-width: $sm) {
-      grid-template-columns: 1fr;
-    }
+  .engagement__terms-two-column {
+    margin-top: 2rem;
   }
 
-  .engagement__terms-column {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .engagement__terms-ul {
-    margin: 0;
-    padding-left: 1.1rem;
-    font-size: 0.9375rem;
-    line-height: 1.45;
-  }
-
-  .engagement__terms-ul li + li {
-    margin-top: 0.35rem;
-  }
-
-  .engagement__terms .engagement__terms-columns + .small {
+  .engagement__terms .engagement__terms-two-column + .small {
     margin-top: 1.25rem;
     padding-top: 1.25rem;
     border-top: 1px solid rgb(0 0 0 / 6%);
