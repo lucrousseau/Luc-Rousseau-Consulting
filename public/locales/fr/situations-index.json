@@ -1,6 +1,6 @@
 {
   "seoTitle": "Situations : accompagnement produit & technique | Luc Rousseau",
-  "seoDescription": "Trouvez en deux questions la fiche qui correspond à votre situation : équipe tech, PM/PO, produit en ligne, MVP SaaS ou IA produit.",
+  "seoDescription": "Trouvez en deux questions la fiche qui correspond : équipe tech, PM/PO, WordPress archaïque, plateforme éditoriale, MVP SaaS ou IA produit.",
   "seoImage": "/og/image-fr.jpg",
   "badge": "Situations",
   "title": "Quelle situation vous concerne ?",
@@ -48,8 +48,8 @@
         "hint": "Réduire le bus factor, soulager le quotidien, couvrir les vacances"
       },
       "rebuild": {
-        "label": "Refondre ou changer de stack",
-        "hint": "Phasage et architecture sans big bang ni piloter l'équipe au jour le jour"
+        "label": "WordPress archaïque, lent ou refonte de stack",
+        "hint": "Headless moderne ou admin et API Laravel, phasage sans big bang"
       },
       "editorial": {
         "label": "Faire tenir un produit éditorial à l'échelle",
@@ -91,8 +91,8 @@
       "teaser": "Vous avez besoin d'un vrai pilotage produit, pas d'un poste à 40 h : demi-journées en régulier, journée complète au besoin, priorités, prérequis et cérémonies."
     },
     "refonte-produit-par-phases": {
-      "title": "Refonte ou changement de stack",
-      "teaser": "Vous devez moderniser sans tout arrêter : voici faisabilité, phasage et architecture sans devenir tech lead de votre équipe."
+      "title": "WordPress archaïque : headless ou Laravel par phases",
+      "teaser": "WordPress archaïque : entrée dans la modernité (headless, Laravel), PM/PO fractionnel, plan sans big bang."
     },
     "plateforme-editoriale-produit": {
       "title": "Produit éditorial à l'échelle",

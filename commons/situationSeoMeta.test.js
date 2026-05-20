@@ -15,4 +15,20 @@ describe("situationSeoMeta", () => {
     expect(en.description).toMatch(/half-days/i);
     expect(en.description).not.toMatch(/four days per week/i);
   });
+
+  it("exposes archaic WordPress phased rebuild for refonte-produit-par-phases", () => {
+    const fr = getSituationSeo("fr", "situation-refonte-produit-par-phases");
+    const en = getSituationSeo("en", "situation-refonte-produit-par-phases");
+
+    expect(fr.headline).toMatch(/archaïque/i);
+    expect(fr.metaTitle).toMatch(/headless/i);
+    expect(fr.description).toMatch(/modernisation/i);
+    expect(fr.description).not.toMatch(/1 à 3/i);
+    expect(fr.description).not.toMatch(/trois journées/i);
+
+    expect(en.headline).toMatch(/Archaic WordPress/i);
+    expect(en.description).toMatch(/modern stack/i);
+    expect(en.description).not.toMatch(/1–3 days/i);
+    expect(en.description).not.toMatch(/one to three days/i);
+  });
 });
