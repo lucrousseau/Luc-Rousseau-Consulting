@@ -1,10 +1,10 @@
 {
-  "seoTitle": "Un seul dev technique : backup et valeur à 1 jour/semaine | Luc Rousseau",
-  "seoDescription": "Un seul dev porte tout le technique : une journée par semaine pour le bus factor, le quotidien et les vacances, sans second temps plein.",
+  "seoTitle": "Un seul dev, toute la responsabilité technique | Luc Rousseau",
+  "seoDescription": "Un seul dev porte toute la responsabilité technique : une journée par semaine pour le bus factor, le quotidien et les vacances, sans second temps plein.",
   "hero": {
     "badge": "Équipe technique réduite",
-    "title": "Un seul dev porte tout le technique",
-    "lede": "<p><strong>Un seul développeur concentre tout le technique chez vous.</strong> Le risque n'est pas théorique : maladie, départ, vacances, surcharge. Vous n'avez pas besoin d'un deuxième temps plein, vous avez besoin de <strong>continuité, de recul et d'un filet de sécurité</strong>.</p><p><strong>Une journée par semaine</strong> suffit pour connaître le code, apporter de la valeur au quotidien et convenir d'une présence quand votre dev principal est absent, sans le remplacer.</p>",
+    "title": "Un seul dev porte toute la responsabilité technique",
+    "lede": "<p><strong>Un seul développeur concentre toute la responsabilité technique chez vous.</strong> Le risque n'est pas théorique : maladie, départ, vacances, surcharge. Vous n'avez pas besoin d'un deuxième temps plein, vous avez besoin de <strong>continuité, de recul et de tranquillité d'esprit</strong> si la prod bloque et que votre dev principal ne répond pas.</p><p><strong>Une journée par semaine</strong> structure le travail en profondeur ; en parallèle, on cadre la valeur au quotidien, le backup progressif et une <strong>présence fiable</strong> (joignable en semaine, urgence et week-end convenus à l'avance).</p>",
     "buy": {
       "legend": "Évaluer votre risque technique",
       "prefix": "Appel de 30 min",
@@ -13,10 +13,35 @@
   },
   "blocks": [
     {
+      "type": "highlights",
+      "sectionKey": "reliability",
+      "badge": "Tranquillité d'esprit",
+      "title": "Joignable et fiable, même à une journée par semaine",
+      "lede": "<p class=\"big\">Dans cette situation, ce n'est souvent pas le point le plus visible, mais le plus décisif pour le fondateur : <strong>savoir qui répond</strong> si la prod bloque et que votre dev principal est débordé ou injoignable. Une journée par semaine structure le travail en profondeur ; la <strong>joignabilité et les urgences</strong> sont cadrées à part, dès le départ.</p>",
+      "items": [
+        {
+          "title": "Joignable en continu en semaine",
+          "content": "<p>Vous n'attendez pas le jour prévu pour échanger : <strong>je reste joignable</strong> sur Slack ou le canal que vous utilisez déjà. Questions, arbitrages, signaux faibles : on garde le fil sans transformer chaque échange en réunion.</p>"
+        },
+        {
+          "title": "Urgence si votre dev principal ne répond pas",
+          "content": "<p>Si quelque chose casse en prod et que votre dev principal ne peut pas prendre l'appel, j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> : périmètre, priorité, délais de réponse. Pas d'astreinte 24/7 floue, mais un <strong>engagement clair</strong> sur ce qui déclenche une intervention.</p>"
+        },
+        {
+          "title": "Week-end : plages et limites négociées",
+          "content": "<p>Le week-end n'est pas « interdit » par défaut : on peut convenir de <strong>plages et de limites</strong> (fenêtres, types d'incidents, escalade). Tout est écrit à l'avance pour que personne ne devine si « ça compte » comme urgence.</p>"
+        },
+        {
+          "title": "Ce que vous gagnez côté direction",
+          "content": "<p>Moins de charge mentale quand tout repose sur une seule tête technique : <strong>fiabilité, visibilité et backup</strong> sans recruter un second temps plein ni micro-manager votre dev principal.</p>"
+        }
+      ]
+    },
+    {
       "type": "intro",
       "badge": "Le risque",
       "title": "Le bus factor, concrètement",
-      "lede": "<p class=\"big\">Votre dev principal reste <strong>propriétaire du code et des décisions</strong>. Mon rôle n'est pas de le concurrencer : c'est de réduire la dépendance unique, d'accélérer les revues et de pouvoir <strong>tenir le fort de façon limitée</strong> si la personne est indisponible, parce qu'on s'est préparés ensemble.</p>"
+      "lede": "<p class=\"big\">Votre dev principal reste <strong>propriétaire du code et des décisions</strong>. Mon rôle n'est pas de le concurrencer : c'est de réduire la dépendance unique, d'accélérer les revues et d'être <strong>le filet fiable</strong> si la personne est absente, débordée ou injoignable en urgence, parce qu'on s'est préparés ensemble.</p>"
     },
     {
       "type": "cards",
@@ -33,7 +58,11 @@
         },
         {
           "title": "Backup « léger », pas clone",
-          "content": "<p>On définit ce qui est couvert en mon absence de votre dev : correctifs, déploiements, support de niveau 2, <strong>périmètre écrit</strong>, pas de promesse floue d'« être disponible tout le temps ».</p>"
+          "content": "<p>On écrit ce qui est couvert en intervention (correctifs, déploiements, support niveau 2) et <strong>ce qui déclenche une urgence</strong>. Vous savez à quoi vous attendre : pas de boîte noire si votre dev est débordé ou absent.</p>"
+        },
+        {
+          "title": "Joignable en semaine, hors jour prévu",
+          "content": "<p>Le jour de mission structure le build ; entre deux, <strong>je reste joignable</strong> sur Slack ou votre canal pour les sujets du quotidien. Pas d'attente jusqu'au prochain créneau pour un arbitrage ou un signal faible.</p>"
         },
         {
           "title": "Vacances et astreinte convenue",
@@ -71,7 +100,7 @@
         },
         {
           "title": "Une journée par semaine, c'est suffisant ?",
-          "content": "<p>Pour <strong>connaissance progressive et filet de sécurité</strong>, oui, si le périmètre est cadré. Ce n'est pas un deuxième temps plein ; c'est une assurance et un accélérateur. Si le volume justifie plus, on en parle ; souvent une journée bien utilisée suffit longtemps.</p>"
+          "content": "<p>Pour <strong>connaissance progressive et filet de sécurité</strong>, oui, si le périmètre est cadré. Ce n'est pas un deuxième temps plein ; c'est une assurance et un accélérateur. La journée structure le build en profondeur ; la joignabilité et l'urgence sont détaillées dans la section en tête de page. Si le volume justifie plus, on en parle ; souvent une journée bien utilisée suffit longtemps.</p>"
         },
         {
           "title": "Confidentialité et accès",
@@ -79,7 +108,7 @@
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",
-          "content": "<p>Le rythme convenu (ex. une journée par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Si une urgence survient en dehors des jours prévus, je reste joignable et j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais), pas une astreinte 24/7 floue.</p>"
+          "content": "<p>Le rythme convenu (ex. une journée par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous. Le détail est dans la section <strong>« Joignable et fiable »</strong> en tête de page ; en résumé : joignable en continu en semaine, cadre d'urgence si votre dev principal ne répond pas, week-end négocié avec plages claires.</p>"
         }
       ]
     },
@@ -88,7 +117,7 @@
       "badge": "Prochaine étape",
       "trackSection": "situation-solo-dev",
       "label": "Discuter bus factor",
-      "teaser": "<p class=\"big\">Un seul dev porte tout ? Un appel suffit pour voir si une journée par semaine vous donne de la marge, sans chambouler votre équipe.</p>"
+      "teaser": "<p class=\"big\">Toute la responsabilité technique sur un seul dev ? Un appel suffit pour voir si une journée par semaine, avec une présence fiable en urgence, vous redonne de la marge sans chambouler votre équipe.</p>"
     }
   ]
 }

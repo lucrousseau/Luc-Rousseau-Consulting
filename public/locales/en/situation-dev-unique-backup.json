@@ -1,10 +1,10 @@
 {
-  "seoTitle": "Solo technical owner: backup and value at 1 day/week | Luc Rousseau",
-  "seoDescription": "One developer owns all the tech: one day a week for bus factor, day-to-day relief, and vacations, without a second full-time hire.",
+  "seoTitle": "One dev, all technical responsibility | Luc Rousseau",
+  "seoDescription": "One developer carries all technical responsibility: one day a week for bus factor, day-to-day relief, and vacations, without a second full-time hire.",
   "hero": {
     "badge": "Small technical team",
-    "title": "One developer owns all the tech",
-    "lede": "<p><strong>One developer concentrates all the tech at your company.</strong> Risk isn't theoretical: illness, departure, vacation, burnout. You don't need a second full-time hire, you need <strong>continuity, perspective, and a safety net</strong>.</p><p><strong>One day a week</strong> is enough to learn the codebase, add day-to-day value, and agree on coverage when your main developer is away, without replacing them.</p>",
+    "title": "One developer carries all technical responsibility",
+    "lede": "<p><strong>One developer concentrates all technical responsibility at your company.</strong> Risk isn't theoretical: illness, departure, vacation, burnout. You don't need a second full-time hire, you need <strong>continuity, perspective, and peace of mind</strong> when production is down and your main developer doesn't answer.</p><p><strong>One day a week</strong> structures deep work; in parallel, we frame day-to-day value, gradual backup, and <strong>dependable coverage</strong> (reachable on weekdays, urgency and weekends agreed up front).</p>",
     "buy": {
       "legend": "Assess your technical risk",
       "prefix": "30-minute call",
@@ -13,10 +13,35 @@
   },
   "blocks": [
     {
+      "type": "highlights",
+      "sectionKey": "reliability",
+      "badge": "Peace of mind",
+      "title": "Reachable and dependable, even at one day a week",
+      "lede": "<p class=\"big\">In this situation, it's often not the most visible point, but the one that matters most to leadership: <strong>knowing who answers</strong> when production is down and your main developer is overloaded or unreachable. One day a week structures deep work; <strong>reachability and emergencies</strong> are framed separately from day one.</p>",
+      "items": [
+        {
+          "title": "Reachable throughout the week",
+          "content": "<p>You don't wait for the scheduled day to talk: <strong>I stay reachable</strong> on Slack or the channel you already use. Questions, trade-offs, early signals: we keep the thread without turning every ping into a meeting.</p>"
+        },
+        {
+          "title": "Emergency when your main developer doesn't answer",
+          "content": "<p>If production breaks and your main developer can't take the call, I step in under an <strong>emergency frame we define together</strong>: scope, priority, response time. Not a vague 24/7 on-call promise, but a <strong>clear commitment</strong> on what triggers intervention.</p>"
+        },
+        {
+          "title": "Weekends: agreed windows and limits",
+          "content": "<p>Weekends aren't « off limits » by default: we can agree <strong>windows and limits</strong> (time bands, incident types, escalation). Everything is written up front so no one has to guess whether « this counts » as an emergency.</p>"
+        },
+        {
+          "title": "What leadership gains",
+          "content": "<p>Less mental load when all tech rests on one person: <strong>dependability, visibility, and backup</strong> without hiring a second full-time developer or micromanaging your lead.</p>"
+        }
+      ]
+    },
+    {
       "type": "intro",
       "badge": "The risk",
       "title": "Bus factor, in practice",
-      "lede": "<p class=\"big\">Your main developer stays <strong>owner of the code and decisions</strong>. My role isn't to compete: it's to reduce single-point dependency, speed up reviews, and <strong>hold the line in a bounded way</strong> when they're unavailable, because we prepared together.</p>"
+      "lede": "<p class=\"big\">Your main developer stays <strong>owner of the code and decisions</strong>. My role isn't to compete: it's to reduce single-point dependency, speed up reviews, and be the <strong>reliable backup</strong> when they're away, overloaded, or unreachable in an emergency, because we prepared together.</p>"
     },
     {
       "type": "cards",
@@ -33,7 +58,11 @@
         },
         {
           "title": "Light backup, not a clone",
-          "content": "<p>We define what's covered when your dev is away: fixes, deploys, level-2 support, <strong>written scope</strong>, not a vague promise to « always be available ».</p>"
+          "content": "<p>We write what's covered in an intervention (fixes, deploys, level-2 support) and <strong>what triggers an emergency</strong>. You know what to expect: no black box when your developer is overloaded or away.</p>"
+        },
+        {
+          "title": "Reachable on weekdays, off mission day",
+          "content": "<p>Mission day structures deep build; in between, <strong>I stay reachable</strong> on Slack or your channel for day-to-day topics. No waiting until the next slot for a trade-off or early signal.</p>"
         },
         {
           "title": "Vacation and agreed on-call",
@@ -71,7 +100,7 @@
         },
         {
           "title": "Is one day a week enough?",
-          "content": "<p>For <strong>gradual knowledge and a safety net</strong>, yes, with clear scope. It's not a second full-time role; it's insurance and acceleration. If volume truly needs more, we discuss it; often one well-used day is enough for a long time.</p>"
+          "content": "<p>For <strong>gradual knowledge and a safety net</strong>, yes, with clear scope. It's not a second full-time role; it's insurance and acceleration. The scheduled day structures deep build work; reachability and emergencies are covered in the section at the top of the page. If volume truly needs more, we discuss it; often one well-used day is enough for a long time.</p>"
         },
         {
           "title": "Confidentiality and access",
@@ -79,7 +108,7 @@
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
-          "content": "<p>The agreed rhythm (e.g. one day a week) structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. If an emergency lands outside scheduled days, I stay reachable and step in under a <strong>shared urgency frame</strong> we define up front (scope, priority, response time), not a vague 24/7 on-call promise.</p>"
+          "content": "<p>The agreed rhythm (e.g. one day a week) structures deep work, not whether you can reach me. Details are in the <strong>« Reachable and dependable »</strong> section at the top of the page; in short: reachable throughout the week, emergency frame when your main developer doesn't answer, weekends agreed with clear windows.</p>"
         }
       ]
     },
@@ -88,7 +117,7 @@
       "badge": "Next step",
       "trackSection": "situation-solo-dev",
       "label": "Discuss bus factor",
-      "teaser": "<p class=\"big\">One developer carries everything? One call is enough to see if one day a week gives you margin, without disrupting your team.</p>"
+      "teaser": "<p class=\"big\">All technical responsibility on one developer? One call is enough to see if one day a week, with dependable emergency coverage, gives you margin without disrupting your team.</p>"
     }
   ]
 }

@@ -19,9 +19,18 @@ import { getScheduleCta } from "../../../commons/scheduleCta";
 import TechnicalStack from "../../TechnicalStack";
 import SituationHero from "../SituationHero";
 import SituationGroups from "../SituationGroups";
+import SituationHighlights from "../SituationHighlights";
 
 function hasGroups(block) {
   return Array.isArray(block?.groups) && block.groups.length > 0;
+}
+
+function blockClassName(block) {
+  const parts = ["section-situation-block", `section-situation-block--${block.type}`];
+  if (block.sectionKey) {
+    parts.push(`section-situation-block--${block.sectionKey}`);
+  }
+  return parts.join(" ");
 }
 
 function parseBlockItems(items) {
@@ -42,11 +51,7 @@ function SituationBlock({ block, namespace, scheduleCta }) {
   switch (block.type) {
     case "intro":
       return (
-        <Container
-          className="section-situation-block section-situation-block--intro"
-          align="center"
-          halign="center"
-        >
+        <Container className={blockClassName(block)} align="center" halign="center">
           <SectionIntro
             badge={block.badge}
             title={block.title}
@@ -56,15 +61,26 @@ function SituationBlock({ block, namespace, scheduleCta }) {
         </Container>
       );
 
+    case "highlights":
+      return (
+        <Container className={blockClassName(block)} align="center" halign="center">
+          {(block.badge || block.title) && (
+            <SectionIntro
+              badge={block.badge}
+              title={block.title}
+              lede={block.lede ? parse(block.lede) : null}
+              rowStyle={homeIntroRowStyle}
+            />
+          )}
+          <SituationHighlights items={block.items} />
+        </Container>
+      );
+
     case "cards": {
       const cardGroups = hasGroups(block) ? block.groups : null;
       const cardItems = cardGroups ? null : block.items;
       return (
-        <Container
-          className="section-situation-block section-situation-block--cards"
-          align="center"
-          halign="center"
-        >
+        <Container className={blockClassName(block)} align="center" halign="center">
           {(block.badge || block.title) && (
             <SectionIntro
               badge={block.badge}
@@ -103,11 +119,7 @@ function SituationBlock({ block, namespace, scheduleCta }) {
         return null;
       }
       return (
-        <Container
-          className="section-situation-block section-situation-block--comparison"
-          align="center"
-          halign="center"
-        >
+        <Container className={blockClassName(block)} align="center" halign="center">
           <SectionIntro badge={block.badge} title={block.title} rowStyle={homeIntroRowStyle}>
             {block.intro && <p className="big">{parse(block.intro)}</p>}
             {block.lede && parse(block.lede)}
@@ -136,11 +148,7 @@ function SituationBlock({ block, namespace, scheduleCta }) {
     case "faq": {
       const faqItems = parseBlockItems(block.items);
       return (
-        <Container
-          className="section-situation-block section-situation-block--faq"
-          align="center"
-          halign="center"
-        >
+        <Container className={blockClassName(block)} align="center" halign="center">
           <SectionIntro
             badge={block.badge}
             title={block.title}
@@ -164,7 +172,7 @@ function SituationBlock({ block, namespace, scheduleCta }) {
     case "stack":
       return (
         <TechnicalStack
-          className="section-situation-block"
+          className={blockClassName(block)}
           badge={block.badge}
           title={block.title}
           lede={block.lede}
@@ -176,11 +184,7 @@ function SituationBlock({ block, namespace, scheduleCta }) {
 
     case "cta":
       return (
-        <Container
-          className="section-situation-block section-situation-block--cta"
-          align="center"
-          halign="center"
-        >
+        <Container className={blockClassName(block)} align="center" halign="center">
           <SectionCta
             halign="center"
             trackSection={block.trackSection ?? "situation"}

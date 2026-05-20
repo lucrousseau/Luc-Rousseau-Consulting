@@ -16,6 +16,10 @@ User-agent: *
 Allow: /
 
 Sitemap: ${base}/sitemap.xml
+
+# LLM-readable site summary (llmstxt.org)
+# LLMs-Txt: ${base}/llms.txt
+
 # Geo-targeting: KML file for geographic location
 # KML: ${base}/geo.kml
 `;

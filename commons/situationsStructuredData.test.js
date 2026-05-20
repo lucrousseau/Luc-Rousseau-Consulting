@@ -1,6 +1,7 @@
 import {
   buildBreadcrumbListJsonLd,
   buildSituationPageBreadcrumbJsonLd,
+  buildSituationPageJsonLd,
   buildSituationsHubJsonLd,
 } from "./situationsStructuredData";
 
@@ -41,5 +42,29 @@ describe("situationsStructuredData", () => {
 
     expect(breadcrumb.itemListElement[1].item).toBe(`${base}/en/situations`);
     expect(breadcrumb.itemListElement[2].item).toBeUndefined();
+  });
+
+  it("builds situation WebPage + breadcrumb with service metadata", () => {
+    const pageUrl = `${base}/situations/premier-dev-fractionnel`;
+    const [breadcrumb, webPage] = buildSituationPageJsonLd({
+      base,
+      locale: "fr",
+      defaultLocale: "fr",
+      pageUrl,
+      pageName: "Après la levée : avant votre premier dev à temps plein",
+      pageDescription: "Senior fractionnel deux jours par semaine.",
+      homeLabel: "Accueil",
+      situationsHubLabel: "Situations",
+      datePublished: "2026-05-19",
+      dateModified: "2026-05-19",
+    });
+
+    expect(breadcrumb["@id"]).toBe(`${pageUrl}#breadcrumb`);
+    expect(webPage["@id"]).toBe(`${pageUrl}#webpage`);
+    expect(webPage.url).toBe(pageUrl);
+    expect(webPage.name).toContain("premier dev");
+    expect(webPage.about["@type"]).toBe("Service");
+    expect(webPage.breadcrumb["@id"]).toBe(`${pageUrl}#breadcrumb`);
+    expect(webPage.datePublished).toBe("2026-05-19");
   });
 });

@@ -7,6 +7,7 @@
 import { apiRequireGet } from "../../utils/apiRequireGet";
 import { getSiteOrigin } from "../../utils/siteOrigin";
 import { SITUATIONS } from "../../commons/situationsManifest";
+import { getSituationSeo } from "../../commons/situationSeoMeta";
 
 export default function handler(req, res) {
   if (!apiRequireGet(req, res)) return;
@@ -31,7 +32,15 @@ Expertise: decoupled systems, APIs, and CMS platforms (WordPress headless when e
 
 ## Situations (audience pages)
 
-${SITUATIONS.map((s) => `- [${s.slug} (FR)](${base}/situations/${s.slug}) · [EN](${base}/en/situations/${s.slug})`).join("\n")}
+${SITUATIONS.map((situation) => {
+  const fr = getSituationSeo("fr", situation.namespace);
+  const en = getSituationSeo("en", situation.namespace);
+  return `### ${fr.headline}
+- Slug: \`${situation.slug}\`
+- FR: ${fr.description}
+- EN: ${en.description}
+- [French page](${base}/situations/${situation.slug}) · [English page](${base}/en/situations/${situation.slug})`;
+}).join("\n\n")}
 
 ## Contact
 
@@ -42,6 +51,7 @@ ${SITUATIONS.map((s) => `- [${s.slug} (FR)](${base}/situations/${s.slug}) · [EN
 ## Optional
 
 - [Sitemap](${base}/sitemap.xml): Full list of indexable pages
+- [llms.txt](${base}/llms.txt): This file
 - [Geo KML](${base}/geo.kml): Geographic location metadata
 `;
 

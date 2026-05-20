@@ -98,8 +98,9 @@ export function buildSituationPageBreadcrumbJsonLd({
   homeLabel,
   situationsHubLabel,
   situationTitle,
+  pageUrl,
 }) {
-  return buildBreadcrumbListJsonLd({
+  const breadcrumb = buildBreadcrumbListJsonLd({
     base,
     locale,
     defaultLocale,
@@ -109,4 +110,90 @@ export function buildSituationPageBreadcrumbJsonLd({
       { label: situationTitle },
     ],
   });
+
+  if (pageUrl) {
+    breadcrumb["@id"] = `${pageUrl}#breadcrumb`;
+  }
+
+  return breadcrumb;
+}
+
+/**
+ * Breadcrumb + WebPage JSON-LD for a single situation page.
+ * @param {object} params
+ * @param {string} params.base
+ * @param {string} params.locale
+ * @param {string} params.defaultLocale
+ * @param {string} params.pageUrl
+ * @param {string} params.pageName visible H1 / headline
+ * @param {string} params.pageDescription meta description
+ * @param {string} params.homeLabel
+ * @param {string} params.situationsHubLabel
+ * @param {string} [params.datePublished] ISO date
+ * @param {string} [params.dateModified] ISO date
+ * @returns {object[]}
+ */
+export function buildSituationPageJsonLd({
+  base,
+  locale,
+  defaultLocale,
+  pageUrl,
+  pageName,
+  pageDescription,
+  homeLabel,
+  situationsHubLabel,
+  datePublished,
+  dateModified,
+}) {
+  const inLanguage = locale === "fr" ? "fr-CA" : "en-CA";
+  const siteUrl = absoluteUrl(base, localizedPath(locale, defaultLocale, "/"));
+
+  const breadcrumb = buildSituationPageBreadcrumbJsonLd({
+    base,
+    locale,
+    defaultLocale,
+    homeLabel,
+    situationsHubLabel,
+    situationTitle: pageName,
+    pageUrl,
+  });
+
+  const webPage = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: pageName,
+    description: pageDescription,
+    inLanguage,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Luc Rousseau",
+      url: siteUrl,
+    },
+    breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
+    about: {
+      "@type": "Service",
+      name: pageName,
+      description: pageDescription,
+      areaServed: {
+        "@type": "Country",
+        name: "Canada",
+      },
+      provider: {
+        "@type": "Person",
+        name: "Luc Rousseau",
+        url: siteUrl,
+      },
+    },
+  };
+
+  if (datePublished) {
+    webPage.datePublished = datePublished;
+  }
+  if (dateModified) {
+    webPage.dateModified = dateModified;
+  }
+
+  return [breadcrumb, webPage];
 }
