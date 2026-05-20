@@ -8,7 +8,7 @@ External links get `rel="noopener noreferrer"` and `target="_blank"` by default.
 
 ## HTTP headers
 
-Security headers (including CSP) are defined in `lib/securityHeaders.js` and applied in `next.config.mjs`. Home routes `/` and `/en` include the same headers plus `Cache-Control`.
+Security headers (including CSP) are defined in `lib/securityHeaders.mjs` and applied in `next.config.mjs`. Home routes `/` and `/en` include the same headers plus `Cache-Control`.
 
 ## API routes
 

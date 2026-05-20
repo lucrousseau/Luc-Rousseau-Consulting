@@ -65,47 +65,44 @@ export default function Accordion({ className, items, callback = () => {}, ...pr
               onClick={() => toggleItem(index)}
             >
               {item.title}{" "}
-              {(item.logo || item.emoji) && (
-                <i
-                  className={classNames(
-                    "component__accordion__icon",
-                    item.logo
-                      ? "component__accordion__icon--logo"
-                      : "component__accordion__icon--emoji"
-                  )}
-                >
-                  {item.logo ? (
-                    <span className="component__accordion__logo">
-                      <Image
-                        src={item.logo}
-                        alt={item.title ? `${item.title} logo` : ""}
-                        width={40}
-                        height={40}
-                        loading="lazy"
+              <i
+                className={classNames("component__accordion__icon", {
+                  "component__accordion__icon--logo": Boolean(item.logo),
+                  "component__accordion__icon--emoji": Boolean(item.emoji) && !item.logo,
+                  "component__accordion__icon--toggle-only": !item.logo && !item.emoji,
+                })}
+              >
+                {item.logo ? (
+                  <span className="component__accordion__logo">
+                    <Image
+                      src={item.logo}
+                      alt={item.title ? `${item.title} logo` : ""}
+                      width={40}
+                      height={40}
+                      loading="lazy"
+                    />
+                  </span>
+                ) : (
+                  item.emoji || null
+                )}
+                <em aria-hidden="true">
+                  {activeIndex !== index ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        fill="currentColor"
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
                       />
-                    </span>
+                    </svg>
                   ) : (
-                    item.emoji
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        fill="currentColor"
+                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
+                      />
+                    </svg>
                   )}
-                  <em>
-                    {activeIndex !== index ? (
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path
-                          fill="currentColor"
-                          d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
-                        />
-                      </svg>
-                    ) : (
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path
-                          fill="currentColor"
-                          d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
-                        />
-                      </svg>
-                    )}
-                  </em>
-                </i>
-              )}
+                </em>
+              </i>
             </button>
           </h3>
           <div className="component__accordion__content">{item.content}</div>
