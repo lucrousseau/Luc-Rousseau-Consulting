@@ -1,10 +1,10 @@
 {
-  "seoTitle": "Refonte produit par phases : sans big bang ni tech lead externe | Luc Rousseau",
-  "seoDescription": "Refonte ou changement de stack sur un produit en ligne : faisabilité, phasage et architecture sans big bang ni tech lead externe au quotidien.",
+  "seoTitle": "WordPress archaïque : headless ou Laravel par phases | Luc Rousseau",
+  "seoDescription": "WordPress archaïque : modernisation par headless ou Laravel par phases. PM/PO technique fractionnel, code ou pilotage d'équipe, plan sans big bang.",
   "hero": {
     "badge": "Refonte & migration",
-    "title": "Refonte ou changement de stack",
-    "lede": "<p><strong>Votre produit en ligne doit évoluer : refonte, nouvelle stack, ou les deux.</strong> La pression monte : headless, Laravel, nouveau front, ou « on ne peut plus vivre avec ce système ». Tout refaire d'un coup semble la seule sortie, mais le <strong>coût d'un arrêt monde</strong> et le risque de dérapage effraient.</p><p>Je travaille sur <strong>la décision, le phasage et l'architecture produit</strong> : faisabilité, jalons, frontières, ordre de migration, <em>sans</em> prendre la chaise de tech lead ni manager vos devs au jour le jour. Votre équipe (ou agence) livre ; je garde le fil stratégique et la cohérence du système.</p>",
+    "title": "WordPress archaïque : headless ou Laravel par phases",
+    "lede": "<p><strong>Vous partez d'un WordPress archaïque</strong> : lent, plugins fragiles, thème legacy, éditorial ou métier qui freine le produit. Je m'insère dans cet environnement tel qu'il est et je vous fais <strong>entrer dans la modernité</strong> sans « tout casser » : <strong>WordPress headless</strong> (WPGraphQL ou REST, front React/Next.js), ou <strong>admin et API Laravel</strong> (REST ou GraphQL) avec migration progressive.</p><p>Je viens en <strong>PM/PO technique fractionnel</strong>, avec un pied dans le code : selon le mandat, je peux <strong>développer moi-même</strong> les phases critiques de la transition, ou <strong>piloter votre équipe</strong> déjà en place (prioriser, séquencer, organiser le changement de stack). Plan écrit, phases successives, sans big bang. On en parle d'abord pour voir le <strong>temps et le besoin</strong>, puis comment <strong>mobiliser mon temps</strong> sur le mandat.</p>",
     "buy": {
       "legend": "Cadrer votre refonte",
       "prefix": "Sans engagement",
@@ -13,31 +13,70 @@
   },
   "blocks": [
     {
-      "type": "intro",
-      "badge": "Le piège",
-      "title": "Le big bang qui dérape",
-      "lede": "<p class=\"big\">Refonte = souvent 12–24 mois de flou, deux systèmes en parallèle, et une équipe qui exécute sans carte claire. Sans quelqu'un qui tient <strong>le « pourquoi » et le « dans quel ordre »</strong>, on empile des sprints jusqu'à épuiser budget et confiance.</p>"
+      "type": "split",
+      "sectionKey": "context",
+      "title": "Le contexte WordPress",
+      "intro": "<p class=\"big\">Je rentre dans votre WordPress <strong>archaïque</strong>, tel qu'il tourne aujourd'hui, et on trace comment vous faire <strong>entrer dans la modernité</strong> : ce qui bloque, quelle stack tient pour le produit, sans big bang.</p>",
+      "panels": [
+        {
+          "heading": "WordPress archaïque",
+          "items": [
+            "Stack archaïque : thème legacy, plugins empilés, peu d'API, perf et dette qui freinent le produit",
+            "Dette technique et modèle de données difficile à migrer sans risque pour la production",
+            "Équipe en corrective continue, sans feuille de route claire pour moderniser le stack"
+          ]
+        },
+        {
+          "heading": "Deux pistes : headless ou Laravel API",
+          "items": [
+            "Headless : WordPress en CMS, WPGraphQL ou REST, front React/Next.js côté client",
+            "Laravel : administration métier, API REST ou GraphQL, migration progressive par module",
+            "Les deux approches enchaînées par phases, plutôt qu'un choix binaire dès le départ"
+          ]
+        }
+      ]
     },
     {
       "type": "cards",
-      "badge": "Ce que j'apporte",
-      "title": "Phases, pas pilotage d'équipe",
+      "badge": "Comment on avance",
+      "title": "Fractionnel, par phases, avec un plan",
+      "lede": "<p class=\"big\">Pas une <strong>refonte à temps plein</strong> embarquée chez vous : mandat par phases, <strong>rythme et mobilisation</strong> définis après un premier échange sur le besoin réel.</p>",
       "items": [
         {
-          "title": "Faisabilité et go/no-go",
-          "content": "<p>Avant le gros investissement : contraintes réelles, options de stack, risques, <strong>est-ce que la refonte est la bonne réponse</strong>, ou une extraction ciblée suffit.</p>"
+          "title": "Je code la transition ou pilote l'équipe",
+          "content": "<p><strong>Sans équipe</strong> : je assume le build (APIs, front headless, modules Laravel) et le plan produit. <strong>Avec équipe ou agence</strong> : je pilote séquence, priorités et revues, sans remplacer votre tech lead au quotidien.</p>"
         },
         {
-          "title": "Phasage avec livrables",
-          "content": "<p>Découper en tranches qui <strong>livrent de la valeur</strong> (comme une migration progressive vers une stack à blocs), pas un tunnel de 18 mois sans rien montrer.</p>"
+          "title": "Phases successives, livrables en prod",
+          "content": "<p>Audit, choix de piste, puis tranches qui <strong>livrent en production</strong> : couche API, premier parcours headless, module sous Laravel. Proprement et vite, sans tunnel de 18 mois sans progrès métier visible.</p>"
         },
         {
-          "title": "Architecture et frontières",
-          "content": "<p>APIs, modules, contrats, dette à traiter en premier, <strong>documentés</strong> pour que devs et prestataires construisent dans le même modèle mental.</p>"
+          "title": "Stack et contrats fixés avant le build",
+          "content": "<p>WPGraphQL, REST, gateway GraphQL, Laravel, React, Next.js : <strong>ce qui sert votre cas</strong>, pas la mode stack. Contrats de données et frontières écrits pour que vos devs ou moi buildions sur les mêmes règles.</p>"
+        }
+      ]
+    },
+    {
+      "type": "highlights",
+      "sectionKey": "phasing",
+      "badge": "Le déroulé",
+      "title": "Quatre étapes typiques d'un mandat refonte",
+      "items": [
+        {
+          "title": "Audit et choix de piste",
+          "content": "<p>WordPress actuel (perf, plugins, données, éditorial), puis décision documentée : <strong>headless GraphQL/REST</strong>, <strong>Laravel admin + API</strong>, ou séquence des deux.</p>"
         },
         {
-          "title": "Supervision de cohérence, pas de personnes",
-          "content": "<p>Revues ciblées sur alignement roadmap ↔ architecture ↔ prod, <strong>sans</strong> stand-up quotidien à votre place ni micro-management des tâches.</p>"
+          "title": "Plan et ordre de migration",
+          "content": "<p>Roadmap par phases, risques, ce qu'on ne migre pas tout de suite, <strong>critères de succès</strong> par tranche. Rien de gros en build avant ce livrable.</p>"
+        },
+        {
+          "title": "Phases build avec valeur en prod",
+          "content": "<p>Strangler, feature flags, coexistence ancien/nouveau : livraison par <strong>votre équipe ou par moi</strong> selon le mandat. Chaque phase laisse le site utilisable et montre un progrès métier ou perf mesurable.</p>"
+        },
+        {
+          "title": "Handover et suivi allégé",
+          "content": "<p>Documentation, runbooks, passation vers l'équipe. Suivi fractionnel optionnel (rythme plus léger) pour tenir la cohérence après la grosse phase de migration.</p>"
         }
       ]
     },
@@ -51,7 +90,7 @@
         "headers": {
           "dimension": "Dimension",
           "internalOnly": "Équipe seule sur la refonte",
-          "phasedPartner": "Consultant produit et développeur senior par phases"
+          "phasedPartner": "PM/PO technique fractionnel par phases (rythme sur mesure)"
         },
         "rows": [
           {
@@ -62,12 +101,12 @@
           {
             "dimension": "Rythme",
             "internalOnly": "Big bang ou rattrapage permanent.",
-            "phasedPartner": "Tranches avec valeur livrée ; ajustement entre les phases."
+            "phasedPartner": "Mandat fractionnel calé au besoin ; phases avec valeur livrée, pas refonte temps plein continue."
           },
           {
             "dimension": "Rôle sur l'équipe",
             "internalOnly": "Tech lead interne surchargé ou absent.",
-            "phasedPartner": "Pas de remplacement du lead : cohérence système et arbitrages produit-tech."
+            "phasedPartner": "Code sur phases clés ou pilotage de l'équipe existante ; plan, séquence et cohérence produit-tech."
           },
           {
             "dimension": "Engagement",
@@ -81,17 +120,18 @@
       "type": "stack",
       "badge": "Comment je construis",
       "title": "Fondations techniques",
-      "lede": "<p class=\"big\"><strong>Refonte par étapes</strong> : coexistence des stacks, contrats stables et livraison continue pendant la migration.</p>",
+      "lede": "<p class=\"big\"><strong>WordPress vers moderne, par étapes</strong> : headless, admin Laravel + API, ou les deux en séquence, sans couper la prod.</p>",
       "items": [
-        "Phasage et stratégie de migration",
-        "Pattern strangler et APIs parallèles",
-        "Laravel, React, Next.js ou stack cible",
-        "WordPress headless si contenu éditorial",
-        "Tests de régression et feature flags",
-        "CI/CD sur ancien et nouveau périmètre",
-        "Dette legacy cartographiée",
-        "Performance et cache par phase",
-        "Documentation des frontières de services",
+        "Audit WordPress (perf, plugins, dette, données)",
+        "WordPress headless · Gutenberg · blocs",
+        "WPGraphQL · REST WordPress · GraphQL (app ou BFF)",
+        "Front React · Next.js · TypeScript",
+        "Laravel admin · API REST · GraphQL Laravel",
+        "Pattern strangler · APIs parallèles",
+        "Redis · cache · CDN · performance par phase",
+        "Feature flags · tests de régression",
+        "CI/CD ancien et nouveau périmètre",
+        "Documentation frontières et contrats de données",
         "JavaScript · PHP"
       ],
       "background": "rome"
@@ -101,6 +141,22 @@
       "badge": "Objections",
       "title": "Questions fréquentes",
       "items": [
+        {
+          "title": "Vous codez vous-même ou vous pilotez notre équipe ?",
+          "content": "<p>Les deux sont possibles, selon ce que vous avez déjà. <strong>Je code</strong> quand il faut aller vite sur une phase technique précise et que personne n'est disponible pour le faire proprement. <strong>Je pilote</strong> quand vos devs ou votre agence ont la capacité : je priorise, séquence, clarifie les prérequis et valide la cohérence, sans micro-manager les tickets.</p>"
+        },
+        {
+          "title": "Headless WordPress ou tout migrer vers Laravel ?",
+          "content": "<p>Ça dépend de votre contenu, de l'équipe et de la dette. Souvent : <strong>headless</strong> (WPGraphQL ou REST + front moderne) si l'éditorial WordPress reste utile ; <strong>Laravel admin + API</strong> (REST ou GraphQL) si le cœur métier doit sortir du CMS. Parfois les deux, en phases. On tranche à l'écrit avant de coder.</p>"
+        },
+        {
+          "title": "GraphQL ou REST pour ce projet ?",
+          "content": "<p>Les deux sont dans le périmètre. <strong>WPGraphQL</strong> ou REST côté WordPress ; <strong>GraphQL</strong> côté app ou BFF Laravel si les surfaces et consommateurs le justifient ; REST quand la simplicité et l'équipe le favorisent. Le plan de phase dit quel contrat pour quel module.</p>"
+        },
+        {
+          "title": "C'est une refonte à temps plein chez nous ?",
+          "content": "<p>Non. Mandat <strong>par phases</strong> : on se parle pour voir le temps et le besoin requis, puis comment je mobilise mon temps (cadrage, build ou pilotage, suivi plus léger). Pas d'embarquement « refonte 40 h » : votre équipe build, je tiens le plan produit-tech et la séquence.</p>"
+        },
         {
           "title": "Vous allez devenir notre tech lead ?",
           "content": "<p>Non. Vos devs ou votre agence gardent le rythme opérationnel. Je clarifie <strong>le système et la séquence</strong> ; je ne gère pas les personnes ni les tickets au quotidien.</p>"
@@ -124,7 +180,7 @@
       "badge": "Prochaine étape",
       "trackSection": "situation-refonte-phases",
       "label": "Discuter refonte produit",
-      "teaser": "<p class=\"big\">Pression de tout refaire ? Un appel suffit pour voir si un phasage avec faisabilité et architecture claire vaut mieux qu'un tunnel sans carte.</p>"
+      "teaser": "<p class=\"big\">WordPress archaïque ? Un appel pour voir comment entrer dans la modernité (headless, Laravel API, plan par phases) plutôt qu'un big bang sans carte.</p>"
     }
   ]
 }

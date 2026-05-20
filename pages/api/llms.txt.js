@@ -21,7 +21,7 @@ Location: Quebec, Canada (Montreal). Languages: French (default), English. Engag
 
 Services: product engineering, technical architecture, systems design, technical roadmap planning, technical debt reduction, delivery and execution supervision.
 
-Expertise: decoupled systems, APIs, and CMS platforms (WordPress headless when editorial scale warrants it); Laravel and custom backend systems; technical leadership; CI/CD and delivery processes; multi-site and multi-market platforms.
+Expertise: decoupled systems, APIs, and CMS platforms (archaic WordPress modernization: headless WPGraphQL/REST, Laravel admin and API, phased migration without big bang; headless WordPress when editorial scale warrants it); Laravel and custom backend systems; technical leadership; CI/CD and delivery processes; multi-site and multi-market platforms.
 
 ## Pages
 
@@ -37,8 +37,9 @@ ${SITUATIONS.map((situation) => {
   const en = getSituationSeo("en", situation.namespace);
   return `### ${fr.headline}
 - Slug: \`${situation.slug}\`
-- FR: ${fr.description}
-- EN: ${en.description}
+- EN title: ${en.headline}
+- FR summary: ${fr.description}
+- EN summary: ${en.description}
 - [French page](${base}/situations/${situation.slug}) · [English page](${base}/en/situations/${situation.slug})`;
 }).join("\n\n")}
 

@@ -1,6 +1,6 @@
 {
   "seoTitle": "Situations : product & technical support | Luc Rousseau",
-  "seoDescription": "Two quick questions to find the page that fits your situation: tech team, PM/PO, live product, SaaS MVP, or product AI.",
+  "seoDescription": "Two quick questions to find your page: tech team, PM/PO, archaic WordPress, editorial platform, SaaS MVP, or product AI.",
   "seoImage": "/og/image-en.jpg",
   "badge": "Situations",
   "title": "Which situation fits you?",
@@ -48,8 +48,8 @@
         "hint": "Reduce bus factor, day-to-day relief, vacation coverage"
       },
       "rebuild": {
-        "label": "Rebuild or change stack",
-        "hint": "Phasing and architecture without big bang or running the team day to day"
+        "label": "Archaic, slow WordPress or stack rebuild",
+        "hint": "Modern headless or Laravel admin and API, phased without big bang"
       },
       "editorial": {
         "label": "Run an editorial product at scale",
@@ -91,8 +91,8 @@
       "teaser": "You need real product leadership, not a 40-hour seat : regular half-days, full day when needed, priorities, prerequisites, and ceremonies."
     },
     "refonte-produit-par-phases": {
-      "title": "Product rebuild or stack change",
-      "teaser": "You need to modernize without stopping everything : here's feasibility, phasing, and architecture without becoming your team's tech lead."
+      "title": "Archaic WordPress: headless or Laravel by phases",
+      "teaser": "Archaic WordPress: move into a modern stack (headless, Laravel), fractional PM/PO, plan without big bang."
     },
     "plateforme-editoriale-produit": {
       "title": "Editorial product at scale",

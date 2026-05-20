@@ -1,10 +1,10 @@
 {
-  "seoTitle": "Phased product rebuild: without big bang or external tech lead | Luc Rousseau",
-  "seoDescription": "Product rebuild or stack change on a live product: feasibility, phasing, and architecture without big bang or an external tech lead day to day.",
+  "seoTitle": "Archaic WordPress: headless or Laravel by phases | Luc Rousseau",
+  "seoDescription": "Archaic WordPress: phased move to a modern stack (headless, Laravel). Fractional PM/PO, hands-on code or team orchestration, plan without big bang.",
   "hero": {
     "badge": "Rebuild & migration",
-    "title": "Product rebuild or stack change",
-    "lede": "<p><strong>Your live product must evolve: rebuild, new stack, or both.</strong> Pressure builds: headless, Laravel, new front, or « we can't live with this system anymore ». A full rewrite feels like the only way out, but <strong>stop-the-world cost</strong> and overrun risk are real.</p><p>I work on <strong>decision, phasing, and product architecture</strong>: feasibility, milestones, boundaries, migration order, <em>without</em> becoming tech lead or managing your devs daily. Your team (or agency) ships; I keep strategic thread and system coherence.</p>",
+    "title": "Archaic WordPress: headless or Laravel by phases",
+    "lede": "<p><strong>You start from archaic WordPress</strong>: slow, fragile plugins, legacy theme, editorial or business logic holding the product back. I step into that environment as it runs today and help you <strong>move into a modern stack</strong> without « tearing everything down »: <strong>headless WordPress</strong> (WPGraphQL or REST, React/Next.js front), or <strong>Laravel admin and API</strong> (REST or GraphQL) with progressive migration.</p><p>I come in as <strong>fractional technical PM/PO</strong> with hands in the code: depending on the mandate, I can <strong>develop critical migration phases myself</strong>, or <strong>lead your existing team</strong> (prioritize, sequence, organize the stack transition). Written plan, successive phases, no big bang. We talk first to see the <strong>time and need</strong>, then how to <strong>mobilize my time</strong> on the mandate.</p>",
     "buy": {
       "legend": "Frame your rebuild",
       "prefix": "No commitment",
@@ -13,31 +13,70 @@
   },
   "blocks": [
     {
-      "type": "intro",
-      "badge": "The trap",
-      "title": "The big bang that drifts",
-      "lede": "<p class=\"big\">Rebuild often means 12–24 months of fog, two systems in parallel, and a team executing without a clear map. Without someone holding <strong>why and in what order</strong>, sprints pile up until budget and trust are gone.</p>"
+      "type": "split",
+      "sectionKey": "context",
+      "title": "WordPress context",
+      "intro": "<p class=\"big\">I step into your <strong>archaic WordPress</strong> as it runs today and map how to help you <strong>move into a modern stack</strong>: what blocks you, which architecture fits the product, no big bang.</p>",
+      "panels": [
+        {
+          "heading": "Archaic WordPress",
+          "items": [
+            "Archaic stack: legacy theme, piled-on plugins, few APIs, perf and debt blocking the product",
+            "Technical debt and a data model that is hard to migrate without prod risk",
+            "Team in continuous firefighting, no clear roadmap to modernize the stack"
+          ]
+        },
+        {
+          "heading": "Two paths: headless or Laravel API",
+          "items": [
+            "Headless: WordPress as CMS, WPGraphQL or REST, React/Next.js front on the client",
+            "Laravel: business administration, REST or GraphQL API, progressive module migration",
+            "Both approaches chained in phases, rather than a binary choice from day one"
+          ]
+        }
+      ]
     },
     {
       "type": "cards",
-      "badge": "What I bring",
-      "title": "Phases, not team management",
+      "badge": "How we advance",
+      "title": "Fractional, phased, with a plan",
+      "lede": "<p class=\"big\">Not a <strong>full-time rebuild</strong> embedded in your org: phase mandates, <strong>rhythm and mobilization</strong> set after a first conversation on what you actually need.</p>",
       "items": [
         {
-          "title": "Feasibility and go/no-go",
-          "content": "<p>Before major spend: real constraints, stack options, risks, <strong>whether rebuild is the right answer</strong>, or targeted extraction is enough.</p>"
+          "title": "I code the transition or steer the team",
+          "content": "<p><strong>No team</strong>: I own build (APIs, headless front, Laravel modules) and the product plan. <strong>With team or agency</strong>: I lead sequence, priorities, and reviews, without replacing your tech lead day to day.</p>"
         },
         {
-          "title": "Phasing with deliverables",
-          "content": "<p>Slices that <strong>ship value</strong> (like progressive migration to a block-based stack), not an 18-month tunnel with nothing to show.</p>"
+          "title": "Successive phases, shipping to prod",
+          "content": "<p>Audit, path choice, then slices that <strong>ship to production</strong>: API layer, first headless journey, module under Laravel. Properly and fast, not an 18-month tunnel with no visible business progress.</p>"
         },
         {
-          "title": "Architecture and boundaries",
-          "content": "<p>APIs, modules, contracts, debt to tackle first, <strong>documented</strong> so devs and vendors build in the same mental model.</p>"
+          "title": "Stack and contracts fixed before build",
+          "content": "<p>WPGraphQL, REST, GraphQL gateway, Laravel, React, Next.js: <strong>what serves your case</strong>, not stack fashion. Data contracts and boundaries written so your devs or I build on the same rules.</p>"
+        }
+      ]
+    },
+    {
+      "type": "highlights",
+      "sectionKey": "phasing",
+      "badge": "The flow",
+      "title": "Four typical steps in a rebuild mandate",
+      "items": [
+        {
+          "title": "Audit and path choice",
+          "content": "<p>Current WordPress (perf, plugins, data, editorial), then a written decision: <strong>headless GraphQL/REST</strong>, <strong>Laravel admin + API</strong>, or a sequence of both.</p>"
         },
         {
-          "title": "Coherence oversight, not people management",
-          "content": "<p>Targeted reviews on roadmap ↔ architecture ↔ prod alignment, <strong>without</strong> running stand-up for you or micro-managing tasks.</p>"
+          "title": "Plan and migration order",
+          "content": "<p>Phase roadmap, risks, what we don't migrate yet, <strong>success criteria</strong> per slice. No large build before that deliverable.</p>"
+        },
+        {
+          "title": "Build phases with prod value",
+          "content": "<p>Strangler, feature flags, old/new coexistence: delivery by <strong>your team or by me</strong> depending on mandate. Each phase keeps the site usable and shows measurable business or perf progress.</p>"
+        },
+        {
+          "title": "Handover and lighter follow-up",
+          "content": "<p>Documentation, runbooks, team pass-off. Optional fractional follow-up (lighter rhythm) to hold coherence after the heavy migration phase.</p>"
         }
       ]
     },
@@ -51,7 +90,7 @@
         "headers": {
           "dimension": "Dimension",
           "internalOnly": "Team alone on rebuild",
-          "phasedPartner": "Senior Product Engineer by phase"
+          "phasedPartner": "Fractional technical PM/PO by phase (custom rhythm)"
         },
         "rows": [
           {
@@ -62,12 +101,12 @@
           {
             "dimension": "Pace",
             "internalOnly": "Big bang or permanent catch-up.",
-            "phasedPartner": "Slices with shipped value; adjust between phases."
+            "phasedPartner": "Fractional mandate tuned to need; phased value, not a continuous full-time rebuild."
           },
           {
             "dimension": "Team role",
             "internalOnly": "Overloaded or missing internal lead.",
-            "phasedPartner": "No lead replacement: system coherence and product-tech trade-offs."
+            "phasedPartner": "Code on key phases or orchestration of existing team; plan, sequence, product-tech coherence."
           },
           {
             "dimension": "Engagement",
@@ -81,17 +120,18 @@
       "type": "stack",
       "badge": "How I build",
       "title": "Technical foundations",
-      "lede": "<p class=\"big\"><strong>Phased rebuild</strong>: coexistence of stacks, stable contracts, and continuous delivery during migration.</p>",
+      "lede": "<p class=\"big\"><strong>WordPress to modern, by steps</strong>: headless, Laravel admin + API, or both in sequence, without cutting prod.</p>",
       "items": [
-        "Phasing and migration strategy",
-        "Strangler pattern and parallel APIs",
-        "Laravel, React, Next.js, or target stack",
-        "WordPress headless when editorial content",
-        "Regression tests and feature flags",
+        "WordPress audit (perf, plugins, debt, data)",
+        "Headless WordPress · Gutenberg · blocks",
+        "WPGraphQL · WordPress REST · GraphQL (app or BFF)",
+        "React · Next.js · TypeScript front",
+        "Laravel admin · REST API · GraphQL",
+        "Strangler pattern · parallel APIs",
+        "Redis · cache · CDN · perf per phase",
+        "Feature flags · regression tests",
         "CI/CD on legacy and new scope",
-        "Mapped legacy debt",
-        "Performance and cache per phase",
-        "Service boundary documentation",
+        "Boundary and data contract documentation",
         "JavaScript · PHP"
       ],
       "background": "rome"
@@ -101,6 +141,22 @@
       "badge": "Objections",
       "title": "Common questions",
       "items": [
+        {
+          "title": "Do you code yourself or lead our team?",
+          "content": "<p>Both are possible, depending on what you already have. <strong>I code</strong> when a technical phase must move fast and no one is available to do it properly. <strong>I orchestrate</strong> when your devs or agency have capacity: I prioritize, sequence, clarify prerequisites, and validate coherence, without micro-managing tickets.</p>"
+        },
+        {
+          "title": "Headless WordPress or full move to Laravel?",
+          "content": "<p>Depends on content, team, and debt. Often: <strong>headless</strong> (WPGraphQL or REST + modern front) if WordPress editorial still helps; <strong>Laravel admin + API</strong> (REST or GraphQL) if core business logic must leave the CMS. Sometimes both, in phases. We decide in writing before build.</p>"
+        },
+        {
+          "title": "GraphQL or REST for this project?",
+          "content": "<p>Both are in scope. <strong>WPGraphQL</strong> or REST on WordPress; <strong>GraphQL</strong> on the app or Laravel BFF when surfaces and consumers justify it; REST when simplicity and the team favor it. The phase plan states which contract for which module.</p>"
+        },
+        {
+          "title": "Is this a full-time rebuild inside our company?",
+          "content": "<p>No. <strong>Phase mandates</strong>: we talk first to see the time and need, then how I mobilize my time (framing, build or orchestration, lighter follow-through). Not a « 40-hour rebuild » embed: your team builds, I hold the product-tech plan and sequence.</p>"
+        },
         {
           "title": "Will you become our tech lead?",
           "content": "<p>No. Your devs or agency keep operational rhythm. I clarify <strong>system and sequence</strong>; I don't manage people or daily tickets.</p>"
@@ -124,7 +180,7 @@
       "badge": "Next step",
       "trackSection": "situation-refonte-phases",
       "label": "Discuss product rebuild",
-      "teaser": "<p class=\"big\">Pressure to rewrite everything? One call to see if phased feasibility and clear architecture beat a tunnel without a map.</p>"
+      "teaser": "<p class=\"big\">Archaic WordPress? One call to see how to move into a modern stack (headless, Laravel API, phased plan) instead of a big bang without a map.</p>"
     }
   ]
 }
