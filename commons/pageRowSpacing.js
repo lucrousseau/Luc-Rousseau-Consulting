@@ -1,5 +1,5 @@
 /**
- * Row padding tokens for page sections — must match `--page-home-row-*` on
+ * Row padding tokens for page sections; must match `--page-home-row-*` on
  * `.page-home` (`pages/home.scss`). Keeps vertical rhythm consistent between sections.
  */
 export const rowPad = "var(--page-home-row-pad, 2rem)";

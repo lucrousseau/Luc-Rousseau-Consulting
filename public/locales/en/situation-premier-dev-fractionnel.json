@@ -4,10 +4,10 @@
   "hero": {
     "badge": "Post-funding startup",
     "title": "Post-funding: before your first full-time developer",
-    "lede": "<p><strong>You're post-funding and weighing your first technical hire.</strong> The pressure is on: <strong>ship faster</strong>, prove traction, show the team is growing. A first full-time developer feels natural — it's often the <strong>most expensive and slowest</strong> way to get solid technical leadership.</p><p>An <strong>experienced Product Engineer two days a week</strong> can own technical direction, architecture, and delivery — in a comparable budget band, with less risk if the product pivots.</p>",
+    "lede": "<p><strong>You're post-funding and weighing your first technical hire.</strong> The pressure is on: <strong>ship faster</strong>, prove traction, show the team is growing. A first full-time developer feels natural; it's often the <strong>most expensive and slowest</strong> way to get solid technical leadership.</p><p>An <strong>experienced Product Engineer two days a week</strong> can own technical direction, architecture, and delivery, in a comparable budget band, with less risk if the product pivots.</p>",
     "buy": {
       "legend": "Let's talk about your context",
-      "prefix": "— no commitment",
+      "prefix": "No commitment",
       "label": "Book a 30-minute call"
     }
   },
@@ -16,7 +16,7 @@
       "type": "intro",
       "badge": "The trap",
       "title": "Why the first tech hire is risky",
-      "lede": "<p class=\"big\">A junior or mid full-time developer means <strong>salary + payroll burden + onboarding + management</strong> — often before the roadmap is clear enough. The founder still arbitrates product and tech alone. A bad hire is brutally expensive for a young company.</p>"
+      "lede": "<p class=\"big\">A junior or mid full-time developer means <strong>salary + payroll burden + onboarding + management</strong>, often before the roadmap is clear enough. The founder still arbitrates product and tech alone. A bad hire is brutally expensive for a young company.</p>"
     },
     {
       "type": "cards",
@@ -25,7 +25,7 @@
       "items": [
         {
           "title": "Same budget band, more seniority",
-          "content": "<p>A budget planned for a first employee can fund <strong>two days a week of a senior profile</strong>: someone who has already shaped products, teams, and delivery — not just executed tickets.</p>"
+          "content": "<p>A budget planned for a first employee can fund <strong>two days a week of a senior profile</strong>: someone who has already shaped products, teams, and delivery, not just executed tickets.</p>"
         },
         {
           "title": "Technical direction + delivery",
@@ -37,7 +37,7 @@
         },
         {
           "title": "Bridge to a future team",
-          "content": "<p>When it's time to hire, you already have <strong>standards, a clearer backlog, and a realistic job spec</strong> — and possibly a developer I've helped onboard.</p>"
+          "content": "<p>When it's time to hire, you already have <strong>standards, a clearer backlog, and a realistic job spec</strong>, and possibly a developer I've helped onboard.</p>"
         }
       ]
     },
@@ -45,7 +45,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "First full-time dev vs fractional partnership",
-      "intro": "Ballpark for a Quebec startup — we refine on a call.",
+      "intro": "Ballpark for a Quebec startup, we refine on a call.",
       "columnKeys": ["dimension", "fullTimeJunior", "fractionalSenior"],
       "table": {
         "headers": {
@@ -76,7 +76,7 @@
           },
           {
             "dimension": "Weekly coverage",
-            "fullTimeJunior": "5 days on code — useful when scope is already well defined.",
+            "fullTimeJunior": "5 days on code, useful when scope is already well defined.",
             "fractionalSenior": "2 focused days + async between sessions; enough for direction and unblocking when framed well."
           }
         ]
@@ -89,7 +89,7 @@
       "items": [
         {
           "title": "We need someone on code every day",
-          "content": "<p>Often what you need daily is <strong>clear decisions and a backlog that moves</strong> — not yet five days of unsupervised development. Two days from a senior who structures and unblocks often beats five days from someone still learning your context.</p><p>When code volume truly justifies full-time, we'll see it together — and you'll hire with criteria already tested.</p>"
+          "content": "<p>Often what you need daily is <strong>clear decisions and a backlog that moves</strong>, not yet five days of unsupervised development. Two days from a senior who structures and unblocks often beats five days from someone still learning your context.</p><p>When code volume truly justifies full-time, we'll see it together, and you'll hire with criteria already tested.</p>"
         },
         {
           "title": "Will we still hire full-time later?",

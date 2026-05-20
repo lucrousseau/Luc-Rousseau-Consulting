@@ -17,8 +17,8 @@ import {
  * @param {import("../../commons/routingQuiz").RoutingQuizSteps} props.steps
  * @param {string} [props.rootStepId]
  * @param {string} props.i18nNamespace
- * @param {string} [props.uiKeyPrefix] — i18n prefix for chrome (`progress`, `back`, `result`, `browseAll`, `options`)
- * @param {number} [props.totalQuestions] — defaults to longest path in `steps`
+ * @param {string} [props.uiKeyPrefix] - i18n prefix for chrome (`progress`, `back`, `result`, `browseAll`, `options`)
+ * @param {number} [props.totalQuestions] - defaults to longest path in `steps`
  * @param {(resultId: string) => string} props.resultHref
  * @param {(resultId: string) => string} props.resultTitleKey
  * @param {(resultId: string) => string} props.resultTeaserKey

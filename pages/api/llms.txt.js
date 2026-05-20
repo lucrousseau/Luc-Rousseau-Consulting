@@ -16,7 +16,7 @@ export default function handler(req, res) {
 
 > Fractional Product Engineer specializing in technical architecture, systems design, and product execution. Based in Quebec, Canada. Retainer-based engagements for product and engineering leaders.
 
-Location: Quebec, Canada (Montreal). Languages: French (default), English. Engagement: retainer-based recurring collaboration — not hourly rates, one-off projects, or day rates.
+Location: Quebec, Canada (Montreal). Languages: French (default), English. Engagement: retainer-based recurring collaboration, not hourly rates, one-off projects, or day rates.
 
 Services: product engineering, technical architecture, systems design, technical roadmap planning, technical debt reduction, delivery and execution supervision.
 

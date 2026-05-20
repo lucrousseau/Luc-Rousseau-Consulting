@@ -4,11 +4,11 @@
   "navigation-label-short": "Teams",
   "badge": "Roles & boundaries",
   "title": "Your developers or your agency: how I add value",
-  "intro": "<p class=\"big\">If you already have one or two developers—or you rely on an agency—you need a straight answer on whether a senior external role helps or adds friction. I do not slot in above your tech lead to run the team day-to-day, and I do not relitigate old decisions without a strategic reason.</p><p class=\"big\">I work on coherence across roadmap, architecture, and delivery while your people keep ownership of their scope. How we split authority is explicit: I propose system-level choices with clear rationale; your team decides what fits your cadence and constraints, and I stay accountable for overall consistency.</p>",
+  "intro": "<p class=\"big\">If you already have one or two developers, or you rely on an agency, you need a straight answer on whether a senior external role helps or adds friction. I do not slot in above your tech lead to run the team day-to-day, and I do not relitigate old decisions without a strategic reason.</p><p class=\"big\">I work on coherence across roadmap, architecture, and delivery while your people keep ownership of their scope. How we split authority is explicit: I propose system-level choices with clear rationale; your team decides what fits your cadence and constraints, and I stay accountable for overall consistency.</p>",
   "items": [
     {
       "title": "With an internal team",
-      "content": "<p>I am not a substitute for your tech lead or senior developers: they own sprint cadence, day-to-day standards, and how work flows through the team. I bring a product-and-system lens—trade-offs, sequencing, risk—and I join your existing rituals instead of installing a parallel process.</p><p>When I look at code or specs, it is to protect coherence and risk, not to run a punitive gate.</p>"
+      "content": "<p>I am not a substitute for your tech lead or senior developers: they own sprint cadence, day-to-day standards, and how work flows through the team. I bring a product-and-system lens, trade-offs, sequencing, risk, and I join your existing rituals instead of installing a parallel process.</p><p>When I look at code or specs, it is to protect coherence and risk, not to run a punitive gate.</p>"
     },
     {
       "title": "With an agency or external vendors",

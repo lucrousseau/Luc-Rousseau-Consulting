@@ -4,7 +4,7 @@
   "navigation-label-short": "FAQ",
   "badge": "Straight answers",
   "title": "Questions people don't always ask out loud",
-  "intro": "<p class=\"big\">Plain answers—the kind you get once we're on a call and you push on the parts people usually skip over.</p>",
+  "intro": "<p class=\"big\">Plain answers, the kind you get once we're on a call and you push on the parts people usually skip over.</p>",
   "items": [
     {
       "title": "Do you replace our CTO, tech lead, or agency?",
@@ -15,8 +15,8 @@
       "content": "<p>It shifts with the phase.</p><p>Early on there's more framing, sequencing, and risk reduction; in a steady rhythm it's a mix of hands-on work on the highest-leverage items and keeping architecture and delivery coherent. I'm not here to only execute tickets, and I'm not here to disappear into decks either.</p>"
     },
     {
-      "title": "What if you're away—vacation, sick leave, or a client emergency?",
-      "content": "<p>Longer absences are planned with notice so you're not surprised without warning.</p><p>For short gaps I flag it early and rebalance days in the same window when that still protects the outcome. Work in flight gets a clean handoff—no silent gaps.</p>"
+      "title": "What if you're away, vacation, sick leave, or a client emergency?",
+      "content": "<p>Longer absences are planned with notice so you're not surprised without warning.</p><p>For short gaps I flag it early and rebalance days in the same window when that still protects the outcome. Work in flight gets a clean handoff, no silent gaps.</p>"
     },
     {
       "title": "Exclusive to us, or several clients at once?",
@@ -24,14 +24,14 @@
     },
     {
       "title": "How long before we see something concrete?",
-      "content": "<p>If I'm in your rituals and can see real constraints—not only what's in the deck—you'll usually get useful signal within a few weeks: less thrash, a few decisions unblocked, clearer next steps.</p><p>Larger structural wins depend on scope; I'd rather stay honest on sequencing than promise a timeline I can't defend.</p>"
+      "content": "<p>If I'm in your rituals and can see real constraints, not only what's in the deck, you'll usually get useful signal within a few weeks: less thrash, a few decisions unblocked, clearer next steps.</p><p>Larger structural wins depend on scope; I'd rather stay honest on sequencing than promise a timeline I can't defend.</p>"
     },
     {
       "title": "How do we stop if it's not a fit?",
-      "content": "<p>The written agreement includes a clear exit—typically thirty days' notice either way, symmetric.</p><p>We close responsibly: short handoff, what's documented, and what stays with your team.</p>"
+      "content": "<p>The written agreement includes a clear exit, typically thirty days' notice either way, symmetric.</p><p>We close responsibly: short handoff, what's documented, and what stays with your team.</p>"
     },
     {
-      "title": "NDA—and who owns the code and IP?",
+      "title": "NDA, and who owns the code and IP?",
       "content": "<p>NDA before sensitive access is standard.</p><p>Work in your repos and on your accounts is yours; I don't keep a private copy of your product as insurance. Anything different gets spelled out in writing before we start.</p>"
     }
   ]

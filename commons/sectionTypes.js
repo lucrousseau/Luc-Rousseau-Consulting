@@ -1,5 +1,5 @@
 /**
- * Shared section prop types (JSDoc only — no runtime exports).
+ * Shared section prop types (JSDoc only, no runtime exports).
  *
  * @typedef {object} SectionCtaOverride
  * @property {string} [link] - Calendly URL; defaults to `common:schedule-me` via getScheduleCta

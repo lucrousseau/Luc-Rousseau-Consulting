@@ -9,7 +9,7 @@ import {
 const situationTitleKey = (slug) => `situations.${slug}.title`;
 
 /**
- * Situations hub quiz — thin wrapper around {@link RoutingQuiz}.
+ * Situations hub quiz: thin wrapper around {@link RoutingQuiz}.
  * Requires i18n: `situations-index` (keys under `quiz.*` and `situations.*`).
  */
 export default function SituationsQuiz() {

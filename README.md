@@ -1,4 +1,4 @@
-# lucrousseau — Frontend
+# lucrousseau (frontend)
 
 Site Next.js (Pages Router) avec i18n (en/fr), SCSS et Tailwind.
 
@@ -37,11 +37,11 @@ Les images sont servies au format d’origine (JPEG/PNG) ; Next.js et Vercel (`/
 
 ### Audit de sécurité
 
-- **`npm run audit`** — Liste les vulnérabilités connues dans les dépendances.
-- **`npm run audit:fix`** — Met à jour les dépendances pour corriger ce qui peut l’être sans changement majeur.
-- **`npm run fix:security`** — Lance `audit:fix` puis `lint:fix` (règles ESLint sécurité).
-- **ESLint** — Le plugin `eslint-plugin-security` ajoute des règles (eval, buffer, injection, etc.) ; les alertes s’affichent en warning au lint.
-- **Contenu HTML** — Les textes rendus via `html-react-parser` viennent uniquement des locales (`public/locales/`) ; voir `docs/SECURITY.md` pour la règle et les précautions si l’origine du contenu change.
+- **`npm run audit`** : liste les vulnérabilités connues dans les dépendances.
+- **`npm run audit:fix`** : met à jour les dépendances pour corriger ce qui peut l’être sans changement majeur.
+- **`npm run fix:security`** : lance `audit:fix` puis `lint:fix` (règles ESLint sécurité).
+- **ESLint** : le plugin `eslint-plugin-security` ajoute des règles (eval, buffer, injection, etc.) ; les alertes s’affichent en warning au lint.
+- **Contenu HTML** : les textes rendus via `html-react-parser` viennent uniquement des locales (`public/locales/`) ; voir `docs/SECURITY.md` pour la règle et les précautions si l’origine du contenu change.
 
 ### Tests
 
@@ -49,19 +49,19 @@ Quelques tests unitaires (Jest + React Testing Library) couvrent les utilitaires
 
 ### Git hooks (Husky)
 
-- **pre-commit** — Lance `lint-staged` : Prettier, ESLint --fix et Stylelint --fix sur les fichiers stagés uniquement.
-- **pre-push** — Lance `npm run validate` sur **toute la codebase** : `lint` + `format:check` + `stylelint:check` + `test`. Le push est bloqué si une de ces vérifications échoue.
+- **pre-commit** : lance `lint-staged` (Prettier, ESLint --fix et Stylelint --fix sur les fichiers stagés uniquement).
+- **pre-push** : lance `npm run validate` sur **toute la codebase** (`lint` + `format:check` + `stylelint:check` + `test`). Le push est bloqué si une de ces vérifications échoue.
 
 Après `npm install`, le script `prepare` installe les hooks Husky automatiquement.
 
 ## Structure
 
-- `pages/` — Routes Next.js (Pages Router)
-- `components/` — UI réutilisable (Button, layout, Accordion, etc.) ; pas de texte métier ni clés i18n propres à une page
-- `sections/` — Blocs de page (Header, Hero, Engagement…) ; composition + `useTranslation` pour le contenu
-- `commons/` — Helpers partagés sans UI (`alignments`, `pageRowSpacing`, `scheduleCta`)
-- `styles/` — SCSS global (variables, base, layout)
-- `public/locales/` — Fichiers de traduction (next-i18next)
+- `pages/` : routes Next.js (Pages Router)
+- `components/` : UI réutilisable (Button, layout, Accordion, etc.) ; pas de texte métier ni clés i18n propres à une page
+- `sections/` : blocs de page (Header, Hero, Engagement…) ; composition + `useTranslation` pour le contenu
+- `commons/` : helpers partagés sans UI (`alignments`, `pageRowSpacing`, `scheduleCta`)
+- `styles/` : SCSS global (variables, base, layout)
+- `public/locales/` : fichiers de traduction (next-i18next)
 
 Conventions contributeur : [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
