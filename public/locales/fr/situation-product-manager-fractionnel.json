@@ -1,10 +1,10 @@
 {
   "seoTitle": "Product Manager ou Product Owner : priorisation, IA et cérémonies | Luc Rousseau",
-  "seoDescription": "Besoin de PM ou PO sans temps plein : priorités, prérequis, prototypage et cérémonies avec les devs, environ quatre jours par semaine en fractionnel dense.",
+  "seoDescription": "PM/PO technique en fractionnel : produit, design, code et prototypes IA, priorités et cérémonies avec les devs, environ quatre jours par semaine.",
   "hero": {
     "badge": "Produit & delivery",
     "title": "Besoin de PM ou PO, sans temps plein",
-    "lede": "<p><strong>Vous avez besoin d'un PM ou PO, sans embauche à 40 h.</strong> L'équipe code ; il manque <strong>priorisation au trimestre</strong>, des prérequis clairs, des rituels avec les devs et des hypothèses testées avant le build. Ce n'est pas « trop tôt pour un PM », c'est <strong>trop lourd ou trop rigide en temps plein</strong>.</p><p>Ça tient en <strong>fractionnel dense</strong> : environ <strong>quatre jours par semaine</strong>, souvent en <strong>demi-journées</strong> (stand-up le matin, backlog ou prérequis l'après-midi), et des <strong>journées complètes</strong> pour évaluer, prototyper ou faire valider avant d'engager l'équipe dev.</p>",
+    "lede": "<p><strong>Vous avez besoin d'un PM ou PO, sans embauche à 40 h.</strong> L'équipe code ; il manque <strong>priorisation au trimestre</strong>, des prérequis clairs, des rituels avec les devs et des hypothèses testées avant le build. Ce n'est pas « trop tôt pour un PM », c'est <strong>trop lourd ou trop rigide en temps plein</strong>.</p><p>Je joue le rôle en <strong>PM/PO technique</strong> : développement, logique métier, enjeux tech, et <strong>lecture produit</strong> (parcours designer, puis dev, puis leadership produit). À l'ère de l'IA, ce combo est un vrai levier pour prototyper, cadrer et arbitrer sans perdre votre équipe.</p><p>Ça tient en <strong>fractionnel dense</strong> : environ <strong>quatre jours par semaine</strong>, souvent en <strong>demi-journées</strong> (stand-up le matin, backlog ou prérequis l'après-midi), et des <strong>journées complètes</strong> pour évaluer, prototyper ou faire valider avant d'engager l'équipe dev.</p>",
     "buy": {
       "legend": "Clarifier votre besoin produit",
       "prefix": "Sans engagement",
@@ -17,6 +17,12 @@
       "badge": "Le vide",
       "title": "Quand les devs attendent des décisions produit",
       "lede": "<p class=\"big\">Sans PM ou PO, le fondateur arbitre entre urgences client, dette technique et « la prochaine grosse feature ». Les développeurs avancent sur des tickets, mais <strong>le pourquoi et l'ordre</strong> restent implicites. Au trimestre, la roadmap ressemble à une liste de souhaits, pas à un plan qu'on peut tenir.</p>"
+    },
+    {
+      "type": "intro",
+      "badge": "Le profil",
+      "title": "PM/PO technique : produit, design et code",
+      "lede": "<p class=\"big\">Pas un PM généraliste éloigné du terrain. Je comprends <strong>comment ça se build</strong>, ce que la logique métier impose, et ce que l'expérience utilisateur doit porter, grâce à un parcours <strong>designer → développeur → produit</strong>. Pour vos devs, c'est crédible ; pour le business, c'est lisible ; avec l'IA, on peut <strong>tester des hypothèses en jours</strong>, pas en mois de specs floues.</p>"
     },
     {
       "type": "highlights",
@@ -34,8 +40,8 @@
           "content": "<p>Quand <strong>plusieurs hypothèses ou fonctionnalités</strong> doivent être évaluées, prototypées ou testées avant le build : prototypes IA, flows cliquables, POCs, pour valider vite, pas pour remplacer la livraison en prod.</p>"
         },
         {
-          "title": "Pas un salarié, un partenaire senior",
-          "content": "<p>Même personne pour <strong>priorisation, prérequis et recul technique</strong>, sans handoff entre « le PM » et « celui qui comprend le code ». Périmètre et rythme ajustables sans recrutement ni licenciement.</p>"
+          "title": "PM/PO technique senior, pas salarié",
+          "content": "<p>Même personne pour <strong>priorisation, prérequis, UX et recul technique</strong>, sans handoff entre « le PM » et « celui qui comprend le code ». Périmètre et rythme ajustables sans recrutement ni licenciement.</p>"
         }
       ]
     },
@@ -55,7 +61,7 @@
         },
         {
           "title": "Prototypes IA pour tester avant de builder",
-          "content": "<p>Quelqu'un à l'aise avec l'IA qui monte des <strong>prototypes rapides</strong> (flows, maquettes interactives, POCs) pour valider des hypothèses et tester des fonctionnalités avec des utilisateurs, avant d'engager des semaines de développement.</p>"
+          "content": "<p>PM/PO technique <strong>et</strong> à l'aise avec l'IA : flows cliquables, maquettes interactives, POCs, avec le regard design et la rigueur métier pour valider des hypothèses avant d'engager des semaines de développement.</p>"
         },
         {
           "title": "Cérémonies journalières avec les devs",
@@ -73,7 +79,7 @@
         "headers": {
           "dimension": "Dimension",
           "fullTimePm": "PM ou PO à temps plein",
-          "fractionalLead": "Consultant produit et développeur senior (~4 j. / sem., souvent en demi-j. + journées pleines au besoin)"
+          "fractionalLead": "PM/PO technique, produit-développeur senior (~4 j. / sem., demi-j. + journées pleines au besoin)"
         },
         "rows": [
           {
@@ -84,12 +90,12 @@
           {
             "dimension": "Compréhension technique",
             "fullTimePm": "Variable ; handoffs fréquents avec l'équipe dev.",
-            "fractionalLead": "Même personne pour priorisation, prérequis et arbitrages techniques réalistes."
+            "fractionalLead": "PM/PO technique : logique métier, code, dette, APIs ; même langage que les devs."
           },
           {
-            "dimension": "Prototypes & validation",
-            "fullTimePm": "Souvent maquettes Figma ; peu de POC exécutable sans dev.",
-            "fractionalLead": "Prototypes IA et POCs sur journées pleines dédiées, avant d'engager le build."
+            "dimension": "Produit, design & IA",
+            "fullTimePm": "Souvent slides ou Figma ; peu de lien avec le build.",
+            "fractionalLead": "Parcours designer + dev ; prototypes IA et validation utilisateur avant le build."
           },
           {
             "dimension": "Coût & flexibilité",
@@ -108,11 +114,12 @@
       "type": "stack",
       "badge": "Comment je construis",
       "title": "Fondations techniques",
-      "lede": "<p class=\"big\"><strong>Produit et technique dans la même boucle</strong> : prérequis clairs, prototypes avant le build, stack alignée avec vos devs.</p>",
+      "lede": "<p class=\"big\"><strong>PM/PO technique</strong> : produit, design, logique métier et stack alignée avec vos devs, prototypes IA avant le build.</p>",
       "groups": [
         {
           "badge": "Produit",
           "items": [
+            "Vision produit et design (parcours créatif)",
             "Prototypes IA et flows cliquables",
             "Prérequis et critères d'acceptation",
             "Backlog structuré pour les devs",
@@ -152,6 +159,10 @@
           "content": "<p>C'est une <strong>charge produit importante</strong>, volontairement, parce que le besoin est réel. La différence avec un salarié : pas de charges employeur, calendrier flexible (demi-journées vs journées pleines), et possibilité d'ajuster l'intensité selon la phase (discovery vs exécution stable).</p>"
         },
         {
+          "title": "En quoi un PM/PO « technique » change la donne ?",
+          "content": "<p>Je parle <strong>développement, logique métier et produit</strong> dans la même conversation. Vos devs n'ont pas à traduire des specs floues ; le business n'a pas à choisir entre « beau slide » et « faisable ». Avec l'IA, je peux monter des <strong>prototypes crédibles</strong> vite, parce que je comprends les deux côtés.</p>"
+        },
+        {
           "title": "Les prototypes IA, ce n'est pas du « vrai » produit",
           "content": "<p>Justement : l'objectif est de <strong>réduire le risque avant le code</strong>. Un flow cliquable ou un POC minimal permet de dire non tôt, oui avec confiance, pas de remplacer la livraison en production.</p>"
         },
@@ -170,7 +181,7 @@
       "badge": "Prochaine étape",
       "trackSection": "situation-product-manager",
       "label": "Discuter besoin PM/PO",
-      "teaser": "<p class=\"big\">Besoin d'un PM sans temps plein ? Un appel de 30 minutes suffit pour voir si environ quatre jours par semaine, en demi-journées, avec des journées complètes pour prototyper, correspond à votre équipe.</p>"
+      "teaser": "<p class=\"big\">Besoin d'un PM/PO technique sans temps plein ? Un appel de 30 minutes suffit pour voir si environ quatre jours par semaine, produit + code + prototypes IA, correspond à votre équipe.</p>"
     }
   ]
 }
