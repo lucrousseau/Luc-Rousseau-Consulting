@@ -21,6 +21,7 @@ export default function Services() {
         title={t("about:title")}
         description={t("common:schedule-me-label")}
         sameAs={[t("common:linkedin")]}
+        noindex
       />
       <Container
         tag="header"

@@ -18,10 +18,10 @@ Allow: /
 Sitemap: ${base}/sitemap.xml
 
 # LLM-readable site summary (llmstxt.org)
-# LLMs-Txt: ${base}/llms.txt
+LLMs-Txt: ${base}/llms.txt
 
 # Geo-targeting: KML file for geographic location
-# KML: ${base}/geo.kml
+KML: ${base}/geo.kml
 `;
 
   res.setHeader("Content-Type", "text/plain; charset=utf-8");

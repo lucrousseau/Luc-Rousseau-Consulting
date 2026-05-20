@@ -7,7 +7,7 @@ import { getSiteOrigin } from "../../utils/siteOrigin";
 
 const SITE_NAME = "Luc Rousseau";
 
-const SEO = ({ title, description, image, sameAs, jsonLd = [], path }) => {
+const SEO = ({ title, description, image, sameAs, jsonLd = [], path, noindex = false }) => {
   const base = getSiteOrigin();
   const router = useRouter();
   const { locale, pathname, asPath, defaultLocale } = router;
@@ -100,6 +100,7 @@ const SEO = ({ title, description, image, sameAs, jsonLd = [], path }) => {
         />
       ))}
       <meta name="description" content={description} />
+      {noindex && <meta name="robots" content="noindex, nofollow" />}
       <link rel="canonical" href={canonical} />
 
       <meta name="geo.region" content="CA-QC" />
