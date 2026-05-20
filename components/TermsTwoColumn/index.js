@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 /**
  * Two-column terms layout (home engagement « Sur le papier », situation split blocks).
@@ -21,7 +21,7 @@ export default function TermsTwoColumn({ columns, className }) {
           return (
             <div key={heading} className="terms-two-column__column">
               {heading !== "" && <h4 className="h4 terms-two-column__heading">{heading}</h4>}
-              {column.lede ? parse(column.lede) : null}
+              {column.lede ? parseHtmlContent(column.lede) : null}
               {items.length > 0 && (
                 <ul className="terms-two-column__ul">
                   {items.map((line) => (

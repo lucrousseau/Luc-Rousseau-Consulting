@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
@@ -29,7 +29,7 @@ export default function Tangible({ cta, showCta = true }) {
   const items = t("tangible:items", { returnObjects: true }).map((item, index) => {
     const content = (
       <>
-        {parse(item.content)}
+        {parseHtmlContent(item.content)}
 
         {item["cta-link"] && item["cta-label"] && (
           <p className="align align--right">
@@ -64,7 +64,7 @@ export default function Tangible({ cta, showCta = true }) {
       <SectionIntro
         badge={t("tangible:badge")}
         title={t("tangible:title")}
-        lede={parse(t("tangible:summary"))}
+        lede={parseHtmlContent(t("tangible:summary"))}
         rowStyle={homeIntroRowStyle}
       />
       <Row
@@ -85,7 +85,9 @@ export default function Tangible({ cta, showCta = true }) {
           className="tangible__cta-block"
           teaser={
             t("tangible:ctaTeaser") ? (
-              <p className="big tangible__cta-teaser">{parse(t("tangible:ctaTeaser"))}</p>
+              <p className="big tangible__cta-teaser">
+                {parseHtmlContent(t("tangible:ctaTeaser"))}
+              </p>
             ) : null
           }
         />

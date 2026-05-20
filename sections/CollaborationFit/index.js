@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import Container from "../../components/Layout/Container";
 import SectionIntro from "../../components/SectionIntro";
@@ -27,10 +27,10 @@ export default function CollaborationFit({ cta, showCta = true }) {
       <SectionIntro
         badge={t("collaboration-fit:badge")}
         title={t("collaboration-fit:title")}
-        lede={parse(t("collaboration-fit:intro"))}
+        lede={parseHtmlContent(t("collaboration-fit:intro"))}
         rowStyle={homeIntroRowStyle}
       />
-      <ProductGrid items={items} renderItem={(item) => <>{parse(item.content)}</>} />
+      <ProductGrid items={items} renderItem={(item) => <>{parseHtmlContent(item.content)}</>} />
       {showCta && (
         <SectionCta
           halign="center"

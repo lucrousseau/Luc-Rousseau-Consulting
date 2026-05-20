@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
@@ -32,10 +32,10 @@ export default function AIResponsible({ cta, showCta = true }) {
       <SectionIntro
         badge={t("ai-responsible:badge")}
         title={t("ai-responsible:title")}
-        lede={<p className="big">{parse(t("ai-responsible:summary"))}</p>}
+        lede={<p className="big">{parseHtmlContent(t("ai-responsible:summary"))}</p>}
         rowStyle={homeIntroRowStyle}
       />
-      <ProductGrid items={items} renderItem={(item) => <p>{parse(item.content)}</p>} />
+      <ProductGrid items={items} renderItem={(item) => <p>{parseHtmlContent(item.content)}</p>} />
       <Row
         halign={"center"}
         style={homeStackContinueStyle}
@@ -43,7 +43,9 @@ export default function AIResponsible({ cta, showCta = true }) {
           {
             cols: { col: 10, sm: 12 },
             content: (
-              <p className="big align align--center">{parse(t("ai-responsible:closing"))}</p>
+              <p className="big align align--center">
+                {parseHtmlContent(t("ai-responsible:closing"))}
+              </p>
             ),
           },
         ]}

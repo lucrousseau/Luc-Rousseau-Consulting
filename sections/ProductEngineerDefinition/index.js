@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
@@ -48,8 +48,9 @@ export default function ProductEngineerDefinition({ cta, showCta = true }) {
         cols={{ col: 10, sm: 12 }}
         rowStyle={homeIntroRowStyle}
       >
-        {t("product-engineer:paragraphOpening") && parse(t("product-engineer:paragraphOpening"))}
-        {parse(t("product-engineer:paragraph"))}
+        {t("product-engineer:paragraphOpening") &&
+          parseHtmlContent(t("product-engineer:paragraphOpening"))}
+        {parseHtmlContent(t("product-engineer:paragraph"))}
       </SectionIntro>
       {hasTable && (
         <>
@@ -59,7 +60,7 @@ export default function ProductEngineerDefinition({ cta, showCta = true }) {
             columns={[
               {
                 cols: { col: 11, xl: 12, sm: 12 },
-                content: <p className="big">{parse(t("product-engineer:intro"))}</p>,
+                content: <p className="big">{parseHtmlContent(t("product-engineer:intro"))}</p>,
               },
             ]}
           />
@@ -93,7 +94,7 @@ export default function ProductEngineerDefinition({ cta, showCta = true }) {
           teaser={
             t("product-engineer:ctaTeaser") ? (
               <p className="big product-engineer__cta-teaser">
-                {parse(t("product-engineer:ctaTeaser"))}
+                {parseHtmlContent(t("product-engineer:ctaTeaser"))}
               </p>
             ) : null
           }

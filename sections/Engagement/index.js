@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
@@ -43,7 +43,7 @@ export default function Engagement({ cta, showCta = true }) {
         rowStyle={homeIntroRowStyle}
       >
         {t("engagement:subhead") && <p className="big">{t("engagement:subhead")}</p>}
-        <p className="big">{parse(t("engagement:valueStatement"))}</p>
+        <p className="big">{parseHtmlContent(t("engagement:valueStatement"))}</p>
       </SectionIntro>
       <ProductGrid
         items={models}
@@ -53,7 +53,7 @@ export default function Engagement({ cta, showCta = true }) {
             <p>
               <strong>{model.value}</strong>
             </p>
-            {parse(model.content)}
+            {parseHtmlContent(model.content)}
           </>
         )}
       />
@@ -66,8 +66,8 @@ export default function Engagement({ cta, showCta = true }) {
             content: (
               <div className="align align--left engagement__terms">
                 <h3 className="h3 engagement__terms-title">{t("engagement:termsTitle")}</h3>
-                {parse(t("engagement:termsLead"))}
-                {parse(t("engagement:termsBudget"))}
+                {parseHtmlContent(t("engagement:termsLead"))}
+                {parseHtmlContent(t("engagement:termsBudget"))}
                 <div className="engagement__terms-facts-wrap">
                   <h4 className="h4 engagement__terms-subheading">
                     {t("engagement:termsFactsLabel")}
@@ -85,7 +85,7 @@ export default function Engagement({ cta, showCta = true }) {
                     { heading: t("engagement:termsExcludedHeading"), items: excludedList },
                   ]}
                 />
-                {parse(t("engagement:termsFootnote"))}
+                {parseHtmlContent(t("engagement:termsFootnote"))}
               </div>
             ),
           },
@@ -101,8 +101,8 @@ export default function Engagement({ cta, showCta = true }) {
           rowStyle={homePreCtaContentRowStyle}
           beforeCTA={
             <>
-              <p className="big">{parse(t("engagement:differentiator"))}</p>
-              <p>{parse(t("engagement:ctaTeaser"))}</p>
+              <p className="big">{parseHtmlContent(t("engagement:differentiator"))}</p>
+              <p>{parseHtmlContent(t("engagement:ctaTeaser"))}</p>
             </>
           }
         />

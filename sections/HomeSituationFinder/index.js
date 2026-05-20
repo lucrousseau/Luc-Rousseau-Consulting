@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
@@ -23,7 +23,7 @@ export default function HomeSituationFinder() {
       <SectionIntro
         badge={t("home-situation-finder:badge")}
         title={t("home-situation-finder:title")}
-        lede={parse(t("home-situation-finder:lede"))}
+        lede={parseHtmlContent(t("home-situation-finder:lede"))}
         rowStyle={homeIntroRowStyle}
       />
       <Row

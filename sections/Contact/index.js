@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
@@ -50,7 +50,7 @@ export default function Contact({ cta }) {
       <SectionIntro
         badge={t("contact:badge")}
         title={t("contact:title")}
-        lede={parse(t("contact:lede"))}
+        lede={parseHtmlContent(t("contact:lede"))}
         rowStyle={homeIntroRowStyle}
       />
       <Row
@@ -73,7 +73,7 @@ export default function Contact({ cta }) {
                       trackSection="contact"
                       href={cta?.link ?? scheduleCta.link}
                       label={cta?.label ?? scheduleCta.label}
-                      teaser={parse(t("contact:ctaTeaser"))}
+                      teaser={parseHtmlContent(t("contact:ctaTeaser"))}
                       teaserClassName="big section-contact__cta-teaser"
                       className="section-contact__cta"
                     />
@@ -116,7 +116,7 @@ export default function Contact({ cta }) {
                 </div>
 
                 {footnote ? (
-                  <div className="section-contact__footnote">{parse(footnote)}</div>
+                  <div className="section-contact__footnote">{parseHtmlContent(footnote)}</div>
                 ) : null}
               </div>
             ),

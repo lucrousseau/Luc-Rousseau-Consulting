@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import TechnicalStack from "../TechnicalStack";
 import { getScheduleCta } from "../../commons/scheduleCta";
@@ -17,7 +17,7 @@ export default function Technologies({ backgroundColor, cta, showCta = true }) {
       id={t("technologies:anchor")}
       badge={t("technologies:badge")}
       title={t("technologies:title")}
-      lede={parse(t("technologies:summary"))}
+      lede={parseHtmlContent(t("technologies:summary"))}
       items={t("technologies:items", { returnObjects: true })}
       footerCta={
         showCta

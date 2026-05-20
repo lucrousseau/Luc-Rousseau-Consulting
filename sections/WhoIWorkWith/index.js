@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
@@ -35,7 +35,7 @@ export default function WhoIWorkWith({ backgroundColor, cta, showCta = true }) {
       <SectionIntro
         badge={t("who-i-work-with:badge")}
         title={t("who-i-work-with:title")}
-        lede={parse(t("who-i-work-with:summary"))}
+        lede={parseHtmlContent(t("who-i-work-with:summary"))}
         rowStyle={homeIntroRowStyle}
       />
       <Row
@@ -59,7 +59,7 @@ export default function WhoIWorkWith({ backgroundColor, cta, showCta = true }) {
                     {t("who-i-work-with:items", { returnObjects: true }).map((item) => (
                       <li key={item.title}>
                         <h4 className="h4">{item.title}</h4>
-                        <p>{parse(item.content)}</p>
+                        <p>{parseHtmlContent(item.content)}</p>
                       </li>
                     ))}
                   </ul>
