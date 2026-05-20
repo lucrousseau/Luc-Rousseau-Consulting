@@ -41,7 +41,7 @@
       "type": "intro",
       "badge": "Le risque",
       "title": "Le bus factor, concrètement",
-      "lede": "<p class=\"big\">Votre dev principal reste <strong>propriétaire du code et des décisions</strong>. Mon rôle n'est pas de le concurrencer : c'est de réduire la dépendance unique, d'accélérer les revues et d'être <strong>le filet fiable</strong> si la personne est absente, débordée ou injoignable en urgence, parce qu'on s'est préparés ensemble.</p>"
+      "lede": "<p class=\"big\">Votre dev principal reste <strong>propriétaire du code et des décisions</strong>. Mon rôle n'est pas de le concurrencer : c'est de réduire la dépendance unique, d'accélérer les revues et d'être <strong>le filet fiable</strong> si la personne est absente, débordée ou injoignable en urgence, parce qu'on s'est préparés ensemble.</p><p class=\"big\">Si vous préparez plutôt une <strong>première embauche</strong> ou un <strong>pilotage produit</strong>, voir les fiches <a href=\"/situations/premier-dev-fractionnel\">Après la levée : avant votre premier dev à temps plein</a> et <a href=\"/situations/product-manager-fractionnel\">Besoin de PM ou PO, sans temps plein</a>.</p>"
     },
     {
       "type": "cards",

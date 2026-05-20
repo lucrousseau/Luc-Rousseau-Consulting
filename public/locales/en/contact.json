@@ -1,0 +1,26 @@
+{
+  "anchor": "contact",
+  "navigation-label": "Contact",
+  "navigation-label-short": "Contact",
+  "badge": "Next step",
+  "title": "Let's talk about your context",
+  "lede": "<p class=\"big\">A 30-minute call to see if fractional support (product, technical, or both) fits your situation in Quebec.</p>",
+  "meta": "30 min · no commitment · video or phone",
+  "ctaTeaser": "The fastest way to clarify scope and next steps.",
+  "channelsAria": "Email and LinkedIn",
+  "channels": [
+    {
+      "id": "email",
+      "title": "Email",
+      "hint": "Reply within 24–48 hours",
+      "actionLabel": "hello@lucrousseau.com"
+    },
+    {
+      "id": "linkedin",
+      "title": "LinkedIn",
+      "hint": "Background or message",
+      "actionLabel": "View profile"
+    }
+  ],
+  "footnote": "<p class=\"small\">Not sure which profile fits? <a href=\"/situations\">Browse situations</a> or take the two-question quiz.</p>"
+}

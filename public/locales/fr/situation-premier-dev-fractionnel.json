@@ -73,7 +73,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "Premier dev à temps plein vs lead technique externe",
-      "intro": "Ordres de grandeur pour une startup québécoise, chaque cas se affine à l'appel.",
+      "intro": "Ordres de grandeur pour une startup québécoise, chaque cas se affine à l'appel. Si votre enjeu est plutôt de <strong>lancer un produit</strong> avant d'embaucher, voir la fiche <a href=\"/situations/mvp-saas-faisabilite\">Lancer un SaaS ou un MVP</a>.",
       "columnKeys": ["dimension", "fullTimeJunior", "fractionalSenior"],
       "table": {
         "headers": {
@@ -122,7 +122,7 @@
     },
     {
       "type": "stack",
-      "badge": "Comment je travaille",
+      "badge": "Comment je construis",
       "title": "Fondations produit et technique",
       "lede": "<p class=\"big\"><strong>Produit, cap technique et développement en prod</strong> sur vos deux jours : priorités, backlog prêt à construire, et <strong>code que je livre moi-même</strong> (fondations, features prioritaires), plus critères pour votre futur premier dev.</p>",
       "items": [

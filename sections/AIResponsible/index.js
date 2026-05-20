@@ -17,7 +17,7 @@ import { getScheduleCta } from "../../commons/scheduleCta";
  * AI Responsible section. Requires i18n: `ai-responsible`, `common`.
  * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
  */
-export default function AIResponsible({ cta }) {
+export default function AIResponsible({ cta, showCta = true }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
   const items = t("ai-responsible:items", { returnObjects: true });
@@ -48,17 +48,19 @@ export default function AIResponsible({ cta }) {
           },
         ]}
       />
-      <SectionCta
-        halign="center"
-        trackSection="ai-responsible"
-        href={cta?.link ?? scheduleCta.link}
-        label={cta?.label ?? scheduleCta.label}
-        rowStyle={homePreCtaContentRowStyle}
-        cols={{ col: 12, sm: 12 }}
-        className="section-ai-responsible__cta"
-        teaser={t("ai-responsible:ctaTeaser") || null}
-        teaserClassName="section-ai-responsible__cta-teaser"
-      />
+      {showCta && (
+        <SectionCta
+          halign="center"
+          trackSection="ai-responsible"
+          href={cta?.link ?? scheduleCta.link}
+          label={cta?.label ?? scheduleCta.label}
+          rowStyle={homePreCtaContentRowStyle}
+          cols={{ col: 12, sm: 12 }}
+          className="section-ai-responsible__cta"
+          teaser={t("ai-responsible:ctaTeaser") || null}
+          teaserClassName="section-ai-responsible__cta-teaser"
+        />
+      )}
     </Container>
   );
 }

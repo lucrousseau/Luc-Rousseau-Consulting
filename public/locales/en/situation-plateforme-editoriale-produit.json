@@ -90,7 +90,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "Brochure agency vs editorial product platform",
-      "intro": "If your need is a brochure or one-off campaign, this isn't the right fit.",
+      "intro": "If your need is a brochure or one-off campaign, this isn't the right fit. Archaic WordPress to migrate by phases: see <a href=\"/en/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>.",
       "columnKeys": ["dimension", "vitrineAgency", "productPlatform"],
       "table": {
         "headers": {
@@ -167,7 +167,7 @@
         },
         {
           "title": "Headless or coupled WordPress for our case?",
-          "content": "<p>It depends on publishing volume, surfaces, and the team. Often: <strong>headless</strong> (WPGraphQL or REST + React/Next.js front) when editorial stays in WordPress and the front must move fast; <strong>coupled</strong> when simplicity and the team favor it. We decide in writing before build.</p>"
+          "content": "<p>It depends on publishing volume, surfaces, and the team. Often: <strong>headless</strong> (WPGraphQL or REST + React/Next.js front) when editorial stays in WordPress and the front must move fast; <strong>coupled</strong> when simplicity and the team favor it. Archaic WordPress migration by phases: see <a href=\"/en/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>. We decide in writing before build.</p>"
         },
         {
           "title": "What about conversion, marketing, monetization?",

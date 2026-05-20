@@ -84,7 +84,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "PM/PO à temps plein vs accompagnement fractionnel",
-      "intro": "Ordres de grandeur, le calendrier exact (demi-journées vs journées pleines) se cale à l'appel.",
+      "intro": "Ordres de grandeur, le calendrier exact (demi-journées vs journées pleines) se cale à l'appel. Pour <strong>l'IA dans le produit</strong> ou le cadrage d'un lancement, voir aussi <a href=\"/situations/ia-produit-garde-fous\">IA dans votre produit</a> et <a href=\"/situations/mvp-saas-faisabilite\">Lancer un SaaS ou un MVP</a>.",
       "columnKeys": ["dimension", "fullTimePm", "fractionalLead"],
       "table": {
         "headers": {

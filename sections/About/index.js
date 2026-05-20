@@ -12,7 +12,7 @@ import { getScheduleCta } from "../../commons/scheduleCta";
  * About section. Requires i18n namespaces: `about`, `common`.
  * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
  */
-export default function About({ cta }) {
+export default function About({ cta, showCta = true }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
 
@@ -25,23 +25,25 @@ export default function About({ cta }) {
         cols={{ col: 10, sm: 12 }}
         rowStyle={homeIntroRowStyle}
       />
-      <Row
-        halign={"center"}
-        columns={[
-          {
-            cols: { col: 10, sm: 12 },
-            content: (
-              <SectionCta
-                wrapRow={false}
-                trackSection="about"
-                href={cta?.link ?? scheduleCta.link}
-                label={cta?.label ?? scheduleCta.label}
-                className="about__cta"
-              />
-            ),
-          },
-        ]}
-      />
+      {showCta && (
+        <Row
+          halign={"center"}
+          columns={[
+            {
+              cols: { col: 10, sm: 12 },
+              content: (
+                <SectionCta
+                  wrapRow={false}
+                  trackSection="about"
+                  href={cta?.link ?? scheduleCta.link}
+                  label={cta?.label ?? scheduleCta.label}
+                  className="about__cta"
+                />
+              ),
+            },
+          ]}
+        />
+      )}
     </Container>
   );
 }

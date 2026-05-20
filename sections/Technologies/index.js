@@ -8,7 +8,7 @@ import { getScheduleCta } from "../../commons/scheduleCta";
  * Technologies section. Requires i18n: `technologies`, `common`.
  * @param {import('../../commons/sectionTypes').SectionWithBackgroundProps} props
  */
-export default function Technologies({ backgroundColor, cta }) {
+export default function Technologies({ backgroundColor, cta, showCta = true }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
 
@@ -19,11 +19,15 @@ export default function Technologies({ backgroundColor, cta }) {
       title={t("technologies:title")}
       lede={parse(t("technologies:summary"))}
       items={t("technologies:items", { returnObjects: true })}
-      footerCta={{
-        label: cta?.label ?? t("technologies:footer-cta-label"),
-        href: cta?.link ?? scheduleCta.link,
-        trackSection: "technologies",
-      }}
+      footerCta={
+        showCta
+          ? {
+              label: cta?.label ?? t("technologies:footer-cta-label"),
+              href: cta?.link ?? scheduleCta.link,
+              trackSection: "technologies",
+            }
+          : null
+      }
       backgroundColor={backgroundColor}
     />
   );

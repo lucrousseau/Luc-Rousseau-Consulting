@@ -18,7 +18,7 @@ import { getScheduleCta } from "../../commons/scheduleCta";
  * Engagement models section. Requires i18n: `engagement`, `common`.
  * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
  */
-export default function Engagement({ cta }) {
+export default function Engagement({ cta, showCta = true }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
 
@@ -91,20 +91,22 @@ export default function Engagement({ cta }) {
           },
         ]}
       />
-      <SectionCta
-        bare
-        halign="center"
-        trackSection="engagement"
-        href={cta?.link ?? scheduleCta.link}
-        label={cta?.label ?? t("engagement:ctaLabel")}
-        rowStyle={homePreCtaContentRowStyle}
-        beforeCTA={
-          <>
-            <p className="big">{parse(t("engagement:differentiator"))}</p>
-            <p>{parse(t("engagement:ctaTeaser"))}</p>
-          </>
-        }
-      />
+      {showCta && (
+        <SectionCta
+          bare
+          halign="center"
+          trackSection="engagement"
+          href={cta?.link ?? scheduleCta.link}
+          label={cta?.label ?? t("engagement:ctaLabel")}
+          rowStyle={homePreCtaContentRowStyle}
+          beforeCTA={
+            <>
+              <p className="big">{parse(t("engagement:differentiator"))}</p>
+              <p>{parse(t("engagement:ctaTeaser"))}</p>
+            </>
+          }
+        />
+      )}
     </Container>
   );
 }

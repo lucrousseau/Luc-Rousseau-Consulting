@@ -7,6 +7,7 @@ import Container from "../../components/Layout/Container";
 import Header from "../../sections/Header";
 import Footer from "../../sections/Footer";
 import SituationsIndex from "../../sections/situations/SituationsIndex";
+import Contact from "../../sections/Contact";
 import { SITUATIONS } from "../../commons/situationsManifest";
 import { absoluteUrl, localizedPath } from "../../commons/localizedPath";
 import { buildSituationsHubJsonLd } from "../../commons/situationsStructuredData";
@@ -53,10 +54,11 @@ export default function SituationsIndexPage() {
         jsonLd={hubJsonLd}
       />
       <Container tag="header" style={PAGE_SHELL_STYLE}>
-        <Header showNavigation={false} showCta={false} />
+        <Header showNavigation showCta={false} />
       </Container>
       <main className="page-home page-situations">
         <SituationsIndex />
+        <Contact />
       </main>
       <Container tag="footer" style={PAGE_SHELL_STYLE}>
         <Footer />
@@ -68,7 +70,7 @@ export default function SituationsIndexPage() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["situations-index", "common"])),
+      ...(await serverSideTranslations(locale, ["situations-index", "contact", "common"])),
     },
     revalidate: 86400,
   };

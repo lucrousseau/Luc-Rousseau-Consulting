@@ -6,6 +6,7 @@ import Container from "../components/Layout/Container";
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 import About from "../sections/About";
+import Contact from "../sections/Contact";
 
 /**
  * Example page: mounts About without editing the section module.
@@ -28,10 +29,11 @@ export default function Services() {
           "--padding-bottom": "1rem",
         }}
       >
-        <Header showNavigation={false} showCta={false} />
+        <Header showNavigation showCta={false} />
       </Container>
       <main className="page-home">
         <About />
+        <Contact />
       </main>
       <Container
         tag="footer"
@@ -49,7 +51,7 @@ export default function Services() {
 export const getStaticProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["about", "common"])),
+      ...(await serverSideTranslations(locale, ["about", "contact", "common"])),
     },
     revalidate: 86400,
   };

@@ -11,6 +11,7 @@ import Navigation from "../../components/Navigation";
 import SocialLinks from "../../components/SocialLinks";
 import LanguageSwitcher from "../../components/LanguageSwitcher";
 import Button from "../../components/Button";
+import { getSiteNavigationItems } from "../../commons/siteNavigation";
 
 /**
  * Site header (logo, optional nav, social, language, contact CTA).
@@ -26,9 +27,10 @@ export default function Header({
   navigation = [],
   ...props
 }) {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation("common");
   const lang = i18n.language === "en" ? "fr" : "en";
   const alignmentsClass = alignments({ props });
+  const navItems = navigation.length > 0 ? navigation : getSiteNavigationItems(t);
 
   return (
     <div className={classNames("component component__header", alignmentsClass)}>
@@ -58,7 +60,7 @@ export default function Header({
                                 columns={[
                                   showNavigation && {
                                     className: "component__header__nav",
-                                    content: <Navigation navigation={navigation} />,
+                                    content: <Navigation navigation={navItems} />,
                                   },
                                   {
                                     className: "component__header__right",

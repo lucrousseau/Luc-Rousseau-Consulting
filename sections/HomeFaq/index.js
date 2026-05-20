@@ -17,7 +17,7 @@ import Accordion from "../../components/Accordion";
  * FAQ section. Requires i18n: `faq`, `common`.
  * @param {import('../../commons/sectionTypes').SectionWithCtaProps} props
  */
-export default function HomeFaq({ cta }) {
+export default function HomeFaq({ cta, showCta = true }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
 
@@ -44,14 +44,16 @@ export default function HomeFaq({ cta }) {
           },
         ]}
       />
-      <SectionCta
-        halign="center"
-        trackSection="faq"
-        href={cta?.link ?? scheduleCta.link}
-        label={cta?.label ?? scheduleCta.label}
-        rowStyle={homeSituationCtaRowStyle}
-        className="section-home-faq__cta"
-      />
+      {showCta && (
+        <SectionCta
+          halign="center"
+          trackSection="faq"
+          href={cta?.link ?? scheduleCta.link}
+          label={cta?.label ?? scheduleCta.label}
+          rowStyle={homeSituationCtaRowStyle}
+          className="section-home-faq__cta"
+        />
+      )}
     </Container>
   );
 }

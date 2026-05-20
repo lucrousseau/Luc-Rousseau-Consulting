@@ -1,0 +1,26 @@
+{
+  "anchor": "contact",
+  "navigation-label": "Contact",
+  "navigation-label-short": "Contact",
+  "badge": "Prochaine étape",
+  "title": "Parlons de votre contexte",
+  "lede": "<p class=\"big\">Un appel de 30 minutes pour voir si un accompagnement fractionnel (produit, technique, ou les deux) correspond à votre situation au Québec.</p>",
+  "meta": "30 min · sans engagement · visio ou téléphone",
+  "ctaTeaser": "Le plus direct pour clarifier le périmètre et la prochaine étape.",
+  "channelsAria": "Courriel et LinkedIn",
+  "channels": [
+    {
+      "id": "email",
+      "title": "Courriel",
+      "hint": "Réponse sous 24 à 48 h",
+      "actionLabel": "bonjour@lucrousseau.com"
+    },
+    {
+      "id": "linkedin",
+      "title": "LinkedIn",
+      "hint": "Parcours ou message",
+      "actionLabel": "Voir le profil"
+    }
+  ],
+  "footnote": "<p class=\"small\">Pas sûr du profil ? <a href=\"/situations\">Parcourir les situations</a> ou faire le quiz en deux questions.</p>"
+}

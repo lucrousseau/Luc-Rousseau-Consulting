@@ -90,7 +90,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "Agence site web vs plateforme produit éditoriale",
-      "intro": "Si votre enjeu est une vitrine ou une campagne ponctuelle, ce n'est pas le bon fit.",
+      "intro": "Si votre enjeu est une vitrine ou une campagne ponctuelle, ce n'est pas le bon fit. WordPress archaïque à migrer par phases : voir <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>.",
       "columnKeys": ["dimension", "vitrineAgency", "productPlatform"],
       "table": {
         "headers": {
@@ -167,7 +167,7 @@
         },
         {
           "title": "Headless ou WordPress couplé pour notre cas ?",
-          "content": "<p>Ça dépend du volume de publication, des surfaces et de l'équipe. Souvent : <strong>headless</strong> (WPGraphQL ou REST + front React/Next.js) si l'édition reste dans WordPress et le front doit évoluer vite ; <strong>couplé</strong> quand la simplicité et l'équipe le favorisent. On tranche à l'écrit avant de coder.</p>"
+          "content": "<p>Ça dépend du volume de publication, des surfaces et de l'équipe. Souvent : <strong>headless</strong> (WPGraphQL ou REST + front React/Next.js) si l'édition reste dans WordPress et le front doit évoluer vite ; <strong>couplé</strong> quand la simplicité et l'équipe le favorisent. Migration WordPress archaïque par phases : voir <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>. On tranche à l'écrit avant de coder.</p>"
         },
         {
           "title": "Et la conversion, le marketing, la monétisation ?",
