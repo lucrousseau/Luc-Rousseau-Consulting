@@ -4,6 +4,7 @@ import path from "path";
 import { createRequire } from "module";
 import { fileURLToPath } from "url";
 import i18n from "./next-i18next.config.js";
+import { securityHeaders } from "./lib/securityHeaders.js";
 
 const require = createRequire(import.meta.url);
 const { getAllSituationSlugs } = require("./commons/situationsManifest.js");
@@ -56,33 +57,12 @@ const nextConfig = {
   reactStrictMode: true,
   async headers() {
     const cacheableHtml = "public, s-maxage=86400, stale-while-revalidate=604800";
+    const homeHeaders = [{ key: "Cache-Control", value: cacheableHtml }, ...securityHeaders];
 
     return [
-      {
-        source: "/",
-        headers: [{ key: "Cache-Control", value: cacheableHtml }],
-      },
-      {
-        source: "/en",
-        headers: [{ key: "Cache-Control", value: cacheableHtml }],
-      },
-      {
-        source: "/(.*)",
-        headers: [
-          { key: "X-Frame-Options", value: "DENY" },
-          { key: "X-Content-Type-Options", value: "nosniff" },
-          {
-            key: "Referrer-Policy",
-            value: "strict-origin-when-cross-origin",
-          },
-          {
-            key: "Permissions-Policy",
-            value:
-              "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()",
-          },
-          { key: "X-DNS-Prefetch-Control", value: "on" },
-        ],
-      },
+      { source: "/", headers: homeHeaders },
+      { source: "/en", headers: homeHeaders },
+      { source: "/(.*)", headers: securityHeaders },
     ];
   },
   async redirects() {

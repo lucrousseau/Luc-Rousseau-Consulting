@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
@@ -21,7 +21,7 @@ export default function About({ cta, showCta = true }) {
       <SectionIntro
         badge={t("about:badge")}
         title={t("about:title")}
-        lede={<div className="big">{parse(t("about:content"))}</div>}
+        lede={<div className="big">{parseHtmlContent(t("about:content"))}</div>}
         cols={{ col: 10, sm: 12 }}
         rowStyle={homeIntroRowStyle}
       />

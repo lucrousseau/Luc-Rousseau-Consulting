@@ -1,5 +1,4 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
 
 import { parseHtmlContent } from "../../../commons/parseHtmlContent";
 import Row from "../../../components/Layout/Row";
@@ -54,7 +53,7 @@ export default function SituationHero({ namespace }) {
                 <Buy
                   price={null}
                   legend={buy.legend}
-                  prefix={buy.prefix ? parse(buy.prefix) : null}
+                  prefix={buy.prefix ? parseHtmlContent(buy.prefix) : null}
                   className="biggest"
                   variant="primary"
                   size={null}

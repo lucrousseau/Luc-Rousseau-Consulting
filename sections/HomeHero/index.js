@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import Row from "../../components/Layout/Row";
 import Picture from "../../components/Picture";
@@ -20,7 +20,7 @@ export default function HomeHero() {
   const items = t("home-hero:items", { returnObjects: true }).map((item) => {
     return {
       ...item,
-      content: parse(item.content),
+      content: parseHtmlContent(item.content),
     };
   });
 
@@ -74,7 +74,7 @@ export default function HomeHero() {
                               },
                             ]}
                           />
-                          <h3>{parse(t("home-hero:manifesto"))}</h3>
+                          <h3>{parseHtmlContent(t("home-hero:manifesto"))}</h3>
                         </div>
                       ),
                     },
@@ -98,7 +98,7 @@ export default function HomeHero() {
                           <Buy
                             price={null}
                             legend={t("home-hero:buy:legend")}
-                            prefix={parse(t("home-hero:buy:prefix"))}
+                            prefix={parseHtmlContent(t("home-hero:buy:prefix"))}
                             className={"biggest"}
                             variant={"primary"}
                             size={null}

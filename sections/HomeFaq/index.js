@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import parse from "html-react-parser";
+import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import Row from "../../components/Layout/Row";
 import Container from "../../components/Layout/Container";
@@ -23,7 +23,7 @@ export default function HomeFaq({ cta, showCta = true }) {
 
   const items = t("faq:items", { returnObjects: true }).map((item) => ({
     title: item.title,
-    content: parse(item.content),
+    content: parseHtmlContent(item.content),
   }));
 
   return (
@@ -31,7 +31,7 @@ export default function HomeFaq({ cta, showCta = true }) {
       <SectionIntro
         badge={t("faq:badge")}
         title={t("faq:title")}
-        lede={parse(t("faq:intro"))}
+        lede={parseHtmlContent(t("faq:intro"))}
         rowStyle={homeIntroRowStyle}
       />
       <Row
