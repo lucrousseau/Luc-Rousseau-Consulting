@@ -7,7 +7,7 @@
 
 import { apiRequireGet } from "../../utils/apiRequireGet";
 import { getSiteOrigin } from "../../utils/siteOrigin";
-import { GUIDES } from "../../commons/guidesManifest";
+import { SITUATIONS } from "../../commons/situationsManifest";
 
 export default function handler(req, res) {
   if (!apiRequireGet(req, res)) return;
@@ -39,38 +39,46 @@ export default function handler(req, res) {
       hreflang: { fr: frUrl, en: enUrl, default: frUrl },
     },
     {
-      loc: `${base}/guides`,
+      loc: `${base}/situations`,
       priority: "0.8",
       changefreq: "monthly",
-      hreflang: { fr: `${base}/guides`, en: `${base}/en/guides`, default: `${base}/guides` },
+      hreflang: {
+        fr: `${base}/situations`,
+        en: `${base}/en/situations`,
+        default: `${base}/situations`,
+      },
     },
     {
-      loc: `${base}/en/guides`,
+      loc: `${base}/en/situations`,
       priority: "0.8",
       changefreq: "monthly",
-      hreflang: { fr: `${base}/guides`, en: `${base}/en/guides`, default: `${base}/guides` },
+      hreflang: {
+        fr: `${base}/situations`,
+        en: `${base}/en/situations`,
+        default: `${base}/situations`,
+      },
     },
-    ...GUIDES.flatMap((guide) => [
+    ...SITUATIONS.flatMap((situation) => [
       {
-        loc: `${base}/guides/${guide.slug}`,
+        loc: `${base}/situations/${situation.slug}`,
         priority: "0.7",
         changefreq: "monthly",
-        lastmod: guide.publishedAt,
+        lastmod: situation.publishedAt,
         hreflang: {
-          fr: `${base}/guides/${guide.slug}`,
-          en: `${base}/en/guides/${guide.slug}`,
-          default: `${base}/guides/${guide.slug}`,
+          fr: `${base}/situations/${situation.slug}`,
+          en: `${base}/en/situations/${situation.slug}`,
+          default: `${base}/situations/${situation.slug}`,
         },
       },
       {
-        loc: `${base}/en/guides/${guide.slug}`,
+        loc: `${base}/en/situations/${situation.slug}`,
         priority: "0.7",
         changefreq: "monthly",
-        lastmod: guide.publishedAt,
+        lastmod: situation.publishedAt,
         hreflang: {
-          fr: `${base}/guides/${guide.slug}`,
-          en: `${base}/en/guides/${guide.slug}`,
-          default: `${base}/guides/${guide.slug}`,
+          fr: `${base}/situations/${situation.slug}`,
+          en: `${base}/en/situations/${situation.slug}`,
+          default: `${base}/situations/${situation.slug}`,
         },
       },
     ]),

@@ -3,6 +3,7 @@
 import path from "path";
 import { fileURLToPath } from "url";
 import i18n from "./next-i18next.config.js";
+import { getAllSituationSlugs } from "./commons/situationsManifest.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -123,7 +124,32 @@ const nextConfig = {
       }
     }
 
-    return rules;
+    /** Legacy /guides URLs → /situations (301 for SEO). */
+    const situationRedirects = [
+      { source: "/guides", destination: "/situations", permanent: true },
+      { source: "/guides/", destination: "/situations", permanent: true },
+      { source: "/en/guides", destination: "/en/situations", permanent: true },
+      { source: "/en/guides/", destination: "/en/situations", permanent: true },
+    ];
+
+    for (const slug of getAllSituationSlugs()) {
+      situationRedirects.push(
+        { source: `/guides/${slug}`, destination: `/situations/${slug}`, permanent: true },
+        { source: `/guides/${slug}/`, destination: `/situations/${slug}`, permanent: true },
+        {
+          source: `/en/guides/${slug}`,
+          destination: `/en/situations/${slug}`,
+          permanent: true,
+        },
+        {
+          source: `/en/guides/${slug}/`,
+          destination: `/en/situations/${slug}`,
+          permanent: true,
+        }
+      );
+    }
+
+    return [...rules, ...situationRedirects];
   },
 };
 

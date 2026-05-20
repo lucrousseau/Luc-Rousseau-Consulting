@@ -1,0 +1,106 @@
+{
+  "seoTitle": "IA dans le produit : où, garde-fous et POC avant le build | Luc Rousseau",
+  "seoDescription": "IA dans votre produit (existant ou nouveau) : où ça a sa place, garde-fous, POC avant la prod — décisions produit et technique, pas hype.",
+  "hero": {
+    "badge": "IA & produit",
+    "title": "IA dans votre produit",
+    "lede": "<p><strong>L'IA est sur la table — que votre produit soit déjà en ligne ou en lancement.</strong> « Il faut de l'IA » dans le roadmap, l'agence propose une feature floue, l'équipe expérimente sans <strong>garde-fous</strong>. Risque : coûts, données, UX et dette — sans valeur métier claire.</p><p>Je travaille sur <strong>où l'IA a sa place</strong>, comment prototyper et tester vite, quels critères pour la prod — <strong>pas</strong> de hype, <strong>pas</strong> de boîte noire. Même fil : produit, architecture et exécution sur les sujets à levier.</p>",
+    "buy": {
+      "legend": "Cadrer l'IA dans votre produit",
+      "prefix": "— sans engagement",
+      "label": "Planifier un appel de 30 min"
+    }
+  },
+  "blocks": [
+    {
+      "type": "intro",
+      "badge": "Le piège",
+      "title": "Feature IA parce que le marché le demande",
+      "lede": "<p class=\"big\">Sans critères clairs, on shippe un chatbot ou un résumé automatique que <strong>personne n'utilise</strong>, ou qu'on ne peut pas maintenir. Les questions données, coût, qualité, repli si le modèle change — restent sans réponse jusqu'à l'incident.</p>"
+    },
+    {
+      "type": "cards",
+      "badge": "Ce que je fais",
+      "title": "Stratégie IA produit, pas labo parallèle",
+      "items": [
+        {
+          "title": "Où l'IA aide vraiment le produit",
+          "content": "<p>Cartographie des cas d'usage : gain utilisateur, fréquence, tolérance à l'erreur, <strong>alternative sans IA</strong> — pour dire non aux idées décoratives.</p>"
+        },
+        {
+          "title": "Garde-fous et critères prod",
+          "content": "<p>Données, confidentialité, coût par requête, repli, monitoring, revue humaine si besoin — <strong>écrits avant le build</strong>, pas après la première plainte.</p>"
+        },
+        {
+          "title": "POC et prototypes rapides",
+          "content": "<p>Tester hypothèses avec des POCs ou flows IA — <strong>avant</strong> d'engager l'équipe sur des mois de développement. Différent du guide PM : ici l'angle est <strong>produit + technique + risque</strong>.</p>"
+        },
+        {
+          "title": "Alignement avec l'architecture",
+          "content": "<p>Où vit la logique (API, async, cache), comment ça s'intègre au reste du SaaS — <strong>pas</strong> une brique collée à côté du produit.</p>"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "badge": "Comparer",
+      "title": "« On ajoute de l'IA » vs cadrage produit IA",
+      "intro": "Complète un besoin PM/PO ; ici le focus est décision technique et risque produit.",
+      "columnKeys": ["dimension", "hypeFirst", "framedFirst"],
+      "table": {
+        "headers": {
+          "dimension": "Dimension",
+          "hypeFirst": "Feature IA lancée vite",
+          "framedFirst": "Cadrage produit IA puis build ciblé"
+        },
+        "rows": [
+          {
+            "dimension": "Valeur",
+            "hypeFirst": "Difficile à mesurer ; démo impressionnante.",
+            "framedFirst": "Hypothèse et métrique définies avant le code."
+          },
+          {
+            "dimension": "Risque",
+            "hypeFirst": "Découvert en prod (données, coût, qualité).",
+            "framedFirst": "Garde-fous et repli définis en amont."
+          },
+          {
+            "dimension": "Delivery",
+            "hypeFirst": "Boîte noire prestataire ou expérimentation dispersée.",
+            "framedFirst": "POC → prérequis → build avec critères d'acceptation clairs."
+          },
+          {
+            "dimension": "Mon rôle",
+            "hypeFirst": "—",
+            "framedFirst": "Arbitrage produit-tech ; pas pilotage quotidien des devs."
+          }
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "badge": "Objections",
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "title": "Vous implémentez les modèles vous-même ?",
+          "content": "<p>Je peux monter des <strong>POCs et intégrations ciblées</strong> sur les sujets à fort levier ; le run long terme reste chez vous ou votre agence — avec une spec qu'ils peuvent exécuter.</p>"
+        },
+        {
+          "title": "On a déjà un guide / besoin PM pour les prototypes",
+          "content": "<p>Le guide PM couvre priorisation et rituels. Celui-ci couvre <strong>où l'IA a sa place, les risques et l'architecture</strong> — les deux se complètent si vous avez les deux besoins.</p>"
+        },
+        {
+          "title": "L'IA change trop vite — pourquoi planifier ?",
+          "content": "<p>Justement : les <strong>critères produit et garde-fous</strong> restent stables même quand le modèle change — c'est ce qui évite de tout refaire à chaque annonce OpenAI.</p>"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "trackSection": "situation-ia-produit",
+      "label": "Parler d'IA dans votre produit",
+      "teaser": "<p class=\"big\">Pression d'embarquer l'IA sans cadre ? Un appel pour voir où ça a du sens, comment prototyper, et ce qui mérite la prod.</p>"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+.section-situation-hero {
+  h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+.section-situation-block {
+  & + & {
+    margin-top: var(--section-gap, 3rem);
+  }
+}
+
+.section-situations-index {
+  .section__badge {
+    text-align: left;
+  }
+}

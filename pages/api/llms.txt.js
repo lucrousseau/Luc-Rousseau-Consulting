@@ -6,6 +6,7 @@
 
 import { apiRequireGet } from "../../utils/apiRequireGet";
 import { getSiteOrigin } from "../../utils/siteOrigin";
+import { SITUATIONS } from "../../commons/situationsManifest";
 
 export default function handler(req, res) {
   if (!apiRequireGet(req, res)) return;
@@ -25,6 +26,12 @@ Expertise: decoupled systems, APIs, and CMS platforms (WordPress headless when e
 
 - [Home (French)](${base}/): Main site in French
 - [Home (English)](${base}/en): English version
+- [Situations (French)](${base}/situations): Quiz to find the page that matches your context
+- [Situations (English)](${base}/en/situations): English situations index
+
+## Situations (audience pages)
+
+${SITUATIONS.map((s) => `- [${s.slug} (FR)](${base}/situations/${s.slug}) · [EN](${base}/en/situations/${s.slug})`).join("\n")}
 
 ## Contact
 
