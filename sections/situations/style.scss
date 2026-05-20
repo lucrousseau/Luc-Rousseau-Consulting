@@ -30,6 +30,39 @@
     --margin-top: 0;
     --margin-bottom: 0;
   }
+
+  .section-situation-block--split {
+    .situation-split__header {
+      text-align: center;
+    }
+
+    .situation-split__title {
+      margin: 0 0 1rem;
+    }
+
+    .situation-split__header p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .situation-split__header p + p {
+      margin-top: 0.85rem;
+    }
+
+    .situation-split__columns-label {
+      margin: 1.5rem 0 0;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .situation-split__header + .situation-split__terms {
+      margin-top: 1.15rem;
+    }
+
+    .situation-split__header:not(:has(.situation-split__columns-label)) + .situation-split__terms {
+      margin-top: 1.5rem;
+    }
+  }
 }
 
 .section-situation-hero {

@@ -1,0 +1,67 @@
+@use "../../styles/abstracts/variables" as *;
+
+.terms-two-column {
+  text-align: left;
+  width: 100%;
+}
+
+.terms-two-column__heading {
+  margin: 0;
+  font-weight: 600;
+}
+
+.terms-two-column__columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 0;
+
+  @media screen and (min-width: $sm) {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+}
+
+.terms-two-column__column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+
+  @media screen and (min-width: $sm) {
+    &:first-child {
+      padding-right: 2.5rem;
+      border-right: 1px solid rgb(0 0 0 / 6%);
+    }
+
+    &:last-child {
+      padding-left: 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: $sm) {
+    &:not(:last-child) {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgb(0 0 0 / 6%);
+    }
+  }
+}
+
+.terms-two-column p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.terms-two-column p + p {
+  margin-top: 0.85rem;
+}
+
+.terms-two-column__ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+.terms-two-column__ul li + li {
+  margin-top: 0.35rem;
+}

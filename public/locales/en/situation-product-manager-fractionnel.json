@@ -13,16 +13,28 @@
   },
   "blocks": [
     {
-      "type": "intro",
-      "badge": "The gap",
-      "title": "When developers wait on product decisions",
-      "lede": "<p class=\"big\">Without a PM or PO, the founder arbitrates between customer fires, tech debt, and « the next big feature ». Developers move tickets, but <strong>the why and the order</strong> stay implicit. Each quarter, the roadmap looks like a wish list, not a plan the team can hold.</p>"
-    },
-    {
-      "type": "intro",
-      "badge": "The profile",
-      "title": "Technical PM/PO: product, design, and code",
-      "lede": "<p class=\"big\">Not a generalist PM far from the codebase. I understand <strong>how things get built</strong>, what business logic demands, and what the experience must carry, through a <strong>designer → developer → product</strong> path. Credible with your devs, clear for the business; with AI, we can <strong>test hypotheses in days</strong>, not months of fuzzy specs.</p>"
+      "type": "split",
+      "sectionKey": "context",
+      "title": "Product context",
+      "intro": "<p class=\"big\">The team ships code; what's often missing is a <strong>clear product line</strong> between the roadmap and the sprint. Two useful reads before rhythm and responsibilities.</p>",
+      "panels": [
+        {
+          "heading": "When developers wait on product decisions",
+          "items": [
+            "The founder arbitrates between customer fires, tech debt, and « the next big feature »",
+            "Devs move tickets without an explicit why or order",
+            "Each quarter, the roadmap looks like a wish list, not a plan the team can hold"
+          ]
+        },
+        {
+          "heading": "Technical PM/PO: product, design, and code",
+          "items": [
+            "Designer → developer → product path, not a generalist PM far from the codebase",
+            "Credible with devs, clear for the business each quarter",
+            "AI to test hypotheses in days, not months of fuzzy specs"
+          ]
+        }
+      ]
     },
     {
       "type": "cards",
@@ -114,29 +126,19 @@
       "badge": "How I build",
       "title": "Technical foundations",
       "lede": "<p class=\"big\"><strong>Technical PM/PO</strong>: product, design, business logic, and stack aligned with your developers, AI prototypes before build.</p>",
-      "groups": [
-        {
-          "badge": "Product",
-          "items": [
-            "Product and design lens (creative background)",
-            "AI prototypes and clickable flows",
-            "Prerequisites and acceptance criteria",
-            "Backlog structured for developers",
-            "Quarterly roadmap and trade-offs",
-            "Ceremonies and rituals with the dev team",
-            "Debt and risks visible to product"
-          ]
-        },
-        {
-          "badge": "Technical",
-          "items": [
-            "APIs and dependencies mapped",
-            "Third-party integrations scoped",
-            "Laravel · React · Next.js as in your stack",
-            "Technical feasibility assessment",
-            "JavaScript · PHP"
-          ]
-        }
+      "items": [
+        "Product and design lens (creative background)",
+        "AI prototypes and clickable flows",
+        "Prerequisites and acceptance criteria",
+        "Backlog structured for developers",
+        "Quarterly roadmap and trade-offs",
+        "Ceremonies and rituals with the dev team",
+        "Debt and risks visible to product",
+        "APIs and dependencies mapped",
+        "Third-party integrations scoped",
+        "Laravel · React · Next.js as in your stack",
+        "Technical feasibility assessment",
+        "JavaScript · PHP"
       ],
       "background": "rome"
     },

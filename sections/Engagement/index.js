@@ -6,6 +6,7 @@ import Container from "../../components/Layout/Container";
 import SectionIntro from "../../components/SectionIntro";
 import SectionCta from "../../components/SectionCta";
 import ProductGrid from "../../components/ProductGrid";
+import TermsTwoColumn from "../../components/TermsTwoColumn";
 import {
   homeBlockRowStyle,
   homeIntroRowStyle,
@@ -77,28 +78,13 @@ export default function Engagement({ cta }) {
                     ))}
                   </ul>
                 </div>
-                <div className="engagement__terms-columns">
-                  <div className="engagement__terms-column">
-                    <h4 className="h4 engagement__terms-subheading">
-                      {t("engagement:termsIncludedHeading")}
-                    </h4>
-                    <ul className="engagement__terms-ul">
-                      {includedList.map((line) => (
-                        <li key={line}>{line}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="engagement__terms-column">
-                    <h4 className="h4 engagement__terms-subheading">
-                      {t("engagement:termsExcludedHeading")}
-                    </h4>
-                    <ul className="engagement__terms-ul">
-                      {excludedList.map((line) => (
-                        <li key={line}>{line}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+                <TermsTwoColumn
+                  className="engagement__terms-two-column"
+                  columns={[
+                    { heading: t("engagement:termsIncludedHeading"), items: includedList },
+                    { heading: t("engagement:termsExcludedHeading"), items: excludedList },
+                  ]}
+                />
                 {parse(t("engagement:termsFootnote"))}
               </div>
             ),

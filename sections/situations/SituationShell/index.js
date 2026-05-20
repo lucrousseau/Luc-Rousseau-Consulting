@@ -20,6 +20,7 @@ import TechnicalStack from "../../TechnicalStack";
 import SituationHero from "../SituationHero";
 import SituationGroups from "../SituationGroups";
 import SituationSection from "../SituationSection";
+import SituationSplit from "../SituationSplit";
 import { situationBlockClassName } from "../situationBlockClassName";
 
 function hasGroups(block) {
@@ -34,6 +35,13 @@ function SituationBlock({ block, scheduleCta }) {
   switch (block.type) {
     case "intro":
       return <SituationSection block={block}>{null}</SituationSection>;
+
+    case "split":
+      return (
+        <Container className={situationBlockClassName(block)} align="center" halign="center">
+          <SituationSplit block={block} />
+        </Container>
+      );
 
     case "highlights":
       return (

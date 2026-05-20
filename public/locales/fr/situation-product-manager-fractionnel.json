@@ -13,16 +13,28 @@
   },
   "blocks": [
     {
-      "type": "intro",
-      "badge": "Le vide",
-      "title": "Quand les devs attendent des décisions produit",
-      "lede": "<p class=\"big\">Sans PM ou PO, le fondateur arbitre entre urgences client, dette technique et « la prochaine grosse feature ». Les développeurs avancent sur des tickets, mais <strong>le pourquoi et l'ordre</strong> restent implicites. Au trimestre, la roadmap ressemble à une liste de souhaits, pas à un plan qu'on peut tenir.</p>"
-    },
-    {
-      "type": "intro",
-      "badge": "Le profil",
-      "title": "PM/PO technique : produit, design et code",
-      "lede": "<p class=\"big\">Pas un PM généraliste éloigné du terrain. Je comprends <strong>comment ça se build</strong>, ce que la logique métier impose, et ce que l'expérience utilisateur doit porter, grâce à un parcours <strong>designer → développeur → produit</strong>. Pour vos devs, c'est crédible ; pour le business, c'est lisible ; avec l'IA, on peut <strong>tester des hypothèses en jours</strong>, pas en mois de specs floues.</p>"
+      "type": "split",
+      "sectionKey": "context",
+      "title": "Le contexte produit",
+      "intro": "<p class=\"big\">L'équipe livre du code ; il manque souvent une <strong>ligne produit claire</strong> entre la roadmap et le sprint. Deux lectures utiles avant de parler rythme et responsabilités.</p>",
+      "panels": [
+        {
+          "heading": "Quand les devs attendent des décisions produit",
+          "items": [
+            "Le fondateur arbitre entre urgences client, dette technique et « la prochaine grosse feature »",
+            "Les devs avancent sur des tickets sans pourquoi ni ordre explicites",
+            "Au trimestre, la roadmap ressemble à une liste de souhaits, pas à un plan tenable"
+          ]
+        },
+        {
+          "heading": "PM/PO technique : produit, design et code",
+          "items": [
+            "Parcours designer → développeur → produit, pas un PM généraliste loin du terrain",
+            "Crédible avec les devs, lisible pour le business au trimestre",
+            "IA pour tester des hypothèses en jours, pas des mois de specs floues"
+          ]
+        }
+      ]
     },
     {
       "type": "cards",
@@ -114,29 +126,19 @@
       "badge": "Comment je construis",
       "title": "Fondations techniques",
       "lede": "<p class=\"big\"><strong>PM/PO technique</strong> : produit, design, logique métier et stack alignée avec vos devs, prototypes IA avant le build.</p>",
-      "groups": [
-        {
-          "badge": "Produit",
-          "items": [
-            "Vision produit et design (parcours créatif)",
-            "Prototypes IA et flows cliquables",
-            "Prérequis et critères d'acceptation",
-            "Backlog structuré pour les devs",
-            "Roadmap trimestre et arbitrages",
-            "Cérémonies et rituels avec l'équipe dev",
-            "Dette et risques visibles côté produit"
-          ]
-        },
-        {
-          "badge": "Technique",
-          "items": [
-            "APIs et dépendances cartographiées",
-            "Intégrations tierces cadrées",
-            "Laravel · React · Next.js selon l'existant",
-            "Évaluation faisabilité technique",
-            "JavaScript · PHP"
-          ]
-        }
+      "items": [
+        "Vision produit et design (parcours créatif)",
+        "Prototypes IA et flows cliquables",
+        "Prérequis et critères d'acceptation",
+        "Backlog structuré pour les devs",
+        "Roadmap trimestre et arbitrages",
+        "Cérémonies et rituels avec l'équipe dev",
+        "Dette et risques visibles côté produit",
+        "APIs et dépendances cartographiées",
+        "Intégrations tierces cadrées",
+        "Laravel · React · Next.js selon l'existant",
+        "Évaluation faisabilité technique",
+        "JavaScript · PHP"
       ],
       "background": "rome"
     },
