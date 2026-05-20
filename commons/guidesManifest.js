@@ -20,6 +20,26 @@ export const GUIDES = [
     namespace: "guide-product-manager-fractionnel",
     publishedAt: "2026-05-20",
   },
+  {
+    slug: "refonte-produit-par-phases",
+    namespace: "guide-refonte-produit-par-phases",
+    publishedAt: "2026-05-20",
+  },
+  {
+    slug: "plateforme-editoriale-produit",
+    namespace: "guide-plateforme-editoriale-produit",
+    publishedAt: "2026-05-20",
+  },
+  {
+    slug: "mvp-saas-faisabilite",
+    namespace: "guide-mvp-saas-faisabilite",
+    publishedAt: "2026-05-20",
+  },
+  {
+    slug: "ia-produit-garde-fous",
+    namespace: "guide-ia-produit-garde-fous",
+    publishedAt: "2026-05-20",
+  },
 ];
 
 /**

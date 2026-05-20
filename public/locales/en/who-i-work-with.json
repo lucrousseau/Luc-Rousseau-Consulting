@@ -40,6 +40,26 @@
     {
       "slug": "dev-unique-backup",
       "label": "One developer owns all the tech →"
+    },
+    {
+      "slug": "product-manager-fractionnel",
+      "label": "PM or PO need without full-time →"
+    },
+    {
+      "slug": "refonte-produit-par-phases",
+      "label": "Phased product rebuild →"
+    },
+    {
+      "slug": "plateforme-editoriale-produit",
+      "label": "Editorial product platform →"
+    },
+    {
+      "slug": "mvp-saas-faisabilite",
+      "label": "Launching a SaaS or MVP →"
+    },
+    {
+      "slug": "ia-produit-garde-fous",
+      "label": "AI in your product →"
     }
   ],
   "guides-index-label": "All guides"

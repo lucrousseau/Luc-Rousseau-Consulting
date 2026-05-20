@@ -1,0 +1,106 @@
+{
+  "seoTitle": "Plateforme éditoriale produit : comparateurs, blocs, APIs | Luc Rousseau",
+  "seoDescription": "Produit à fort volet contenu et parcours métier — pas un site vitrine : modèle de blocs, CMS comme plateforme, APIs et multi-marches sans intégrations ad hoc.",
+  "hero": {
+    "badge": "Produit éditorial",
+    "title": "Quand le produit, c'est le contenu et les parcours — pas une vitrine",
+    "lede": "<p>Vous opérez un <strong>comparateur</strong>, un réseau multi-marques, un parcours métier riche ou une plateforme où <strong>l'édition livre le produit</strong> chaque semaine. Ce n'est pas un site corporate qu'on refait tous les trois ans : c'est un système où contenu, règles métier et technique doivent tenir ensemble.</p><p>Je travaille sur ce type de <strong>plateforme produit</strong> : modèle de blocs durable (dont Gutenberg quand WordPress est l'épine dorsale), APIs et frontières claires, headless si le débit éditorial ou multi-surface le justifie — <strong>moins d'intégrations sur mesure à chaque lancement</strong>, sans confondre avec une agence « site vitrine ».</p>",
+    "buy": {
+      "legend": "Parler de votre plateforme",
+      "prefix": "— sans engagement",
+      "label": "Planifier un appel de 30 min"
+    }
+  },
+  "blocks": [
+    {
+      "type": "intro",
+      "badge": "Le piège",
+      "title": "Chaque campagne = une intégration custom",
+      "lede": "<p class=\"big\">L'équipe éditoriale veut de la vitesse ; la technique accumule des <strong>one-offs</strong> : HTML ad hoc, plugins fragiles, silos par marché. Le « produit » devient impossible à faire évoluer sans casser la prod ou retarder chaque lancement.</p>"
+    },
+    {
+      "type": "cards",
+      "badge": "Ce que je construis avec vous",
+      "title": "Plateforme, pas page web",
+      "items": [
+        {
+          "title": "Modèle de blocs et parcours répétables",
+          "content": "<p>Patterns Gutenberg (ou équivalent) pour des parcours de comparaison, landings produit, modules métier — <strong>l'édition compose</strong>, la tech stabilise les briques.</p>"
+        },
+        {
+          "title": "API et fondation centralisée",
+          "content": "<p>Données, contenu, règles partagées entre marques ou marchés — <strong>un système à opérer</strong>, pas un site par pays recâblé à la main.</p>"
+        },
+        {
+          "title": "Headless ou couplé — selon le produit",
+          "content": "<p>WordPress headless, Laravel, front React/Vue : le choix suit le <strong>débit éditorial et les surfaces</strong>, pas la mode stack.</p>"
+        },
+        {
+          "title": "Releases et perf accrochées au business",
+          "content": "<p>CI/CD, cache, discipline de release — les gains vont où l'<strong>édition et le revenu</strong> en ont besoin, pas en projets tech isolés.</p>"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "badge": "Comparer",
+      "title": "Agence site web vs plateforme produit éditoriale",
+      "intro": "Si votre enjeu est une vitrine ou une campagne ponctuelle, ce n'est pas le bon fit.",
+      "columnKeys": ["dimension", "vitrineAgency", "productPlatform"],
+      "table": {
+        "headers": {
+          "dimension": "Dimension",
+          "vitrineAgency": "Agence site / vitrine / campagne",
+          "productPlatform": "Accompagnement plateforme produit éditoriale"
+        },
+        "rows": [
+          {
+            "dimension": "Objet",
+            "vitrineAgency": "Pages, branding, lancement ponctuel.",
+            "productPlatform": "Comparateur, parcours métier, contenu récurrent à l'échelle."
+          },
+          {
+            "dimension": "Évolution",
+            "vitrineAgency": "Refonte tous les N ans.",
+            "productPlatform": "Blocs, APIs et modèle éditorial qui absorbent les lancements."
+          },
+          {
+            "dimension": "Multi-marche",
+            "vitrineAgency": "Duplication de sites.",
+            "productPlatform": "Fondation partagée, marchés comme variantes du même système."
+          },
+          {
+            "dimension": "Mon rôle",
+            "vitrineAgency": "Hors périmètre.",
+            "productPlatform": "Architecture, produit, livraison sur le fil — pas direction d'équipe dev."
+          }
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "badge": "Objections",
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "title": "On est déjà sur WordPress — faut-il tout jeter ?",
+          "content": "<p>Souvent non. On <strong>extrait et structure</strong> : blocs, API, migration par tranches — comme sur des réseaux multi-sites déjà en production, sans big bang.</p>"
+        },
+        {
+          "title": "Ce n'est pas juste du « CMS marketing » ?",
+          "content": "<p>Quand le CMS est le <strong>moteur du produit</strong> (édition à haute fréquence, parcours complexes), c'est de l'ingénierie produit — pas une plaquette. Je traite le débit éditorial comme contrainte de première classe.</p>"
+        },
+        {
+          "title": "Vous managez notre équipe éditoriale ou dev ?",
+          "content": "<p>Non. Je clarifie le <strong>système et les standards</strong> ; vos équipes gardent leurs rôles. Je facilite les arbitrages produit-tech quand ça bloque la livraison.</p>"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "trackSection": "guide-plateforme-editoriale",
+      "label": "Discuter de votre plateforme éditoriale",
+      "teaser": "<p class=\"big\">Comparateur, multi-marques ou parcours contenu complexe ? Un appel pour voir si une plateforme produit — pas une refonte vitrine — correspond à votre contexte.</p>"
+    }
+  ]
+}

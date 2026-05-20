@@ -1,9 +1,9 @@
 {
   "seoTitle": "Guides — Luc Rousseau, Product Engineer",
-  "seoDescription": "Audience-specific pages: first dev hire, solo technical owner, or PM/PO need for prioritization and team rituals. Practical advice and how I can help.",
+  "seoDescription": "Audience guides: funding and first dev, solo dev, PM/PO, phased rebuild, editorial platform, SaaS MVP, product AI. Practical advice and how I can help.",
   "badge": "Guides",
   "title": "Who it's for, and how I can help",
-  "lede": "<p class=\"big\">Every context has its traps. These pages cover three common situations — and why a fractional partnership can beat a rushed hire or a « we'll deal with it later ».</p>",
+  "lede": "<p class=\"big\">Every context has its traps. These pages cover common situations — and why fractional or phased senior support can beat a rushed hire or a « we'll deal with it later ».</p>",
   "guides": {
     "premier-dev-fractionnel": {
       "title": "After your first raise: before hiring a full-time developer",
@@ -16,6 +16,22 @@
     "product-manager-fractionnel": {
       "title": "You're looking for a Product Manager or Product Owner",
       "teaser": "Real PM need without full-time: about four days per week as half-days, full days to prototype and validate, prioritization and dev ceremonies."
+    },
+    "refonte-produit-par-phases": {
+      "title": "Product rebuild or stack change",
+      "teaser": "Feasibility, phasing, and architecture without big bang — without becoming tech lead or running your devs day to day."
+    },
+    "plateforme-editoriale-produit": {
+      "title": "Editorial product at scale (comparator, multi-brand)",
+      "teaser": "Content and business-journey product — not a brochure site: blocks, APIs, headless when relevant, fewer ad-hoc integrations per launch."
+    },
+    "mvp-saas-faisabilite": {
+      "title": "Launching a SaaS or MVP",
+      "teaser": "Phased framing before big spend: feasibility, stack, prototypes, and prerequisites for your agency or devs."
+    },
+    "ia-produit-garde-fous": {
+      "title": "AI in your product",
+      "teaser": "Where AI fits, guardrails, and POC before build — product and technical decisions, not hype or black box."
     }
   }
 }

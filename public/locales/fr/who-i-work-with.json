@@ -40,6 +40,26 @@
     {
       "slug": "dev-unique-backup",
       "label": "Un seul dev porte tout le technique →"
+    },
+    {
+      "slug": "product-manager-fractionnel",
+      "label": "Besoin de PM ou PO sans temps plein →"
+    },
+    {
+      "slug": "refonte-produit-par-phases",
+      "label": "Refonte produit par phases →"
+    },
+    {
+      "slug": "plateforme-editoriale-produit",
+      "label": "Plateforme éditoriale (comparateur, multi-marques) →"
+    },
+    {
+      "slug": "mvp-saas-faisabilite",
+      "label": "Lancer un SaaS ou MVP →"
+    },
+    {
+      "slug": "ia-produit-garde-fous",
+      "label": "IA dans le produit →"
     }
   ],
   "guides-index-label": "Tous les guides"
