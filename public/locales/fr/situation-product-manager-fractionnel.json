@@ -1,10 +1,10 @@
 {
   "seoTitle": "Product Manager ou Product Owner : priorisation, IA et cérémonies | Luc Rousseau",
-  "seoDescription": "PM/PO technique en fractionnel : produit, design, code et prototypes IA, priorités et cérémonies avec les devs, environ quatre jours par semaine.",
+  "seoDescription": "PM/PO technique en fractionnel : demi-journées en régulier, journée complète au besoin, priorités, prérequis et cérémonies avec les devs.",
   "hero": {
     "badge": "Produit & delivery",
     "title": "Besoin de PM ou PO, sans temps plein",
-    "lede": "<p><strong>Vous avez besoin d'un PM ou PO, sans embauche à 40 h.</strong> L'équipe code ; il manque <strong>priorisation au trimestre</strong>, des prérequis clairs, des rituels avec les devs et des hypothèses testées avant le build. Ce n'est pas « trop tôt pour un PM », c'est <strong>trop lourd ou trop rigide en temps plein</strong>.</p><p>Je joue le rôle en <strong>PM/PO technique</strong> : développement, logique métier, enjeux tech, et <strong>lecture produit</strong> (parcours designer, puis dev, puis leadership produit). À l'ère de l'IA, ce combo est un vrai levier pour prototyper, cadrer et arbitrer sans perdre votre équipe.</p><p>Ça tient en <strong>fractionnel dense</strong> : environ <strong>quatre jours par semaine</strong>, souvent en <strong>demi-journées</strong> (stand-up le matin, backlog ou prérequis l'après-midi), et des <strong>journées complètes</strong> pour évaluer, prototyper ou faire valider avant d'engager l'équipe dev.</p>",
+    "lede": "<p><strong>Vous avez besoin d'un PM ou PO, sans embauche à 40 h.</strong> L'équipe code ; il manque <strong>priorisation au trimestre</strong>, des prérequis clairs, des rituels avec les devs et des hypothèses testées avant le build. Ce n'est pas « trop tôt pour un PM », c'est <strong>trop lourd ou trop rigide en temps plein</strong>.</p><p>Je joue le rôle en <strong>PM/PO technique</strong> : développement, logique métier, enjeux tech, et <strong>lecture produit</strong> (parcours designer, puis dev, puis leadership produit). À l'ère de l'IA, ce combo est un vrai levier pour prototyper, cadrer et arbitrer sans perdre votre équipe.</p><p>Ça tient en <strong>fractionnel</strong> : d'abord des <strong>demi-journées</strong> calées sur vos rituels (stand-up, backlog, prérequis), environ <strong>quatre demi-journées par semaine</strong> ou moins selon la phase, et une <strong>journée complète au besoin</strong> (en pratique, au plus une fois par semaine) pour prototyper ou valider avant d'engager l'équipe dev.</p>",
     "buy": {
       "legend": "Clarifier votre besoin produit",
       "prefix": "Sans engagement",
@@ -40,15 +40,15 @@
       "type": "cards",
       "badge": "Le rythme",
       "title": "Comment couvrir un PM sans temps plein",
-      "lede": "<p class=\"big\">Environ <strong>quatre jours par semaine</strong>, en demi-journées ou journées pleines selon ce qu'il faut couvrir, sans embaucher un poste fixe à 40 h.</p>",
+      "lede": "<p class=\"big\">Pas un rythme « quatre jours pleins par semaine » : des <strong>demi-journées</strong> en base, et une <strong>journée complète</strong> quand il faut aller plus loin, sans poste fixe à 40 h.</p>",
       "items": [
         {
-          "title": "Environ quatre jours par semaine, en demi-journées",
-          "content": "<p>Stand-up le matin, revue de backlog l'après-midi, atelier prérequis, sync trimestre : le calendrier s'adapte à <strong>votre équipe</strong>, sans cinquième jour fixe en interne.</p>"
+          "title": "Demi-journées en régulier (~4 par semaine, ou moins)",
+          "content": "<p>Stand-up le matin, revue de backlog l'après-midi, atelier prérequis, sync trimestre : le calendrier s'adapte à <strong>votre équipe</strong>. En pratique, environ quatre demi-journées par semaine, parfois moins si la phase le permet.</p>"
         },
         {
-          "title": "Journées complètes quand il faut aller plus loin",
-          "content": "<p>Quand <strong>plusieurs hypothèses ou fonctionnalités</strong> doivent être évaluées, prototypées ou testées avant le build : prototypes IA, flows cliquables, POCs, pour valider vite, pas pour remplacer la livraison en prod.</p>"
+          "title": "Journée complète au besoin, pas en routine",
+          "content": "<p>Quand <strong>plusieurs hypothèses ou fonctionnalités</strong> doivent être évaluées, prototypées ou testées avant le build : prototypes IA, flows cliquables, POCs. En pratique, <strong>au plus une journée pleine par semaine</strong>, pas quatre jours complets en continu.</p>"
         },
         {
           "title": "PM/PO technique senior, pas salarié",
@@ -83,20 +83,20 @@
     {
       "type": "comparison",
       "badge": "Comparer",
-      "title": "PM/PO à temps plein vs accompagnement fractionnel dense",
+      "title": "PM/PO à temps plein vs accompagnement fractionnel",
       "intro": "Ordres de grandeur, le calendrier exact (demi-journées vs journées pleines) se cale à l'appel.",
       "columnKeys": ["dimension", "fullTimePm", "fractionalLead"],
       "table": {
         "headers": {
           "dimension": "Dimension",
           "fullTimePm": "PM ou PO à temps plein",
-          "fractionalLead": "PM/PO technique, produit-développeur senior (~4 j. / sem., demi-j. + journées pleines au besoin)"
+          "fractionalLead": "PM/PO technique, produit-développeur senior (~4 demi-j. / sem., 1 journée pleine max au besoin)"
         },
         "rows": [
           {
             "dimension": "Présence hebdomadaire",
             "fullTimePm": "5 jours ; poste fixe même les semaines plus calmes.",
-            "fractionalLead": "~4 jours par semaine (souvent en demi-journées) ; journées complètes quand il faut prototyper ou valider en profondeur."
+            "fractionalLead": "~4 demi-journées par semaine en régulier (ou moins) ; journée complète ponctuelle (en pratique, au plus une fois par semaine) pour prototyper ou valider."
           },
           {
             "dimension": "Compréhension technique",
@@ -153,11 +153,11 @@
         },
         {
           "title": "Pourquoi des demi-journées plutôt que des journées entières ?",
-          "content": "<p>Pour <strong>coller au rythme réel</strong> : stand-up et déblocage le matin, ateliers prérequis ou priorisation l'après-midi, sans payer une journée pleine quand une demi-journée suffit. Les journées complètes arrivent quand le volume de validation ou de prototypage le justifie.</p>"
+          "content": "<p>Pour <strong>coller au rythme réel</strong> : stand-up et déblocage le matin, ateliers prérequis ou priorisation l'après-midi, sans payer une journée pleine quand une demi-journée suffit. Une journée complète arrive au besoin, en pratique <strong>au plus une fois par semaine</strong>, pas en routine.</p>"
         },
         {
-          "title": "Quatre jours par semaine, ce n'est pas presque un temps plein ?",
-          "content": "<p>C'est une <strong>charge produit importante</strong>, volontairement, parce que le besoin est réel. La différence avec un salarié : pas de charges employeur, calendrier flexible (demi-journées vs journées pleines), et possibilité d'ajuster l'intensité selon la phase (discovery vs exécution stable).</p>"
+          "title": "Quatre demi-journées par semaine, ce n'est pas presque un temps plein ?",
+          "content": "<p>Non : ce n'est pas <strong>quatre jours pleins chaque semaine</strong>, ce rythme je le refuse. En équivalent, environ deux jours de présence, découpés en demi-journées ciblées. La différence avec un salarié : pas de charges employeur, calendrier ajustable, et une journée pleine seulement quand le prototypage ou la validation l'exige.</p>"
         },
         {
           "title": "En quoi un PM/PO « technique » change la donne ?",
@@ -173,7 +173,7 @@
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",
-          "content": "<p>Le rythme convenu (ex. environ quatre jours par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Si une urgence survient en dehors des jours prévus, je reste joignable et j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais), pas une astreinte 24/7 floue.</p>"
+          "content": "<p>Le rythme convenu (ex. demi-journées calées sur vos rituels) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Si une urgence survient en dehors des créneaux prévus, je reste joignable et j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais), pas une astreinte 24/7 floue.</p>"
         }
       ]
     },
@@ -182,7 +182,7 @@
       "badge": "Prochaine étape",
       "trackSection": "situation-product-manager",
       "label": "Discuter besoin PM/PO",
-      "teaser": "<p class=\"big\">Besoin d'un PM/PO technique sans temps plein ? Un appel de 30 minutes suffit pour voir si environ quatre jours par semaine, produit + code + prototypes IA, correspond à votre équipe.</p>"
+      "teaser": "<p class=\"big\">Besoin d'un PM/PO technique sans temps plein ? Un appel de 30 minutes suffit pour voir si demi-journées en régulier, journée complète au besoin, produit + code + prototypes IA, correspond à votre équipe.</p>"
     }
   ]
 }

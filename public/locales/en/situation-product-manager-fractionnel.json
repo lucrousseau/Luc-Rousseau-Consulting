@@ -1,10 +1,10 @@
 {
   "seoTitle": "Product Manager or Product Owner: prioritization, AI, ceremonies | Luc Rousseau",
-  "seoDescription": "Technical PM/PO fractional: product, design, code, and AI prototypes, priorities and dev ceremonies, about four days per week.",
+  "seoDescription": "Technical PM/PO fractional: regular half-days, full day when needed, priorities, prerequisites, and dev ceremonies.",
   "hero": {
     "badge": "Product & delivery",
     "title": "PM or PO need, without full-time",
-    "lede": "<p><strong>You need a PM or PO, without a 40-hour hire.</strong> The team ships code; what's missing is <strong>quarterly prioritization</strong>, clear prerequisites, dev rituals, and hypotheses tested before build. It's not « too early for a PM », it's <strong>too heavy or too rigid full-time</strong>.</p><p>I work as a <strong>technical PM/PO</strong>: development, business logic, technical trade-offs, and <strong>product sense</strong> (background in design, then engineering, then product leadership). In the AI era, that combination is a real edge to frame, prototype, and decide without losing your team.</p><p>That fits as <strong>dense fractional support</strong>: about <strong>four days per week</strong>, often as <strong>half-days</strong> (stand-up in the morning, backlog or prerequisites in the afternoon), plus <strong>full days</strong> to evaluate, prototype, or validate before the dev team commits.</p>",
+    "lede": "<p><strong>You need a PM or PO, without a 40-hour hire.</strong> The team ships code; what's missing is <strong>quarterly prioritization</strong>, clear prerequisites, dev rituals, and hypotheses tested before build. It's not « too early for a PM », it's <strong>too heavy or too rigid full-time</strong>.</p><p>I work as a <strong>technical PM/PO</strong>: development, business logic, technical trade-offs, and <strong>product sense</strong> (background in design, then engineering, then product leadership). In the AI era, that combination is a real edge to frame, prototype, and decide without losing your team.</p><p>That fits as <strong>fractional support</strong>: <strong>half-days</strong> first, aligned to your rituals (stand-up, backlog, prerequisites), about <strong>four half-days per week</strong> or fewer depending on phase, plus a <strong>full day when needed</strong> (in practice, at most once a week) to prototype or validate before the dev team commits.</p>",
     "buy": {
       "legend": "Clarify your product need",
       "prefix": "No commitment",
@@ -40,15 +40,15 @@
       "type": "cards",
       "badge": "The rhythm",
       "title": "Covering a PM without full-time",
-      "lede": "<p class=\"big\">About <strong>four days per week</strong>, as half-days or full days depending on what needs coverage, without hiring a fixed 40-hour role.</p>",
+      "lede": "<p class=\"big\">Not a « four full days per week » rhythm: <strong>half-days</strong> as the default, and a <strong>full day</strong> when you need to go deeper, without a fixed 40-hour role.</p>",
       "items": [
         {
-          "title": "About four days per week, as half-days",
-          "content": "<p>Stand-up in the morning, backlog review in the afternoon, prerequisite workshops, quarter sync: the calendar fits <strong>your team</strong>, without a fixed fifth in-house day.</p>"
+          "title": "Regular half-days (~4 per week, or fewer)",
+          "content": "<p>Stand-up in the morning, backlog review in the afternoon, prerequisite workshops, quarter sync: the calendar fits <strong>your team</strong>. In practice, about four half-days per week, sometimes fewer when the phase allows.</p>"
         },
         {
-          "title": "Full days when you need to go deeper",
-          "content": "<p>When <strong>several hypotheses or features</strong> must be evaluated, prototyped, or tested before build: AI prototypes, clickable flows, light POCs, to validate fast, not to replace production delivery.</p>"
+          "title": "Full day when needed, not by default",
+          "content": "<p>When <strong>several hypotheses or features</strong> must be evaluated, prototyped, or tested before build: AI prototypes, clickable flows, light POCs. In practice, <strong>at most one full day per week</strong>, not four full days every week.</p>"
         },
         {
           "title": "Senior technical PM/PO, not an employee",
@@ -83,20 +83,20 @@
     {
       "type": "comparison",
       "badge": "Compare",
-      "title": "Full-time PM/PO vs dense fractional support",
+      "title": "Full-time PM/PO vs fractional support",
       "intro": "Ballpark, exact calendar (half-days vs full days) is set on a call.",
       "columnKeys": ["dimension", "fullTimePm", "fractionalLead"],
       "table": {
         "headers": {
           "dimension": "Dimension",
           "fullTimePm": "Full-time PM or PO",
-          "fractionalLead": "Technical PM/PO, senior product engineer (~4 days / week, half-days + full days as needed)"
+          "fractionalLead": "Technical PM/PO, senior product engineer (~4 half-days / week, 1 full day max when needed)"
         },
         "rows": [
           {
             "dimension": "Weekly presence",
             "fullTimePm": "5 days; fixed role even in quieter weeks.",
-            "fractionalLead": "~4 days per week (often as half-days); full days when deep prototyping or validation is needed."
+            "fractionalLead": "~4 half-days per week as the default (or fewer); occasional full day (in practice, at most once a week) for prototyping or validation."
           },
           {
             "dimension": "Technical fluency",
@@ -153,11 +153,11 @@
         },
         {
           "title": "Why half-days instead of full days?",
-          "content": "<p>To <strong>match real rhythm</strong>: stand-up and unblocking in the morning, prerequisite or prioritization workshops in the afternoon, without paying a full day when a half-day is enough. Full days come when validation or prototyping volume warrants it.</p>"
+          "content": "<p>To <strong>match real rhythm</strong>: stand-up and unblocking in the morning, prerequisite or prioritization workshops in the afternoon, without paying a full day when a half-day is enough. A full day lands when needed, in practice <strong>at most once a week</strong>, not as a routine.</p>"
         },
         {
-          "title": "Four days a week, isn't that almost full-time?",
-          "content": "<p>It's <strong>substantial product capacity</strong>, on purpose, because the need is real. Versus an employee: no employer costs, flexible calendar (half-days vs full days), and ability to adjust intensity by phase (discovery vs steady execution).</p>"
+          "title": "Four half-days a week, isn't that almost full-time?",
+          "content": "<p>No: it's not <strong>four full days every week</strong>, that rhythm I turn down. Roughly two days of presence, split into focused half-days. Versus an employee: no employer costs, adjustable calendar, and a full day only when prototyping or validation warrants it.</p>"
         },
         {
           "title": "What does a « technical » PM/PO change?",
@@ -173,7 +173,7 @@
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
-          "content": "<p>The agreed rhythm (e.g. about four days a week) structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. If an emergency lands outside scheduled days, I stay reachable and step in under a <strong>shared urgency frame</strong> we define up front (scope, priority, response time), not a vague 24/7 on-call promise.</p>"
+          "content": "<p>The agreed rhythm (e.g. half-days aligned to your rituals) structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. If an emergency lands outside scheduled slots, I stay reachable and step in under a <strong>shared urgency frame</strong> we define up front (scope, priority, response time), not a vague 24/7 on-call promise.</p>"
         }
       ]
     },
@@ -182,7 +182,7 @@
       "badge": "Next step",
       "trackSection": "situation-product-manager",
       "label": "Discuss PM/PO need",
-      "teaser": "<p class=\"big\">Need a technical PM/PO without full-time? A 30-minute call is enough to see if about four days per week, product + code + AI prototypes, fits your team.</p>"
+      "teaser": "<p class=\"big\">Need a technical PM/PO without full-time? A 30-minute call is enough to see if regular half-days, full day when needed, product + code + AI prototypes, fits your team.</p>"
     }
   ]
 }
