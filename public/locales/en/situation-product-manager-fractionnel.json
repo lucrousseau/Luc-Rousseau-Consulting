@@ -19,26 +19,14 @@
       "lede": "<p class=\"big\">Without a PM or PO, the founder arbitrates between customer fires, tech debt, and « the next big feature ». Developers move tickets, but <strong>the why and the order</strong> stay implicit. Each quarter, the roadmap looks like a wish list, not a plan the team can hold.</p>"
     },
     {
-      "type": "cards",
+      "type": "intro",
       "badge": "The rhythm",
       "title": "Covering a PM without full-time",
-      "items": [
-        {
-          "title": "About four days per week, as half-days",
-          "content": "<p>Stand-up in the morning, backlog review in the afternoon, prerequisite workshops, quarter sync, the rhythm fits <strong>your team calendar</strong>. Four days of product presence, split into half-days when that's more efficient, without hiring a fixed fifth day in-house.</p>"
-        },
-        {
-          "title": "Full days when you need to go deeper",
-          "content": "<p>When <strong>several hypotheses or features</strong> must be evaluated, prototyped, or tested before build, we stack full days: AI prototypes, clickable flows, light POCs, to validate fast, not to replace production delivery.</p>"
-        },
-        {
-          "title": "Not an employee, a senior partner",
-          "content": "<p>Same person for <strong>prioritization, prerequisites, and technical judgment</strong>, no handoff between « the PM » and « someone who gets the code ». Scope and rhythm adjustable without hiring or layoffs.</p>"
-        }
-      ]
+      "lede": "<p class=\"big\">About <strong>four days per week</strong>, often as half-days (stand-up in the morning, backlog or prerequisites in the afternoon), plus <strong>full days</strong> when you need deeper prototyping or validation.</p><p><strong>Half-days aligned to your team.</strong> Stand-up, backlog review, prerequisite workshops, quarter sync: the calendar fits you, without hiring a fixed fifth in-house day.</p><p><strong>Full days to go deeper.</strong> When several hypotheses or features must be tested before build: AI prototypes, clickable flows, light POCs, to validate fast, not to replace production delivery.</p><p><strong>Senior partner, not employee.</strong> Same person for prioritization, prerequisites, and technical judgment, without a handoff between « the PM » and « someone who gets the code ». Scope and rhythm adjustable without hiring or layoffs.</p>"
     },
     {
-      "type": "cards",
+      "type": "highlights",
+      "sectionKey": "responsibilities",
       "badge": "What you need",
       "title": "Four responsibilities a strong PM/PO owns",
       "items": [
