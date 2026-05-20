@@ -27,4 +27,10 @@ describe("SectionIntro", () => {
     expect(document.querySelector(".section__badge")).not.toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 2 })).toBeInTheDocument();
   });
+
+  it("renders h1 when titleAs is h1", () => {
+    render(<SectionIntro title="Page title" titleAs="h1" />);
+
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Page title");
+  });
 });

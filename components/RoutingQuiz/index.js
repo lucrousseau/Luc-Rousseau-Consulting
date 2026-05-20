@@ -182,9 +182,7 @@ export default function RoutingQuiz({
             {browseLinks.map((link) => (
               <li key={link.id} className="component__routing-quiz__browse-item">
                 <Link href={link.href} className="component__routing-quiz__browse-link">
-                  <strong>
-                    {browseLinkLabelKey ? t(browseLinkLabelKey(link.id)) : (link.label ?? link.id)}
-                  </strong>
+                  {browseLinkLabelKey ? t(browseLinkLabelKey(link.id)) : (link.label ?? link.id)}
                 </Link>
               </li>
             ))}

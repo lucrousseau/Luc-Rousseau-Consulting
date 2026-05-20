@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 
 import path from "path";
+import { createRequire } from "module";
 import { fileURLToPath } from "url";
 import i18n from "./next-i18next.config.js";
-import { getAllSituationSlugs } from "./commons/situationsManifest.js";
+
+const require = createRequire(import.meta.url);
+const { getAllSituationSlugs } = require("./commons/situationsManifest.js");
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

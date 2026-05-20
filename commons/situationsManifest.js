@@ -1,10 +1,11 @@
 /**
  * Published audience situations. Single canonical slug per page (FR + EN).
+ * CommonJS so next.config.mjs can load it without ESM package warnings.
  * @typedef {{ slug: string; namespace: string; publishedAt: string }} SituationEntry
  */
 
 /** @type {SituationEntry[]} */
-export const SITUATIONS = [
+const SITUATIONS = [
   {
     slug: "premier-dev-fractionnel",
     namespace: "situation-premier-dev-fractionnel",
@@ -46,13 +47,19 @@ export const SITUATIONS = [
  * @param {string} slug
  * @returns {SituationEntry | undefined}
  */
-export function getSituationBySlug(slug) {
+function getSituationBySlug(slug) {
   return SITUATIONS.find((situation) => situation.slug === slug);
 }
 
 /**
  * @returns {string[]}
  */
-export function getAllSituationSlugs() {
+function getAllSituationSlugs() {
   return SITUATIONS.map((situation) => situation.slug);
 }
+
+module.exports = {
+  SITUATIONS,
+  getSituationBySlug,
+  getAllSituationSlugs,
+};
