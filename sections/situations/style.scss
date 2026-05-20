@@ -1,3 +1,29 @@
+@use "../../styles/abstracts/variables" as *;
+
+// Situation pages: section gap via row tokens, not double container padding from .page-home
+.page-situation,
+.page-situations {
+  .section-situation-block,
+  .section-technical-stack.section-situation-block {
+    --set-container-padding-top: 0;
+    --set-container-padding-bottom: 32;
+
+    @media screen and (max-width: $md) {
+      --set-container-padding-bottom: 24;
+    }
+  }
+
+  .section-situation-block--cta {
+    --set-container-padding-top: 0;
+  }
+
+  .section-situation-block--faq .component__accordion,
+  .section-situation-block--comparison .component__table {
+    --margin-top: 0;
+    --margin-bottom: 0;
+  }
+}
+
 .section-situation-hero {
   h1 {
     margin-bottom: 1rem;
@@ -12,11 +38,40 @@
 
 .component__breadcrumbs--situations-hub,
 .component__breadcrumbs--situation {
-  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
   width: 100%;
+  font-size: 0.8125rem;
+  margin-bottom: 1rem;
 }
 
 .component__breadcrumbs--situations-hub .component__breadcrumbs__list,
 .component__breadcrumbs--situation .component__breadcrumbs__list {
-  justify-content: flex-start;
+  justify-content: center;
+}
+
+.situation-groups__group + .situation-groups__group {
+  margin-top: 2.5rem;
+}
+
+.situation-groups__badge {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.section-situation-block--comparison {
+  h2.underline + .big {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+}
+
+.section-situation-block--cta {
+  .section__badge {
+    margin-bottom: 1rem;
+  }
+
+  .section__badge + .big {
+    margin-top: 0;
+  }
 }

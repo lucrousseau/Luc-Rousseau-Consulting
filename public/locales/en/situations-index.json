@@ -41,7 +41,7 @@
       },
       "first-hire": {
         "label": "Post-funding, before your first full-time developer",
-        "hint": "Compare fractional senior vs first hire within the same budget band"
+        "hint": "Product priorities, backlog, and fractional senior vs first hire within the same budget band"
       },
       "solo-dev": {
         "label": "One developer owns all the tech",
@@ -80,7 +80,7 @@
   "situations": {
     "premier-dev-fractionnel": {
       "title": "Post-funding: before your first full-time developer",
-      "teaser": "You're weighing a first technical hire : here's how two days a week with a senior can out-deliver a junior within a comparable budget."
+      "teaser": "You're weighing a first technical hire : here's how two days a week with a senior principal developer who builds can clarify priorities, backlog, and delivery, often better than a first junior hire within a comparable budget."
     },
     "dev-unique-backup": {
       "title": "One developer owns all the tech",

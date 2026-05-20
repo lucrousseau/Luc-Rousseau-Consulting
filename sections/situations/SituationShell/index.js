@@ -11,13 +11,18 @@ import Table from "../../../components/Table";
 import {
   homeCtaRowStyle,
   homeIntroRowStyle,
-  homeIntroSubRowStyle,
-  homePreCtaContentRowStyle,
+  homeTableRowStyle,
+  homeSituationCtaRowStyle,
 } from "../../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../../commons/scheduleCta";
 
 import TechnicalStack from "../../TechnicalStack";
 import SituationHero from "../SituationHero";
+import SituationGroups from "../SituationGroups";
+
+function hasGroups(block) {
+  return Array.isArray(block?.groups) && block.groups.length > 0;
+}
 
 function parseBlockItems(items) {
   if (!Array.isArray(items)) {
@@ -51,7 +56,9 @@ function SituationBlock({ block, namespace, scheduleCta }) {
         </Container>
       );
 
-    case "cards":
+    case "cards": {
+      const cardGroups = hasGroups(block) ? block.groups : null;
+      const cardItems = cardGroups ? null : block.items;
       return (
         <Container
           className="section-situation-block section-situation-block--cards"
@@ -66,13 +73,27 @@ function SituationBlock({ block, namespace, scheduleCta }) {
               rowStyle={homeIntroRowStyle}
             />
           )}
-          <ProductGrid
-            items={block.items}
-            renderItem={(item) => parse(item.content)}
-            cols={{ col: 4, lg: 10, sm: 12 }}
-          />
+          {cardGroups ? (
+            <SituationGroups
+              groups={cardGroups}
+              renderGroup={(group) => (
+                <ProductGrid
+                  items={group.items}
+                  renderItem={(item) => parse(item.content)}
+                  cols={{ col: 4, lg: 10, sm: 12 }}
+                />
+              )}
+            />
+          ) : (
+            <ProductGrid
+              items={cardItems}
+              renderItem={(item) => parse(item.content)}
+              cols={{ col: 4, lg: 10, sm: 12 }}
+            />
+          )}
         </Container>
       );
+    }
 
     case "comparison": {
       const table = block.table;
@@ -88,23 +109,12 @@ function SituationBlock({ block, namespace, scheduleCta }) {
           halign="center"
         >
           <SectionIntro badge={block.badge} title={block.title} rowStyle={homeIntroRowStyle}>
+            {block.intro && <p className="big">{parse(block.intro)}</p>}
             {block.lede && parse(block.lede)}
           </SectionIntro>
-          {block.intro && (
-            <Row
-              halign="center"
-              style={homeIntroSubRowStyle}
-              columns={[
-                {
-                  cols: { col: 11, xl: 12, sm: 12 },
-                  content: <p className="big">{parse(block.intro)}</p>,
-                },
-              ]}
-            />
-          )}
           <Row
             halign="center"
-            style={homePreCtaContentRowStyle}
+            style={homeTableRowStyle}
             columns={[
               {
                 cols: { col: 10, sm: 12 },
@@ -138,6 +148,8 @@ function SituationBlock({ block, namespace, scheduleCta }) {
             rowStyle={homeIntroRowStyle}
           />
           <Row
+            halign="center"
+            style={homeTableRowStyle}
             columns={[
               {
                 cols: { col: 10, sm: 12 },
@@ -157,6 +169,7 @@ function SituationBlock({ block, namespace, scheduleCta }) {
           title={block.title}
           lede={block.lede}
           items={Array.isArray(block.items) ? block.items : []}
+          groups={hasGroups(block) ? block.groups : undefined}
           background={block.background}
         />
       );
@@ -174,7 +187,9 @@ function SituationBlock({ block, namespace, scheduleCta }) {
             href={block.href ?? scheduleCta.link}
             label={block.label ?? scheduleCta.label}
             teaser={block.teaser ? parse(block.teaser) : null}
-            rowStyle={homeCtaRowStyle}
+            teaserClassName="big"
+            beforeCTA={block.badge ? <p className="section__badge">{block.badge}</p> : null}
+            rowStyle={homeSituationCtaRowStyle}
           />
         </Container>
       );

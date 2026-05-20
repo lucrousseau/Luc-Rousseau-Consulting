@@ -8,7 +8,7 @@
     "buy": {
       "legend": "Frame AI in your product",
       "prefix": "No commitment",
-      "label": "Book a 30-minute call"
+      "label": "Book a call"
     }
   },
   "blocks": [
@@ -82,17 +82,27 @@
       "badge": "How I build",
       "title": "Technical foundations",
       "lede": "<p class=\"big\"><strong>AI in your existing product</strong>: where it fits, guardrails, cost, and POC before production build.</p>",
-      "items": [
-        "AI use-case mapping",
-        "LLM APIs and orchestration",
-        "Guardrails, PII, and compliance",
-        "Quality evaluation and token costs",
-        "Targeted RAG or agent POCs",
-        "Observability and AI call logging",
-        "Laravel · React · API integration",
-        "Feature flags and progressive rollout",
-        "Handover to the internal dev team",
-        "JavaScript · PHP"
+      "groups": [
+        {
+          "badge": "AI strategy",
+          "items": [
+            "AI use-case mapping",
+            "Guardrails, PII, and compliance",
+            "Quality evaluation and token costs",
+            "Targeted RAG or agent POCs"
+          ]
+        },
+        {
+          "badge": "Production integration",
+          "items": [
+            "LLM APIs and orchestration",
+            "Observability and AI call logging",
+            "Laravel · React · API integration",
+            "Feature flags and progressive rollout",
+            "Handover to the internal dev team",
+            "JavaScript · PHP"
+          ]
+        }
       ],
       "background": "rome"
     },
@@ -112,13 +122,18 @@
         {
           "title": "AI changes too fast, why plan?",
           "content": "<p>Exactly: <strong>product criteria and guardrails</strong> stay stable even when the model changes, that's what avoids rebuilding on every vendor announcement.</p>"
+        },
+        {
+          "title": "Reachable outside scheduled days, or in an emergency?",
+          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. If an emergency lands outside scheduled days, I stay reachable and step in under a <strong>shared urgency frame</strong> we define up front (scope, priority, response time), not a vague 24/7 on-call promise.</p>"
         }
       ]
     },
     {
       "type": "cta",
+      "badge": "Next step",
       "trackSection": "situation-ia-produit",
-      "label": "Discuss AI in your product",
+      "label": "Discuss product AI",
       "teaser": "<p class=\"big\">Pressure to add AI without a frame? One call to see where it makes sense, how to prototype, and what deserves prod.</p>"
     }
   ]

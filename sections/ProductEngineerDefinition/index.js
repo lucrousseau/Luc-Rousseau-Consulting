@@ -9,6 +9,7 @@ import {
   homeCtaRowStyle,
   homeIntroRowStyle,
   homeIntroSubRowStyle,
+  homeTableRowStyle,
 } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
 import Table from "../../components/Table";
@@ -64,6 +65,7 @@ export default function ProductEngineerDefinition({ cta }) {
           />
           <Row
             halign={"center"}
+            style={homeTableRowStyle}
             columns={[
               {
                 cols: { col: 10, sm: 12 },

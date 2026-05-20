@@ -8,7 +8,7 @@
     "buy": {
       "legend": "Clarifier votre besoin produit",
       "prefix": "Sans engagement",
-      "label": "Planifier un appel de 30 min"
+      "label": "Planifier un appel"
     }
   },
   "blocks": [
@@ -106,18 +106,28 @@
       "badge": "Comment je construis",
       "title": "Fondations techniques",
       "lede": "<p class=\"big\"><strong>Produit et technique dans la même boucle</strong> : prérequis clairs, prototypes avant le build, stack alignée avec vos devs.</p>",
-      "items": [
-        "Prototypes IA et flows cliquables",
-        "Prérequis et critères d'acceptation",
-        "Backlog structuré pour les devs",
-        "APIs et dépendances cartographiées",
-        "Intégrations tierces cadrées",
-        "Laravel · React · Next.js selon l'existant",
-        "Évaluation faisabilité technique",
-        "Cérémonies et rituels avec l'équipe dev",
-        "Roadmap trimestre et arbitrages",
-        "Dette et risques visibles côté produit",
-        "JavaScript · PHP"
+      "groups": [
+        {
+          "badge": "Produit",
+          "items": [
+            "Prototypes IA et flows cliquables",
+            "Prérequis et critères d'acceptation",
+            "Backlog structuré pour les devs",
+            "Roadmap trimestre et arbitrages",
+            "Cérémonies et rituels avec l'équipe dev",
+            "Dette et risques visibles côté produit"
+          ]
+        },
+        {
+          "badge": "Technique",
+          "items": [
+            "APIs et dépendances cartographiées",
+            "Intégrations tierces cadrées",
+            "Laravel · React · Next.js selon l'existant",
+            "Évaluation faisabilité technique",
+            "JavaScript · PHP"
+          ]
+        }
       ],
       "background": "rome"
     },
@@ -145,13 +155,18 @@
         {
           "title": "Et si on embauche un vrai PM/PO plus tard ?",
           "content": "<p>Mieux encore si vous arrivez avec <strong>roadmap, rituels et standards de prêt-à-construire</strong> déjà éprouvés. Je peux aider à définir la fiche de poste et la passation vers la personne interne.</p>"
+        },
+        {
+          "title": "Joignable en dehors des jours prévus, ou en urgence ?",
+          "content": "<p>Le rythme convenu (ex. environ quatre jours par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Si une urgence survient en dehors des jours prévus, je reste joignable et j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais), pas une astreinte 24/7 floue.</p>"
         }
       ]
     },
     {
       "type": "cta",
+      "badge": "Prochaine étape",
       "trackSection": "situation-product-manager",
-      "label": "Parler de votre besoin PM/PO",
+      "label": "Discuter besoin PM/PO",
       "teaser": "<p class=\"big\">Besoin d'un PM sans temps plein ? Un appel de 30 minutes suffit pour voir si environ quatre jours par semaine, en demi-journées, avec des journées complètes pour prototyper, correspond à votre équipe.</p>"
     }
   ]

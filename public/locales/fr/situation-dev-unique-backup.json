@@ -76,13 +76,18 @@
         {
           "title": "Confidentialité et accès",
           "content": "<p>Accès au repo et aux outils selon votre politique ; NDA si requis. Je ne publie rien de votre code ; le travail reste dans vos systèmes. On définit <strong>qui voit quoi</strong> dès le départ.</p>"
+        },
+        {
+          "title": "Joignable en dehors des jours prévus, ou en urgence ?",
+          "content": "<p>Le rythme convenu (ex. une journée par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Si une urgence survient en dehors des jours prévus, je reste joignable et j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais), pas une astreinte 24/7 floue.</p>"
         }
       ]
     },
     {
       "type": "cta",
+      "badge": "Prochaine étape",
       "trackSection": "situation-solo-dev",
-      "label": "Parler de votre risque bus factor",
+      "label": "Discuter bus factor",
       "teaser": "<p class=\"big\">Un seul dev porte tout ? Un appel suffit pour voir si une journée par semaine vous donne de la marge, sans chambouler votre équipe.</p>"
     }
   ]
