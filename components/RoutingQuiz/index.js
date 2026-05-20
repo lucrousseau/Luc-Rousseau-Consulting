@@ -119,7 +119,7 @@ export default function RoutingQuiz({
         </h3>
         <p className="big component__routing-quiz__result-teaser">{t(resultTeaserKey(resultId))}</p>
         <p className="component__routing-quiz__actions">
-          <Button variant="primary" href={resultHref(resultId)} label={t(uiKey("result.cta"))} />
+          <Button variant="secondary" href={resultHref(resultId)} label={t(uiKey("result.cta"))} />
         </p>
         <p className="component__routing-quiz__secondary-actions">
           <button type="button" className="component__routing-quiz__text-btn" onClick={restart}>
