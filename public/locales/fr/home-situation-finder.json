@@ -1,0 +1,8 @@
+{
+  "anchor": "votre-situation",
+  "navigation-label": "Votre situation",
+  "navigation-label-short": "Situation",
+  "badge": "Votre situation",
+  "title": "Quelle situation vous concerne ?",
+  "lede": "<p class=\"big\">Deux questions pour ouvrir la fiche qui correspond à votre contexte : équipe tech, PM/PO, produit en ligne, MVP SaaS ou IA produit.</p><p class=\"big\">Sept profils couverts, de la levée au premier dev jusqu'à l'IA produit avec garde-fous.</p>"
+}

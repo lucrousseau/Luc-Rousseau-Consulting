@@ -7,16 +7,15 @@ import SectionIntro from "../../components/SectionIntro";
 import SectionCta from "../../components/SectionCta";
 import { homeBodyRowStyle, homeIntroRowStyle } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
-import SituationsQuiz from "../situations/SituationsQuiz";
 
 import romeImage from "./images/rome-1.jpg";
 
 /**
- * Who I work with section. Requires i18n: `who-i-work-with`, `situations-index`, `common`.
+ * Who I work with section. Requires i18n: `who-i-work-with`, `common`.
  * @param {import('../../commons/sectionTypes').SectionWithBackgroundProps} props
  */
 export default function WhoIWorkWith({ backgroundColor, cta }) {
-  const { t } = useTranslation(["who-i-work-with", "situations-index", "common"]);
+  const { t } = useTranslation(["who-i-work-with", "common"]);
   const scheduleCta = getScheduleCta(t);
 
   return (
@@ -64,24 +63,6 @@ export default function WhoIWorkWith({ backgroundColor, cta }) {
                       </li>
                     ))}
                   </ul>
-                </section>
-
-                <section
-                  className="who-i-work-with__situations"
-                  aria-labelledby="who-i-work-with-situations-heading"
-                >
-                  <div className="who-i-work-with__situations-intro">
-                    <p
-                      id="who-i-work-with-situations-heading"
-                      className="section__badge who-i-work-with__situations-badge"
-                    >
-                      {t("who-i-work-with:situations-quiz-badge")}
-                    </p>
-                    <p className="big who-i-work-with__situations-lede">
-                      {t("who-i-work-with:situations-quiz-lede")}
-                    </p>
-                  </div>
-                  <SituationsQuiz className="who-i-work-with__routing-quiz" />
                 </section>
 
                 <div className="who-i-work-with__cta align--center">

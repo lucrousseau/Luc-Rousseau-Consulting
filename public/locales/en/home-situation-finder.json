@@ -1,0 +1,8 @@
+{
+  "anchor": "your-situation",
+  "navigation-label": "Your situation",
+  "navigation-label-short": "Situation",
+  "badge": "Your situation",
+  "title": "Which situation fits you?",
+  "lede": "<p class=\"big\">Two quick questions to open the page that matches your context: tech team, PM/PO, live product, SaaS MVP, or product AI.</p><p class=\"big\">Seven profiles covered, from post-funding and first dev hire through product AI with guardrails.</p>"
+}
