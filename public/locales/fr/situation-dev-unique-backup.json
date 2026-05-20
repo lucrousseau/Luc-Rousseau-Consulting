@@ -74,18 +74,30 @@
       "type": "stack",
       "badge": "Comment je construis",
       "title": "Fondations techniques",
-      "lede": "<p class=\"big\"><strong>Renfort sur votre stack existant</strong> : revues, runbooks et priorisation sans chambouler le quotidien de votre développeur principal.</p>",
-      "items": [
-        "Revues architecture et code du stack en place",
-        "Documentation et runbooks de secours",
-        "CI/CD et déploiements fiables",
-        "APIs et intégrations existantes",
-        "Tests et régression ciblés",
-        "Dette technique priorisée",
-        "Sécurité et correctifs planifiés",
-        "Pairing et handover avec votre dev",
-        "Performance et monitoring",
-        "JavaScript · PHP"
+      "lede": "<p class=\"big\"><strong>Renfort sur votre stack existant</strong> : on vérifie dès le départ si je suis aligné avec vos langages, frameworks et outils, puis revues, runbooks et priorisation sans chambouler le quotidien de votre développeur principal.</p>",
+      "groups": [
+        {
+          "badge": "Sur votre produit en place",
+          "items": [
+            "Cartographie repo, CI/CD, hébergement et intégrations",
+            "Revues architecture et code du stack en place",
+            "Documentation et runbooks de secours",
+            "Tests, régression et dette technique ciblée",
+            "Pairing et handover avec votre dev principal"
+          ]
+        },
+        {
+          "badge": "Langages & stacks que je couvre",
+          "items": [
+            "PHP · Laravel · APIs REST",
+            "JavaScript · TypeScript · Node.js",
+            "React · Next.js · Vue",
+            "WordPress · headless · Gutenberg/blocs",
+            "SQL · Redis · queues · webhooks tiers",
+            "CI/CD · Docker · monitoring",
+            "JavaScript · PHP"
+          ]
+        }
       ],
       "background": "rome"
     },
@@ -101,6 +113,10 @@
         {
           "title": "Une journée par semaine, c'est suffisant ?",
           "content": "<p>Pour <strong>connaissance progressive et filet de sécurité</strong>, oui, si le périmètre est cadré. Ce n'est pas un deuxième temps plein ; c'est une assurance et un accélérateur. La journée structure le build en profondeur ; la joignabilité et l'urgence sont détaillées dans la section en tête de page. Si le volume justifie plus, on en parle ; souvent une journée bien utilisée suffit longtemps.</p>"
+        },
+        {
+          "title": "Votre stack est-elle compatible (Laravel, React, autre) ?",
+          "content": "<p>On le clarifie au <strong>premier échange</strong> : langages, frameworks, hébergement, niveau de dette. Mon expérience la plus profonde en intervention est sur les écosystèmes <strong>JavaScript et PHP</strong> (Laravel, React, Next.js, Vue, WordPress, Node). Sur une autre stack (Python, .NET, Go, etc.), je peux souvent apporter <strong>architecture, revues, priorisation et filet d'urgence</strong> ; le build hands-on dépend du contexte, on tranche sans promesse floue.</p>"
         },
         {
           "title": "Confidentialité et accès",

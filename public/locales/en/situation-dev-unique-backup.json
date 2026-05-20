@@ -74,18 +74,30 @@
       "type": "stack",
       "badge": "How I build",
       "title": "Technical foundations",
-      "lede": "<p class=\"big\"><strong>Backup on your existing stack</strong>: reviews, runbooks, and prioritization without disrupting your primary developer's day to day.</p>",
-      "items": [
-        "Architecture and code reviews on the current stack",
-        "Documentation and backup runbooks",
-        "CI/CD and reliable deployments",
-        "Existing APIs and integrations",
-        "Targeted tests and regression",
-        "Prioritized technical debt",
-        "Security and planned patches",
-        "Pairing and handover with your developer",
-        "Performance and monitoring",
-        "JavaScript · PHP"
+      "lede": "<p class=\"big\"><strong>Backup on your existing stack</strong>: we check early whether I'm aligned with your languages, frameworks, and tooling, then reviews, runbooks, and prioritization without disrupting your primary developer's day to day.</p>",
+      "groups": [
+        {
+          "badge": "On your live product",
+          "items": [
+            "Repo, CI/CD, hosting, and integration map",
+            "Architecture and code reviews on the current stack",
+            "Documentation and backup runbooks",
+            "Tests, regression, and targeted technical debt",
+            "Pairing and handover with your primary developer"
+          ]
+        },
+        {
+          "badge": "Languages & stacks I cover",
+          "items": [
+            "PHP · Laravel · REST APIs",
+            "JavaScript · TypeScript · Node.js",
+            "React · Next.js · Vue",
+            "WordPress · headless · Gutenberg/blocks",
+            "SQL · Redis · queues · third-party webhooks",
+            "CI/CD · Docker · monitoring",
+            "JavaScript · PHP"
+          ]
+        }
       ],
       "background": "rome"
     },
@@ -101,6 +113,10 @@
         {
           "title": "Is one day a week enough?",
           "content": "<p>For <strong>gradual knowledge and a safety net</strong>, yes, with clear scope. It's not a second full-time role; it's insurance and acceleration. The scheduled day structures deep build work; reachability and emergencies are covered in the section at the top of the page. If volume truly needs more, we discuss it; often one well-used day is enough for a long time.</p>"
+        },
+        {
+          "title": "Is your stack a fit (Laravel, React, other)?",
+          "content": "<p>We clarify that in the <strong>first conversation</strong>: languages, frameworks, hosting, debt level. My deepest hands-on experience is in <strong>JavaScript and PHP</strong> ecosystems (Laravel, React, Next.js, Vue, WordPress, Node). On another stack (Python, .NET, Go, etc.), I can often still bring <strong>architecture, reviews, prioritization, and emergency backup</strong>; hands-on build depends on context, and we decide without vague promises.</p>"
         },
         {
           "title": "Confidentiality and access",

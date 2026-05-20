@@ -1,0 +1,69 @@
+@use "../../styles/abstracts/variables" as *;
+
+.component__numbered-highlight-list {
+  width: 100%;
+}
+
+.component__numbered-highlight-list__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  width: 100%;
+
+  @media screen and (max-width: $md) {
+    gap: 1.35rem;
+  }
+}
+
+.component__numbered-highlight-list__item {
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  gap: 1rem 1.25rem;
+  align-items: start;
+  margin: 0;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid rgb(0 0 0 / 8%);
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  @media screen and (max-width: $md) {
+    grid-template-columns: 1.75rem minmax(0, 1fr);
+    gap: 0.65rem 0.85rem;
+    padding-bottom: 1.35rem;
+  }
+}
+
+.component__numbered-highlight-list__index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  background: rgb(0 0 0 / 6%);
+
+  @media screen and (max-width: $md) {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 0.8125rem;
+  }
+}
+
+.component__numbered-highlight-list__title {
+  margin: 0 0 0.4rem;
+}
+
+.component__numbered-highlight-list__content p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
