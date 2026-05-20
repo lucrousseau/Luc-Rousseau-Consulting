@@ -25,8 +25,7 @@
       "lede": "<p class=\"big\">Pas un PM généraliste éloigné du terrain. Je comprends <strong>comment ça se build</strong>, ce que la logique métier impose, et ce que l'expérience utilisateur doit porter, grâce à un parcours <strong>designer → développeur → produit</strong>. Pour vos devs, c'est crédible ; pour le business, c'est lisible ; avec l'IA, on peut <strong>tester des hypothèses en jours</strong>, pas en mois de specs floues.</p>"
     },
     {
-      "type": "highlights",
-      "sectionKey": "rhythm",
+      "type": "cards",
       "badge": "Le rythme",
       "title": "Comment couvrir un PM sans temps plein",
       "lede": "<p class=\"big\">Environ <strong>quatre jours par semaine</strong>, en demi-journées ou journées pleines selon ce qu'il faut couvrir, sans embaucher un poste fixe à 40 h.</p>",
