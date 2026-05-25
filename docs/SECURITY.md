@@ -13,7 +13,7 @@ Security headers (including CSP) are defined in `lib/securityHeaders.mjs` and ap
 ## API routes
 
 - `utils/apiRequireGet.js`: only GET/HEAD.
-- `utils/siteOrigin.js`: Host allowlist for sitemap, robots, and llms.txt.
+- `utils/siteOrigin.js`: Host allowlist for sitemap, robots, llms.txt, llms-full.txt, and humans.txt.
 
 ## Dependencies
 

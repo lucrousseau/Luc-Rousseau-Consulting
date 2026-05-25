@@ -47,6 +47,8 @@ const nextConfig = {
       { source: "/sitemap.xml", destination: "/api/sitemap" },
       { source: "/robots.txt", destination: "/api/robots" },
       { source: "/llms.txt", destination: "/api/llms.txt" },
+      { source: "/llms-full.txt", destination: "/api/llms-full.txt" },
+      { source: "/humans.txt", destination: "/api/humans.txt" },
     ];
   },
   i18n: {
