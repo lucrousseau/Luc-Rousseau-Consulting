@@ -65,7 +65,9 @@ const SEO = ({
           url: siteHome,
           sameAs: sameAs,
           jobTitle:
-            locale === "fr" ? "Consultant produit et développeur senior" : "Product Engineer",
+            locale === "fr"
+              ? "Consultant externe, produit et développeur senior"
+              : "External consultant & Product Engineer",
           address: {
             "@type": "PostalAddress",
             addressRegion: "QC",
@@ -82,8 +84,8 @@ const SEO = ({
     url: siteHome,
     description:
       locale === "fr"
-        ? "Consultant produit et développeur senior au Québec, Canada. Vision produit, architecture technique et développement sur mesure : APIs, systèmes découpés, Laravel, WordPress headless quand l'édition l'exige, React/Vue."
-        : "Product Engineer in Quebec, Canada. Product-facing architecture and APIs, decoupled systems, Laravel, WordPress headless when editorial scale demands it, React/Vue. Systems at scale.",
+        ? "Consultant externe, produit et développeur senior au Québec, Canada. Vision produit, architecture technique et développement sur mesure : APIs, systèmes découpés, Laravel, WordPress headless quand l'édition l'exige, React/Vue. Mandat externe récurrent, pas mission freelance ou pigiste à la journée."
+        : "External consultant & Product Engineer in Quebec, Canada. Product-facing architecture and APIs, decoupled systems, Laravel, WordPress headless when editorial scale demands it, React/Vue. Recurring retainer, not day-rate freelance or contractor gigs.",
     inLanguage: [locale === "fr" ? "fr-CA" : "en-CA"],
     areaServed: [
       {
