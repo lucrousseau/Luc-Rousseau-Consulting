@@ -277,8 +277,16 @@
 }
 
 .component__routing-quiz__result-badge {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
   text-align: center;
+}
+
+.component__routing-quiz__result-quote {
+  margin-bottom: 0.5rem;
+}
+
+.component__routing-quiz__result-quote + .big {
+  margin-top: 0;
 }
 
 .component__routing-quiz__result-title {

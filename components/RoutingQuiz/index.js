@@ -21,6 +21,7 @@ import {
  * @param {number} [props.totalQuestions] - defaults to longest path in `steps`
  * @param {(resultId: string) => string} props.resultHref
  * @param {(resultId: string) => string} props.resultTitleKey
+ * @param {(resultId: string) => string} [props.resultQuoteKey] - when set, shown instead of `resultTitleKey`
  * @param {(resultId: string) => string} props.resultTeaserKey
  * @param {{ id: string; href: string }[]} [props.browseLinks]
  * @param {(id: string) => string} [props.browseLinkLabelKey]
@@ -34,6 +35,7 @@ export default function RoutingQuiz({
   totalQuestions: totalQuestionsProp,
   resultHref,
   resultTitleKey,
+  resultQuoteKey,
   resultTeaserKey,
   browseLinks,
   browseLinkLabelKey,
@@ -114,9 +116,13 @@ export default function RoutingQuiz({
         <p className="section__badge component__routing-quiz__result-badge">
           {t(uiKey("result.eyebrow"))}
         </p>
-        <h3 className="component__routing-quiz__result-title underline">
-          {t(resultTitleKey(resultId))}
-        </h3>
+        {resultQuoteKey ? (
+          <p className="component__routing-quiz__result-quote">{t(resultQuoteKey(resultId))}</p>
+        ) : (
+          <h3 className="component__routing-quiz__result-title underline">
+            {t(resultTitleKey(resultId))}
+          </h3>
+        )}
         <p className="big component__routing-quiz__result-teaser">{t(resultTeaserKey(resultId))}</p>
         <p className="component__routing-quiz__actions">
           <Button variant="secondary" href={resultHref(resultId)} label={t(uiKey("result.cta"))} />

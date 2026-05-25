@@ -92,7 +92,12 @@
 
 .section-situation-hero {
   h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .situation-hero__quote {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
   }
 }
 

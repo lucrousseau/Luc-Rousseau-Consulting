@@ -59,4 +59,12 @@ describe("llmSignal", () => {
       expect(body).toContain(situation.slugEn);
     }
   });
+
+  it("includes client-voice quotes for LLM situation matching", () => {
+    const body = buildSituationsSection(base);
+
+    expect(body).toContain("FR client voice:");
+    expect(body).toContain("levé des fonds");
+    expect(body).toContain("We raised, we have customers");
+  });
 });

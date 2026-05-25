@@ -9,6 +9,7 @@ import {
 } from "../../../commons/situationsQuiz";
 
 const situationTitleKey = (id) => `situations.${id}.title`;
+const situationQuoteKey = (id) => `situations.${id}.quote`;
 
 /**
  * Situations hub quiz: thin wrapper around {@link RoutingQuiz}.
@@ -28,6 +29,7 @@ export default function SituationsQuiz({ className }) {
       totalQuestions={getSituationsQuizTotalQuestions()}
       resultHref={(id) => getSituationPathById(id, locale) ?? `${ROUTES.situationsHub}/${id}`}
       resultTitleKey={situationTitleKey}
+      resultQuoteKey={situationQuoteKey}
       resultTeaserKey={(id) => `situations.${id}.teaser`}
       browseLinks={SITUATIONS.map((situation) => ({
         id: situation.id,

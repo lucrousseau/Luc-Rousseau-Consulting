@@ -3,6 +3,7 @@
   "seoDescription": "Post-levée, avant un 1er dev temps plein : senior 2 j/sem, mandat en 4 étapes (cadrage, backlog, build, embauche), souvent mieux qu'un junior au même budget.",
   "hero": {
     "badge": "Startup post-financement",
+    "quote": "On a levé des fonds, on a des clients, on a une roadmap. Ce qu'on n'a pas, c'est quelqu'un qui sait quoi builder en premier.",
     "title": "Après la levée : avant votre premier dev à temps plein",
     "lede": "<p><strong>Vous êtes en post-levée et vous pesez votre premier recrutement technique.</strong> La pression est là : <strong>livrer plus vite</strong>, prouver la traction, montrer que l'équipe grossit. Un premier développeur à temps plein semble le geste naturel ; c'est souvent le <strong>plus cher et le plus lent</strong> moyen d'avoir une direction produit et technique solide.</p><p>À <strong>deux jours par semaine</strong>, vous pouvez avoir un <strong>produit-développeur senior qui est aussi votre dev principal</strong> : <strong>priorisation, backlog et prérequis</strong>, puis <strong>architecture et code en prod</strong> (Laravel, React, APIs). Ce n'est pas du conseil à part : <strong>c'est moi qui build</strong> les fondations et les features prioritaires, dans une enveloppe comparable, avec moins de risque si le produit pivote.</p>",
     "buy": {

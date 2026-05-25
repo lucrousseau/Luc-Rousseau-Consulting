@@ -3,6 +3,7 @@
   "seoDescription": "PM/PO technique en fractionnel : demi-journées en régulier (~4 par semaine ou moins), journée complète au besoin (au plus une fois par semaine), priorités, prérequis et cérémonies avec les devs.",
   "hero": {
     "badge": "Produit & delivery",
+    "quote": "Mes devs livrent. Mais je suis plus certain qu'on livre les bonnes choses dans le bon ordre.",
     "title": "Besoin de PM ou PO, sans temps plein",
     "lede": "<p><strong>Vous avez besoin d'un PM ou PO, sans embauche à 40 h.</strong> L'équipe code ; il manque <strong>priorisation au trimestre</strong>, des prérequis clairs, des rituels avec les devs et des hypothèses testées avant le build. Ce n'est pas « trop tôt pour un PM », c'est <strong>trop lourd ou trop rigide en temps plein</strong>.</p><p>Je joue le rôle en <strong>PM/PO technique</strong> : développement, logique métier, enjeux tech, et <strong>lecture produit</strong> (parcours designer, puis dev, puis leadership produit). À l'ère de l'IA, ce combo est un vrai levier pour prototyper, cadrer et arbitrer sans perdre votre équipe.</p><p>Ça tient en <strong>fractionnel</strong> : d'abord des <strong>demi-journées</strong> calées sur vos rituels (stand-up, backlog, prérequis), environ <strong>quatre demi-journées par semaine</strong> ou moins selon la phase, et une <strong>journée complète au besoin</strong> (en pratique, au plus une fois par semaine) pour prototyper ou valider avant d'engager l'équipe dev.</p>",
     "buy": {

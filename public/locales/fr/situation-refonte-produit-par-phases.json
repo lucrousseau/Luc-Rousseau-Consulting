@@ -3,6 +3,7 @@
   "seoDescription": "WordPress archaïque : modernisation par headless ou Laravel par phases. PM/PO technique fractionnel, code ou pilotage d'équipe, plan sans big bang.",
   "hero": {
     "badge": "Refonte & migration",
+    "quote": "Notre site tient debout, mais chaque nouvelle feature nous coûte le double de ce que ça devrait. On reporte la refonte depuis deux ans.",
     "title": "WordPress archaïque : headless ou Laravel par phases",
     "lede": "<p><strong>Vous partez d'un WordPress archaïque</strong> : lent, plugins fragiles, thème legacy, éditorial ou métier qui freine le produit. Je m'insère dans cet environnement tel qu'il est et je vous fais <strong>entrer dans la modernité</strong> sans « tout casser » : <strong>WordPress headless</strong> (WPGraphQL ou REST, front React/Next.js), ou <strong>admin et API Laravel</strong> (REST ou GraphQL) avec migration progressive.</p><p>Je viens en <strong>PM/PO technique fractionnel</strong>, avec un pied dans le code : selon le mandat, je peux <strong>développer moi-même</strong> les phases critiques de la transition, ou <strong>piloter votre équipe</strong> déjà en place (prioriser, séquencer, organiser le changement de stack). Plan écrit, phases successives, sans big bang. On en parle d'abord pour voir le <strong>temps et le besoin</strong>, puis comment <strong>mobiliser mon temps</strong> sur le mandat.</p>",
     "buy": {

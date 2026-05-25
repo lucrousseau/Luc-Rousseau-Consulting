@@ -80,30 +80,37 @@
   "situations": {
     "premier-dev-fractionnel": {
       "title": "Après la levée : avant votre premier dev à temps plein",
+      "quote": "On a levé des fonds, on a des clients, on a une roadmap. Ce qu'on n'a pas, c'est quelqu'un qui sait quoi builder en premier.",
       "teaser": "Post-levée, première embauche tech : deux jours par semaine, déroulé en 4 étapes (cadrage, backlog, build, embauche), avec un senior dev principal qui build."
     },
     "dev-unique-backup": {
       "title": "Un seul dev porte toute la responsabilité technique",
+      "quote": "Si mon dev tombe malade deux semaines, je sais même pas ce qui se passe dans notre propre code.",
       "teaser": "Renfort senior 1 j/sem : joignable en semaine, backup en urgence, alignement Laravel, React, WordPress, sans recruter un second temps plein."
     },
     "product-manager-fractionnel": {
       "title": "Besoin de PM ou PO, sans temps plein",
+      "quote": "Mes devs livrent. Mais je suis plus certain qu'on livre les bonnes choses dans le bon ordre.",
       "teaser": "Vous avez besoin d'un vrai pilotage produit, pas d'un poste à 40 h : demi-journées en régulier, journée complète au besoin, priorités, prérequis et cérémonies."
     },
     "refonte-produit-par-phases": {
       "title": "WordPress archaïque : headless ou Laravel par phases",
+      "quote": "Notre site tient debout, mais chaque nouvelle feature nous coûte le double de ce que ça devrait. On reporte la refonte depuis deux ans.",
       "teaser": "WordPress archaïque : entrée dans la modernité (headless, Laravel), PM/PO fractionnel, plan sans big bang."
     },
     "plateforme-editoriale-produit": {
       "title": "Produit éditorial à l'échelle",
+      "quote": "On publie 50 contenus par semaine et notre stack a été pensée pour 5. On sent qu'on approche du mur.",
       "teaser": "Comparateur ou multi-marques : conversion, partenariats visibles, monétisation, sans intégration ad hoc à chaque lancement."
     },
     "mvp-saas-faisabilite": {
       "title": "Lancer un SaaS ou un MVP",
+      "quote": "J'ai une idée claire, un budget, et zéro envie de passer 6 mois à builder quelque chose que personne veut.",
       "teaser": "MVP ou SaaS en fractionnel : 4 étapes, phases et backlog, pilotage devs ou agence, validation CEO/CTO (Lovable, Cursor) avant gros investissement."
     },
     "ia-produit-garde-fous": {
       "title": "IA dans votre produit",
+      "quote": "Tout le monde nous demande si on fait de l'IA. On sait pas par où commencer sans que ça vire en gadget ou en risque.",
       "teaser": "IA produit : prérequis, risques, périmètre et anti-hallucination avant le build, APIs Claude/OpenAI, build vs buy. Mandat en 4 étapes, POC avant prod."
     }
   }

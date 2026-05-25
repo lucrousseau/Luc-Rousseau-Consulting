@@ -1,6 +1,14 @@
 const { getSituationSeo } = require("./situationSeoMeta");
 
 describe("situationSeoMeta", () => {
+  it("exposes hero voice quote for LLM and machine-readable indexes", () => {
+    const fr = getSituationSeo("fr", "situation-premier-dev-fractionnel");
+    const en = getSituationSeo("en", "situation-premier-dev-fractionnel");
+
+    expect(fr.voiceQuote).toMatch(/levé des fonds/i);
+    expect(en.voiceQuote).toMatch(/We raised/i);
+  });
+
   it("exposes half-day fractional rhythm for product-manager-fractionnel", () => {
     const fr = getSituationSeo("fr", "situation-product-manager-fractionnel");
     const en = getSituationSeo("en", "situation-product-manager-fractionnel");

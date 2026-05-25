@@ -3,6 +3,7 @@
   "seoDescription": "MVP ou SaaS en mandat fractionnel : 4 étapes, validation CEO/CTO (Lovable, Cursor), phases, backlog et pilotage devs ou agence. Go/no-go et stack avant gros investissement.",
   "hero": {
     "badge": "Nouveau produit",
+    "quote": "J'ai une idée claire, un budget, et zéro envie de passer 6 mois à builder quelque chose que personne veut.",
     "title": "Lancer un SaaS ou un MVP",
     "lede": "<p><strong>Vous préparez un MVP ou un SaaS et vous voulez cadrer avant d'investir lourd.</strong> Idée, marché, parfois budget ou agence en vue, mais <strong>pas encore de carte claire</strong> : stack, périmètre du premier release, risques, ce qu'il faut valider avant les mois de dev.</p><p>J'interviens en <strong>mandat par phases</strong> avec le CEO, le CTO ou les fondateurs : faisabilité, go/no-go, architecture, prototypes rapides (Lovable, Claude, Cursor : vous prototypiez, je guide). Je peux aussi <strong>piloter vos devs ou votre agence</strong> : créer les phases, structurer le backlog, prioriser ce qu'il faut pour un MVP qui fonctionne sans déraper. <strong>Pas</strong> un CTO embarqué : cap, séquence et cohérence produit-tech, pas la gestion des tickets au quotidien.</p><p>Mandat <strong>fractionnel</strong>, pas temps plein : en pratique <strong>demi-journées</strong> pour cadrer et synchroniser, <strong>journées complètes ponctuelles</strong> pour prototyper ou trancher l'architecture, parfois <strong>deux jours par semaine</strong> si je code des briques clés. Le rythme se calibre à l'appel, phase par phase.</p>",
     "buy": {

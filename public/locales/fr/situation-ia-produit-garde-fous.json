@@ -3,6 +3,7 @@
   "seoDescription": "IA produit : prérequis, risques, périmètre et anti-hallucination avant build. APIs Claude/OpenAI, build vs buy, mandat en 4 étapes, POC. Pas MLOps.",
   "hero": {
     "badge": "IA & produit",
+    "quote": "Tout le monde nous demande si on fait de l'IA. On sait pas par où commencer sans que ça vire en gadget ou en risque.",
     "title": "IA dans votre produit",
     "lede": "<p><strong>L'IA est sur la table, que votre produit soit déjà en ligne ou en lancement.</strong> Pression « il faut de l'IA », feature floue proposée par l'agence, expérimentations sans cadre. Risque : coûts, données, UX et dette, sans valeur métier claire.</p><p>Mon angle est <strong>produit</strong> : identifier en amont les <strong>prérequis, risques et dépendances</strong>, trancher le <strong>périmètre IA</strong> pour éviter les dérapages et limiter les hallucinations, puis build vs buy et intégration des APIs (Claude, OpenAI, etc.) là où le code classique ne suffit pas. <strong>Pas</strong> MLOps ni exploitation de modèles : je m'occupe de l'usage dans le produit, pas de la machine.</p><p>Mandat <strong>fractionnel par phases</strong> : cartographie, garde-fous, POC, puis handover ou pilotage de vos devs ou agence sur le build. <strong>Demi-journées</strong> en cadrage, <strong>journée complète</strong> ponctuelle pour un POC, parfois <strong>deux jours par semaine</strong> si je code une intégration critique. Rythme calé à l'appel.</p>",
     "buy": {

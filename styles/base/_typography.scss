@@ -197,3 +197,69 @@ blockquote {
 small {
   font-size: 0.8em;
 }
+
+@mixin voice-quote-marks {
+  &::before,
+  &::after {
+    display: inline;
+    font-family: var(--heading-1-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.85em;
+    line-height: 0;
+    color: var(--primary-accent-color);
+    opacity: 0.38;
+    vertical-align: -0.14em;
+    pointer-events: none;
+  }
+
+  &::before {
+    content: "\201C";
+    margin-right: 0.35em;
+  }
+
+  &::after {
+    content: "\201D";
+    margin-left: 0.32em;
+  }
+}
+
+// Quiz result: quote as the main headline (unchanged)
+.component__routing-quiz__result-quote {
+  @include voice-quote-marks;
+
+  max-width: 38rem;
+  margin: 0.15rem auto 0.65rem;
+  padding: 0.2rem 0.5rem 0.35rem;
+  font-family: var(--heading-2-font-family);
+  font-size: var(--heading-3-font-size);
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.28;
+  text-align: center;
+  color: var(--heading-1-color);
+
+  @media screen and (max-width: $sm) {
+    font-size: calc(var(--heading-3-font-size) * 0.92);
+  }
+}
+
+// Situation hero: epigraph under H1 (lighter than quiz)
+.situation-hero__quote {
+  @include voice-quote-marks;
+
+  max-width: 40rem;
+  margin: 0 auto 0.85rem;
+  padding: 0.15rem 0.5rem 0.25rem;
+  font-family: var(--heading-2-font-family);
+  font-size: var(--heading-4-font-size);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.35;
+  text-align: center;
+  color: var(--heading-3-color);
+
+  @media screen and (max-width: $sm) {
+    font-size: calc(var(--heading-4-font-size) * 0.95);
+  }
+}

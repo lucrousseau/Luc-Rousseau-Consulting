@@ -32,6 +32,7 @@ export default function SituationHero({ namespace }) {
       />
       {hero?.badge && <p className="section__badge">{hero.badge}</p>}
       <h1>{hero?.title}</h1>
+      {hero?.quote && <p className="situation-hero__quote">{hero.quote}</p>}
       {hero?.lede && (
         <Row
           halign="center"

@@ -2,6 +2,7 @@
   "seoTitle": "Un seul dev, toute la responsabilité technique | Luc Rousseau",
   "seoDescription": "Un seul dev porte toute la responsabilité technique : 1 j/sem, joignable en semaine, urgence cadrée, Laravel, React, WordPress. Bus factor sans second temps plein.",
   "hero": {
+    "quote": "Si mon dev tombe malade deux semaines, je sais même pas ce qui se passe dans notre propre code.",
     "badge": "Équipe technique réduite",
     "title": "Un seul dev porte toute la responsabilité technique",
     "lede": "<p><strong>Un seul développeur concentre toute la responsabilité technique chez vous.</strong> Le risque n'est pas théorique : maladie, départ, vacances, surcharge. Vous n'avez pas besoin d'un deuxième temps plein, vous avez besoin de <strong>continuité, de recul et de tranquillité d'esprit</strong> si la prod bloque et que votre dev principal ne répond pas.</p><p><strong>Une journée par semaine</strong> structure le travail en profondeur ; en parallèle, on cadre la valeur au quotidien, le backup progressif et une <strong>présence fiable</strong> (joignable en semaine, urgence et week-end convenus à l'avance).</p>",

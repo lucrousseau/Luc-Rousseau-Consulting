@@ -3,6 +3,7 @@
   "seoDescription": "Post-funding, before a first full-time dev: senior 2 days/wk, four-step mandate (frame, backlog, build, hire prep), often better than a junior in the same budget.",
   "hero": {
     "badge": "Post-funding startup",
+    "quote": "We raised, we have customers, we have a roadmap. What we don't have is someone who knows what to build first.",
     "title": "Post-funding: before your first full-time developer",
     "lede": "<p><strong>You're post-funding and weighing your first technical hire.</strong> The pressure is on: <strong>ship faster</strong>, prove traction, show the team is growing. A first full-time developer feels natural; it's often the <strong>most expensive and slowest</strong> way to get solid product and technical leadership.</p><p>At <strong>two days a week</strong>, you can have a <strong>senior product engineer who is also your principal developer</strong>: <strong>prioritization, backlog, and requirements</strong>, then <strong>architecture and production code</strong> (Laravel, React, APIs). This isn't arms-length advice: <strong>I build</strong> the foundations and priority features, in a comparable budget band, with less risk if the product pivots.</p>",
     "buy": {

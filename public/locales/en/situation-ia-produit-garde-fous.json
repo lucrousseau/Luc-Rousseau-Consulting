@@ -3,6 +3,7 @@
   "seoDescription": "Product AI: prerequisites, risks, scope, anti-hallucination before build. Claude/OpenAI APIs, build vs buy, four-step mandate, POC. Not MLOps.",
   "hero": {
     "badge": "AI & product",
+    "quote": "Everyone's asking if we're doing AI. We don't know where to start without it becoming a gimmick or a risk.",
     "title": "AI in your product",
     "lede": "<p><strong>AI is on the table, whether your product is live or in launch.</strong> « We need AI » pressure, fuzzy agency feature, experiments without guardrails. Risk: cost, data, UX, and debt without clear business value.</p><p>My angle is <strong>product</strong>: identify <strong>prerequisites, risks, and dependencies</strong> upfront, define <strong>AI scope</strong> to avoid drift and limit hallucinations, then build vs buy and API integration (Claude, OpenAI, etc.) where classic code is not enough. <strong>Not</strong> MLOps or model operations: I work on usage in the product, not running the machine.</p><p><strong>Fractional, phased</strong> mandate: mapping, guardrails, POC, then handover or steering your devs or agency on the build. <strong>Half-days</strong> for framing, <strong>full days</strong> for a POC, sometimes <strong>two days a week</strong> if I code a critical integration. Rhythm set on the call.</p>",
     "buy": {

@@ -3,6 +3,7 @@
   "seoDescription": "One developer carries all technical responsibility: 1 day/week, reachable weekdays, framed emergencies, Laravel, React, WordPress. Bus factor without a second hire.",
   "hero": {
     "badge": "Small technical team",
+    "quote": "If my dev is out sick for two weeks, I don't even know what's happening in our own code.",
     "title": "One developer carries all technical responsibility",
     "lede": "<p><strong>One developer concentrates all technical responsibility at your company.</strong> Risk isn't theoretical: illness, departure, vacation, burnout. You don't need a second full-time hire, you need <strong>continuity, perspective, and peace of mind</strong> when production is down and your main developer doesn't answer.</p><p><strong>One day a week</strong> structures deep work; in parallel, we frame day-to-day value, gradual backup, and <strong>dependable coverage</strong> (reachable on weekdays, urgency and weekends agreed up front).</p>",
     "buy": {

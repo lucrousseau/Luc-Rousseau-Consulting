@@ -33,6 +33,7 @@ function getSituationSeo(locale, namespace) {
   const data = loadSituationNamespaceJson(locale, namespace);
   return {
     headline: data.hero?.title ?? stripBrandSuffix(data.seoTitle),
+    voiceQuote: data.hero?.quote ?? "",
     metaTitle: data.seoTitle ?? "",
     description: data.seoDescription ?? "",
   };

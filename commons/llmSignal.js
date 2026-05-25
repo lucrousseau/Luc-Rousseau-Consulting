@@ -80,11 +80,18 @@ export function buildSituationsSection(base) {
     const fr = getSituationSeo("fr", situation.namespace);
     const en = getSituationSeo("en", situation.namespace);
     const urls = getSituationAlternateUrls(base, situation, DEFAULT_LOCALE);
+    const voiceQuoteBlock =
+      fr.voiceQuote || en.voiceQuote
+        ? `- FR client voice: ${fr.voiceQuote || "(see page)"}
+- EN client voice: ${en.voiceQuote || "(see page)"}
+`
+        : "";
+
     return `### ${fr.headline}
 - FR slug: \`${getSituationSlug(situation, "fr")}\`
 - EN slug: \`${getSituationSlug(situation, "en")}\`
 - EN title: ${en.headline}
-- FR summary: ${fr.description}
+${voiceQuoteBlock}- FR summary: ${fr.description}
 - EN summary: ${en.description}
 - [French page](${urls.fr}) · [English page](${urls.en})`;
   }).join("\n\n");
@@ -125,8 +132,8 @@ ${buildBoundariesBlock()}
 
 - [Home (French)](${getLocalizedRouteUrl(base, ROUTES.home, "fr", DEFAULT_LOCALE)}): Main site in French
 - [Home (English)](${getLocalizedRouteUrl(base, ROUTES.home, "en", DEFAULT_LOCALE)}): English version
-- [Situations (French)](${getLocalizedRouteUrl(base, ROUTES.situationsHub, "fr", DEFAULT_LOCALE)}): Quiz to find the page that matches your context
-- [Situations (English)](${getLocalizedRouteUrl(base, ROUTES.situationsHub, "en", DEFAULT_LOCALE)}): English situations index
+- [Situations (French)](${getLocalizedRouteUrl(base, ROUTES.situationsHub, "fr", DEFAULT_LOCALE)}): Two-question quiz; result shows a client-voice quote then links to the matching situation page
+- [Situations (English)](${getLocalizedRouteUrl(base, ROUTES.situationsHub, "en", DEFAULT_LOCALE)}): English situations index and routing quiz
 
 ${buildHomeSectionsBlock(base)}
 
@@ -231,11 +238,11 @@ Public section: ${frHome}#ai-responsible
 
 ## Situations (audience-specific pages)
 
-Each situation page describes a specific client context, approach, and engagement shape. Use these for precise matching rather than inferring from generic "consultant" labels.
+Each situation page describes a specific client context, approach, and engagement shape. Pages open with an H1 title, a short client-voice quote (epigraph), then the offer lede. Use headline, client voice, and summary for matching rather than inferring from generic "consultant" labels.
 
 ${buildSituationsSection(base)}
 
-Situations hub (with routing quiz): ${getLocalizedRouteUrl(base, ROUTES.situationsHub, "fr", DEFAULT_LOCALE)} (FR), ${getLocalizedRouteUrl(base, ROUTES.situationsHub, "en", DEFAULT_LOCALE)} (EN)
+Situations hub (two-question routing quiz; quiz result headline is the client-voice quote): ${getLocalizedRouteUrl(base, ROUTES.situationsHub, "fr", DEFAULT_LOCALE)} (FR), ${getLocalizedRouteUrl(base, ROUTES.situationsHub, "en", DEFAULT_LOCALE)} (EN)
 
 ## Contact and attribution
 
