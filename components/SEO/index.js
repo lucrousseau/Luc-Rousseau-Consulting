@@ -7,7 +7,16 @@ import { getSiteOrigin } from "../../utils/siteOrigin";
 
 const SITE_NAME = "Luc Rousseau";
 
-const SEO = ({ title, description, image, sameAs, jsonLd = [], path, noindex = false }) => {
+const SEO = ({
+  title,
+  description,
+  image,
+  sameAs,
+  jsonLd = [],
+  path,
+  hreflangPaths,
+  noindex = false,
+}) => {
   const base = getSiteOrigin();
   const router = useRouter();
   const { locale, pathname, asPath, defaultLocale } = router;
@@ -28,9 +37,24 @@ const SEO = ({ title, description, image, sameAs, jsonLd = [], path, noindex = f
 
   const ogLocale = locale === "fr" ? "fr_CA" : "en_CA";
   const ogLocaleAlternate = locale === "fr" ? "en_CA" : "fr_CA";
-  const alternateEn = absoluteUrl(base, localizedPath("en", defaultLoc, pathOnly));
-  const alternateFr = absoluteUrl(base, localizedPath("fr", defaultLoc, pathOnly));
-  const alternateDefault = absoluteUrl(base, localizedPath(defaultLoc, defaultLoc, pathOnly));
+  const alternateEn = absoluteUrl(
+    base,
+    hreflangPaths?.en
+      ? localizedPath("en", defaultLoc, hreflangPaths.en)
+      : localizedPath("en", defaultLoc, pathOnly)
+  );
+  const alternateFr = absoluteUrl(
+    base,
+    hreflangPaths?.fr
+      ? localizedPath("fr", defaultLoc, hreflangPaths.fr)
+      : localizedPath("fr", defaultLoc, pathOnly)
+  );
+  const alternateDefault = absoluteUrl(
+    base,
+    hreflangPaths?.default
+      ? localizedPath(defaultLoc, defaultLoc, hreflangPaths.default)
+      : localizedPath(defaultLoc, defaultLoc, pathOnly)
+  );
 
   const jsonLdPerson =
     sameAs && sameAs.length > 0

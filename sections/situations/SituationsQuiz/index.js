@@ -1,18 +1,23 @@
 import RoutingQuiz from "../../../components/RoutingQuiz";
+import { useRouter } from "next/router";
 import { SITUATIONS } from "../../../commons/situationsManifest";
+import { getSituationPathById, ROUTES } from "../../../commons/siteRoutes";
 import {
   SITUATIONS_QUIZ_ROOT_STEP_ID,
   SITUATIONS_QUIZ_STEPS,
   getSituationsQuizTotalQuestions,
 } from "../../../commons/situationsQuiz";
 
-const situationTitleKey = (slug) => `situations.${slug}.title`;
+const situationTitleKey = (id) => `situations.${id}.title`;
 
 /**
  * Situations hub quiz: thin wrapper around {@link RoutingQuiz}.
  * Requires i18n: `situations-index` (keys under `quiz.*` and `situations.*`).
  */
 export default function SituationsQuiz({ className }) {
+  const router = useRouter();
+  const locale = router.locale ?? "fr";
+
   return (
     <RoutingQuiz
       className={className}
@@ -21,12 +26,12 @@ export default function SituationsQuiz({ className }) {
       i18nNamespace="situations-index"
       uiKeyPrefix="quiz"
       totalQuestions={getSituationsQuizTotalQuestions()}
-      resultHref={(slug) => `/situations/${slug}`}
+      resultHref={(id) => getSituationPathById(id, locale) ?? `${ROUTES.situationsHub}/${id}`}
       resultTitleKey={situationTitleKey}
-      resultTeaserKey={(slug) => `situations.${slug}.teaser`}
+      resultTeaserKey={(id) => `situations.${id}.teaser`}
       browseLinks={SITUATIONS.map((situation) => ({
-        id: situation.slug,
-        href: `/situations/${situation.slug}`,
+        id: situation.id,
+        href: getSituationPathById(situation.id, locale),
       }))}
       browseLinkLabelKey={situationTitleKey}
     />

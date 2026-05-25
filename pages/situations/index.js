@@ -9,6 +9,7 @@ import Footer from "../../sections/Footer";
 import SituationsIndex from "../../sections/situations/SituationsIndex";
 import Contact from "../../sections/Contact";
 import { SITUATIONS } from "../../commons/situationsManifest";
+import { getSituationPathById, ROUTES } from "../../commons/siteRoutes";
 import { absoluteUrl, localizedPath } from "../../commons/localizedPath";
 import { buildSituationsHubJsonLd } from "../../commons/situationsStructuredData";
 import { getSiteOrigin } from "../../utils/siteOrigin";
@@ -18,7 +19,7 @@ const PAGE_SHELL_STYLE = {
   "--padding-bottom": "1rem",
 };
 
-const situationTitleKey = (slug) => `situations.${slug}.title`;
+const situationTitleKey = (id) => `situations.${id}.title`;
 
 export default function SituationsIndexPage() {
   const { t } = useTranslation(["situations-index", "common"]);
@@ -26,7 +27,7 @@ export default function SituationsIndexPage() {
   const locale = router.locale ?? "fr";
   const defaultLocale = router.defaultLocale ?? "fr";
   const base = getSiteOrigin();
-  const canonicalPath = localizedPath(locale, defaultLocale, "/situations");
+  const canonicalPath = localizedPath(locale, defaultLocale, ROUTES.situationsHub);
   const pageUrl = absoluteUrl(base, canonicalPath);
 
   const hubJsonLd = buildSituationsHubJsonLd({
@@ -39,8 +40,8 @@ export default function SituationsIndexPage() {
     homeLabel: t("common:home-link-label"),
     situationsHubLabel: t("badge"),
     situations: SITUATIONS.map((situation) => ({
-      slug: situation.slug,
-      name: t(situationTitleKey(situation.slug)),
+      path: getSituationPathById(situation.id, locale),
+      name: t(situationTitleKey(situation.id)),
     })),
   });
 
@@ -50,6 +51,7 @@ export default function SituationsIndexPage() {
         title={t("seoTitle")}
         description={t("seoDescription")}
         image={t("seoImage")}
+        path={ROUTES.situationsHub}
         sameAs={[t("common:linkedin")]}
         jsonLd={hubJsonLd}
       />

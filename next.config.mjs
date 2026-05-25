@@ -7,7 +7,7 @@ import i18n from "./next-i18next.config.js";
 import { securityHeaders } from "./lib/securityHeaders.mjs";
 
 const require = createRequire(import.meta.url);
-const { getAllSituationSlugs } = require("./commons/situationsManifest.js");
+const { SITUATIONS } = require("./commons/situationsManifest.js");
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -108,27 +108,39 @@ const nextConfig = {
       }
     }
 
-    /** Legacy /guides URLs → /situations (301 for SEO). */
+    /** Legacy /guides URLs → /situations (301 for SEO). locale: false = match path literally (i18n-safe). */
     const situationRedirects = [
-      { source: "/guides", destination: "/situations", permanent: true },
-      { source: "/guides/", destination: "/situations", permanent: true },
-      { source: "/en/guides", destination: "/en/situations", permanent: true },
-      { source: "/en/guides/", destination: "/en/situations", permanent: true },
+      { source: "/guides", destination: "/situations", permanent: true, locale: false },
+      { source: "/guides/", destination: "/situations", permanent: true, locale: false },
+      { source: "/en/guides", destination: "/en/situations", permanent: true, locale: false },
+      { source: "/en/guides/", destination: "/en/situations", permanent: true, locale: false },
     ];
 
-    for (const slug of getAllSituationSlugs()) {
+    for (const situation of SITUATIONS) {
       situationRedirects.push(
-        { source: `/guides/${slug}`, destination: `/situations/${slug}`, permanent: true },
-        { source: `/guides/${slug}/`, destination: `/situations/${slug}`, permanent: true },
         {
-          source: `/en/guides/${slug}`,
-          destination: `/en/situations/${slug}`,
+          source: `/guides/${situation.slugFr}`,
+          destination: `/situations/${situation.slugFr}`,
           permanent: true,
+          locale: false,
         },
         {
-          source: `/en/guides/${slug}/`,
-          destination: `/en/situations/${slug}`,
+          source: `/guides/${situation.slugFr}/`,
+          destination: `/situations/${situation.slugFr}`,
           permanent: true,
+          locale: false,
+        },
+        {
+          source: `/en/guides/${situation.slugEn}`,
+          destination: `/en/situations/${situation.slugEn}`,
+          permanent: true,
+          locale: false,
+        },
+        {
+          source: `/en/guides/${situation.slugEn}/`,
+          destination: `/en/situations/${situation.slugEn}`,
+          permanent: true,
+          locale: false,
         }
       );
     }

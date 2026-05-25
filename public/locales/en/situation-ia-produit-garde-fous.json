@@ -98,7 +98,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "Fast AI feature vs product AI framing first",
-      "intro": "This comparison is about <strong>AI in the product</strong> (usage, APIs, build vs buy). For day-to-day PM/PO needs, see <a href=\"/en/situations/product-manager-fractionnel\">Need a PM or PO, without full-time</a>. AI-first launch or MVP: see also <a href=\"/en/situations/mvp-saas-faisabilite\">Launch a SaaS or MVP</a>. WordPress product already live: <a href=\"/en/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>.",
+      "intro": "This comparison is about <strong>AI in the product</strong> (usage, APIs, build vs buy). For day-to-day PM/PO needs, see <a href=\"/situations/product-manager-fractionnel\">Need a PM or PO, without full-time</a>. AI-first launch or MVP: see also <a href=\"/situations/mvp-saas-faisabilite\">Launch a SaaS or MVP</a>. WordPress product already live: <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>.",
       "columnKeys": ["dimension", "hypeFirst", "framedFirst"],
       "table": {
         "headers": {
@@ -176,7 +176,7 @@
         },
         {
           "title": "We already have a PM: isn't that redundant?",
-          "content": "<p>Often no. <a href=\"/en/situations/product-manager-fractionnel\">Need a PM or PO, without full-time</a> covers prioritization and day-to-day rituals. This work covers <strong>where AI fits, build vs buy, APIs, risks</strong>, and POC before prod. The two complement each other.</p>"
+          "content": "<p>Often no. <a href=\"/situations/product-manager-fractionnel\">Need a PM or PO, without full-time</a> covers prioritization and day-to-day rituals. This work covers <strong>where AI fits, build vs buy, APIs, risks</strong>, and POC before prod. The two complement each other.</p>"
         },
         {
           "title": "Do you code or steer our team?",

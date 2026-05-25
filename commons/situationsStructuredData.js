@@ -1,4 +1,5 @@
 import { absoluteUrl, localizedPath } from "./localizedPath";
+import { ROUTES } from "./siteRoutes";
 
 /**
  * @param {object} params
@@ -35,7 +36,7 @@ export function buildBreadcrumbListJsonLd({ base, locale, defaultLocale, items }
  * @param {string} params.pageDescription
  * @param {string} params.homeLabel
  * @param {string} params.situationsHubLabel
- * @param {{ slug: string; name: string }[]} params.situations
+ * @param {{ path: string; name: string }[]} params.situations
  * @returns {object[]}
  */
 export function buildSituationsHubJsonLd({
@@ -56,7 +57,7 @@ export function buildSituationsHubJsonLd({
       base,
       locale,
       defaultLocale,
-      items: [{ label: homeLabel, path: "/" }, { label: situationsHubLabel }],
+      items: [{ label: homeLabel, path: ROUTES.home }, { label: situationsHubLabel }],
     }),
     {
       "@context": "https://schema.org",
@@ -72,10 +73,7 @@ export function buildSituationsHubJsonLd({
           "@type": "ListItem",
           position: index + 1,
           name: situation.name,
-          url: absoluteUrl(
-            base,
-            localizedPath(locale, defaultLocale, `/situations/${situation.slug}`)
-          ),
+          url: absoluteUrl(base, localizedPath(locale, defaultLocale, situation.path)),
         })),
       },
     },
@@ -105,8 +103,8 @@ export function buildSituationPageBreadcrumbJsonLd({
     locale,
     defaultLocale,
     items: [
-      { label: homeLabel, path: "/" },
-      { label: situationsHubLabel, path: "/situations" },
+      { label: homeLabel, path: ROUTES.home },
+      { label: situationsHubLabel, path: ROUTES.situationsHub },
       { label: situationTitle },
     ],
   });

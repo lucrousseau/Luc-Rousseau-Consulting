@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 
 import { parseHtmlContent } from "../../../commons/parseHtmlContent";
+import { ROUTES } from "../../../commons/siteRoutes";
 import Row from "../../../components/Layout/Row";
 import Buy from "../../../components/Buy";
 import Breadcrumbs from "../../../components/Breadcrumbs";
@@ -17,8 +18,8 @@ export default function SituationHero({ namespace }) {
   const buy = hero?.buy;
 
   const breadcrumbItems = [
-    { label: t("common:home-link-label"), href: "/" },
-    { label: t("common:situations-link-label"), href: "/situations" },
+    { label: t("common:home-link-label"), href: ROUTES.home },
+    { label: t("common:situations-link-label"), href: ROUTES.situationsHub },
     { label: hero?.title ?? "" },
   ];
 

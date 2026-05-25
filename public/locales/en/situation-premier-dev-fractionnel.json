@@ -73,7 +73,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "First full-time dev vs fractional partnership",
-      "intro": "Ballpark for a Quebec startup, we refine on a call. If your challenge is <strong>launching a product</strong> before hiring, see <a href=\"/en/situations/mvp-saas-faisabilite\">Launch a SaaS or MVP</a>.",
+      "intro": "Ballpark for a Quebec startup, we refine on a call. If your challenge is <strong>launching a product</strong> before hiring, see <a href=\"/situations/mvp-saas-faisabilite\">Launch a SaaS or MVP</a>.",
       "columnKeys": ["dimension", "fullTimeJunior", "fractionalSenior"],
       "table": {
         "headers": {

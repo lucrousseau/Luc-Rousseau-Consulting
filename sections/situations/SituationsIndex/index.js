@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { ROUTES } from "../../../commons/siteRoutes";
 import { parseHtmlContent } from "../../../commons/parseHtmlContent";
 
 import Row from "../../../components/Layout/Row";
@@ -15,7 +16,7 @@ export default function SituationsIndex() {
   const { t } = useTranslation(["situations-index", "common"]);
 
   const breadcrumbItems = [
-    { label: t("common:home-link-label"), href: "/" },
+    { label: t("common:home-link-label"), href: ROUTES.home },
     { label: t("badge") },
   ];
 

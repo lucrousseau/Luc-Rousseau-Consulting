@@ -84,7 +84,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "Full-time PM/PO vs fractional support",
-      "intro": "Ballpark, exact calendar (half-days vs full days) is set on a call. For <strong>AI in the product</strong> or launch framing, see also <a href=\"/en/situations/ia-produit-garde-fous\">AI in your product</a> and <a href=\"/en/situations/mvp-saas-faisabilite\">Launch a SaaS or MVP</a>.",
+      "intro": "Ballpark, exact calendar (half-days vs full days) is set on a call. For <strong>AI in the product</strong> or launch framing, see also <a href=\"/situations/ia-produit-garde-fous\">AI in your product</a> and <a href=\"/situations/mvp-saas-faisabilite\">Launch a SaaS or MVP</a>.",
       "columnKeys": ["dimension", "fullTimePm", "fractionalLead"],
       "table": {
         "headers": {

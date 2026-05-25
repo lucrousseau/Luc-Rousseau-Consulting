@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import { alignments } from "../../commons/alignments";
+import { resolveLocaleSwitchPath } from "../../commons/siteRoutes";
 import Row from "../Layout/Row";
 
 const LANGUAGE_LABELS = {
@@ -18,6 +19,8 @@ export default function LanguageSwitcher({ current: targetLocale = "fr", ...prop
   // eslint-disable-next-line security/detect-object-injection
   const label = LANGUAGE_LABELS[targetLocale] ?? LANGUAGE_LABELS.fr;
 
+  const switchPath = resolveLocaleSwitchPath(router.asPath, targetLocale) ?? router.asPath;
+
   return (
     <div className={classNames("component component__language-switcher", alignmentsClass)}>
       <Row
@@ -32,7 +35,7 @@ export default function LanguageSwitcher({ current: targetLocale = "fr", ...prop
               "component__language-switcher__lang--current"
             ),
             content: (
-              <Link href={router.asPath} locale={targetLocale} aria-label={label}>
+              <Link href={switchPath} locale={targetLocale} aria-label={label}>
                 {targetLocale.toUpperCase()}
               </Link>
             ),

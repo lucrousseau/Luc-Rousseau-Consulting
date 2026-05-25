@@ -8,7 +8,12 @@ import Header from "../../sections/Header";
 import Footer from "../../sections/Footer";
 import SituationShell from "../../sections/situations/SituationShell";
 import Contact from "../../sections/Contact";
-import { getAllSituationSlugs, getSituationBySlug } from "../../commons/situationsManifest";
+import {
+  getAllSituationSlugs,
+  getSituationBySlug,
+  getSituationHreflangPaths,
+  getSituationPath,
+} from "../../commons/situationsManifest";
 import { buildSituationPageJsonLd } from "../../commons/situationsStructuredData";
 import { absoluteUrl, localizedPath } from "../../commons/localizedPath";
 import { getSiteOrigin } from "../../utils/siteOrigin";
@@ -18,7 +23,7 @@ const PAGE_SHELL_STYLE = {
   "--padding-bottom": "1rem",
 };
 
-export default function SituationPage({ namespace, slug, publishedAt }) {
+export default function SituationPage({ namespace, situationPath, hreflangPaths, publishedAt }) {
   const { t } = useTranslation([namespace, "common"]);
   const router = useRouter();
   const locale = router.locale ?? "fr";
@@ -28,7 +33,6 @@ export default function SituationPage({ namespace, slug, publishedAt }) {
   const pageName =
     hero && typeof hero === "object" && hero.title ? hero.title : t(`${namespace}:seoTitle`);
   const pageDescription = t(`${namespace}:seoDescription`);
-  const situationPath = `/situations/${slug}`;
   const canonicalPath = localizedPath(locale, defaultLocale, situationPath);
   const pageUrl = absoluteUrl(base, canonicalPath);
 
@@ -51,6 +55,7 @@ export default function SituationPage({ namespace, slug, publishedAt }) {
         title={t(`${namespace}:seoTitle`)}
         description={pageDescription}
         path={situationPath}
+        hreflangPaths={hreflangPaths}
         sameAs={[t("common:linkedin")]}
         jsonLd={situationJsonLd}
       />
@@ -70,15 +75,15 @@ export default function SituationPage({ namespace, slug, publishedAt }) {
 
 export async function getStaticPaths() {
   return {
-    paths: getAllSituationSlugs().flatMap((slug) =>
-      ["fr", "en"].map((locale) => ({ params: { slug }, locale }))
+    paths: ["fr", "en"].flatMap((locale) =>
+      getAllSituationSlugs(locale).map((slug) => ({ params: { slug }, locale }))
     ),
     fallback: false,
   };
 }
 
 export async function getStaticProps({ params, locale }) {
-  const situation = getSituationBySlug(params.slug);
+  const situation = getSituationBySlug(params.slug, locale);
 
   if (!situation) {
     return { notFound: true };
@@ -87,7 +92,8 @@ export async function getStaticProps({ params, locale }) {
   return {
     props: {
       namespace: situation.namespace,
-      slug: situation.slug,
+      situationPath: getSituationPath(situation, locale),
+      hreflangPaths: getSituationHreflangPaths(situation),
       publishedAt: situation.publishedAt,
       ...(await serverSideTranslations(locale, [situation.namespace, "contact", "common"])),
     },

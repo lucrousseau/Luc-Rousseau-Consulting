@@ -41,7 +41,7 @@
       "type": "intro",
       "badge": "The risk",
       "title": "Bus factor, in practice",
-      "lede": "<p class=\"big\">Your main developer stays <strong>owner of the code and decisions</strong>. My role isn't to compete: it's to reduce single-point dependency, speed up reviews, and be the <strong>reliable backup</strong> when they're away, overloaded, or unreachable in an emergency, because we prepared together.</p><p class=\"big\">If you're preparing a <strong>first hire</strong> or <strong>product leadership</strong> instead, see <a href=\"/en/situations/premier-dev-fractionnel\">Post-funding: before your first full-time developer</a> and <a href=\"/en/situations/product-manager-fractionnel\">Need a PM or PO, without full-time</a>.</p>"
+      "lede": "<p class=\"big\">Your main developer stays <strong>owner of the code and decisions</strong>. My role isn't to compete: it's to reduce single-point dependency, speed up reviews, and be the <strong>reliable backup</strong> when they're away, overloaded, or unreachable in an emergency, because we prepared together.</p><p class=\"big\">If you're preparing a <strong>first hire</strong> or <strong>product leadership</strong> instead, see <a href=\"/situations/premier-dev-fractionnel\">Post-funding: before your first full-time developer</a> and <a href=\"/situations/product-manager-fractionnel\">Need a PM or PO, without full-time</a>.</p>"
     },
     {
       "type": "cards",

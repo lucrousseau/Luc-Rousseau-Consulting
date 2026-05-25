@@ -7,7 +7,10 @@
 
 import { apiRequireGet } from "../../utils/apiRequireGet";
 import { getSiteOrigin } from "../../utils/siteOrigin";
+import { getRouteAlternateUrls, getSituationAlternateUrls, ROUTES } from "../../commons/siteRoutes";
 import { SITUATIONS } from "../../commons/situationsManifest";
+
+const DEFAULT_LOCALE = "fr";
 
 export default function handler(req, res) {
   if (!apiRequireGet(req, res)) return;
@@ -15,8 +18,8 @@ export default function handler(req, res) {
   const base = getSiteOrigin(req);
   const now = new Date().toISOString().slice(0, 10);
 
-  const frUrl = `${base}/`;
-  const enUrl = `${base}/en`;
+  const homeAlternates = getRouteAlternateUrls(base, ROUTES.home, DEFAULT_LOCALE);
+  const situationsHubAlternates = getRouteAlternateUrls(base, ROUTES.situationsHub, DEFAULT_LOCALE);
 
   const hreflangLinks = (frLoc, enLoc, defaultUrl) =>
     `    <xhtml:link rel="alternate" hreflang="fr" href="${frLoc}"/>
@@ -25,63 +28,51 @@ export default function handler(req, res) {
 
   const urls = [
     {
-      loc: frUrl,
+      loc: homeAlternates.fr,
       priority: "1.0",
       changefreq: "weekly",
       geo: true,
-      hreflang: { fr: frUrl, en: enUrl, default: frUrl },
+      hreflang: homeAlternates,
     },
     {
-      loc: enUrl,
+      loc: homeAlternates.en,
       priority: "1.0",
       changefreq: "weekly",
       geo: true,
-      hreflang: { fr: frUrl, en: enUrl, default: frUrl },
+      hreflang: homeAlternates,
     },
     {
-      loc: `${base}/situations`,
+      loc: situationsHubAlternates.fr,
       priority: "0.8",
       changefreq: "monthly",
-      hreflang: {
-        fr: `${base}/situations`,
-        en: `${base}/en/situations`,
-        default: `${base}/situations`,
-      },
+      hreflang: situationsHubAlternates,
     },
     {
-      loc: `${base}/en/situations`,
+      loc: situationsHubAlternates.en,
       priority: "0.8",
       changefreq: "monthly",
-      hreflang: {
-        fr: `${base}/situations`,
-        en: `${base}/en/situations`,
-        default: `${base}/situations`,
-      },
+      hreflang: situationsHubAlternates,
     },
-    ...SITUATIONS.flatMap((situation) => [
-      {
-        loc: `${base}/situations/${situation.slug}`,
-        priority: "0.7",
-        changefreq: "monthly",
-        lastmod: situation.publishedAt,
-        hreflang: {
-          fr: `${base}/situations/${situation.slug}`,
-          en: `${base}/en/situations/${situation.slug}`,
-          default: `${base}/situations/${situation.slug}`,
+    ...SITUATIONS.flatMap((situation) => {
+      const alternates = getSituationAlternateUrls(base, situation, DEFAULT_LOCALE);
+
+      return [
+        {
+          loc: alternates.fr,
+          priority: "0.7",
+          changefreq: "monthly",
+          lastmod: situation.publishedAt,
+          hreflang: alternates,
         },
-      },
-      {
-        loc: `${base}/en/situations/${situation.slug}`,
-        priority: "0.7",
-        changefreq: "monthly",
-        lastmod: situation.publishedAt,
-        hreflang: {
-          fr: `${base}/situations/${situation.slug}`,
-          en: `${base}/en/situations/${situation.slug}`,
-          default: `${base}/situations/${situation.slug}`,
+        {
+          loc: alternates.en,
+          priority: "0.7",
+          changefreq: "monthly",
+          lastmod: situation.publishedAt,
+          hreflang: alternates,
         },
-      },
-    ]),
+      ];
+    }),
   ];
 
   const urlset = urls

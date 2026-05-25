@@ -37,6 +37,19 @@ describe("parseHtmlContent", () => {
     expect(link).toHaveAttribute("href", "/situations");
     expect(link).not.toHaveAttribute("target");
   });
+
+  it("localizes internal situation links for the active locale", () => {
+    const { container } = render(
+      <>
+        {parseHtmlContent('<a href="/situations/premier-dev-fractionnel">First hire</a>', {
+          locale: "en",
+        })}
+      </>
+    );
+
+    const link = container.querySelector("a");
+    expect(link).toHaveAttribute("href", "/situations/post-funding-first-developer");
+  });
 });
 
 describe("parseHtmlItems", () => {

@@ -18,7 +18,7 @@ describe("situationsStructuredData", () => {
       pageDescription: "Hub description",
       homeLabel: "Accueil",
       situationsHubLabel: "Situations",
-      situations: [{ slug: "mvp-saas-faisabilite", name: "MVP SaaS" }],
+      situations: [{ path: "/situations/mvp-saas-faisabilite", name: "MVP SaaS" }],
     });
 
     expect(breadcrumb.itemListElement).toHaveLength(2);

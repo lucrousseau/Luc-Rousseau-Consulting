@@ -98,7 +98,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "Build straight with agency/devs vs product-system framing first",
-      "intro": "This comparison is about <strong>launching a SaaS or MVP</strong> (feasibility, stack, prototypes). Different from <a href=\"/en/situations/premier-dev-fractionnel\">Post-funding: before your first full-time developer</a>, for startups preparing a first tech hire rather than framing a product to launch. <strong>AI-centric</strong> offer: see <a href=\"/en/situations/ia-produit-garde-fous\">AI in your product</a>.",
+      "intro": "This comparison is about <strong>launching a SaaS or MVP</strong> (feasibility, stack, prototypes). Different from <a href=\"/situations/premier-dev-fractionnel\">Post-funding: before your first full-time developer</a>, for startups preparing a first tech hire rather than framing a product to launch. <strong>AI-centric</strong> offer: see <a href=\"/situations/ia-produit-garde-fous\">AI in your product</a>.",
       "columnKeys": ["dimension", "buildFirst", "phaseFirst"],
       "table": {
         "headers": {
@@ -192,11 +192,11 @@
         },
         {
           "title": "What if we raise after?",
-          "content": "<p>You arrive with <strong>plan, stack, and validation proof</strong>, less embarrassing technical due diligence. I can help sharpen the first tech or product hire profile (see <a href=\"/en/situations/premier-dev-fractionnel\">Post-funding: before your first full-time developer</a>).</p>"
+          "content": "<p>You arrive with <strong>plan, stack, and validation proof</strong>, less embarrassing technical due diligence. I can help sharpen the first tech or product hire profile (see <a href=\"/situations/premier-dev-fractionnel\">Post-funding: before your first full-time developer</a>).</p>"
         },
         {
           "title": "What happens after framing?",
-          "content": "<p>Documented handover to your devs or agency; optional fractional follow-up if you want coherence without a permanent role. Other phased mandates: <a href=\"/en/situations/refonte-produit-par-phases\">WordPress rebuild</a>, <a href=\"/en/situations/plateforme-editoriale-produit\">editorial platform</a>, or <a href=\"/en/situations\">all situations</a>.</p>"
+          "content": "<p>Documented handover to your devs or agency; optional fractional follow-up if you want coherence without a permanent role. Other phased mandates: <a href=\"/situations/refonte-produit-par-phases\">WordPress rebuild</a>, <a href=\"/situations/plateforme-editoriale-produit\">editorial platform</a>, or <a href=\"/situations\">all situations</a>.</p>"
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",

@@ -6,8 +6,11 @@
 
 import { apiRequireGet } from "../../utils/apiRequireGet";
 import { getSiteOrigin } from "../../utils/siteOrigin";
-import { SITUATIONS } from "../../commons/situationsManifest";
+import { SITUATIONS, getSituationSlug } from "../../commons/situationsManifest";
+import { getSituationAlternateUrls, getLocalizedRouteUrl, ROUTES } from "../../commons/siteRoutes";
 import { getSituationSeo } from "../../commons/situationSeoMeta";
+
+const DEFAULT_LOCALE = "fr";
 
 export default function handler(req, res) {
   if (!apiRequireGet(req, res)) return;
@@ -25,22 +28,24 @@ Expertise: decoupled systems, APIs, and CMS platforms (archaic WordPress moderni
 
 ## Pages
 
-- [Home (French)](${base}/): Main site in French
-- [Home (English)](${base}/en): English version
-- [Situations (French)](${base}/situations): Quiz to find the page that matches your context
-- [Situations (English)](${base}/en/situations): English situations index
+- [Home (French)](${getLocalizedRouteUrl(base, ROUTES.home, "fr", DEFAULT_LOCALE)}): Main site in French
+- [Home (English)](${getLocalizedRouteUrl(base, ROUTES.home, "en", DEFAULT_LOCALE)}): English version
+- [Situations (French)](${getLocalizedRouteUrl(base, ROUTES.situationsHub, "fr", DEFAULT_LOCALE)}): Quiz to find the page that matches your context
+- [Situations (English)](${getLocalizedRouteUrl(base, ROUTES.situationsHub, "en", DEFAULT_LOCALE)}): English situations index
 
 ## Situations (audience pages)
 
 ${SITUATIONS.map((situation) => {
   const fr = getSituationSeo("fr", situation.namespace);
   const en = getSituationSeo("en", situation.namespace);
+  const urls = getSituationAlternateUrls(base, situation, DEFAULT_LOCALE);
   return `### ${fr.headline}
-- Slug: \`${situation.slug}\`
+- FR slug: \`${getSituationSlug(situation, "fr")}\`
+- EN slug: \`${getSituationSlug(situation, "en")}\`
 - EN title: ${en.headline}
 - FR summary: ${fr.description}
 - EN summary: ${en.description}
-- [French page](${base}/situations/${situation.slug}) · [English page](${base}/en/situations/${situation.slug})`;
+- [French page](${urls.fr}) · [English page](${urls.en})`;
 }).join("\n\n")}
 
 ## Contact

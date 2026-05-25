@@ -21,3 +21,15 @@ export function localizedPath(locale, defaultLocale, pathname) {
 export function absoluteUrl(base, path) {
   return path === "/" ? `${base}/` : `${base}${path}`;
 }
+
+/**
+ * Absolute URL with locale prefix for SEO (canonical, hreflang, sitemap, JSON-LD).
+ * @param {string} base - Origin without trailing slash
+ * @param {string} locale
+ * @param {string} defaultLocale
+ * @param {string} pathname - Path without locale prefix (e.g. `/situations/foo`)
+ * @returns {string}
+ */
+export function localizedAbsoluteUrl(base, locale, defaultLocale, pathname) {
+  return absoluteUrl(base, localizedPath(locale, defaultLocale, pathname));
+}
