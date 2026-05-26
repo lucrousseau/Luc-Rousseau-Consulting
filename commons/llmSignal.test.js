@@ -1,5 +1,7 @@
+import { EXPERTISE_PAGES } from "./expertiseManifest";
 import { SITUATIONS } from "./situationsManifest";
 import {
+  buildExpertiseSection,
   buildHumansTxt,
   buildLlmsFullTxt,
   buildLlmsTxt,
@@ -30,6 +32,9 @@ describe("llmSignal", () => {
     expect(body).toContain(`${base}/#about`);
     expect(body).toContain(`${base}/en#about`);
     expect(body).toContain("## Situations (audience pages)");
+    expect(body).toContain("## Expertise pages (SEO, not in Situations menu)");
+    expect(body).toContain("/expertise/wordpress-produit-editorial");
+    expect(body).toContain("module-by-module evolution");
   });
 
   it("builds llms-full.txt with identity, engagement, and situations", () => {
@@ -45,6 +50,8 @@ describe("llmSignal", () => {
     expect(body).toContain("## Responsible AI usage");
     expect(body).toContain("hello@lucrousseau.com");
     expect(body).toContain(`${base}/llms.txt`);
+    expect(body).toContain("## Expertise pages (SEO satellite, not in Situations quiz)");
+    expect(body).toContain("wordpress-editorial-product");
   });
 
   it("builds humans.txt with contact and LLM file references", () => {
@@ -72,5 +79,24 @@ describe("llmSignal", () => {
     expect(body).toContain("FR client voice:");
     expect(body).toContain("levé des fonds");
     expect(body).toContain("We raised, we have customers");
+  });
+
+  it("includes every published expertise page with updated SEO summaries", () => {
+    const body = buildExpertiseSection(base);
+
+    for (const page of EXPERTISE_PAGES) {
+      expect(body).toContain(page.slugFr);
+      expect(body).toContain(page.slugEn);
+    }
+    expect(body).toContain("module par module");
+    expect(body).toContain("module-by-module");
+    expect(body).toContain("not listed in the Situations hub");
+  });
+
+  it("reflects updated editorial situation SEO in situations section", () => {
+    const body = buildSituationsSection(base);
+
+    expect(body).toContain("Souvent WordPress");
+    expect(body).toContain("Often WordPress");
   });
 });

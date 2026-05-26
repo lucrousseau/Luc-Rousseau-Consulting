@@ -33,7 +33,7 @@
       },
       "live": {
         "label": "Faire évoluer un produit déjà en production",
-        "hint": "WordPress archaïque ou lent, plateforme éditoriale à l'échelle, ou IA dans l'existant"
+        "hint": "WordPress archaïque ou lent, plateforme éditoriale à l'échelle (WP ou autre stack), ou IA dans l'existant"
       },
       "launch": {
         "label": "Lancer un nouveau produit",
@@ -53,7 +53,7 @@
       },
       "editorial": {
         "label": "Faire tenir un produit éditorial à l'échelle",
-        "hint": "Comparateur, conversion, partenariats et monétisation : édition et marketing sur le même système"
+        "hint": "Comparateur, conversion, évolution de la plateforme (souvent WordPress, pas toujours)"
       },
       "ai-live": {
         "label": "Clarifier l'IA dans le produit existant",
@@ -101,7 +101,7 @@
     "plateforme-editoriale-produit": {
       "title": "Produit éditorial à l'échelle",
       "quote": "On publie 50 contenus par semaine et notre stack a été pensée pour 5. On sent qu'on approche du mur.",
-      "teaser": "Comparateur ou multi-marques : conversion, partenariats visibles, monétisation, sans intégration ad hoc à chaque lancement."
+      "teaser": "Comparateur ou multi-marques : conversion, évolution module par module, monétisation. Souvent WordPress, pas toujours."
     },
     "mvp-saas-faisabilite": {
       "title": "Lancer un SaaS ou un MVP",

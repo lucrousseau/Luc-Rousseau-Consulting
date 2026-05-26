@@ -29,7 +29,7 @@ function stripBrandSuffix(title) {
  * @param {string} locale
  * @param {string} namespace
  */
-function getSituationSeo(locale, namespace) {
+function getNamespaceSeo(locale, namespace) {
   const data = loadSituationNamespaceJson(locale, namespace);
   return {
     headline: data.hero?.title ?? stripBrandSuffix(data.seoTitle),
@@ -39,7 +39,25 @@ function getSituationSeo(locale, namespace) {
   };
 }
 
+/**
+ * @param {string} locale
+ * @param {string} namespace
+ */
+function getSituationSeo(locale, namespace) {
+  return getNamespaceSeo(locale, namespace);
+}
+
+/**
+ * @param {string} locale
+ * @param {string} namespace
+ */
+function getExpertiseSeo(locale, namespace) {
+  return getNamespaceSeo(locale, namespace);
+}
+
 module.exports = {
+  getNamespaceSeo,
   getSituationSeo,
+  getExpertiseSeo,
   stripBrandSuffix,
 };

@@ -7,8 +7,14 @@
 
 import { apiRequireGet } from "../../utils/apiRequireGet";
 import { getSiteOrigin } from "../../utils/siteOrigin";
-import { getRouteAlternateUrls, getSituationAlternateUrls, ROUTES } from "../../commons/siteRoutes";
+import {
+  getRouteAlternateUrls,
+  getSituationAlternateUrls,
+  getExpertiseAlternateUrls,
+  ROUTES,
+} from "../../commons/siteRoutes";
 import { SITUATIONS } from "../../commons/situationsManifest";
+import { EXPERTISE_PAGES } from "../../commons/expertiseManifest";
 
 const DEFAULT_LOCALE = "fr";
 
@@ -69,6 +75,26 @@ export default function handler(req, res) {
           priority: "0.7",
           changefreq: "monthly",
           lastmod: situation.publishedAt,
+          hreflang: alternates,
+        },
+      ];
+    }),
+    ...EXPERTISE_PAGES.flatMap((page) => {
+      const alternates = getExpertiseAlternateUrls(base, page, DEFAULT_LOCALE);
+
+      return [
+        {
+          loc: alternates.fr,
+          priority: "0.6",
+          changefreq: "monthly",
+          lastmod: page.publishedAt,
+          hreflang: alternates,
+        },
+        {
+          loc: alternates.en,
+          priority: "0.6",
+          changefreq: "monthly",
+          lastmod: page.publishedAt,
           hreflang: alternates,
         },
       ];

@@ -1,0 +1,119 @@
+{
+  "seoTitle": "WordPress lent sur un produit éditorial : optimisation module par module | Luc Rousseau",
+  "seoDescription": "WordPress lent, comparateur ou fort trafic : stabilisation, perf en profondeur, rebuild module par module (blocs, APIs). Produit éditorial, pas maintenance agence. Québec.",
+  "hero": {
+    "badge": "Expertise",
+    "quote": "Notre WordPress tient, mais chaque comparateur ou lancement éditorial coûte trop cher en perf et en dette.",
+    "title": "WordPress lent sur un produit éditorial ?",
+    "lede": "<p>Vous cherchez peut-être « <strong>optimisation WordPress</strong> » ou « <strong>consultant WordPress performance</strong> ». Sur un <strong>produit éditorial</strong> (comparateur, multi-marques, conversion), le vrai enjeu n'est pas une couche de plugins : c'est une <strong>plateforme produit</strong> qui doit tenir sous trafic et évoluer chaque semaine.</p><p>J'interviens en <strong>mandat fractionnel produit-tech</strong> : stabiliser la prod, optimiser <strong>module par module</strong> (Gutenberg, headless, APIs, comparateurs), évaluer en continu si la stack doit rester ou migrer. Pas un forfait maintenance vitrine.</p><p>Pour l'accompagnement complet (souvent WordPress, parfois autre stack) : <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>. Stack archaïque à migrer : <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>.</p>",
+    "buy": {
+      "legend": "Parler de votre plateforme",
+      "prefix": "Sans engagement",
+      "label": "Planifier un appel"
+    }
+  },
+  "blocks": [
+    {
+      "type": "split",
+      "sectionKey": "context",
+      "title": "Symptômes vs approche produit",
+      "intro": "<p class=\"big\">Un WordPress lent sur une vitrine et un WordPress lent sur un <strong>comparateur à millions de visites</strong> n'ont pas la même gravité ni les mêmes leviers.</p>",
+      "panels": [
+        {
+          "heading": "Ce que vous voyez",
+          "items": [
+            "Temps de chargement qui dégradent conversion et SEO sur les parcours à fort trafic",
+            "Plugins empilés, thème legacy, dette qui ralentit chaque feature éditoriale",
+            "Équipe en corrective : perf et stabilité avant chaque lancement comparateur ou campagne"
+          ]
+        },
+        {
+          "heading": "Ce que je traite",
+          "items": [
+            "Audit orienté <strong>produit</strong> : parcours conversion, blocs, APIs, pas seulement PageSpeed",
+            "Rebuild <strong>module par module</strong> : comparateurs, patterns Gutenberg, couche headless si pertinent",
+            "Mandat fractionnel récurrent : stabiliser, livrer, réévaluer (migration seulement si la stack bloque vraiment)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "intro",
+      "badge": "Terrain Québec",
+      "title": "Déjà livré à cette échelle",
+      "lede": "<p class=\"big\">Références concrètes : <strong><a href=\"https://milesopedia.com\" target=\"_blank\" rel=\"noopener noreferrer\">Milesopedia</a></strong> (comparateurs multi-marques, fort trafic) et l'écosystème <strong><a href=\"https://www.nesto.ca/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Nesto</a></strong> (blocs Gutenberg, APIs, leads vers CRM). Même logique produit, que la stack reste WordPress couplé, headless ou hybride.</p>"
+    },
+    {
+      "type": "cards",
+      "badge": "Intervention",
+      "title": "Stabiliser, optimiser, faire évoluer",
+      "lede": "<p class=\"big\">Trois leviers typiques sur un WordPress qui porte un <strong>produit éditorial</strong>, sans promesse de « patch magique ».</p>",
+      "items": [
+        {
+          "title": "Stabilisation et cadre de release",
+          "content": "<p>Incidents, dette, déploiements : on réduit le firefighting avant d'accélérer. Critères clairs de « prod tenable » pour l'équipe éditoriale et marketing.</p>"
+        },
+        {
+          "title": "Performance en profondeur",
+          "content": "<p>Cache, CDN, requêtes, blocs lourds, comparateurs : optimisation <strong>par module</strong>, pas accumulation de plugins. Headless ou APIs quand le front doit se découpler.</p>"
+        },
+        {
+          "title": "Évolution produit continue",
+          "content": "<p>Nouveaux parcours, partenariats, monétisation : blocs réutilisables et contrats API pour que l'édition livre sans one-off à chaque lancement.</p>"
+        }
+      ]
+    },
+    {
+      "type": "stack",
+      "badge": "Stack typique",
+      "title": "Technologies concernées",
+      "lede": "<p class=\"big\">Souvent <strong>WordPress</strong> (Gutenberg, headless, WPGraphQL/REST) ; parfois <strong>Laravel</strong>, React/Next.js ou stack hybride selon le produit.</p>",
+      "items": [
+        "Audit perf · plugins · dette · parcours conversion",
+        "WordPress · Gutenberg · blocs comparateur",
+        "WordPress headless · WPGraphQL · REST",
+        "React · Next.js · TypeScript",
+        "Laravel · APIs · middleware",
+        "Redis · cache · CDN · requêtes sous trafic",
+        "Analytics · événements produit · A/B",
+        "CI/CD · previews · régression",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
+      "type": "faq",
+      "badge": "Questions",
+      "title": "WordPress performance vs accompagnement produit",
+      "items": [
+        {
+          "title": "Est-ce de la maintenance WordPress ?",
+          "content": "<p>Non. Pas de forfait « mises à jour + plugins ». C'est un mandat <strong>produit-tech fractionnel</strong> sur une plateforme éditoriale vivante : comparateurs, conversion, APIs, perf module par module.</p>"
+        },
+        {
+          "title": "Optimisation plugins ou rebuild module par module ?",
+          "content": "<p>Les deux peuvent coexister en phase, mais la cible est un <strong>système qui absorbe les lancements</strong> : blocs, patterns, APIs. Les plugins seuls ne tiennent pas sur un comparateur à fort trafic.</p>"
+        },
+        {
+          "title": "Faut-il passer headless ou migrer vers Laravel ?",
+          "content": "<p>Pas par défaut. On optimise et on fait évoluer tant que le produit tient. Si la dette ou l'architecture bloquent vraiment : <a href=\"/situations/refonte-produit-par-phases\">refonte par phases (headless ou Laravel)</a>, sans big bang.</p>"
+        },
+        {
+          "title": "Où voir l'offre complète (pas seulement WordPress) ?",
+          "content": "<p><a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a> : mandat fractionnel sur plateforme contenu + conversion + monétisation, <strong>souvent WordPress, pas toujours</strong>.</p>"
+        },
+        {
+          "title": "Pourquoi cette page n'est pas dans le menu Situations ?",
+          "content": "<p>Elle cible des recherches précises (WordPress lent, perf éditorial) sans réduire toute mon offre à « agence WordPress ». Les situations décrivent <strong>comment je travaille</strong> ; cette page aide à vous orienter si vous arrivez par Google.</p>"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "badge": "Prochaine étape",
+      "trackSection": "expertise-wordpress-editorial",
+      "label": "Discuter votre plateforme",
+      "teaser": "<p class=\"big\">WordPress lent sur un comparateur ou un produit éditorial ? Un appel pour voir si stabilisation et optimisation module par module suffisent, ou si une refonte par phases vaut le coup.</p>"
+    }
+  ]
+}

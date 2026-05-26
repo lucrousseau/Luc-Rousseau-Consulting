@@ -1,11 +1,11 @@
 {
   "seoTitle": "Editorial product platform: comparators, blocks, APIs | Luc Rousseau",
-  "seoDescription": "Editorial platform: conversion, visible partnerships, monetization. Milesopedia, Nesto: high traffic, editorial and marketing on one system in Quebec.",
+  "seoDescription": "Editorial platform: comparators, conversion, monetization. Often WordPress (coupled or headless), sometimes another stack. Milesopedia, Nesto: evolution and performance under traffic in Quebec.",
   "hero": {
     "badge": "Editorial product",
     "quote": "We publish 50 pieces a week and our stack was built for 5. We can feel we're hitting the wall.",
     "title": "Editorial product at scale",
-    "lede": "<p><strong>Your product is content and journeys that convert</strong>, not a static brochure. Comparator, multi-brand network, rich business journey: <strong>editorial ships the product</strong> every week, <strong>marketing must sell</strong> (offers, campaigns, partnerships), and the business expects <strong>leads, submissions, or sales</strong> behind that traffic.</p><p>I work on this kind of <strong>product platform</strong> so what must <strong>show up and monetize</strong> is front and center on the right journeys: reusable blocks, measurable partnerships and placements, stable APIs (Gutenberg, headless, or Laravel as needed). Editorial, marketing, and engineering on <strong>one system</strong>, not three silos.</p><p>Depending on the mandate, I work in <strong>product mode</strong>, <strong>dev or hybrid mode</strong>, or <strong>steer your devs in product mode</strong>: rhythm and mobilization are set on the first call.</p>",
+    "lede": "<p><strong>Your product is content and journeys that convert</strong>, not a static brochure. Comparator, multi-brand network, rich business journey: <strong>editorial ships the product</strong> every week, <strong>marketing must sell</strong> (offers, campaigns, partnerships), and the business expects <strong>leads, submissions, or sales</strong> behind that traffic.</p><p>Often on <strong>WordPress</strong> (coupled, headless, or Gutenberg at scale), sometimes on <strong>another CMS or hybrid stack</strong>: we start from the product, not the CMS logo.</p><p>I work on this kind of <strong>product platform</strong> so what must <strong>show up and monetize</strong> is front and center on the right journeys: reusable blocks, measurable partnerships and placements, stable APIs (Gutenberg, headless, or Laravel as needed). Editorial, marketing, and engineering on <strong>one system</strong>, not three silos.</p><p>Depending on the mandate, I work in <strong>product mode</strong>, <strong>dev or hybrid mode</strong>, or <strong>steer your devs in product mode</strong>: rhythm and mobilization are set on the first call.</p>",
     "buy": {
       "legend": "Discuss your platform",
       "prefix": "No commitment",
@@ -42,6 +42,26 @@
       "badge": "Quebec track record",
       "title": "Already delivered at this scale",
       "lede": "<p class=\"big\">This isn't theoretical: I've run this kind of platform on <strong><a href=\"https://milesopedia.com\" target=\"_blank\" rel=\"noopener noreferrer\">Milesopedia</a></strong> (multi-brand comparators, <strong>millions of visits</strong>, high-traffic comparison journeys) and on the <strong><a href=\"https://www.nesto.ca\" target=\"_blank\" rel=\"noopener noreferrer\">Nesto</a></strong> ecosystem in Quebec (Gutenberg blocks, APIs, <strong>lead capture</strong> into CRM, consistent marketing and product surfaces). In Quebec, in this space, conversion and prod under load are non-negotiable.</p>"
+    },
+    {
+      "type": "cards",
+      "badge": "Continuous evolution",
+      "title": "Without a stack rebuild: stabilize, optimize, evolve",
+      "lede": "<p class=\"big\">Not ready for a major migration, but the product must <strong>hold in prod</strong> and <strong>improve module by module</strong>: that's the most common mandate on this kind of platform.</p>",
+      "items": [
+        {
+          "title": "Stabilize production",
+          "content": "<p>Incidents, debt, releases: we frame what blocks the team day to day, with clear criteria for « stable enough » before build accelerates.</p>"
+        },
+        {
+          "title": "Optimize in depth, not just plugins",
+          "content": "<p>Perf, comparators, editorial blocks, APIs: rebuild <strong>module by module</strong> (Gutenberg, headless, Laravel services) rather than another layer of piled-on plugins.</p>"
+        },
+        {
+          "title": "Evaluate continuously",
+          "content": "<p>Conversion journeys, debt, stack: recurring fractional mandate to hold product-tech coherence while editorial and marketing ship every week.</p>"
+        }
+      ]
     },
     {
       "type": "cards",
@@ -91,7 +111,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "Brochure agency vs editorial product platform",
-      "intro": "If your need is a brochure or one-off campaign, this isn't the right fit. Archaic WordPress to migrate by phases: see <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>.",
+      "intro": "If your need is a brochure or one-off campaign, this isn't the right fit. WordPress that holds but must evolve without a major migration: you're in the right place. Archaic stack to migrate by phases: see <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>.",
       "columnKeys": ["dimension", "vitrineAgency", "productPlatform"],
       "table": {
         "headers": {
@@ -137,11 +157,11 @@
       "type": "stack",
       "badge": "How I build",
       "title": "Technical foundations",
-      "lede": "<p class=\"big\"><strong>Editorial platforms at scale</strong>: blocks and APIs in service of <strong>conversion</strong> and multi-brand publishing pace.</p>",
+      "lede": "<p class=\"big\"><strong>Editorial platforms at scale</strong>: often WordPress when the editorial model justifies it, sometimes another CMS or hybrid stack. Blocks and APIs in service of <strong>conversion</strong> and multi-brand publishing pace.</p>",
       "items": [
         "Framing comparator · offers · partnerships · monetization",
-        "WordPress · Gutenberg · editorial blocks and patterns",
-        "Headless WordPress · WPGraphQL · REST",
+        "CMS & content · WordPress · Gutenberg · editorial blocks and patterns",
+        "Headless WordPress · WPGraphQL · REST · other CMS (audited at framing)",
         "React · Next.js · TypeScript front",
         "Laravel · services · middleware · APIs",
         "Forms · leads · CRM (e.g. Salesforce)",
@@ -185,6 +205,22 @@
         {
           "title": "We can't afford to slow down to structure things",
           "content": "<p>Two to four weeks of framing (block model, APIs, conversion priorities) often avoid <strong>months of one-offs</strong>. The first slice can be exactly that framing, with a written deliverable before the large build.</p>"
+        },
+        {
+          "title": "We want to stabilize and optimize, not migrate stacks",
+          "content": "<p>That's exactly this mandate: <strong>continuous evolution</strong> on a platform already in prod (comparator, multi-brand, conversion), module by module, no big bang. If the stack truly blocks the product, we can discuss separately: see <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>.</p>"
+        },
+        {
+          "title": "We're not on WordPress",
+          "content": "<p>Scope stays the same: <strong>editorial product at scale</strong>, blocks, APIs, conversion, monetization. Stack is audited at framing (CMS, headless, Laravel, hybrid): the issue is the product, not a technology label.</p>"
+        },
+        {
+          "title": "Stack rebuild or product evolution?",
+          "content": "<p><strong>Evolution</strong> (stabilize, optimize, evolve in prod): this page. <strong>Major migration</strong> (headless, Laravel API, archaic debt): <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>. We decide on the first call.</p>"
+        },
+        {
+          "title": "Is this WordPress maintenance?",
+          "content": "<p>No. It's <strong>fractional product-tech support</strong> on a living platform: editorial, marketing, perf, business modules (comparators, leads, partnerships). Not an « updates and plugins » retainer. Long-tail WordPress perf search: see also <a href=\"/expertise/wordpress-produit-editorial\">Slow WordPress on an editorial product</a>.</p>"
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",

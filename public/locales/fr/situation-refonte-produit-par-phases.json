@@ -5,7 +5,7 @@
     "badge": "Refonte & migration",
     "quote": "Notre site tient debout, mais chaque nouvelle feature nous coûte le double de ce que ça devrait. On reporte la refonte depuis deux ans.",
     "title": "WordPress archaïque : headless ou Laravel par phases",
-    "lede": "<p><strong>Vous partez d'un WordPress archaïque</strong> : lent, plugins fragiles, thème legacy, éditorial ou métier qui freine le produit. Je m'insère dans cet environnement tel qu'il est et je vous fais <strong>entrer dans la modernité</strong> sans « tout casser » : <strong>WordPress headless</strong> (WPGraphQL ou REST, front React/Next.js), ou <strong>admin et API Laravel</strong> (REST ou GraphQL) avec migration progressive.</p><p>Je viens en <strong>PM/PO technique fractionnel</strong>, avec un pied dans le code : selon le mandat, je peux <strong>développer moi-même</strong> les phases critiques de la transition, ou <strong>piloter votre équipe</strong> déjà en place (prioriser, séquencer, organiser le changement de stack). Plan écrit, phases successives, sans big bang. On en parle d'abord pour voir le <strong>temps et le besoin</strong>, puis comment <strong>mobiliser mon temps</strong> sur le mandat.</p>",
+    "lede": "<p><strong>Vous partez d'un WordPress archaïque</strong> : lent, plugins fragiles, thème legacy, éditorial ou métier qui freine le produit. Je m'insère dans cet environnement tel qu'il est et je vous fais <strong>entrer dans la modernité</strong> sans « tout casser » : <strong>WordPress headless</strong> (WPGraphQL ou REST, front React/Next.js), ou <strong>admin et API Laravel</strong> (REST ou GraphQL) avec migration progressive.</p><p>Je viens en <strong>PM/PO technique fractionnel</strong>, avec un pied dans le code : selon le mandat, je peux <strong>développer moi-même</strong> les phases critiques de la transition, ou <strong>piloter votre équipe</strong> déjà en place (prioriser, séquencer, organiser le changement de stack). Plan écrit, phases successives, sans big bang. On en parle d'abord pour voir le <strong>temps et le besoin</strong>, puis comment <strong>mobiliser mon temps</strong> sur le mandat.</p><p>WordPress qui tient mais doit <strong>évoluer sans migration majeure</strong> (comparateur, éditorial, conversion) : voir <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>.</p>",
     "buy": {
       "legend": "Cadrer votre refonte",
       "prefix": "Sans engagement",
@@ -17,7 +17,7 @@
       "type": "split",
       "sectionKey": "context",
       "title": "Le contexte WordPress",
-      "intro": "<p class=\"big\">Je rentre dans votre WordPress <strong>archaïque</strong>, tel qu'il tourne aujourd'hui, et on trace comment vous faire <strong>entrer dans la modernité</strong> : ce qui bloque, quelle stack tient pour le produit, sans big bang.</p>",
+      "intro": "<p class=\"big\">Je rentre dans votre WordPress <strong>archaïque</strong>, tel qu'il tourne aujourd'hui, et on trace comment vous faire <strong>entrer dans la modernité</strong> : ce qui bloque, quelle stack tient pour le produit, sans big bang. Ce mandat vise une <strong>transformation de stack</strong>, pas l'évolution au quotidien d'un produit qui tient encore.</p>",
       "panels": [
         {
           "heading": "WordPress archaïque",
@@ -64,6 +64,10 @@
       "title": "Quatre étapes typiques d'un mandat refonte",
       "items": [
         {
+          "title": "Phase 0 (optionnelle) : stabilisation et critères go/no-go",
+          "content": "<p>Si la prod est instable, on peut commencer par <strong>stabiliser et auditer</strong> avant de trancher headless ou Laravel. Livrable : état des lieux, risques, critères pour décider si migration ou <a href=\"/situations/plateforme-editoriale-produit\">évolution continue sur la plateforme éditoriale</a>.</p>"
+        },
+        {
           "title": "Audit et choix de piste",
           "content": "<p>WordPress actuel (perf, plugins, données, éditorial), puis décision documentée : <strong>headless GraphQL/REST</strong>, <strong>Laravel admin + API</strong>, ou séquence des deux.</p>"
         },
@@ -85,7 +89,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "Refonte pilotée en interne vs partenaire produit-système externe",
-      "intro": "Chaque mandat se cadre par phases écrites. Plateforme éditoriale à fort trafic sur WordPress : la fiche <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a> complète cette approche refonte.",
+      "intro": "Chaque mandat se cadre par phases écrites. Plateforme éditoriale à fort trafic : la fiche <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a> couvre l'évolution sans migration majeure ; celle-ci couvre la transformation de stack.",
       "columnKeys": ["dimension", "internalOnly", "phasedPartner"],
       "table": {
         "headers": {
@@ -165,6 +169,10 @@
         {
           "title": "On n'a pas le luxe de ralentir pour planifier",
           "content": "<p>Deux à quatre semaines de cadrage évitent souvent <strong>des mois de rework</strong>. La première phase peut être précisément ce cadrage, avec un livrable : plan, architecture cible, ordre de migration.</p>"
+        },
+        {
+          "title": "On veut seulement stabiliser ou optimiser, pas migrer",
+          "content": "<p>Ce n'est probablement pas ce mandat. Pour <strong>évolution continue</strong> (stabiliser, optimiser module par module, comparateur, conversion) sans changer de stack : voir <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>. Ici, l'enjeu est une <strong>modernisation ou migration</strong> par phases.</p>"
         },
         {
           "title": "Et après la refonte ?",

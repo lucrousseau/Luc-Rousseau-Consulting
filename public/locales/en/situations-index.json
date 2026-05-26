@@ -33,7 +33,7 @@
       },
       "live": {
         "label": "Evolve a product already in production",
-        "hint": "Archaic or slow WordPress, editorial platform at scale, or AI in what you already ship"
+        "hint": "Archaic or slow WordPress, editorial platform at scale (WP or other stack), or AI in what you already ship"
       },
       "launch": {
         "label": "Launch something new",
@@ -53,7 +53,7 @@
       },
       "editorial": {
         "label": "Run an editorial product at scale",
-        "hint": "Comparator, conversion, partnerships, monetization: editorial and marketing on one system"
+        "hint": "Comparator, conversion, platform evolution (often WordPress, not always)"
       },
       "ai-live": {
         "label": "Clarify AI in your existing product",
@@ -101,7 +101,7 @@
     "plateforme-editoriale-produit": {
       "title": "Editorial product at scale",
       "quote": "We publish 50 pieces a week and our stack was built for 5. We can feel we're hitting the wall.",
-      "teaser": "Comparator or multi-brand: conversion, visible partnerships, monetization, without ad-hoc integrations every launch."
+      "teaser": "Comparator or multi-brand: conversion, module-by-module evolution, monetization. Often WordPress, not always."
     },
     "mvp-saas-faisabilite": {
       "title": "Launching a SaaS or MVP",

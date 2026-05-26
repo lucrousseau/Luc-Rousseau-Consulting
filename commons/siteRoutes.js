@@ -2,7 +2,7 @@
  * Internal route helpers for Next.js i18n.
  * Paths are WITHOUT locale prefix; Next.js `Link` adds `/en` when needed.
  *
- * Maillage in locale JSON: use `/situations/{situation.id}` (canonical id, not localized slug).
+ * Maillage in locale JSON: use `/situations/{situation.id}` or `/expertise/{page.id}` (canonical id, not localized slug).
  * Resolved at render time via {@link resolveInternalLinkPath}.
  */
 
@@ -12,6 +12,12 @@ import {
   getSituationHreflangPaths,
   getSituationPath,
 } from "./situationsManifest";
+import {
+  EXPERTISE_PAGES,
+  getExpertiseBySlug,
+  getExpertiseHreflangPaths,
+  getExpertisePath,
+} from "./expertiseManifest";
 import { localizedAbsoluteUrl } from "./localizedPath";
 
 /** @readonly */
@@ -19,6 +25,7 @@ export const ROUTES = Object.freeze({
   home: "/",
   situationsHub: "/situations",
   services: "/services",
+  expertiseBase: "/expertise",
 });
 
 /** @type {ReadonlySet<string>} */
@@ -80,6 +87,24 @@ export function getSituationPathById(id, locale) {
 }
 
 /**
+ * @param {string} id
+ * @returns {import("./expertiseManifest").ExpertiseEntry | undefined}
+ */
+export function getExpertiseById(id) {
+  return EXPERTISE_PAGES.find((page) => page.id === id);
+}
+
+/**
+ * @param {string} id
+ * @param {string} locale
+ * @returns {string | undefined}
+ */
+export function getExpertisePathById(id, locale) {
+  const page = getExpertiseById(id);
+  return page ? getExpertisePath(page, locale) : undefined;
+}
+
+/**
  * Resolve an internal href to a locale-aware pathname for Next.js `Link`.
  * @param {string} href
  * @param {string} locale
@@ -102,16 +127,24 @@ export function resolveInternalLinkPath(href, locale) {
   }
 
   const situationMatch = pathOnly.match(/^\/situations\/([^/]+)\/?$/);
-  if (!situationMatch) {
-    return undefined;
+  if (situationMatch) {
+    const situation = getSituationById(situationMatch[1]) ?? getSituationBySlug(situationMatch[1]);
+    if (!situation) {
+      return undefined;
+    }
+    return getSituationPath(situation, locale);
   }
 
-  const situation = getSituationById(situationMatch[1]) ?? getSituationBySlug(situationMatch[1]);
-  if (!situation) {
-    return undefined;
+  const expertiseMatch = pathOnly.match(/^\/expertise\/([^/]+)\/?$/);
+  if (expertiseMatch) {
+    const page = getExpertiseById(expertiseMatch[1]) ?? getExpertiseBySlug(expertiseMatch[1]);
+    if (!page) {
+      return undefined;
+    }
+    return getExpertisePath(page, locale);
   }
 
-  return getSituationPath(situation, locale);
+  return undefined;
 }
 
 /**
@@ -124,16 +157,24 @@ export function resolveLocaleSwitchPath(asPath, targetLocale) {
   const pathOnly = normalizeAppPathname(asPath);
   const situationMatch = pathOnly.match(/^\/situations\/([^/]+)\/?$/);
 
-  if (!situationMatch) {
-    return undefined;
+  if (situationMatch) {
+    const situation = getSituationById(situationMatch[1]) ?? getSituationBySlug(situationMatch[1]);
+    if (!situation) {
+      return undefined;
+    }
+    return getSituationPath(situation, targetLocale);
   }
 
-  const situation = getSituationById(situationMatch[1]) ?? getSituationBySlug(situationMatch[1]);
-  if (!situation) {
-    return undefined;
+  const expertiseMatch = pathOnly.match(/^\/expertise\/([^/]+)\/?$/);
+  if (expertiseMatch) {
+    const page = getExpertiseById(expertiseMatch[1]) ?? getExpertiseBySlug(expertiseMatch[1]);
+    if (!page) {
+      return undefined;
+    }
+    return getExpertisePath(page, targetLocale);
   }
 
-  return getSituationPath(situation, targetLocale);
+  return undefined;
 }
 
 /**
@@ -160,6 +201,22 @@ export function getRouteAlternateUrls(base, pathname, defaultLocale = "fr") {
  */
 export function getSituationAlternateUrls(base, situation, defaultLocale = "fr") {
   const paths = getSituationHreflangPaths(situation, defaultLocale);
+  return {
+    fr: localizedAbsoluteUrl(base, "fr", defaultLocale, paths.fr),
+    en: localizedAbsoluteUrl(base, "en", defaultLocale, paths.en),
+    default: localizedAbsoluteUrl(base, defaultLocale, defaultLocale, paths.default),
+  };
+}
+
+/**
+ * Absolute FR/EN/default URLs for an expertise page (sitemap hreflang).
+ * @param {string} base
+ * @param {import("./expertiseManifest").ExpertiseEntry} page
+ * @param {string} [defaultLocale]
+ * @returns {{ fr: string; en: string; default: string }}
+ */
+export function getExpertiseAlternateUrls(base, page, defaultLocale = "fr") {
+  const paths = getExpertiseHreflangPaths(page, defaultLocale);
   return {
     fr: localizedAbsoluteUrl(base, "fr", defaultLocale, paths.fr),
     en: localizedAbsoluteUrl(base, "en", defaultLocale, paths.en),

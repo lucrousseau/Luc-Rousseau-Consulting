@@ -1,0 +1,119 @@
+{
+  "seoTitle": "Slow WordPress on an editorial product: module-by-module optimization | Luc Rousseau",
+  "seoDescription": "Slow WordPress, comparator or high traffic: stabilization, deep perf, module-by-module rebuild (blocks, APIs). Editorial product, not agency maintenance. Quebec.",
+  "hero": {
+    "badge": "Expertise",
+    "quote": "Our WordPress holds, but every comparator or editorial launch costs too much in perf and debt.",
+    "title": "Slow WordPress on an editorial product?",
+    "lede": "<p>You may be searching for « <strong>WordPress optimization</strong> » or « <strong>WordPress performance consultant</strong> ». On an <strong>editorial product</strong> (comparator, multi-brand, conversion), the real issue isn't another plugin layer: it's a <strong>product platform</strong> that must hold under traffic and evolve every week.</p><p>I work in a <strong>fractional product-tech mandate</strong>: stabilize prod, optimize <strong>module by module</strong> (Gutenberg, headless, APIs, comparators), evaluate continuously whether the stack should stay or migrate. Not a brochure maintenance retainer.</p><p>For full support (often WordPress, sometimes another stack): <a href=\"/situations/plateforme-editoriale-produit\">Editorial product at scale</a>. Archaic stack to migrate: <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>.</p>",
+    "buy": {
+      "legend": "Discuss your platform",
+      "prefix": "No commitment",
+      "label": "Book a call"
+    }
+  },
+  "blocks": [
+    {
+      "type": "split",
+      "sectionKey": "context",
+      "title": "Symptoms vs product approach",
+      "intro": "<p class=\"big\">Slow WordPress on a brochure site and slow WordPress on a <strong>comparator at millions of visits</strong> aren't the same severity or the same levers.</p>",
+      "panels": [
+        {
+          "heading": "What you see",
+          "items": [
+            "Load times hurting conversion and SEO on high-traffic journeys",
+            "Piled-on plugins, legacy theme, debt slowing every editorial feature",
+            "Team in firefighting mode: perf and stability before every comparator or campaign launch"
+          ]
+        },
+        {
+          "heading": "What I address",
+          "items": [
+            "<strong>Product-oriented</strong> audit: conversion journeys, blocks, APIs, not PageSpeed alone",
+            "<strong>Module-by-module</strong> rebuild: comparators, Gutenberg patterns, headless layer when it pays off",
+            "Recurring fractional mandate: stabilize, ship, re-evaluate (migration only if the stack truly blocks you)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "intro",
+      "badge": "Quebec track record",
+      "title": "Already delivered at this scale",
+      "lede": "<p class=\"big\">Concrete references: <strong><a href=\"https://milesopedia.com\" target=\"_blank\" rel=\"noopener noreferrer\">Milesopedia</a></strong> (multi-brand comparators, high traffic) and the <strong><a href=\"https://www.nesto.ca\" target=\"_blank\" rel=\"noopener noreferrer\">Nesto</a></strong> ecosystem (Gutenberg blocks, APIs, leads into CRM). Same product logic, whether the stack stays coupled WordPress, headless, or hybrid.</p>"
+    },
+    {
+      "type": "cards",
+      "badge": "Engagement",
+      "title": "Stabilize, optimize, evolve",
+      "lede": "<p class=\"big\">Three typical levers on WordPress carrying an <strong>editorial product</strong>, without a « magic patch » promise.</p>",
+      "items": [
+        {
+          "title": "Stabilization and release frame",
+          "content": "<p>Incidents, debt, deploys: reduce firefighting before accelerating. Clear criteria for « prod that holds » for editorial and marketing teams.</p>"
+        },
+        {
+          "title": "Deep performance",
+          "content": "<p>Cache, CDN, queries, heavy blocks, comparators: optimization <strong>by module</strong>, not plugin accumulation. Headless or APIs when the front must decouple.</p>"
+        },
+        {
+          "title": "Continuous product evolution",
+          "content": "<p>New journeys, partnerships, monetization: reusable blocks and API contracts so editorial ships without a one-off every launch.</p>"
+        }
+      ]
+    },
+    {
+      "type": "stack",
+      "badge": "Typical stack",
+      "title": "Technologies involved",
+      "lede": "<p class=\"big\">Often <strong>WordPress</strong> (Gutenberg, headless, WPGraphQL/REST); sometimes <strong>Laravel</strong>, React/Next.js, or hybrid stack depending on the product.</p>",
+      "items": [
+        "Perf audit · plugins · debt · conversion journeys",
+        "WordPress · Gutenberg · comparator blocks",
+        "Headless WordPress · WPGraphQL · REST",
+        "React · Next.js · TypeScript",
+        "Laravel · APIs · middleware",
+        "Redis · cache · CDN · queries under traffic",
+        "Analytics · product events · A/B",
+        "CI/CD · previews · regression",
+        "JavaScript · PHP"
+      ],
+      "background": "rome"
+    },
+    {
+      "type": "faq",
+      "badge": "Questions",
+      "title": "WordPress performance vs product support",
+      "items": [
+        {
+          "title": "Is this WordPress maintenance?",
+          "content": "<p>No. Not an « updates + plugins » retainer. It's a <strong>fractional product-tech mandate</strong> on a living editorial platform: comparators, conversion, APIs, perf module by module.</p>"
+        },
+        {
+          "title": "Plugin optimization or module-by-module rebuild?",
+          "content": "<p>Both can coexist in a phase, but the target is a <strong>system that absorbs launches</strong>: blocks, patterns, APIs. Plugins alone don't hold on a high-traffic comparator.</p>"
+        },
+        {
+          "title": "Do we need headless or a Laravel migration?",
+          "content": "<p>Not by default. We optimize and evolve while the product holds. If debt or architecture truly block you: <a href=\"/situations/refonte-produit-par-phases\">phased rebuild (headless or Laravel)</a>, no big bang.</p>"
+        },
+        {
+          "title": "Where is the full offer (not WordPress-only)?",
+          "content": "<p><a href=\"/situations/plateforme-editoriale-produit\">Editorial product at scale</a>: fractional mandate on content + conversion + monetization platform, <strong>often WordPress, not always</strong>.</p>"
+        },
+        {
+          "title": "Why isn't this page in the Situations menu?",
+          "content": "<p>It targets specific searches (slow WordPress, editorial perf) without reducing my whole offer to « WordPress agency ». Situations describe <strong>how I work</strong>; this page orients you if you landed from Google.</p>"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "badge": "Next step",
+      "trackSection": "expertise-wordpress-editorial",
+      "label": "Discuss your platform",
+      "teaser": "<p class=\"big\">Slow WordPress on a comparator or editorial product? One call to see if stabilization and module-by-module optimization are enough, or if a phased rebuild is worth it.</p>"
+    }
+  ]
+}

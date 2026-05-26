@@ -1,6 +1,8 @@
 import {
   getRouteAlternateUrls,
   getSituationAlternateUrls,
+  getExpertiseAlternateUrls,
+  getExpertisePathById,
   ROUTES,
   getSituationPathById,
   normalizeAppPathname,
@@ -8,6 +10,7 @@ import {
   resolveLocaleSwitchPath,
 } from "./siteRoutes";
 import { SITUATIONS } from "./situationsManifest";
+import { EXPERTISE_PAGES } from "./expertiseManifest";
 
 const base = "https://lucrousseau.com";
 const defaultLocale = "fr";
@@ -63,6 +66,24 @@ describe("siteRoutes", () => {
     expect(resolveLocaleSwitchPath("/situations", "en")).toBeUndefined();
   });
 
+  it("maps expertise id slug to locale-specific path", () => {
+    expect(resolveInternalLinkPath("/expertise/wordpress-produit-editorial", "en")).toBe(
+      "/expertise/wordpress-editorial-product"
+    );
+    expect(getExpertisePathById("wordpress-produit-editorial", "fr")).toBe(
+      "/expertise/wordpress-produit-editorial"
+    );
+  });
+
+  it("maps locale switch paths for expertise pages", () => {
+    expect(resolveLocaleSwitchPath("/expertise/wordpress-produit-editorial", "en")).toBe(
+      "/expertise/wordpress-editorial-product"
+    );
+    expect(resolveLocaleSwitchPath("/en/expertise/wordpress-editorial-product", "fr")).toBe(
+      "/expertise/wordpress-produit-editorial"
+    );
+  });
+
   it("builds absolute alternate URLs for static routes and situations", () => {
     expect(getRouteAlternateUrls(base, ROUTES.situationsHub, defaultLocale)).toEqual({
       fr: `${base}/situations`,
@@ -75,6 +96,13 @@ describe("siteRoutes", () => {
       fr: `${base}/situations/premier-dev-fractionnel`,
       en: `${base}/en/situations/post-funding-first-developer`,
       default: `${base}/situations/premier-dev-fractionnel`,
+    });
+
+    const expertise = EXPERTISE_PAGES.find((entry) => entry.id === "wordpress-produit-editorial");
+    expect(getExpertiseAlternateUrls(base, expertise, defaultLocale)).toEqual({
+      fr: `${base}/expertise/wordpress-produit-editorial`,
+      en: `${base}/en/expertise/wordpress-editorial-product`,
+      default: `${base}/expertise/wordpress-produit-editorial`,
     });
   });
 });
