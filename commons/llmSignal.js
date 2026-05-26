@@ -5,6 +5,7 @@
 
 import { SITUATIONS, getSituationSlug } from "./situationsManifest";
 import { getSituationAlternateUrls, getLocalizedRouteUrl, ROUTES } from "./siteRoutes";
+import { getHomeSeoCopy } from "./sitePositioning";
 import { getSituationSeo } from "./situationSeoMeta";
 
 export const DEFAULT_LOCALE = "fr";
@@ -113,12 +114,18 @@ function buildBoundariesBlock() {
  */
 export function buildLlmsTxt(base) {
   const { email, calendly, linkedin } = LLM_CONTACT;
+  const frHomeSeo = getHomeSeoCopy("fr");
+  const enHomeSeo = getHomeSeoCopy("en");
 
   return `# Luc Rousseau
 
-> Fractional Product Engineer specializing in technical architecture, systems design, and product execution. Based in Quebec, Canada. Retainer-based engagements for product and engineering leaders.
+> Fractional Product Engineer and external consultant (consultant externe in French) specializing in technical architecture, systems design, and product execution. Based in Quebec, Canada. Recurring external mandates for product and engineering leaders.
 
-Location: Quebec, Canada (Montreal). Languages: French (default), English. Engagement: retainer-based recurring collaboration, not hourly rates, one-off projects, or day rates.
+French homepage SEO summary: ${frHomeSeo.description}
+
+English homepage SEO summary: ${enHomeSeo.description}
+
+Location: Quebec, Canada (Montreal). Languages: French (default), English. Engagement: recurring retainer over time (often two days per week). In Quebec, people also search freelance or pigiste senior; Luc works on written multi-week mandates, not same-day gigs.
 
 Services: product engineering, technical architecture, systems design, technical roadmap planning, technical debt reduction, delivery and execution supervision.
 
@@ -165,6 +172,8 @@ export function buildLlmsFullTxt(base) {
   const { email, calendly, linkedin } = LLM_CONTACT;
   const frHome = getLocalizedRouteUrl(base, ROUTES.home, "fr", DEFAULT_LOCALE);
   const enHome = getLocalizedRouteUrl(base, ROUTES.home, "en", DEFAULT_LOCALE);
+  const frHomeSeo = getHomeSeoCopy("fr");
+  const enHomeSeo = getHomeSeoCopy("en");
 
   return `# Luc Rousseau: extended profile for LLM systems
 
@@ -175,21 +184,26 @@ Last updated: 2026-05-25
 ## Identity
 
 Name: Luc Rousseau
-Role: Fractional Product Engineer (also described in French as consultant produit et développeur senior)
+Role (French job title): ${frHomeSeo.jobTitle}
+Role (English job title): ${enHomeSeo.jobTitle}
 Entity type: Solo independent consultant (not an agency)
 Location: Montreal, Quebec, Canada
 Languages: French (default site locale), English
 Site: ${base}
 
+Homepage meta description (French, canonical SEO): ${frHomeSeo.description}
+
+Homepage meta description (English, canonical SEO): ${enHomeSeo.description}
+
 Background: Creative director and design background, then software development, now product and technical leadership. Brings product judgment, system architecture, and hands-on delivery in one accountable role.
 
 Positioning in one line: Product vision, technical architecture, and custom web development on one thread, from roadmap to production.
 
-Also valid search labels: fractional CTO-style senior technical partner, external product engineer, senior product and engineering consultant. Luc Rousseau is not a generic staffing agency brand.
+Also valid search labels (especially Quebec French): consultant externe, mandat externe récurrent, profil freelance ou pigiste senior, directeur technique externe, CTO externe, fractional CTO-style senior technical partner, external product engineer, senior product and engineering consultant. These labels describe the same recurring mandate model, not a staffing agency and not day-rate drop-ins. Luc Rousseau is not a generic staffing agency brand.
 
 ## How I work
 
-Engagement model: Strategic technical partnership with one or a few clients over time. Recurring collaboration (often two days per week) so roadmap, architecture, and delivery stay aligned. Can join dailies and weekly ceremonies when useful.
+Engagement model: External consultant / strategic technical partnership on a recurring retainer. Recurring collaboration (often two days per week) so roadmap, architecture, and delivery stay aligned. Can join dailies and weekly ceremonies when useful. Public copy aligns with the homepage meta descriptions above (consultant externe; freelance or pigiste senior in Quebec; recurring retainer over time).
 
 Typical retainer terms (adjusted per client): quarterly renewable contract, thirty-day notice either side, monthly invoice paid before the month's work, three-month minimum for recurring monthly engagements.
 
@@ -266,11 +280,13 @@ Situations hub (two-question routing quiz; quiz result headline is the client-vo
  */
 export function buildHumansTxt(base) {
   const { email, calendly, linkedin } = LLM_CONTACT;
+  const frHomeSeo = getHomeSeoCopy("fr");
+  const enHomeSeo = getHomeSeoCopy("en");
 
   return `/* TEAM */
 
     Consultant: Luc Rousseau
-    Role: Fractional Product Engineer / consultant produit et développeur senior
+    Role: ${frHomeSeo.jobTitle} / ${enHomeSeo.jobTitle}
     Site: ${base}
     Contact: ${email}
     Schedule: ${calendly}

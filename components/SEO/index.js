@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 
 import { getDefaultOgImage } from "../../commons/defaultOgImage";
 import { absoluteUrl, localizedPath } from "../../commons/localizedPath";
+import { getHomeSeoCopy } from "../../commons/sitePositioning";
 import { getSiteOrigin } from "../../utils/siteOrigin";
 
 const SITE_NAME = "Luc Rousseau";
@@ -56,6 +57,8 @@ const SEO = ({
       : localizedPath(defaultLoc, defaultLoc, pathOnly)
   );
 
+  const homeSeoCopy = getHomeSeoCopy(locale);
+
   const jsonLdPerson =
     sameAs && sameAs.length > 0
       ? {
@@ -64,10 +67,7 @@ const SEO = ({
           name: SITE_NAME,
           url: siteHome,
           sameAs: sameAs,
-          jobTitle:
-            locale === "fr"
-              ? "Consultant externe, produit et développeur senior"
-              : "External consultant & Product Engineer",
+          jobTitle: homeSeoCopy.jobTitle,
           address: {
             "@type": "PostalAddress",
             addressRegion: "QC",
@@ -82,10 +82,7 @@ const SEO = ({
     "@type": "WebSite",
     name: SITE_NAME,
     url: siteHome,
-    description:
-      locale === "fr"
-        ? "Consultant externe, produit et développeur senior au Québec, Canada. Vision produit, architecture technique et développement sur mesure : APIs, systèmes découpés, Laravel, WordPress headless quand l'édition l'exige, React/Vue. Mandat externe récurrent, pas mission freelance ou pigiste à la journée."
-        : "External consultant & Product Engineer in Quebec, Canada. Product-facing architecture and APIs, decoupled systems, Laravel, WordPress headless when editorial scale demands it, React/Vue. Recurring retainer, not day-rate freelance or contractor gigs.",
+    description: homeSeoCopy.description,
     inLanguage: [locale === "fr" ? "fr-CA" : "en-CA"],
     areaServed: [
       {

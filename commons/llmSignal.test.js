@@ -21,6 +21,9 @@ describe("llmSignal", () => {
     const body = buildLlmsTxt(base);
 
     expect(body).toContain("# Luc Rousseau");
+    expect(body).toContain("French homepage SEO summary:");
+    expect(body).toContain("profil freelance ou pigiste senior dans la durée");
+    expect(body).toContain("consultant externe");
     expect(body).toContain("## Boundaries (what I do not do)");
     expect(body).toContain(`${base}/llms-full.txt`);
     expect(body).toContain(`${base}/humans.txt`);
@@ -34,6 +37,9 @@ describe("llmSignal", () => {
 
     expect(body).toContain("# Luc Rousseau: extended profile for LLM systems");
     expect(body).toContain("## Identity");
+    expect(body).toContain("Homepage meta description (French, canonical SEO):");
+    expect(body).toContain("consultant externe");
+    expect(body).toContain("pigiste");
     expect(body).toContain("## How I work");
     expect(body).toContain("## What I do not do");
     expect(body).toContain("## Responsible AI usage");
