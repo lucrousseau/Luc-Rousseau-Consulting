@@ -1,18 +1,12 @@
 import { useTranslation } from "next-i18next";
 import Row from "../../../components/Layout/Row";
 import Container from "../../../components/Layout/Container";
-import SectionCta from "../../../components/SectionCta";
 import ProductGrid from "../../../components/ProductGrid";
 import NumberedHighlightList from "../../../components/NumberedHighlightList";
 import Accordion from "../../../components/Accordion";
 import Table from "../../../components/Table";
 import { parseHtmlContent, parseHtmlItems } from "../../../commons/parseHtmlContent";
-import {
-  homeIntroRowStyle,
-  homeTableRowStyle,
-  homeSituationCtaRowStyle,
-} from "../../../commons/pageRowSpacing";
-import { getScheduleCta } from "../../../commons/scheduleCta";
+import { homeTableRowStyle } from "../../../commons/pageRowSpacing";
 
 import TechnicalStack from "../../TechnicalStack";
 import SituationHero from "../SituationHero";
@@ -25,7 +19,7 @@ function hasGroups(block) {
   return Array.isArray(block?.groups) && block.groups.length > 0;
 }
 
-function SituationBlock({ block, scheduleCta }) {
+function SituationBlock({ block }) {
   if (!block?.type) {
     return null;
   }
@@ -148,20 +142,7 @@ function SituationBlock({ block, scheduleCta }) {
       );
 
     case "cta":
-      return (
-        <Container className={situationBlockClassName(block)} align="center" halign="center">
-          <SectionCta
-            halign="center"
-            trackSection={block.trackSection ?? "situation"}
-            href={block.href ?? scheduleCta.link}
-            label={block.label ?? scheduleCta.label}
-            teaser={block.teaser ? parseHtmlContent(block.teaser) : null}
-            teaserClassName="big"
-            beforeCTA={block.badge ? <p className="section__badge">{block.badge}</p> : null}
-            rowStyle={homeSituationCtaRowStyle}
-          />
-        </Container>
-      );
+      return null;
 
     default:
       return null;
@@ -174,7 +155,6 @@ function SituationBlock({ block, scheduleCta }) {
  */
 export default function SituationShell({ namespace }) {
   const { t } = useTranslation([namespace, "common"]);
-  const scheduleCta = getScheduleCta(t);
   const blocks = t("blocks", { returnObjects: true });
   const blockList = Array.isArray(blocks) ? blocks : [];
 
@@ -182,11 +162,7 @@ export default function SituationShell({ namespace }) {
     <>
       <SituationHero namespace={namespace} />
       {blockList.map((block, index) => (
-        <SituationBlock
-          key={`${block.type}-${block.sectionKey ?? index}`}
-          block={block}
-          scheduleCta={scheduleCta}
-        />
+        <SituationBlock key={`${block.type}-${block.sectionKey ?? index}`} block={block} />
       ))}
     </>
   );

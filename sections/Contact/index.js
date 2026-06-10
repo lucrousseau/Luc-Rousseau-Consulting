@@ -32,9 +32,9 @@ function getChannelLinkLabel(channel, t) {
 
 /**
  * Site-wide contact section. Requires i18n: `contact`, `common`.
- * @param {import('../../commons/sectionTypes').SectionWithCtaProps} [props]
+ * @param {import('../../commons/sectionTypes').SectionWithCtaProps & { introTeaser?: string | null }} [props]
  */
-export default function Contact({ cta }) {
+export default function Contact({ cta, introTeaser = null }) {
   const { t } = useTranslation(["contact", "common"]);
   const scheduleCta = getScheduleCta(t);
   const channels = t("contact:channels", { returnObjects: true });
@@ -44,13 +44,18 @@ export default function Contact({ cta }) {
   const meta = t("contact:meta");
   const channelsAria = t("contact:channelsAria");
   const footnote = t("contact:footnote");
+  const situationIntro = introTeaser?.trim() ? introTeaser : null;
+  const lede = situationIntro
+    ? parseHtmlContent(situationIntro)
+    : parseHtmlContent(t("contact:lede"));
+  const ctaTeaser = situationIntro ? null : parseHtmlContent(t("contact:ctaTeaser"));
 
   return (
     <Container id={t("contact:anchor")} className="section-contact" align="center" halign="center">
       <SectionIntro
         badge={t("contact:badge")}
         title={t("contact:title")}
-        lede={parseHtmlContent(t("contact:lede"))}
+        lede={lede}
         rowStyle={homeIntroRowStyle}
       />
       <Row
@@ -73,7 +78,7 @@ export default function Contact({ cta }) {
                       trackSection="contact"
                       href={cta?.link ?? scheduleCta.link}
                       label={cta?.label ?? scheduleCta.label}
-                      teaser={parseHtmlContent(t("contact:ctaTeaser"))}
+                      teaser={ctaTeaser}
                       teaserClassName="big section-contact__cta-teaser"
                       className="section-contact__cta"
                     />

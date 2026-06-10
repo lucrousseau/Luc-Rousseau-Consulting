@@ -17,6 +17,7 @@ import {
 import { buildExpertisePageJsonLd } from "../../commons/expertiseStructuredData";
 import { absoluteUrl, localizedPath } from "../../commons/localizedPath";
 import { getSiteOrigin } from "../../utils/siteOrigin";
+import { getSituationContactIntro } from "../../commons/situationContactIntro";
 
 const PAGE_SHELL_STYLE = {
   "--padding-top": "1rem",
@@ -35,6 +36,9 @@ export default function ExpertisePage({ namespace, pagePath, hreflangPaths, publ
   const pageDescription = t(`${namespace}:seoDescription`);
   const canonicalPath = localizedPath(locale, defaultLocale, pagePath);
   const pageUrl = absoluteUrl(base, canonicalPath);
+
+  const blocks = t(`${namespace}:blocks`, { returnObjects: true });
+  const contactIntroTeaser = getSituationContactIntro(blocks);
 
   const expertiseJsonLd = buildExpertisePageJsonLd({
     base,
@@ -63,7 +67,7 @@ export default function ExpertisePage({ namespace, pagePath, hreflangPaths, publ
       </Container>
       <main className="page-home page-situation page-expertise">
         <SituationShell namespace={namespace} />
-        <Contact />
+        <Contact introTeaser={contactIntroTeaser} />
       </main>
       <Container tag="footer" style={PAGE_SHELL_STYLE}>
         <Footer />

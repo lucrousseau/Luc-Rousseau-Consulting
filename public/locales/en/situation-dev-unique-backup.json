@@ -5,7 +5,7 @@
     "badge": "Small technical team",
     "quote": "If my dev is out sick for two weeks, I don't even know what's happening in our own code.",
     "title": "One developer carries all technical responsibility",
-    "lede": "<p><strong>One developer concentrates all technical responsibility at your company.</strong> Risk isn't theoretical: illness, departure, vacation, burnout. You don't need a second full-time hire, you need <strong>continuity, perspective, and peace of mind</strong> when production is down and your main developer doesn't answer.</p><p><strong>One day a week</strong> structures deep work; in parallel, we frame day-to-day value, gradual backup, and <strong>dependable coverage</strong> (reachable on weekdays, urgency and weekends agreed up front).</p>",
+    "lede": "<p>One developer concentrates all technical responsibility at your company. Risk isn't theoretical: illness, departure, vacation, burnout. You don't need a second full-time hire, you need <strong>continuity, perspective, and peace of mind</strong> when production is down and your main developer doesn't answer.</p><p>One day a week structures deep work; in parallel, we frame day-to-day value, gradual backup, and <strong>dependable coverage</strong> (reachable on weekdays, urgency and weekends agreed up front).</p>",
     "buy": {
       "legend": "Assess your technical risk",
       "prefix": "30-minute call",
@@ -18,7 +18,7 @@
       "sectionKey": "reliability",
       "badge": "Peace of mind",
       "title": "Reachable and dependable, even at one day a week",
-      "lede": "<p class=\"big\">In this situation, it's often not the most visible point, but the one that matters most to leadership: <strong>knowing who answers</strong> when production is down and your main developer is overloaded or unreachable. One day a week structures deep work; <strong>reachability and emergencies</strong> are framed separately from day one.</p>",
+      "lede": "<p class=\"big\">In this situation, it's often not the most visible point, but the one that matters most to leadership: <strong>knowing who answers</strong> when production is down and your main developer is overloaded or unreachable. One day a week structures deep work; reachability and emergencies are framed separately from day one.</p>",
       "items": [
         {
           "title": "Reachable throughout the week",
@@ -26,7 +26,7 @@
         },
         {
           "title": "Emergency when your main developer doesn't answer",
-          "content": "<p>If production breaks and your main developer can't take the call, I step in under an <strong>emergency frame we define together</strong>: scope, priority, response time, with a <strong>clear commitment</strong> on what triggers intervention.</p>"
+          "content": "<p>If production breaks and your main developer can't take the call, I step in under an emergency frame we define together: scope, priority, response time, with a <strong>clear commitment</strong> on what triggers intervention.</p>"
         },
         {
           "title": "Weekends: agreed windows and limits",
@@ -42,7 +42,7 @@
       "type": "intro",
       "badge": "The risk",
       "title": "Bus factor, in practice",
-      "lede": "<p class=\"big\">Your main developer stays <strong>owner of the code and decisions</strong>. My role isn't to compete: it's to reduce single-point dependency, speed up reviews, and be the <strong>reliable backup</strong> when they're away, overloaded, or unreachable in an emergency, because we prepared together.</p><p class=\"big\">If you're preparing a <strong>first hire</strong> or <strong>product leadership</strong> instead, see <a href=\"/situations/premier-dev-fractionnel\">Post-funding: before your first full-time developer</a> and <a href=\"/situations/product-manager-fractionnel\">Need a PM or PO, without full-time</a>.</p>"
+      "lede": "<p class=\"big\">Your main developer stays owner of the code and decisions. My role isn't to compete: it's to reduce single-point dependency, speed up reviews, and be the <strong>reliable backup</strong> when they're away, overloaded, or unreachable in an emergency, because we prepared together.</p><p class=\"big\">If you're preparing a <strong>first hire</strong> or product leadership instead, see <a href=\"/situations/premier-dev-fractionnel\">Post-funding: before your first full-time developer</a> and <a href=\"/situations/product-manager-fractionnel\">Need a PM or PO, without full-time</a>.</p>"
     },
     {
       "type": "cards",
@@ -107,7 +107,7 @@
         },
         {
           "title": "Is your stack a fit (Laravel, React, other)?",
-          "content": "<p>We clarify that in the <strong>first conversation</strong>: languages, frameworks, hosting, debt level. My deepest hands-on experience is in <strong>JavaScript and PHP</strong> ecosystems (Laravel, React, Next.js, Vue, WordPress, Node). On another stack (Python, .NET, Go, etc.), I can often still bring <strong>architecture, reviews, prioritization, and emergency backup</strong>; hands-on build depends on context, and we decide without vague promises.</p>"
+          "content": "<p>We clarify that in the first conversation: languages, frameworks, hosting, debt level. My deepest hands-on experience is in JavaScript and PHP ecosystems (Laravel, React, Next.js, Vue, WordPress, Node). On another stack (Python, .NET, Go, etc.), I can often still bring <strong>architecture, reviews, prioritization, and emergency backup</strong>; hands-on build depends on context, and we decide without vague promises.</p>"
         },
         {
           "title": "Confidentiality and access",
@@ -115,7 +115,7 @@
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
-          "content": "<p>The agreed rhythm (e.g. one day a week) structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the <strong>shared urgency frame we define together</strong> (scope, priority, response time).</p>"
+          "content": "<p>The agreed rhythm (e.g. one day a week) structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the shared urgency frame we define together (scope, priority, response time).</p>"
         }
       ]
     },

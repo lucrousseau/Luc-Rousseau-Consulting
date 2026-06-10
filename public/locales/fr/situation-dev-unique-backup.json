@@ -5,7 +5,7 @@
     "quote": "Si mon dev tombe malade deux semaines, je sais même pas ce qui se passe dans notre propre code.",
     "badge": "Équipe technique réduite",
     "title": "Un seul dev porte toute la responsabilité technique",
-    "lede": "<p><strong>Un seul développeur concentre toute la responsabilité technique chez vous.</strong> Le risque n'est pas théorique : maladie, départ, vacances, surcharge. Vous n'avez pas besoin d'un deuxième temps plein, vous avez besoin de <strong>continuité, de recul et de tranquillité d'esprit</strong> si la prod bloque et que votre dev principal ne répond pas.</p><p><strong>Une journée par semaine</strong> structure le travail en profondeur ; en parallèle, on cadre la valeur au quotidien, le backup progressif et une <strong>présence fiable</strong> (joignable en semaine, urgence et week-end convenus à l'avance).</p>",
+    "lede": "<p>Un seul développeur concentre toute la responsabilité technique chez vous. Le risque n'est pas théorique : maladie, départ, vacances, surcharge. Vous n'avez pas besoin d'un deuxième temps plein, vous avez besoin de <strong>continuité, de recul et de tranquillité d'esprit</strong> si la prod bloque et que votre dev principal ne répond pas.</p><p><strong>Une journée par semaine</strong> structure le travail en profondeur ; en parallèle, on cadre la valeur au quotidien, le backup progressif et une présence fiable (joignable en semaine, urgence et week-end convenus à l'avance).</p>",
     "buy": {
       "legend": "Évaluer votre risque technique",
       "prefix": "Appel de 30 min",
@@ -18,7 +18,7 @@
       "sectionKey": "reliability",
       "badge": "Tranquillité d'esprit",
       "title": "Joignable et fiable, même à une journée par semaine",
-      "lede": "<p class=\"big\">Dans cette situation, ce n'est souvent pas le point le plus visible, mais le plus décisif pour le fondateur : <strong>savoir qui répond</strong> si la prod bloque et que votre dev principal est débordé ou injoignable. Une journée par semaine structure le travail en profondeur ; la <strong>joignabilité et les urgences</strong> sont cadrées à part, dès le départ.</p>",
+      "lede": "<p class=\"big\">Dans cette situation, ce n'est souvent pas le point le plus visible, mais le plus décisif pour le fondateur : <strong>savoir qui répond</strong> si la prod bloque et que votre dev principal est débordé ou injoignable. Une journée par semaine structure le travail en profondeur ; la joignabilité et les urgences sont cadrées à part, dès le départ.</p>",
       "items": [
         {
           "title": "Joignable en continu en semaine",
@@ -26,7 +26,7 @@
         },
         {
           "title": "Urgence si votre dev principal ne répond pas",
-          "content": "<p>Si quelque chose casse en prod et que votre dev principal ne peut pas prendre l'appel, j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> : périmètre, priorité, délais de réponse, avec un <strong>engagement clair</strong> sur ce qui déclenche une intervention.</p>"
+          "content": "<p>Si quelque chose casse en prod et que votre dev principal ne peut pas prendre l'appel, j'interviens selon un cadre d'urgence défini ensemble : périmètre, priorité, délais de réponse, avec un <strong>engagement clair</strong> sur ce qui déclenche une intervention.</p>"
         },
         {
           "title": "Week-end : plages et limites négociées",
@@ -42,7 +42,7 @@
       "type": "intro",
       "badge": "Le risque",
       "title": "Le bus factor, concrètement",
-      "lede": "<p class=\"big\">Votre dev principal reste <strong>propriétaire du code et des décisions</strong>. Mon rôle n'est pas de le concurrencer : c'est de réduire la dépendance unique, d'accélérer les revues et d'être <strong>le filet fiable</strong> si la personne est absente, débordée ou injoignable en urgence, parce qu'on s'est préparés ensemble.</p><p class=\"big\">Si vous préparez plutôt une <strong>première embauche</strong> ou un <strong>pilotage produit</strong>, voir les fiches <a href=\"/situations/premier-dev-fractionnel\">Après la levée : avant votre premier dev à temps plein</a> et <a href=\"/situations/product-manager-fractionnel\">Besoin de PM ou PO, sans temps plein</a>.</p>"
+      "lede": "<p class=\"big\">Votre dev principal reste propriétaire du code et des décisions. Mon rôle n'est pas de le concurrencer : c'est de réduire la dépendance unique, d'accélérer les revues et d'être <strong>le filet fiable</strong> si la personne est absente, débordée ou injoignable en urgence, parce qu'on s'est préparés ensemble.</p><p class=\"big\">Si vous préparez plutôt une <strong>première embauche</strong> ou un pilotage produit, voir les fiches <a href=\"/situations/premier-dev-fractionnel\">Après la levée : avant votre premier dev à temps plein</a> et <a href=\"/situations/product-manager-fractionnel\">Besoin de PM ou PO, sans temps plein</a>.</p>"
     },
     {
       "type": "cards",
@@ -107,7 +107,7 @@
         },
         {
           "title": "Votre stack est-elle compatible (Laravel, React, autre) ?",
-          "content": "<p>On le clarifie au <strong>premier échange</strong> : langages, frameworks, hébergement, niveau de dette. Mon expérience la plus profonde en intervention est sur les écosystèmes <strong>JavaScript et PHP</strong> (Laravel, React, Next.js, Vue, WordPress, Node). Sur une autre stack (Python, .NET, Go, etc.), je peux souvent apporter <strong>architecture, revues, priorisation et filet d'urgence</strong> ; le build hands-on dépend du contexte, on tranche sans promesse floue.</p>"
+          "content": "<p>On le clarifie au premier échange : langages, frameworks, hébergement, niveau de dette. Mon expérience la plus profonde en intervention est sur les écosystèmes JavaScript et PHP (Laravel, React, Next.js, Vue, WordPress, Node). Sur une autre stack (Python, .NET, Go, etc.), je peux souvent apporter <strong>architecture, revues, priorisation et filet d'urgence</strong> ; le build hands-on dépend du contexte, on tranche sans promesse floue.</p>"
         },
         {
           "title": "Confidentialité et accès",
@@ -115,7 +115,7 @@
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",
-          "content": "<p>Le rythme convenu (ex. une journée par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais).</p>"
+          "content": "<p>Le rythme convenu (ex. une journée par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le cadre d'urgence défini ensemble (périmètre, priorité, délais).</p>"
         }
       ]
     },

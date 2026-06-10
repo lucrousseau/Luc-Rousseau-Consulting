@@ -5,7 +5,7 @@
     "badge": "Expertise",
     "quote": "Notre WordPress tient, mais chaque comparateur ou lancement éditorial coûte trop cher en perf et en dette.",
     "title": "WordPress lent sur un produit éditorial ?",
-    "lede": "<p>Vous cherchez peut-être « <strong>optimisation WordPress</strong> » ou « <strong>consultant WordPress performance</strong> ». Sur un <strong>produit éditorial</strong> (comparateur, multi-marques, conversion), le vrai enjeu n'est pas une couche de plugins : c'est une <strong>plateforme produit</strong> qui doit tenir sous trafic et évoluer chaque semaine.</p><p>J'interviens en <strong>mandat fractionnel produit-tech</strong> : stabiliser la prod, optimiser <strong>module par module</strong> (Gutenberg, headless, APIs, comparateurs), évaluer en continu si la stack doit rester ou migrer. Mandat produit-tech fractionnel, pas maintenance vitrine.</p><p>Pour l'accompagnement complet (souvent WordPress, parfois autre stack) : <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>. Stack archaïque à migrer : <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>.</p>",
+    "lede": "<p>Vous cherchez peut-être « optimisation WordPress » ou « consultant WordPress performance ». Sur un <strong>produit éditorial</strong> (comparateur, multi-marques, conversion), le vrai enjeu n'est pas une couche de plugins : c'est une plateforme produit qui doit tenir sous trafic et évoluer chaque semaine.</p><p>J'interviens en <strong>mandat fractionnel produit-tech</strong> : stabiliser la prod, optimiser module par module (Gutenberg, headless, APIs, comparateurs), évaluer en continu si la stack doit rester ou migrer. Mandat produit-tech fractionnel, pas maintenance vitrine.</p><p>Pour l'accompagnement complet (souvent WordPress, parfois autre stack) : <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>. Stack archaïque à migrer : <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>.</p>",
     "buy": {
       "legend": "Parler de votre plateforme",
       "prefix": "Sans engagement",
@@ -41,7 +41,7 @@
       "type": "intro",
       "badge": "Terrain Québec",
       "title": "Déjà livré à cette échelle",
-      "lede": "<p class=\"big\">Références concrètes : <strong><a href=\"https://milesopedia.com\" target=\"_blank\" rel=\"noopener noreferrer\">Milesopedia</a></strong> (comparateurs multi-marques, fort trafic) et l'écosystème <strong><a href=\"https://www.nesto.ca/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Nesto</a></strong> (blocs Gutenberg, APIs, leads vers CRM). Même logique produit, que la stack reste WordPress couplé, headless ou hybride.</p>"
+      "lede": "<p class=\"big\">Références concrètes : <strong><a href=\"https://milesopedia.com\" target=\"_blank\" rel=\"noopener noreferrer\">Milesopedia</a></strong> (comparateurs multi-marques, fort trafic) et l'écosystème <a href=\"https://www.nesto.ca/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Nesto</a> (blocs Gutenberg, APIs, leads vers CRM). Même logique produit, que la stack reste WordPress couplé, headless ou hybride.</p>"
     },
     {
       "type": "cards",
@@ -67,7 +67,7 @@
       "type": "stack",
       "badge": "Stack typique",
       "title": "Technologies concernées",
-      "lede": "<p class=\"big\">Souvent <strong>WordPress</strong> (Gutenberg, headless, WPGraphQL/REST) ; parfois <strong>Laravel</strong>, React/Next.js ou stack hybride selon le produit.</p>",
+      "lede": "<p class=\"big\">Souvent WordPress (Gutenberg, headless, WPGraphQL/REST) ; parfois Laravel, React/Next.js ou stack hybride selon le produit.</p>",
       "items": [
         "Audit perf · plugins · dette · parcours conversion",
         "WordPress · Gutenberg · blocs comparateur",

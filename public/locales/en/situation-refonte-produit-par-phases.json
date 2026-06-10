@@ -5,7 +5,7 @@
     "badge": "Rebuild & migration",
     "quote": "Our site stays up, but every new feature costs twice what it should. We've been putting off the rebuild for two years.",
     "title": "Archaic WordPress: headless or Laravel by phases",
-    "lede": "<p><strong>You start from archaic WordPress</strong>: slow, fragile plugins, legacy theme, editorial or business logic holding the product back. I step into that environment as it runs today and help you <strong>modernize the stack</strong> without « tearing everything down »: <strong>headless WordPress</strong> (WPGraphQL or REST, React/Next.js front), or <strong>Laravel admin and API</strong> (REST or GraphQL) with progressive migration.</p><p>I come in as <strong>fractional technical PM/PO</strong> with hands in the code: depending on the mandate, I can <strong>develop critical migration phases myself</strong>, or <strong>lead your existing team</strong> (prioritize, sequence, organize the stack transition). Written plan, successive phases, no big bang. We talk first to see the <strong>time and need</strong>, then how to <strong>mobilize my time</strong> on the mandate.</p><p>WordPress that holds but must <strong>evolve without a major migration</strong> (comparator, editorial, conversion): see <a href=\"/situations/plateforme-editoriale-produit\">Editorial product at scale</a>.</p>",
+    "lede": "<p><strong>You start from archaic WordPress</strong>: slow, fragile plugins, legacy theme, editorial or business logic holding the product back. I step into that environment as it runs today and help you modernize the stack without « tearing everything down »: headless WordPress (WPGraphQL or REST, React/Next.js front), or Laravel admin and API (REST or GraphQL) with progressive migration.</p><p><strong>Fractional technical PM/PO</strong> with hands in the code: depending on the mandate, I can develop critical migration phases myself, or lead your existing team (prioritize, sequence, organize the stack transition). Written plan, successive phases, no big bang. We talk first to see the time and need, then how to mobilize my time on the mandate.</p><p>WordPress that holds but must evolve without a major migration (comparator, editorial, conversion): see <a href=\"/situations/plateforme-editoriale-produit\">Editorial product at scale</a>.</p>",
     "buy": {
       "legend": "Frame your rebuild",
       "prefix": "No commitment",
@@ -17,7 +17,7 @@
       "type": "split",
       "sectionKey": "context",
       "title": "WordPress context",
-      "intro": "<p class=\"big\">I step into <strong>your current WordPress</strong> as it runs today and map <strong>how to evolve the platform</strong>: what blocks you, which architecture fits the product, no big bang. This mandate targets <strong>stack transformation</strong>, not day-to-day evolution of a product that still holds.</p>",
+      "intro": "<p class=\"big\">I step into your current WordPress as it runs today and map how to evolve the platform: what blocks you, which architecture fits the product, no big bang. This mandate targets <strong>stack transformation</strong>, not day-to-day evolution of a product that still holds.</p>",
       "panels": [
         {
           "heading": "Your current WordPress",
@@ -41,11 +41,11 @@
       "type": "cards",
       "badge": "How we advance",
       "title": "Fractional, phased, with a plan",
-      "lede": "<p class=\"big\">Not a <strong>full-time rebuild</strong> embedded in your org: phase mandates, <strong>rhythm and mobilization</strong> set after a first conversation on what you actually need.</p>",
+      "lede": "<p class=\"big\">Not a <strong>full-time rebuild</strong> embedded in your org: phase mandates, rhythm and mobilization set after a first conversation on what you actually need.</p>",
       "items": [
         {
           "title": "I code the transition or steer the team",
-          "content": "<p><strong>No team</strong>: I own build (APIs, headless front, Laravel modules) and the product plan. <strong>With team or agency</strong>: I lead sequence, priorities, and reviews, without replacing your tech lead day to day.</p>"
+          "content": "<p>No team: I own build (APIs, headless front, Laravel modules) and the product plan. With team or agency: I lead sequence, priorities, and reviews, without replacing your tech lead day to day.</p>"
         },
         {
           "title": "Successive phases, shipping to prod",
@@ -69,7 +69,7 @@
         },
         {
           "title": "Audit and path choice",
-          "content": "<p>Current WordPress (perf, plugins, data, editorial), then a written decision: <strong>headless GraphQL/REST</strong>, <strong>Laravel admin + API</strong>, or a sequence of both.</p>"
+          "content": "<p>Current WordPress (perf, plugins, data, editorial), then a written decision: headless GraphQL/REST, Laravel admin + API, or a sequence of both.</p>"
         },
         {
           "title": "Plan and migration order",
@@ -125,7 +125,7 @@
       "type": "stack",
       "badge": "How I build",
       "title": "Technical foundations",
-      "lede": "<p class=\"big\"><strong>WordPress to modern, by steps</strong>: headless, Laravel admin + API, or both in sequence, without cutting prod.</p>",
+      "lede": "<p class=\"big\">WordPress to modern, by steps: headless, Laravel admin + API, or both in sequence, without cutting prod.</p>",
       "items": [
         "WordPress audit (perf, plugins, debt, data)",
         "Headless WordPress · Gutenberg · blocks",
@@ -148,15 +148,15 @@
       "items": [
         {
           "title": "Do you code yourself or steer our team?",
-          "content": "<p>Both are possible, depending on what you already have. <strong>I code</strong> when a technical phase must move fast and no one is available to do it properly. <strong>I steer</strong> when your devs or agency have capacity: I prioritize, sequence, clarify prerequisites, and validate coherence, without micro-managing tickets.</p>"
+          "content": "<p>Both are possible, depending on what you already have. I code when a technical phase must move fast and no one is available to do it properly. I steer when your devs or agency have capacity: I prioritize, sequence, clarify prerequisites, and validate coherence, without micro-managing tickets.</p>"
         },
         {
           "title": "Headless WordPress or full move to Laravel?",
-          "content": "<p>It depends on content, team, and debt. Often: <strong>headless</strong> (WPGraphQL or REST + modern front) if WordPress editorial still helps; <strong>Laravel admin + API</strong> (REST or GraphQL) if core business logic must leave the CMS. Sometimes both, in phases. We decide in writing before build.</p>"
+          "content": "<p>It depends on content, team, and debt. Often: headless (WPGraphQL or REST + modern front) if WordPress editorial still helps; Laravel admin + API (REST or GraphQL) if core business logic must leave the CMS. Sometimes both, in phases. We decide in writing before build.</p>"
         },
         {
           "title": "GraphQL or REST for this project?",
-          "content": "<p>Both are in scope. <strong>WPGraphQL</strong> or REST on WordPress; <strong>GraphQL</strong> on the app or Laravel BFF when surfaces and consumers justify it; REST when simplicity and the team favor it. The phase plan states which contract for which module.</p>"
+          "content": "<p>Both are in scope. WPGraphQL or REST on WordPress; GraphQL on the app or Laravel BFF when surfaces and consumers justify it; REST when simplicity and the team favor it. The phase plan states which contract for which module.</p>"
         },
         {
           "title": "Is this a full-time rebuild inside our company?",
@@ -172,7 +172,7 @@
         },
         {
           "title": "We only want to stabilize or optimize, not migrate",
-          "content": "<p>That's probably not this mandate. For <strong>continuous evolution</strong> (stabilize, optimize module by module, comparator, conversion) without changing stacks: see <a href=\"/situations/plateforme-editoriale-produit\">Editorial product at scale</a>. Here, the issue is <strong>modernization or migration</strong> by phases.</p>"
+          "content": "<p>That's probably not this mandate. For <strong>continuous evolution</strong> (stabilize, optimize module by module, comparator, conversion) without changing stacks: see <a href=\"/situations/plateforme-editoriale-produit\">Editorial product at scale</a>. Here, the issue is modernization or migration by phases.</p>"
         },
         {
           "title": "What after the rebuild?",
@@ -180,7 +180,7 @@
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
-          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the <strong>shared urgency frame we define together</strong> (scope, priority, response time).</p>"
+          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p>Ongoing, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the <strong>shared urgency frame we define together</strong> (scope, priority, response time).</p>"
         }
       ]
     },

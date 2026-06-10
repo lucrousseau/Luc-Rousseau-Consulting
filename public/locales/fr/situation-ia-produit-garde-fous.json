@@ -5,7 +5,7 @@
     "badge": "IA & produit",
     "quote": "Tout le monde nous demande si on fait de l'IA. On sait pas par où commencer sans que ça vire en gadget ou en risque.",
     "title": "IA dans votre produit",
-    "lede": "<p><strong>L'IA est sur la table, que votre produit soit déjà en ligne ou en lancement.</strong> Pression « il faut de l'IA », feature floue proposée par l'agence, expérimentations sans cadre. Risque : coûts, données, UX et dette, sans valeur métier claire.</p><p>Mon angle est <strong>produit</strong> : identifier en amont les <strong>prérequis, risques et dépendances</strong>, trancher le <strong>périmètre IA</strong> pour éviter les dérapages et limiter les hallucinations, puis build vs buy et intégration des APIs (Claude, OpenAI, etc.) là où le code classique ne suffit pas. <strong>Pas</strong> MLOps ni exploitation de modèles : je m'occupe de l'usage dans le produit, pas de la machine.</p><p>Mandat <strong>fractionnel par phases</strong> : cartographie, garde-fous, POC, puis handover ou pilotage de vos devs ou agence sur le build. <strong>Demi-journées</strong> en cadrage, <strong>journée complète</strong> ponctuelle pour un POC, parfois <strong>deux jours par semaine</strong> si je code une intégration critique. Rythme calé à l'appel.</p>",
+    "lede": "<p><strong>L'IA est sur la table, que votre produit soit déjà en ligne ou en lancement.</strong> Pression « il faut de l'IA », feature floue proposée par l'agence, expérimentations sans cadre. Risque : coûts, données, UX et dette, sans valeur métier claire.</p><p>Mon angle est <strong>produit</strong> : identifier en amont les prérequis, risques et dépendances, trancher le périmètre IA pour éviter les dérapages et limiter les hallucinations, puis build vs buy et intégration des APIs (Claude, OpenAI, etc.) là où le code classique ne suffit pas. Pas MLOps ni exploitation de modèles : je m'occupe de l'usage dans le produit, pas de la machine.</p><p>Mandat <strong>fractionnel par phases</strong> : cartographie, garde-fous, POC, puis handover ou pilotage de vos devs ou agence sur le build. Demi-journées en cadrage, journée complète ponctuelle pour un POC, parfois deux jours par semaine si je code une intégration critique. Rythme calé à l'appel.</p>",
     "buy": {
       "legend": "Cadrer l'IA dans votre produit",
       "prefix": "Sans engagement",
@@ -23,7 +23,7 @@
       "type": "split",
       "sectionKey": "product-ai",
       "title": "IA dans le produit, pas infra ML",
-      "intro": "<p class=\"big\">Je travaille le <strong>côté produit et intégration</strong> : décisions, APIs LLM, expérience utilisateur et <strong>limites</strong>. Pas l'exploitation DevOps/MLOps des modèles (entraînement, GPU, pipelines ML ops).</p>",
+      "intro": "<p class=\"big\">Je travaille le côté produit et intégration : décisions, APIs LLM, expérience utilisateur et <strong>limites</strong>. Pas l'exploitation DevOps/MLOps des modèles (entraînement, GPU, pipelines ML ops).</p>",
       "panels": [
         {
           "heading": "Avant de se lancer",
@@ -55,7 +55,7 @@
         },
         {
           "title": "Build vs buy et garde-fous",
-          "content": "<p>API modèle, partenaire ou feature interne : arbitrage <strong>risque, coût et délai</strong>. Données, PII, repli, revue humaine et <strong>limites anti-hallucination</strong> définies avant la prod.</p>"
+          "content": "<p>API modèle, partenaire ou feature interne : arbitrage <strong>risque, coût et délai</strong>. Données, PII, repli, revue humaine et limites anti-hallucination définies avant la prod.</p>"
         },
         {
           "title": "APIs LLM dans le produit",
@@ -169,7 +169,7 @@
       "items": [
         {
           "title": "Vous faites du MLOps ou DevOps modèle ?",
-          "content": "<p><strong>Non.</strong> Pas d'entraînement de modèles, pipelines ML ops, GPU ou exploitation infra modèle. Mon périmètre : <strong>usage dans le produit</strong>, décisions, APIs LLM, intégration et limites côté SaaS.</p>"
+          "content": "<p><strong>Non.</strong> Pas d'entraînement de modèles, pipelines ML ops, GPU ou exploitation infra modèle. Mon périmètre : usage dans le produit, décisions, APIs LLM, intégration et limites côté SaaS.</p>"
         },
         {
           "title": "Vous implémentez les APIs LLM dans le produit ?",
@@ -181,7 +181,7 @@
         },
         {
           "title": "Vous codez ou vous pilotez notre équipe ?",
-          "content": "<p>Les deux. <strong>Je code</strong> des POCs produit (APIs, flows, contenus LLM) si besoin. <strong>Je pilote</strong> vos devs ou agence : phases, backlog IA, prérequis, sans prendre chaque ticket.</p>"
+          "content": "<p>Les deux. <strong>Je code</strong> des POCs produit (APIs, flows, contenus LLM) si besoin. Je pilote vos devs ou agence : phases, backlog IA, prérequis, sans prendre chaque ticket.</p>"
         },
         {
           "title": "Vous allez devenir notre CTO IA ?",
@@ -197,7 +197,7 @@
         },
         {
           "title": "Quel rythme : demi-journées, journées, deux jours ?",
-          "content": "<p>Ça dépend de la phase. <strong>Demi-journées</strong> pour cartographie et ateliers. <strong>Journée complète</strong> pour un POC API ou contenu LLM. <strong>Deux jours par semaine</strong> si je code une intégration critique. On calibre à l'appel.</p>"
+          "content": "<p>Ça dépend de la phase. Demi-journées pour cartographie et ateliers. Journée complète pour un POC API ou contenu LLM. <strong>Deux jours par semaine</strong> si je code une intégration critique. On calibre à l'appel.</p>"
         },
         {
           "title": "L'IA change trop vite, pourquoi planifier ?",
@@ -205,7 +205,7 @@
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",
-          "content": "<p>Le rythme convenu structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais).</p>"
+          "content": "<p>Le rythme convenu structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le cadre d'urgence défini ensemble (périmètre, priorité, délais).</p>"
         }
       ]
     },

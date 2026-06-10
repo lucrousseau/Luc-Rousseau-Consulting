@@ -5,7 +5,7 @@
     "badge": "Produit & delivery",
     "quote": "Mes devs livrent. Mais je ne suis plus certain qu'on livre les bonnes choses dans le bon ordre.",
     "title": "Besoin de PM ou PO, sans temps plein",
-    "lede": "<p><strong>Vous avez besoin d'un PM ou PO, sans embauche à 40 h.</strong> L'équipe code ; il manque <strong>priorisation au trimestre</strong>, des prérequis clairs, des rituels avec les devs et des hypothèses testées avant le build. Ce n'est pas « trop tôt pour un PM », c'est <strong>trop lourd ou trop rigide en temps plein</strong>.</p><p>Je joue le rôle en <strong>PM/PO technique</strong> : développement, logique métier, enjeux tech, et <strong>lecture produit</strong> (parcours designer, puis dev, puis leadership produit). À l'ère de l'IA, ce combo est un vrai levier pour prototyper, cadrer et arbitrer sans perdre votre équipe.</p><p>Ça tient en <strong>fractionnel</strong> : d'abord des <strong>demi-journées</strong> calées sur vos rituels (stand-up, backlog, prérequis), environ <strong>quatre demi-journées par semaine</strong> ou moins selon la phase, et une <strong>journée complète au besoin</strong> (en pratique, au plus une fois par semaine) pour prototyper ou valider avant d'engager l'équipe dev.</p>",
+    "lede": "<p><strong>Vous avez besoin d'un PM ou PO, sans embauche à 40 h.</strong> L'équipe code ; il manque priorisation au trimestre, des prérequis clairs, des rituels avec les devs et des hypothèses testées avant le build. Ce n'est pas « trop tôt pour un PM », c'est trop lourd ou trop rigide en temps plein.</p><p>Je joue le rôle en <strong>PM/PO technique</strong> : développement, logique métier, enjeux tech, et lecture produit (parcours designer, puis dev, puis leadership produit). À l'ère de l'IA, ce combo est un vrai levier pour prototyper, cadrer et arbitrer sans perdre votre équipe.</p><p>Ça tient en <strong>fractionnel</strong> : d'abord des demi-journées calées sur vos rituels (stand-up, backlog, prérequis), environ quatre demi-journées par semaine ou moins selon la phase, et une journée complète au besoin (en pratique, au plus une fois par semaine) pour prototyper ou valider avant d'engager l'équipe dev.</p>",
     "buy": {
       "legend": "Clarifier votre besoin produit",
       "prefix": "Sans engagement",
@@ -41,7 +41,7 @@
       "type": "cards",
       "badge": "Le rythme",
       "title": "Comment couvrir un PM sans temps plein",
-      "lede": "<p class=\"big\">Pas un rythme « quatre jours pleins par semaine » : des <strong>demi-journées</strong> en base, et une <strong>journée complète</strong> quand il faut aller plus loin, sans poste fixe à 40 h.</p>",
+      "lede": "<p class=\"big\">Pas un rythme « quatre jours pleins par semaine » : des <strong>demi-journées</strong> en base, et une journée complète quand il faut aller plus loin, sans poste fixe à 40 h.</p>",
       "items": [
         {
           "title": "Demi-journées en régulier (~4 par semaine, ou moins)",
@@ -49,7 +49,7 @@
         },
         {
           "title": "Journée complète au besoin, pas en routine",
-          "content": "<p>Quand <strong>plusieurs hypothèses ou fonctionnalités</strong> doivent être évaluées, prototypées ou testées avant le build : prototypes IA, flows cliquables, POCs. En pratique, <strong>au plus une journée pleine par semaine</strong>, pas quatre jours complets en continu.</p>"
+          "content": "<p>Quand plusieurs hypothèses ou fonctionnalités doivent être évaluées, prototypées ou testées avant le build : prototypes IA, flows cliquables, POCs. En pratique, <strong>au plus une journée pleine par semaine</strong>, pas quatre jours complets en continu.</p>"
         },
         {
           "title": "PM/PO technique senior, pas salarié",
@@ -154,7 +154,7 @@
         },
         {
           "title": "Pourquoi des demi-journées plutôt que des journées entières ?",
-          "content": "<p>Pour <strong>coller au rythme réel</strong> : stand-up et déblocage le matin, ateliers prérequis ou priorisation l'après-midi, sans payer une journée pleine quand une demi-journée suffit. Une journée complète arrive au besoin, en pratique <strong>au plus une fois par semaine</strong>, pas en routine.</p>"
+          "content": "<p>Pour coller au rythme réel : stand-up et déblocage le matin, ateliers prérequis ou priorisation l'après-midi, sans payer une journée pleine quand une demi-journée suffit. Une journée complète arrive au besoin, en pratique <strong>au plus une fois par semaine</strong>, pas en routine.</p>"
         },
         {
           "title": "Quatre demi-journées par semaine, ce n'est pas presque un temps plein ?",
@@ -162,7 +162,7 @@
         },
         {
           "title": "En quoi un PM/PO « technique » change la donne ?",
-          "content": "<p>Je parle <strong>développement, logique métier et produit</strong> dans la même conversation. Vos devs n'ont pas à traduire des specs floues ; le business n'a pas à choisir entre « beau slide » et « faisable ». Avec l'IA, je peux monter des <strong>prototypes crédibles</strong> vite, parce que je comprends les deux côtés.</p>"
+          "content": "<p>Je parle développement, logique métier et produit dans la même conversation. Vos devs n'ont pas à traduire des specs floues ; le business n'a pas à choisir entre « beau slide » et « faisable ». Avec l'IA, je peux monter des <strong>prototypes crédibles</strong> vite, parce que je comprends les deux côtés.</p>"
         },
         {
           "title": "Les prototypes IA, ce n'est pas du « vrai » produit",
@@ -174,7 +174,7 @@
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",
-          "content": "<p>Le rythme convenu (ex. demi-journées calées sur vos rituels) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais).</p>"
+          "content": "<p>Le rythme convenu (ex. demi-journées calées sur vos rituels) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le cadre d'urgence défini ensemble (périmètre, priorité, délais).</p>"
         }
       ]
     },

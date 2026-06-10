@@ -5,7 +5,7 @@
     "badge": "Nouveau produit",
     "quote": "J'ai une idée claire, un budget, et zéro envie de passer 6 mois à builder quelque chose que personne veut.",
     "title": "Lancer un SaaS ou un MVP",
-    "lede": "<p><strong>Vous préparez un MVP ou un SaaS et vous voulez cadrer avant d'investir lourd.</strong> Idée, marché, parfois budget ou agence en vue, mais <strong>pas encore de carte claire</strong> : stack, périmètre du premier release, risques, ce qu'il faut valider avant les mois de dev.</p><p>J'interviens en <strong>mandat par phases</strong> avec le CEO, le CTO ou les fondateurs : faisabilité, go/no-go, architecture, prototypes rapides (Lovable, Claude, Cursor : vous prototypiez, je guide). Je peux aussi <strong>piloter vos devs ou votre agence</strong> : créer les phases, structurer le backlog, prioriser ce qu'il faut pour un MVP qui fonctionne sans déraper. <strong>Pas</strong> un CTO embarqué : cap, séquence et cohérence produit-tech, pas la gestion des tickets au quotidien.</p><p>Mandat <strong>fractionnel</strong>, pas temps plein : en pratique <strong>demi-journées</strong> pour cadrer et synchroniser, <strong>journées complètes ponctuelles</strong> pour prototyper ou trancher l'architecture, parfois <strong>deux jours par semaine</strong> si je code des briques clés. Le rythme se calibre à l'appel, phase par phase.</p>",
+    "lede": "<p>Vous préparez un MVP ou un SaaS et vous voulez cadrer avant d'investir lourd. Idée, marché, parfois budget ou agence en vue, mais <strong>pas encore de carte claire</strong> : stack, périmètre du premier release, risques, ce qu'il faut valider avant les mois de dev.</p><p>J'interviens en <strong>mandat par phases</strong> avec le CEO, le CTO ou les fondateurs : faisabilité, go/no-go, architecture, prototypes rapides (Lovable, Claude, Cursor : vous prototypiez, je guide). Je peux aussi piloter vos devs ou votre agence : créer les phases, structurer le backlog, prioriser ce qu'il faut pour un MVP qui fonctionne sans déraper. Pas un CTO embarqué : cap, séquence et cohérence produit-tech, pas la gestion des tickets au quotidien.</p><p>Mandat <strong>fractionnel</strong>, pas temps plein : en pratique demi-journées pour cadrer et synchroniser, journées complètes ponctuelles pour prototyper ou trancher l'architecture, parfois deux jours par semaine si je code des briques clés. Le rythme se calibre à l'appel, phase par phase.</p>",
     "buy": {
       "legend": "Cadrer votre MVP",
       "prefix": "Sans engagement",
@@ -17,7 +17,7 @@
       "type": "intro",
       "badge": "Le piège",
       "title": "Builder trop tôt, valider trop tard",
-      "lede": "<p class=\"big\">Sans cadrage, la première version part en vrille : scope qui gonfle, stack choisie par défaut, agence ou devs qui codent pendant que le <strong>« quoi et pourquoi »</strong> bouge encore. Le coût d'une correction après trois mois de build dépasse largement quelques semaines de <strong>cadrage initial</strong>.</p><p class=\"big\">L'IA et les outils du type Lovable, Claude ou Cursor permettent de <strong>prototyper vite</strong> : l'enjeu n'est plus d'attendre des mois pour savoir si l'idée tient, mais de valider avant d'engager massivement temps, équipe et argent.</p>"
+      "lede": "<p class=\"big\">Sans cadrage, la première version part en vrille : scope qui gonfle, stack choisie par défaut, agence ou devs qui codent pendant que le <strong>« quoi et pourquoi »</strong> bouge encore. Le coût d'une correction après trois mois de build dépasse largement quelques semaines de cadrage initial.</p><p class=\"big\">L'IA et les outils du type Lovable, Claude ou Cursor permettent de <strong>prototyper vite</strong> : l'enjeu n'est plus d'attendre des mois pour savoir si l'idée tient, mais de valider avant d'engager massivement temps, équipe et argent.</p>"
     },
     {
       "type": "split",
@@ -51,7 +51,7 @@
       "items": [
         {
           "title": "Je code, pilote devs ou agence",
-          "content": "<p><strong>Seul fondateur</strong> : prototypes et briques clés à la demande. <strong>Avec devs ou agence</strong> : je crée les phases, tiens le backlog et priorise le MVP, sans micro-manager les tickets au quotidien.</p>"
+          "content": "<p><strong>Seul fondateur</strong> : prototypes et briques clés à la demande. Avec devs ou agence : je crée les phases, tiens le backlog et priorise le MVP, sans micro-manager les tickets au quotidien.</p>"
         },
         {
           "title": "Faisabilité avant le gros build",
@@ -99,7 +99,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "Lancer direct avec agence/devs vs cadrage produit-système d'abord",
-      "intro": "Ce comparatif concerne le <strong>lancement d'un SaaS ou d'un MVP</strong> (faisabilité, stack, prototypes). Contexte différent de la fiche <a href=\"/situations/premier-dev-fractionnel\">Après la levée : avant votre premier dev à temps plein</a>, pour les startups qui préparent une première embauche technique plutôt qu'un produit à cadrer. Offre où l'<strong>IA est centrale</strong> : voir <a href=\"/situations/ia-produit-garde-fous\">IA dans votre produit</a>.",
+      "intro": "Ce comparatif concerne le lancement d'un SaaS ou d'un MVP (faisabilité, stack, prototypes). Contexte différent de la fiche <a href=\"/situations/premier-dev-fractionnel\">Après la levée : avant votre premier dev à temps plein</a>, pour les startups qui préparent une première embauche technique plutôt qu'un produit à cadrer. Offre où l'<strong>IA est centrale</strong> : voir <a href=\"/situations/ia-produit-garde-fous\">IA dans votre produit</a>.",
       "columnKeys": ["dimension", "buildFirst", "phaseFirst"],
       "table": {
         "headers": {
@@ -173,15 +173,15 @@
         },
         {
           "title": "Quel rythme : demi-journées, journées, deux jours ?",
-          "content": "<p>Ça dépend de la phase. <strong>Demi-journées</strong> pour cadrage initial, ateliers CEO/CTO et suivi léger. <strong>Journée complète</strong> ponctuelle pour un sprint de prototypage ou d'architecture. <strong>Deux jours par semaine</strong> seulement si je dois coder des fondations ou POCs critiques. Pas de poste à 40 h : on calibre à l'appel.</p>"
+          "content": "<p>Ça dépend de la phase. Demi-journées pour cadrage initial, ateliers CEO/CTO et suivi léger. Journée complète ponctuelle pour un sprint de prototypage ou d'architecture. <strong>Deux jours par semaine</strong> seulement si je dois coder des fondations ou POCs critiques. Pas de poste à 40 h : on calibre à l'appel.</p>"
         },
         {
           "title": "On peut prototyper nous-mêmes avec Lovable ou Cursor ?",
-          "content": "<p>Oui, et c'est souvent un <strong>levier</strong>. Je collabore avec le CEO, le CTO ou les fondateurs : vous explorez avec Lovable, Claude, Cursor ou équivalent, je guide pour que ça serve la validation produit et technique, pas un spaghetti à transporter tel quel en prod. Une fois l'idée <strong>cadrée et validée</strong>, investir en équipe et en budget est beaucoup moins risqué.</p>"
+          "content": "<p>Oui, et c'est souvent un <strong>levier</strong>. Je collabore avec le CEO, le CTO ou les fondateurs : vous explorez avec Lovable, Claude, Cursor ou équivalent, je guide pour que ça serve la validation produit et technique, pas un spaghetti à transporter tel quel en prod. Une fois l'idée cadrée et validée, investir en équipe et en budget est beaucoup moins risqué.</p>"
         },
         {
           "title": "Vous codez vous-même ou vous pilotez notre équipe ?",
-          "content": "<p>Les deux. <strong>Je code</strong> prototypes et briques clés si besoin. <strong>Je pilote</strong> vos devs ou votre agence : phases, backlog, priorisation pour un MVP qui tient, revues et arbitrages produit-tech, sans prendre chaque ticket à votre place.</p>"
+          "content": "<p>Les deux. <strong>Je code</strong> prototypes et briques clés si besoin. Je pilote vos devs ou votre agence : phases, backlog, priorisation pour un MVP qui tient, revues et arbitrages produit-tech, sans prendre chaque ticket à votre place.</p>"
         },
         {
           "title": "Vous allez devenir notre CTO ?",
@@ -201,7 +201,7 @@
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",
-          "content": "<p>Le rythme convenu structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais).</p>"
+          "content": "<p>Le rythme convenu structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le cadre d'urgence défini ensemble (périmètre, priorité, délais).</p>"
         }
       ]
     },

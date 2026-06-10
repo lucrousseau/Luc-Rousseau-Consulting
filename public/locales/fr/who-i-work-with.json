@@ -4,7 +4,7 @@
   "navigation-label-short": "Qui",
   "badge": "Profil idéal",
   "title": "Avec qui je travaille le mieux",
-  "summary": "<p className=\"big\">Je suis le plus utile quand le contexte correspond à ma façon de travailler : <strong>stratégie et exécution au même endroit</strong>, <strong>clarté plutôt que buzzwords</strong>, et de la marge pour <strong>réduire la complexité</strong>.</p>",
+  "summary": "<p className=\"big\">Je suis le plus utile quand le contexte correspond à ma façon de travailler : stratégie et exécution au même endroit, clarté plutôt que buzzwords, et de la marge pour <strong>réduire la complexité</strong>.</p>",
   "items": [
     {
       "title": "Responsables produit et technique",

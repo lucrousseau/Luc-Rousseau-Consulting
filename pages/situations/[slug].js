@@ -17,6 +17,7 @@ import {
 import { buildSituationPageJsonLd } from "../../commons/situationsStructuredData";
 import { absoluteUrl, localizedPath } from "../../commons/localizedPath";
 import { getSiteOrigin } from "../../utils/siteOrigin";
+import { getSituationContactIntro } from "../../commons/situationContactIntro";
 
 const PAGE_SHELL_STYLE = {
   "--padding-top": "1rem",
@@ -35,6 +36,9 @@ export default function SituationPage({ namespace, situationPath, hreflangPaths,
   const pageDescription = t(`${namespace}:seoDescription`);
   const canonicalPath = localizedPath(locale, defaultLocale, situationPath);
   const pageUrl = absoluteUrl(base, canonicalPath);
+
+  const blocks = t(`${namespace}:blocks`, { returnObjects: true });
+  const contactIntroTeaser = getSituationContactIntro(blocks);
 
   const situationJsonLd = buildSituationPageJsonLd({
     base,
@@ -64,7 +68,7 @@ export default function SituationPage({ namespace, situationPath, hreflangPaths,
       </Container>
       <main className="page-home page-situation">
         <SituationShell namespace={namespace} />
-        <Contact />
+        <Contact introTeaser={contactIntroTeaser} />
       </main>
       <Container tag="footer" style={PAGE_SHELL_STYLE}>
         <Footer />

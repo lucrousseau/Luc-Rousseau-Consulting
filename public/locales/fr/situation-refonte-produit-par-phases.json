@@ -5,7 +5,7 @@
     "badge": "Refonte & migration",
     "quote": "Notre site tient debout, mais chaque nouvelle feature nous coûte le double de ce que ça devrait. On reporte la refonte depuis deux ans.",
     "title": "WordPress archaïque : headless ou Laravel par phases",
-    "lede": "<p><strong>Vous partez d'un WordPress archaïque</strong> : lent, plugins fragiles, thème legacy, éditorial ou métier qui freine le produit. Je m'insère dans cet environnement tel qu'il est et je vous aide à <strong>moderniser la stack</strong> sans « tout casser » : <strong>WordPress headless</strong> (WPGraphQL ou REST, front React/Next.js), ou <strong>admin et API Laravel</strong> (REST ou GraphQL) avec migration progressive.</p><p>Je viens en <strong>PM/PO technique fractionnel</strong>, avec un pied dans le code : selon le mandat, je peux <strong>développer moi-même</strong> les phases critiques de la transition, ou <strong>piloter votre équipe</strong> déjà en place (prioriser, séquencer, organiser le changement de stack). Plan écrit, phases successives, sans big bang. On en parle d'abord pour voir le <strong>temps et le besoin</strong>, puis comment <strong>mobiliser mon temps</strong> sur le mandat.</p><p>WordPress qui tient mais doit <strong>évoluer sans migration majeure</strong> (comparateur, éditorial, conversion) : voir <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>.</p>",
+    "lede": "<p><strong>Vous partez d'un WordPress archaïque</strong> : lent, plugins fragiles, thème legacy, éditorial ou métier qui freine le produit. Je m'insère dans cet environnement tel qu'il est et je vous aide à moderniser la stack sans « tout casser » : WordPress headless (WPGraphQL ou REST, front React/Next.js), ou admin et API Laravel (REST ou GraphQL) avec migration progressive.</p><p><strong>PM/PO technique fractionnel</strong>, avec un pied dans le code : selon le mandat, je peux développer moi-même les phases critiques de la transition, ou piloter votre équipe déjà en place (prioriser, séquencer, organiser le changement de stack). Plan écrit, phases successives, sans big bang. On en parle d'abord pour voir le temps et le besoin, puis comment mobiliser mon temps sur le mandat.</p><p>WordPress qui tient mais doit évoluer sans migration majeure (comparateur, éditorial, conversion) : voir <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>.</p>",
     "buy": {
       "legend": "Cadrer votre refonte",
       "prefix": "Sans engagement",
@@ -17,7 +17,7 @@
       "type": "split",
       "sectionKey": "context",
       "title": "Le contexte WordPress",
-      "intro": "<p class=\"big\">Je rentre dans <strong>votre WordPress actuel</strong>, tel qu'il tourne aujourd'hui, et on trace <strong>comment faire évoluer la plateforme</strong> : ce qui bloque, quelle stack tient pour le produit, sans big bang. Ce mandat vise une <strong>transformation de stack</strong>, pas l'évolution au quotidien d'un produit qui tient encore.</p>",
+      "intro": "<p class=\"big\">Je rentre dans votre WordPress actuel, tel qu'il tourne aujourd'hui, et on trace comment faire évoluer la plateforme : ce qui bloque, quelle stack tient pour le produit, sans big bang. Ce mandat vise une <strong>transformation de stack</strong>, pas l'évolution au quotidien d'un produit qui tient encore.</p>",
       "panels": [
         {
           "heading": "Votre WordPress actuel",
@@ -41,11 +41,11 @@
       "type": "cards",
       "badge": "Comment on avance",
       "title": "Fractionnel, par phases, avec un plan",
-      "lede": "<p class=\"big\">Pas une <strong>refonte à temps plein</strong> embarquée chez vous : mandat par phases, <strong>rythme et mobilisation</strong> définis après un premier échange sur le besoin réel.</p>",
+      "lede": "<p class=\"big\">Pas une <strong>refonte à temps plein</strong> embarquée chez vous : mandat par phases, rythme et mobilisation définis après un premier échange sur le besoin réel.</p>",
       "items": [
         {
           "title": "Je code la transition ou pilote l'équipe",
-          "content": "<p><strong>Sans équipe</strong> : j'assume le build (APIs, front headless, modules Laravel) et le plan produit. <strong>Avec équipe ou agence</strong> : je pilote la séquence, les priorités et les revues, sans remplacer votre tech lead au quotidien.</p>"
+          "content": "<p>Sans équipe : j'assume le build (APIs, front headless, modules Laravel) et le plan produit. Avec équipe ou agence : je pilote la séquence, les priorités et les revues, sans remplacer votre tech lead au quotidien.</p>"
         },
         {
           "title": "Phases successives, livrables en prod",
@@ -69,7 +69,7 @@
         },
         {
           "title": "Audit et choix de piste",
-          "content": "<p>WordPress actuel (perf, plugins, données, éditorial), puis décision documentée : <strong>headless GraphQL/REST</strong>, <strong>Laravel admin + API</strong>, ou séquence des deux.</p>"
+          "content": "<p>WordPress actuel (perf, plugins, données, éditorial), puis décision documentée : headless GraphQL/REST, Laravel admin + API, ou séquence des deux.</p>"
         },
         {
           "title": "Plan et ordre de migration",
@@ -125,7 +125,7 @@
       "type": "stack",
       "badge": "Comment je construis",
       "title": "Fondations techniques",
-      "lede": "<p class=\"big\"><strong>WordPress vers moderne, par étapes</strong> : headless, admin Laravel + API, ou les deux en séquence, sans couper la prod.</p>",
+      "lede": "<p class=\"big\">WordPress vers moderne, par étapes : headless, admin Laravel + API, ou les deux en séquence, sans couper la prod.</p>",
       "items": [
         "Audit WordPress (perf, plugins, dette, données)",
         "WordPress headless · Gutenberg · blocs",
@@ -148,15 +148,15 @@
       "items": [
         {
           "title": "Vous codez vous-même ou vous pilotez notre équipe ?",
-          "content": "<p>Les deux sont possibles, selon ce que vous avez déjà. <strong>Je code</strong> quand il faut aller vite sur une phase technique précise et que personne n'est disponible pour le faire proprement. <strong>Je pilote</strong> quand vos devs ou votre agence ont la capacité : je priorise, séquence, clarifie les prérequis et valide la cohérence, sans micro-manager les tickets.</p>"
+          "content": "<p>Les deux sont possibles, selon ce que vous avez déjà. Je code quand il faut aller vite sur une phase technique précise et que personne n'est disponible pour le faire proprement. Je pilote quand vos devs ou votre agence ont la capacité : je priorise, séquence, clarifie les prérequis et valide la cohérence, sans micro-manager les tickets.</p>"
         },
         {
           "title": "Headless WordPress ou tout migrer vers Laravel ?",
-          "content": "<p>Ça dépend de votre contenu, de l'équipe et de la dette. Souvent : <strong>headless</strong> (WPGraphQL ou REST + front moderne) si l'éditorial WordPress reste utile ; <strong>Laravel admin + API</strong> (REST ou GraphQL) si le cœur métier doit sortir du CMS. Parfois les deux, en phases. On tranche à l'écrit avant de coder.</p>"
+          "content": "<p>Ça dépend de votre contenu, de l'équipe et de la dette. Souvent : headless (WPGraphQL ou REST + front moderne) si l'éditorial WordPress reste utile ; Laravel admin + API (REST ou GraphQL) si le cœur métier doit sortir du CMS. Parfois les deux, en phases. On tranche à l'écrit avant de coder.</p>"
         },
         {
           "title": "GraphQL ou REST pour ce projet ?",
-          "content": "<p>Les deux sont dans le périmètre. <strong>WPGraphQL</strong> ou REST côté WordPress ; <strong>GraphQL</strong> côté app ou BFF Laravel si les surfaces et consommateurs le justifient ; REST quand la simplicité et l'équipe le favorisent. Le plan de phase dit quel contrat pour quel module.</p>"
+          "content": "<p>Les deux sont dans le périmètre. WPGraphQL ou REST côté WordPress ; GraphQL côté app ou BFF Laravel si les surfaces et consommateurs le justifient ; REST quand la simplicité et l'équipe le favorisent. Le plan de phase dit quel contrat pour quel module.</p>"
         },
         {
           "title": "C'est une refonte à temps plein chez nous ?",
@@ -172,7 +172,7 @@
         },
         {
           "title": "On veut seulement stabiliser ou optimiser, pas migrer",
-          "content": "<p>Ce n'est probablement pas ce mandat. Pour <strong>évolution continue</strong> (stabiliser, optimiser module par module, comparateur, conversion) sans changer de stack : voir <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>. Ici, l'enjeu est une <strong>modernisation ou migration</strong> par phases.</p>"
+          "content": "<p>Ce n'est probablement pas ce mandat. Pour <strong>évolution continue</strong> (stabiliser, optimiser module par module, comparateur, conversion) sans changer de stack : voir <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>. Ici, l'enjeu est une modernisation ou migration par phases.</p>"
         },
         {
           "title": "Et après la refonte ?",
@@ -180,7 +180,7 @@
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",
-          "content": "<p>Le rythme convenu structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais).</p>"
+          "content": "<p>Le rythme convenu structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p>En continu, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais).</p>"
         }
       ]
     },

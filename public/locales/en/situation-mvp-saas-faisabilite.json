@@ -5,7 +5,7 @@
     "badge": "New product",
     "quote": "I have a clear idea, a budget, and zero interest in spending 6 months building something nobody wants.",
     "title": "Launching a SaaS or MVP",
-    "lede": "<p><strong>You're preparing an MVP or SaaS and want to frame before investing heavily.</strong> Idea, market, sometimes budget or agency in sight, but <strong>no clear map yet</strong>: stack, first-release scope, risks, what to validate before months of dev.</p><p>I work in <strong>phased mandates</strong> with the CEO, CTO, or founders: feasibility, go/no-go, architecture, rapid prototypes (Lovable, Claude, Cursor: you prototype, I guide). I can also <strong>steer your devs or agency</strong>: define phases, structure the backlog, prioritize what you need for an MVP that works without derailing. <strong>Not</strong> an embedded CTO: direction, sequence, and product-tech coherence, not day-to-day ticket management.</p><p><strong>Fractional</strong> engagement, not full-time: typically <strong>half-days</strong> to frame and stay aligned, <strong>full days when needed</strong> for intensive prototype or architecture work, sometimes <strong>two days a week</strong> if I code key building blocks. Rhythm is set on the call, phase by phase.</p>",
+    "lede": "<p>You're preparing an MVP or SaaS and want to frame before investing heavily. Idea, market, sometimes budget or agency in sight, but <strong>no clear map yet</strong>: stack, first-release scope, risks, what to validate before months of dev.</p><p>I work in <strong>phased mandates</strong> with the CEO, CTO, or founders: feasibility, go/no-go, architecture, rapid prototypes (Lovable, Claude, Cursor: you prototype, I guide). I can also steer your devs or agency: define phases, structure the backlog, prioritize what you need for an MVP that works without derailing. Not an embedded CTO: direction, sequence, and product-tech coherence, not day-to-day ticket management.</p><p><strong>Fractional</strong> engagement, not full-time: typically half-days to frame and stay aligned, full days when needed for intensive prototype or architecture work, sometimes two days a week if I code key building blocks. Rhythm is set on the call, phase by phase.</p>",
     "buy": {
       "legend": "Frame your MVP",
       "prefix": "No commitment",
@@ -17,7 +17,7 @@
       "type": "intro",
       "badge": "The trap",
       "title": "Build too early, validate too late",
-      "lede": "<p class=\"big\">Without framing, v1 drifts: scope swells, default stack, agency or devs coding while <strong>what and why</strong> still move. Fixing after three months of build costs far more than a few weeks of <strong>initial framing</strong>.</p><p class=\"big\">AI and tools like Lovable, Claude, or Cursor let you <strong>prototype fast</strong>: the stake is no longer waiting months to see if the idea holds, but validating before you commit heavily on time, team, and money.</p>"
+      "lede": "<p class=\"big\">Without framing, v1 drifts: scope swells, default stack, agency or devs coding while <strong>what and why</strong> still move. Fixing after three months of build costs far more than a few weeks of initial framing.</p><p class=\"big\">AI and tools like Lovable, Claude, or Cursor let you <strong>prototype fast</strong>: the stake is no longer waiting months to see if the idea holds, but validating before you commit heavily on time, team, and money.</p>"
     },
     {
       "type": "split",
@@ -51,7 +51,7 @@
       "items": [
         {
           "title": "I code, steer devs or agency",
-          "content": "<p><strong>Solo founder</strong>: prototypes and key blocks on demand. <strong>With devs or agency</strong>: I define phases, own the backlog, and prioritize the MVP, without micro-managing day-to-day tickets.</p>"
+          "content": "<p><strong>Solo founder</strong>: prototypes and key blocks on demand. With devs or agency: I define phases, own the backlog, and prioritize the MVP, without micro-managing day-to-day tickets.</p>"
         },
         {
           "title": "Feasibility before the big build",
@@ -87,7 +87,7 @@
         },
         {
           "title": "Prototypes and prerequisites",
-          "content": "<p>With the CEO or CTO: clickable flows, POCs via Lovable, Claude, Cursor, or targeted build. You prototype, I guide; acceptance criteria and <strong>validation before big budget</strong>. Agency or team gets a brief <strong>ready to build</strong>, not fuzzy specs.</p>"
+          "content": "<p>With the CEO or CTO: clickable flows, POCs via Lovable, Claude, Cursor, or targeted build. You prototype, I guide; acceptance criteria and validation before big budget. Agency or team gets a brief <strong>ready to build</strong>, not fuzzy specs.</p>"
         },
         {
           "title": "Handover and optional follow-up",
@@ -99,7 +99,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "Build straight with agency/devs vs product-system framing first",
-      "intro": "This comparison is about <strong>launching a SaaS or MVP</strong> (feasibility, stack, prototypes). Different from <a href=\"/situations/premier-dev-fractionnel\">Post-funding: before your first full-time developer</a>, for startups preparing a first tech hire rather than framing a product to launch. <strong>AI-centric</strong> offer: see <a href=\"/situations/ia-produit-garde-fous\">AI in your product</a>.",
+      "intro": "This comparison is about <strong>launching a SaaS or MVP</strong> (feasibility, stack, prototypes). Different from <a href=\"/situations/premier-dev-fractionnel\">Post-funding: before your first full-time developer</a>, for startups preparing a first tech hire rather than framing a product to launch. AI-centric offer: see <a href=\"/situations/ia-produit-garde-fous\">AI in your product</a>.",
       "columnKeys": ["dimension", "buildFirst", "phaseFirst"],
       "table": {
         "headers": {
@@ -173,15 +173,15 @@
         },
         {
           "title": "What rhythm: half-days, full days, two days a week?",
-          "content": "<p>It depends on the phase. <strong>Half-days</strong> for initial framing, CEO/CTO workshops, and light follow-up. A <strong>full day</strong> now and then for a prototype or architecture sprint. <strong>Two days a week</strong> only if I need to code foundations or critical POCs. No 40-hour role: we calibrate on the call.</p>"
+          "content": "<p>It depends on the phase. Half-days for initial framing, CEO/CTO workshops, and light follow-up. A full day now and then for a prototype or architecture sprint. <strong>Two days a week</strong> only if I need to code foundations or critical POCs. No 40-hour role: we calibrate on the call.</p>"
         },
         {
           "title": "Can we prototype ourselves with Lovable or Cursor?",
-          "content": "<p>Yes, and it's often a <strong>lever</strong>. I work with the CEO, CTO, or founders: you explore with Lovable, Claude, Cursor, or similar; I guide so it serves product and technical validation, not spaghetti to ship as-is to prod. Once the idea is <strong>framed and validated</strong>, investing in team and budget is much less risky.</p>"
+          "content": "<p>Yes, and it's often a <strong>lever</strong>. I work with the CEO, CTO, or founders: you explore with Lovable, Claude, Cursor, or similar; I guide so it serves product and technical validation, not spaghetti to ship as-is to prod. Once the idea is framed and validated, investing in team and budget is much less risky.</p>"
         },
         {
           "title": "Do you code yourself or steer our team?",
-          "content": "<p>Both. <strong>I code</strong> prototypes and key blocks when needed. <strong>I steer</strong> your devs or agency: phases, backlog, prioritization for an MVP that holds, product-tech reviews and trade-offs, without taking every ticket for you.</p>"
+          "content": "<p>Both. <strong>I code</strong> prototypes and key blocks when needed. I steer your devs or agency: phases, backlog, prioritization for an MVP that holds, product-tech reviews and trade-offs, without taking every ticket for you.</p>"
         },
         {
           "title": "Will you become our CTO?",
@@ -201,7 +201,7 @@
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
-          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the <strong>shared urgency frame we define together</strong> (scope, priority, response time).</p>"
+          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the shared urgency frame we define together (scope, priority, response time).</p>"
         }
       ]
     },

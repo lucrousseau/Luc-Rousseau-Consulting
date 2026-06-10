@@ -4,7 +4,7 @@
   "navigation-label-short": "Tech",
   "badge": "Comment je construis",
   "title": "Fondations techniques",
-  "summary": "<p className=\"big\"><strong>Un partenaire sur l'ensemble de la stack.</strong> Je pars de <strong>frontières nettes, contrats et boucles de livraison</strong>: qui porte quelles données, comment les services dialoguent, comment on avance sans va-et-vient inutile. Les technos soutiennent ça : clarté, évolutivité, livraison soutenable. <em>Les outils servent le système</em>: pas l'inverse.</p>",
+  "summary": "<p className=\"big\"><strong>Un partenaire sur l'ensemble de la stack.</strong> Je pars de frontières nettes, contrats et boucles de livraison: qui porte quelles données, comment les services dialoguent, comment on avance sans va-et-vient inutile. Les technos soutiennent ça : clarté, évolutivité, livraison soutenable. <em>Les outils servent le système</em>: pas l'inverse.</p>",
   "items": [
     "Roadmap et priorisation produit",
     "Alignement produit–tech et discipline de backlog",

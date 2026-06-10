@@ -5,7 +5,7 @@
     "badge": "Produit éditorial",
     "quote": "On publie 50 contenus par semaine et notre stack a été pensée pour 5. On sent qu'on approche du mur.",
     "title": "Produit éditorial à l'échelle",
-    "lede": "<p><strong>Votre produit, c'est le contenu et les parcours qui convertissent</strong>, pas une vitrine statique. Comparateur, multi-marques, parcours métier riche : <strong>l'édition livre le produit</strong> chaque semaine, le <strong>marketing doit vendre</strong> (offres, campagnes, partenariats), et le business attend des <strong>leads, des soumissions ou des ventes</strong> derrière le trafic.</p><p>Souvent sur <strong>WordPress</strong> (couplé, headless ou Gutenberg à l'échelle), parfois sur un <strong>autre CMS ou une stack hybride</strong> : on part du produit, pas du logo CMS.</p><p>Je travaille sur ce type de <strong>plateforme produit</strong> pour que ce qui doit <strong>apparaître et monétiser</strong> soit en avant sur les bons parcours : blocs réutilisables, partenariats et placements mesurables, APIs stables (Gutenberg, headless ou Laravel selon le cas). Édition, marketing et technique sur le <strong>même système</strong>, pas trois silos.</p><p>Selon le mandat, j'interviens en <strong>mode produit</strong>, en <strong>mode dev ou hybride</strong>, ou je <strong>pilote vos devs en mode produit</strong> : rythme et mobilisation se calent à l'appel.</p>",
+    "lede": "<p>Votre produit, c'est le contenu et les parcours qui convertissent, pas une vitrine statique. Comparateur, multi-marques, parcours métier riche : l'édition livre le produit chaque semaine, le <strong>marketing doit vendre</strong> (offres, campagnes, partenariats), et le business attend des leads, des soumissions ou des ventes derrière le trafic.</p><p>Souvent sur WordPress (couplé, headless ou Gutenberg à l'échelle), parfois sur un <strong>autre CMS ou une stack hybride</strong> : on part du produit, pas du logo CMS.</p><p>Je travaille sur ce type de <strong>plateforme produit</strong> pour que ce qui doit apparaître et monétiser soit en avant sur les bons parcours : blocs réutilisables, partenariats et placements mesurables, APIs stables (Gutenberg, headless ou Laravel selon le cas). Édition, marketing et technique sur le même système, pas trois silos.</p><p>Selon le mandat, j'interviens en <strong>mode produit</strong>, en mode dev ou hybride, ou je pilote vos devs en mode produit : rythme et mobilisation se calent à l'appel.</p>",
     "buy": {
       "legend": "Parler de votre plateforme",
       "prefix": "Sans engagement",
@@ -41,13 +41,13 @@
       "type": "intro",
       "badge": "Terrain Québec",
       "title": "Déjà livré à cette échelle",
-      "lede": "<p class=\"big\">Ce n'est pas théorique : j'ai porté ce type de plateforme sur <strong><a href=\"https://milesopedia.com\" target=\"_blank\" rel=\"noopener noreferrer\">Milesopedia</a></strong> (comparateurs multi-marques, <strong>millions de visites</strong>, parcours de comparaison à fort trafic) et sur l'écosystème <strong><a href=\"https://www.nesto.ca/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Nesto</a></strong> au Québec (blocs Gutenberg, APIs, <strong>capture de leads</strong> vers CRM, surfaces marketing et produit cohérentes). Au Québec, sur ce créneau, la conversion et la prod sous charge ne sont pas négociables.</p>"
+      "lede": "<p class=\"big\">Ce n'est pas théorique : j'ai porté ce type de plateforme sur <a href=\"https://milesopedia.com\" target=\"_blank\" rel=\"noopener noreferrer\">Milesopedia</a> (comparateurs multi-marques, <strong>millions de visites</strong>, parcours de comparaison à fort trafic) et sur l'écosystème <a href=\"https://www.nesto.ca/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Nesto</a> au Québec (blocs Gutenberg, APIs, capture de leads vers CRM, surfaces marketing et produit cohérentes). Au Québec, sur ce créneau, la conversion et la prod sous charge ne sont pas négociables.</p>"
     },
     {
       "type": "cards",
       "badge": "Évolution continue",
       "title": "Sans refonte stack : stabiliser, optimiser, faire évoluer",
-      "lede": "<p class=\"big\">Pas prêt pour une migration majeure, mais le produit doit <strong>tenir en prod</strong> et <strong>s'améliorer module par module</strong> : c'est le mandat le plus fréquent sur ce type de plateforme.</p>",
+      "lede": "<p class=\"big\">Pas prêt pour une migration majeure, mais le produit doit <strong>tenir en prod</strong> et s'améliorer module par module : c'est le mandat le plus fréquent sur ce type de plateforme.</p>",
       "items": [
         {
           "title": "Stabiliser la production",
@@ -99,7 +99,7 @@
         },
         {
           "title": "Build par phases avec valeur en prod",
-          "content": "<p>Livraison par <strong>votre équipe ou par moi</strong> : premier parcours en blocs, couche API, marché pilote. Chaque tranche laisse l'édition livrer <strong>et</strong> garde les funnels de conversion suivables (analytics, A/B si pertinent).</p>"
+          "content": "<p>Livraison par <strong>votre équipe ou par moi</strong> : premier parcours en blocs, couche API, marché pilote. Chaque tranche laisse l'édition livrer et garde les funnels de conversion suivables (analytics, A/B si pertinent).</p>"
         },
         {
           "title": "Gouvernance et handover",
@@ -157,7 +157,7 @@
       "type": "stack",
       "badge": "Comment je construis",
       "title": "Fondations techniques",
-      "lede": "<p class=\"big\"><strong>Plateformes éditoriales à l'échelle</strong>, souvent sur WordPress (couplé, headless ou Gutenberg), parfois autre CMS ou stack hybride. Blocs et APIs au service de la <strong>conversion</strong> et de la cadence multi-marques.</p>",
+      "lede": "<p class=\"big\">Plateformes éditoriales à l'échelle, souvent sur WordPress (couplé, headless ou Gutenberg), parfois autre CMS ou stack hybride. Blocs et APIs au service de la <strong>conversion</strong> et de la cadence multi-marques.</p>",
       "items": [
         "Cadrage comparateur · offres · partenariats · monétisation",
         "CMS & contenu · WordPress · Gutenberg · blocs et patterns éditoriaux",
@@ -180,19 +180,19 @@
       "items": [
         {
           "title": "Vous codez vous-même ou vous pilotez notre équipe ?",
-          "content": "<p>Les deux sont possibles, selon ce que vous avez déjà. <strong>Je code</strong> les briques à fort levier (APIs, blocs Gutenberg, intégrations) quand personne n'est disponible pour livrer proprement. <strong>Je pilote</strong> quand vos devs ou votre agence ont la capacité : je priorise, séquence, clarifie les prérequis et valide la cohérence, sans micro-manager les tickets.</p>"
+          "content": "<p>Les deux sont possibles, selon ce que vous avez déjà. <strong>Je code</strong> les briques à fort levier (APIs, blocs Gutenberg, intégrations) quand personne n'est disponible pour livrer proprement. Je pilote quand vos devs ou votre agence ont la capacité : je priorise, séquence, clarifie les prérequis et valide la cohérence, sans micro-manager les tickets.</p>"
         },
         {
           "title": "On est déjà sur WordPress : faut-il tout jeter ?",
-          "content": "<p>Souvent non. On <strong>extrait et structure</strong> : blocs, APIs, migration par tranches, comme sur des réseaux multi-sites déjà en production, sans big bang. C'est le même traitement qu'à fort trafic chez <strong>Milesopedia</strong> ou sur l'écosystème <strong>Nesto</strong>.</p>"
+          "content": "<p>Souvent non. On <strong>extrait et structure</strong> : blocs, APIs, migration par tranches, comme sur des réseaux multi-sites déjà en production, sans big bang. C'est le même traitement qu'à fort trafic chez Milesopedia ou sur l'écosystème Nesto.</p>"
         },
         {
           "title": "Headless ou WordPress couplé pour notre cas ?",
-          "content": "<p>Ça dépend du volume de publication, des surfaces et de l'équipe. Souvent : <strong>headless</strong> (WPGraphQL ou REST + front React/Next.js) si l'édition reste dans WordPress et le front doit évoluer vite ; <strong>couplé</strong> quand la simplicité et l'équipe le favorisent. Migration WordPress par tranches : voir <a href=\"/situations/refonte-produit-par-phases\">Refonte WordPress par phases</a>. On tranche à l'écrit avant de coder.</p>"
+          "content": "<p>Ça dépend du volume de publication, des surfaces et de l'équipe. Souvent : headless (WPGraphQL ou REST + front React/Next.js) si l'édition reste dans WordPress et le front doit évoluer vite ; <strong>couplé</strong> quand la simplicité et l'équipe le favorisent. Migration WordPress par tranches : voir <a href=\"/situations/refonte-produit-par-phases\">Refonte WordPress par phases</a>. On tranche à l'écrit avant de coder.</p>"
         },
         {
           "title": "Et la conversion, le marketing, la monétisation ?",
-          "content": "<p>Oui, c'est le même produit que l'éditorial. Le marketing doit pouvoir <strong>mettre en avant</strong> offres et partenariats sur les parcours à fort trafic ; la plateforme doit <strong>convertir</strong> (formulaires, CRM, analytics) sans une intégration sur mesure à chaque campagne. Pas « publier vite » d'un côté et « vendre » de l'autre.</p>"
+          "content": "<p>Oui, c'est le même produit que l'éditorial. Le marketing doit pouvoir <strong>mettre en avant</strong> offres et partenariats sur les parcours à fort trafic ; la plateforme doit convertir (formulaires, CRM, analytics) sans une intégration sur mesure à chaque campagne. Pas « publier vite » d'un côté et « vendre » de l'autre.</p>"
         },
         {
           "title": "Ce n'est pas juste du « CMS marketing » ?",
@@ -216,7 +216,7 @@
         },
         {
           "title": "Refonte stack ou évolution du produit ?",
-          "content": "<p><strong>Évolution</strong> (stabiliser, optimiser, faire évoluer en prod) : cette fiche. <strong>Migration majeure</strong> (headless, Laravel API, dette accumulée) : <a href=\"/situations/refonte-produit-par-phases\">Refonte WordPress par phases</a>. On tranche au premier échange.</p>"
+          "content": "<p><strong>Évolution</strong> (stabiliser, optimiser, faire évoluer en prod) : cette fiche. Migration majeure (headless, Laravel API, dette accumulée) : <a href=\"/situations/refonte-produit-par-phases\">Refonte WordPress par phases</a>. On tranche au premier échange.</p>"
         },
         {
           "title": "Est-ce de la maintenance WordPress ?",
@@ -224,7 +224,7 @@
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",
-          "content": "<p>Le rythme convenu structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais).</p>"
+          "content": "<p>Le rythme convenu structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le cadre d'urgence défini ensemble (périmètre, priorité, délais).</p>"
         }
       ]
     },

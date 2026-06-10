@@ -5,7 +5,7 @@
     "badge": "Post-funding startup",
     "quote": "We raised, we have customers, we have a roadmap. What we don't have is someone who knows what to build first.",
     "title": "Post-funding: before your first full-time developer",
-    "lede": "<p><strong>You're post-funding and weighing your first technical hire.</strong> The pressure is on: <strong>ship faster</strong>, prove traction, show the team is growing. A first full-time developer feels natural; it's often the <strong>most expensive and slowest</strong> way to get solid product and technical leadership.</p><p>At <strong>two days a week</strong>, you can have a <strong>senior product engineer who is also your principal developer</strong>: <strong>prioritization, backlog, and requirements</strong>, then <strong>architecture and production code</strong> (Laravel, React, APIs). This isn't arms-length advice: <strong>I build</strong> the foundations and priority features, in a comparable budget band, with less risk if the product pivots.</p>",
+    "lede": "<p>You're post-funding and weighing your first technical hire. The pressure is on: <strong>ship faster</strong>, prove traction, show the team is growing. A first full-time developer feels natural; it's often the most expensive and slowest way to get solid product and technical leadership.</p><p>At <strong>two days a week</strong>, you can have a senior product engineer who is also your principal developer: prioritization, backlog, and requirements, then architecture and production code (Laravel, React, APIs). This isn't arms-length advice: I build the foundations and priority features, in a comparable budget band, with less risk if the product pivots.</p>",
     "buy": {
       "legend": "Let's talk about your context",
       "prefix": "No commitment",
@@ -26,15 +26,15 @@
       "items": [
         {
           "title": "Comparable budget, senior profile",
-          "content": "<p>A first-hire budget can fund <strong>two days a week of a senior</strong> who has been a <strong>principal developer</strong>: priorities, backlog, and code shipped to prod, not just tickets closed.</p>"
+          "content": "<p>A first-hire budget can fund <strong>two days a week of a senior</strong> who has been a principal developer: priorities, backlog, and code shipped to prod, not just tickets closed.</p>"
         },
         {
           "title": "Clear priorities, solid backlog",
-          "content": "<p>I prioritize features, clarify <strong>requirements and specs</strong>, and arbitrate what ships now. The team builds from a <strong>ready-to-build backlog</strong>, not vague direction.</p>"
+          "content": "<p>I prioritize features, clarify requirements and specs, and arbitrate what ships now. The team builds from a <strong>ready-to-build backlog</strong>, not vague direction.</p>"
         },
         {
           "title": "Principal dev: I build",
-          "content": "<p>On those two days, I'm the <strong>principal developer</strong>: architecture, reviews, and <strong>production code</strong>. If a team already exists, I take the critical paths or guide delivery with a clear frame, with no handoff between product and build.</p>"
+          "content": "<p>On those two days, I'm the principal developer: architecture, reviews, and <strong>production code</strong>. If a team already exists, I take the critical paths or guide delivery with a clear frame, with no handoff between product and build.</p>"
         },
         {
           "title": "Flexibility if the product pivots",
@@ -125,7 +125,7 @@
       "type": "stack",
       "badge": "How I build",
       "title": "Product and technical foundations",
-      "lede": "<p class=\"big\"><strong>Product, technical direction, and production development</strong> on your two days: clear priorities, a ready-to-build backlog, and <strong>code I ship myself</strong> (foundations, priority features), plus criteria for your first hire.</p>",
+      "lede": "<p class=\"big\"><strong>Product, technical direction, and production development</strong> on your two days: clear priorities, a ready-to-build backlog, and code I ship myself (foundations, priority features), plus criteria for your first hire.</p>",
       "items": [
         "Feature prioritization and trade-offs",
         "Backlog, requirements, and ready-to-build specs",
@@ -149,7 +149,7 @@
       "items": [
         {
           "title": "We need someone on code every day",
-          "content": "<p>Often what you need daily is <strong>clear decisions, a backlog that moves, and code shipping</strong>, not yet five days of unsupervised dev. On two days, <strong>I structure and I build</strong> the priorities: foundations, key features, unblocking. This isn't an advisory-only role.</p><p>When volume truly justifies full-time, we'll see it together, and you'll hire with criteria already tested.</p>"
+          "content": "<p>Often what you need daily is clear decisions, a backlog that moves, and code shipping, not yet five days of unsupervised dev. On two days, <strong>I structure and I build</strong> the priorities: foundations, key features, unblocking. This isn't an advisory-only role.</p><p>When volume truly justifies full-time, we'll see it together, and you'll hire with criteria already tested.</p>"
         },
         {
           "title": "Will we still hire full-time later?",
@@ -161,7 +161,7 @@
         },
         {
           "title": "Reachable outside the two days, or in an emergency?",
-          "content": "<p>Two days a week is the rhythm for deep work, not a barrier to reaching me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the <strong>shared urgency frame we define together</strong> (scope, priority, response time).</p>"
+          "content": "<p>Two days a week is the rhythm for deep work, not a barrier to reaching me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the shared urgency frame we define together (scope, priority, response time).</p>"
         }
       ]
     },

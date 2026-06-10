@@ -5,7 +5,7 @@
     "badge": "Editorial product",
     "quote": "We publish 50 pieces a week and our stack was built for 5. We can feel we're hitting the wall.",
     "title": "Editorial product at scale",
-    "lede": "<p><strong>Your product is content and journeys that convert</strong>, not a static brochure. Comparator, multi-brand network, rich business journey: <strong>editorial ships the product</strong> every week, <strong>marketing must sell</strong> (offers, campaigns, partnerships), and the business expects <strong>leads, submissions, or sales</strong> behind that traffic.</p><p>Often on <strong>WordPress</strong> (coupled, headless, or Gutenberg at scale), sometimes on <strong>another CMS or hybrid stack</strong>: we start from the product, not the CMS logo.</p><p>I work on this kind of <strong>product platform</strong> so what must <strong>show up and monetize</strong> is front and center on the right journeys: reusable blocks, measurable partnerships and placements, stable APIs (Gutenberg, headless, or Laravel as needed). Editorial, marketing, and engineering on <strong>one system</strong>, not three silos.</p><p>Depending on the mandate, I work in <strong>product mode</strong>, <strong>dev or hybrid mode</strong>, or <strong>steer your devs in product mode</strong>: rhythm and mobilization are set on the first call.</p>",
+    "lede": "<p>Your product is content and journeys that convert, not a static brochure. Comparator, multi-brand network, rich business journey: editorial ships the product every week, <strong>marketing must sell</strong> (offers, campaigns, partnerships), and the business expects leads, submissions, or sales behind that traffic.</p><p>Often on WordPress (coupled, headless, or Gutenberg at scale), sometimes on <strong>another CMS or hybrid stack</strong>: we start from the product, not the CMS logo.</p><p>I work on this kind of <strong>product platform</strong> so what must show up and monetize is front and center on the right journeys: reusable blocks, measurable partnerships and placements, stable APIs (Gutenberg, headless, or Laravel as needed). Editorial, marketing, and engineering on one system, not three silos.</p><p>Depending on the mandate, I work in <strong>product mode</strong>, dev or hybrid mode, or steer your devs in product mode: rhythm and mobilization are set on the first call.</p>",
     "buy": {
       "legend": "Discuss your platform",
       "prefix": "No commitment",
@@ -41,13 +41,13 @@
       "type": "intro",
       "badge": "Quebec track record",
       "title": "Already delivered at this scale",
-      "lede": "<p class=\"big\">This isn't theoretical: I've run this kind of platform on <strong><a href=\"https://milesopedia.com\" target=\"_blank\" rel=\"noopener noreferrer\">Milesopedia</a></strong> (multi-brand comparators, <strong>millions of visits</strong>, high-traffic comparison journeys) and on the <strong><a href=\"https://www.nesto.ca\" target=\"_blank\" rel=\"noopener noreferrer\">Nesto</a></strong> ecosystem in Quebec (Gutenberg blocks, APIs, <strong>lead capture</strong> into CRM, consistent marketing and product surfaces). In Quebec, in this space, conversion and prod under load are non-negotiable.</p>"
+      "lede": "<p class=\"big\">This isn't theoretical: I've run this kind of platform on <a href=\"https://milesopedia.com\" target=\"_blank\" rel=\"noopener noreferrer\">Milesopedia</a> (multi-brand comparators, <strong>millions of visits</strong>, high-traffic comparison journeys) and on the <a href=\"https://www.nesto.ca\" target=\"_blank\" rel=\"noopener noreferrer\">Nesto</a> ecosystem in Quebec (Gutenberg blocks, APIs, lead capture into CRM, consistent marketing and product surfaces). In Quebec, in this space, conversion and prod under load are non-negotiable.</p>"
     },
     {
       "type": "cards",
       "badge": "Continuous evolution",
       "title": "Without a stack rebuild: stabilize, optimize, evolve",
-      "lede": "<p class=\"big\">Not ready for a major migration, but the product must <strong>hold in prod</strong> and <strong>improve module by module</strong>: that's the most common mandate on this kind of platform.</p>",
+      "lede": "<p class=\"big\">Not ready for a major migration, but the product must <strong>hold in prod</strong> and improve module by module: that's the most common mandate on this kind of platform.</p>",
       "items": [
         {
           "title": "Stabilize production",
@@ -99,7 +99,7 @@
         },
         {
           "title": "Phased build with prod value",
-          "content": "<p>Delivery by <strong>your team or by me</strong>: first block-based journey, API layer, pilot market. Each slice keeps editorial shipping <strong>and</strong> conversion funnels trackable (analytics, A/B when it pays off).</p>"
+          "content": "<p>Delivery by <strong>your team or by me</strong>: first block-based journey, API layer, pilot market. Each slice keeps editorial shipping and conversion funnels trackable (analytics, A/B when it pays off).</p>"
         },
         {
           "title": "Governance and handover",
@@ -157,7 +157,7 @@
       "type": "stack",
       "badge": "How I build",
       "title": "Technical foundations",
-      "lede": "<p class=\"big\"><strong>Editorial platforms at scale</strong>, often on WordPress (coupled, headless, or Gutenberg), sometimes another CMS or hybrid stack. Blocks and APIs in service of <strong>conversion</strong> and multi-brand publishing pace.</p>",
+      "lede": "<p class=\"big\">Editorial platforms at scale, often on WordPress (coupled, headless, or Gutenberg), sometimes another CMS or hybrid stack. Blocks and APIs in service of <strong>conversion</strong> and multi-brand publishing pace.</p>",
       "items": [
         "Framing comparator · offers · partnerships · monetization",
         "CMS & content · WordPress · Gutenberg · editorial blocks and patterns",
@@ -180,19 +180,19 @@
       "items": [
         {
           "title": "Do you code yourself or steer our team?",
-          "content": "<p>Both are possible, depending on what you already have. <strong>I code</strong> high-leverage bricks (APIs, Gutenberg blocks, integrations) when no one is available to ship cleanly. <strong>I steer</strong> when your devs or agency have capacity: I prioritize, sequence, clarify prerequisites, and validate coherence, without micro-managing tickets.</p>"
+          "content": "<p>Both are possible, depending on what you already have. <strong>I code</strong> high-leverage bricks (APIs, Gutenberg blocks, integrations) when no one is available to ship cleanly. I steer when your devs or agency have capacity: I prioritize, sequence, clarify prerequisites, and validate coherence, without micro-managing tickets.</p>"
         },
         {
           "title": "We're already on WordPress, do we throw it away?",
-          "content": "<p>Often no. We <strong>extract and structure</strong>: blocks, APIs, slice migration, like multi-site networks already in prod, without big bang. Same treatment at high traffic on <strong>Milesopedia</strong> and the <strong>Nesto</strong> ecosystem.</p>"
+          "content": "<p>Often no. We <strong>extract and structure</strong>: blocks, APIs, slice migration, like multi-site networks already in prod, without big bang. Same treatment at high traffic on Milesopedia and the Nesto ecosystem.</p>"
         },
         {
           "title": "Headless or coupled WordPress for our case?",
-          "content": "<p>It depends on publishing volume, surfaces, and the team. Often: <strong>headless</strong> (WPGraphQL or REST + React/Next.js front) when editorial stays in WordPress and the front must move fast; <strong>coupled</strong> when simplicity and the team favor it. WordPress migration in slices: see <a href=\"/situations/refonte-produit-par-phases\">WordPress rebuild by phases</a>. We decide in writing before build.</p>"
+          "content": "<p>It depends on publishing volume, surfaces, and the team. Often: headless (WPGraphQL or REST + React/Next.js front) when editorial stays in WordPress and the front must move fast; <strong>coupled</strong> when simplicity and the team favor it. WordPress migration in slices: see <a href=\"/situations/refonte-produit-par-phases\">WordPress rebuild by phases</a>. We decide in writing before build.</p>"
         },
         {
           "title": "What about conversion, marketing, monetization?",
-          "content": "<p>Yes, it's the same product as editorial. Marketing must be able to <strong>foreground</strong> offers and partnerships on high-traffic journeys; the platform must <strong>convert</strong> (forms, CRM, analytics) without a custom integration every campaign. Not « publish fast » on one side and « sell » on the other.</p>"
+          "content": "<p>Yes, it's the same product as editorial. Marketing must be able to <strong>foreground</strong> offers and partnerships on high-traffic journeys; the platform must convert (forms, CRM, analytics) without a custom integration every campaign. Not « publish fast » on one side and « sell » on the other.</p>"
         },
         {
           "title": "Isn't this just « marketing CMS »?",
@@ -216,7 +216,7 @@
         },
         {
           "title": "Stack rebuild or product evolution?",
-          "content": "<p><strong>Evolution</strong> (stabilize, optimize, evolve in prod): this page. <strong>Major migration</strong> (headless, Laravel API, accumulated debt): <a href=\"/situations/refonte-produit-par-phases\">WordPress rebuild by phases</a>. We decide on the first call.</p>"
+          "content": "<p><strong>Evolution</strong> (stabilize, optimize, evolve in prod): this page. Major migration (headless, Laravel API, accumulated debt): <a href=\"/situations/refonte-produit-par-phases\">WordPress rebuild by phases</a>. We decide on the first call.</p>"
         },
         {
           "title": "Is this WordPress maintenance?",
@@ -224,7 +224,7 @@
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
-          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the <strong>shared urgency frame we define together</strong> (scope, priority, response time).</p>"
+          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the shared urgency frame we define together (scope, priority, response time).</p>"
         }
       ]
     },

@@ -5,7 +5,7 @@
     "badge": "AI & product",
     "quote": "Everyone's asking if we're doing AI. We don't know where to start without it becoming a gimmick or a risk.",
     "title": "AI in your product",
-    "lede": "<p><strong>AI is on the table, whether your product is live or in launch.</strong> « We need AI » pressure, fuzzy agency feature, experiments without guardrails. Risk: cost, data, UX, and debt without clear business value.</p><p>My angle is <strong>product</strong>: identify <strong>prerequisites, risks, and dependencies</strong> upfront, define <strong>AI scope</strong> to avoid drift and limit hallucinations, then build vs buy and API integration (Claude, OpenAI, etc.) where classic code is not enough. <strong>Not</strong> MLOps or model operations: I work on usage in the product, not running the machine.</p><p><strong>Fractional, phased</strong> mandate: mapping, guardrails, POC, then handover or steering your devs or agency on the build. <strong>Half-days</strong> for framing, <strong>full days</strong> for a POC, sometimes <strong>two days a week</strong> if I code a critical integration. Rhythm set on the call.</p>",
+    "lede": "<p><strong>AI is on the table, whether your product is live or in launch.</strong> « We need AI » pressure, fuzzy agency feature, experiments without guardrails. Risk: cost, data, UX, and debt without clear business value.</p><p>My angle is <strong>product</strong>: identify prerequisites, risks, and dependencies upfront, define AI scope to avoid drift and limit hallucinations, then build vs buy and API integration (Claude, OpenAI, etc.) where classic code is not enough. Not MLOps or model operations: I work on usage in the product, not running the machine.</p><p><strong>Fractional, phased</strong> mandate: mapping, guardrails, POC, then handover or steering your devs or agency on the build. Half-days for framing, full days for a POC, sometimes two days a week if I code a critical integration. Rhythm set on the call.</p>",
     "buy": {
       "legend": "Frame AI in your product",
       "prefix": "No commitment",
@@ -23,7 +23,7 @@
       "type": "split",
       "sectionKey": "product-ai",
       "title": "AI in the product, not ML infra",
-      "intro": "<p class=\"big\">I work on <strong>product and integration</strong>: decisions, LLM APIs, user experience, and <strong>limits</strong>. Not model DevOps/MLOps (training, GPUs, ML ops pipelines).</p>",
+      "intro": "<p class=\"big\">I work on <strong>product and integration</strong>: decisions, LLM APIs, user experience, and limits. Not model DevOps/MLOps (training, GPUs, ML ops pipelines).</p>",
       "panels": [
         {
           "heading": "Before you rush in",
@@ -55,7 +55,7 @@
         },
         {
           "title": "Build vs buy and guardrails",
-          "content": "<p>Model API, partner, or in-house feature: <strong>risk, cost, and timeline</strong> trade-offs. Data, PII, fallback, human review, and <strong>anti-hallucination limits</strong> defined before prod.</p>"
+          "content": "<p>Model API, partner, or in-house feature: <strong>risk, cost, and timeline</strong> trade-offs. Data, PII, fallback, human review, and anti-hallucination limits defined before prod.</p>"
         },
         {
           "title": "LLM APIs in the product",
@@ -169,7 +169,7 @@
       "items": [
         {
           "title": "Do you do MLOps or model DevOps?",
-          "content": "<p><strong>No.</strong> No model training, ML ops pipelines, GPUs, or model infra operations. My scope: <strong>usage in the product</strong>, decisions, LLM APIs, integration, and SaaS-side limits.</p>"
+          "content": "<p><strong>No.</strong> No model training, ML ops pipelines, GPUs, or model infra operations. My scope: usage in the product, decisions, LLM APIs, integration, and SaaS-side limits.</p>"
         },
         {
           "title": "Do you implement LLM APIs in the product?",
@@ -181,7 +181,7 @@
         },
         {
           "title": "Do you code or steer our team?",
-          "content": "<p>Both. <strong>I code</strong> product POCs (APIs, flows, LLM content) when needed. <strong>I steer</strong> your devs or agency: phases, AI backlog, prerequisites, without taking every ticket.</p>"
+          "content": "<p>Both. <strong>I code</strong> product POCs (APIs, flows, LLM content) when needed. I steer your devs or agency: phases, AI backlog, prerequisites, without taking every ticket.</p>"
         },
         {
           "title": "Will you become our AI CTO?",
@@ -197,7 +197,7 @@
         },
         {
           "title": "What rhythm: half-days, full days, two days a week?",
-          "content": "<p>Depends on the phase. <strong>Half-days</strong> for mapping and workshops. A <strong>full day</strong> for an API or LLM content POC. <strong>Two days a week</strong> if I code a critical integration. Set on the call.</p>"
+          "content": "<p>Depends on the phase. Half-days for mapping and workshops. A full day for an API or LLM content POC. <strong>Two days a week</strong> if I code a critical integration. Set on the call.</p>"
         },
         {
           "title": "AI changes too fast, why plan?",
@@ -205,7 +205,7 @@
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
-          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the <strong>shared urgency frame we define together</strong> (scope, priority, response time).</p>"
+          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the shared urgency frame we define together (scope, priority, response time).</p>"
         }
       ]
     },

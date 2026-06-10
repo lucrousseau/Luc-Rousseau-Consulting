@@ -5,7 +5,7 @@
     "badge": "Startup post-financement",
     "quote": "On a levé des fonds, on a des clients, on a une roadmap. Ce qu'on n'a pas, c'est quelqu'un qui sait quoi builder en premier.",
     "title": "Après la levée : avant votre premier dev à temps plein",
-    "lede": "<p><strong>Vous êtes en post-levée et vous pesez votre premier recrutement technique.</strong> La pression est là : <strong>livrer plus vite</strong>, prouver la traction, montrer que l'équipe grossit. Un premier développeur à temps plein semble le geste naturel ; c'est souvent le <strong>plus cher et le plus lent</strong> moyen d'avoir une direction produit et technique solide.</p><p>À <strong>deux jours par semaine</strong>, vous pouvez avoir un <strong>produit-développeur senior qui est aussi votre dev principal</strong> : <strong>priorisation, backlog et prérequis</strong>, puis <strong>architecture et code en prod</strong> (Laravel, React, APIs). Ce n'est pas du conseil à part : <strong>c'est moi qui build</strong> les fondations et les features prioritaires, dans une enveloppe comparable, avec moins de risque si le produit pivote.</p>",
+    "lede": "<p>Vous êtes en post-levée et vous pesez votre premier recrutement technique. La pression est là : <strong>livrer plus vite</strong>, prouver la traction, montrer que l'équipe grossit. Un premier développeur à temps plein semble le geste naturel ; c'est souvent le plus cher et le plus lent moyen d'avoir une direction produit et technique solide.</p><p>À <strong>deux jours par semaine</strong>, vous pouvez avoir un produit-développeur senior qui est aussi votre dev principal : priorisation, backlog et prérequis, puis architecture et code en prod (Laravel, React, APIs). Ce n'est pas du conseil à part : c'est moi qui build les fondations et les features prioritaires, dans une enveloppe comparable, avec moins de risque si le produit pivote.</p>",
     "buy": {
       "legend": "Parlons de votre contexte",
       "prefix": "Sans engagement",
@@ -26,15 +26,15 @@
       "items": [
         {
           "title": "Budget comparable, profil senior",
-          "content": "<p>L'enveloppe d'un premier salarié peut financer <strong>deux jours par semaine d'un senior</strong> qui a déjà été <strong>dev principal</strong> : priorités, backlog, et code livré en prod, pas seulement des tickets fermés.</p>"
+          "content": "<p>L'enveloppe d'un premier salarié peut financer <strong>deux jours par semaine d'un senior</strong> qui a déjà été dev principal : priorités, backlog, et code livré en prod, pas seulement des tickets fermés.</p>"
         },
         {
           "title": "Priorités et backlog structurés",
-          "content": "<p>Je priorise les features, clarifie <strong>prérequis et exigences</strong>, et arbitre ce qu'on fait maintenant. L'équipe avance sur un backlog <strong>prêt à construire</strong>, pas sur du flou.</p>"
+          "content": "<p>Je priorise les features, clarifie prérequis et exigences, et arbitre ce qu'on fait maintenant. L'équipe avance sur un backlog <strong>prêt à construire</strong>, pas sur du flou.</p>"
         },
         {
           "title": "Dev principal : je build",
-          "content": "<p>Sur ces deux jours, je suis le <strong>développeur principal</strong> : architecture, revues, et <strong>code en prod</strong>. Si une équipe existe déjà, je prends les parties critiques ou je fais coder avec un cadre clair, sans handoff entre produit et delivery.</p>"
+          "content": "<p>Sur ces deux jours, je suis le développeur principal : architecture, revues, et <strong>code en prod</strong>. Si une équipe existe déjà, je prends les parties critiques ou je fais coder avec un cadre clair, sans handoff entre produit et delivery.</p>"
         },
         {
           "title": "Flexibilité si le produit pivote",
@@ -125,7 +125,7 @@
       "type": "stack",
       "badge": "Comment je construis",
       "title": "Fondations produit et technique",
-      "lede": "<p class=\"big\"><strong>Produit, cap technique et développement en prod</strong> sur vos deux jours : priorités, backlog prêt à construire, et <strong>code que je livre moi-même</strong> (fondations, features prioritaires), plus critères pour votre futur premier dev.</p>",
+      "lede": "<p class=\"big\"><strong>Produit, cap technique et développement en prod</strong> sur vos deux jours : priorités, backlog prêt à construire, et code que je livre moi-même (fondations, features prioritaires), plus critères pour votre futur premier dev.</p>",
       "items": [
         "Priorisation et arbitrage des features",
         "Backlog, prérequis et exigences avant le build",
@@ -149,7 +149,7 @@
       "items": [
         {
           "title": "On a besoin de quelqu'un tous les jours sur le code",
-          "content": "<p>Souvent, ce dont vous avez besoin tous les jours, c'est de <strong>décisions claires, un backlog qui avance, et du code qui sort</strong>, pas encore de cinq jours de dev non supervisé. Sur deux jours, <strong>je structure et je build</strong> les priorités : fondations, features clés, déblocage. Ce n'est pas un rôle de conseil à part.</p><p>Quand le volume justifie vraiment un temps plein, on le voit ensemble, et vous embauchez avec des critères déjà éprouvés.</p>"
+          "content": "<p>Souvent, ce dont vous avez besoin tous les jours, c'est de décisions claires, un backlog qui avance, et du code qui sort, pas encore de cinq jours de dev non supervisé. Sur deux jours, <strong>je structure et je build</strong> les priorités : fondations, features clés, déblocage. Ce n'est pas un rôle de conseil à part.</p><p>Quand le volume justifie vraiment un temps plein, on le voit ensemble, et vous embauchez avec des critères déjà éprouvés.</p>"
         },
         {
           "title": "Et après, on embauche quand même ?",
@@ -161,7 +161,7 @@
         },
         {
           "title": "Joignable en dehors des deux jours, ou en urgence ?",
-          "content": "<p>Deux jours par semaine, c'est le rythme de travail en profondeur, pas une limite pour vous joindre.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais).</p>"
+          "content": "<p>Deux jours par semaine, c'est le rythme de travail en profondeur, pas une limite pour vous joindre.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le cadre d'urgence défini ensemble (périmètre, priorité, délais).</p>"
         }
       ]
     },
