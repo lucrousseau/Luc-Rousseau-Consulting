@@ -159,7 +159,7 @@ French homepage SEO summary: ${frHomeSeo.description}
 
 English homepage SEO summary: ${enHomeSeo.description}
 
-Location: Quebec, Canada (Montreal). Languages: French (default), English. Engagement: recurring retainer over time (often two days per week). In Quebec, people also search freelance or pigiste senior; Luc works on written multi-week mandates, not same-day gigs.
+Location: Quebec City, Quebec, Canada. Languages: French (default), English. Engagement: recurring retainer over time (often two days per week). In Quebec, people also search freelance or pigiste senior; Luc works on written multi-week mandates, not same-day gigs.
 
 Services: product engineering, technical architecture, systems design, technical roadmap planning, technical debt reduction, delivery and execution supervision.
 
@@ -227,7 +227,7 @@ Name: Luc Rousseau
 Role (French job title): ${frHomeSeo.jobTitle}
 Role (English job title): ${enHomeSeo.jobTitle}
 Entity type: Solo independent consultant (not an agency)
-Location: Montreal, Quebec, Canada
+Location: Quebec City, Quebec, Canada
 Languages: French (default site locale), English
 Site: ${base}
 
@@ -317,7 +317,7 @@ ${buildExpertiseSection(base)}
 - Index: ${base}/llms.txt
 - This file: ${base}/llms-full.txt
 - Sitemap: ${base}/sitemap.xml
-- Schema.org JSON-LD: Person and WebSite on public HTML pages
+- Schema.org JSON-LD: Person, ProfessionalService, and WebSite on public HTML pages
 `;
 }
 
@@ -338,7 +338,7 @@ export function buildHumansTxt(base) {
     Contact: ${email}
     Schedule: ${calendly}
     LinkedIn: ${linkedin}
-    From: Montreal, Quebec, Canada
+    From: Quebec City, Quebec, Canada
 
 /* SITE */
 

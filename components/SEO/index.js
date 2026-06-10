@@ -2,11 +2,14 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import { getDefaultOgImage } from "../../commons/defaultOgImage";
+import { GEO_LOCATION, geoCoordinatesJsonLd, postalAddressJsonLd } from "../../commons/geoLocation";
 import { absoluteUrl, localizedPath } from "../../commons/localizedPath";
 import { getHomeSeoCopy } from "../../commons/sitePositioning";
 import { getSiteOrigin } from "../../utils/siteOrigin";
 
 const SITE_NAME = "Luc Rousseau";
+const PERSON_ID_SUFFIX = "#person";
+const SERVICE_ID_SUFFIX = "#service";
 
 const SEO = ({
   title,
@@ -58,22 +61,58 @@ const SEO = ({
   );
 
   const homeSeoCopy = getHomeSeoCopy(locale);
+  const personId = `${siteHome}${PERSON_ID_SUFFIX}`;
+  const serviceId = `${siteHome}${SERVICE_ID_SUFFIX}`;
 
   const jsonLdPerson =
     sameAs && sameAs.length > 0
       ? {
           "@context": "https://schema.org",
           "@type": "Person",
+          "@id": personId,
           name: SITE_NAME,
           url: siteHome,
           sameAs: sameAs,
           jobTitle: homeSeoCopy.jobTitle,
-          address: {
-            "@type": "PostalAddress",
-            addressRegion: "QC",
-            addressCountry: "CA",
-            addressLocality: "Montreal",
-          },
+          address: postalAddressJsonLd(),
+          geo: geoCoordinatesJsonLd(),
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Quebec" },
+            { "@type": "Country", name: "Canada" },
+          ],
+        }
+      : null;
+
+  const jsonLdProfessionalService =
+    sameAs && sameAs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id": serviceId,
+          name: "Luc Rousseau Consulting",
+          url: siteHome,
+          description: homeSeoCopy.description,
+          provider: { "@id": personId },
+          address: postalAddressJsonLd(),
+          geo: geoCoordinatesJsonLd(),
+          areaServed: [
+            { "@type": "City", name: GEO_LOCATION.locality },
+            { "@type": "AdministrativeArea", name: "Quebec" },
+            { "@type": "Country", name: "Canada" },
+          ],
+          availableLanguage: ["fr-CA", "en-CA"],
+          serviceType:
+            locale === "fr"
+              ? [
+                  "Consultant produit et développeur senior",
+                  "Architecture technique",
+                  "Mandat fractionnel produit-tech",
+                ]
+              : [
+                  "Product engineering",
+                  "Technical architecture",
+                  "Fractional product-tech consulting",
+                ],
         }
       : null;
 
@@ -90,12 +129,12 @@ const SEO = ({
         name: "Canada",
       },
       {
-        "@type": "State",
+        "@type": "AdministrativeArea",
         name: "Quebec",
       },
       {
         "@type": "City",
-        name: "Montreal",
+        name: GEO_LOCATION.locality,
       },
     ],
   };
@@ -109,6 +148,12 @@ const SEO = ({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }}
+        />
+      )}
+      {jsonLdProfessionalService && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProfessionalService) }}
         />
       )}
       <script
@@ -126,10 +171,10 @@ const SEO = ({
       {noindex && <meta name="robots" content="noindex, nofollow" />}
       <link rel="canonical" href={canonical} />
 
-      <meta name="geo.region" content="CA-QC" />
-      <meta name="geo.placename" content="Quebec, Montreal" />
-      <meta name="geo.position" content="45.5017;-73.5673" />
-      <meta name="ICBM" content="45.5017, -73.5673" />
+      <meta name="geo.region" content={GEO_LOCATION.regionMeta} />
+      <meta name="geo.placename" content={GEO_LOCATION.placename} />
+      <meta name="geo.position" content={`${GEO_LOCATION.latitude};${GEO_LOCATION.longitude}`} />
+      <meta name="ICBM" content={`${GEO_LOCATION.latitude}, ${GEO_LOCATION.longitude}`} />
 
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={SITE_NAME} />
