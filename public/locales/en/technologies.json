@@ -10,7 +10,7 @@
     "Product–tech alignment & backlog discipline",
     "Architecture: boundaries, contracts, evolution paths",
     "Decoupled & headless systems (APIs first)",
-    "CMS & editorial platforms: WordPress headless/traditional, Gutenberg/block systems when relevant",
+    "CMS & editorial platforms: WordPress headless/traditional, Gutenberg and blocks",
     "Custom backends: Laravel; bespoke APIs",
     "Frontends: React, Next.js, Vue",
     "API design (REST/HTTP) & integrations",

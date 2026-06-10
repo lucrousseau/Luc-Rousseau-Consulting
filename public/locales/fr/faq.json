@@ -20,7 +20,7 @@
     },
     {
       "title": "Joignable en dehors des jours prévus, ou en urgence ?",
-      "content": "<p>Le rythme convenu (ex. deux jours par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Si une urgence survient en dehors des jours prévus, je reste joignable et j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais), pas une astreinte 24/7 floue.</p>"
+      "content": "<p>Le rythme convenu (ex. deux jours par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais).</p>"
     },
     {
       "title": "Exclusif pour nous, ou plusieurs clients en parallèle ?",

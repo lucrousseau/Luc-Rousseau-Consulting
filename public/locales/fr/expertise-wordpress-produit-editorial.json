@@ -5,7 +5,7 @@
     "badge": "Expertise",
     "quote": "Notre WordPress tient, mais chaque comparateur ou lancement éditorial coûte trop cher en perf et en dette.",
     "title": "WordPress lent sur un produit éditorial ?",
-    "lede": "<p>Vous cherchez peut-être « <strong>optimisation WordPress</strong> » ou « <strong>consultant WordPress performance</strong> ». Sur un <strong>produit éditorial</strong> (comparateur, multi-marques, conversion), le vrai enjeu n'est pas une couche de plugins : c'est une <strong>plateforme produit</strong> qui doit tenir sous trafic et évoluer chaque semaine.</p><p>J'interviens en <strong>mandat fractionnel produit-tech</strong> : stabiliser la prod, optimiser <strong>module par module</strong> (Gutenberg, headless, APIs, comparateurs), évaluer en continu si la stack doit rester ou migrer. Pas un forfait maintenance vitrine.</p><p>Pour l'accompagnement complet (souvent WordPress, parfois autre stack) : <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>. Stack archaïque à migrer : <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>.</p>",
+    "lede": "<p>Vous cherchez peut-être « <strong>optimisation WordPress</strong> » ou « <strong>consultant WordPress performance</strong> ». Sur un <strong>produit éditorial</strong> (comparateur, multi-marques, conversion), le vrai enjeu n'est pas une couche de plugins : c'est une <strong>plateforme produit</strong> qui doit tenir sous trafic et évoluer chaque semaine.</p><p>J'interviens en <strong>mandat fractionnel produit-tech</strong> : stabiliser la prod, optimiser <strong>module par module</strong> (Gutenberg, headless, APIs, comparateurs), évaluer en continu si la stack doit rester ou migrer. Mandat produit-tech fractionnel, pas maintenance vitrine.</p><p>Pour l'accompagnement complet (souvent WordPress, parfois autre stack) : <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>. Stack archaïque à migrer : <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>.</p>",
     "buy": {
       "legend": "Parler de votre plateforme",
       "prefix": "Sans engagement",
@@ -88,7 +88,7 @@
       "items": [
         {
           "title": "Est-ce de la maintenance WordPress ?",
-          "content": "<p>Non. Pas de forfait « mises à jour + plugins ». C'est un mandat <strong>produit-tech fractionnel</strong> sur une plateforme éditoriale vivante : comparateurs, conversion, APIs, perf module par module.</p>"
+          "content": "<p>Mandat <strong>produit-tech fractionnel</strong> sur une plateforme éditoriale vivante : comparateurs, conversion, APIs, perf module par module. Périmètre : architecture, évolution et livraison produit, pas la maintenance plugins.</p>"
         },
         {
           "title": "Optimisation plugins ou rebuild module par module ?",
@@ -100,11 +100,11 @@
         },
         {
           "title": "Où voir l'offre complète (pas seulement WordPress) ?",
-          "content": "<p><a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a> : mandat fractionnel sur plateforme contenu + conversion + monétisation, <strong>souvent WordPress, pas toujours</strong>.</p>"
+          "content": "<p><a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a> : mandat fractionnel sur plateforme contenu + conversion + monétisation, <strong>plateformes éditoriales à l'échelle, souvent WordPress</strong>.</p>"
         },
         {
           "title": "Pourquoi cette page n'est pas dans le menu Situations ?",
-          "content": "<p>Elle cible des recherches précises (WordPress lent, perf éditorial) sans réduire toute mon offre à « agence WordPress ». Les situations décrivent <strong>comment je travaille</strong> ; cette page aide à vous orienter si vous arrivez par Google.</p>"
+          "content": "<p>Elle cible des recherches précises (WordPress lent, perf éditorial) et oriente vers le mandat produit-tech fractionnel. Les situations décrivent <strong>comment je travaille</strong> ; cette page vous aide si vous arrivez par Google.</p>"
         }
       ]
     },

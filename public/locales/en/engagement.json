@@ -27,10 +27,10 @@
   ],
   "termsExcludedHeading": "What stays outside",
   "termsExcluded": [
-    "Being on call for emergencies that aren't part of what we defined together",
-    "Running hiring or long interview loops for you",
-    "Multi-day training for the entire organisation",
-    "Vague \"save us\" work without a written scope or a clear end"
+    "Out-of-scope emergencies go through the shared urgency frame we define together",
+    "Full hiring ownership and day-to-day interview loops",
+    "Multi-day organisation-wide training",
+    "Mandates without a written scope or defined end date"
   ],
   "termsFootnote": "<p class=\"small\">For the renewable monthly arrangement, we start with <strong>three months minimum</strong>. After that, it continues if it still makes sense. Very short work only comes with a written scope, audit, process, or another well-bounded topic.</p>",
   "models": [

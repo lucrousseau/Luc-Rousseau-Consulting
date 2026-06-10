@@ -161,7 +161,7 @@
         },
         {
           "title": "Joignable en dehors des deux jours, ou en urgence ?",
-          "content": "<p>Deux jours par semaine, c'est le rythme de travail en profondeur, pas une limite pour vous joindre.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Si une urgence survient en dehors de ces jours, je reste joignable et j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais), pas une astreinte 24/7 floue.</p>"
+          "content": "<p>Deux jours par semaine, c'est le rythme de travail en profondeur, pas une limite pour vous joindre.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais).</p>"
         }
       ]
     },

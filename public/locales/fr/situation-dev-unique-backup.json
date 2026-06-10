@@ -26,7 +26,7 @@
         },
         {
           "title": "Urgence si votre dev principal ne répond pas",
-          "content": "<p>Si quelque chose casse en prod et que votre dev principal ne peut pas prendre l'appel, j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> : périmètre, priorité, délais de réponse. Pas d'astreinte 24/7 floue, mais un <strong>engagement clair</strong> sur ce qui déclenche une intervention.</p>"
+          "content": "<p>Si quelque chose casse en prod et que votre dev principal ne peut pas prendre l'appel, j'interviens selon un <strong>cadre d'urgence défini ensemble</strong> : périmètre, priorité, délais de réponse, avec un <strong>engagement clair</strong> sur ce qui déclenche une intervention.</p>"
         },
         {
           "title": "Week-end : plages et limites négociées",
@@ -115,7 +115,7 @@
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",
-          "content": "<p>Le rythme convenu (ex. une journée par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Si votre dev principal ne répond pas en urgence, on applique un <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais), pas une astreinte 24/7 floue.</p>"
+          "content": "<p>Le rythme convenu (ex. une journée par semaine) structure le travail en profondeur, pas ma disponibilité pour échanger avec vous.</p><p><strong>En continu</strong>, je prends le temps de vous répondre sur Slack ou le canal que vous préférez. Les urgences hors périmètre passent par le <strong>cadre d'urgence défini ensemble</strong> (périmètre, priorité, délais).</p>"
         }
       ]
     },

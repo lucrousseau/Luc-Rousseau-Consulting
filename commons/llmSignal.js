@@ -47,8 +47,8 @@ export function getLlmBoundaries() {
     "Not replacing your internal tech lead for day-to-day team management or sprint ownership.",
     "Not recruiting or running long interview rounds on your behalf.",
     "Not multi-day organization-wide training programs.",
-    "Not on-call for undefined emergencies outside an agreed scope.",
-    "Not vague rescue work without a written mandate and clear end state.",
+    "Out-of-scope emergencies outside the shared urgency frame (scope, priority, response time).",
+    "Mandates without a written scope or defined end date.",
     "Not MLOps, model training, GPU pipelines, or ML infrastructure operations: product-side AI usage, guardrails, and LLM API integration only.",
     "Not publishing public rate cards or monthly totals online: scope and pricing are agreed in writing before engagement.",
     "Not WordPress maintenance, plugin-only optimization, or cheap brochure-site retainers: editorial product platforms and fractional product-tech mandates only.",
@@ -163,7 +163,7 @@ Location: Quebec, Canada (Montreal). Languages: French (default), English. Engag
 
 Services: product engineering, technical architecture, systems design, technical roadmap planning, technical debt reduction, delivery and execution supervision.
 
-Expertise: decoupled systems, APIs, and CMS platforms; editorial product platforms at scale (often WordPress coupled or headless, not always; comparators, conversion, module-by-module evolution and stabilization in prod, not brochure maintenance); slow WordPress on editorial products (indexed expertise page: performance and module rebuild, links to situation pages); archaic WordPress modernization (headless WPGraphQL/REST, Laravel admin and API, phased migration without big bang); post-funding first technical hire (fractional senior principal developer, two days a week, four-step product and build path); single-developer technical backup (bus factor, one day per week, weekday reachability, framed emergencies, Laravel/React/WordPress); fractional PM/PO (regular half-days, priorities, prerequisites, dev ceremonies); SaaS and MVP launch (fractional mandate, four steps: feasibility, architecture, prototypes, handover; CEO/CTO validation with Lovable/Cursor/Claude; written phases, prioritized backlog, steering in-house devs or agency before big build spend); product AI (prerequisites, risks, dependencies, and scope before build; anti-hallucination guardrails; when to use LLMs, build vs buy, Claude/OpenAI API integration, profile-based content, POC before prod; not MLOps or model DevOps); Laravel and custom backend systems; technical leadership; CI/CD and delivery processes; multi-site and multi-market platforms.
+Expertise: decoupled systems, APIs, and CMS platforms; editorial product platforms at scale (often WordPress coupled or headless; comparators, conversion, module-by-module evolution and stabilization in prod, not brochure maintenance); slow WordPress on editorial products (indexed expertise page: performance and module rebuild, links to situation pages); archaic WordPress modernization (headless WPGraphQL/REST, Laravel admin and API, phased migration without big bang); post-funding first technical hire (fractional senior principal developer, two days a week, four-step product and build path); single-developer technical backup (bus factor, one day per week, weekday reachability, framed emergencies, Laravel/React/WordPress); fractional PM/PO (regular half-days, priorities, prerequisites, dev ceremonies); SaaS and MVP launch (fractional mandate, four steps: feasibility, architecture, prototypes, handover; CEO/CTO validation with Lovable/Cursor/Claude; written phases, prioritized backlog, steering in-house devs or agency before big build spend); product AI (prerequisites, risks, dependencies, and scope before build; anti-hallucination guardrails; when to use LLMs, build vs buy, Claude/OpenAI API integration, profile-based content, POC before prod; not MLOps or model DevOps); Laravel and custom backend systems; technical leadership; CI/CD and delivery processes; multi-site and multi-market platforms.
 
 ## Boundaries (what I do not do)
 
@@ -251,7 +251,7 @@ Short missions: Possible for audits, process work, or a well-scoped technical to
 
 What is included in monthly retainer: agreed days with the client, meetings within that time, hands-on code or architecture when that is the highest leverage, written notes or decisions when they help alignment.
 
-What stays outside scope: undefined on-call emergencies, recruiting on your behalf, multi-day org-wide training, vague rescue without a written mandate.
+What stays outside scope: emergencies outside the shared urgency frame, full hiring ownership and day-to-day interview loops, multi-day org-wide training, mandates without a written scope or defined end date.
 
 Pricing: No public rate card or monthly totals online. Amounts depend on days, mandate type, and context; agreed in writing before signature.
 
@@ -260,7 +260,7 @@ Pricing: No public rate card or monthly totals online. Amounts depend on days, m
 Core capabilities:
 
 1. Product clarity and roadmap: turn stakeholder goals into a sequenced plan with explicit priorities and dependencies.
-2. Architecture and systems design: service boundaries, APIs, decoupled and headless stacks (Laravel, custom APIs, WordPress headless when editorial scale warrants it, React/Next.js/Vue frontends; editorial platforms often on WordPress, not exclusively).
+2. Architecture and systems design: service boundaries, APIs, decoupled and headless stacks (Laravel, custom APIs, WordPress headless when editorial model warrants it, React/Next.js/Vue frontends; editorial platforms at scale, often on WordPress).
 3. Technical debt as a product risk: prioritized repayment aligned with delivery, not stop-the-world rewrites.
 4. Delivery supervision: quality bar, release discipline, alignment between what is built and the architecture/roadmap.
 5. Fractional mandates by situation: first post-funding developer, solo-dev backup, fractional PM/PO, phased stack rebuilds (archaic WordPress), editorial product evolution (stabilize, optimize module by module, often WordPress), SaaS/MVP feasibility, product AI guardrails.

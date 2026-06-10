@@ -111,7 +111,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "Brochure agency vs editorial product platform",
-      "intro": "If your need is a brochure or one-off campaign, this isn't the right fit. WordPress that holds but must evolve without a major migration: you're in the right place. Archaic stack to migrate by phases: see <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>.",
+      "intro": "This page covers editorial product platforms at scale. For a brochure site or one-off campaign, a web agency is the right fit. WordPress in prod that must evolve without a major migration: you're in the right place. Archaic stack to migrate by phases: see <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>.",
       "columnKeys": ["dimension", "vitrineAgency", "productPlatform"],
       "table": {
         "headers": {
@@ -157,7 +157,7 @@
       "type": "stack",
       "badge": "How I build",
       "title": "Technical foundations",
-      "lede": "<p class=\"big\"><strong>Editorial platforms at scale</strong>: often WordPress when the editorial model justifies it, sometimes another CMS or hybrid stack. Blocks and APIs in service of <strong>conversion</strong> and multi-brand publishing pace.</p>",
+      "lede": "<p class=\"big\"><strong>Editorial platforms at scale</strong>, often on WordPress (coupled, headless, or Gutenberg), sometimes another CMS or hybrid stack. Blocks and APIs in service of <strong>conversion</strong> and multi-brand publishing pace.</p>",
       "items": [
         "Framing comparator · offers · partnerships · monetization",
         "CMS & content · WordPress · Gutenberg · editorial blocks and patterns",
@@ -220,11 +220,11 @@
         },
         {
           "title": "Is this WordPress maintenance?",
-          "content": "<p>No. It's <strong>fractional product-tech support</strong> on a living platform: editorial, marketing, perf, business modules (comparators, leads, partnerships). Not an « updates and plugins » retainer. Long-tail WordPress perf search: see also <a href=\"/expertise/wordpress-produit-editorial\">Slow WordPress on an editorial product</a>.</p>"
+          "content": "<p><strong>Fractional product-tech support</strong> on a living platform: editorial, marketing, perf, business modules (comparators, leads, partnerships). Scope covers architecture, evolution, and product delivery, not plugin maintenance. Long-tail WordPress perf search: see also <a href=\"/expertise/wordpress-produit-editorial\">Slow WordPress on an editorial product</a>.</p>"
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
-          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. If an emergency lands outside scheduled days, I stay reachable and step in under a <strong>shared urgency frame</strong> we define up front (scope, priority, response time), not a vague 24/7 on-call promise.</p>"
+          "content": "<p>The agreed rhythm structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the <strong>shared urgency frame we define together</strong> (scope, priority, response time).</p>"
         }
       ]
     },

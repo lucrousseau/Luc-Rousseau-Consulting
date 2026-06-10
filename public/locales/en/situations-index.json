@@ -53,7 +53,7 @@
       },
       "editorial": {
         "label": "Run an editorial product at scale",
-        "hint": "Comparator, conversion, platform evolution (often WordPress, not always)"
+        "hint": "Comparator, conversion, editorial platforms at scale (often WordPress)"
       },
       "ai-live": {
         "label": "Clarify AI in your existing product",
@@ -101,7 +101,7 @@
     "plateforme-editoriale-produit": {
       "title": "Editorial product at scale",
       "quote": "We publish 50 pieces a week and our stack was built for 5. We can feel we're hitting the wall.",
-      "teaser": "Comparator or multi-brand: conversion, module-by-module evolution, monetization. Often WordPress, not always."
+      "teaser": "Comparator or multi-brand: conversion, module-by-module evolution, monetization. Editorial platforms at scale, often WordPress."
     },
     "mvp-saas-faisabilite": {
       "title": "Launching a SaaS or MVP",

@@ -26,7 +26,7 @@
         },
         {
           "title": "Emergency when your main developer doesn't answer",
-          "content": "<p>If production breaks and your main developer can't take the call, I step in under an <strong>emergency frame we define together</strong>: scope, priority, response time. Not a vague 24/7 on-call promise, but a <strong>clear commitment</strong> on what triggers intervention.</p>"
+          "content": "<p>If production breaks and your main developer can't take the call, I step in under an <strong>emergency frame we define together</strong>: scope, priority, response time, with a <strong>clear commitment</strong> on what triggers intervention.</p>"
         },
         {
           "title": "Weekends: agreed windows and limits",
@@ -115,7 +115,7 @@
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
-          "content": "<p>The agreed rhythm (e.g. one day a week) structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. If your main developer doesn't answer in an emergency, we apply a <strong>shared urgency frame</strong> we define up front (scope, priority, response time), not a vague 24/7 on-call promise.</p>"
+          "content": "<p>The agreed rhythm (e.g. one day a week) structures deep work, not whether you can reach me.</p><p><strong>Ongoing</strong>, I make time to reply on Slack or your preferred channel. Out-of-scope emergencies go through the <strong>shared urgency frame we define together</strong> (scope, priority, response time).</p>"
         }
       ]
     },

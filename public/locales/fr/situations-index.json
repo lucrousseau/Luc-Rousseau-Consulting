@@ -53,7 +53,7 @@
       },
       "editorial": {
         "label": "Faire tenir un produit éditorial à l'échelle",
-        "hint": "Comparateur, conversion, évolution de la plateforme (souvent WordPress, pas toujours)"
+        "hint": "Comparateur, conversion, évolution de plateformes éditoriales à l'échelle (souvent WordPress)"
       },
       "ai-live": {
         "label": "Clarifier l'IA dans le produit existant",
@@ -101,7 +101,7 @@
     "plateforme-editoriale-produit": {
       "title": "Produit éditorial à l'échelle",
       "quote": "On publie 50 contenus par semaine et notre stack a été pensée pour 5. On sent qu'on approche du mur.",
-      "teaser": "Comparateur ou multi-marques : conversion, évolution module par module, monétisation. Souvent WordPress, pas toujours."
+      "teaser": "Comparateur ou multi-marques : conversion, évolution module par module, monétisation. Plateformes éditoriales à l'échelle, souvent WordPress."
     },
     "mvp-saas-faisabilite": {
       "title": "Lancer un SaaS ou un MVP",
