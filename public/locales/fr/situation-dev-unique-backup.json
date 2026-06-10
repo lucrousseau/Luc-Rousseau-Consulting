@@ -78,7 +78,7 @@
       "lede": "<p class=\"big\"><strong>Renfort sur votre stack existant</strong> : on vérifie dès le départ si je suis aligné avec vos langages, frameworks et outils, puis revues, runbooks et priorisation sans chambouler le quotidien de votre développeur principal.</p>",
       "items": [
         "Cartographie repo, CI/CD, hébergement et intégrations",
-        "Revues architecture et code du stack en place",
+        "Revues d'architecture et de code de la stack en place",
         "Documentation et runbooks de secours",
         "Tests, régression et dette technique ciblée",
         "Pairing et handover avec votre dev principal",

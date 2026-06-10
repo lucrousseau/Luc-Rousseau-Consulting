@@ -79,7 +79,7 @@
         },
         {
           "title": "Équipe dev : je pilote en mode produit",
-          "content": "<p>Vos devs ou votre agence gardent le rythme opérationnel. Je priorise, séquence, revue les livrables et tiens la <strong>cohérence produit-tech</strong>, sans stand-up ni tickets au quotidien.</p>"
+          "content": "<p>Vos devs ou votre agence gardent le rythme opérationnel. Je priorise, séquence, je revois les livrables et tiens la <strong>cohérence produit-tech</strong>, sans stand-up ni tickets au quotidien.</p>"
         }
       ]
     },
@@ -131,7 +131,7 @@
             "productPlatform": "Blocs, APIs et modèle éditorial qui absorbent les lancements."
           },
           {
-            "dimension": "Multi-marche",
+            "dimension": "Multi-marché",
             "vitrineAgency": "Duplication de sites.",
             "productPlatform": "Fondation partagée, marchés comme variantes du même système."
           },
@@ -204,7 +204,7 @@
         },
         {
           "title": "On n'a pas le luxe de ralentir pour structurer",
-          "content": "<p>Deux à quatre semaines de cadrage (modèle de blocs, APIs, priorités conversion) évitent souvent <strong>des mois de one-offs</strong>. La première tranche peut être précisément ce cadrage, avec un livrable écrit avant le gros build.</p>"
+          "content": "<p>Deux à quatre semaines de cadrage (modèle de blocs, APIs, priorités de conversion) évitent souvent <strong>des mois de one-offs</strong>. La première tranche peut être précisément ce cadrage, avec un livrable écrit avant le gros build.</p>"
         },
         {
           "title": "On veut stabiliser et optimiser, pas migrer de stack",

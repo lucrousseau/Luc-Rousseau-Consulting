@@ -74,7 +74,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "Premier dev à temps plein vs lead technique externe",
-      "intro": "Ordres de grandeur pour une startup québécoise, chaque cas se affine à l'appel. Si votre enjeu est plutôt de <strong>lancer un produit</strong> avant d'embaucher, voir la fiche <a href=\"/situations/mvp-saas-faisabilite\">Lancer un SaaS ou un MVP</a>.",
+      "intro": "Ordres de grandeur pour une startup québécoise, chaque cas s'affine à l'appel. Si votre enjeu est plutôt de <strong>lancer un produit</strong> avant d'embaucher, voir la fiche <a href=\"/situations/mvp-saas-faisabilite\">Lancer un SaaS ou un MVP</a>.",
       "columnKeys": ["dimension", "fullTimeJunior", "fractionalSenior"],
       "table": {
         "headers": {
@@ -153,7 +153,7 @@
         },
         {
           "title": "Et après, on embauche quand même ?",
-          "content": "<p>Oui, si c'est le bon modèle. Mon rôle est de vous amener à ce moment <strong>mieux préparés</strong> : architecture, processus, fiche de poste réaliste. Je peux accompagner l'intégration du nouveau dev pour que le fil ne se perde pas.</p>"
+          "content": "<p>Oui, si c'est le bon modèle. Mon rôle est de vous amener à ce moment <strong>mieux préparé</strong> : architecture, processus, fiche de poste réaliste. Je peux accompagner l'intégration du nouveau dev pour que le fil ne se perde pas.</p>"
         },
         {
           "title": "Comment ça s'intègre avec le fondateur ou le CEO ?",

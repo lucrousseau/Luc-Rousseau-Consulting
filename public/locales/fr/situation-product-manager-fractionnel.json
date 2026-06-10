@@ -3,7 +3,7 @@
   "seoDescription": "PM/PO technique en fractionnel : demi-journées en régulier (~4 par semaine ou moins), journée complète au besoin (au plus une fois par semaine), priorités, prérequis et cérémonies avec les devs.",
   "hero": {
     "badge": "Produit & delivery",
-    "quote": "Mes devs livrent. Mais je suis plus certain qu'on livre les bonnes choses dans le bon ordre.",
+    "quote": "Mes devs livrent. Mais je ne suis plus certain qu'on livre les bonnes choses dans le bon ordre.",
     "title": "Besoin de PM ou PO, sans temps plein",
     "lede": "<p><strong>Vous avez besoin d'un PM ou PO, sans embauche à 40 h.</strong> L'équipe code ; il manque <strong>priorisation au trimestre</strong>, des prérequis clairs, des rituels avec les devs et des hypothèses testées avant le build. Ce n'est pas « trop tôt pour un PM », c'est <strong>trop lourd ou trop rigide en temps plein</strong>.</p><p>Je joue le rôle en <strong>PM/PO technique</strong> : développement, logique métier, enjeux tech, et <strong>lecture produit</strong> (parcours designer, puis dev, puis leadership produit). À l'ère de l'IA, ce combo est un vrai levier pour prototyper, cadrer et arbitrer sans perdre votre équipe.</p><p>Ça tient en <strong>fractionnel</strong> : d'abord des <strong>demi-journées</strong> calées sur vos rituels (stand-up, backlog, prérequis), environ <strong>quatre demi-journées par semaine</strong> ou moins selon la phase, et une <strong>journée complète au besoin</strong> (en pratique, au plus une fois par semaine) pour prototyper ou valider avant d'engager l'équipe dev.</p>",
     "buy": {
@@ -45,7 +45,7 @@
       "items": [
         {
           "title": "Demi-journées en régulier (~4 par semaine, ou moins)",
-          "content": "<p>Stand-up le matin, revue de backlog l'après-midi, atelier prérequis, sync trimestre : le calendrier s'adapte à <strong>votre équipe</strong>. En pratique, environ quatre demi-journées par semaine, parfois moins si la phase le permet.</p>"
+          "content": "<p>Stand-up le matin, revue de backlog l'après-midi, atelier de prérequis, sync trimestrielle : le calendrier s'adapte à <strong>votre équipe</strong>. En pratique, environ quatre demi-journées par semaine, parfois moins si la phase le permet.</p>"
         },
         {
           "title": "Journée complète au besoin, pas en routine",
@@ -69,7 +69,7 @@
         },
         {
           "title": "Sortir les prérequis et le « prêt à construire »",
-          "content": "<p>User stories, critères d'acceptation, dépendances, questions ouvertes, <strong>avant</strong> que les devs passent des jours sur l'ambigu. Moins de allers-retours, moins de « on a mal compris » en fin de sprint.</p>"
+          "content": "<p>User stories, critères d'acceptation, dépendances, questions ouvertes, <strong>avant</strong> que les devs passent des jours sur l'ambigu. Moins d'allers-retours, moins de « on a mal compris » en fin de sprint.</p>"
         },
         {
           "title": "Prototypes IA pour tester avant de builder",

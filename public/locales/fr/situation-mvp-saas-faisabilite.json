@@ -47,7 +47,7 @@
       "type": "cards",
       "badge": "Comment on avance",
       "title": "Fractionnel, par phases, avec un plan",
-      "lede": "<p class=\"big\">Pas un CTO embarqué ni une agence qui lance le build sans carte : mandat par phases et <strong>fractionnel</strong>. Faisabilité souvent en demi-journées ; journée complète si on prototype ou architecture en intensif ; deux jours par semaine possible sur une phase de build ciblé. Le calendrier se définit à l'appel.</p>",
+      "lede": "<p class=\"big\">Pas un CTO embarqué ni une agence qui lance le build sans carte : mandat par phases et <strong>fractionnel</strong>. Faisabilité souvent en demi-journées ; journée complète si on prototype ou si on travaille l'architecture en intensif ; deux jours par semaine possible sur une phase de build ciblé. Le calendrier se définit à l'appel.</p>",
       "items": [
         {
           "title": "Je code, pilote devs ou agence",
@@ -173,7 +173,7 @@
         },
         {
           "title": "Quel rythme : demi-journées, journées, deux jours ?",
-          "content": "<p>Ça dépend de la phase. <strong>Demi-journées</strong> pour faisabilité, ateliers CEO/CTO et suivi léger. <strong>Journée complète</strong> ponctuelle pour un sprint prototype ou architecture. <strong>Deux jours par semaine</strong> seulement si je dois coder des fondations ou POCs critiques. Pas de poste à 40 h : on calibre à l'appel.</p>"
+          "content": "<p>Ça dépend de la phase. <strong>Demi-journées</strong> pour faisabilité, ateliers CEO/CTO et suivi léger. <strong>Journée complète</strong> ponctuelle pour un sprint de prototypage ou d'architecture. <strong>Deux jours par semaine</strong> seulement si je dois coder des fondations ou POCs critiques. Pas de poste à 40 h : on calibre à l'appel.</p>"
         },
         {
           "title": "On peut prototyper nous-mêmes avec Lovable ou Cursor ?",

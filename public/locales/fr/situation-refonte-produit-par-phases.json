@@ -24,7 +24,7 @@
           "items": [
             "Stack archaïque : thème legacy, plugins empilés, peu d'API, perf et dette qui freinent le produit",
             "Dette technique et modèle de données difficile à migrer sans risque pour la production",
-            "Équipe en corrective continue, sans feuille de route claire pour moderniser le stack"
+            "Équipe en maintenance corrective continue, sans feuille de route claire pour moderniser la stack"
           ]
         },
         {
@@ -45,7 +45,7 @@
       "items": [
         {
           "title": "Je code la transition ou pilote l'équipe",
-          "content": "<p><strong>Sans équipe</strong> : je assume le build (APIs, front headless, modules Laravel) et le plan produit. <strong>Avec équipe ou agence</strong> : je pilote séquence, priorités et revues, sans remplacer votre tech lead au quotidien.</p>"
+          "content": "<p><strong>Sans équipe</strong> : j'assume le build (APIs, front headless, modules Laravel) et le plan produit. <strong>Avec équipe ou agence</strong> : je pilote la séquence, les priorités et les revues, sans remplacer votre tech lead au quotidien.</p>"
         },
         {
           "title": "Phases successives, livrables en prod",
@@ -53,7 +53,7 @@
         },
         {
           "title": "Stack et contrats fixés avant le build",
-          "content": "<p>WPGraphQL, REST, gateway GraphQL, Laravel, React, Next.js : <strong>ce qui sert votre cas</strong>, pas la mode stack. Contrats de données et frontières écrits pour que vos devs ou moi buildions sur les mêmes règles.</p>"
+          "content": "<p>WPGraphQL, REST, gateway GraphQL, Laravel, React, Next.js : <strong>ce qui sert votre cas</strong>, pas la stack à la mode. Contrats de données et frontières écrits pour que vos devs et moi puissions build selon les mêmes règles.</p>"
         }
       ]
     },

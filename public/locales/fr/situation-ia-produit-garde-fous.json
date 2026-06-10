@@ -197,7 +197,7 @@
         },
         {
           "title": "Quel rythme : demi-journées, journées, deux jours ?",
-          "content": "<p>Ça dépend de la phase. <strong>Demi-journées</strong> pour cartographie et ateliers. <strong>Journée complète</strong> pour un POC API ou contenu LLM. <strong>Deux jours par semaine</strong> si je code une intégration critique. Calibré à l'appel.</p>"
+          "content": "<p>Ça dépend de la phase. <strong>Demi-journées</strong> pour cartographie et ateliers. <strong>Journée complète</strong> pour un POC API ou contenu LLM. <strong>Deux jours par semaine</strong> si je code une intégration critique. On calibre à l'appel.</p>"
         },
         {
           "title": "L'IA change trop vite, pourquoi planifier ?",
