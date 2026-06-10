@@ -5,7 +5,7 @@
     "badge": "Refonte & migration",
     "quote": "Notre site tient debout, mais chaque nouvelle feature nous coûte le double de ce que ça devrait. On reporte la refonte depuis deux ans.",
     "title": "WordPress archaïque : headless ou Laravel par phases",
-    "lede": "<p><strong>Vous partez d'un WordPress archaïque</strong> : lent, plugins fragiles, thème legacy, éditorial ou métier qui freine le produit. Je m'insère dans cet environnement tel qu'il est et je vous fais <strong>entrer dans la modernité</strong> sans « tout casser » : <strong>WordPress headless</strong> (WPGraphQL ou REST, front React/Next.js), ou <strong>admin et API Laravel</strong> (REST ou GraphQL) avec migration progressive.</p><p>Je viens en <strong>PM/PO technique fractionnel</strong>, avec un pied dans le code : selon le mandat, je peux <strong>développer moi-même</strong> les phases critiques de la transition, ou <strong>piloter votre équipe</strong> déjà en place (prioriser, séquencer, organiser le changement de stack). Plan écrit, phases successives, sans big bang. On en parle d'abord pour voir le <strong>temps et le besoin</strong>, puis comment <strong>mobiliser mon temps</strong> sur le mandat.</p><p>WordPress qui tient mais doit <strong>évoluer sans migration majeure</strong> (comparateur, éditorial, conversion) : voir <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>.</p>",
+    "lede": "<p><strong>Vous partez d'un WordPress archaïque</strong> : lent, plugins fragiles, thème legacy, éditorial ou métier qui freine le produit. Je m'insère dans cet environnement tel qu'il est et je vous aide à <strong>moderniser la stack</strong> sans « tout casser » : <strong>WordPress headless</strong> (WPGraphQL ou REST, front React/Next.js), ou <strong>admin et API Laravel</strong> (REST ou GraphQL) avec migration progressive.</p><p>Je viens en <strong>PM/PO technique fractionnel</strong>, avec un pied dans le code : selon le mandat, je peux <strong>développer moi-même</strong> les phases critiques de la transition, ou <strong>piloter votre équipe</strong> déjà en place (prioriser, séquencer, organiser le changement de stack). Plan écrit, phases successives, sans big bang. On en parle d'abord pour voir le <strong>temps et le besoin</strong>, puis comment <strong>mobiliser mon temps</strong> sur le mandat.</p><p>WordPress qui tient mais doit <strong>évoluer sans migration majeure</strong> (comparateur, éditorial, conversion) : voir <a href=\"/situations/plateforme-editoriale-produit\">Produit éditorial à l'échelle</a>.</p>",
     "buy": {
       "legend": "Cadrer votre refonte",
       "prefix": "Sans engagement",
@@ -17,12 +17,12 @@
       "type": "split",
       "sectionKey": "context",
       "title": "Le contexte WordPress",
-      "intro": "<p class=\"big\">Je rentre dans votre WordPress <strong>archaïque</strong>, tel qu'il tourne aujourd'hui, et on trace comment vous faire <strong>entrer dans la modernité</strong> : ce qui bloque, quelle stack tient pour le produit, sans big bang. Ce mandat vise une <strong>transformation de stack</strong>, pas l'évolution au quotidien d'un produit qui tient encore.</p>",
+      "intro": "<p class=\"big\">Je rentre dans <strong>votre WordPress actuel</strong>, tel qu'il tourne aujourd'hui, et on trace <strong>comment faire évoluer la plateforme</strong> : ce qui bloque, quelle stack tient pour le produit, sans big bang. Ce mandat vise une <strong>transformation de stack</strong>, pas l'évolution au quotidien d'un produit qui tient encore.</p>",
       "panels": [
         {
-          "heading": "WordPress archaïque",
+          "heading": "Votre WordPress actuel",
           "items": [
-            "Stack archaïque : thème legacy, plugins empilés, peu d'API, perf et dette qui freinent le produit",
+            "Stack en place : thème legacy, plugins empilés, peu d'API, perf et dette qui freinent le produit",
             "Dette technique et modèle de données difficile à migrer sans risque pour la production",
             "Équipe en maintenance corrective continue, sans feuille de route claire pour moderniser la stack"
           ]
@@ -189,7 +189,7 @@
       "badge": "Prochaine étape",
       "trackSection": "situation-refonte-phases",
       "label": "Discuter refonte produit",
-      "teaser": "<p class=\"big\">WordPress archaïque ? Un appel pour voir comment entrer dans la modernité (headless, Laravel API, plan par phases) plutôt qu'un big bang sans carte.</p>"
+      "teaser": "<p class=\"big\">WordPress qui freine le produit ? Un appel pour voir comment moderniser la stack (headless, Laravel API, plan par phases) plutôt qu'un big bang sans carte.</p>"
     }
   ]
 }

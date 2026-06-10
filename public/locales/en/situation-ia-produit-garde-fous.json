@@ -23,7 +23,7 @@
       "type": "split",
       "sectionKey": "product-ai",
       "title": "AI in the product, not ML infra",
-      "intro": "<p class=\"big\">I work on <strong>product and integration</strong>: decisions, LLM APIs, user experience, and guardrails. Not model DevOps/MLOps (training, GPUs, ML ops pipelines).</p>",
+      "intro": "<p class=\"big\">I work on <strong>product and integration</strong>: decisions, LLM APIs, user experience, and <strong>limits</strong>. Not model DevOps/MLOps (training, GPUs, ML ops pipelines).</p>",
       "panels": [
         {
           "heading": "Before you rush in",
@@ -36,7 +36,7 @@
         {
           "heading": "In the product, without drift",
           "items": [
-            "Anti-hallucination guardrails: context, sources, limits on what the model may assert",
+            "Anti-hallucination controls: context, sources, limits on what the model may assert",
             "Claude, OpenAI, Anthropic APIs: where to wire, what to send, UX fallback if the answer drifts",
             "LLM content by profile, fast POC, then spec and steering devs or agency"
           ]
@@ -47,7 +47,7 @@
       "type": "cards",
       "badge": "How we work",
       "title": "Fractional, phased, product angle",
-      "lede": "<p class=\"big\">Not a parallel AI lab or MLOps integrator: fractional mandate focused on <strong>product usage</strong>. Half-days for framing; full day for a POC; two days a week possible on a targeted integration.</p>",
+      "lede": "<p class=\"big\">Not a parallel AI lab or MLOps integrator: part-time mandate focused on <strong>product usage</strong>. Half-days for framing; full day for a POC; two days a week possible on a targeted integration.</p>",
       "items": [
         {
           "title": "Prerequisites, risks, and scope",
@@ -63,7 +63,7 @@
         },
         {
           "title": "Content and journeys by profile",
-          "content": "<p>Pages, blocks, or answers <strong>adapted to profile</strong> via LLM, with editorial and technical guardrails. Not a generic chatbot bolted onto the site.</p>"
+          "content": "<p>Pages, blocks, or answers <strong>adapted to profile</strong> via LLM, with editorial and technical controls. Not a generic chatbot bolted onto the site.</p>"
         },
         {
           "title": "POC or steering your devs",
@@ -91,7 +91,7 @@
         },
         {
           "title": "Handover and optional follow-up",
-          "content": "<p>Spec, prioritized AI backlog, pass-off or <strong>ongoing steering</strong> of the build with your devs. Fractional follow-up for coherence, without a permanent role.</p>"
+          "content": "<p>Spec, prioritized AI backlog, pass-off or <strong>ongoing steering</strong> of the build with your devs. Part-time follow-up for coherence, without a permanent role.</p>"
         }
       ]
     },
@@ -99,7 +99,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "Fast AI feature vs product AI framing first",
-      "intro": "This comparison is about <strong>AI in the product</strong> (usage, APIs, build vs buy). For day-to-day PM/PO needs, see <a href=\"/situations/product-manager-fractionnel\">Need a PM or PO, without full-time</a>. AI-first launch or MVP: see also <a href=\"/situations/mvp-saas-faisabilite\">Launch a SaaS or MVP</a>. WordPress product already live: <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>.",
+      "intro": "This comparison is about <strong>AI in the product</strong> (usage, APIs, build vs buy). For day-to-day PM/PO needs, see <a href=\"/situations/product-manager-fractionnel\">Need a PM or PO, without full-time</a>. AI-first launch or MVP: see also <a href=\"/situations/mvp-saas-faisabilite\">Launch a SaaS or MVP</a>. WordPress product already live: <a href=\"/situations/refonte-produit-par-phases\">WordPress rebuild by phases</a>.",
       "columnKeys": ["dimension", "hypeFirst", "framedFirst"],
       "table": {
         "headers": {
@@ -126,7 +126,7 @@
           {
             "dimension": "Hallucinations / quality",
             "hypeFirst": "Fixed after user complaints or press.",
-            "framedFirst": "Scope, context, sources, and guardrails defined upfront."
+            "framedFirst": "Scope, context, sources, and controls defined upfront."
           },
           {
             "dimension": "Scope",
@@ -169,7 +169,7 @@
       "items": [
         {
           "title": "Do you do MLOps or model DevOps?",
-          "content": "<p><strong>No.</strong> No model training, ML ops pipelines, GPUs, or model infra operations. My scope: <strong>usage in the product</strong>, decisions, LLM APIs, integration, and SaaS-side guardrails.</p>"
+          "content": "<p><strong>No.</strong> No model training, ML ops pipelines, GPUs, or model infra operations. My scope: <strong>usage in the product</strong>, decisions, LLM APIs, integration, and SaaS-side limits.</p>"
         },
         {
           "title": "Do you implement LLM APIs in the product?",
@@ -185,7 +185,7 @@
         },
         {
           "title": "Will you become our AI CTO?",
-          "content": "<p>No. Your devs or agency keep operational pace. I clarify <strong>use cases, guardrails, and product integration</strong>; I do not manage people or day-to-day tickets.</p>"
+          "content": "<p>No. Your devs or agency keep operational pace. I clarify <strong>use cases, limits, and product integration</strong>; I do not manage people or day-to-day tickets.</p>"
         },
         {
           "title": "How do we limit hallucinations and drift?",
@@ -201,7 +201,7 @@
         },
         {
           "title": "AI changes too fast, why plan?",
-          "content": "<p><strong>Product criteria and guardrails</strong> stay stable even when the model changes: that is what avoids rebuilding on every vendor announcement.</p>"
+          "content": "<p><strong>Product criteria and limits</strong> stay stable even when the model changes: that is what avoids rebuilding on every vendor announcement.</p>"
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",

@@ -23,7 +23,7 @@
       "type": "split",
       "sectionKey": "product-ai",
       "title": "IA dans le produit, pas infra ML",
-      "intro": "<p class=\"big\">Je travaille le <strong>côté produit et intégration</strong> : décisions, APIs LLM, expérience utilisateur et garde-fous. Pas l'exploitation DevOps/MLOps des modèles (entraînement, GPU, pipelines ML ops).</p>",
+      "intro": "<p class=\"big\">Je travaille le <strong>côté produit et intégration</strong> : décisions, APIs LLM, expérience utilisateur et <strong>limites</strong>. Pas l'exploitation DevOps/MLOps des modèles (entraînement, GPU, pipelines ML ops).</p>",
       "panels": [
         {
           "heading": "Avant de se lancer",
@@ -36,7 +36,7 @@
         {
           "heading": "Dans le produit, sans déraper",
           "items": [
-            "Garde-fous anti-hallucination : contexte, sources, limites de ce que le modèle peut affirmer",
+            "Contrôles anti-hallucination : contexte, sources, limites de ce que le modèle peut affirmer",
             "APIs Claude, OpenAI, Anthropic : où brancher, quoi envoyer, repli UX si la réponse dérape",
             "Contenus LLM par profil, POC rapide, puis spec et pilotage devs ou agence"
           ]
@@ -47,7 +47,7 @@
       "type": "cards",
       "badge": "Comment on avance",
       "title": "Fractionnel, par phases, angle produit",
-      "lede": "<p class=\"big\">Pas un labo IA parallèle ni un intégrateur MLOps : mandat fractionnel centré <strong>usage produit</strong>. Demi-journées en cadrage ; journée complète pour un POC ; deux jours par semaine possible sur une intégration ciblée.</p>",
+      "lede": "<p class=\"big\">Pas un labo IA parallèle ni un intégrateur MLOps : mandat à temps partiel centré <strong>usage produit</strong>. Demi-journées en cadrage ; journée complète pour un POC ; deux jours par semaine possible sur une intégration ciblée.</p>",
       "items": [
         {
           "title": "Prérequis, risques et périmètre",
@@ -63,7 +63,7 @@
         },
         {
           "title": "Contenus et parcours par profil",
-          "content": "<p>Pages, blocs ou réponses <strong>adaptés au profil</strong> via LLM, avec garde-fous éditoriaux et techniques. Pas un chatbot générique posé sur le site.</p>"
+          "content": "<p>Pages, blocs ou réponses <strong>adaptés au profil</strong> via LLM, avec contrôles éditoriaux et techniques. Pas un chatbot générique posé sur le site.</p>"
         },
         {
           "title": "POC ou pilotage de vos devs",
@@ -91,7 +91,7 @@
         },
         {
           "title": "Handover et suivi optionnel",
-          "content": "<p>Spec, backlog IA priorisé, passation ou <strong>pilotage continu</strong> du build avec vos devs. Suivi fractionnel pour garder la cohérence, sans poste permanent.</p>"
+          "content": "<p>Spec, backlog IA priorisé, passation ou <strong>pilotage continu</strong> du build avec vos devs. Suivi à temps partiel pour garder la cohérence, sans poste permanent.</p>"
         }
       ]
     },
@@ -99,7 +99,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "Feature IA vite vs cadrage produit IA d'abord",
-      "intro": "Ce comparatif concerne l'<strong>IA dans le produit</strong> (usage, APIs, build vs buy). Pour un besoin PM/PO au quotidien, voir <a href=\"/situations/product-manager-fractionnel\">Besoin de PM ou PO, sans temps plein</a>. Lancement d'offre IA ou MVP : voir aussi <a href=\"/situations/mvp-saas-faisabilite\">Lancer un SaaS ou un MVP</a>. Produit WordPress en ligne : <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>.",
+      "intro": "Ce comparatif concerne l'<strong>IA dans le produit</strong> (usage, APIs, build vs buy). Pour un besoin PM/PO au quotidien, voir <a href=\"/situations/product-manager-fractionnel\">Besoin de PM ou PO, sans temps plein</a>. Lancement d'offre IA ou MVP : voir aussi <a href=\"/situations/mvp-saas-faisabilite\">Lancer un SaaS ou un MVP</a>. Produit WordPress en ligne : <a href=\"/situations/refonte-produit-par-phases\">Refonte WordPress par phases</a>.",
       "columnKeys": ["dimension", "hypeFirst", "framedFirst"],
       "table": {
         "headers": {
@@ -126,7 +126,7 @@
           {
             "dimension": "Hallucinations / qualité",
             "hypeFirst": "Corrigé après plaintes utilisateurs ou presse.",
-            "framedFirst": "Périmètre, contexte, sources et garde-fous définis en amont."
+            "framedFirst": "Périmètre, contexte, sources et contrôles définis en amont."
           },
           {
             "dimension": "Périmètre",
@@ -169,7 +169,7 @@
       "items": [
         {
           "title": "Vous faites du MLOps ou DevOps modèle ?",
-          "content": "<p><strong>Non.</strong> Pas d'entraînement de modèles, pipelines ML ops, GPU ou exploitation infra modèle. Mon périmètre : <strong>usage dans le produit</strong>, décisions, APIs LLM, intégration et garde-fous côté SaaS.</p>"
+          "content": "<p><strong>Non.</strong> Pas d'entraînement de modèles, pipelines ML ops, GPU ou exploitation infra modèle. Mon périmètre : <strong>usage dans le produit</strong>, décisions, APIs LLM, intégration et limites côté SaaS.</p>"
         },
         {
           "title": "Vous implémentez les APIs LLM dans le produit ?",
@@ -185,7 +185,7 @@
         },
         {
           "title": "Vous allez devenir notre CTO IA ?",
-          "content": "<p>Non. Vos devs ou agence gardent le rythme opérationnel. Je clarifie <strong>cas d'usage, garde-fous et intégration produit</strong> ; je ne gère pas les personnes ni les tickets au quotidien.</p>"
+          "content": "<p>Non. Vos devs ou agence gardent le rythme opérationnel. Je clarifie <strong>cas d'usage, limites et intégration produit</strong> ; je ne gère pas les personnes ni les tickets au quotidien.</p>"
         },
         {
           "title": "Comment limiter les hallucinations et les dérapages ?",
@@ -201,7 +201,7 @@
         },
         {
           "title": "L'IA change trop vite, pourquoi planifier ?",
-          "content": "<p>Les <strong>critères produit et garde-fous</strong> restent stables même quand le modèle change : c'est ce qui évite de tout refaire à chaque annonce fournisseur.</p>"
+          "content": "<p>Les <strong>critères produit et limites</strong> restent stables même quand le modèle change : c'est ce qui évite de tout refaire à chaque annonce fournisseur.</p>"
         },
         {
           "title": "Joignable en dehors des jours prévus, ou en urgence ?",

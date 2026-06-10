@@ -17,7 +17,7 @@
       "type": "intro",
       "badge": "The trap",
       "title": "Build too early, validate too late",
-      "lede": "<p class=\"big\">Without framing, v1 drifts: scope swells, default stack, agency or devs coding while <strong>what and why</strong> still move. Fixing after three months of build costs far more than a few weeks of feasibility.</p><p class=\"big\">AI and tools like Lovable, Claude, or Cursor let you <strong>prototype fast</strong>: the stake is no longer waiting months to see if the idea holds, but validating before you commit heavily on time, team, and money.</p>"
+      "lede": "<p class=\"big\">Without framing, v1 drifts: scope swells, default stack, agency or devs coding while <strong>what and why</strong> still move. Fixing after three months of build costs far more than a few weeks of <strong>initial framing</strong>.</p><p class=\"big\">AI and tools like Lovable, Claude, or Cursor let you <strong>prototype fast</strong>: the stake is no longer waiting months to see if the idea holds, but validating before you commit heavily on time, team, and money.</p>"
     },
     {
       "type": "split",
@@ -47,7 +47,7 @@
       "type": "cards",
       "badge": "How we work",
       "title": "Fractional, phased, with a plan",
-      "lede": "<p class=\"big\">Not an embedded CTO or an agency that starts build without a map: phased, <strong>fractional</strong> mandate. Feasibility often on half-days; a full day for intensive prototype or architecture; two days a week possible on a focused build phase. Calendar set on the call.</p>",
+      "lede": "<p class=\"big\">Not an embedded CTO or an agency that starts build without a map: phased, <strong>part-time</strong> mandate. Framing often on half-days; a full day for intensive prototype or architecture; two days a week possible on a focused build phase. Calendar set on the call.</p>",
       "items": [
         {
           "title": "I code, steer devs or agency",
@@ -91,7 +91,7 @@
         },
         {
           "title": "Handover and optional follow-up",
-          "content": "<p>Documentation, prioritized backlog, pass-off or <strong>ongoing steering</strong> of your devs or agency by phase. Fractional follow-up to keep a coherent MVP during build, without a permanent role.</p>"
+          "content": "<p>Documentation, prioritized backlog, pass-off or <strong>ongoing steering</strong> of your devs or agency in slices. Part-time follow-up to keep a coherent MVP during build, without a permanent role.</p>"
         }
       ]
     },
@@ -173,7 +173,7 @@
         },
         {
           "title": "What rhythm: half-days, full days, two days a week?",
-          "content": "<p>It depends on the phase. <strong>Half-days</strong> for feasibility, CEO/CTO workshops, and light follow-up. A <strong>full day</strong> now and then for a prototype or architecture sprint. <strong>Two days a week</strong> only if I need to code foundations or critical POCs. No 40-hour role: we calibrate on the call.</p>"
+          "content": "<p>It depends on the phase. <strong>Half-days</strong> for initial framing, CEO/CTO workshops, and light follow-up. A <strong>full day</strong> now and then for a prototype or architecture sprint. <strong>Two days a week</strong> only if I need to code foundations or critical POCs. No 40-hour role: we calibrate on the call.</p>"
         },
         {
           "title": "Can we prototype ourselves with Lovable or Cursor?",
@@ -189,7 +189,7 @@
         },
         {
           "title": "We can't afford to slow down for framing",
-          "content": "<p>Two to four weeks of feasibility often avoid <strong>months of rework</strong>. The first slice can be exactly that framing, with a written deliverable before the big build spend.</p>"
+          "content": "<p>Two to four weeks of framing often avoid <strong>months of rework</strong>. The first slice can be exactly that framing, with a written deliverable before the big build spend.</p>"
         },
         {
           "title": "What if we raise after?",
@@ -197,7 +197,7 @@
         },
         {
           "title": "What happens after framing?",
-          "content": "<p>Documented handover to your devs or agency; optional fractional follow-up if you want coherence without a permanent role. Other phased mandates: <a href=\"/situations/refonte-produit-par-phases\">WordPress rebuild</a>, <a href=\"/situations/plateforme-editoriale-produit\">editorial platform</a>, or <a href=\"/situations\">all situations</a>.</p>"
+          "content": "<p>Documented handover to your devs or agency; optional part-time follow-up if you want coherence without a permanent role. Other slice-based mandates: <a href=\"/situations/refonte-produit-par-phases\">WordPress rebuild</a>, <a href=\"/situations/plateforme-editoriale-produit\">editorial platform</a>, or <a href=\"/situations\">all situations</a>.</p>"
         },
         {
           "title": "Reachable outside scheduled days, or in an emergency?",
@@ -210,7 +210,7 @@
       "badge": "Next step",
       "trackSection": "situation-mvp-saas",
       "label": "Discuss MVP or SaaS",
-      "teaser": "<p class=\"big\">SaaS idea without a clear map? One call to see if a phased mandate (feasibility → architecture → prerequisites) avoids premature build.</p>"
+      "teaser": "<p class=\"big\">SaaS idea without a clear map? One call to see if a slice-based mandate (framing → architecture → prerequisites) avoids premature build.</p>"
     }
   ]
 }

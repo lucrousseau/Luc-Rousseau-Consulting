@@ -111,7 +111,7 @@
       "type": "comparison",
       "badge": "Comparer",
       "title": "Agence site web vs plateforme produit éditoriale",
-      "intro": "Cette fiche couvre les plateformes produit éditoriales à l'échelle. Pour une vitrine ou une campagne ponctuelle, une agence site est le bon interlocuteur. WordPress en prod qui doit évoluer sans migration majeure : vous êtes au bon endroit. Stack archaïque à migrer par phases : voir <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>.",
+      "intro": "Cette fiche couvre les plateformes produit éditoriales à l'échelle. Pour une vitrine ou une campagne ponctuelle, une agence site est le bon interlocuteur. WordPress en prod qui doit évoluer sans migration majeure : vous êtes au bon endroit. Stack legacy à migrer en tranches : voir <a href=\"/situations/refonte-produit-par-phases\">Refonte WordPress par phases</a>.",
       "columnKeys": ["dimension", "vitrineAgency", "productPlatform"],
       "table": {
         "headers": {
@@ -188,7 +188,7 @@
         },
         {
           "title": "Headless ou WordPress couplé pour notre cas ?",
-          "content": "<p>Ça dépend du volume de publication, des surfaces et de l'équipe. Souvent : <strong>headless</strong> (WPGraphQL ou REST + front React/Next.js) si l'édition reste dans WordPress et le front doit évoluer vite ; <strong>couplé</strong> quand la simplicité et l'équipe le favorisent. Migration WordPress archaïque par phases : voir <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>. On tranche à l'écrit avant de coder.</p>"
+          "content": "<p>Ça dépend du volume de publication, des surfaces et de l'équipe. Souvent : <strong>headless</strong> (WPGraphQL ou REST + front React/Next.js) si l'édition reste dans WordPress et le front doit évoluer vite ; <strong>couplé</strong> quand la simplicité et l'équipe le favorisent. Migration WordPress par tranches : voir <a href=\"/situations/refonte-produit-par-phases\">Refonte WordPress par phases</a>. On tranche à l'écrit avant de coder.</p>"
         },
         {
           "title": "Et la conversion, le marketing, la monétisation ?",
@@ -208,7 +208,7 @@
         },
         {
           "title": "On veut stabiliser et optimiser, pas migrer de stack",
-          "content": "<p>C'est exactement ce mandat : <strong>évolution continue</strong> sur une plateforme déjà en prod (comparateur, multi-marques, conversion), module par module, sans big bang. Si la stack bloque vraiment le produit, on peut en parler séparément : voir <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>.</p>"
+          "content": "<p>C'est exactement ce mandat : <strong>évolution continue</strong> sur une plateforme déjà en prod (comparateur, multi-marques, conversion), module par module, sans big bang. Si la stack bloque vraiment le produit, on peut en parler séparément : voir <a href=\"/situations/refonte-produit-par-phases\">Refonte WordPress par phases</a>.</p>"
         },
         {
           "title": "On n'est pas sur WordPress",
@@ -216,7 +216,7 @@
         },
         {
           "title": "Refonte stack ou évolution du produit ?",
-          "content": "<p><strong>Évolution</strong> (stabiliser, optimiser, faire évoluer en prod) : cette fiche. <strong>Migration majeure</strong> (headless, Laravel API, dette archaïque) : <a href=\"/situations/refonte-produit-par-phases\">WordPress archaïque : headless ou Laravel par phases</a>. On tranche au premier échange.</p>"
+          "content": "<p><strong>Évolution</strong> (stabiliser, optimiser, faire évoluer en prod) : cette fiche. <strong>Migration majeure</strong> (headless, Laravel API, dette accumulée) : <a href=\"/situations/refonte-produit-par-phases\">Refonte WordPress par phases</a>. On tranche au premier échange.</p>"
         },
         {
           "title": "Est-ce de la maintenance WordPress ?",

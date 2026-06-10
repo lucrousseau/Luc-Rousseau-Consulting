@@ -5,7 +5,7 @@
     "badge": "Rebuild & migration",
     "quote": "Our site stays up, but every new feature costs twice what it should. We've been putting off the rebuild for two years.",
     "title": "Archaic WordPress: headless or Laravel by phases",
-    "lede": "<p><strong>You start from archaic WordPress</strong>: slow, fragile plugins, legacy theme, editorial or business logic holding the product back. I step into that environment as it runs today and help you <strong>move into a modern stack</strong> without « tearing everything down »: <strong>headless WordPress</strong> (WPGraphQL or REST, React/Next.js front), or <strong>Laravel admin and API</strong> (REST or GraphQL) with progressive migration.</p><p>I come in as <strong>fractional technical PM/PO</strong> with hands in the code: depending on the mandate, I can <strong>develop critical migration phases myself</strong>, or <strong>lead your existing team</strong> (prioritize, sequence, organize the stack transition). Written plan, successive phases, no big bang. We talk first to see the <strong>time and need</strong>, then how to <strong>mobilize my time</strong> on the mandate.</p><p>WordPress that holds but must <strong>evolve without a major migration</strong> (comparator, editorial, conversion): see <a href=\"/situations/plateforme-editoriale-produit\">Editorial product at scale</a>.</p>",
+    "lede": "<p><strong>You start from archaic WordPress</strong>: slow, fragile plugins, legacy theme, editorial or business logic holding the product back. I step into that environment as it runs today and help you <strong>modernize the stack</strong> without « tearing everything down »: <strong>headless WordPress</strong> (WPGraphQL or REST, React/Next.js front), or <strong>Laravel admin and API</strong> (REST or GraphQL) with progressive migration.</p><p>I come in as <strong>fractional technical PM/PO</strong> with hands in the code: depending on the mandate, I can <strong>develop critical migration phases myself</strong>, or <strong>lead your existing team</strong> (prioritize, sequence, organize the stack transition). Written plan, successive phases, no big bang. We talk first to see the <strong>time and need</strong>, then how to <strong>mobilize my time</strong> on the mandate.</p><p>WordPress that holds but must <strong>evolve without a major migration</strong> (comparator, editorial, conversion): see <a href=\"/situations/plateforme-editoriale-produit\">Editorial product at scale</a>.</p>",
     "buy": {
       "legend": "Frame your rebuild",
       "prefix": "No commitment",
@@ -17,12 +17,12 @@
       "type": "split",
       "sectionKey": "context",
       "title": "WordPress context",
-      "intro": "<p class=\"big\">I step into your <strong>archaic WordPress</strong> as it runs today and map how to help you <strong>move into a modern stack</strong>: what blocks you, which architecture fits the product, no big bang. This mandate targets <strong>stack transformation</strong>, not day-to-day evolution of a product that still holds.</p>",
+      "intro": "<p class=\"big\">I step into <strong>your current WordPress</strong> as it runs today and map <strong>how to evolve the platform</strong>: what blocks you, which architecture fits the product, no big bang. This mandate targets <strong>stack transformation</strong>, not day-to-day evolution of a product that still holds.</p>",
       "panels": [
         {
-          "heading": "Archaic WordPress",
+          "heading": "Your current WordPress",
           "items": [
-            "Archaic stack: legacy theme, piled-on plugins, few APIs, perf and debt blocking the product",
+            "Stack in place: legacy theme, piled-on plugins, few APIs, perf and debt blocking the product",
             "Technical debt and a data model that is hard to migrate without prod risk",
             "Team in continuous firefighting, no clear roadmap to modernize the stack"
           ]
@@ -189,7 +189,7 @@
       "badge": "Next step",
       "trackSection": "situation-refonte-phases",
       "label": "Discuss product rebuild",
-      "teaser": "<p class=\"big\">Archaic WordPress? One call to see how to move into a modern stack (headless, Laravel API, phased plan) instead of a big bang without a map.</p>"
+      "teaser": "<p class=\"big\">WordPress holding the product back? One call to see how to modernize the stack (headless, Laravel API, phased plan) instead of a big bang without a map.</p>"
     }
   ]
 }

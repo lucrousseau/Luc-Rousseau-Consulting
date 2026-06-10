@@ -111,7 +111,7 @@
       "type": "comparison",
       "badge": "Compare",
       "title": "Brochure agency vs editorial product platform",
-      "intro": "This page covers editorial product platforms at scale. For a brochure site or one-off campaign, a web agency is the right fit. WordPress in prod that must evolve without a major migration: you're in the right place. Archaic stack to migrate by phases: see <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>.",
+      "intro": "This page covers editorial product platforms at scale. For a brochure site or one-off campaign, a web agency is the right fit. WordPress in prod that must evolve without a major migration: you're in the right place. Legacy stack to migrate in slices: see <a href=\"/situations/refonte-produit-par-phases\">WordPress rebuild by phases</a>.",
       "columnKeys": ["dimension", "vitrineAgency", "productPlatform"],
       "table": {
         "headers": {
@@ -188,7 +188,7 @@
         },
         {
           "title": "Headless or coupled WordPress for our case?",
-          "content": "<p>It depends on publishing volume, surfaces, and the team. Often: <strong>headless</strong> (WPGraphQL or REST + React/Next.js front) when editorial stays in WordPress and the front must move fast; <strong>coupled</strong> when simplicity and the team favor it. Archaic WordPress migration by phases: see <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>. We decide in writing before build.</p>"
+          "content": "<p>It depends on publishing volume, surfaces, and the team. Often: <strong>headless</strong> (WPGraphQL or REST + React/Next.js front) when editorial stays in WordPress and the front must move fast; <strong>coupled</strong> when simplicity and the team favor it. WordPress migration in slices: see <a href=\"/situations/refonte-produit-par-phases\">WordPress rebuild by phases</a>. We decide in writing before build.</p>"
         },
         {
           "title": "What about conversion, marketing, monetization?",
@@ -208,7 +208,7 @@
         },
         {
           "title": "We want to stabilize and optimize, not migrate stacks",
-          "content": "<p>That's exactly this mandate: <strong>continuous evolution</strong> on a platform already in prod (comparator, multi-brand, conversion), module by module, no big bang. If the stack truly blocks the product, we can discuss separately: see <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>.</p>"
+          "content": "<p>That's exactly this mandate: <strong>continuous evolution</strong> on a platform already in prod (comparator, multi-brand, conversion), module by module, no big bang. If the stack truly blocks the product, we can discuss separately: see <a href=\"/situations/refonte-produit-par-phases\">WordPress rebuild by phases</a>.</p>"
         },
         {
           "title": "We're not on WordPress",
@@ -216,7 +216,7 @@
         },
         {
           "title": "Stack rebuild or product evolution?",
-          "content": "<p><strong>Evolution</strong> (stabilize, optimize, evolve in prod): this page. <strong>Major migration</strong> (headless, Laravel API, archaic debt): <a href=\"/situations/refonte-produit-par-phases\">Archaic WordPress: headless or Laravel by phases</a>. We decide on the first call.</p>"
+          "content": "<p><strong>Evolution</strong> (stabilize, optimize, evolve in prod): this page. <strong>Major migration</strong> (headless, Laravel API, accumulated debt): <a href=\"/situations/refonte-produit-par-phases\">WordPress rebuild by phases</a>. We decide on the first call.</p>"
         },
         {
           "title": "Is this WordPress maintenance?",
