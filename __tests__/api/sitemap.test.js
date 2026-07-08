@@ -2,7 +2,7 @@
  * @jest-environment node
  */
 
-import handler from "./sitemap";
+import handler from "../../pages/api/sitemap";
 
 const base = "https://lucrousseau.com";
 
