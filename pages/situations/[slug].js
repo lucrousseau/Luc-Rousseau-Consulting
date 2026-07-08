@@ -24,13 +24,20 @@ const PAGE_SHELL_STYLE = {
   "--padding-bottom": "1rem",
 };
 
+/**
+ * @param {object} props
+ * @param {string} props.namespace
+ * @param {string} props.situationPath
+ * @param {{ fr?: string; en?: string; default?: string }} props.hreflangPaths
+ * @param {string} props.publishedAt
+ */
 export default function SituationPage({ namespace, situationPath, hreflangPaths, publishedAt }) {
   const { t } = useTranslation([namespace, "common"]);
   const router = useRouter();
   const locale = router.locale ?? "fr";
   const defaultLocale = router.defaultLocale ?? "fr";
   const base = getSiteOrigin();
-  const hero = t(`${namespace}:hero`, { returnObjects: true });
+  const hero = /** @type {{ title?: string }} */ (t(`${namespace}:hero`, { returnObjects: true }));
   const pageName =
     hero && typeof hero === "object" && hero.title ? hero.title : t(`${namespace}:seoTitle`);
   const pageDescription = t(`${namespace}:seoDescription`);
@@ -86,6 +93,7 @@ export async function getStaticPaths() {
   };
 }
 
+/** @param {{ params: { slug: string }; locale: string }} context */
 export async function getStaticProps({ params, locale }) {
   const situation = getSituationBySlug(params.slug, locale);
 

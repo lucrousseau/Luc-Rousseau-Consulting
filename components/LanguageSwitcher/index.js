@@ -11,6 +11,13 @@ const LANGUAGE_LABELS = {
   fr: "French",
 };
 
+/**
+ * @param {object} props
+ * @param {"en" | "fr"} [props.current]
+ * @param {string} [props.align]
+ * @param {string} [props.halign]
+ * @param {string} [props.valign]
+ */
 export default function LanguageSwitcher({ current: targetLocale = "fr", ...props }) {
   const alignmentsClass = alignments({ props });
   const router = useRouter();

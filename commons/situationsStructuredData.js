@@ -7,12 +7,14 @@ import { ROUTES } from "./siteRoutes";
  * @param {string} params.locale
  * @param {string} params.defaultLocale
  * @param {{ label: string; path?: string }[]} params.items
+ * @returns {Record<string, unknown>}
  */
 export function buildBreadcrumbListJsonLd({ base, locale, defaultLocale, items }) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: items.map((item, index) => {
+      /** @type {{ "@type": string; position: number; name: string; item?: string }} */
       const entry = {
         "@type": "ListItem",
         position: index + 1,
@@ -88,6 +90,8 @@ export function buildSituationsHubJsonLd({
  * @param {string} params.homeLabel
  * @param {string} params.situationsHubLabel
  * @param {string} params.situationTitle
+ * @param {string} [params.pageUrl]
+ * @returns {Record<string, unknown>}
  */
 export function buildSituationPageBreadcrumbJsonLd({
   base,
@@ -156,6 +160,7 @@ export function buildSituationPageJsonLd({
     pageUrl,
   });
 
+  /** @type {Record<string, unknown>} */
   const webPage = {
     "@context": "https://schema.org",
     "@type": "WebPage",

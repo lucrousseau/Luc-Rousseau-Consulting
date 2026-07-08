@@ -5,6 +5,10 @@ import Header from "../Header";
 
 /**
  * Minimal chrome for private noindex CV pages (logo + language, copyright only).
+ * @param {object} props
+ * @param {string} props.seoTitle
+ * @param {import('react').ReactNode} [props.children]
+ * @param {string} [props.mainClassName]
  */
 export default function CvPageLayout({ seoTitle, children, mainClassName = "page-cv" }) {
   return (

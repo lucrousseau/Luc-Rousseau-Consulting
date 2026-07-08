@@ -59,13 +59,17 @@ function hostnameOnly(hostHeader) {
   return hostHeader.split(":")[0].replace(/\/+$/, "").toLowerCase();
 }
 
-/** Canonical hostname for SEO URLs (apex only; www is redirected at the edge). */
+/**
+ * Canonical hostname for SEO URLs (apex only; www is redirected at the edge).
+ * @param {string} hostname
+ * @returns {string}
+ */
 function canonicalHostname(hostname) {
   return hostname.startsWith("www.") ? hostname.slice(4) : hostname;
 }
 
 /**
- * @param {import("http").IncomingMessage} [req] - Request object (API route handler). Omit in components.
+ * @param {import("http").IncomingMessage | null} [req] - Request object (API route handler). Omit in components.
  * @returns {string} Origin without trailing slash (e.g. https://lucrousseau.com)
  */
 export function getSiteOrigin(req = null) {

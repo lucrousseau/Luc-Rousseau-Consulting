@@ -18,6 +18,10 @@ import { EXPERTISE_PAGES } from "../../commons/expertiseManifest";
 
 const DEFAULT_LOCALE = "fr";
 
+/**
+ * @param {import('next').NextApiRequest} req
+ * @param {import('next').NextApiResponse} res
+ */
 export default function handler(req, res) {
   if (!apiRequireGet(req, res)) return;
 
@@ -27,11 +31,26 @@ export default function handler(req, res) {
   const homeAlternates = getRouteAlternateUrls(base, ROUTES.home, DEFAULT_LOCALE);
   const situationsHubAlternates = getRouteAlternateUrls(base, ROUTES.situationsHub, DEFAULT_LOCALE);
 
+  /**
+   * @param {string} frLoc
+   * @param {string} enLoc
+   * @param {string} defaultUrl
+   */
   const hreflangLinks = (frLoc, enLoc, defaultUrl) =>
     `    <xhtml:link rel="alternate" hreflang="fr" href="${frLoc}"/>
     <xhtml:link rel="alternate" hreflang="en" href="${enLoc}"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="${defaultUrl}"/>`;
 
+  /**
+   * @type {{
+   *   loc: string;
+   *   priority: string;
+   *   changefreq: string;
+   *   geo?: boolean;
+   *   lastmod?: string;
+   *   hreflang: { fr: string; en: string; default: string };
+   * }[]}
+   */
   const urls = [
     {
       loc: homeAlternates.fr,

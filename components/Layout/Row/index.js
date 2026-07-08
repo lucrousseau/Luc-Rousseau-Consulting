@@ -2,6 +2,24 @@ import classNames from "classnames";
 
 import { alignments } from "../../../commons/alignments";
 
+/**
+ * @typedef {object} RowColumn
+ * @property {import('react').ReactNode} [content]
+ * @property {Record<string, number | string>} [cols]
+ * @property {string} [tag]
+ * @property {string} [className]
+ * @property {boolean} [auto]
+ * @property {string | number} [pull]
+ * @property {import('react').CSSProperties} [style]
+ * @property {string} [align]
+ * @property {string} [halign]
+ * @property {string} [valign]
+ */
+
+/**
+ * @param {RowColumn} item
+ * @param {number} index
+ */
 const column = (item, index) => {
   const { className, tag = "div", cols = {}, auto, pull, style, content } = item;
 
@@ -12,7 +30,7 @@ const column = (item, index) => {
       })
     : [];
 
-  const Tag = tag;
+  const Tag = /** @type {import('react').ElementType} */ (tag);
   const pullClass = pull ? `col--pull-${pull}` : "";
   const alignmentsClass = alignments({ prefix: "col", props: item });
 
@@ -27,6 +45,21 @@ const column = (item, index) => {
   );
 };
 
+/**
+ * @param {object} props
+ * @param {string} [props.id]
+ * @param {import('react').ReactNode} [props.children]
+ * @param {string} [props.className]
+ * @param {(RowColumn | false | null | undefined)[]} [props.columns]
+ * @param {string} [props.tag]
+ * @param {string[]} [props.reverse]
+ * @param {boolean} [props.nowrap]
+ * @param {boolean} [props.inline]
+ * @param {import('react').CSSProperties} [props.style]
+ * @param {string} [props.align]
+ * @param {string} [props.halign]
+ * @param {string} [props.valign]
+ */
 export default function Row({
   id,
   children,
@@ -39,7 +72,7 @@ export default function Row({
   style,
   ...props
 }) {
-  const Tag = tag;
+  const Tag = /** @type {import('react').ElementType} */ (tag);
   const alignmentsClass = alignments({ prefix: "row", props });
   const reverseClass = reverse ? reverse.map((size) => `reverse--${size}`) : [];
 
@@ -52,7 +85,7 @@ export default function Row({
       })}
       style={style}
     >
-      {columns.map(column)}
+      {/** @type {RowColumn[]} */ (columns.filter(Boolean)).map(column)}
     </Tag>
   );
 }

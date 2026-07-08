@@ -17,7 +17,9 @@ import lucProfilPhoto from "./images/luc-profil-photo.jpg";
 export default function HomeHero() {
   const { t } = useTranslation();
 
-  const items = t("home-hero:items", { returnObjects: true }).map((item) => {
+  const items = /** @type {{ title?: string; content: string }[]} */ (
+    t("home-hero:items", { returnObjects: true })
+  ).map((item) => {
     return {
       ...item,
       content: parseHtmlContent(item.content),

@@ -17,6 +17,7 @@ const Analytics = dynamic(() => import("@vercel/analytics/react").then((mod) => 
   ssr: false,
 });
 
+/** @param {import('next/app').AppProps} props */
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const isCvPage = isCvPath(router.pathname);

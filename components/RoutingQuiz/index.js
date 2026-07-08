@@ -23,7 +23,7 @@ import {
  * @param {(resultId: string) => string} props.resultTitleKey
  * @param {(resultId: string) => string} [props.resultQuoteKey] - when set, shown instead of `resultTitleKey`
  * @param {(resultId: string) => string} props.resultTeaserKey
- * @param {{ id: string; href: string }[]} [props.browseLinks]
+ * @param {{ id: string; href: string; label?: string }[]} [props.browseLinks]
  * @param {(id: string) => string} [props.browseLinkLabelKey]
  * @param {string} [props.className]
  */
@@ -44,8 +44,9 @@ export default function RoutingQuiz({
   const { t } = useTranslation(i18nNamespace);
   const questionHeadingId = useId();
   const [stepStack, setStepStack] = useState([rootStepId]);
-  const [resultId, setResultId] = useState(null);
+  const [resultId, setResultId] = useState(/** @type {string | null} */ (null));
 
+  /** @param {string} suffix */
   const uiKey = (suffix) => `${uiKeyPrefix}.${suffix}`;
 
   const currentStepId = stepStack[stepStack.length - 1];
@@ -53,13 +54,15 @@ export default function RoutingQuiz({
   const totalQuestions = totalQuestionsProp ?? getRoutingQuizMaxDepth(steps, rootStepId);
   const questionNumber = getRoutingQuizQuestionNumber(stepStack, rootStepId);
 
+  /** @param {{ id?: string; result?: string; next?: string }} option */
   const handleOption = (option) => {
     if (option.result) {
       setResultId(option.result);
       return;
     }
     if (option.next) {
-      setStepStack((prev) => [...prev, option.next]);
+      const next = option.next;
+      setStepStack((prev) => [...prev, next]);
     }
   };
 
@@ -181,7 +184,7 @@ export default function RoutingQuiz({
         ))}
       </ul>
 
-      {browseLinks?.length > 0 && (
+      {browseLinks && browseLinks.length > 0 && (
         <details className="component__routing-quiz__browse">
           <summary>{t(uiKey("browseAll.summary"))}</summary>
           <ul className="component__routing-quiz__browse-list">

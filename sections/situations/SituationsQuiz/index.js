@@ -8,12 +8,16 @@ import {
   getSituationsQuizTotalQuestions,
 } from "../../../commons/situationsQuiz";
 
+/** @param {string} id */
 const situationTitleKey = (id) => `situations.${id}.title`;
+/** @param {string} id */
 const situationQuoteKey = (id) => `situations.${id}.quote`;
 
 /**
  * Situations hub quiz: thin wrapper around {@link RoutingQuiz}.
  * Requires i18n: `situations-index` (keys under `quiz.*` and `situations.*`).
+ * @param {object} props
+ * @param {string} [props.className]
  */
 export default function SituationsQuiz({ className }) {
   const router = useRouter();
@@ -33,7 +37,8 @@ export default function SituationsQuiz({ className }) {
       resultTeaserKey={(id) => `situations.${id}.teaser`}
       browseLinks={SITUATIONS.map((situation) => ({
         id: situation.id,
-        href: getSituationPathById(situation.id, locale),
+        href:
+          getSituationPathById(situation.id, locale) ?? `${ROUTES.situationsHub}/${situation.id}`,
       }))}
       browseLinkLabelKey={situationTitleKey}
     />

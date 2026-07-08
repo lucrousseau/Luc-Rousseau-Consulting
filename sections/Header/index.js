@@ -20,7 +20,7 @@ import { getSiteNavigationItems } from "../../commons/siteNavigation";
  * @param {boolean} [props.showNavigation=true] - Render main navigation
  * @param {boolean} [props.showCta=true] - Render contact email button
  * @param {boolean} [props.showSocial=true] - Render social links
- * @param {Array} [props.navigation=[]] - Nav items when showNavigation is true
+ * @param {{ href: string; label: import('react').ReactNode }[]} [props.navigation] - Nav items when showNavigation is true
  */
 export default function Header({
   showNavigation = true,

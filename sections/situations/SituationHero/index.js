@@ -14,7 +14,10 @@ import { homeCtaRowStyle } from "../../../commons/pageRowSpacing";
  */
 export default function SituationHero({ namespace }) {
   const { t } = useTranslation([namespace, "common"]);
-  const hero = t(`${namespace}:hero`, { returnObjects: true });
+  const hero =
+    /** @type {{ buy?: { legend?: string; prefix?: string; label?: string }; title?: string; badge?: string; quote?: string; lede?: string }} */ (
+      t(`${namespace}:hero`, { returnObjects: true })
+    );
   const buy = hero?.buy;
 
   const breadcrumbItems = [

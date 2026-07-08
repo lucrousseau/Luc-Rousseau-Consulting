@@ -8,11 +8,13 @@ import SectionCta from "../../components/SectionCta";
 import { homeIntroRowStyle, homeBodyRowStyle } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
 
+/** @type {Record<string, string>} */
 const CHANNEL_HREF_KEYS = {
   email: "common:contact-email-mailto",
   linkedin: "common:linkedin",
 };
 
+/** @param {string} variant */
 function trackChannelClick(variant) {
   import("@vercel/analytics")
     .then(({ track }) => {
@@ -23,6 +25,11 @@ function trackChannelClick(variant) {
     .catch(() => {});
 }
 
+/**
+ * @param {{ id: string; actionLabel?: string }} channel
+ * @param {import('i18next').TFunction} t
+ * @returns {string | undefined}
+ */
 function getChannelLinkLabel(channel, t) {
   if (channel.id === "email") {
     return t("common:contact-email-display");
@@ -34,10 +41,13 @@ function getChannelLinkLabel(channel, t) {
  * Site-wide contact section. Requires i18n: `contact`, `common`.
  * @param {import('../../commons/sectionTypes').SectionWithCtaProps & { introTeaser?: string | null }} [props]
  */
-export default function Contact({ cta, introTeaser = null }) {
+export default function Contact({ cta, introTeaser = null } = {}) {
   const { t } = useTranslation(["contact", "common"]);
   const scheduleCta = getScheduleCta(t);
-  const channels = t("contact:channels", { returnObjects: true });
+  const channels =
+    /** @type {{ id: string; title: string; hint?: string; actionLabel?: string }[]} */ (
+      t("contact:channels", { returnObjects: true })
+    );
   const channelList = Array.isArray(channels)
     ? channels.filter((channel) => channel?.id && CHANNEL_HREF_KEYS[channel.id])
     : [];

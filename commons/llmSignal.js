@@ -83,10 +83,6 @@ ${enLinks}`;
  * @param {string} base
  * @returns {string}
  */
-/**
- * @param {string} base
- * @returns {string}
- */
 export function buildExpertiseSection(base) {
   return EXPERTISE_PAGES.map((page) => {
     const fr = getExpertiseSeo("fr", page.namespace);
@@ -110,6 +106,10 @@ ${voiceQuoteBlock}- FR summary: ${fr.description}
   }).join("\n\n");
 }
 
+/**
+ * @param {string} base
+ * @returns {string}
+ */
 export function buildSituationsSection(base) {
   return SITUATIONS.map((situation) => {
     const fr = getSituationSeo("fr", situation.namespace);
@@ -133,7 +133,6 @@ ${voiceQuoteBlock}- FR summary: ${fr.description}
 }
 
 /**
- * @param {string} base
  * @returns {string}
  */
 function buildBoundariesBlock() {

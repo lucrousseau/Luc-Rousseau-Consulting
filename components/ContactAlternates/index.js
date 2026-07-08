@@ -1,6 +1,13 @@
 import classNames from "classnames";
 import { useTranslation } from "next-i18next/pages";
 
+/**
+ * @param {object} props
+ * @param {string} [props.className]
+ * @param {string} [props.trackSection]
+ * @param {boolean} [props.hideLinkedIn]
+ * @param {string} [props.align]
+ */
 export default function ContactAlternates({
   className,
   trackSection,
@@ -9,6 +16,7 @@ export default function ContactAlternates({
 }) {
   const { t } = useTranslation("common");
 
+  /** @param {string} variant */
   const handleClick = (variant) => () => {
     if (!trackSection) return;
     import("@vercel/analytics")

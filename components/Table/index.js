@@ -1,5 +1,13 @@
 import classNames from "classnames";
 
+/**
+ * @param {object} props
+ * @param {Record<string, string>} props.headers
+ * @param {Record<string, import('react').ReactNode>[]} props.rows
+ * @param {string[]} [props.columnKeys]
+ * @param {string} [props.rowHeaderKey]
+ * @param {string} [props.className]
+ */
 export default function Table({ headers, rows, columnKeys, rowHeaderKey, className, ...props }) {
   if (!headers || !rows?.length) {
     return null;

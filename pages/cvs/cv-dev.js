@@ -18,6 +18,7 @@ export default function CvDevPage() {
   );
 }
 
+/** @param {{ locale: string }} context */
 export const getStaticProps = async ({ locale }) => {
   return {
     props: {

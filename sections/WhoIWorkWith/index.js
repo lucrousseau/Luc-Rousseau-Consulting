@@ -56,12 +56,16 @@ export default function WhoIWorkWith({ backgroundColor, cta, showCta = true }) {
                     {t("who-i-work-with:profiles-heading")}
                   </h3>
                   <ul className="who-i-work-with__list">
-                    {t("who-i-work-with:items", { returnObjects: true }).map((item) => (
-                      <li key={item.title}>
-                        <h4 className="h4">{item.title}</h4>
-                        <p>{parseHtmlContent(item.content)}</p>
-                      </li>
-                    ))}
+                    {
+                      /** @type {{ title: string; content: string }[]} */ (
+                        t("who-i-work-with:items", { returnObjects: true })
+                      ).map((item) => (
+                        <li key={item.title}>
+                          <h4 className="h4">{item.title}</h4>
+                          <p>{parseHtmlContent(item.content)}</p>
+                        </li>
+                      ))
+                    }
                   </ul>
                 </section>
 

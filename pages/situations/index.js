@@ -19,6 +19,7 @@ const PAGE_SHELL_STYLE = {
   "--padding-bottom": "1rem",
 };
 
+/** @param {string} id */
 const situationTitleKey = (id) => `situations.${id}.title`;
 
 export default function SituationsIndexPage() {
@@ -40,7 +41,7 @@ export default function SituationsIndexPage() {
     homeLabel: t("common:home-link-label"),
     situationsHubLabel: t("badge"),
     situations: SITUATIONS.map((situation) => ({
-      path: getSituationPathById(situation.id, locale),
+      path: getSituationPathById(situation.id, locale) ?? `${ROUTES.situationsHub}/${situation.id}`,
       name: t(situationTitleKey(situation.id)),
     })),
   });
@@ -69,6 +70,7 @@ export default function SituationsIndexPage() {
   );
 }
 
+/** @param {{ locale: string }} context */
 export async function getStaticProps({ locale }) {
   return {
     props: {

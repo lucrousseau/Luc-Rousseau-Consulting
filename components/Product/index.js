@@ -4,6 +4,18 @@ import { alignments } from "../../commons/alignments";
 
 import Buy from "../Buy";
 
+/**
+ * @param {object} props
+ * @param {string} [props.className]
+ * @param {import('react').ReactNode} [props.children]
+ * @param {import('react').ReactNode} [props.title]
+ * @param {number} [props.price]
+ * @param {import('react').ReactNode} [props.legend]
+ * @param {string} [props.label]
+ * @param {string} [props.align]
+ * @param {string} [props.halign]
+ * @param {string} [props.valign]
+ */
 export default function Product({ className, children, title, price, legend, label, ...props }) {
   const alignmentsClass = alignments({ props });
   const hasNoLabel = label ? false : true;

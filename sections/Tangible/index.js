@@ -26,33 +26,36 @@ export default function Tangible({ cta, showCta = true }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
 
-  const items = t("tangible:items", { returnObjects: true }).map((item, index) => {
-    const content = (
-      <>
-        {parseHtmlContent(item.content)}
+  const items =
+    /** @type {{ title: string; content: string; "cta-link"?: string; "cta-label"?: string }[]} */ (
+      t("tangible:items", { returnObjects: true })
+    ).map((item, index) => {
+      const content = (
+        <>
+          {parseHtmlContent(item.content)}
 
-        {item["cta-link"] && item["cta-label"] && (
-          <p className="align align--right">
-            <Button
-              variant={"secondary"}
-              size={"small"}
-              target={"_blank"}
-              href={item["cta-link"]}
-              label={item["cta-label"]}
-            />
-          </p>
-        )}
-      </>
-    );
+          {item["cta-link"] && item["cta-label"] && (
+            <p className="align align--right">
+              <Button
+                variant={"secondary"}
+                size={"small"}
+                target={"_blank"}
+                href={item["cta-link"]}
+                label={item["cta-label"]}
+              />
+            </p>
+          )}
+        </>
+      );
 
-    return {
-      title: item.title,
-      // index from .map over static locale items
-      // eslint-disable-next-line security/detect-object-injection
-      logo: PROJECT_LOGOS[index] ?? null,
-      content: content,
-    };
-  });
+      return {
+        title: item.title,
+        // index from .map over static locale items
+        // eslint-disable-next-line security/detect-object-injection
+        logo: PROJECT_LOGOS[index] ?? null,
+        content: content,
+      };
+    });
 
   return (
     <Container

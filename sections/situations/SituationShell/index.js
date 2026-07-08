@@ -15,10 +15,12 @@ import SituationSection from "../SituationSection";
 import SituationSplit from "../SituationSplit";
 import { situationBlockClassName } from "../situationBlockClassName";
 
+/** @param {import('../situationTypes').SituationBlock} block */
 function hasGroups(block) {
   return Array.isArray(block?.groups) && block.groups.length > 0;
 }
 
+/** @param {{ block: import('../situationTypes').SituationBlock }} props */
 function SituationBlock({ block }) {
   if (!block?.type) {
     return null;
@@ -38,13 +40,15 @@ function SituationBlock({ block }) {
     case "highlights":
       return (
         <SituationSection block={block}>
-          <NumberedHighlightList items={block.items} />
+          <NumberedHighlightList
+            items={/** @type {{ title: string; content?: string }[]} */ (block.items ?? [])}
+          />
         </SituationSection>
       );
 
     case "cards": {
-      const cardGroups = hasGroups(block) ? block.groups : null;
-      const cardItems = cardGroups ? null : block.items;
+      const cardGroups = hasGroups(block) ? block.groups : undefined;
+      const cardItems = cardGroups ? undefined : block.items;
 
       return (
         <SituationSection block={block}>
@@ -53,7 +57,7 @@ function SituationBlock({ block }) {
               groups={cardGroups}
               renderGroup={(group) => (
                 <ProductGrid
-                  items={group.items}
+                  items={/** @type {{ content: string }[]} */ (group.items ?? [])}
                   renderItem={(item) => parseHtmlContent(item.content)}
                   cols={{ col: 4, lg: 10, sm: 12 }}
                 />
@@ -61,7 +65,7 @@ function SituationBlock({ block }) {
             />
           ) : (
             <ProductGrid
-              items={cardItems}
+              items={/** @type {{ content: string }[]} */ (cardItems ?? [])}
               renderItem={(item) => parseHtmlContent(item.content)}
               cols={{ col: 4, lg: 10, sm: 12 }}
             />
@@ -73,8 +77,9 @@ function SituationBlock({ block }) {
     case "comparison": {
       const table = block.table;
       const columnKeys = block.columnKeys;
-      const hasTable = table?.headers && table?.rows?.length > 0;
-      if (!hasTable) {
+      const headers = table?.headers;
+      const rows = table?.rows ?? [];
+      if (!headers || rows.length === 0) {
         return null;
       }
 
@@ -96,8 +101,8 @@ function SituationBlock({ block }) {
                 cols: { col: 10, sm: 12 },
                 content: (
                   <Table
-                    headers={table.headers}
-                    rows={table.rows}
+                    headers={headers}
+                    rows={rows}
                     columnKeys={columnKeys}
                     rowHeaderKey="dimension"
                   />
@@ -110,7 +115,9 @@ function SituationBlock({ block }) {
     }
 
     case "faq": {
-      const faqItems = parseHtmlItems(block.items);
+      const faqItems = parseHtmlItems(
+        /** @type {{ title?: string; content?: string }[]} */ (block.items ?? [])
+      );
 
       return (
         <SituationSection block={block}>
@@ -135,8 +142,12 @@ function SituationBlock({ block }) {
           badge={block.badge}
           title={block.title}
           lede={block.lede}
-          items={Array.isArray(block.items) ? block.items : []}
-          groups={hasGroups(block) ? block.groups : undefined}
+          items={Array.isArray(block.items) ? /** @type {string[]} */ (block.items) : []}
+          groups={
+            hasGroups(block)
+              ? /** @type {{ badge?: string; items?: string[] }[]} */ (block.groups)
+              : undefined
+          }
           background={block.background}
         />
       );
@@ -156,7 +167,9 @@ function SituationBlock({ block }) {
 export default function SituationShell({ namespace }) {
   const { t } = useTranslation([namespace, "common"]);
   const blocks = t("blocks", { returnObjects: true });
-  const blockList = Array.isArray(blocks) ? blocks : [];
+  const blockList = /** @type {import('../situationTypes').SituationBlock[]} */ (
+    Array.isArray(blocks) ? blocks : []
+  );
 
   return (
     <>

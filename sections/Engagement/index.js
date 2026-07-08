@@ -28,7 +28,10 @@ export default function Engagement({ cta, showCta = true }) {
   const includedList = Array.isArray(termsIncluded) ? termsIncluded : [];
   const excludedList = Array.isArray(termsExcluded) ? termsExcluded : [];
   const factsList = Array.isArray(termsFactsItems) ? termsFactsItems : [];
-  const models = t("engagement:models", { returnObjects: true });
+  const models =
+    /** @type {{ title: string; subtitle: string; value: string; content: string }[]} */ (
+      t("engagement:models", { returnObjects: true })
+    );
 
   return (
     <Container

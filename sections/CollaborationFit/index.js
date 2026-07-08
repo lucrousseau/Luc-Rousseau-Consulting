@@ -15,7 +15,9 @@ import { getScheduleCta } from "../../commons/scheduleCta";
 export default function CollaborationFit({ cta, showCta = true }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
-  const items = t("collaboration-fit:items", { returnObjects: true });
+  const items = /** @type {{ content: string }[]} */ (
+    t("collaboration-fit:items", { returnObjects: true })
+  );
 
   return (
     <Container

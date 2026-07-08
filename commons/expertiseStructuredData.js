@@ -38,6 +38,7 @@ export function buildExpertisePageJsonLd({
   });
   breadcrumb["@id"] = `${pageUrl}#breadcrumb`;
 
+  /** @type {Record<string, unknown>} */
   const webPage = {
     "@context": "https://schema.org",
     "@type": "WebPage",

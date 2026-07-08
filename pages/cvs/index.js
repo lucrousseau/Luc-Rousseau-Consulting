@@ -18,6 +18,7 @@ export default function CvsIndexPage() {
   );
 }
 
+/** @param {{ locale: string }} context */
 export const getStaticProps = async ({ locale }) => {
   return {
     props: {

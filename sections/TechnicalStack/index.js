@@ -14,8 +14,8 @@ import SituationGroups from "../situations/SituationGroups";
  * @param {object} props
  * @param {string} [props.id]
  * @param {string} [props.className]
- * @param {string} props.badge
- * @param {string} props.title
+ * @param {string} [props.badge]
+ * @param {string} [props.title]
  * @param {import('react').ReactNode | string} [props.lede]
  * @param {string[]} [props.items]
  * @param {{ badge?: string; items?: string[] }[]} [props.groups]
@@ -41,6 +41,7 @@ export default function TechnicalStack({
 
   const ledeContent = typeof lede === "string" ? parseHtmlContent(lede) : lede;
 
+  /** @param {string[]} list */
   const renderTagRow = (list) => {
     const rowItems = list.map((content) => ({ content }));
     if (rowItems.length === 0) {
@@ -71,7 +72,10 @@ export default function TechnicalStack({
     >
       <SectionIntro badge={badge} title={title} lede={ledeContent} rowStyle={homeIntroRowStyle} />
       {hasTagGroups ? (
-        <SituationGroups groups={groups} renderGroup={(group) => renderTagRow(group.items ?? [])} />
+        <SituationGroups
+          groups={groups}
+          renderGroup={(group) => renderTagRow(/** @type {string[]} */ (group.items ?? []))}
+        />
       ) : (
         renderTagRow(tagItems.map((tag) => tag.content))
       )}

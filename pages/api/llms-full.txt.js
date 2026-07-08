@@ -8,6 +8,10 @@ import { apiRequireGet } from "../../utils/apiRequireGet";
 import { getSiteOrigin } from "../../utils/siteOrigin";
 import { buildLlmsFullTxt } from "../../commons/llmSignal";
 
+/**
+ * @param {import('next').NextApiRequest} req
+ * @param {import('next').NextApiResponse} res
+ */
 export default function handler(req, res) {
   if (!apiRequireGet(req, res)) return;
 

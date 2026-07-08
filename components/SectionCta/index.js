@@ -4,6 +4,11 @@ import Row from "../Layout/Row";
 import Button from "../Button";
 import ContactAlternates from "../ContactAlternates";
 
+/**
+ * @param {import('react').ReactNode | string | false} teaser
+ * @param {string} [teaserClassName]
+ * @returns {import('react').ReactNode | null}
+ */
 function renderTeaser(teaser, teaserClassName) {
   if (teaser == null || teaser === false || teaser === "") {
     return null;
@@ -14,6 +19,26 @@ function renderTeaser(teaser, teaserClassName) {
   return teaser;
 }
 
+/**
+ * @param {object} props
+ * @param {string} [props.trackSection]
+ * @param {string} [props.href]
+ * @param {import('react').ReactNode} [props.label]
+ * @param {import('react').ReactNode | string | false} [props.teaser]
+ * @param {string} [props.teaserClassName]
+ * @param {import('react').ReactNode} [props.beforeCTA]
+ * @param {import('react').CSSProperties} [props.rowStyle]
+ * @param {Record<string, number | string> | null} [props.cols]
+ * @param {string} [props.halign]
+ * @param {string} [props.className]
+ * @param {string} [props.align]
+ * @param {string} [props.variant]
+ * @param {string | null} [props.size]
+ * @param {boolean} [props.showContactAlternates]
+ * @param {boolean} [props.wrapRow]
+ * @param {boolean} [props.wrapButtonInP]
+ * @param {boolean} [props.bare]
+ */
 export default function SectionCta({
   trackSection,
   href,
@@ -59,6 +84,7 @@ export default function SectionCta({
     return ctaContent;
   }
 
+  /** @type {{ content: import('react').ReactNode; cols?: Record<string, number | string> }} */
   const column = { content: ctaContent };
   const resolvedCols = cols === undefined ? { col: 10, sm: 12 } : cols;
   if (resolvedCols != null) {

@@ -73,6 +73,7 @@ export default function Home() {
   );
 }
 
+/** @param {{ locale: string }} context */
 export const getStaticProps = async ({ locale }) => {
   return {
     props: {

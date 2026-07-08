@@ -2,11 +2,27 @@ import Link from "next/link";
 
 import classNames from "classnames";
 
+/**
+ * @param {unknown} href
+ * @returns {boolean}
+ */
 function isExternalHref(href) {
   if (!href || typeof href !== "string") return false;
   return /^(https?:|mailto:|tel:)/i.test(href);
 }
 
+/**
+ * @param {object} props
+ * @param {string} [props.className]
+ * @param {import('react').ElementType} [props.tag]
+ * @param {string} [props.variant]
+ * @param {string | null} [props.size]
+ * @param {import('react').ReactNode} [props.label]
+ * @param {string} [props.href]
+ * @param {string} [props.type]
+ * @param {string} [props.target]
+ * @param {string} [props.trackSection]
+ */
 export default function Button({
   className,
   tag,
@@ -19,7 +35,7 @@ export default function Button({
   trackSection,
 }) {
   const useNativeAnchor = isExternalHref(href);
-  const Tag = tag || (useNativeAnchor ? "a" : Link);
+  const Tag = /** @type {import('react').ElementType} */ (tag || (useNativeAnchor ? "a" : Link));
   const variantClass = variant ? `btn--${variant}` : "";
 
   const handleClick = () => {

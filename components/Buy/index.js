@@ -11,6 +11,21 @@ import SectionCta from "../SectionCta";
  * ContactAlternates (same Calendly path as sections); keeps its own layout because
  * of inline pricing copy alongside the schedule CTA.
  */
+/**
+ * @param {object} props
+ * @param {string} [props.className]
+ * @param {number | null} [props.price]
+ * @param {import('react').ReactNode} [props.legend]
+ * @param {import('react').ReactNode} [props.prefix]
+ * @param {string} [props.label]
+ * @param {string} [props.href]
+ * @param {string | null} [props.size]
+ * @param {string} [props.variant]
+ * @param {string} [props.trackSection]
+ * @param {string} [props.align]
+ * @param {string} [props.halign]
+ * @param {string} [props.valign]
+ */
 export default function Buy({
   className,
   price,

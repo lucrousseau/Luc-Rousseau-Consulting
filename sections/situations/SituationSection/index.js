@@ -7,7 +7,7 @@ import { situationBlockClassName } from "../situationBlockClassName";
 /**
  * Situation page section shell: container + optional SectionIntro + body.
  * @param {object} props
- * @param {object} props.block i18n block (badge, title, lede, type, sectionKey, …)
+ * @param {import('../situationTypes').SituationBlock} props.block i18n block (badge, title, lede, type, sectionKey, …)
  * @param {import('react').ReactNode} [props.children]
  * @param {import('react').ReactNode} [props.introChildren] extra nodes inside SectionIntro
  */

@@ -4,6 +4,19 @@ import { alignments } from "../../../commons/alignments";
 
 import Picture from "../../Picture";
 
+/**
+ * @param {object} props
+ * @param {import('react').ReactNode} [props.children]
+ * @param {string} [props.tag]
+ * @param {string} [props.id]
+ * @param {string} [props.className]
+ * @param {{ src?: string | import('next/image').StaticImageData; width?: number; height?: number; alt?: string }} [props.background]
+ * @param {string} [props.backgroundColor]
+ * @param {import('react').CSSProperties} [props.style]
+ * @param {string} [props.align]
+ * @param {string} [props.halign]
+ * @param {string} [props.valign]
+ */
 export default function Container({
   children,
   tag = "section",
@@ -14,7 +27,7 @@ export default function Container({
   style,
   ...props
 }) {
-  const Tag = tag;
+  const Tag = /** @type {import('react').ElementType} */ (tag);
   const alignmentsClass = alignments({ prefix: "container", props });
   const tagProps = {
     className: classNames("container", className, alignmentsClass),

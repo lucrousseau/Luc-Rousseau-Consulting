@@ -2,6 +2,18 @@ import Row from "../Layout/Row";
 
 const DEFAULT_COLS = { col: 11, xl: 12, sm: 12 };
 
+/**
+ * @param {object} props
+ * @param {import('react').ReactNode} [props.badge]
+ * @param {import('react').ReactNode} [props.title]
+ * @param {import('react').ReactNode} [props.lede]
+ * @param {import('react').ReactNode} [props.children]
+ * @param {Record<string, number | string>} [props.cols]
+ * @param {import('react').CSSProperties} [props.rowStyle]
+ * @param {string} [props.halign]
+ * @param {string} [props.titleClassName]
+ * @param {"h1" | "h2"} [props.titleAs]
+ */
 export default function SectionIntro({
   badge,
   title,

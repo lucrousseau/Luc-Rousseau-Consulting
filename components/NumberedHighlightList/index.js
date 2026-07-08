@@ -13,8 +13,8 @@ const DEFAULT_COLS = { col: 10, sm: 12 };
  * @param {{ title: string; content?: string | import('react').ReactNode }[]} props.items
  * @param {number} [props.startIndex=1]
  * @param {string} [props.className]
- * @param {object} [props.cols]
- * @param {object} [props.rowStyle]
+ * @param {Record<string, number | string>} [props.cols]
+ * @param {import('react').CSSProperties} [props.rowStyle]
  * @param {boolean} [props.wrapRow=true]
  */
 export default function NumberedHighlightList({

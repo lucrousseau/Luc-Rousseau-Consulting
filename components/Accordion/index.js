@@ -4,12 +4,25 @@ import Image from "next/image";
 
 import { alignments } from "../../commons/alignments";
 
+/**
+ * @param {object} props
+ * @param {string} [props.className]
+ * @param {{ title?: string; content?: import('react').ReactNode; logo?: string | import('next/image').StaticImageData; emoji?: string }[]} props.items
+ * @param {(state: { open: boolean }) => void} [props.callback]
+ * @param {number | null} [props.activeIndex]
+ * @param {string} [props.align]
+ * @param {string} [props.halign]
+ * @param {string} [props.valign]
+ */
 export default function Accordion({ className, items, callback = () => {}, ...props }) {
-  const [activeIndex, setActiveIndex] = useState(null || props.activeIndex);
+  const [activeIndex, setActiveIndex] = useState(
+    /** @type {number | null} */ (props.activeIndex ?? null)
+  );
   const alignmentsClass = alignments({ props });
-  const accordionRef = useRef();
-  const accordionRefs = useRef([]);
+  const accordionRef = useRef(/** @type {HTMLDivElement | null} */ (null));
+  const accordionRefs = useRef(/** @type {(HTMLDivElement | null)[]} */ ([]));
 
+  /** @param {number} index */
   const toggleItem = (index) => {
     const getActiveIndex = activeIndex === index ? null : index;
     const open = getActiveIndex !== null;

@@ -30,10 +30,14 @@ const TABLE_COLUMN_KEYS = [
 export default function ProductEngineerDefinition({ cta, showCta = true }) {
   const { t } = useTranslation(["product-engineer", "common"]);
   const scheduleCta = getScheduleCta(t);
-  const table = t("product-engineer:table", { returnObjects: true });
+  const table =
+    /** @type {{ headers?: Record<string, string>; rows?: Record<string, import('react').ReactNode>[] }} */ (
+      t("product-engineer:table", { returnObjects: true })
+    );
 
-  const hasTable = table?.headers && table?.rows?.length > 0;
-  const { headers, rows } = hasTable ? table : { headers: null, rows: [] };
+  const headers = table?.headers;
+  const rows = table?.rows ?? [];
+  const hasTable = Boolean(headers) && rows.length > 0;
 
   return (
     <Container
@@ -52,7 +56,7 @@ export default function ProductEngineerDefinition({ cta, showCta = true }) {
           parseHtmlContent(t("product-engineer:paragraphOpening"))}
         {parseHtmlContent(t("product-engineer:paragraph"))}
       </SectionIntro>
-      {hasTable && (
+      {hasTable && headers && (
         <>
           <Row
             halign={"center"}

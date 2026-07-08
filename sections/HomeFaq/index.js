@@ -21,7 +21,9 @@ export default function HomeFaq({ cta, showCta = true }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
 
-  const items = t("faq:items", { returnObjects: true }).map((item) => ({
+  const items = /** @type {{ title: string; content: string }[]} */ (
+    t("faq:items", { returnObjects: true })
+  ).map((item) => ({
     title: item.title,
     content: parseHtmlContent(item.content),
   }));

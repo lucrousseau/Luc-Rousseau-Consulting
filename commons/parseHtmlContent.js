@@ -5,12 +5,12 @@ import i18n from "i18next";
 import { isExternalHref, resolveInternalLinkPath } from "./siteRoutes";
 
 /**
- * @param {string | undefined} existing
+ * @param {unknown} existing
  * @param {string} extra
  * @returns {string}
  */
 function mergeClassName(existing, extra) {
-  return [existing, extra].filter(Boolean).join(" ");
+  return [typeof existing === "string" ? existing : "", extra].filter(Boolean).join(" ");
 }
 
 /**
@@ -46,7 +46,11 @@ export function parseHtmlContent(content, options = {}) {
       const href = domNode.attribs?.href;
       const props = attributesToProps(domNode.attribs);
       const className = mergeClassName(props.className, "text-link");
-      const children = domToReact(domNode.children);
+      const children = domToReact(
+        /** @type {import("html-react-parser").DOMNode[]} */ (
+          /** @type {unknown} */ (domNode.children)
+        )
+      );
 
       if (isExternalHref(href)) {
         return (

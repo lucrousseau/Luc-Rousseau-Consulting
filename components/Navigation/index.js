@@ -4,8 +4,14 @@ import classNames from "classnames";
 import { alignments } from "../../commons/alignments";
 import Row from "../Layout/Row";
 
-export default function Navigation({ ...props }) {
-  const { navigation = {} } = props;
+/**
+ * @param {object} props
+ * @param {{ href: string; label: import('react').ReactNode }[]} [props.navigation]
+ * @param {string} [props.align]
+ * @param {string} [props.halign]
+ * @param {string} [props.valign]
+ */
+export default function Navigation({ navigation = [], ...props }) {
   const alignmentsClass = alignments({ props });
 
   return (

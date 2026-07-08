@@ -7,7 +7,7 @@ const { SITUATIONS } = require("./situationsManifest");
 
 const ALLOWED_LOCALES = new Set(["fr", "en"]);
 
-/** @type {ReadonlyMap<string, Record<string, unknown>>} */
+/** @type {Map<string, Record<string, unknown>>} */
 const namespaceJsonByLocale = new Map();
 
 /**
@@ -89,7 +89,8 @@ function loadSituationNamespaceJson(locale, namespace) {
 }
 
 /**
- * @param {string} title
+ * @param {unknown} title
+ * @returns {string}
  */
 function stripBrandSuffix(title) {
   if (typeof title !== "string") {
@@ -103,7 +104,10 @@ function stripBrandSuffix(title) {
  * @param {string} namespace
  */
 function getNamespaceSeo(locale, namespace) {
-  const data = loadSituationNamespaceJson(locale, namespace);
+  const data =
+    /** @type {{ hero?: { title?: string; quote?: string }; seoTitle?: string; seoDescription?: string }} */ (
+      loadSituationNamespaceJson(locale, namespace)
+    );
   return {
     headline: data.hero?.title ?? stripBrandSuffix(data.seoTitle),
     voiceQuote: data.hero?.quote ?? "",

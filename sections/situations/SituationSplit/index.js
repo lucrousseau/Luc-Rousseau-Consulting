@@ -5,7 +5,8 @@ import { homeIntroRowStyle } from "../../../commons/pageRowSpacing";
 
 /**
  * Two-column situation block (engagement-style terms layout).
- * @param {object} props.block i18n split block (title, intro, columnsLabel, panels)
+ * @param {object} props
+ * @param {import('../situationTypes').SituationBlock} props.block i18n split block (title, intro, columnsLabel, panels)
  */
 export default function SituationSplit({ block }) {
   const panels = block?.panels;

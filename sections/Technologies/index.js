@@ -18,7 +18,7 @@ export default function Technologies({ backgroundColor, cta, showCta = true }) {
       badge={t("technologies:badge")}
       title={t("technologies:title")}
       lede={parseHtmlContent(t("technologies:summary"))}
-      items={t("technologies:items", { returnObjects: true })}
+      items={/** @type {string[]} */ (t("technologies:items", { returnObjects: true }))}
       footerCta={
         showCta
           ? {
@@ -26,7 +26,7 @@ export default function Technologies({ backgroundColor, cta, showCta = true }) {
               href: cta?.link ?? scheduleCta.link,
               trackSection: "technologies",
             }
-          : null
+          : undefined
       }
       backgroundColor={backgroundColor}
     />

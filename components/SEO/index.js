@@ -11,6 +11,17 @@ const SITE_NAME = "Luc Rousseau";
 const PERSON_ID_SUFFIX = "#person";
 const SERVICE_ID_SUFFIX = "#service";
 
+/**
+ * @param {object} props
+ * @param {string} props.title
+ * @param {string} [props.description]
+ * @param {string} [props.image]
+ * @param {string[]} [props.sameAs]
+ * @param {object[]} [props.jsonLd]
+ * @param {string} [props.path]
+ * @param {{ fr?: string; en?: string; default?: string }} [props.hreflangPaths]
+ * @param {boolean} [props.noindex]
+ */
 const SEO = ({
   title,
   description,
@@ -23,8 +34,9 @@ const SEO = ({
 }) => {
   const base = getSiteOrigin();
   const router = useRouter();
-  const { locale, pathname, asPath, defaultLocale } = router;
+  const { pathname, asPath, defaultLocale } = router;
   const defaultLoc = defaultLocale ?? "fr";
+  const locale = router.locale ?? defaultLoc;
   const pathOnly =
     path ??
     (pathname && !pathname.includes("[")

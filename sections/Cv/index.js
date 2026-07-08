@@ -36,16 +36,32 @@ export default function Cv({ variant = "engineer" }) {
   const { t } = useTranslation(["cv", pos, "common"]);
 
   // Positioning copy (variant-specific)
-  const highlights = t(`${pos}:highlights.items`, { returnObjects: true });
-  const strengths = t(`${pos}:strengths.items`, { returnObjects: true });
-  const experience = t(`${pos}:experience.items`, { returnObjects: true });
-  const skillGroups = t(`${pos}:skills.groups`, { returnObjects: true });
+  const highlights = /** @type {{ value: string; label: string }[]} */ (
+    t(`${pos}:highlights.items`, { returnObjects: true })
+  );
+  const strengths = /** @type {{ title: string; content: string }[]} */ (
+    t(`${pos}:strengths.items`, { returnObjects: true })
+  );
+  const experience =
+    /** @type {{ role: string; company: string; companyHref?: string; period: string; location?: string; summary?: string; progression?: string; bullets?: string[]; stack?: string }[]} */ (
+      t(`${pos}:experience.items`, { returnObjects: true })
+    );
+  const skillGroups = /** @type {{ title: string; items: string[] }[]} */ (
+    t(`${pos}:skills.groups`, { returnObjects: true })
+  );
 
   // Shared identity copy (always from base `cv`)
-  const contactItems = t("cv:contact.items", { returnObjects: true });
-  const earlier = t("cv:earlier.items", { returnObjects: true });
-  const languages = t("cv:languages.items", { returnObjects: true });
-  const awards = t("cv:awards.items", { returnObjects: true });
+  const contactItems =
+    /** @type {{ label: string; href: string; value: string; note?: string }[]} */ (
+      t("cv:contact.items", { returnObjects: true })
+    );
+  const earlier = /** @type {{ role: string; company: string; period: string }[]} */ (
+    t("cv:earlier.items", { returnObjects: true })
+  );
+  const languages = /** @type {{ name: string; level: string }[]} */ (
+    t("cv:languages.items", { returnObjects: true })
+  );
+  const awards = /** @type {string[]} */ (t("cv:awards.items", { returnObjects: true }));
   const educationContent = t("cv:education.content", { defaultValue: "" });
   const recommendationQuote = t("cv:recommendation.quote", { defaultValue: "" });
   const recommendationAuthor = t("cv:recommendation.author", { defaultValue: "" });

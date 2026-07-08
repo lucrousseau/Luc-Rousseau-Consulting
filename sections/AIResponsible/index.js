@@ -20,7 +20,9 @@ import { getScheduleCta } from "../../commons/scheduleCta";
 export default function AIResponsible({ cta, showCta = true }) {
   const { t } = useTranslation();
   const scheduleCta = getScheduleCta(t);
-  const items = t("ai-responsible:items", { returnObjects: true });
+  const items = /** @type {{ content: string }[]} */ (
+    t("ai-responsible:items", { returnObjects: true })
+  );
 
   return (
     <Container

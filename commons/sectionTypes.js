@@ -12,8 +12,7 @@
  * @property {object} [ctaRowStyle] - Row style override for SectionCta (reserved)
  * @property {string} [className] - Extra class on section Container (reserved)
  *
- * @typedef {SectionWithCtaProps & object} SectionWithBackgroundProps
- * @property {string} [backgroundColor] - Container background color
+ * @typedef {SectionWithCtaProps & { backgroundColor?: string }} SectionWithBackgroundProps
  */
 
 export {};
