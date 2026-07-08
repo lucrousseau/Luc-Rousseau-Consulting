@@ -5,7 +5,7 @@
     "scss/at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": ["use", "forward", "tailwind", "apply", "layer"]
+        "ignoreAtRules": ["use", "forward"]
       }
     ],
     "selector-class-pattern": null,

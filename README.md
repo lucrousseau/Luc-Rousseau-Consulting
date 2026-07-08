@@ -1,6 +1,18 @@
 # lucrousseau (frontend)
 
-Site Next.js (Pages Router) avec i18n (en/fr), SCSS et Tailwind.
+Site Next.js 16 (Pages Router) avec i18n (en/fr) et architecture SCSS modulaire.
+
+## Stack (juillet 2026)
+
+| Outil             | Version                          |
+| ----------------- | -------------------------------- |
+| Next.js           | 16.2.x                           |
+| React             | 19.2.x                           |
+| TypeScript        | 6.0.x                            |
+| ESLint            | 9.x (flat config)                |
+| html-react-parser | 6.x                              |
+| Styles            | SCSS modulaire (pas de Tailwind) |
+| Tests             | Jest 30 + Testing Library        |
 
 ## Prérequis
 

@@ -6,6 +6,8 @@ User-facing HTML is rendered with `parseHtmlContent` (`commons/parseHtmlContent.
 
 External links get `rel="noopener noreferrer"` and `target="_blank"` by default.
 
+Situation and expertise SEO JSON is loaded from static locale files allowlisted in `commons/situationSeoMeta.js` (manifest-driven `require()` paths, no runtime path assembly).
+
 ## HTTP headers
 
 Security headers (including CSP) are defined in `lib/securityHeaders.mjs` and applied in `next.config.mjs`. Home routes `/` and `/en` include the same headers plus `Cache-Control`.
@@ -17,8 +19,10 @@ Security headers (including CSP) are defined in `lib/securityHeaders.mjs` and ap
 
 ## Dependencies
 
-Run `npm run audit` and `npm run audit:fix` regularly. Keep `next` at a patched 15.5.x release.
+Run `npm run audit` and `npm run audit:fix` regularly. Keep `next` on a patched 16.2.x release (or newer stable).
+
+Known transitive advisory: Next.js may bundle PostCSS below 8.5.10 until a patched Next release; do not run `npm audit fix --force` (it can downgrade Next).
 
 ## ESLint
 
-`eslint-plugin-security` is enabled via `.eslintrc.json`.
+`eslint-plugin-security` is enabled via `eslint.config.mjs` (flat config). Test files are excluded from the noisiest security rules; production code in `commons/` is kept clean.
