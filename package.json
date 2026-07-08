@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "dev:clean": "rm -rf .next && next dev",
-    "build": "next build",
+    "build": "npm run typecheck && next build",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -14,6 +14,7 @@
     "stylelint": "stylelint \"**/*.scss\" --fix",
     "stylelint:check": "stylelint \"**/*.scss\"",
     "lint:scss-functions": "node scripts/check-scss-function-names.js",
+    "typecheck": "tsc -p tsconfig.typecheck.json",
     "fix": "npm run format && npm run lint:fix && npm run stylelint",
     "audit": "npm audit",
     "audit:fix": "npm audit fix",
@@ -21,7 +22,7 @@
     "analyze": "ANALYZE=true next build",
     "test": "jest",
     "test:watch": "jest --watch",
-    "validate": "npm run lint && npm run format:check && npm run stylelint:check && npm run lint:scss-functions && npm run test",
+    "validate": "npm run lint && npm run format:check && npm run stylelint:check && npm run lint:scss-functions && npm run typecheck && npm run test",
     "prepare": "husky"
   },
   "dependencies": {
