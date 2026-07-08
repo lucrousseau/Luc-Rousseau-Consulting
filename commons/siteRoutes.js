@@ -25,6 +25,16 @@ export const ROUTES = Object.freeze({
   home: "/",
   situationsHub: "/situations",
   services: "/services",
+  /** Private CV hub (noindex, omitted from the sitemap). */
+  cvHub: "/cvs",
+  /** Product Engineer CV variant. */
+  cv: "/cvs/cv-engineer",
+  cvEngineer: "/cvs/cv-engineer",
+  cvPm: "/cvs/cv-pm",
+  cvDev: "/cvs/cv-dev",
+  cvReact: "/cvs/cv-react",
+  cvTechLead: "/cvs/cv-techlead",
+  cvFounding: "/cvs/cv-founding",
   expertiseBase: "/expertise",
 });
 

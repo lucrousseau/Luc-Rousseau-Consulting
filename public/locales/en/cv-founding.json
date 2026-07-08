@@ -1,0 +1,173 @@
+{
+  "seoTitle": "Luc Rousseau | Founding Engineer resume",
+  "seoDescription": "Luc Rousseau's resume as a Founding Engineer: product, architecture and end-to-end delivery for early-stage startups. 26 years of engineering, studio and technical leadership. Quebec and remote.",
+  "role": "Founding Engineer",
+  "tagline": "First or second senior hire (pre-seed to Series A): product, architecture and delivery, from roadmap to code.",
+  "summary": {
+    "title": "Profile",
+    "content": "<p><strong>Founding Engineer</strong>: I build the product end to end while the team is still small (pre-seed to Series A). Architecture, prioritization, code, and a bit of design. One senior person owning the thread through delivery.</p><p>26 years of engineering, a studio I ran (Strong), mandates where I carried both tech and product (Milesopedia, nesto, comparemortgages). Self-taught, I ramp on stacks fast and decide fast. What I'm looking for: an early-stage where that breadth is an advantage, not a blur.</p>"
+  },
+  "highlights": {
+    "items": [
+      { "value": "0 → 1", "label": "from brief to product in production" },
+      { "value": "Pre-seed → A", "label": "small team, broad scope, fast shipping" },
+      { "value": "Product + tech", "label": "prioritize, architect, ship" },
+      { "value": "Studio", "label": "president and lead, 6 years" }
+    ]
+  },
+  "strengths": {
+    "title": "What I bring",
+    "items": [
+      {
+        "title": "End-to-end ownership",
+        "content": "From the \"why\" to \"shipped\": prioritization, architecture, code and delivery, no handoff."
+      },
+      {
+        "title": "Realistic speed",
+        "content": "Pragmatic calls, controlled debt, scope that holds. Ship fast without building a monster."
+      },
+      {
+        "title": "Useful breadth",
+        "content": "Product, front, back, a bit of design: I fill the gaps while the team is small."
+      },
+      {
+        "title": "Studio founder",
+        "content": "6 years running Strong: clients, delivery, team. I know what it costs to build."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "role": "Founding Engineer / Product Engineer · independent",
+        "company": "Luc Rousseau Consulting",
+        "companyHref": "https://lucrousseau.com",
+        "period": "Dec. 2021 – present",
+        "location": "Quebec and remote",
+        "summary": "Technical and product partner for growing and early-stage teams: clarity, architecture and delivery.",
+        "bullets": [
+          "Own the product from roadmap to code: prioritization, architecture, delivery.",
+          "Decoupled architectures (React/Next.js, Laravel, APIs, headless) sized for a small team.",
+          "Cut debt and stabilize velocity without overengineering.",
+          "A bit of design and a lot of pragmatism: ship what matters."
+        ],
+        "stack": "React, Next.js, TypeScript, Laravel, PHP, REST APIs, CI/CD, Git"
+      },
+      {
+        "role": "Product Lead",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Oct. 2025 – Apr. 2026",
+        "location": "Montreal, QC · remote",
+        "summary": "Multi-brand network; from code to product leadership.",
+        "bullets": [
+          "Prioritize, align content and engineering, ship with a small team (3 devs, 1 DevOps consultant).",
+          "Steered strategic projects aligned with long-term goals.",
+          "Cleared friction so a small team could move fast."
+        ]
+      },
+      {
+        "role": "Product Manager",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Jan. 2025 – Oct. 2025",
+        "location": "Montreal, QC · remote",
+        "summary": "Cross-team coordination on the headless program.",
+        "bullets": [
+          "Smooth collaboration processes; identified and resolved friction points.",
+          "Effective delivery with measurable value for users and stakeholders."
+        ]
+      },
+      {
+        "role": "Senior full stack developer",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Jul. 2024 – Sep. 2025",
+        "location": "Montreal, QC · remote",
+        "summary": "0 → 1: request-management program on a headless CMS, multi-brand.",
+        "bullets": [
+          "Built processes and systems on a headless CMS; user-data management.",
+          "Real-time React dashboards deployed across the multi-brand network.",
+          "Integration and deployment into existing ecosystems; end-to-end delivery."
+        ],
+        "stack": "React, headless WordPress, PHP, REST APIs, CI/CD"
+      },
+      {
+        "role": "Product / Tech Lead",
+        "company": "comparemortgages.ca",
+        "period": "Nov. 2022 – Apr. 2024",
+        "location": "Montreal, QC · remote",
+        "summary": "Mortgage analysis and comparison platform (0 → product).",
+        "bullets": [
+          "System architecture and phased planning through delivery.",
+          "Coordination across design, back-end and front-end; UI prototypes with designers.",
+          "A/B and data tooling to iterate fast after launch."
+        ],
+        "stack": "React, PHP, Laravel, GraphQL, REST, A/B testing"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "nesto",
+        "companyHref": "https://www.linkedin.com/company/nesto-ca",
+        "period": "Dec. 2018 – Apr. 2024",
+        "location": "Montreal, QC · remote",
+        "summary": "Online mortgage lender, Canadian fintech ($302M Series E, $1.47B valuation).",
+        "bullets": [
+          "Centralized architecture shared across every project; adaptable grid per initiative.",
+          "Mentoring of one developer; recruiting, code reviews and technical guidance.",
+          "Always hands-on on critical code; monitoring and continuous optimization."
+        ],
+        "stack": "React, Vue.js, PHP, Laravel, GraphQL, REST, architecture"
+      },
+      {
+        "role": "President and technical lead",
+        "company": "Strong développement",
+        "period": "Jan. 2015 – Feb. 2021",
+        "location": "Quebec",
+        "summary": "Custom web development studio: clients, team, delivery.",
+        "bullets": [
+          "Built and ran the studio for 6 years: acquisition, delivery, quality.",
+          "Full stack development (React, Laravel, PHP) and technical direction."
+        ]
+      },
+      {
+        "role": "Freelance web developer",
+        "company": "Luc Rousseau",
+        "period": "May 2007 – Jan. 2015",
+        "location": "Quebec",
+        "summary": "Custom websites and web applications for SMEs and agencies.",
+        "bullets": []
+      },
+      {
+        "role": "Art director, head of the interactive department",
+        "company": "Hatem+D",
+        "period": "Jan. 2005 – May 2007",
+        "location": "Quebec",
+        "summary": "Branding and integrated-concept agency.",
+        "bullets": ["Creative direction and ownership of the interactive department."]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "groups": [
+      {
+        "title": "Product and ownership",
+        "items": ["Prioritization", "Light discovery", "Roadmap", "0 → 1 delivery", "Trade-offs"]
+      },
+      {
+        "title": "Engineering",
+        "items": ["React", "Next.js", "TypeScript", "PHP", "Laravel", "REST APIs", "Architecture"]
+      },
+      {
+        "title": "Delivery",
+        "items": ["CI/CD", "Git", "Performance", "Technical debt", "Scalability"]
+      },
+      {
+        "title": "Startup",
+        "items": ["Breadth", "Technical hiring", "Mentoring", "Basic design", "Client"]
+      }
+    ]
+  }
+}

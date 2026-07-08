@@ -1,0 +1,190 @@
+{
+  "seoTitle": "Luc Rousseau | Tech Lead / Lead developer resume",
+  "seoDescription": "Luc Rousseau's resume as a Tech Lead and lead developer: architecture, mentoring, hiring, code reviews and delivery, without leaving the keyboard. 26 years of engineering. Quebec and remote.",
+  "role": "Tech Lead · Lead developer",
+  "tagline": "A technical leader who still codes: architecture, quality, mentoring and delivery. I align a team around a solid technical foundation.",
+  "summary": {
+    "title": "Profile",
+    "content": "<p><strong>Tech Lead and lead developer</strong> with 26 years of web engineering, I lead through the technology: I architect reusable foundations, set the quality bar and mentor developers, without ever stopping shipping myself.</p><p>At nesto I laid down a centralized architecture serving as a shared foundation for every project, designed technical-skills assessments, and ran hiring and code reviews. Code and examples on GitHub (projects being published); this site (Next.js/React) as a live proof point.</p>"
+  },
+  "highlights": {
+    "items": [
+      { "value": "Tech Lead", "label": "architecture, reviews, mentoring" },
+      { "value": "Architecture", "label": "centralized, reusable foundations" },
+      { "value": "Team", "label": "hiring, technical assessments, mentoring" },
+      { "value": "Hands-on", "label": "I still ship code" }
+    ]
+  },
+  "strengths": {
+    "title": "What I bring",
+    "items": [
+      {
+        "title": "Architecture and foundations",
+        "content": "Centralized, reusable technical foundations; build-vs-buy calls and technical-debt trade-offs."
+      },
+      {
+        "title": "Quality and delivery",
+        "content": "Code reviews, standards, CI/CD and performance; a quality bar that holds under pressure."
+      },
+      {
+        "title": "Team leadership",
+        "content": "Mentoring, hiring, design of skills assessments, growing the developers around me."
+      },
+      {
+        "title": "Still technical",
+        "content": "I still code (React, PHP/Laravel, APIs). I do not lead from an ivory tower."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "role": "Tech Lead · independent",
+        "company": "Luc Rousseau Consulting",
+        "companyHref": "https://lucrousseau.com",
+        "period": "Dec. 2021 – present",
+        "location": "Quebec and remote",
+        "summary": "Technical leadership for growing teams: architecture, quality and mentoring.",
+        "bullets": [
+          "Architecture of decoupled, reusable applications; structuring technical decisions.",
+          "Set up standards, code reviews and CI/CD pipelines.",
+          "Mentoring and upskilling of developers.",
+          "Always hands-on: React, Next.js, PHP/Laravel, REST APIs."
+        ],
+        "stack": "React, Next.js, Laravel, PHP, TypeScript, REST APIs, CI/CD, Git"
+      },
+      {
+        "role": "Technical lead, then Product Lead",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Oct. 2025 – Apr. 2026",
+        "location": "Montreal, QC · remote",
+        "summary": "Multi-brand network; technical and product leadership.",
+        "bullets": [
+          "Aligned content, management and development (3 developers, 1 DevOps consultant, staff on parallel projects).",
+          "Smoothed collaboration processes; resolved friction points.",
+          "Steered key technical initiatives, aligned with the organization's goals."
+        ],
+        "stack": "React, REST APIs, front-end architecture, CI/CD"
+      },
+      {
+        "role": "Product Manager",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Jan. 2025 – Oct. 2025",
+        "location": "Montreal, QC · remote",
+        "summary": "Cross-team coordination and delivery on the headless program.",
+        "bullets": [
+          "Collaboration processes across editorial, management and development teams.",
+          "Oversaw deliverables: deadlines, quality and measurable value.",
+          "Prioritized key initiatives for the organization."
+        ]
+      },
+      {
+        "role": "Senior developer, then technical lead",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Jul. 2024 – Sep. 2025",
+        "location": "Montreal, QC · remote",
+        "summary": "Request-management program on a headless CMS, multi-subdomain.",
+        "bullets": [
+          "Architecture and implementation of processes on a headless CMS; user-data management.",
+          "Real-time React dashboards deployed across the network's subdomains.",
+          "Integration, deployment and maintenance; shared technical foundation for the dev team."
+        ],
+        "stack": "Headless WordPress, React, PHP, REST APIs, CI/CD"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "comparemortgages.ca",
+        "period": "Nov. 2022 – Apr. 2024",
+        "location": "Montreal, QC · remote",
+        "summary": "Mortgage analysis and comparison platform.",
+        "bullets": [
+          "System architecture and phased planning (milestones, deliverables, timelines).",
+          "End-to-end technical coordination: wireframes, design, back-end, front-end.",
+          "A/B testing and data-analysis tooling; UI prototypes with designers."
+        ],
+        "stack": "React, Vue.js, Next.js, PHP, Laravel, GraphQL, REST, Docker, Tailwind"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "nesto",
+        "companyHref": "https://www.linkedin.com/company/nesto-ca",
+        "period": "Dec. 2018 – Apr. 2024",
+        "location": "Montreal, QC · remote",
+        "summary": "Online mortgage lender, Canadian fintech ($302M Series E, $1.47B valuation).",
+        "bullets": [
+          "Centralized system architecture, shared foundation for every initiative: consistency, efficiency, maintenance.",
+          "Adaptable grid per project; technical guidance and mentoring of one developer.",
+          "Recruiting and technical-skills assessments; code reviews, monitoring and continuous optimization."
+        ],
+        "stack": "React, Vue.js, Next.js, PHP, Laravel, GraphQL, REST, WordPress, Webpack, Docker, Git"
+      },
+      {
+        "role": "President and technical lead",
+        "company": "Strong développement",
+        "period": "Jan. 2015 – Feb. 2021",
+        "location": "Quebec",
+        "summary": "Custom web development studio.",
+        "bullets": [
+          "Technical direction and delivery; leadership of the development team.",
+          "PHP/MySQL, JavaScript ES6+, React, Laravel, Git."
+        ]
+      },
+      {
+        "role": "Freelance web developer",
+        "company": "Luc Rousseau",
+        "period": "May 2007 – Jan. 2015",
+        "location": "Quebec",
+        "summary": "Custom websites and web applications for SMEs and agencies.",
+        "bullets": []
+      },
+      {
+        "role": "Art director, head of the interactive department",
+        "company": "Hatem+D",
+        "period": "Jan. 2005 – May 2007",
+        "location": "Quebec",
+        "summary": "Branding and integrated-concept agency.",
+        "bullets": ["Creative direction and ownership of the interactive department."]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "groups": [
+      {
+        "title": "Technical leadership",
+        "items": [
+          "Software architecture",
+          "Code reviews",
+          "Mentoring",
+          "Hiring and assessment",
+          "Standards and quality",
+          "Technical roadmap"
+        ]
+      },
+      {
+        "title": "Development",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "PHP",
+          "Laravel",
+          "REST APIs",
+          "JavaScript ES6+"
+        ]
+      },
+      {
+        "title": "Delivery",
+        "items": ["CI/CD", "Git", "Performance", "A/B testing", "Scalability"]
+      },
+      {
+        "title": "Product and methods",
+        "items": ["Cross-team coordination", "Agile", "Prioritization", "Delivery"]
+      }
+    ]
+  }
+}

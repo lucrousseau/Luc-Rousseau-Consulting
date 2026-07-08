@@ -1,0 +1,179 @@
+{
+  "seoTitle": "Luc Rousseau | CV Founding Engineer",
+  "seoDescription": "CV de Luc Rousseau, Founding Engineer : produit, architecture et livraison de bout en bout pour startups early-stage. 26 ans d'ingénierie, studio et leadership technique. Québec et à distance.",
+  "role": "Founding Engineer",
+  "tagline": "Première ou deuxième senior hire (pre-seed à série A) : produit, architecture et livraison, de la feuille de route au code.",
+  "summary": {
+    "title": "Profil",
+    "content": "<p><strong>Founding Engineer</strong> : je construis le produit de bout en bout quand l'équipe est encore petite (pre-seed à série A). Architecture, priorisation, code, et un peu de design. Une seule personne senior qui porte le fil jusqu'à la livraison.</p><p>26 ans d'ingénierie, un studio que j'ai dirigé (Strong), des mandats où j'ai porté à la fois la technique et le produit (Milesopedia, nesto, comparemortgages). Autodidacte, je monte vite en stack et je décide vite. Ce que je cherche : une early-stage où ma largeur est un avantage, pas un flou.</p>"
+  },
+  "highlights": {
+    "items": [
+      { "value": "0 → 1", "label": "du brief au produit en production" },
+      { "value": "Pre-seed → A", "label": "équipe petite, scope large, livraison rapide" },
+      { "value": "Produit + tech", "label": "prioriser, architecturer, livrer" },
+      { "value": "Studio", "label": "président et lead, 6 ans" }
+    ]
+  },
+  "strengths": {
+    "title": "Ce que j'apporte",
+    "items": [
+      {
+        "title": "Responsabilité de bout en bout",
+        "content": "Du « pourquoi » au « déployé » : priorisation, architecture, code et livraison, sans relai."
+      },
+      {
+        "title": "Vitesse réaliste",
+        "content": "Décisions pragmatiques, dette contrôlée, scope qui tient. Livrer vite sans créer un monstre."
+      },
+      {
+        "title": "Largeur utile",
+        "content": "Produit, front, back, un peu de design : je comble les trous tant que l'équipe est petite."
+      },
+      {
+        "title": "Fondateur de studio",
+        "content": "6 ans à diriger Strong : clients, livraison, équipe. Je sais ce que ça coûte de construire."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Expérience",
+    "items": [
+      {
+        "role": "Founding Engineer / Product Engineer · indépendant",
+        "company": "Luc Rousseau Consulting",
+        "companyHref": "https://lucrousseau.com",
+        "period": "Déc. 2021 – aujourd'hui",
+        "location": "Québec et à distance",
+        "summary": "Partenaire technique et produit pour équipes en croissance et early-stage : clarté, architecture et livraison.",
+        "bullets": [
+          "Porter le produit de la feuille de route au code : priorisation, architecture, livraison.",
+          "Architectures découplées (React/Next.js, Laravel, APIs, headless) adaptées à une petite équipe.",
+          "Réduire la dette et stabiliser la vélocité sans suringénierie.",
+          "Un peu de design et beaucoup de pragmatisme : livrer ce qui compte."
+        ],
+        "stack": "React, Next.js, TypeScript, Laravel, PHP, APIs REST, CI/CD, Git"
+      },
+      {
+        "role": "Product Lead",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Oct. 2025 – avr. 2026",
+        "location": "Montréal, QC · à distance",
+        "summary": "Réseau multi-marques ; passage du code au leadership produit.",
+        "bullets": [
+          "Prioriser, aligner contenu et ingénierie, livrer avec une équipe réduite (3 devs, 1 DevOps consultant).",
+          "Pilotage de projets stratégiques alignés sur les objectifs long terme.",
+          "Résolution des frictions pour qu'une petite équipe avance vite."
+        ]
+      },
+      {
+        "role": "Product Manager",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Janv. 2025 – oct. 2025",
+        "location": "Montréal, QC · à distance",
+        "summary": "Coordination inter-équipes sur le programme headless.",
+        "bullets": [
+          "Processus de collaboration fluides ; points de friction identifiés et résolus.",
+          "Livraison efficace avec valeur mesurable pour utilisateurs et parties prenantes."
+        ]
+      },
+      {
+        "role": "Développeur full stack senior",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Juil. 2024 – sept. 2025",
+        "location": "Montréal, QC · à distance",
+        "summary": "0 → 1 : programme de gestion des demandes sur CMS headless, multi-marques.",
+        "bullets": [
+          "Construction de processus et systèmes sur CMS headless ; gestion des données utilisateurs.",
+          "Tableaux de bord React en temps réel, déployés sur l'ensemble du réseau multi-marques.",
+          "Intégration et déploiement dans des écosystèmes existants ; livraison bout en bout."
+        ],
+        "stack": "React, WordPress headless, PHP, APIs REST, CI/CD"
+      },
+      {
+        "role": "Product / Tech Lead",
+        "company": "comparemortgages.ca",
+        "period": "Nov. 2022 – avr. 2024",
+        "location": "Montréal, QC · à distance",
+        "summary": "Plateforme d'analyse et de comparaison de prêts hypothécaires (0 → produit).",
+        "bullets": [
+          "Architecture système et planification par phases jusqu'à la livraison.",
+          "Coordination design, back-end et front-end ; prototypes UI avec les designers.",
+          "Outils A/B et data pour itérer vite après le lancement."
+        ],
+        "stack": "React, PHP, Laravel, GraphQL, REST, tests A/B"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "nesto",
+        "companyHref": "https://www.linkedin.com/company/nesto-ca",
+        "period": "Déc. 2018 – avr. 2024",
+        "location": "Montréal, QC · à distance",
+        "summary": "Prêteur hypothécaire en ligne, fintech canadienne (série E de 302 M$, valorisation de 1,47 G$).",
+        "bullets": [
+          "Architecture centralisée partagée par tous les projets ; grille adaptable par initiative.",
+          "Encadrement d'un développeur ; recrutement, mentorat et revues de code.",
+          "Toujours en codage sur le code critique ; maintenance et optimisation continue."
+        ],
+        "stack": "React, Vue.js, PHP, Laravel, GraphQL, REST, architecture"
+      },
+      {
+        "role": "Président et lead technique",
+        "company": "Strong développement",
+        "period": "Jan. 2015 – févr. 2021",
+        "location": "Québec",
+        "summary": "Studio de développement web sur mesure : clients, équipe, livraison.",
+        "bullets": [
+          "Créé et dirigé le studio pendant 6 ans : acquisition, livraison, qualité.",
+          "Développement full stack (React, Laravel, PHP) et direction technique."
+        ]
+      },
+      {
+        "role": "Développeur web pigiste",
+        "company": "Luc Rousseau",
+        "period": "Mai 2007 – jan. 2015",
+        "location": "Québec",
+        "summary": "Sites et applications web sur mesure pour PME et agences.",
+        "bullets": []
+      },
+      {
+        "role": "Directeur artistique, responsable du département interactif",
+        "company": "Hatem+D",
+        "period": "Jan. 2005 – mai 2007",
+        "location": "Québec",
+        "summary": "Agence de branding et de concepts intégrés.",
+        "bullets": ["Direction créative et responsabilité du département interactif."]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Compétences",
+    "groups": [
+      {
+        "title": "Produit et ownership",
+        "items": [
+          "Priorisation",
+          "Discovery légère",
+          "Feuille de route",
+          "Livraison 0 → 1",
+          "Arbitrages"
+        ]
+      },
+      {
+        "title": "Ingénierie",
+        "items": ["React", "Next.js", "TypeScript", "PHP", "Laravel", "APIs REST", "Architecture"]
+      },
+      {
+        "title": "Livraison",
+        "items": ["CI/CD", "Git", "Performance", "Dette technique", "Scalabilité"]
+      },
+      {
+        "title": "Startup",
+        "items": ["Polyvalence", "Embauche technique", "Mentorat", "Design basique", "Client"]
+      }
+    ]
+  }
+}

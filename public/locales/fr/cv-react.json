@@ -1,0 +1,172 @@
+{
+  "seoTitle": "Luc Rousseau | CV développeur React / frontend",
+  "seoDescription": "CV de Luc Rousseau, développeur React et frontend : architecture de composants, hooks, état applicatif et build moderne. 26 ans d'ingénierie web. Québec et à distance.",
+  "role": "Développeur frontend senior · React",
+  "tagline": "Interfaces React en TypeScript : architecture de composants, hooks et état applicatif. 26 ans d'ingénierie web, aujourd'hui centrés sur React.",
+  "summary": {
+    "title": "Profil",
+    "content": "<p><strong>Développeur frontend senior</strong> avec 26 ans d'ingénierie web, je me concentre sur React. J'ai conçu des applications React complexes en TypeScript : composants réutilisables à état, hooks, composition, et un état applicatif de type Redux (via @wordpress/data), avec un build webpack/Babel.</p><p>Une grande partie de ce travail a pris la forme de blocs sur mesure avancés dans l'écosystème Gutenberg, à savoir du React à part entière. Code sur GitHub (projets en cours de publication) ; ce site (Next.js/React) comme preuve live. Revues, performance et tests automatisés (Jest, Testing Library) font partie de ma pratique senior.</p>"
+  },
+  "highlights": {
+    "items": [
+      { "value": "React", "label": "composants, hooks, TypeScript" },
+      { "value": "Architecture", "label": "apps à composants multiples, réutilisables" },
+      { "value": "Full stack", "label": "React devant, PHP/Laravel et APIs derrière" },
+      { "value": "GitHub", "label": "code et projets (publication en cours)" },
+      { "value": "Preuve live", "label": "lucrousseau.com en Next.js/React" }
+    ]
+  },
+  "strengths": {
+    "title": "Ce que j'apporte",
+    "items": [
+      {
+        "title": "Architecture de composants",
+        "content": "Composants React réutilisables en TypeScript : composition, props, contextes et arbres de composants imbriqués."
+      },
+      {
+        "title": "État et données",
+        "content": "Hooks (useState, useEffect), état applicatif de type Redux (@wordpress/data), sélecteurs, actions et appels d'API."
+      },
+      {
+        "title": "Build et intégration",
+        "content": "webpack, Babel, npm et Git ; intégration de React dans des écosystèmes web existants."
+      },
+      {
+        "title": "Ingénierie senior",
+        "content": "26 ans de métier : performance, maintenabilité, revues de code, mentorat. Je m'approprie vite une nouvelle stack."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Expérience",
+    "items": [
+      {
+        "role": "Développeur React · indépendant",
+        "company": "Luc Rousseau Consulting",
+        "companyHref": "https://lucrousseau.com",
+        "period": "Déc. 2021 – aujourd'hui",
+        "location": "Québec et à distance",
+        "summary": "Développement d'interfaces et d'applications React sur mesure, avec le backend à l'appui quand le mandat le demande.",
+        "bullets": [
+          "Applications React à composants multiples : architecture réutilisable, hooks et gestion d'état.",
+          "Sites et interfaces en React et Next.js, déployés (ce site en fait partie).",
+          "Intégration de React dans des écosystèmes existants ; build webpack/Babel, Git et livraison.",
+          "Backend PHP/Laravel et APIs REST au besoin, pour livrer de bout en bout."
+        ],
+        "stack": "React, Next.js, TypeScript, JavaScript ES6+, hooks, état type Redux, webpack, Babel, Git, APIs REST"
+      },
+      {
+        "role": "Développeur front-end React",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Juil. 2024 – sept. 2025",
+        "location": "Montréal, QC · à distance",
+        "summary": "Tableaux de bord et interfaces React pour un programme de gestion des demandes sur CMS headless.",
+        "bullets": [
+          "Tableaux de bord React en temps réel (avancement et statut), déployés sur l'ensemble des sous-domaines du réseau multi-marques.",
+          "Applications React avancées (blocs sur mesure) en TypeScript : composants réutilisables, hooks, logique d'état.",
+          "Intégration front dans les écosystèmes web existants ; performance et fiabilité constantes.",
+          "Équipe : 3 développeurs, 1 consultant DevOps, plus des employés sur des projets parallèles."
+        ],
+        "stack": "React, TypeScript, hooks, état type Redux (@wordpress/data), JavaScript ES6+, APIs REST"
+      },
+      {
+        "role": "Développeur front-end",
+        "company": "comparemortgages.ca",
+        "period": "Nov. 2022 – avr. 2024",
+        "location": "Montréal, QC · à distance",
+        "summary": "Plateforme d'analyse et de comparaison de prêts hypothécaires.",
+        "bullets": [
+          "Développement front-end à partir des maquettes fonctionnelles : interfaces d'analyse et de comparaison.",
+          "Collaboration avec les designers sur prototypes et maquettes UI.",
+          "Outils de tests A/B et analyse de données côté front ; intégration back-end et APIs."
+        ],
+        "stack": "React, Vue.js, JavaScript, GraphQL, REST, Webpack, Tailwind, SCSS"
+      },
+      {
+        "role": "Développeur React et architecture",
+        "company": "nesto",
+        "companyHref": "https://www.linkedin.com/company/nesto-ca",
+        "period": "Déc. 2018 – avr. 2024",
+        "location": "Montréal, QC · à distance",
+        "summary": "Prêteur hypothécaire en ligne, fintech canadienne (série E de 302 M$, valorisation de 1,47 G$).",
+        "bullets": [
+          "Composants React réutilisables et grille adaptable dans une architecture front centralisée.",
+          "Architecture partagée comme fondation commune à toutes les initiatives produit.",
+          "Revues de code et conception de tests de compétences techniques ; encadrement d'un développeur."
+        ],
+        "stack": "React, Vue.js, JavaScript ES6+, GraphQL, REST, Webpack, composants réutilisables"
+      },
+      {
+        "role": "Président et développeur senior",
+        "company": "Strong développement",
+        "period": "Jan. 2015 – févr. 2021",
+        "location": "Québec",
+        "summary": "Studio de développement web sur mesure.",
+        "bullets": [
+          "Développement front en React et JavaScript ES6+, backends Laravel et PHP.",
+          "SASS, Git et Webpack ; livraison d'applications sur mesure."
+        ]
+      },
+      {
+        "role": "Développeur web pigiste",
+        "company": "Luc Rousseau",
+        "period": "Mai 2007 – jan. 2015",
+        "location": "Québec",
+        "summary": "Conception, intégration et développement de sites et d'applications web sur mesure.",
+        "bullets": []
+      },
+      {
+        "role": "Directeur artistique, responsable du département interactif",
+        "company": "Hatem+D",
+        "period": "Jan. 2005 – mai 2007",
+        "location": "Québec",
+        "summary": "Agence de branding et de concepts intégrés.",
+        "bullets": ["Direction créative et responsabilité du département interactif."]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Compétences",
+    "groups": [
+      {
+        "title": "React et frontend",
+        "items": [
+          "React",
+          "TypeScript",
+          "Hooks",
+          "JSX",
+          "Composants réutilisables",
+          "État applicatif (type Redux)",
+          "Next.js",
+          "Vue",
+          "JavaScript ES6+",
+          "HTML, CSS, SASS"
+        ]
+      },
+      {
+        "title": "Build et pratiques",
+        "items": [
+          "webpack",
+          "Babel",
+          "npm",
+          "Git",
+          "Jest",
+          "Testing Library",
+          "CI/CD",
+          "Design adaptatif",
+          "Accessibilité",
+          "Performance"
+        ]
+      },
+      {
+        "title": "Backend et données",
+        "items": ["APIs REST", "PHP", "Laravel", "MySQL", "Intégrations"]
+      },
+      {
+        "title": "Écosystème",
+        "items": ["Gutenberg (React)", "WordPress headless", "Figma, Photoshop"]
+      }
+    ]
+  }
+}

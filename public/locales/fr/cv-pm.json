@@ -1,0 +1,198 @@
+{
+  "seoTitle": "Luc Rousseau | CV Product Manager / Product Owner",
+  "seoDescription": "CV de Luc Rousseau, Product Manager et Product Owner à bagage technique senior : feuille de route, priorisation, alignement des parties prenantes et livraison. Québec et à distance.",
+  "role": "Product Manager · Product Owner",
+  "tagline": "Chef de produit à bagage technique : je traduis les objectifs business en feuille de route claire, priorisée et livrée.",
+  "summary": {
+    "title": "Profil",
+    "content": "<p><strong>Product Manager et Product Owner</strong> avec un bagage technique senior, je fais avancer le produit du « pourquoi » au « livré ». Chez Milesopedia, je suis passé de développeur full stack senior à Product Manager puis Product Lead : je sais à la fois cadrer la valeur et comprendre ce qu'elle coûte à construire.</p><p>Je traduis les objectifs business en feuille de route claire et priorisée, j'aligne contenu, ingénierie et direction, et je tiens la barre jusqu'à la livraison. Mon atout : des roadmaps réalistes et une relation crédible avec les équipes techniques, parce que j'ai été de l'autre côté du brief.</p>"
+  },
+  "highlights": {
+    "items": [
+      { "value": "Product Lead", "label": "chez Milesopedia, réseau multi-marques" },
+      { "value": "Roadmap", "label": "objectifs business en plan clair et priorisé" },
+      { "value": "Cross-fonctionnel", "label": "contenu, dev et gestion alignés, livrés" },
+      { "value": "Bagage technique", "label": "roadmaps réalistes, crédible avec l'ingénierie" }
+    ]
+  },
+  "strengths": {
+    "title": "Ce que j'apporte",
+    "items": [
+      {
+        "title": "Vision et feuille de route",
+        "content": "Objectifs business traduits en un plan produit clair, séquencé et partagé."
+      },
+      {
+        "title": "Priorisation et arbitrages",
+        "content": "Impact contre effort, dépendances cartographiées, décisions assumées, y compris dire « pas maintenant »."
+      },
+      {
+        "title": "Alignement des parties prenantes",
+        "content": "Contenu, ingénierie et direction réunis autour d'un même cap et d'un même langage."
+      },
+      {
+        "title": "Livraison et valeur mesurable",
+        "content": "Discipline de release et suivi de la valeur réellement livrée, pas seulement des fonctionnalités."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Expérience",
+    "items": [
+      {
+        "role": "Product Manager · indépendant",
+        "company": "Luc Rousseau Consulting",
+        "companyHref": "https://lucrousseau.com",
+        "period": "Déc. 2021 – aujourd'hui",
+        "location": "Québec et à distance",
+        "summary": "Partenaire produit pour équipes en croissance : feuille de route, priorisation et livraison, avec la crédibilité d'un bagage technique senior.",
+        "bullets": [
+          "Traduire objectifs business et attentes des parties prenantes en feuille de route claire, priorisée et séquencée.",
+          "Arbitrer périmètre, priorités et dépendances, avec un cadre explicite pour dire « pas maintenant ».",
+          "Aligner produit, contenu et développement en cérémonies Scrum/Kanban ; tenir la barre de qualité jusqu'à la livraison.",
+          "Un bagage technique qui rend les roadmaps réalistes et la relation avec l'ingénierie crédible."
+        ]
+      },
+      {
+        "role": "Product Lead",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Oct. 2025 – avr. 2026",
+        "location": "Montréal, QC · à distance",
+        "summary": "Réseau de comparateurs multi-marques (cartes de crédit, voyage, finances personnelles), Canada et France.",
+        "bullets": [
+          "Alignement stratégique entre contenu, gestion et développement pour une livraison efficace et une valeur maximale (utilisateurs et parties prenantes).",
+          "Pilotage de projets stratégiques : identification, priorisation et alignement sur les objectifs long terme.",
+          "Supervision des livrables : délais, qualité et valeur mesurable pour clients et équipes internes."
+        ]
+      },
+      {
+        "role": "Product Manager",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Janv. 2025 – oct. 2025",
+        "location": "Montréal, QC · à distance",
+        "summary": "Transition vers le rôle produit : coordination inter-équipes sur un réseau multi-marques.",
+        "bullets": [
+          "Processus de collaboration fluides entre équipes éditoriales, gestion et développement ; résolution des points de friction.",
+          "Gestion de projet et coordination pour améliorer la productivité et la prévisibilité des livraisons.",
+          "Veille à ce que chaque initiative apporte une valeur mesurable pour utilisateurs et parties prenantes internes."
+        ]
+      },
+      {
+        "role": "Développeur full stack senior",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Juil. 2024 – sept. 2025",
+        "location": "Montréal, QC · à distance",
+        "summary": "Programme de gestion des demandes sur CMS headless, déployé sur les sous-domaines de marques partenaires.",
+        "bullets": [
+          "Construction de processus et systèmes d'application sur CMS headless ; gestion des données utilisateurs.",
+          "Tableaux de bord en temps réel (avancement et statut des demandes), déployés sur l'ensemble des sous-domaines du réseau.",
+          "Intégration, déploiement et maintenance dans les écosystèmes web existants ; performance et fiabilité constantes.",
+          "Équipe : 3 développeurs, 1 consultant DevOps, plus des employés sur des projets parallèles au projet dev."
+        ],
+        "stack": "WordPress headless, React, PHP, MySQL, APIs REST"
+      },
+      {
+        "role": "Product / Tech Lead",
+        "company": "comparemortgages.ca",
+        "period": "Nov. 2022 – avr. 2024",
+        "location": "Montréal, QC · à distance",
+        "summary": "Plateforme d'analyse et de comparaison de prêts hypothécaires.",
+        "bullets": [
+          "Architecture système pour l'analyse et la comparaison de prêts ; planification par phases (jalons, livrables, délais).",
+          "Coordination entre maquettes fonctionnelles, design, back-end et front-end jusqu'à la livraison.",
+          "Prototypes et maquettes UI avec les designers ; outils de tests A/B et analyse de données pour orienter les décisions."
+        ],
+        "stack": "React, Vue.js, Next.js, PHP, Laravel, GraphQL, REST, WordPress, Webpack, Docker, Tailwind"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "nesto",
+        "companyHref": "https://www.linkedin.com/company/nesto-ca",
+        "period": "Déc. 2018 – avr. 2024",
+        "location": "Montréal, QC · à distance",
+        "summary": "Prêteur hypothécaire en ligne, fintech canadienne (série E de 302 M$, valorisation de 1,47 G$).",
+        "bullets": [
+          "Architecture système centralisée, fondation commune à toutes les initiatives : cohérence, efficacité, maintenance.",
+          "Grille adaptable pour personnaliser chaque projet tout en préservant une infrastructure solide.",
+          "Direction technique et encadrement d'un développeur ; directives alignées sur l'architecture et les bonnes pratiques.",
+          "Recrutement et tests de compétences techniques ; suivi, maintenance et optimisation continue de l'architecture."
+        ],
+        "stack": "React, Vue.js, Next.js, PHP, Laravel, GraphQL, REST, WordPress, Webpack, Docker, Tailwind, Git"
+      },
+      {
+        "role": "Président",
+        "company": "Strong développement",
+        "period": "Jan. 2015 – févr. 2021",
+        "location": "Québec",
+        "summary": "Studio de développement web sur mesure : clients, livraison et équipe.",
+        "bullets": []
+      },
+      {
+        "role": "Développeur web pigiste",
+        "company": "Luc Rousseau",
+        "period": "Mai 2007 – jan. 2015",
+        "location": "Québec",
+        "summary": "Sites et applications web sur mesure pour PME et agences.",
+        "bullets": []
+      },
+      {
+        "role": "Directeur artistique, responsable du département interactif",
+        "company": "Hatem+D",
+        "period": "Jan. 2005 – mai 2007",
+        "location": "Québec",
+        "summary": "Agence de branding et de concepts intégrés.",
+        "bullets": ["Direction créative et responsabilité du département interactif."]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Compétences",
+    "groups": [
+      {
+        "title": "Produit et stratégie",
+        "items": [
+          "Feuille de route et vision",
+          "Priorisation (impact/effort)",
+          "Discovery et cadrage",
+          "Backlog et user stories",
+          "Alignement produit/marché",
+          "KPI et valeur"
+        ]
+      },
+      {
+        "title": "Livraison et méthodes",
+        "items": [
+          "Coordination inter-équipes",
+          "Scrum et Kanban",
+          "OKR et KPI",
+          "Gestion de projet",
+          "Cérémonies agiles",
+          "Discipline de release",
+          "Tests A/B et données"
+        ]
+      },
+      {
+        "title": "Culture technique",
+        "items": [
+          "Architecture et APIs",
+          "React, Next.js, Vue",
+          "WordPress headless",
+          "CI/CD",
+          "Arbitrages build-vs-buy"
+        ]
+      },
+      {
+        "title": "Leadership",
+        "items": [
+          "Alignement des parties prenantes",
+          "Recrutement technique",
+          "Mentorat",
+          "Communication"
+        ]
+      }
+    ]
+  }
+}

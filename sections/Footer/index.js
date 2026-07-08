@@ -9,7 +9,7 @@ import Navigation from "../../components/Navigation";
 import { getSiteNavigationItems } from "../../commons/siteNavigation";
 
 /** Site footer. Requires i18n: `common`. */
-export default function Footer({ ...props }) {
+export default function Footer({ showNavigation = true, ...props }) {
   const { t } = useTranslation("common");
   const alignmentsClass = alignments({ props });
   const navItems = getSiteNavigationItems(t);
@@ -23,16 +23,18 @@ export default function Footer({ ...props }) {
             cols: { col: 11, xl: 12 },
             content: (
               <>
-                <Row
-                  className="component__footer__nav"
-                  halign={"center"}
-                  columns={[
-                    {
-                      cols: { col: 11, xl: 12 },
-                      content: <Navigation navigation={navItems} />,
-                    },
-                  ]}
-                />
+                {showNavigation ? (
+                  <Row
+                    className="component__footer__nav"
+                    halign={"center"}
+                    columns={[
+                      {
+                        cols: { col: 11, xl: 12 },
+                        content: <Navigation navigation={navItems} />,
+                      },
+                    ]}
+                  />
+                ) : null}
                 <Row
                   columns={[
                     {

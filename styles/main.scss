@@ -50,6 +50,8 @@
 @use "../sections/HomeFaq/style" as home-faq;
 @use "../sections/Contact/style" as contact;
 @use "../sections/situations/style" as situations;
+@use "../sections/Cv/style" as cv;
+@use "../sections/CvHub/style" as cv-hub;
 
 // Pages
 @use "../pages/home" as home;

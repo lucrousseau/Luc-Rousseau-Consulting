@@ -14,6 +14,8 @@ export default function handler(req, res) {
   const body = `# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
+Disallow: /cvs/
+Disallow: /en/cvs/
 
 Sitemap: ${base}/sitemap.xml
 

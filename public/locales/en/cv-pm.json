@@ -1,0 +1,193 @@
+{
+  "seoTitle": "Luc Rousseau | Product Manager / Product Owner resume",
+  "seoDescription": "Luc Rousseau's resume as a Product Manager and Product Owner with a senior technical background: roadmap, prioritization, stakeholder alignment and delivery. Quebec and remote.",
+  "role": "Product Manager · Product Owner",
+  "tagline": "A product lead with a technical background: I turn business goals into a clear, prioritized, delivered roadmap.",
+  "summary": {
+    "title": "Profile",
+    "content": "<p><strong>Product Manager and Product Owner</strong> with a senior technical background, I move the product from the \"why\" to \"shipped\". At Milesopedia I grew from senior full stack developer to Product Manager, then Product Lead: I can frame the value and understand what it costs to build.</p><p>I turn business goals into a clear, prioritized roadmap, align content, engineering and leadership, and hold the bar through delivery. My edge: realistic roadmaps and credibility with engineering teams, because I have been on the other side of the brief.</p>"
+  },
+  "highlights": {
+    "items": [
+      { "value": "Product Lead", "label": "at Milesopedia, multi-brand network" },
+      { "value": "Roadmap", "label": "business goals into a clear, prioritized plan" },
+      { "value": "Cross-functional", "label": "content, dev and management aligned, shipped" },
+      { "value": "Technical background", "label": "realistic roadmaps, credible with engineering" }
+    ]
+  },
+  "strengths": {
+    "title": "What I bring",
+    "items": [
+      {
+        "title": "Vision and roadmap",
+        "content": "Business goals translated into a clear, sequenced, shared product plan."
+      },
+      {
+        "title": "Prioritization and trade-offs",
+        "content": "Impact versus effort, mapped dependencies, owned decisions, including saying \"not now\"."
+      },
+      {
+        "title": "Stakeholder alignment",
+        "content": "Content, engineering and leadership around one direction and one shared language."
+      },
+      {
+        "title": "Delivery and measurable value",
+        "content": "Release discipline and tracking of value actually shipped, not just features."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "role": "Product Manager · independent",
+        "company": "Luc Rousseau Consulting",
+        "companyHref": "https://lucrousseau.com",
+        "period": "Dec. 2021 – present",
+        "location": "Quebec and remote",
+        "summary": "Product partner for growing teams: roadmap, prioritization and delivery, with the credibility of a senior technical background.",
+        "bullets": [
+          "Translate business goals and stakeholder expectations into a clear, prioritized, sequenced roadmap.",
+          "Arbitrate scope, priorities and dependencies, with an explicit frame for saying \"not now\".",
+          "Align product, content and development in Scrum/Kanban ceremonies; hold the quality bar through delivery.",
+          "A technical background that keeps roadmaps realistic and the relationship with engineering credible."
+        ]
+      },
+      {
+        "role": "Product Lead",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Oct. 2025 – Apr. 2026",
+        "location": "Montreal, QC · remote",
+        "summary": "Multi-brand comparison network (credit cards, travel, personal finance), Canada and France.",
+        "bullets": [
+          "Strategic alignment across content, management and development for effective delivery and maximum value (users and internal stakeholders).",
+          "Steered strategic projects: identified, prioritized and aligned with long-term goals.",
+          "Oversaw deliverables: deadlines, quality and measurable value for clients and internal teams."
+        ]
+      },
+      {
+        "role": "Product Manager",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Jan. 2025 – Oct. 2025",
+        "location": "Montreal, QC · remote",
+        "summary": "Transition into product: cross-team coordination on a multi-brand network.",
+        "bullets": [
+          "Smooth collaboration processes across editorial, management and development teams; resolved friction points.",
+          "Project management and coordination to improve productivity and delivery predictability.",
+          "Ensured every initiative delivered measurable value for users and internal stakeholders."
+        ]
+      },
+      {
+        "role": "Senior full stack developer",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Jul. 2024 – Sep. 2025",
+        "location": "Montreal, QC · remote",
+        "summary": "Request-management program on a headless CMS, deployed across partner-brand subdomains.",
+        "bullets": [
+          "Built application processes and systems on a headless CMS; user-data management.",
+          "Real-time dashboards (request progress and status), deployed across the network's subdomains.",
+          "Integration, deployment and maintenance in existing web ecosystems; consistent performance and reliability.",
+          "Team: 3 developers, 1 DevOps consultant, plus staff on parallel projects alongside the dev initiative."
+        ],
+        "stack": "Headless WordPress, React, PHP, MySQL, REST APIs"
+      },
+      {
+        "role": "Product / Tech Lead",
+        "company": "comparemortgages.ca",
+        "period": "Nov. 2022 – Apr. 2024",
+        "location": "Montreal, QC · remote",
+        "summary": "Mortgage analysis and comparison platform.",
+        "bullets": [
+          "System architecture for loan analysis and comparison; phased planning (milestones, deliverables, timelines).",
+          "Coordination across wireframes, design, back-end and front-end through delivery.",
+          "UI prototypes and wireframes with designers; A/B testing and data analysis to steer decisions."
+        ],
+        "stack": "React, Vue.js, Next.js, PHP, Laravel, GraphQL, REST, WordPress, Webpack, Docker, Tailwind"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "nesto",
+        "companyHref": "https://www.linkedin.com/company/nesto-ca",
+        "period": "Dec. 2018 – Apr. 2024",
+        "location": "Montreal, QC · remote",
+        "summary": "Online mortgage lender, Canadian fintech ($302M Series E, $1.47B valuation).",
+        "bullets": [
+          "Centralized system architecture, shared foundation for every initiative: consistency, efficiency, maintenance.",
+          "Adaptable grid to tailor each project while preserving a solid infrastructure.",
+          "Technical direction and mentoring of one developer; guidance aligned with architecture and best practices.",
+          "Recruiting and technical-skills assessments; monitoring, maintenance and continuous architecture optimization."
+        ],
+        "stack": "React, Vue.js, Next.js, PHP, Laravel, GraphQL, REST, WordPress, Webpack, Docker, Tailwind, Git"
+      },
+      {
+        "role": "President",
+        "company": "Strong développement",
+        "period": "Jan. 2015 – Feb. 2021",
+        "location": "Quebec",
+        "summary": "Custom web development studio: clients, delivery and team.",
+        "bullets": []
+      },
+      {
+        "role": "Freelance web developer",
+        "company": "Luc Rousseau",
+        "period": "May 2007 – Jan. 2015",
+        "location": "Quebec",
+        "summary": "Custom websites and web applications for SMEs and agencies.",
+        "bullets": []
+      },
+      {
+        "role": "Art director, head of the interactive department",
+        "company": "Hatem+D",
+        "period": "Jan. 2005 – May 2007",
+        "location": "Quebec",
+        "summary": "Branding and integrated-concept agency.",
+        "bullets": ["Creative direction and ownership of the interactive department."]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "groups": [
+      {
+        "title": "Product and strategy",
+        "items": [
+          "Roadmap and vision",
+          "Prioritization (impact/effort)",
+          "Discovery and framing",
+          "Backlog and user stories",
+          "Product/market alignment",
+          "KPIs and value"
+        ]
+      },
+      {
+        "title": "Delivery and methods",
+        "items": [
+          "Cross-team coordination",
+          "Scrum and Kanban",
+          "OKRs and KPIs",
+          "Project management",
+          "Agile ceremonies",
+          "Release discipline",
+          "A/B testing and data"
+        ]
+      },
+      {
+        "title": "Technical fluency",
+        "items": [
+          "Architecture and APIs",
+          "React, Next.js, Vue",
+          "Headless WordPress",
+          "CI/CD",
+          "Build-vs-buy calls"
+        ]
+      },
+      {
+        "title": "Leadership",
+        "items": ["Stakeholder alignment", "Technical recruiting", "Mentoring", "Communication"]
+      }
+    ]
+  }
+}

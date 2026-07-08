@@ -1,0 +1,289 @@
+{
+  "anchor": "cv",
+  "seoTitle": "Luc Rousseau | CV, consultant produit et développeur senior",
+  "seoDescription": "Parcours de Luc Rousseau : consultant produit et Product Engineer, 26 ans du design au produit. Architecture, headless, WordPress, Laravel, React. Québec et à distance.",
+  "name": "Luc Rousseau",
+  "role": "Product Engineer · produit et développeur senior",
+  "tagline": "Feuille de route, architecture et livraison : un seul fil, de la stratégie au code.",
+  "photoAlt": "Luc Rousseau, consultant produit et développeur senior",
+  "location": "Québec, Canada",
+  "availability": "Ouvert aux postes permanents et aux mandats, au Canada et à distance",
+  "actions": {
+    "print": "Télécharger en PDF",
+    "call": "Planifier un appel"
+  },
+  "contact": {
+    "title": "Coordonnées",
+    "items": [
+      {
+        "label": "Courriel",
+        "value": "bonjour@lucrousseau.com",
+        "href": "mailto:bonjour@lucrousseau.com?subject=Contact%20depuis%20le%20CV"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/lucrousseau",
+        "href": "https://www.linkedin.com/in/lucrousseau/"
+      },
+      {
+        "label": "GitHub",
+        "value": "github.com/lucrousseau",
+        "href": "https://github.com/lucrousseau",
+        "note": "Projets en cours de publication"
+      },
+      {
+        "label": "Site",
+        "value": "lucrousseau.com",
+        "href": "https://lucrousseau.com"
+      }
+    ]
+  },
+  "summary": {
+    "title": "Profil",
+    "content": "<p><strong>Product Engineer</strong> avec un solide bagage en développement web, je transforme des idées en produits concrets. Directeur artistique et designer à mes débuts, puis programmeur, aujourd'hui produit et leadership technique : ce parcours des deux côtés du brief me donne une perspective rare. Autodidacte, j'ai bâti mon expertise sur le terrain, projet après projet.</p><p>J'aide les équipes produit et technique à décider quoi construire et pourquoi, à concevoir comment le système doit fonctionner, puis à le livrer. Pas de relai, pas de boîte noire : quelqu'un qui structure, questionne et livre, de la feuille de route au code.</p>"
+  },
+  "highlights": {
+    "items": [
+      { "value": "26 ans", "label": "d'expérience, du pixel au produit" },
+      { "value": "1 seul fil", "label": "de la feuille de route au code, sans relai" },
+      { "value": "Headless", "label": "WordPress, Laravel, APIs, React, Next.js, Vue" },
+      { "value": "Fintech et éditorial", "label": "plateformes à fort trafic, multi-marques" }
+    ]
+  },
+  "strengths": {
+    "title": "Ce que je prends en charge",
+    "items": [
+      {
+        "title": "Feuille de route et priorisation",
+        "content": "Objectifs produit transformés en un plan clair et séquencé, aux priorités explicites et aux dépendances cartographiées."
+      },
+      {
+        "title": "Architecture et design système",
+        "content": "Systèmes découplés et headless, contrats d'API, arbitrages build-vs-buy, performance et scalabilité."
+      },
+      {
+        "title": "Réduction de la dette technique",
+        "content": "La dette traitée comme un enjeu produit et de risque, priorisée pour soutenir la livraison plutôt qu'ignorée."
+      },
+      {
+        "title": "Supervision de la livraison",
+        "content": "Barre de qualité, discipline de release, CI/CD, alignement entre ce qui est décidé et ce qui est livré."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Expérience",
+    "stackLabel": "Stack",
+    "items": [
+      {
+        "role": "Product Engineer · indépendant",
+        "company": "Luc Rousseau Consulting",
+        "companyHref": "https://lucrousseau.com",
+        "period": "Déc. 2021 – aujourd'hui",
+        "location": "Québec et à distance",
+        "summary": "Un seul partenaire responsable pour la clarté de la feuille de route, les décisions d'architecture et la livraison. Ni un consultant qui laisse une présentation, ni un dev qui prend des tickets : quelqu'un qui structure, questionne et livre.",
+        "bullets": [
+          "Feuille de route et priorisation : objectifs produit transformés en plan clair et séquencé, dépendances cartographiées.",
+          "Architecture et design système : headless (WordPress, Laravel, APIs) avec React, Next.js et Vue, contrats d'API, arbitrages build-vs-buy, performance et scalabilité.",
+          "Dette technique traitée comme un enjeu produit et de risque, priorisée face à la livraison.",
+          "Supervision de la livraison : barre de qualité, discipline de release, CI/CD, alignement entre le décidé et le livré.",
+          "2 à 3 mandats simultanés maximum, engagements long terme, présent dans les cérémonies et les revues."
+        ],
+        "stack": "WordPress (headless et traditionnel), Laravel, React, Next.js, Vue, PHP, JavaScript ES6+, APIs REST, Gutenberg, CI/CD, MySQL"
+      },
+      {
+        "role": "Product Lead",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Oct. 2025 – avr. 2026",
+        "location": "Montréal, QC · à distance",
+        "summary": "Réseau de comparateurs multi-marques (cartes de crédit, voyage, finances personnelles), Canada et France.",
+        "bullets": [
+          "Alignement stratégique entre contenu, gestion et développement pour une livraison efficace et une valeur mesurable.",
+          "Pilotage de projets stratégiques : identification, priorisation et alignement sur les objectifs long terme.",
+          "Supervision des livrables : délais, qualité et valeur pour clients et équipes internes."
+        ]
+      },
+      {
+        "role": "Product Manager",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Janv. 2025 – oct. 2025",
+        "location": "Montréal, QC · à distance",
+        "summary": "Transition vers le rôle produit sur un réseau multi-marques.",
+        "bullets": [
+          "Processus de collaboration fluides entre équipes éditoriales, gestion et développement ; résolution des points de friction.",
+          "Coordination inter-équipes pour améliorer la productivité et la prévisibilité des livraisons.",
+          "Veille à ce que chaque initiative apporte une valeur mesurable."
+        ]
+      },
+      {
+        "role": "Développeur full stack senior",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Juil. 2024 – sept. 2025",
+        "location": "Montréal, QC · à distance",
+        "summary": "Programme de gestion des demandes sur CMS headless, déployé sur les sous-domaines de marques partenaires.",
+        "bullets": [
+          "Processus et systèmes d'application sur CMS headless ; gestion des données utilisateurs.",
+          "Tableaux de bord React en temps réel, déployés sur l'ensemble des sous-domaines du réseau (Canada et France).",
+          "Intégration, déploiement et maintenance ; performance et fiabilité constantes.",
+          "Équipe : 3 développeurs, 1 consultant DevOps, plus des employés sur des projets parallèles."
+        ],
+        "stack": "WordPress headless, Gutenberg, React, APIs REST, CI/CD"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "comparemortgages.ca",
+        "period": "Nov. 2022 – avr. 2024",
+        "location": "Montréal, QC · à distance",
+        "summary": "Plateforme d'analyse et de comparaison de prêts hypothécaires.",
+        "bullets": [
+          "Architecture système pour l'analyse et la comparaison de prêts ; planification par phases (jalons, livrables, délais).",
+          "Coordination maquettes fonctionnelles, design, back-end et front-end jusqu'à une livraison ponctuelle et de qualité.",
+          "Prototypes et maquettes UI avec les designers ; outils de tests A/B et analyse de données."
+        ],
+        "stack": "React, Vue.js, Next.js, PHP, Laravel, GraphQL, REST, WordPress, Webpack, Docker, Tailwind"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "nesto",
+        "companyHref": "https://www.linkedin.com/company/nesto-ca",
+        "period": "Déc. 2018 – avr. 2024",
+        "location": "Montréal, QC · à distance",
+        "summary": "Prêteur hypothécaire en ligne, fintech canadienne (série E de 302 M$, valorisation de 1,47 G$).",
+        "bullets": [
+          "Architecture système centralisée, fondation commune à l'ensemble des initiatives produit de l'organisation.",
+          "Grille adaptable pour personnaliser chaque projet tout en préservant une infrastructure solide et cohérente.",
+          "Direction technique et encadrement d'un développeur ; recrutement et conception de tests de compétences techniques.",
+          "Suivi, maintenance et optimisation continue de l'architecture existante."
+        ],
+        "stack": "React, Vue.js, Next.js, PHP, Laravel, GraphQL, REST, WordPress, Webpack, Docker, Tailwind, Git"
+      },
+      {
+        "role": "Président et développeur senior",
+        "company": "Strong développement",
+        "period": "Jan. 2015 – févr. 2021",
+        "location": "Québec",
+        "summary": "Studio de développement web sur mesure.",
+        "bullets": [
+          "Thèmes et plugins WordPress personnalisés, sites adaptatifs et applications sur mesure.",
+          "Expertise PHP/MySQL, JavaScript ES6+, React, Laravel, SASS, Git et Webpack."
+        ]
+      },
+      {
+        "role": "Développeur web pigiste",
+        "company": "Luc Rousseau",
+        "period": "Mai 2007 – jan. 2015",
+        "location": "Québec",
+        "summary": "Conception, intégration et développement de sites et d'applications web sur mesure pour PME et agences.",
+        "bullets": []
+      },
+      {
+        "role": "Directeur artistique, responsable du département interactif",
+        "company": "Hatem+D",
+        "period": "Jan. 2005 – mai 2007",
+        "location": "Québec",
+        "summary": "Agence de branding et de concepts intégrés.",
+        "bullets": ["Direction créative et responsabilité du département interactif."]
+      }
+    ]
+  },
+  "earlier": {
+    "title": "Parcours antérieur (2000 – 2006)",
+    "items": [
+      {
+        "role": "Directeur artistique",
+        "company": "XPUB Marketing Créatif",
+        "period": "2002 – 2004"
+      },
+      { "role": "Directeur artistique", "company": "Mobilito", "period": "2005 – 2006" },
+      { "role": "Designer intégrateur web", "company": "Logisoft", "period": "2004 – 2005" },
+      {
+        "role": "Designer intégrateur web",
+        "company": "Pur, l'agence interactive",
+        "period": "2000 – 2002"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Compétences",
+    "groups": [
+      {
+        "title": "Produit et leadership",
+        "items": [
+          "Feuille de route et priorisation",
+          "Gestion de produit",
+          "Direction technique",
+          "Coordination inter-équipes",
+          "Recrutement technique",
+          "Supervision de la livraison"
+        ]
+      },
+      {
+        "title": "Architecture",
+        "items": [
+          "Architecture système",
+          "Headless et découplé",
+          "Contrats d'API REST",
+          "Build-vs-buy",
+          "Performance et scalabilité",
+          "Réduction de dette technique"
+        ]
+      },
+      {
+        "title": "Développement",
+        "items": [
+          "React",
+          "Next.js",
+          "Vue",
+          "JavaScript ES6+",
+          "PHP",
+          "Laravel",
+          "MySQL",
+          "HTML, CSS, SASS"
+        ]
+      },
+      {
+        "title": "CMS et éditorial",
+        "items": [
+          "WordPress headless et traditionnel",
+          "Gutenberg",
+          "Thèmes et plugins",
+          "Plateformes éditoriales à l'échelle"
+        ]
+      },
+      {
+        "title": "Pratiques et outils",
+        "items": [
+          "CI/CD",
+          "Git",
+          "Webpack",
+          "Tests A/B",
+          "Design adaptatif",
+          "Accessibilité",
+          "Figma",
+          "Photoshop"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Formation",
+    "content": "<p><strong>Autodidacte.</strong> 26 ans de pratique continue : design, développement web, produit et leadership technique, construits sur le terrain, projet après projet.</p>"
+  },
+  "languages": {
+    "title": "Langues",
+    "items": [
+      { "name": "Français", "level": "Langue maternelle" },
+      { "name": "Anglais", "level": "Professionnel" }
+    ]
+  },
+  "awards": {
+    "title": "Reconnaissance",
+    "items": [
+      "Grand prix du tourisme québécois 2002, catégorie site Internet, projets web événementiels (ex æquo Les Floralies et Hôtel Dominion, mention spéciale Carnaval de Québec).",
+      "Finaliste, Prix Boomerangs 2001, catégorie événement (Carnaval de Québec)."
+    ]
+  }
+}

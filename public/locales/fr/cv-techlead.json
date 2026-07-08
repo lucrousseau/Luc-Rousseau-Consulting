@@ -1,0 +1,190 @@
+{
+  "seoTitle": "Luc Rousseau | CV Tech Lead / Lead développeur",
+  "seoDescription": "CV de Luc Rousseau, Tech Lead et lead développeur : architecture, mentorat, embauche, revues de code et livraison, sans lâcher le clavier. 26 ans d'ingénierie. Québec et à distance.",
+  "role": "Tech Lead · Lead développeur",
+  "tagline": "Leader technique qui code encore : architecture, qualité, mentorat et livraison. J'aligne une équipe autour d'une base technique solide.",
+  "summary": {
+    "title": "Profil",
+    "content": "<p><strong>Tech Lead et lead développeur</strong> avec 26 ans d'ingénierie web, je mène par la technique : j'architecture des fondations réutilisables, je fixe la barre de qualité et j'encadre les développeurs, sans cesser de livrer moi-même.</p><p>Chez nesto, j'ai posé une architecture centralisée servant de socle commun à tous les projets, conçu des tests de compétences techniques et mené l'embauche et les revues de code. Code et exemples sur GitHub (projets en cours de publication) ; ce site (Next.js/React) comme preuve live.</p>"
+  },
+  "highlights": {
+    "items": [
+      { "value": "Tech Lead", "label": "architecture, revues, mentorat" },
+      { "value": "Architecture", "label": "fondations centralisées, réutilisables" },
+      { "value": "Équipe", "label": "embauche, tests techniques, montée en compétence" },
+      { "value": "En codage", "label": "je livre encore du code" }
+    ]
+  },
+  "strengths": {
+    "title": "Ce que j'apporte",
+    "items": [
+      {
+        "title": "Architecture et fondations",
+        "content": "Socles techniques centralisés et réutilisables ; décisions build-vs-buy et arbitrages de dette technique."
+      },
+      {
+        "title": "Qualité et livraison",
+        "content": "Revues de code, standards, CI/CD et performance ; une barre de qualité qui tient sous la pression."
+      },
+      {
+        "title": "Encadrement d'équipe",
+        "content": "Mentorat, embauche, conception de tests de compétences, montée en compétence des développeurs."
+      },
+      {
+        "title": "Toujours technique",
+        "content": "Je code encore (React, PHP/Laravel, APIs). Je ne pilote pas depuis la tour d'ivoire."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Expérience",
+    "items": [
+      {
+        "role": "Tech Lead · indépendant",
+        "company": "Luc Rousseau Consulting",
+        "companyHref": "https://lucrousseau.com",
+        "period": "Déc. 2021 – aujourd'hui",
+        "location": "Québec et à distance",
+        "summary": "Leadership technique pour équipes en croissance : architecture, qualité et encadrement.",
+        "bullets": [
+          "Architecture d'applications découplées et réutilisables ; décisions techniques structurantes.",
+          "Mise en place de standards, de revues de code et de pipelines CI/CD.",
+          "Encadrement et montée en compétence de développeurs.",
+          "Toujours en codage : React, Next.js, PHP/Laravel, APIs REST."
+        ],
+        "stack": "React, Next.js, Laravel, PHP, TypeScript, APIs REST, CI/CD, Git"
+      },
+      {
+        "role": "Lead technique, puis Product Lead",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Oct. 2025 – avr. 2026",
+        "location": "Montréal, QC · à distance",
+        "summary": "Réseau de comparateurs multi-marques ; leadership technique et produit.",
+        "bullets": [
+          "Alignement contenu, gestion et développement (3 développeurs, 1 consultant DevOps, employés sur projets parallèles).",
+          "Fluidification des processus de collaboration ; résolution des points de friction.",
+          "Pilotage des initiatives techniques clés, alignées sur les objectifs de l'organisation."
+        ],
+        "stack": "React, APIs REST, architecture front, CI/CD"
+      },
+      {
+        "role": "Product Manager",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Janv. 2025 – oct. 2025",
+        "location": "Montréal, QC · à distance",
+        "summary": "Coordination inter-équipes et livraison sur le programme headless.",
+        "bullets": [
+          "Processus de collaboration entre équipes éditoriales, gestion et développement.",
+          "Supervision des livrables : délais, qualité et valeur mesurable.",
+          "Priorisation des initiatives clés pour l'organisation."
+        ]
+      },
+      {
+        "role": "Développeur senior, puis lead technique",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Juil. 2024 – sept. 2025",
+        "location": "Montréal, QC · à distance",
+        "summary": "Programme de gestion des demandes sur CMS headless, multi-sous-domaines.",
+        "bullets": [
+          "Architecture et implémentation de processus sur CMS headless ; gestion des données utilisateurs.",
+          "Tableaux de bord React en temps réel, déployés sur l'ensemble des sous-domaines du réseau.",
+          "Intégration, déploiement et maintenance ; base technique commune pour l'équipe dev."
+        ],
+        "stack": "WordPress headless, React, PHP, APIs REST, CI/CD"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "comparemortgages.ca",
+        "period": "Nov. 2022 – avr. 2024",
+        "location": "Montréal, QC · à distance",
+        "summary": "Plateforme d'analyse et de comparaison de prêts hypothécaires.",
+        "bullets": [
+          "Architecture système et planification par phases (jalons, livrables, délais).",
+          "Coordination technique bout en bout : maquettes fonctionnelles, design, back-end, front-end.",
+          "Outils de tests A/B et analyse de données ; prototypes UI avec les designers."
+        ],
+        "stack": "React, Vue.js, Next.js, PHP, Laravel, GraphQL, REST, Docker, Tailwind"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "nesto",
+        "companyHref": "https://www.linkedin.com/company/nesto-ca",
+        "period": "Déc. 2018 – avr. 2024",
+        "location": "Montréal, QC · à distance",
+        "summary": "Prêteur hypothécaire en ligne, fintech canadienne (série E de 302 M$, valorisation de 1,47 G$).",
+        "bullets": [
+          "Architecture système centralisée, fondation commune à toutes les initiatives : cohérence, efficacité, maintenance.",
+          "Grille adaptable par projet ; directives techniques et encadrement d'un développeur.",
+          "Recrutement et tests de compétences techniques ; revues de code, suivi et optimisation continue."
+        ],
+        "stack": "React, Vue.js, Next.js, PHP, Laravel, GraphQL, REST, WordPress, Webpack, Docker, Git"
+      },
+      {
+        "role": "Président et lead technique",
+        "company": "Strong développement",
+        "period": "Jan. 2015 – févr. 2021",
+        "location": "Québec",
+        "summary": "Studio de développement web sur mesure.",
+        "bullets": [
+          "Direction technique et livraison ; encadrement de l'équipe de développement.",
+          "PHP/MySQL, JavaScript ES6+, React, Laravel, Git."
+        ]
+      },
+      {
+        "role": "Développeur web pigiste",
+        "company": "Luc Rousseau",
+        "period": "Mai 2007 – jan. 2015",
+        "location": "Québec",
+        "summary": "Sites et applications web sur mesure pour PME et agences.",
+        "bullets": []
+      },
+      {
+        "role": "Directeur artistique, responsable du département interactif",
+        "company": "Hatem+D",
+        "period": "Jan. 2005 – mai 2007",
+        "location": "Québec",
+        "summary": "Agence de branding et de concepts intégrés.",
+        "bullets": ["Direction créative et responsabilité du département interactif."]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Compétences",
+    "groups": [
+      {
+        "title": "Leadership technique",
+        "items": [
+          "Architecture logicielle",
+          "Revues de code",
+          "Mentorat",
+          "Embauche et évaluation",
+          "Standards et qualité",
+          "Roadmap technique"
+        ]
+      },
+      {
+        "title": "Développement",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "PHP",
+          "Laravel",
+          "APIs REST",
+          "JavaScript ES6+"
+        ]
+      },
+      {
+        "title": "Livraison",
+        "items": ["CI/CD", "Git", "Performance", "Tests A/B", "Scalabilité"]
+      },
+      {
+        "title": "Produit et méthodes",
+        "items": ["Coordination inter-équipes", "Agile", "Priorisation", "Livraison"]
+      }
+    ]
+  }
+}

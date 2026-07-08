@@ -1,0 +1,39 @@
+{
+  "seoTitle": "Luc Rousseau | Index des CV (privé)",
+  "seoDescription": "Index privé des variantes de CV. Page noindex, hors sitemap.",
+  "title": "Mes CV",
+  "lede": "Choisis la variante selon le poste. Toutes ces pages sont noindex et hors sitemap. Tu es le seul à connaître ce lien.",
+  "note": "Conseil : envoie un seul lien par candidature, jamais cet index.",
+  "items": [
+    {
+      "href": "/cvs/cv-engineer",
+      "role": "Product Engineer",
+      "when": "Mandats ou postes hybrides produit + build."
+    },
+    {
+      "href": "/cvs/cv-pm",
+      "role": "Product Manager / Product Owner",
+      "when": "Leadership produit, feuille de route, priorisation."
+    },
+    {
+      "href": "/cvs/cv-techlead",
+      "role": "Tech Lead / Lead développeur",
+      "when": "Architecture, mentorat, embauche, codage et livraison."
+    },
+    {
+      "href": "/cvs/cv-founding",
+      "role": "Founding Engineer",
+      "when": "Startups early-stage, ownership 0 → 1."
+    },
+    {
+      "href": "/cvs/cv-react",
+      "role": "Développeur frontend senior · React",
+      "when": "Poste React / frontend, hors WordPress."
+    },
+    {
+      "href": "/cvs/cv-dev",
+      "role": "Développeur senior full stack",
+      "when": "Demande WP sur mesure + React / headless."
+    }
+  ]
+}

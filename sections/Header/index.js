@@ -19,11 +19,13 @@ import { getSiteNavigationItems } from "../../commons/siteNavigation";
  * @param {object} props
  * @param {boolean} [props.showNavigation=true] - Render main navigation
  * @param {boolean} [props.showCta=true] - Render contact email button
+ * @param {boolean} [props.showSocial=true] - Render social links
  * @param {Array} [props.navigation=[]] - Nav items when showNavigation is true
  */
 export default function Header({
   showNavigation = true,
   showCta = true,
+  showSocial = true,
   navigation = [],
   ...props
 }) {
@@ -75,13 +77,13 @@ export default function Header({
                                               <Row
                                                 valign={"middle"}
                                                 columns={[
-                                                  {
+                                                  showSocial && {
                                                     content: <SocialLinks />,
                                                   },
                                                   {
                                                     content: <LanguageSwitcher current={lang} />,
                                                   },
-                                                ]}
+                                                ].filter(Boolean)}
                                               />
                                             ),
                                           },

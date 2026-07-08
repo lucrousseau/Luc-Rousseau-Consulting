@@ -1,0 +1,285 @@
+{
+  "anchor": "cv",
+  "seoTitle": "Luc Rousseau | Resume, Product Engineer and senior developer",
+  "seoDescription": "Luc Rousseau's background: product consultant and Product Engineer, 26 years from design to product. Architecture, headless, WordPress, Laravel, React. Quebec and remote.",
+  "name": "Luc Rousseau",
+  "role": "Product Engineer · product and senior developer",
+  "tagline": "Roadmap, architecture and delivery: one thread, from strategy to code.",
+  "photoAlt": "Luc Rousseau, Product Engineer and senior developer",
+  "location": "Quebec, Canada",
+  "availability": "Open to permanent roles and consulting mandates, across Canada and remote",
+  "actions": {
+    "print": "Download as PDF",
+    "call": "Book a call"
+  },
+  "contact": {
+    "title": "Contact",
+    "items": [
+      {
+        "label": "Email",
+        "value": "hello@lucrousseau.com",
+        "href": "mailto:hello@lucrousseau.com?subject=Contact%20from%20resume"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/lucrousseau",
+        "href": "https://www.linkedin.com/in/lucrousseau/"
+      },
+      {
+        "label": "GitHub",
+        "value": "github.com/lucrousseau",
+        "href": "https://github.com/lucrousseau",
+        "note": "Projects being published"
+      },
+      {
+        "label": "Website",
+        "value": "lucrousseau.com",
+        "href": "https://lucrousseau.com"
+      }
+    ]
+  },
+  "summary": {
+    "title": "Profile",
+    "content": "<p><strong>Product Engineer</strong> with a solid web development background, I turn ideas into concrete products. Creative director and designer early on, then programmer, now product and technical leadership: having been on both sides of the brief gives me a rare perspective. Self-taught, I built my expertise in the field, project after project.</p><p>I help product and engineering teams decide what to build and why, design how the system should work, then ship it. No handoff, no black box: someone who structures, challenges and delivers, from roadmap to code.</p>"
+  },
+  "highlights": {
+    "items": [
+      { "value": "26 years", "label": "of experience, from pixels to product" },
+      { "value": "One thread", "label": "from roadmap to code, no handoff" },
+      { "value": "Headless", "label": "WordPress, Laravel, APIs, React, Next.js, Vue" },
+      { "value": "Fintech and editorial", "label": "high-traffic, multi-brand platforms" }
+    ]
+  },
+  "strengths": {
+    "title": "What I own",
+    "items": [
+      {
+        "title": "Roadmap and prioritization",
+        "content": "Product goals turned into a clear, sequenced plan with explicit priorities and mapped dependencies."
+      },
+      {
+        "title": "Architecture and system design",
+        "content": "Decoupled and headless systems, API contracts, build-vs-buy calls, performance and scalability."
+      },
+      {
+        "title": "Technical debt reduction",
+        "content": "Debt treated as a product and risk issue, prioritized to support delivery rather than ignored."
+      },
+      {
+        "title": "Delivery supervision",
+        "content": "Quality bar, release discipline, CI/CD, alignment between what was decided and what shipped."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "stackLabel": "Stack",
+    "items": [
+      {
+        "role": "Product Engineer · independent",
+        "company": "Luc Rousseau Consulting",
+        "companyHref": "https://lucrousseau.com",
+        "period": "Dec. 2021 – present",
+        "location": "Quebec and remote",
+        "summary": "One accountable partner for roadmap clarity, architecture decisions and delivery. Not a consultant who leaves a deck, not a dev who takes tickets: someone who structures, challenges and ships.",
+        "bullets": [
+          "Roadmap and prioritization: product goals turned into a clear, sequenced plan with mapped dependencies.",
+          "Architecture and system design: headless (WordPress, Laravel, APIs) with React, Next.js and Vue, API contracts, build-vs-buy calls, performance and scalability.",
+          "Technical debt treated as a product and risk issue, prioritized against delivery.",
+          "Delivery supervision: quality bar, release discipline, CI/CD, alignment between what was decided and what shipped.",
+          "2 to 3 concurrent mandates maximum, long-term engagements, present in ceremonies and reviews."
+        ],
+        "stack": "WordPress (headless and traditional), Laravel, React, Next.js, Vue, PHP, JavaScript ES6+, REST APIs, Gutenberg, CI/CD, MySQL"
+      },
+      {
+        "role": "Product Lead",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Oct. 2025 – Apr. 2026",
+        "location": "Montreal, QC · remote",
+        "summary": "Multi-brand comparison network (credit cards, travel, personal finance), Canada and France.",
+        "bullets": [
+          "Strategic alignment across content, management and development for effective delivery and measurable value.",
+          "Steered strategic projects: identified, prioritized and aligned with long-term goals.",
+          "Oversaw deliverables: deadlines, quality and value for clients and internal teams."
+        ]
+      },
+      {
+        "role": "Product Manager",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Jan. 2025 – Oct. 2025",
+        "location": "Montreal, QC · remote",
+        "summary": "Product transition on a multi-brand network.",
+        "bullets": [
+          "Smooth collaboration across editorial, management and development teams; resolved friction points.",
+          "Cross-team coordination to improve productivity and delivery predictability.",
+          "Ensured every initiative delivered measurable value."
+        ]
+      },
+      {
+        "role": "Senior full stack developer",
+        "company": "Milesopedia",
+        "companyHref": "https://www.linkedin.com/company/milesopedia",
+        "period": "Jul. 2024 – Sep. 2025",
+        "location": "Montreal, QC · remote",
+        "summary": "Request-management program on a headless CMS, deployed across partner-brand subdomains.",
+        "bullets": [
+          "Built application processes and systems on a headless CMS; user-data management.",
+          "Real-time React dashboards deployed across the network's subdomains (Canada and France).",
+          "Integration, deployment and maintenance; consistent performance and reliability.",
+          "Team: 3 developers, 1 DevOps consultant, plus staff on parallel projects."
+        ],
+        "stack": "Headless WordPress, Gutenberg, React, REST APIs, CI/CD"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "comparemortgages.ca",
+        "period": "Nov. 2022 – Apr. 2024",
+        "location": "Montreal, QC · remote",
+        "summary": "Mortgage analysis and comparison platform.",
+        "bullets": [
+          "System architecture for loan analysis and comparison; phased planning (milestones, deliverables, timelines).",
+          "Coordination across wireframes, design, back-end and front-end toward on-time, high-quality delivery.",
+          "UI prototypes and wireframes with designers; A/B testing and data-analysis tooling."
+        ],
+        "stack": "React, Vue.js, Next.js, PHP, Laravel, GraphQL, REST, WordPress, Webpack, Docker, Tailwind"
+      },
+      {
+        "role": "Tech Lead",
+        "company": "nesto",
+        "companyHref": "https://www.linkedin.com/company/nesto-ca",
+        "period": "Dec. 2018 – Apr. 2024",
+        "location": "Montreal, QC · remote",
+        "summary": "Online mortgage lender, Canadian fintech ($302M Series E, $1.47B valuation).",
+        "bullets": [
+          "Centralized system architecture, shared foundation for every product initiative in the organization.",
+          "Adaptable grid to tailor each project while preserving a solid, coherent infrastructure.",
+          "Technical direction and mentoring of one developer; recruiting and design of technical-skills assessments.",
+          "Monitoring, maintenance and continuous optimization of the existing architecture."
+        ],
+        "stack": "React, Vue.js, Next.js, PHP, Laravel, GraphQL, REST, WordPress, Webpack, Docker, Tailwind, Git"
+      },
+      {
+        "role": "President and senior developer",
+        "company": "Strong développement",
+        "period": "Jan. 2015 – Feb. 2021",
+        "location": "Quebec",
+        "summary": "Custom web development studio.",
+        "bullets": [
+          "Custom WordPress themes and plugins, responsive websites and bespoke applications.",
+          "Expertise in PHP/MySQL, JavaScript ES6+, React, Laravel, SASS, Git and Webpack."
+        ]
+      },
+      {
+        "role": "Freelance web developer",
+        "company": "Luc Rousseau",
+        "period": "May 2007 – Jan. 2015",
+        "location": "Quebec",
+        "summary": "Design, integration and development of custom websites and web applications for SMEs and agencies.",
+        "bullets": []
+      },
+      {
+        "role": "Art director, head of the interactive department",
+        "company": "Hatem+D",
+        "period": "Jan. 2005 – May 2007",
+        "location": "Quebec",
+        "summary": "Branding and integrated-concept agency.",
+        "bullets": ["Creative direction and ownership of the interactive department."]
+      }
+    ]
+  },
+  "earlier": {
+    "title": "Earlier path (2000 – 2006)",
+    "items": [
+      { "role": "Art director", "company": "XPUB Marketing Créatif", "period": "2002 – 2004" },
+      { "role": "Art director", "company": "Mobilito", "period": "2005 – 2006" },
+      { "role": "Web designer and integrator", "company": "Logisoft", "period": "2004 – 2005" },
+      {
+        "role": "Web designer and integrator",
+        "company": "Pur, l'agence interactive",
+        "period": "2000 – 2002"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "groups": [
+      {
+        "title": "Product and leadership",
+        "items": [
+          "Roadmap and prioritization",
+          "Product management",
+          "Technical direction",
+          "Cross-team coordination",
+          "Technical recruiting",
+          "Delivery supervision"
+        ]
+      },
+      {
+        "title": "Architecture",
+        "items": [
+          "System architecture",
+          "Headless and decoupled",
+          "REST API contracts",
+          "Build-vs-buy",
+          "Performance and scalability",
+          "Technical debt reduction"
+        ]
+      },
+      {
+        "title": "Development",
+        "items": [
+          "React",
+          "Next.js",
+          "Vue",
+          "JavaScript ES6+",
+          "PHP",
+          "Laravel",
+          "MySQL",
+          "HTML, CSS, SASS"
+        ]
+      },
+      {
+        "title": "CMS and editorial",
+        "items": [
+          "Headless and traditional WordPress",
+          "Gutenberg",
+          "Themes and plugins",
+          "Editorial platforms at scale"
+        ]
+      },
+      {
+        "title": "Practices and tools",
+        "items": [
+          "CI/CD",
+          "Git",
+          "Webpack",
+          "A/B testing",
+          "Responsive design",
+          "Accessibility",
+          "Figma",
+          "Photoshop"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "content": "<p><strong>Self-taught.</strong> 26 years of continuous practice: design, web development, product and technical leadership, built in the field, project after project.</p>"
+  },
+  "languages": {
+    "title": "Languages",
+    "items": [
+      { "name": "French", "level": "Native" },
+      { "name": "English", "level": "Professional" }
+    ]
+  },
+  "awards": {
+    "title": "Recognition",
+    "items": [
+      "Grand prix du tourisme québécois 2002, website category, event web projects (tied with Les Floralies and Hôtel Dominion, special mention for Carnaval de Québec).",
+      "Finalist, Boomerangs Awards 2001, event category (Carnaval de Québec)."
+    ]
+  }
+}

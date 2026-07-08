@@ -140,6 +140,34 @@ const SEO = ({
   };
 
   const extraSchemas = Array.isArray(jsonLd) ? jsonLd.filter(Boolean) : [];
+  const baseUrl = getSiteOrigin();
+
+  if (noindex) {
+    return (
+      <Head>
+        <title>{title}</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href={`${baseUrl}/favicon/apple-touch-icon.png`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href={`${baseUrl}/favicon/favicon-32x32.png`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href={`${baseUrl}/favicon/favicon-16x16.png`}
+        />
+        <link rel="manifest" href={`${baseUrl}/favicon/site.webmanifest`} />
+      </Head>
+    );
+  }
 
   return (
     <Head>
@@ -168,7 +196,6 @@ const SEO = ({
         />
       ))}
       <meta name="description" content={description} />
-      {noindex && <meta name="robots" content="noindex, nofollow" />}
       <link rel="canonical" href={canonical} />
 
       <meta name="geo.region" content={GEO_LOCATION.regionMeta} />
