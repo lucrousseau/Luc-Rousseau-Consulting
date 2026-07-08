@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import Script from "next/script";
 import { useRouter } from "next/router";
 
-import { appWithTranslation } from "next-i18next";
+import { appWithTranslation } from "next-i18next/pages";
 
 import { isCvPath } from "../commons/isCvPath";
 import "../styles/main.scss";

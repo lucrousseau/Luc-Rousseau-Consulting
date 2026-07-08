@@ -20,7 +20,7 @@ function parseSituationPathname(pathname) {
   return null;
 }
 
-export function middleware(request) {
+export function proxy(request) {
   const locale = request.nextUrl.locale === "en" ? "en" : "fr";
   const parsed = parseSituationPathname(request.nextUrl.pathname);
 

@@ -1,4 +1,4 @@
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next/pages";
 import Row from "../../../components/Layout/Row";
 import Container from "../../../components/Layout/Container";
 import ProductGrid from "../../../components/ProductGrid";

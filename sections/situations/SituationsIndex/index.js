@@ -1,4 +1,4 @@
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next/pages";
 import { ROUTES } from "../../../commons/siteRoutes";
 import { parseHtmlContent } from "../../../commons/parseHtmlContent";
 

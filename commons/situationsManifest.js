@@ -60,20 +60,12 @@ const SITUATIONS = [
 ];
 
 /**
- * @param {string} locale
- * @returns {"slugFr" | "slugEn"}
- */
-function slugKeyForLocale(locale) {
-  return locale === "en" ? "slugEn" : "slugFr";
-}
-
-/**
  * @param {SituationEntry} situation
  * @param {string} locale
  * @returns {string}
  */
 function getSituationSlug(situation, locale) {
-  return situation[slugKeyForLocale(locale)];
+  return locale === "en" ? situation.slugEn : situation.slugFr;
 }
 
 /**
@@ -92,8 +84,7 @@ function getSituationPath(situation, locale) {
  */
 function getSituationBySlug(slug, locale) {
   if (locale) {
-    const key = slugKeyForLocale(locale);
-    return SITUATIONS.find((situation) => situation[key] === slug);
+    return SITUATIONS.find((situation) => getSituationSlug(situation, locale) === slug);
   }
   return SITUATIONS.find(
     (situation) => situation.slugFr === slug || situation.slugEn === slug || situation.id === slug
@@ -106,8 +97,7 @@ function getSituationBySlug(slug, locale) {
  */
 function getAllSituationSlugs(locale) {
   if (locale) {
-    const key = slugKeyForLocale(locale);
-    return SITUATIONS.map((situation) => situation[key]);
+    return SITUATIONS.map((situation) => getSituationSlug(situation, locale));
   }
   return SITUATIONS.map((situation) => situation.id);
 }

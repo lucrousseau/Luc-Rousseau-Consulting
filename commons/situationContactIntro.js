@@ -9,12 +9,9 @@ export function getSituationContactIntro(blocks) {
     return null;
   }
 
-  for (let index = blocks.length - 1; index >= 0; index -= 1) {
-    const block = blocks[index];
-    if (block?.type === "cta" && typeof block.teaser === "string" && block.teaser.trim()) {
-      return block.teaser;
-    }
-  }
+  const ctaBlock = blocks.findLast(
+    (block) => block?.type === "cta" && typeof block.teaser === "string" && block.teaser.trim()
+  );
 
-  return null;
+  return ctaBlock?.teaser ?? null;
 }

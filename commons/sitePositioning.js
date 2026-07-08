@@ -21,6 +21,5 @@ export const HOME_SEO = Object.freeze({
  * @returns {{ jobTitle: string, description: string }}
  */
 export function getHomeSeoCopy(locale) {
-  const key = locale === "en" ? "en" : "fr";
-  return HOME_SEO[key];
+  return locale === "en" ? HOME_SEO.en : HOME_SEO.fr;
 }

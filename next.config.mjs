@@ -23,8 +23,13 @@ const nextPolyfillModule = path.join(
 const nextConfig = {
   outputFileTracingRoot: __dirname,
   serverExternalPackages: ["image-size"],
+  turbopack: {
+    resolveAlias: {
+      [nextPolyfillModule]: path.join(__dirname, "lib/empty-polyfill.js"),
+    },
+  },
   webpack(config) {
-    // Next bundles baseline polyfills into `main` for all browsers; we target modern only.
+    // Fallback for `next build --webpack` when Turbopack alias is unavailable.
     config.resolve.alias = {
       ...config.resolve.alias,
       [nextPolyfillModule]: path.join(__dirname, "lib/empty-polyfill.js"),

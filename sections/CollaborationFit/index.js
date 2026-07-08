@@ -1,4 +1,4 @@
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next/pages";
 import { parseHtmlContent } from "../../commons/parseHtmlContent";
 
 import Container from "../../components/Layout/Container";

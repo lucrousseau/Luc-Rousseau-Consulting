@@ -19,20 +19,12 @@ const EXPERTISE_PAGES = [
 ];
 
 /**
- * @param {string} locale
- * @returns {"slugFr" | "slugEn"}
- */
-function slugKeyForLocale(locale) {
-  return locale === "en" ? "slugEn" : "slugFr";
-}
-
-/**
  * @param {ExpertiseEntry} page
  * @param {string} locale
  * @returns {string}
  */
 function getExpertiseSlug(page, locale) {
-  return page[slugKeyForLocale(locale)];
+  return locale === "en" ? page.slugEn : page.slugFr;
 }
 
 /**
@@ -51,8 +43,7 @@ function getExpertisePath(page, locale) {
  */
 function getExpertiseBySlug(slug, locale) {
   if (locale) {
-    const key = slugKeyForLocale(locale);
-    return EXPERTISE_PAGES.find((page) => page[key] === slug);
+    return EXPERTISE_PAGES.find((page) => getExpertiseSlug(page, locale) === slug);
   }
   return EXPERTISE_PAGES.find(
     (page) => page.slugFr === slug || page.slugEn === slug || page.id === slug
@@ -65,8 +56,7 @@ function getExpertiseBySlug(slug, locale) {
  */
 function getAllExpertiseSlugs(locale) {
   if (locale) {
-    const key = slugKeyForLocale(locale);
-    return EXPERTISE_PAGES.map((page) => page[key]);
+    return EXPERTISE_PAGES.map((page) => getExpertiseSlug(page, locale));
   }
   return EXPERTISE_PAGES.map((page) => page.id);
 }

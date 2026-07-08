@@ -1,6 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next/pages";
 
 import SEO from "../components/SEO";
 import Container from "../components/Layout/Container";
@@ -10,7 +10,7 @@ import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 import HomeHero from "../sections/HomeHero";
 
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { serverSideTranslations } from "next-i18next/pages/serverSideTranslations";
 
 const ProductEngineerDefinition = dynamic(() => import("../sections/ProductEngineerDefinition"));
 const AIResponsible = dynamic(() => import("../sections/AIResponsible"));
@@ -74,19 +74,6 @@ export default function Home() {
 }
 
 export const getStaticProps = async ({ locale }) => {
-  // Dev-only: bust next-i18next server cache so locale JSON edits apply without restart.
-  if (process.env.NODE_ENV === "development") {
-    try {
-      const resolved = require.resolve("next-i18next/dist/commonjs/createClient/node.js");
-      /* eslint-disable security/detect-object-injection -- resolved from require.resolve */
-      if (require.cache[resolved]) {
-        delete require.cache[resolved];
-      }
-      /* eslint-enable security/detect-object-injection */
-    } catch {
-      // Ignore if module path or cache clear fails
-    }
-  }
   return {
     props: {
       ...(await serverSideTranslations(locale, [

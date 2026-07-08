@@ -1,7 +1,7 @@
 import { useId, useState } from "react";
 import Link from "next/link";
 import classNames from "classnames";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next/pages";
 
 import Button from "../Button";
 import {

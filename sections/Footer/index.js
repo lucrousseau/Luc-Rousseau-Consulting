@@ -2,7 +2,7 @@ import classNames from "classnames";
 
 import { alignments } from "../../commons/alignments";
 
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next/pages";
 
 import Row from "../../components/Layout/Row";
 import Navigation from "../../components/Navigation";
