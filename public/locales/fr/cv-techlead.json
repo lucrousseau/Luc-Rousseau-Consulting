@@ -59,40 +59,16 @@
         "role": "Lead technique, puis Product Lead",
         "company": "Milesopedia",
         "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Oct. 2025 – avr. 2026",
+        "period": "Juil. 2024 – avr. 2026",
         "location": "Montréal, QC · à distance",
+        "progression": "Évolution interne : développeur senior → lead technique → Product Manager → Product Lead",
         "summary": "Réseau de comparateurs multi-marques ; leadership technique et produit.",
         "bullets": [
-          "Alignement contenu, gestion et développement (3 développeurs, 1 consultant DevOps, employés sur projets parallèles).",
-          "Fluidification des processus de collaboration ; résolution des points de friction.",
-          "Pilotage des initiatives techniques clés, alignées sur les objectifs de l'organisation."
-        ],
-        "stack": "React, APIs REST, architecture front, CI/CD"
-      },
-      {
-        "role": "Product Manager",
-        "company": "Milesopedia",
-        "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Janv. 2025 – oct. 2025",
-        "location": "Montréal, QC · à distance",
-        "summary": "Coordination inter-équipes et livraison sur le programme headless.",
-        "bullets": [
-          "Processus de collaboration entre équipes éditoriales, gestion et développement.",
-          "Supervision des livrables : délais, qualité et valeur mesurable.",
-          "Priorisation des initiatives clés pour l'organisation."
-        ]
-      },
-      {
-        "role": "Développeur senior, puis lead technique",
-        "company": "Milesopedia",
-        "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Juil. 2024 – sept. 2025",
-        "location": "Montréal, QC · à distance",
-        "summary": "Programme de gestion des demandes sur CMS headless, multi-sous-domaines.",
-        "bullets": [
-          "Architecture et implémentation de processus sur CMS headless ; gestion des données utilisateurs.",
-          "Tableaux de bord React en temps réel, déployés sur l'ensemble des sous-domaines du réseau.",
-          "Intégration, déploiement et maintenance ; base technique commune pour l'équipe dev."
+          "Programme de gestion des demandes sur CMS headless, multi-sous-domaines (Canada et France).",
+          "Architecture et implémentation de processus sur CMS headless ; tableaux de bord React en temps réel.",
+          "Alignement contenu, gestion et développement ; fluidification des processus de collaboration.",
+          "Pilotage des initiatives techniques et produit, alignées sur les objectifs de l'organisation.",
+          "Équipe : 3 développeurs, 1 consultant DevOps, employés sur projets parallèles."
         ],
         "stack": "WordPress headless, React, PHP, APIs REST, CI/CD"
       },

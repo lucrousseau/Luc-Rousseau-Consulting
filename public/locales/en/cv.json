@@ -102,39 +102,15 @@
         "role": "Product Lead",
         "company": "Milesopedia",
         "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Oct. 2025 – Apr. 2026",
+        "period": "Jul. 2024 – Apr. 2026",
         "location": "Montreal, QC · remote",
+        "progression": "Internal progression: senior full stack developer → Product Manager → Product Lead",
         "summary": "Multi-brand comparison network (credit cards, travel, personal finance), Canada and France.",
         "bullets": [
-          "Strategic alignment across content, management and development for effective delivery and measurable value.",
-          "Steered strategic projects: identified, prioritized and aligned with long-term goals.",
-          "Oversaw deliverables: deadlines, quality and value for clients and internal teams."
-        ]
-      },
-      {
-        "role": "Product Manager",
-        "company": "Milesopedia",
-        "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Jan. 2025 – Oct. 2025",
-        "location": "Montreal, QC · remote",
-        "summary": "Product transition on a multi-brand network.",
-        "bullets": [
-          "Smooth collaboration across editorial, management and development teams; resolved friction points.",
-          "Cross-team coordination to improve productivity and delivery predictability.",
-          "Ensured every initiative delivered measurable value."
-        ]
-      },
-      {
-        "role": "Senior full stack developer",
-        "company": "Milesopedia",
-        "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Jul. 2024 – Sep. 2025",
-        "location": "Montreal, QC · remote",
-        "summary": "Request-management program on a headless CMS, deployed across partner-brand subdomains.",
-        "bullets": [
-          "Built application processes and systems on a headless CMS; user-data management.",
-          "Real-time React dashboards deployed across the network's subdomains (Canada and France).",
-          "Integration, deployment and maintenance; consistent performance and reliability.",
+          "Request-management program on a headless CMS, deployed across the network's subdomains (Canada and France).",
+          "Real-time React dashboards; application processes and systems, user-data management.",
+          "Moved into product: aligned content, management and development; resolved friction points.",
+          "Steered and prioritized strategic initiatives; oversaw deliverables (deadlines, quality, measurable value).",
           "Team: 3 developers, 1 DevOps consultant, plus staff on parallel projects."
         ],
         "stack": "Headless WordPress, Gutenberg, React, REST APIs, CI/CD"

@@ -59,40 +59,16 @@
         "role": "Technical lead, then Product Lead",
         "company": "Milesopedia",
         "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Oct. 2025 – Apr. 2026",
+        "period": "Jul. 2024 – Apr. 2026",
         "location": "Montreal, QC · remote",
+        "progression": "Internal progression: senior developer → technical lead → Product Manager → Product Lead",
         "summary": "Multi-brand network; technical and product leadership.",
         "bullets": [
-          "Aligned content, management and development (3 developers, 1 DevOps consultant, staff on parallel projects).",
-          "Smoothed collaboration processes; resolved friction points.",
-          "Steered key technical initiatives, aligned with the organization's goals."
-        ],
-        "stack": "React, REST APIs, front-end architecture, CI/CD"
-      },
-      {
-        "role": "Product Manager",
-        "company": "Milesopedia",
-        "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Jan. 2025 – Oct. 2025",
-        "location": "Montreal, QC · remote",
-        "summary": "Cross-team coordination and delivery on the headless program.",
-        "bullets": [
-          "Collaboration processes across editorial, management and development teams.",
-          "Oversaw deliverables: deadlines, quality and measurable value.",
-          "Prioritized key initiatives for the organization."
-        ]
-      },
-      {
-        "role": "Senior developer, then technical lead",
-        "company": "Milesopedia",
-        "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Jul. 2024 – Sep. 2025",
-        "location": "Montreal, QC · remote",
-        "summary": "Request-management program on a headless CMS, multi-subdomain.",
-        "bullets": [
-          "Architecture and implementation of processes on a headless CMS; user-data management.",
-          "Real-time React dashboards deployed across the network's subdomains.",
-          "Integration, deployment and maintenance; shared technical foundation for the dev team."
+          "Request-management program on a headless CMS, multi-subdomain (Canada and France).",
+          "Architecture and implementation of processes on a headless CMS; real-time React dashboards.",
+          "Aligned content, management and development; smoothed collaboration processes.",
+          "Steered technical and product initiatives, aligned with the organization's goals.",
+          "Team: 3 developers, 1 DevOps consultant, staff on parallel projects."
         ],
         "stack": "Headless WordPress, React, PHP, REST APIs, CI/CD"
       },

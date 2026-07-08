@@ -58,37 +58,15 @@
         "role": "Product Lead",
         "company": "Milesopedia",
         "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Oct. 2025 – avr. 2026",
+        "period": "Juil. 2024 – avr. 2026",
         "location": "Montréal, QC · à distance",
+        "progression": "Évolution interne : développeur full stack senior → Product Manager → Product Lead",
         "summary": "Réseau multi-marques ; passage du code au leadership produit.",
         "bullets": [
+          "0 → 1 : programme de gestion des demandes sur CMS headless, multi-marques (Canada et France).",
+          "Tableaux de bord React en temps réel ; construction de processus et systèmes, gestion des données utilisateurs.",
           "Prioriser, aligner contenu et ingénierie, livrer avec une équipe réduite (3 devs, 1 DevOps consultant).",
-          "Pilotage de projets stratégiques alignés sur les objectifs long terme.",
-          "Résolution des frictions pour qu'une petite équipe avance vite."
-        ]
-      },
-      {
-        "role": "Product Manager",
-        "company": "Milesopedia",
-        "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Janv. 2025 – oct. 2025",
-        "location": "Montréal, QC · à distance",
-        "summary": "Coordination inter-équipes sur le programme headless.",
-        "bullets": [
-          "Processus de collaboration fluides ; points de friction identifiés et résolus.",
-          "Livraison efficace avec valeur mesurable pour utilisateurs et parties prenantes."
-        ]
-      },
-      {
-        "role": "Développeur full stack senior",
-        "company": "Milesopedia",
-        "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Juil. 2024 – sept. 2025",
-        "location": "Montréal, QC · à distance",
-        "summary": "0 → 1 : programme de gestion des demandes sur CMS headless, multi-marques.",
-        "bullets": [
-          "Construction de processus et systèmes sur CMS headless ; gestion des données utilisateurs.",
-          "Tableaux de bord React en temps réel, déployés sur l'ensemble du réseau multi-marques.",
+          "Pilotage de projets stratégiques alignés sur les objectifs long terme ; résolution des frictions.",
           "Intégration et déploiement dans des écosystèmes existants ; livraison bout en bout."
         ],
         "stack": "React, WordPress headless, PHP, APIs REST, CI/CD"

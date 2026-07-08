@@ -58,37 +58,15 @@
         "role": "Product Lead",
         "company": "Milesopedia",
         "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Oct. 2025 – Apr. 2026",
+        "period": "Jul. 2024 – Apr. 2026",
         "location": "Montreal, QC · remote",
+        "progression": "Internal progression: senior full stack developer → Product Manager → Product Lead",
         "summary": "Multi-brand network; from code to product leadership.",
         "bullets": [
+          "0 → 1: request-management program on a headless CMS, multi-brand (Canada and France).",
+          "Real-time React dashboards; built processes and systems, user-data management.",
           "Prioritize, align content and engineering, ship with a small team (3 devs, 1 DevOps consultant).",
-          "Steered strategic projects aligned with long-term goals.",
-          "Cleared friction so a small team could move fast."
-        ]
-      },
-      {
-        "role": "Product Manager",
-        "company": "Milesopedia",
-        "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Jan. 2025 – Oct. 2025",
-        "location": "Montreal, QC · remote",
-        "summary": "Cross-team coordination on the headless program.",
-        "bullets": [
-          "Smooth collaboration processes; identified and resolved friction points.",
-          "Effective delivery with measurable value for users and stakeholders."
-        ]
-      },
-      {
-        "role": "Senior full stack developer",
-        "company": "Milesopedia",
-        "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Jul. 2024 – Sep. 2025",
-        "location": "Montreal, QC · remote",
-        "summary": "0 → 1: request-management program on a headless CMS, multi-brand.",
-        "bullets": [
-          "Built processes and systems on a headless CMS; user-data management.",
-          "Real-time React dashboards deployed across the multi-brand network.",
+          "Steered strategic projects aligned with long-term goals; cleared friction so a small team could move fast.",
           "Integration and deployment into existing ecosystems; end-to-end delivery."
         ],
         "stack": "React, headless WordPress, PHP, REST APIs, CI/CD"

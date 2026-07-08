@@ -57,40 +57,16 @@
         "role": "Product Lead",
         "company": "Milesopedia",
         "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Oct. 2025 – Apr. 2026",
+        "period": "Jul. 2024 – Apr. 2026",
         "location": "Montreal, QC · remote",
+        "progression": "Internal progression: senior full stack developer → Product Manager → Product Lead",
         "summary": "Multi-brand comparison network (credit cards, travel, personal finance), Canada and France.",
         "bullets": [
-          "Strategic alignment across content, management and development for effective delivery and maximum value (users and internal stakeholders).",
-          "Steered strategic projects: identified, prioritized and aligned with long-term goals.",
-          "Oversaw deliverables: deadlines, quality and measurable value for clients and internal teams."
-        ]
-      },
-      {
-        "role": "Product Manager",
-        "company": "Milesopedia",
-        "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Jan. 2025 – Oct. 2025",
-        "location": "Montreal, QC · remote",
-        "summary": "Transition into product: cross-team coordination on a multi-brand network.",
-        "bullets": [
-          "Smooth collaboration processes across editorial, management and development teams; resolved friction points.",
-          "Project management and coordination to improve productivity and delivery predictability.",
-          "Ensured every initiative delivered measurable value for users and internal stakeholders."
-        ]
-      },
-      {
-        "role": "Senior full stack developer",
-        "company": "Milesopedia",
-        "companyHref": "https://www.linkedin.com/company/milesopedia",
-        "period": "Jul. 2024 – Sep. 2025",
-        "location": "Montreal, QC · remote",
-        "summary": "Request-management program on a headless CMS, deployed across partner-brand subdomains.",
-        "bullets": [
-          "Built application processes and systems on a headless CMS; user-data management.",
-          "Real-time dashboards (request progress and status), deployed across the network's subdomains.",
-          "Integration, deployment and maintenance in existing web ecosystems; consistent performance and reliability.",
-          "Team: 3 developers, 1 DevOps consultant, plus staff on parallel projects alongside the dev initiative."
+          "Moved from development into product: cross-team coordination on a multi-brand headless program.",
+          "Strategic alignment across content, management and development; resolved friction points.",
+          "Steered and prioritized strategic initiatives; oversaw deliverables (deadlines, quality, measurable value).",
+          "Ensured every initiative delivered measurable value for users and internal stakeholders.",
+          "Team: 3 developers, 1 DevOps consultant, plus staff on parallel projects."
         ],
         "stack": "Headless WordPress, React, PHP, MySQL, REST APIs"
       },
