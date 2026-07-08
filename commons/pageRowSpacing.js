@@ -70,3 +70,9 @@ export const homeTableRowStyle = {
   "--padding-bottom": rowPad,
   "--sm-padding-bottom": rowPadSm,
 };
+
+/** Compact header/footer chrome on situation, expertise, and CV pages */
+export const pageShellStyle = {
+  "--padding-top": "1rem",
+  "--padding-bottom": "1rem",
+};

@@ -3,10 +3,11 @@
  * CommonJS so next.config.mjs can load it without ESM package warnings.
  *
  * Internal links in locale JSON: `/situations/{id}` (see commons/siteRoutes.js).
- * @typedef {{ id: string; slugFr: string; slugEn: string; namespace: string; publishedAt: string }} SituationEntry
  */
 
-/** @type {SituationEntry[]} */
+const { createLocalizedManifest } = require("./localizedManifest");
+
+/** @type {import("./localizedManifest").LocalizedPageEntry[]} */
 const SITUATIONS = [
   {
     id: "premier-dev-fractionnel",
@@ -59,69 +60,13 @@ const SITUATIONS = [
   },
 ];
 
-/**
- * @param {SituationEntry} situation
- * @param {string} locale
- * @returns {string}
- */
-function getSituationSlug(situation, locale) {
-  return locale === "en" ? situation.slugEn : situation.slugFr;
-}
-
-/**
- * @param {SituationEntry} situation
- * @param {string} locale
- * @returns {string}
- */
-function getSituationPath(situation, locale) {
-  return `/situations/${getSituationSlug(situation, locale)}`;
-}
-
-/**
- * @param {string} slug
- * @param {string} [locale] When set, only match that locale's slug.
- * @returns {SituationEntry | undefined}
- */
-function getSituationBySlug(slug, locale) {
-  if (locale) {
-    return SITUATIONS.find((situation) => getSituationSlug(situation, locale) === slug);
-  }
-  return SITUATIONS.find(
-    (situation) => situation.slugFr === slug || situation.slugEn === slug || situation.id === slug
-  );
-}
-
-/**
- * @param {string} [locale] When set, return slugs for that locale only.
- * @returns {string[]}
- */
-function getAllSituationSlugs(locale) {
-  if (locale) {
-    return SITUATIONS.map((situation) => getSituationSlug(situation, locale));
-  }
-  return SITUATIONS.map((situation) => situation.id);
-}
-
-/**
- * @param {SituationEntry} situation
- * @param {string} defaultLocale
- * @returns {{ fr: string; en: string; default: string }}
- */
-function getSituationHreflangPaths(situation, defaultLocale = "fr") {
-  const frPath = getSituationPath(situation, "fr");
-  const enPath = getSituationPath(situation, "en");
-  return {
-    fr: frPath,
-    en: enPath,
-    default: defaultLocale === "en" ? enPath : frPath,
-  };
-}
+const manifest = createLocalizedManifest("/situations", SITUATIONS);
 
 module.exports = {
-  SITUATIONS,
-  getSituationSlug,
-  getSituationPath,
-  getSituationBySlug,
-  getAllSituationSlugs,
-  getSituationHreflangPaths,
+  SITUATIONS: manifest.entries,
+  getSituationSlug: manifest.getSlug,
+  getSituationPath: manifest.getPath,
+  getSituationBySlug: manifest.getBySlug,
+  getAllSituationSlugs: manifest.getAllSlugs,
+  getSituationHreflangPaths: manifest.getHreflangPaths,
 };

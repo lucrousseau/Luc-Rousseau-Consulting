@@ -162,9 +162,11 @@ function SituationBlock({ block }) {
 
 /**
  * Renders a full situation page from i18n namespace (`hero` + `blocks[]`).
- * @param {{ namespace: string }} props
+ * @param {object} props
+ * @param {string} props.namespace
+ * @param {boolean} [props.showSituationsHub=true] - Pass false for expertise satellite pages
  */
-export default function SituationShell({ namespace }) {
+export default function SituationShell({ namespace, showSituationsHub = true }) {
   const { t } = useTranslation([namespace, "common"]);
   const blocks = t("blocks", { returnObjects: true });
   const blockList = /** @type {import('../situationTypes').SituationBlock[]} */ (
@@ -173,7 +175,7 @@ export default function SituationShell({ namespace }) {
 
   return (
     <>
-      <SituationHero namespace={namespace} />
+      <SituationHero namespace={namespace} showSituationsHub={showSituationsHub} />
       {blockList.map((block, index) => (
         <SituationBlock key={`${block.type}-${block.sectionKey ?? index}`} block={block} />
       ))}

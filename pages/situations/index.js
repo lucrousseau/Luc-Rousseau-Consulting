@@ -13,11 +13,7 @@ import { getSituationPathById, ROUTES } from "../../commons/siteRoutes";
 import { absoluteUrl, localizedPath } from "../../commons/localizedPath";
 import { buildSituationsHubJsonLd } from "../../commons/situationsStructuredData";
 import { getSiteOrigin } from "../../utils/siteOrigin";
-
-const PAGE_SHELL_STYLE = {
-  "--padding-top": "1rem",
-  "--padding-bottom": "1rem",
-};
+import { pageShellStyle } from "../../commons/pageRowSpacing";
 
 /** @param {string} id */
 const situationTitleKey = (id) => `situations.${id}.title`;
@@ -56,14 +52,14 @@ export default function SituationsIndexPage() {
         sameAs={[t("common:linkedin")]}
         jsonLd={hubJsonLd}
       />
-      <Container tag="header" style={PAGE_SHELL_STYLE}>
+      <Container tag="header" style={pageShellStyle}>
         <Header showNavigation showCta={false} />
       </Container>
       <main className="page-home page-situations">
         <SituationsIndex />
         <Contact />
       </main>
-      <Container tag="footer" style={PAGE_SHELL_STYLE}>
+      <Container tag="footer" style={pageShellStyle}>
         <Footer />
       </Container>
     </>

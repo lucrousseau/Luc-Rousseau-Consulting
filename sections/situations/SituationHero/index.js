@@ -10,9 +10,11 @@ import { homeCtaRowStyle } from "../../../commons/pageRowSpacing";
 
 /**
  * Situation page hero (h1 + lede + optional Buy). Reads `hero` from the situation namespace.
- * @param {{ namespace: string }} props
+ * @param {object} props
+ * @param {string} props.namespace
+ * @param {boolean} [props.showSituationsHub=true] - Include situations hub in breadcrumbs (false for expertise pages)
  */
-export default function SituationHero({ namespace }) {
+export default function SituationHero({ namespace, showSituationsHub = true }) {
   const { t } = useTranslation([namespace, "common"]);
   const hero =
     /** @type {{ buy?: { legend?: string; prefix?: string; label?: string }; title?: string; badge?: string; quote?: string; lede?: string }} */ (
@@ -22,7 +24,9 @@ export default function SituationHero({ namespace }) {
 
   const breadcrumbItems = [
     { label: t("common:home-link-label"), href: ROUTES.home },
-    { label: t("common:situations-link-label"), href: ROUTES.situationsHub },
+    ...(showSituationsHub
+      ? [{ label: t("common:situations-link-label"), href: ROUTES.situationsHub }]
+      : []),
     { label: hero?.title ?? "" },
   ];
 

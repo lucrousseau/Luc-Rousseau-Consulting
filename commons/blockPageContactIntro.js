@@ -1,10 +1,10 @@
 /**
- * Footer intro for the global Contact block on situation/expertise pages.
+ * Footer intro for the global Contact block on block-driven detail pages.
  * Reads the last `cta` block teaser from i18n `blocks[]` (not rendered inline).
  * @param {unknown} blocks
  * @returns {string | null}
  */
-export function getSituationContactIntro(blocks) {
+export function getBlockPageContactIntro(blocks) {
   if (!Array.isArray(blocks)) {
     return null;
   }

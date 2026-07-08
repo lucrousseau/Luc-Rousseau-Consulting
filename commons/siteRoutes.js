@@ -80,7 +80,7 @@ export function normalizeAppPathname(href) {
 
 /**
  * @param {string} id
- * @returns {import("./situationsManifest").SituationEntry | undefined}
+ * @returns {import("./localizedManifest").LocalizedPageEntry | undefined}
  */
 export function getSituationById(id) {
   return SITUATIONS.find((situation) => situation.id === id);
@@ -98,7 +98,7 @@ export function getSituationPathById(id, locale) {
 
 /**
  * @param {string} id
- * @returns {import("./expertiseManifest").ExpertiseEntry | undefined}
+ * @returns {import("./localizedManifest").LocalizedPageEntry | undefined}
  */
 export function getExpertiseById(id) {
   return EXPERTISE_PAGES.find((page) => page.id === id);
@@ -205,7 +205,7 @@ export function getRouteAlternateUrls(base, pathname, defaultLocale = "fr") {
 /**
  * Absolute FR/EN/default URLs for a situation page (sitemap hreflang, audits).
  * @param {string} base
- * @param {import("./situationsManifest").SituationEntry} situation
+ * @param {import("./localizedManifest").LocalizedPageEntry} situation
  * @param {string} [defaultLocale]
  * @returns {{ fr: string; en: string; default: string }}
  */
@@ -221,7 +221,7 @@ export function getSituationAlternateUrls(base, situation, defaultLocale = "fr")
 /**
  * Absolute FR/EN/default URLs for an expertise page (sitemap hreflang).
  * @param {string} base
- * @param {import("./expertiseManifest").ExpertiseEntry} page
+ * @param {import("./localizedManifest").LocalizedPageEntry} page
  * @param {string} [defaultLocale]
  * @returns {{ fr: string; en: string; default: string }}
  */

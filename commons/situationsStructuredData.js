@@ -121,44 +121,32 @@ export function buildSituationPageBreadcrumbJsonLd({
 }
 
 /**
- * Breadcrumb + WebPage JSON-LD for a single situation page.
+ * Shared WebPage JSON-LD payload for block-driven detail pages.
  * @param {object} params
  * @param {string} params.base
  * @param {string} params.locale
  * @param {string} params.defaultLocale
  * @param {string} params.pageUrl
- * @param {string} params.pageName visible H1 / headline
- * @param {string} params.pageDescription meta description
- * @param {string} params.homeLabel
- * @param {string} params.situationsHubLabel
- * @param {string} [params.datePublished] ISO date
- * @param {string} [params.dateModified] ISO date
- * @returns {object[]}
+ * @param {string} params.pageName
+ * @param {string} params.pageDescription
+ * @param {Record<string, unknown>} params.breadcrumb
+ * @param {string} [params.datePublished]
+ * @param {string} [params.dateModified]
+ * @returns {Record<string, unknown>}
  */
-export function buildSituationPageJsonLd({
+export function buildContentPageWebPageJsonLd({
   base,
   locale,
   defaultLocale,
   pageUrl,
   pageName,
   pageDescription,
-  homeLabel,
-  situationsHubLabel,
+  breadcrumb,
   datePublished,
   dateModified,
 }) {
   const inLanguage = locale === "fr" ? "fr-CA" : "en-CA";
-  const siteUrl = absoluteUrl(base, localizedPath(locale, defaultLocale, "/"));
-
-  const breadcrumb = buildSituationPageBreadcrumbJsonLd({
-    base,
-    locale,
-    defaultLocale,
-    homeLabel,
-    situationsHubLabel,
-    situationTitle: pageName,
-    pageUrl,
-  });
+  const siteUrl = absoluteUrl(base, localizedPath(locale, defaultLocale, ROUTES.home));
 
   /** @type {Record<string, unknown>} */
   const webPage = {
@@ -197,6 +185,60 @@ export function buildSituationPageJsonLd({
   if (dateModified) {
     webPage.dateModified = dateModified;
   }
+
+  breadcrumb["@id"] = `${pageUrl}#breadcrumb`;
+
+  return webPage;
+}
+
+/**
+ * Breadcrumb + WebPage JSON-LD for a single situation page.
+ * @param {object} params
+ * @param {string} params.base
+ * @param {string} params.locale
+ * @param {string} params.defaultLocale
+ * @param {string} params.pageUrl
+ * @param {string} params.pageName visible H1 / headline
+ * @param {string} params.pageDescription meta description
+ * @param {string} params.homeLabel
+ * @param {string} params.situationsHubLabel
+ * @param {string} [params.datePublished] ISO date
+ * @param {string} [params.dateModified] ISO date
+ * @returns {object[]}
+ */
+export function buildSituationPageJsonLd({
+  base,
+  locale,
+  defaultLocale,
+  pageUrl,
+  pageName,
+  pageDescription,
+  homeLabel,
+  situationsHubLabel,
+  datePublished,
+  dateModified,
+}) {
+  const breadcrumb = buildSituationPageBreadcrumbJsonLd({
+    base,
+    locale,
+    defaultLocale,
+    homeLabel,
+    situationsHubLabel,
+    situationTitle: pageName,
+    pageUrl,
+  });
+
+  const webPage = buildContentPageWebPageJsonLd({
+    base,
+    locale,
+    defaultLocale,
+    pageUrl,
+    pageName,
+    pageDescription,
+    breadcrumb,
+    datePublished,
+    dateModified,
+  });
 
   return [breadcrumb, webPage];
 }

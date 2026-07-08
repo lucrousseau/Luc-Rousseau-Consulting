@@ -4,10 +4,11 @@
  * CommonJS so next.config.mjs can load it without ESM package warnings.
  *
  * Internal links in locale JSON: `/expertise/{id}` (see commons/siteRoutes.js).
- * @typedef {{ id: string; slugFr: string; slugEn: string; namespace: string; publishedAt: string }} ExpertiseEntry
  */
 
-/** @type {ExpertiseEntry[]} */
+const { createLocalizedManifest } = require("./localizedManifest");
+
+/** @type {import("./localizedManifest").LocalizedPageEntry[]} */
 const EXPERTISE_PAGES = [
   {
     id: "wordpress-produit-editorial",
@@ -18,69 +19,13 @@ const EXPERTISE_PAGES = [
   },
 ];
 
-/**
- * @param {ExpertiseEntry} page
- * @param {string} locale
- * @returns {string}
- */
-function getExpertiseSlug(page, locale) {
-  return locale === "en" ? page.slugEn : page.slugFr;
-}
-
-/**
- * @param {ExpertiseEntry} page
- * @param {string} locale
- * @returns {string}
- */
-function getExpertisePath(page, locale) {
-  return `/expertise/${getExpertiseSlug(page, locale)}`;
-}
-
-/**
- * @param {string} slug
- * @param {string} [locale] When set, only match that locale's slug.
- * @returns {ExpertiseEntry | undefined}
- */
-function getExpertiseBySlug(slug, locale) {
-  if (locale) {
-    return EXPERTISE_PAGES.find((page) => getExpertiseSlug(page, locale) === slug);
-  }
-  return EXPERTISE_PAGES.find(
-    (page) => page.slugFr === slug || page.slugEn === slug || page.id === slug
-  );
-}
-
-/**
- * @param {string} [locale] When set, return slugs for that locale only.
- * @returns {string[]}
- */
-function getAllExpertiseSlugs(locale) {
-  if (locale) {
-    return EXPERTISE_PAGES.map((page) => getExpertiseSlug(page, locale));
-  }
-  return EXPERTISE_PAGES.map((page) => page.id);
-}
-
-/**
- * @param {ExpertiseEntry} page
- * @param {string} defaultLocale
- * @returns {{ fr: string; en: string; default: string }}
- */
-function getExpertiseHreflangPaths(page, defaultLocale = "fr") {
-  const frPath = getExpertisePath(page, "fr");
-  const enPath = getExpertisePath(page, "en");
-  return {
-    fr: frPath,
-    en: enPath,
-    default: defaultLocale === "en" ? enPath : frPath,
-  };
-}
+const manifest = createLocalizedManifest("/expertise", EXPERTISE_PAGES);
 
 module.exports = {
-  EXPERTISE_PAGES,
-  getExpertiseSlug,
-  getExpertisePath,
-  getExpertiseBySlug,
-  getAllExpertiseSlugs,
-  getExpertiseHreflangPaths,
+  EXPERTISE_PAGES: manifest.entries,
+  getExpertiseSlug: manifest.getSlug,
+  getExpertisePath: manifest.getPath,
+  getExpertiseBySlug: manifest.getBySlug,
+  getAllExpertiseSlugs: manifest.getAllSlugs,
+  getExpertiseHreflangPaths: manifest.getHreflangPaths,
 };
