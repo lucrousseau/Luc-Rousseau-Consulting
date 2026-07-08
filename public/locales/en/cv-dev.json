@@ -5,7 +5,7 @@
   "tagline": "Custom development: custom and headless WordPress, React and Next.js, Laravel and APIs. Clean, tested, shipped code.",
   "summary": {
     "title": "Profile",
-    "content": "<p><strong>Senior full stack developer</strong>, 26 years in the craft, I build custom: decoupled architectures, custom and headless WordPress, React, Next.js and Vue frontends, Laravel and PHP backends on APIs.</p><p>On WordPress I work at the engineering level: themes and plugins built from scratch, Gutenberg blocks in React, an API-driven headless CMS. No page builder, no purchased template. Code on GitHub (projects being published); continuous delivery (CI/CD), performance and maintenance.</p>"
+    "content": "<p><strong>Senior full stack developer</strong>, 26 years in the craft, I build custom: decoupled architectures, custom and headless WordPress, React, Next.js and Vue frontends, Laravel and PHP backends on APIs.</p><p>On WordPress I work at the engineering level: themes and plugins built from scratch, Gutenberg blocks in React, an API-driven headless CMS. No page builder, no purchased template. Public reference repo on GitHub (lucrousseau/Luc-Rousseau-Consulting); continuous delivery (CI/CD), performance and maintenance.</p>"
   },
   "highlights": {
     "items": [
@@ -50,7 +50,8 @@
           "Decoupled and headless architectures: WordPress or Laravel as an API backend, React, Next.js or Vue frontends.",
           "Engineering-grade WordPress: custom themes and plugins, Gutenberg blocks in React, API contracts.",
           "Performance, caching and scalability; phased technical-debt reduction.",
-          "Sustainable delivery: Git, CI/CD, code reviews and a quality bar."
+          "Sustainable delivery: Git, CI/CD, code reviews and a quality bar.",
+          "Public reference repo (GitHub) for the Next.js/React site: architecture, tests, quality hooks."
         ],
         "stack": "WordPress (headless and custom), Laravel, React, Next.js, Vue, PHP, JavaScript ES6+, Gutenberg, REST APIs, MySQL, CI/CD"
       },

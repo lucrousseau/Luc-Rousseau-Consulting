@@ -5,14 +5,14 @@
   "tagline": "React interfaces in TypeScript: component architecture, hooks and application state. 26 years of web engineering, now focused on React.",
   "summary": {
     "title": "Profile",
-    "content": "<p><strong>Senior frontend developer</strong> with 26 years of web engineering, I focus on React. I have built complex React applications in TypeScript: reusable stateful components, hooks, composition, and Redux-style application state (via @wordpress/data), with a webpack/Babel build.</p><p>Much of this work took the form of advanced custom blocks in the Gutenberg ecosystem, which is React in full. Code on GitHub (projects being published); this site (Next.js/React) as a live proof point. Code reviews, performance and automated tests (Jest, Testing Library) are part of my senior practice.</p>"
+    "content": "<p><strong>Senior frontend developer</strong> with 26 years of web engineering, I focus on React. I have built complex React applications in TypeScript: reusable stateful components, hooks, composition, and Redux-style application state (via @wordpress/data), with a webpack/Babel build.</p><p>Much of this work took the form of advanced custom blocks in the Gutenberg ecosystem, which is React in full. Public repo on GitHub (lucrousseau/Luc-Rousseau-Consulting); this site (Next.js/React) as a live proof point. Code reviews, performance and automated tests (Jest, Testing Library) are part of my senior practice.</p>"
   },
   "highlights": {
     "items": [
       { "value": "React", "label": "components, hooks, TypeScript" },
       { "value": "Architecture", "label": "multi-component, reusable apps" },
       { "value": "Full stack", "label": "React up front, PHP/Laravel and APIs behind" },
-      { "value": "GitHub", "label": "code and projects (being published)" },
+      { "value": "GitHub", "label": "public Next.js/React repo" },
       { "value": "Live proof", "label": "lucrousseau.com in Next.js/React" }
     ]
   },
@@ -49,7 +49,7 @@
         "summary": "Custom React interfaces and applications, with the backend in support when the engagement calls for it.",
         "bullets": [
           "Multi-component React applications: reusable architecture, hooks and state management.",
-          "React and Next.js websites and interfaces, deployed (this site is one of them).",
+          "React and Next.js websites and interfaces, deployed; public GitHub repo for this site (lucrousseau/Luc-Rousseau-Consulting).",
           "Integrating React into existing ecosystems; webpack/Babel build, Git and delivery.",
           "PHP/Laravel backend and REST APIs when needed, to deliver end to end."
         ],

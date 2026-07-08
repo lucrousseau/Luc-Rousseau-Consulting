@@ -5,14 +5,14 @@
   "tagline": "Interfaces React en TypeScript : architecture de composants, hooks et état applicatif. 26 ans d'ingénierie web, aujourd'hui centrés sur React.",
   "summary": {
     "title": "Profil",
-    "content": "<p><strong>Développeur frontend senior</strong> avec 26 ans d'ingénierie web, je me concentre sur React. J'ai conçu des applications React complexes en TypeScript : composants réutilisables à état, hooks, composition, et un état applicatif de type Redux (via @wordpress/data), avec un build webpack/Babel.</p><p>Une grande partie de ce travail a pris la forme de blocs sur mesure avancés dans l'écosystème Gutenberg, à savoir du React à part entière. Code sur GitHub (projets en cours de publication) ; ce site (Next.js/React) comme preuve live. Revues, performance et tests automatisés (Jest, Testing Library) font partie de ma pratique senior.</p>"
+    "content": "<p><strong>Développeur frontend senior</strong> avec 26 ans d'ingénierie web, je me concentre sur React. J'ai conçu des applications React complexes en TypeScript : composants réutilisables à état, hooks, composition, et un état applicatif de type Redux (via @wordpress/data), avec un build webpack/Babel.</p><p>Une grande partie de ce travail a pris la forme de blocs sur mesure avancés dans l'écosystème Gutenberg, à savoir du React à part entière. Dépôt public sur GitHub (lucrousseau/Luc-Rousseau-Consulting) ; ce site (Next.js/React) comme preuve live. Revues, performance et tests automatisés (Jest, Testing Library) font partie de ma pratique senior.</p>"
   },
   "highlights": {
     "items": [
       { "value": "React", "label": "composants, hooks, TypeScript" },
       { "value": "Architecture", "label": "apps à composants multiples, réutilisables" },
       { "value": "Full stack", "label": "React devant, PHP/Laravel et APIs derrière" },
-      { "value": "GitHub", "label": "code et projets (publication en cours)" },
+      { "value": "GitHub", "label": "dépôt public Next.js/React" },
       { "value": "Preuve live", "label": "lucrousseau.com en Next.js/React" }
     ]
   },
@@ -49,7 +49,7 @@
         "summary": "Développement d'interfaces et d'applications React sur mesure, avec le backend à l'appui quand le mandat le demande.",
         "bullets": [
           "Applications React à composants multiples : architecture réutilisable, hooks et gestion d'état.",
-          "Sites et interfaces en React et Next.js, déployés (ce site en fait partie).",
+          "Sites et interfaces en React et Next.js, déployés ; dépôt public GitHub pour ce site (lucrousseau/Luc-Rousseau-Consulting).",
           "Intégration de React dans des écosystèmes existants ; build webpack/Babel, Git et livraison.",
           "Backend PHP/Laravel et APIs REST au besoin, pour livrer de bout en bout."
         ],

@@ -5,7 +5,7 @@
   "tagline": "Développement sur mesure : WordPress sur mesure et headless, React et Next.js, Laravel et APIs. Du code propre, testé, livré.",
   "summary": {
     "title": "Profil",
-    "content": "<p><strong>Développeur senior full stack</strong>, 26 ans de métier, je construis du sur mesure : architectures découplées, WordPress sur mesure et headless, interfaces React, Next.js et Vue, backends Laravel et PHP sur API.</p><p>Sur WordPress, je travaille au niveau ingénierie : thèmes et plugins développés de zéro, blocs Gutenberg en React, CMS headless piloté par API. Pas de page builder, pas de gabarit acheté. Code sur GitHub (projets en cours de publication) ; livraison continue (CI/CD), performance et maintenance.</p>"
+    "content": "<p><strong>Développeur senior full stack</strong>, 26 ans de métier, je construis du sur mesure : architectures découplées, WordPress sur mesure et headless, interfaces React, Next.js et Vue, backends Laravel et PHP sur API.</p><p>Sur WordPress, je travaille au niveau ingénierie : thèmes et plugins développés de zéro, blocs Gutenberg en React, CMS headless piloté par API. Pas de page builder, pas de gabarit acheté. Dépôt de référence public sur GitHub (lucrousseau/Luc-Rousseau-Consulting) ; livraison continue (CI/CD), performance et maintenance.</p>"
   },
   "highlights": {
     "items": [
@@ -50,7 +50,8 @@
           "Architectures découplées et headless : WordPress ou Laravel en backend d'API, interfaces React, Next.js ou Vue.",
           "WordPress d'ingénierie : thèmes et plugins sur mesure, blocs Gutenberg en React, contrats d'API.",
           "Performance, cache et scalabilité ; réduction de la dette technique par étapes.",
-          "Livraison soutenable : Git, CI/CD, revues de code et barre de qualité."
+          "Livraison soutenable : Git, CI/CD, revues de code et barre de qualité.",
+          "Dépôt public de référence (GitHub) pour le site Next.js/React : architecture, tests, hooks qualité."
         ],
         "stack": "WordPress (headless et custom), Laravel, React, Next.js, Vue, PHP, JavaScript ES6+, Gutenberg, APIs REST, MySQL, CI/CD"
       },

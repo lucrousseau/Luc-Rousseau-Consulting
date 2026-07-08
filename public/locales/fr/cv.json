@@ -29,12 +29,18 @@
         "label": "GitHub",
         "value": "github.com/lucrousseau",
         "href": "https://github.com/lucrousseau",
-        "note": "Projets en cours de publication"
+        "note": "Profil GitHub"
       },
       {
         "label": "Site",
         "value": "lucrousseau.com",
         "href": "https://lucrousseau.com"
+      },
+      {
+        "label": "Référence code",
+        "value": "github.com/lucrousseau/Luc-Rousseau-Consulting",
+        "href": "https://github.com/lucrousseau/Luc-Rousseau-Consulting",
+        "note": "Dépôt public du site (Next.js, i18n, tests)"
       }
     ]
   },
@@ -87,6 +93,7 @@
           "Architecture et design système : headless (WordPress, Laravel, APIs) avec React, Next.js et Vue, contrats d'API, arbitrages build-vs-buy, performance et scalabilité.",
           "Dette technique traitée comme un enjeu produit et de risque, priorisée face à la livraison.",
           "Supervision de la livraison : barre de qualité, discipline de release, CI/CD, alignement entre le décidé et le livré.",
+          "Référence technique publique : site lucrousseau.com et dépôt GitHub (Next.js 16, React, i18n, tests, hooks qualité).",
           "2 à 3 mandats simultanés maximum, engagements long terme, présent dans les cérémonies et les revues."
         ],
         "stack": "WordPress (headless et traditionnel), Laravel, React, Next.js, Vue, PHP, JavaScript ES6+, APIs REST, Gutenberg, CI/CD, MySQL"

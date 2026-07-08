@@ -5,7 +5,7 @@
   "tagline": "A technical leader who still codes: architecture, quality, mentoring and delivery. I align a team around a solid technical foundation.",
   "summary": {
     "title": "Profile",
-    "content": "<p><strong>Tech Lead and lead developer</strong> with 26 years of web engineering, I lead through the technology: I architect reusable foundations, set the quality bar and mentor developers, without ever stopping shipping myself.</p><p>At nesto I laid down a centralized architecture serving as a shared foundation for every project, designed technical-skills assessments, and ran hiring and code reviews. Code and examples on GitHub (projects being published); this site (Next.js/React) as a live proof point.</p>"
+    "content": "<p><strong>Tech Lead and lead developer</strong> with 26 years of web engineering, I lead through the technology: I architect reusable foundations, set the quality bar and mentor developers, without ever stopping shipping myself.</p><p>At nesto I laid down a centralized architecture serving as a shared foundation for every project, designed technical-skills assessments, and ran hiring and code reviews. Code and examples in the public repo lucrousseau/Luc-Rousseau-Consulting; this site (Next.js/React) as a live proof point.</p>"
   },
   "highlights": {
     "items": [
@@ -50,7 +50,8 @@
           "Architecture of decoupled, reusable applications; structuring technical decisions.",
           "Set up standards, code reviews and CI/CD pipelines.",
           "Mentoring and upskilling of developers.",
-          "Always hands-on: React, Next.js, PHP/Laravel, REST APIs."
+          "Always hands-on: React, Next.js, PHP/Laravel, REST APIs.",
+          "Documented public repo (GitHub): quality bar (lint, typecheck, tests, hooks), layered architecture."
         ],
         "stack": "React, Next.js, Laravel, PHP, TypeScript, REST APIs, CI/CD, Git"
       },

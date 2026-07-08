@@ -5,7 +5,7 @@
   "tagline": "Leader technique qui code encore : architecture, qualité, mentorat et livraison. J'aligne une équipe autour d'une base technique solide.",
   "summary": {
     "title": "Profil",
-    "content": "<p><strong>Tech Lead et lead développeur</strong> avec 26 ans d'ingénierie web, je mène par la technique : j'architecture des fondations réutilisables, je fixe la barre de qualité et j'encadre les développeurs, sans cesser de livrer moi-même.</p><p>Chez nesto, j'ai posé une architecture centralisée servant de socle commun à tous les projets, conçu des tests de compétences techniques et mené l'embauche et les revues de code. Code et exemples sur GitHub (projets en cours de publication) ; ce site (Next.js/React) comme preuve live.</p>"
+    "content": "<p><strong>Tech Lead et lead développeur</strong> avec 26 ans d'ingénierie web, je mène par la technique : j'architecture des fondations réutilisables, je fixe la barre de qualité et j'encadre les développeurs, sans cesser de livrer moi-même.</p><p>Chez nesto, j'ai posé une architecture centralisée servant de socle commun à tous les projets, conçu des tests de compétences techniques et mené l'embauche et les revues de code. Code et exemples dans le dépôt public lucrousseau/Luc-Rousseau-Consulting ; ce site (Next.js/React) comme preuve live.</p>"
   },
   "highlights": {
     "items": [
@@ -50,7 +50,8 @@
           "Architecture d'applications découplées et réutilisables ; décisions techniques structurantes.",
           "Mise en place de standards, de revues de code et de pipelines CI/CD.",
           "Encadrement et montée en compétence de développeurs.",
-          "Toujours en codage : React, Next.js, PHP/Laravel, APIs REST."
+          "Toujours en codage : React, Next.js, PHP/Laravel, APIs REST.",
+          "Dépôt public documenté (GitHub) : barre qualité (lint, typecheck, tests, hooks), architecture en couches."
         ],
         "stack": "React, Next.js, Laravel, PHP, TypeScript, APIs REST, CI/CD, Git"
       },

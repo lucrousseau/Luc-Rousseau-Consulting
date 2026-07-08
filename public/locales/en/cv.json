@@ -29,12 +29,18 @@
         "label": "GitHub",
         "value": "github.com/lucrousseau",
         "href": "https://github.com/lucrousseau",
-        "note": "Projects being published"
+        "note": "GitHub profile"
       },
       {
         "label": "Website",
         "value": "lucrousseau.com",
         "href": "https://lucrousseau.com"
+      },
+      {
+        "label": "Code reference",
+        "value": "github.com/lucrousseau/Luc-Rousseau-Consulting",
+        "href": "https://github.com/lucrousseau/Luc-Rousseau-Consulting",
+        "note": "Public site repo (Next.js, i18n, tests)"
       }
     ]
   },
@@ -87,6 +93,7 @@
           "Architecture and system design: headless (WordPress, Laravel, APIs) with React, Next.js and Vue, API contracts, build-vs-buy calls, performance and scalability.",
           "Technical debt treated as a product and risk issue, prioritized against delivery.",
           "Delivery supervision: quality bar, release discipline, CI/CD, alignment between what was decided and what shipped.",
+          "Public technical reference: lucrousseau.com site and GitHub repo (Next.js 16, React, i18n, tests, quality hooks).",
           "2 to 3 concurrent mandates maximum, long-term engagements, present in ceremonies and reviews."
         ],
         "stack": "WordPress (headless and traditional), Laravel, React, Next.js, Vue, PHP, JavaScript ES6+, REST APIs, Gutenberg, CI/CD, MySQL"
