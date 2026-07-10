@@ -28,6 +28,8 @@ export const ROUTES = Object.freeze({
   services: "/services",
   /** Private CV hub (noindex, omitted from the sitemap). */
   cvHub: "/cvs",
+  /** Employee vs fractional day-rate comparison (interactive). */
+  dayRateComparison: "/cout-reel-jour",
   /** Product Engineer CV variant. */
   cv: "/cvs/cv-engineer",
   cvEngineer: "/cvs/cv-engineer",
@@ -39,7 +41,12 @@ export const ROUTES = Object.freeze({
   expertiseBase: "/expertise",
 });
 
-const STATIC_APP_PATHS = new Set<string>([ROUTES.home, ROUTES.situationsHub, ROUTES.services]);
+const STATIC_APP_PATHS = new Set<string>([
+  ROUTES.home,
+  ROUTES.situationsHub,
+  ROUTES.services,
+  ROUTES.dayRateComparison,
+]);
 
 export interface LocaleAlternateUrls {
   fr: string;

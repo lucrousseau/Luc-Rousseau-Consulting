@@ -1,0 +1,19 @@
+@use "../../styles/abstracts/variables" as *;
+
+.section-day-rate-comparison {
+  .section-day-rate-comparison__lede {
+    max-width: 58ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cost-calculator {
+    margin-top: calc(var(--padding) * 0.5);
+  }
+}
+
+.page-day-rate-comparison {
+  .section-contact {
+    padding-top: calc(var(--page-home-row-gap, var(--gap)) * 0.75);
+  }
+}

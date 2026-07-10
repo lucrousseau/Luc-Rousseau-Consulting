@@ -20,6 +20,7 @@
 @use "../components/Accordion/style" as accordion;
 @use "../components/Breadcrumbs/style" as breadcrumbs;
 @use "../components/RoutingQuiz/style" as routing-quiz;
+@use "../components/CostCalculator/style" as cost-calculator;
 @use "../components/Button/style" as button;
 @use "../components/Buy/style" as buy;
 @use "../components/ContactAlternates/style" as contact-alternates;
@@ -50,6 +51,7 @@
 @use "../sections/HomeFaq/style" as home-faq;
 @use "../sections/Contact/style" as contact;
 @use "../sections/situations/style" as situations;
+@use "../sections/DayRateComparison/style" as day-rate-comparison;
 @use "../sections/Cv/style" as cv;
 @use "../sections/CvHub/style" as cv-hub;
 

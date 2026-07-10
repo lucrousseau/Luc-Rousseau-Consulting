@@ -42,6 +42,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   const homeAlternates = getRouteAlternateUrls(base, ROUTES.home, DEFAULT_LOCALE);
   const situationsHubAlternates = getRouteAlternateUrls(base, ROUTES.situationsHub, DEFAULT_LOCALE);
+  const dayRateAlternates = getRouteAlternateUrls(base, ROUTES.dayRateComparison, DEFAULT_LOCALE);
 
   const urls: SitemapUrlEntry[] = [
     {
@@ -69,6 +70,18 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       priority: "0.8",
       changefreq: "monthly",
       hreflang: situationsHubAlternates,
+    },
+    {
+      loc: dayRateAlternates.fr,
+      priority: "0.7",
+      changefreq: "monthly",
+      hreflang: dayRateAlternates,
+    },
+    {
+      loc: dayRateAlternates.en,
+      priority: "0.7",
+      changefreq: "monthly",
+      hreflang: dayRateAlternates,
     },
     ...SITUATIONS.flatMap((situation) => {
       const alternates = getSituationAlternateUrls(base, situation, DEFAULT_LOCALE);

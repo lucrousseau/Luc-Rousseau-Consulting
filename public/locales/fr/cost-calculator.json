@@ -1,0 +1,250 @@
+{
+  "seoTitle": "Coût réel par jour : dev senior ou PM vs consultant | Québec",
+  "seoDescription": "Comparez le coût réel par jour productif d'un développeur senior ou d'un gestionnaire de produit (employé chargé) au tarif d'un consultant autonome en mandat fractionnel. Scénarios tech québécois, DAS 2026, régime de croisière et année 1.",
+  "badge": "Dev senior ou PM vs consultant",
+  "title": "Coût réel par jour : employé vs mandat fractionnel",
+  "lede": "Deux profils tech québécois : développeur senior ou gestionnaire de produit. On charge le salaire (DAS 2026), on ajoute recrutement, ramp-up, supervision interne et outils, puis on compare au consultant autonome facturé au jour utile. Le plus souvent, un mandat fractionnel revient moins cher sur l'année, avec une expertise senior disponible tout de suite. Chiffres honnêtes, pas gonflés.",
+  "fields": {
+    "role": {
+      "label": "Profil comparé",
+      "options": {
+        "developer": "Développeur senior",
+        "productManager": "Gestionnaire de produit (PM)"
+      },
+      "help": {
+        "developer": "Dev senior en PME tech : CNESST services TI (0,79 %), peu de coordination interne, mandat fractionnel idéal à 1-2 j/sem (max 3).",
+        "productManager": "Gestionnaire de produit : même CNESST bureau-TI, plus d'alignements internes, ramp-up plus long, mandat fractionnel idéal à 1-2 j/sem (max 3)."
+      }
+    },
+    "employeeCost": {
+      "title": "Coût employé : salaire et charges",
+      "lede": "Salaire brut, DAS, avantages et jours productifs."
+    },
+    "salary": {
+      "label": "Salaire brut annuel"
+    },
+    "salaryMode": {
+      "label": "Ce montant représente",
+      "gross": "Salaire brut",
+      "total": "Coût total employeur"
+    },
+    "companyPayroll": {
+      "label": "Masse salariale totale de l'entreprise",
+      "help": "Détermine le taux du FSS (Fonds des services de santé). PME à 1 M$ ou moins : 1,65 %. Au-delà, le taux monte progressivement jusqu'à 4,26 %."
+    },
+    "benefits": {
+      "label": "Avantages employeur",
+      "help": "Assurance collective, REER collectif, autres avantages imputables. Typique en tech : 5 à 8 % du brut."
+    },
+    "bonus": {
+      "label": "Prime / rémunération variable",
+      "help": "Bonus annuel, souvent 10 à 15 % du brut pour un profil senior. Ajouté au salaire cotisable (DAS appliqués). Prime estimée : {{amount}}."
+    },
+    "productiveDays": {
+      "label": "Jours productifs par an (régime de croisière)",
+      "hint": "{{count}} jours",
+      "help": "Après la 1re année : 260 jours ouvrables moins fériés (~10), vacances (~20), maladie et congés perso (~6), réunions et temps non productif (~9). Le ramp-up initial est modélisé à part."
+    },
+    "yearOne": {
+      "title": "Année 1 : recrutement et ramp-up",
+      "include": "Inclure recrutement et ramp-up (comparaison année 1 plus réaliste)"
+    },
+    "recruitment": {
+      "label": "Coût de recrutement (ponctuel, année 1)",
+      "help": "Affichage, agence, temps des gestionnaires en entrevue, outils RH. Fourchette typique profil senior : 10 à 20 % du brut. Compté une seule fois, la 1re année."
+    },
+    "onboardingMonths": {
+      "label": "Durée du ramp-up",
+      "hint": "{{count}} mois",
+      "help": "Période payée à plein salaire avant la pleine productivité. Profil senior : souvent 2 à 4 mois."
+    },
+    "onboardingProductivity": {
+      "label": "Productivité pendant le ramp-up",
+      "help": "60 % : l'employé est payé 100 % mais livre environ 60 % d'un jour productif. Le ramp-up réduit les jours livrés, pas le salaire versé."
+    },
+    "autonomy": {
+      "title": "Autonomie : charge interne de l'employé",
+      "lede": "Un employé demande supervision, alignements et suivi RH. Un consultant senior fractionnel s'auto-gère : priorisation, livrables, escalade minimale.",
+      "include": "Inclure le temps interne de coordination (gestionnaire, équipe, RH)"
+    },
+    "coordination": {
+      "label": "Heures internes de coordination par semaine",
+      "hint": "{{count}} h/sem",
+      "help": "1:1, planification, revues, suivi RH. Profil senior employé : souvent 2 à 4 h/sem. Consultant autonome : proche de 0."
+    },
+    "tools": {
+      "includeEmployee": "Inclure le poste de travail et les logiciels payés par l'employeur",
+      "employee": {
+        "label": "Outils et équipement employeur (annuel)",
+        "help": {
+          "developer": "Ordinateur amorti (~3 ans), IDE, GitHub, licences dev, écran, casque. Typique PME : 4 000 à 7 000 $/an.",
+          "productManager": "Ordinateur, Figma, analytics, Miro, licences SaaS produit. Typique PME : 5 000 à 8 000 $/an."
+        }
+      },
+      "consultant": {
+        "help": "Côté consultant : ordinateur, logiciels et infra sont inclus dans le TJM (0 $ en sus pour vous)."
+      }
+    },
+    "workplace": {
+      "include": "Inclure le coût du milieu de travail (bureau ou télétravail)",
+      "label": "Coût du milieu de travail (annuel, par poste)",
+      "options": {
+        "office": "Bureau",
+        "hybrid": "Hybride",
+        "remote": "Télétravail"
+      },
+      "help": "Coût moyen alloué par poste : loyer, aménagement, mobilier amorti et frais d'exploitation au bureau ; allocation, matériel maison et internet en télétravail. Bureau MTL : ~5 000 à 8 000 $/an ; hybride : ~3 000 à 4 000 $ ; télétravail : ~1 000 à 1 500 $. Si vos bureaux sont déjà payés, le coût marginal d'un poste de plus peut être plus bas.",
+      "consultantHelp": "Côté consultant : espace de travail, poste et connexion sont inclus dans le TJM (0 $ pour vous, au bureau comme à distance)."
+    },
+    "lifecycle": {
+      "title": "Cycle de vie de l'employé",
+      "lede": "Un employé finit par partir : on recrute et on forme à nouveau, et un départ peut entraîner un préavis. Un mandat consultant se termine à l'échéance, sans indemnité."
+    },
+    "turnover": {
+      "include": "Amortir le recrutement sur l'ancienneté (roulement)"
+    },
+    "tenure": {
+      "label": "Ancienneté moyenne",
+      "hint": "{{count}} ans",
+      "help": "Durée moyenne en poste avant un départ. En tech, souvent 2 à 4 ans. Plus c'est court, plus le recrutement et le ramp-up reviennent souvent."
+    },
+    "severance": {
+      "include": "Inclure un coût de fin d'emploi (préavis)",
+      "label": "Préavis / indemnité de fin d'emploi",
+      "hint": "{{count}} sem.",
+      "help": "Préavis légal LNT : 1 à 8 semaines selon l'ancienneté. Le risque de départ contesté (common law) peut aller plus haut. Amorti sur l'ancienneté moyenne."
+    },
+    "engagementTier": {
+      "label": "Type d'engagement (TJM)",
+      "options": {
+        "ongoing": "Durée",
+        "structural": "PM temporaire",
+        "turnaround": "Stabilisation / sauvetage"
+      },
+      "descriptions": {
+        "ongoing": "Dev ou PM simple, mandat continu",
+        "structural": "Mission PM de 3 ou 6 mois, limitée d'avance",
+        "turnaround": "PM en situation critique ou sauvetage"
+      },
+      "help": "Le TJM dépend du mandat : {{ongoing}}/j en durée (dev ou PM simple), {{structural}}/j pour une mission PM temporaire (3 ou 6 mois, sans prolongation prévue), {{turnaround}}/j pour une stabilisation ou un sauvetage."
+    },
+    "billedDays": {
+      "label": "Jours facturés par semaine",
+      "hint": "{{count}} j/sem",
+      "help": "Je prends au maximum 3 j/sem. La zone idéale du fractionnel : 1 à 2 j/sem, là où l'expertise senior coûte le moins et rapporte le plus. À 4 j/sem ou plus, l'embauche est plus avantageuse (et je ne prends pas ces mandats)."
+    }
+  },
+  "results": {
+    "verdict": {
+      "kicker": "Le verdict",
+      "ideal": {
+        "headline": "À {{days}} j/sem, vous êtes dans la zone idéale du fractionnel : {{amount}} d'économie par an ({{pct}}).",
+        "sub": "C'est là que le modèle donne le plus : une expertise senior orientée résultats, disponible tout de suite, sans engagement fixe."
+      },
+      "ceiling": {
+        "headline": "À {{days}} j/sem, c'est ma capacité maximale, et vous économisez encore {{amount}} par an ({{pct}}).",
+        "sub": "On approche du point où un poste à temps plein se défend. Je ne prends pas de mandats de 4 j/sem ou plus : au-delà, le fractionnel n'a plus d'avantage."
+      },
+      "hire": {
+        "headline": "Dans ce scénario précis, le coût penche vers l'employé.",
+        "sub": "À ce salaire et ce tarif, l'embauche revient moins cher sur l'année. Le fractionnel reste pertinent pour une expertise senior ciblée et orientée résultats, sans engagement."
+      },
+      "cap": "Disponibilité : 1 à 3 j/sem (max 3). La zone idéale reste 1 à 2 j/sem. C'est le mindset orienté résultats qui fait la différence, pas le nombre d'heures.",
+      "points": {
+        "results": "Orienté résultats, pas à l'heure",
+        "speed": "Expertise senior dès la semaine 1",
+        "flex": "Sans charges ni engagement fixe"
+      }
+    },
+    "dayCost": {
+      "kicker": "Coût réel par jour productif",
+      "steadyLabel": "Régime de croisière (an 2+)",
+      "steadySub": "sur {{days}} jours productifs",
+      "yearOneLabel": "Année 1 (recrutement + ramp-up)",
+      "yearOneSub": "sur {{days}} j effectifs (ramp-up : -{{lost}} j)",
+      "consultantLabel": "Consultant autonome",
+      "consultantSub": "{{days}} j/sem, productif dès la semaine 1",
+      "note": "Par jour, un TJM senior peut dépasser le coût d'un employé chargé : c'est le prix d'une expertise disponible tout de suite, sans recrutement ni ramp-up. L'avantage se voit sur l'engagement annuel, plus bas, car vous ne payez que les jours utiles."
+    },
+    "breakdown": {
+      "title": "Ventilation DAS Québec {{year}}",
+      "loadedTotal": "Coût chargé (salaire + DAS + avantages)",
+      "footnote": "FSS à {{fss}} % (masse salariale PME) · CNESST services TI / bureau à 0,79 %. Les cotisations RRQ, AE et RQAP sont plafonnées : sur les hauts salaires, le taux effectif des charges baisse.",
+      "lines": {
+        "qpp": "RRQ (base)",
+        "qpp2": "RRQ2 (74 600 $ à 85 000 $)",
+        "qpip": "RQAP",
+        "ei": "Assurance-emploi (employeur)",
+        "hsf": "FSS",
+        "cnt": "Normes du travail (CNT)",
+        "cnesst": "CNESST",
+        "bonus": "Prime / rémunération variable",
+        "benefits": "Avantages employeur"
+      }
+    },
+    "recurring": {
+      "title": "Coûts récurrents autour du poste (consultant : inclus ou 0 $)",
+      "coordination": "Coordination interne (supervision)",
+      "tools": "Poste de travail et logiciels (employeur)",
+      "workplace": "Milieu de travail (bureau ou télétravail)",
+      "consultantTools": "Outils du consultant",
+      "consultantToolsIncluded": "Inclus dans le TJM",
+      "autonomyFootnote": "{{hours}} h/sem de coordination interne, valorisées à {{hourly}}/h (temps gestionnaire, équipe, RH)."
+    },
+    "lifecycle": {
+      "title": "Roulement et fin d'emploi (amorti par an)",
+      "turnover": "Recrutement amorti (roulement)",
+      "severance": "Préavis / fin d'emploi (attendu)",
+      "consultant": "Côté consultant",
+      "consultantIncluded": "0 $, fin à l'échéance",
+      "footnote": "Amorti sur une ancienneté de {{tenure}} ans. Le ramp-up récurrent retranche ~{{lostDays}} jours productifs par an en moyenne."
+    },
+    "yearOne": {
+      "title": "Coûts de la première année (ponctuels)",
+      "recruitment": "Recrutement (ponctuel, année 1)",
+      "rampNote": "Ramp-up : {{months}} mois à {{productivity}} % de productivité, soit -{{lostDays}} jours productifs la 1re année. Le salaire, lui, est payé à 100 %."
+    },
+    "bars": {
+      "kicker": "Coût par jour productif",
+      "consultant": "Consultant autonome",
+      "employeeSteady": "Employé (croisière)",
+      "employeeYearOne": "Employé (année 1)"
+    },
+    "annual": {
+      "kicker": "Engagement annuel : ce que vous payez vraiment",
+      "employeeLabel": "Employé (5 j/sem, fixe)",
+      "employeeSub": "salaire chargé, outils et coordination, payés toute l'année",
+      "consultantLabel": "Consultant ({{days}} j/sem)",
+      "consultantSub": "≈ {{workingWeeks}} sem. de travail moins {{holidays}} fériés du Québec, flexible et sans engagement fixe",
+      "savingLabel": "Différence annuelle",
+      "savingConsultant": "À cette cadence, le mandat fractionnel coûte {{amount}} de moins par an ({{pct}}), et vous ne payez que les jours utiles.",
+      "savingEmployee": "À cette cadence, l'employé coûte {{amount}} de moins par an ({{pct}}) : si vous avez besoin de 5 j/sem en continu sur plusieurs années, l'embauche se défend."
+    },
+    "weekly": {
+      "kicker": "Par semaine",
+      "employeeLabel": "Employé",
+      "employeeSub": "payé 5 j, peu importe la charge de travail",
+      "consultantLabel": "Consultant ({{days}} j facturés)",
+      "consultantSub": "autonome, sans supervision interne"
+    },
+    "autonomy": {
+      "kicker": "Autonomie du consultant",
+      "text": "En mandat fractionnel, le consultant senior priorise, livre et communique sans filet de supervision interne. Ordinateur, logiciels, infra et espace de travail sont inclus dans le TJM : vous ne les financez pas en plus. Vous payez le résultat, pas l'organisation autour du poste."
+    },
+    "taxes": {
+      "note": "Note : le consultant facture la TPS/TVQ (14,975 %), mais elles sont récupérables (CTI/RTI) pour une entreprise inscrite. Ce n'est donc pas un coût réel, seulement un mouvement de trésorerie."
+    },
+    "consultantConsiderations": {
+      "kicker": "À considérer côté consultant",
+      "text": "Pour rester honnête : au départ du consultant, une partie du savoir peut quitter l'entreprise (à documenter), sa disponibilité est partagée entre quelques clients, et un léger temps de contexte reste nécessaire en début de mandat. En contrepartie, aucun engagement fixe, aucune charge sociale et une expertise senior disponible tout de suite."
+    }
+  },
+  "summary": {
+    "kicker": "Ce que ça veut dire concrètement",
+    "text": "En régime de croisière, un profil à {{salary}} coûte environ {{employeeSteadyDay}} par jour productif une fois chargé et amorti. Un TJM de {{consultantDay}} peut sembler plus élevé par jour, mais c'est une expertise senior disponible dès la semaine 1, sans recrutement, ramp-up ni supervision. Surtout, l'employé engage {{employeeAnnual}} par an à temps plein, alors que le mandat fractionnel à {{billedDays}} j/sem revient à {{consultantAnnual}} par an, sans coût fixe : vous payez les jours utiles, pas le poste."
+  },
+  "disclaimer": "Estimations à but de comparaison, basées sur les taux DAS Québec 2026 (Revenu Québec, RCGT). Le ramp-up réduit les jours productifs (le salaire reste payé à 100 %) et le recrutement est compté une seule fois, la 1re année. La coordination interne est valorisée au coût horaire chargé de l'employé et le consultant est estimé à {{workingWeeks}} semaines de travail, moins les {{holidays}} jours fériés du Québec : ajustez selon votre réalité. Validez avec votre comptable, vos RH ou WebRAS pour un dossier précis.",
+  "ctaLead": "Vous avez vu l'écart : à la bonne cadence, un mandat fractionnel coûte souvent moins cher qu'une embauche, sans les charges ni l'engagement.",
+  "ctaTeaser": "Dites-moi votre contexte et on cadre ensemble le mandat qui a du sens : durée, PM temporaire ou stabilisation.",
+  "ctaLabel": "Planifier un appel"
+}
