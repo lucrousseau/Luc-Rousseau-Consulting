@@ -1,19 +1,8 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "checkJs": true,
     "noEmit": true,
-    "types": ["node", "react"]
+    "types": ["node", "react", "jest"]
   },
-  "include": [
-    "types/**/*.d.ts",
-    "commons/**/*.js",
-    "commons/**/*.mjs",
-    "utils/**/*.js",
-    "lib/**/*.mjs",
-    "components/**/*.js",
-    "sections/**/*.js",
-    "pages/**/*.js"
-  ],
-  "exclude": ["node_modules", "**/*.test.js", "**/*.test.mjs"]
+  "exclude": ["node_modules", "**/*.test.ts", "**/*.test.tsx"]
 }

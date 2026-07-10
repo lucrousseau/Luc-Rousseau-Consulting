@@ -2,11 +2,11 @@
 
 ## HTML from locales
 
-User-facing HTML is rendered with `parseHtmlContent` (`commons/parseHtmlContent.js`), which reads strings from `public/locales/` only. Do not pass untrusted or CMS-sourced HTML through `html-react-parser` without sanitization.
+User-facing HTML is rendered with `parseHtmlContent` (`commons/parseHtmlContent.tsx`), which reads strings from `public/locales/` only. Do not pass untrusted or CMS-sourced HTML through `html-react-parser` without sanitization.
 
 External links get `rel="noopener noreferrer"` and `target="_blank"` by default.
 
-Situation and expertise SEO JSON is loaded from static locale files allowlisted in `commons/situationSeoMeta.js` (manifest-driven `require()` paths, no runtime path assembly).
+Situation and expertise SEO JSON is loaded from static locale files allowlisted in `commons/situationSeoMeta.ts` (manifest-driven static imports, no runtime path assembly).
 
 ## HTTP headers
 
@@ -14,8 +14,8 @@ Security headers (including CSP) are defined in `lib/securityHeaders.mjs` and ap
 
 ## API routes
 
-- `utils/apiRequireGet.js`: only GET/HEAD.
-- `utils/siteOrigin.js`: Host allowlist for sitemap, robots, llms.txt, llms-full.txt, and humans.txt.
+- `utils/apiRequireGet.ts`: only GET/HEAD.
+- `utils/siteOrigin.ts`: Host allowlist for sitemap, robots, llms.txt, llms-full.txt, and humans.txt.
 
 ## Dependencies
 

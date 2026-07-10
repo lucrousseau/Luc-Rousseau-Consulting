@@ -12,8 +12,8 @@ npm run validate
 
 Schedule CTAs (Calendly + LinkedIn / email alternates) must go through:
 
-- [`components/SectionCta`](components/SectionCta/index.js) for section footers
-- [`components/Buy`](components/Buy/index.js) for pricing/legend blocks (hero, product cards)
+- [`components/SectionCta`](components/SectionCta/index.tsx) for section footers
+- [`components/Buy`](components/Buy/index.tsx) for pricing/legend blocks (hero, product cards)
 
 Do not place adjacent `Button` + `ContactAlternates` in `sections/` or new components; extend `SectionCta` or `Buy` instead.
 

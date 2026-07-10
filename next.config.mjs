@@ -1,13 +1,10 @@
 /** @type {import('next').NextConfig} */
 
 import path from "path";
-import { createRequire } from "module";
 import { fileURLToPath } from "url";
 import i18n from "./next-i18next.config.js";
 import { securityHeaders } from "./lib/securityHeaders.mjs";
-
-const require = createRequire(import.meta.url);
-const { SITUATIONS } = require("./commons/situationsManifest.js");
+import { SITUATION_SLUG_PAIRS as SITUATIONS } from "./commons/situationSlugRoutes.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

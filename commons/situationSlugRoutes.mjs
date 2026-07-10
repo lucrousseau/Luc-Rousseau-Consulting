@@ -1,7 +1,6 @@
 /**
- * Edge-safe slug pairs for locale redirect middleware.
- * Keep in sync with commons/situationsManifest.js (see situationSlugRoutes.test.js).
- * @type {{ slugFr: string; slugEn: string }[]}
+ * Edge-safe slug pairs for locale redirect middleware and next.config redirects.
+ * Keep in sync with commons/situationsManifest.ts (see situationSlugRoutes.test.ts).
  */
 export const SITUATION_SLUG_PAIRS = [
   { slugFr: "premier-dev-fractionnel", slugEn: "post-funding-first-developer" },
@@ -15,7 +14,6 @@ export const SITUATION_SLUG_PAIRS = [
 
 /**
  * @param {string} slug
- * @returns {{ slugFr: string; slugEn: string } | undefined}
  */
 export function findSituationSlugPair(slug) {
   return SITUATION_SLUG_PAIRS.find((pair) => pair.slugFr === slug || pair.slugEn === slug);
