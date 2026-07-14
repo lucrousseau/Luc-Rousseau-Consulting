@@ -173,7 +173,7 @@ export function computeQuebecEmployerCost(
   const grossSalary = Math.max(0, input.grossSalary);
   const companyTotalPayroll = input.companyTotalPayroll ?? 500_000;
   const cnesstSector = input.cnesstSector ?? "office";
-  const benefitsPct = Math.max(0, input.benefitsPct ?? 6);
+  const benefitsPct = Math.max(0, input.benefitsPct ?? 5);
 
   const mandatoryContributions = computeQuebecMandatoryContributions(
     grossSalary,

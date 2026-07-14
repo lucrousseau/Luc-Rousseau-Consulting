@@ -11,13 +11,14 @@ import {
   GROSS_SALARY_STEP,
   WORKPLACE_ANNUAL_COST,
   WORKPLACE_MODE_LIST,
-  consultantWeeklyEquivalentDays,
   getCalculatorRolePreset,
   getWorkplaceMode,
   parseGrossSalaryQueryParam,
   type CalculatorRole,
   type WorkplaceMode,
 } from "../../commons/costCalculatorPresets";
+import { buildDayRateComparisonInput } from "../../commons/buildDayRateComparisonInput";
+import { resolveCalculatorVerdict } from "../../commons/costCalculatorVerdict";
 import {
   CONSULTANT_WORKING_WEEKS_PER_YEAR,
   CONSULTANT_VACATION_WEEKS_PER_YEAR,
@@ -167,73 +168,73 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
   const { t } = useTranslation("cost-calculator");
   const router = useRouter();
   const locale = router.locale ?? "fr";
-  const fmt0 = (n: number) => createCurrencyFormatter(locale).format(Math.round(n));
+  const currencyFormatter = useMemo(() => createCurrencyFormatter(locale), [locale]);
+  const fmt0 = (n: number) => currencyFormatter.format(Math.round(n));
   const pct1 = (n: number) => `${n.toFixed(1).replace(".", locale === "en" ? "." : ",")} %`;
 
-  const initialPreset = getCalculatorRolePreset(role);
+  const rolePreset = getCalculatorRolePreset(role);
   const salaryFromQuery = router.isReady
     ? parseGrossSalaryQueryParam(router.query.salaire ?? router.query.salary)
     : null;
   const [salaireOverride, setSalaireOverride] = useState<number | null>(null);
-  const salaire = salaireOverride ?? salaryFromQuery ?? initialPreset.defaultGrossSalary;
-  const [masseSalariale, setMasseSalariale] = useState(initialPreset.defaultCompanyPayroll);
-  const [avantagesPct, setAvantagesPct] = useState(initialPreset.defaultBenefitsPct);
-  const [primePct, setPrimePct] = useState(initialPreset.defaultBonusPct);
-  const [joursProductifs, setJoursProductifs] = useState(initialPreset.defaultProductiveDays);
+  const salaire = salaireOverride ?? salaryFromQuery ?? rolePreset.defaultGrossSalary;
+  const [masseSalariale, setMasseSalariale] = useState(rolePreset.defaultCompanyPayroll);
+  const [avantagesPct, setAvantagesPct] = useState(rolePreset.defaultBenefitsPct);
+  const [primePct, setPrimePct] = useState(rolePreset.defaultBonusPct);
+  const [joursProductifs, setJoursProductifs] = useState(rolePreset.defaultProductiveDays);
   const [inclureAnnee1, setInclureAnnee1] = useState(true);
-  const [recrutementPct, setRecrutementPct] = useState(initialPreset.defaultRecruitmentPct);
-  const [onboardingMois, setOnboardingMois] = useState(initialPreset.defaultOnboardingMonths);
+  const [recrutementPct, setRecrutementPct] = useState(rolePreset.defaultRecruitmentPct);
+  const [onboardingMois, setOnboardingMois] = useState(rolePreset.defaultOnboardingMonths);
   const [onboardingProductivite, setOnboardingProductivite] = useState(
-    initialPreset.defaultOnboardingProductivity
+    rolePreset.defaultOnboardingProductivity
   );
   const [inclureCoordination, setInclureCoordination] = useState(true);
   const [heuresCoordination, setHeuresCoordination] = useState(
-    initialPreset.defaultCoordinationHoursPerWeek
+    rolePreset.defaultCoordinationHoursPerWeek
   );
   const [inclureOutilsEmployeur, setInclureOutilsEmployeur] = useState(true);
   const [coutOutilsEmployeur, setCoutOutilsEmployeur] = useState(
-    initialPreset.defaultEmployeeToolsAnnualCost
+    rolePreset.defaultEmployeeToolsAnnualCost
   );
   const [inclureMilieu, setInclureMilieu] = useState(true);
   const [coutMilieu, setCoutMilieu] = useState(
-    WORKPLACE_ANNUAL_COST[initialPreset.defaultWorkplaceMode]
+    WORKPLACE_ANNUAL_COST[rolePreset.defaultWorkplaceMode]
   );
   const [inclureRoulement, setInclureRoulement] = useState(true);
   const [ancienneteAnnees, setAncienneteAnnees] = useState(DEFAULT_AVERAGE_TENURE_YEARS);
   const [inclureFinEmploi, setInclureFinEmploi] = useState(true);
   const [semainesFinEmploi, setSemainesFinEmploi] = useState(DEFAULT_SEVERANCE_WEEKS);
-  const [joursSemaine, setJoursSemaine] = useState(initialPreset.defaultBilledDaysPerWeek);
-
-  const rolePreset = getCalculatorRolePreset(role);
+  const [joursSemaine, setJoursSemaine] = useState(rolePreset.defaultBilledDaysPerWeek);
 
   const r = useMemo(
     () =>
-      computeDayRateComparison({
-        grossSalary: salaire,
-        companyTotalPayroll: masseSalariale,
-        cnesstSector: rolePreset.cnesstSector,
-        benefitsPct: avantagesPct,
-        bonusPct: primePct,
-        productiveDays: joursProductifs,
-        consultantDayRate: BASE_CONSULTANT_DAY_RATE,
-        billedDaysPerWeek: joursSemaine,
-        includeHiringFriction: inclureAnnee1,
-        recruitmentCostPct: recrutementPct,
-        onboardingMonths: onboardingMois,
-        onboardingProductivityPct: onboardingProductivite,
-        includeCoordinationOverhead: inclureCoordination,
-        coordinationHoursPerWeek: heuresCoordination,
-        includeEmployeeTools: inclureOutilsEmployeur,
-        employeeToolsAnnualCost: coutOutilsEmployeur,
-        includeWorkplace: inclureMilieu,
-        workplaceAnnualCost: coutMilieu,
-        includeTurnover: inclureRoulement,
-        averageTenureYears: ancienneteAnnees,
-        includeSeverance: inclureFinEmploi,
-        severanceWeeks: semainesFinEmploi,
-      }),
+      computeDayRateComparison(
+        buildDayRateComparisonInput(rolePreset, {
+          grossSalary: salaire,
+          companyTotalPayroll: masseSalariale,
+          benefitsPct: avantagesPct,
+          bonusPct: primePct,
+          productiveDays: joursProductifs,
+          consultantDayRate: BASE_CONSULTANT_DAY_RATE,
+          billedDaysPerWeek: joursSemaine,
+          includeHiringFriction: inclureAnnee1,
+          recruitmentCostPct: recrutementPct,
+          onboardingMonths: onboardingMois,
+          onboardingProductivityPct: onboardingProductivite,
+          includeCoordinationOverhead: inclureCoordination,
+          coordinationHoursPerWeek: heuresCoordination,
+          includeEmployeeTools: inclureOutilsEmployeur,
+          employeeToolsAnnualCost: coutOutilsEmployeur,
+          includeWorkplace: inclureMilieu,
+          workplaceAnnualCost: coutMilieu,
+          includeTurnover: inclureRoulement,
+          averageTenureYears: ancienneteAnnees,
+          includeSeverance: inclureFinEmploi,
+          severanceWeeks: semainesFinEmploi,
+        })
+      ),
     [
-      rolePreset.cnesstSector,
+      rolePreset,
       salaire,
       masseSalariale,
       avantagesPct,
@@ -261,38 +262,29 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
   const autonomy = r.autonomyOverhead;
   const lifecycle = r.lifecycle;
   const breakdown = r.quebecBreakdown;
-  const engagementSharePct =
-    r.employeeAnnualCost > 0
-      ? Math.round((r.consultantAnnualCost / r.employeeAnnualCost) * 100)
-      : 0;
-  const weeklyEquivalent = consultantWeeklyEquivalentDays(joursSemaine);
-  const equivalentLabel = Number.isInteger(weeklyEquivalent)
-    ? String(weeklyEquivalent)
-    : weeklyEquivalent.toFixed(1).replace(".", locale === "en" ? "." : ",");
+  const verdict = resolveCalculatorVerdict({
+    billedDaysPerWeek: joursSemaine,
+    annualSaving: r.annualSaving,
+    consultantAnnualCost: r.consultantAnnualCost,
+    employeeAnnualCost: r.employeeAnnualCost,
+  });
+  const equivalentLabel = Number.isInteger(verdict.weeklyEquivalentDays)
+    ? String(verdict.weeklyEquivalentDays)
+    : verdict.weeklyEquivalentDays.toFixed(1).replace(".", locale === "en" ? "." : ",");
   const activeWorkplaceMode = getWorkplaceMode(coutMilieu);
-
-  const consultantWinsAnnual = r.annualSaving >= 0;
-  // Luc's positioning: 1-2 d/wk is targeted progress; 3 d/wk is focus ceiling (3 ≈ 5 FTE days).
-  const cadenceIdeal = joursSemaine <= 2;
-  const isFocusCeiling = consultantWinsAnnual && !cadenceIdeal;
-  const verdictKey = consultantWinsAnnual
-    ? cadenceIdeal
-      ? "results.verdict.ideal"
-      : "results.verdict.ceiling"
-    : "results.verdict.hire";
 
   return (
     <div className="cost-calculator">
       <div className="cost-calculator__sticky">
         <div
           className={classNames("cost-calculator__hero", {
-            "cost-calculator__hero--win": consultantWinsAnnual,
-            "cost-calculator__hero--parity": isFocusCeiling,
+            "cost-calculator__hero--win": verdict.consultantWinsAnnual,
+            "cost-calculator__hero--parity": verdict.isFocusCeiling,
           })}
         >
           <div className="cost-calculator__hero-kicker">{t("results.verdict.kicker")}</div>
           <p className="cost-calculator__hero-headline">
-            {t(`${verdictKey}.headline`, { days: joursSemaine })}
+            {t(verdict.headlineKey, { days: joursSemaine })}
           </p>
           <p className="cost-calculator__hero-ratio-value">
             {t("results.verdict.hero.ratio", {
@@ -300,18 +292,12 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
               equivalent: equivalentLabel,
             })}
           </p>
-          <p className="cost-calculator__hero-ratio-hint">
-            {t(
-              isFocusCeiling
-                ? "results.verdict.hero.ratioHintCeiling"
-                : "results.verdict.hero.ratioHint"
-            )}
-          </p>
+          <p className="cost-calculator__hero-ratio-hint">{t(verdict.ratioHintKey)}</p>
           <p className="cost-calculator__hero-proof-detail">
             {t("results.verdict.hero.detail", {
               consultant: fmt0(r.consultantAnnualCost),
               employee: fmt0(r.employeeAnnualCost),
-              pct: engagementSharePct,
+              pct: verdict.engagementSharePct,
             })}
           </p>
         </div>

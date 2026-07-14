@@ -156,7 +156,13 @@ describe("CostCalculator", () => {
         Boolean(el?.textContent?.startsWith("results.verdict.hero.ratio:"))
       )
     ).toBeInTheDocument();
-    expect(screen.getByText("results.verdict.hero.ratioHint")).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        (content) =>
+          content === "results.verdict.hero.ratioHint" ||
+          content === "results.verdict.hero.ratioHintCeiling"
+      )
+    ).toBeInTheDocument();
     expect(screen.queryByText("results.verdict.points.results")).not.toBeInTheDocument();
     expect(screen.queryByText("results.verdict.cap")).not.toBeInTheDocument();
   });
