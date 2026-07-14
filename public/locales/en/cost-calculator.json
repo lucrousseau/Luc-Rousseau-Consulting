@@ -3,16 +3,14 @@
   "seoDescription": "Compare the real cost per productive day of a senior developer or product manager (loaded employee) with an autonomous fractional consultant. Quebec tech scenarios, 2026 payroll taxes, steady state and year 1.",
   "badge": "Senior dev or PM vs consultant",
   "title": "Real day rate: employee vs fractional mandate",
-  "lede": "Compare the fully loaded cost of a Quebec senior developer or product manager with a fractional consultant day rate. By default, only the essential levers: everything else is optional.",
+  "lede": "Loaded full-time cost vs my fractional day rate.",
   "inputs": {
     "consultant": {
-      "title": "My rates (day rate)",
-      "lede": "My day rate for the mission type and billed cadence (1 to 3 d/wk)."
+      "title": "My rates (day rate)"
     },
     "vs": "versus",
     "employee": {
-      "title": "Employee (full-time)",
-      "lede": "Fully loaded cost of a full-time seat, shown as an equivalent day rate."
+      "title": "Employee (full-time)"
     }
   },
   "fields": {
@@ -21,10 +19,9 @@
     },
     "role": {
       "label": "Mission type",
-      "note": "This page compares my mandate to the cost of hiring that same profile full-time.",
       "options": {
-        "developer": "Senior development mandate",
-        "productManager": "Product / PM mandate"
+        "developer": "Senior development",
+        "productManager": "Product / PM"
       },
       "help": {
         "developer": "Senior dev in a tech SME: CNESST IT services (0.79%), lighter internal coordination, fractional mandate ideally 1-2 d/wk (max 3).",
@@ -131,13 +128,13 @@
     },
     "dayRate": {
       "label": "My day rate",
-      "note": "Rates shown here are my standard rates. Rescue, restructuring, or other high-risk / difficult situations are priced differently."
+      "note": "Standard rates. Rescue or high-risk: quoted case by case."
     },
     "billedDays": {
-      "label": "Billed days / week",
+      "label": "Worked days / week",
       "hint": "{{count}} d/wk",
       "help": "I take on 3 d/wk maximum. The fractional sweet spot: 1 to 2 d/wk, where senior expertise costs the least and delivers the most. At 4 d/wk or more, hiring is more advantageous (and I do not take those mandates).",
-      "volumeDiscount": "{{pct}}% volume discount included: effective day rate {{rate}}/day."
+      "volumeDiscount": "{{pct}}% volume discount · {{rate}}/day"
     }
   },
   "results": {

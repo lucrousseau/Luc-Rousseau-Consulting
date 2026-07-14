@@ -27,7 +27,6 @@ describe("CostCalculator", () => {
     render(<CostCalculator role="developer" />);
 
     expect(screen.getByText("fields.role.options.developer")).toBeInTheDocument();
-    expect(screen.getByText("fields.role.note")).toBeInTheDocument();
     expect(screen.queryByRole("combobox", { name: "fields.role.label" })).not.toBeInTheDocument();
   });
 
@@ -101,9 +100,7 @@ describe("CostCalculator", () => {
     render(<CostCalculator />);
 
     expect(screen.getByText("inputs.employee.title")).toBeInTheDocument();
-    expect(screen.getByText("inputs.employee.lede")).toBeInTheDocument();
     expect(screen.getByText("inputs.consultant.title")).toBeInTheDocument();
-    expect(screen.getByText("inputs.consultant.lede")).toBeInTheDocument();
     expect(screen.getByText("inputs.vs")).toBeInTheDocument();
     expect(screen.getByRole("slider", { name: "fields.salary.label" })).toBeInTheDocument();
     expect(screen.getByRole("group", { name: "fields.billedDays.label" })).toBeInTheDocument();

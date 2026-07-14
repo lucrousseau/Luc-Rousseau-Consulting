@@ -3,6 +3,7 @@ import {
   BASE_CONSULTANT_DAY_RATE,
   CALCULATOR_ROLES,
   CONSULTANT_RATE_TIERS,
+  DEFAULT_CALCULATOR_ROLE,
   SHARED_EMPLOYER_DEFAULTS,
   WORKPLACE_ANNUAL_COST,
   WORKPLACE_MODE_LIST,
@@ -16,6 +17,11 @@ import {
 describe("costCalculatorPresets", () => {
   it("exposes developer and product manager scenarios only", () => {
     expect(CALCULATOR_ROLES).toEqual(["developer", "productManager"]);
+  });
+
+  it("defaults the base path to the developer mission slug", () => {
+    expect(DEFAULT_CALCULATOR_ROLE).toBe("developer");
+    expect(calculatorRoleToSlug(DEFAULT_CALCULATOR_ROLE)).toBe("dev");
   });
 
   it("parses path slugs into calculator roles", () => {

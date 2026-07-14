@@ -131,6 +131,9 @@ export const CALCULATOR_ROLE_PRESETS: Record<CalculatorRole, CalculatorRolePrese
 
 export const CALCULATOR_ROLES = Object.keys(CALCULATOR_ROLE_PRESETS) as CalculatorRole[];
 
+/** Default mission when visiting `/cout-reel-jour` without a slug. */
+export const DEFAULT_CALCULATOR_ROLE: CalculatorRole = "developer";
+
 /** Path slugs for each comparison (`/cout-reel-jour/dev`, `/cout-reel-jour/pm`). */
 export const CALCULATOR_ROLE_SLUGS: Record<CalculatorRole, string> = {
   developer: "dev",

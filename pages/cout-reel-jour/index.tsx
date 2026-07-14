@@ -21,7 +21,7 @@ export default function CoutReelJourIndexRedirect() {
     );
     const destination = fromQuery
       ? `${ROUTES.dayRateComparison}/${calculatorRoleToSlug(fromQuery)}`
-      : getDayRateComparisonPath("productManager");
+      : getDayRateComparisonPath();
 
     void router.replace(destination);
   }, [router]);

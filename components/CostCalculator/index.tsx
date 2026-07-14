@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 
 import {
   BASE_CONSULTANT_DAY_RATE,
+  DEFAULT_CALCULATOR_ROLE,
   WORKPLACE_ANNUAL_COST,
   WORKPLACE_MODE_LIST,
   getCalculatorRolePreset,
@@ -102,7 +103,7 @@ function InputSection({ title, children }: InputSectionProps) {
 
 interface CompareSideProps {
   title: string;
-  lede: string;
+  lede?: string;
   tone: "employee" | "consultant";
   children: ReactNode;
 }
@@ -117,20 +118,18 @@ function CompareSide({ title, lede, tone, children }: CompareSideProps) {
     >
       <header className="cost-calculator__side-head">
         <h3 className="cost-calculator__side-title">{title}</h3>
-        <p className="cost-calculator__side-lede">{lede}</p>
+        {lede ? <p className="cost-calculator__side-lede">{lede}</p> : null}
       </header>
       <div className="cost-calculator__side-body">{children}</div>
     </section>
   );
 }
 
-const DEFAULT_ROLE: CalculatorRole = "productManager";
-
 interface CostCalculatorProps {
   role?: CalculatorRole;
 }
 
-export default function CostCalculator({ role = DEFAULT_ROLE }: CostCalculatorProps) {
+export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostCalculatorProps) {
   const { t } = useTranslation("cost-calculator");
   const router = useRouter();
   const locale = router.locale ?? "fr";
@@ -296,11 +295,7 @@ export default function CostCalculator({ role = DEFAULT_ROLE }: CostCalculatorPr
       </div>
 
       <div className="cost-calculator__inputs">
-        <CompareSide
-          title={t("inputs.consultant.title")}
-          lede={t("inputs.consultant.lede")}
-          tone="consultant"
-        >
+        <CompareSide title={t("inputs.consultant.title")} tone="consultant">
           <div className="cost-calculator__rate-block">
             <p className="cost-calculator__rate-line">
               {t("fields.role.label")} :{" "}
@@ -308,7 +303,6 @@ export default function CostCalculator({ role = DEFAULT_ROLE }: CostCalculatorPr
                 {t(`fields.role.options.${role}`)}
               </span>
             </p>
-            <p className="cost-calculator__help">{t("fields.role.note")}</p>
           </div>
 
           <Field
@@ -357,11 +351,7 @@ export default function CostCalculator({ role = DEFAULT_ROLE }: CostCalculatorPr
           {t("inputs.vs")}
         </p>
 
-        <CompareSide
-          title={t("inputs.employee.title")}
-          lede={t("inputs.employee.lede")}
-          tone="employee"
-        >
+        <CompareSide title={t("inputs.employee.title")} tone="employee">
           <Field label={t("fields.salary.label")} hint={fmt0(salaire)}>
             <input
               type="range"
@@ -409,7 +399,6 @@ export default function CostCalculator({ role = DEFAULT_ROLE }: CostCalculatorPr
                       aria-valuemax={5000000}
                       aria-valuenow={masseSalariale}
                     />
-                    <p className="cost-calculator__help">{t("fields.companyPayroll.help")}</p>
                   </Field>
 
                   <Field label={t("fields.benefits.label")} hint={`${avantagesPct} %`}>

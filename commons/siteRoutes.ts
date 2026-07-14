@@ -7,7 +7,7 @@
  */
 
 import type { CalculatorRole } from "./costCalculatorPresets";
-import { calculatorRoleToSlug } from "./costCalculatorPresets";
+import { calculatorRoleToSlug, DEFAULT_CALCULATOR_ROLE } from "./costCalculatorPresets";
 import type { LocalizedPageEntry } from "./localizedManifest";
 import {
   SITUATIONS,
@@ -47,7 +47,7 @@ export const ROUTES = Object.freeze({
 });
 
 /** Same calculator page, keyed by mission slug (`/cout-reel-jour/dev` | `/pm`). */
-export function getDayRateComparisonPath(role: CalculatorRole = "productManager"): string {
+export function getDayRateComparisonPath(role: CalculatorRole = DEFAULT_CALCULATOR_ROLE): string {
   return `${ROUTES.dayRateComparison}/${calculatorRoleToSlug(role)}`;
 }
 

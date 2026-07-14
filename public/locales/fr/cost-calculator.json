@@ -3,16 +3,14 @@
   "seoDescription": "Comparez le coût réel par jour productif d'un développeur senior ou d'un gestionnaire de produit (employé chargé) au tarif d'un consultant autonome en mandat fractionnel. Scénarios tech québécois, DAS 2026, régime de croisière et année 1.",
   "badge": "Dev senior ou PM vs consultant",
   "title": "Coût réel par jour : employé vs mandat fractionnel",
-  "lede": "Comparez le coût chargé d'un dev senior ou d'un PM québécois au tarif d'un consultant fractionnel. Par défaut, seuls les leviers essentiels : le reste est ajustable en option.",
+  "lede": "Coût chargé d'un CDI face à mon TJM en mandat fractionnel.",
   "inputs": {
     "consultant": {
-      "title": "Mes tarifs (TJM)",
-      "lede": "Mon tarif selon le type de mission et la cadence facturée (1 à 3 j/sem)."
+      "title": "Mes tarifs (TJM)"
     },
     "vs": "versus",
     "employee": {
-      "title": "Employé (CDI)",
-      "lede": "Coût réel d'un poste à temps plein, ramené en équivalent journalier."
+      "title": "Employé (CDI)"
     }
   },
   "fields": {
@@ -21,10 +19,9 @@
     },
     "role": {
       "label": "Type de mission",
-      "note": "Cette page compare mon mandat au coût d'embaucher le même profil en CDI.",
       "options": {
-        "developer": "Mission développement senior",
-        "productManager": "Mission produit / PM"
+        "developer": "Développement senior",
+        "productManager": "Produit / PM"
       },
       "help": {
         "developer": "Dev senior en PME tech : CNESST services TI (0,79 %), peu de coordination interne, mandat fractionnel idéal à 1-2 j/sem (max 3).",
@@ -131,13 +128,13 @@
     },
     "dayRate": {
       "label": "Mon TJM",
-      "note": "Les tarifs affichés sont mes tarifs standard. Les missions de sauvetage, de restructuration ou toute situation à risque élevé / difficile sont évaluées autrement."
+      "note": "Tarifs standard. Sauvetage ou risque élevé : sur devis."
     },
     "billedDays": {
-      "label": "Jours facturés / semaine",
+      "label": "Jours travaillés / semaine",
       "hint": "{{count}} j/sem",
       "help": "Je prends au maximum 3 j/sem. La zone idéale du fractionnel : 1 à 2 j/sem, là où l'expertise senior coûte le moins et rapporte le plus. À 4 j/sem ou plus, l'embauche est plus avantageuse (et je ne prends pas ces mandats).",
-      "volumeDiscount": "Remise volume {{pct}} % incluse : TJM effectif {{rate}}/j."
+      "volumeDiscount": "Remise volume {{pct}} % · {{rate}}/j"
     }
   },
   "results": {
