@@ -64,11 +64,11 @@
     },
     "benefits": {
       "label": "Employer benefits",
-      "help": "Group insurance, group RRSP, other attributable benefits. Typical in tech: 5 to 8% of gross."
+      "help": "Group insurance, group RRSP, other attributable benefits. Typical SME tech: 4 to 6% of gross."
     },
     "bonus": {
       "label": "Bonus / variable pay",
-      "help": "Annual bonus, often 10 to 15% of base for a senior profile. Added to pensionable pay (payroll taxes applied). Estimated bonus: {{amount}}."
+      "help": "Annual bonus. At many SMEs: 0 to 5% of base; 10%+ mainly at larger firms. Added to pensionable pay (payroll taxes applied). Estimated bonus: {{amount}}."
     },
     "productiveDays": {
       "label": "Productive days per year (steady state)",
@@ -81,12 +81,12 @@
     },
     "recruitment": {
       "label": "Recruitment cost (one-time, year 1)",
-      "help": "Posting, agency, manager interview time, HR tools. Typical senior range: 10 to 20% of gross. Counted once, in year 1."
+      "help": "Posting, internal time, sometimes a light agency. Realistic SME senior range: 8 to 12% of gross (full agency: higher). Counted once, in year 1."
     },
     "onboardingMonths": {
       "label": "Ramp-up duration",
       "hint": "{{count}} months",
-      "help": "Period paid at full salary before full productivity. Senior profile: often 2 to 4 months."
+      "help": "Period paid at full salary before full productivity. Autonomous senior: often 1 to 3 months."
     },
     "onboardingProductivity": {
       "label": "Productivity during ramp-up",
@@ -100,15 +100,15 @@
     "coordination": {
       "label": "Internal coordination hours per week",
       "hint": "{{count}} h/wk",
-      "help": "1:1s, planning, reviews, HR follow-up. Senior employee: often 2 to 4 h/wk. Autonomous consultant: close to 0."
+      "help": "1:1s, planning, reviews, HR follow-up. Autonomous senior: often 1 to 2 h/wk. Autonomous consultant: close to 0."
     },
     "tools": {
       "includeEmployee": "Include employer workstation and software",
       "employee": {
         "label": "Employer tools and equipment (annual)",
         "help": {
-          "developer": "Amortized laptop (~3 yr), IDE, GitHub, dev licenses, monitor, headset. Typical SME: $4,000 to $7,000/yr.",
-          "productManager": "Laptop, Figma, analytics, Miro, product SaaS licenses. Typical SME: $5,000 to $8,000/yr."
+          "developer": "Amortized laptop (~3 yr), IDE, GitHub, core licenses. Typical SME: $3,000 to $4,500/yr.",
+          "productManager": "Laptop, Figma or equivalent, a few product SaaS tools. Typical SME: $3,000 to $4,500/yr."
         }
       },
       "consultant": {
@@ -123,7 +123,7 @@
         "hybrid": "Hybrid",
         "remote": "Remote"
       },
-      "help": "Average cost allocated per seat: rent, fit-out, amortized furniture and operating costs at the office; allowance, home equipment and internet when remote. Montreal office: ~$5,000 to $8,000/yr; hybrid: ~$3,000 to $4,000; remote: ~$1,000 to $1,500. If your office is already paid for, the marginal cost of one more seat can be lower.",
+      "help": "Average cost allocated per seat (Montreal SME, low–median band): office ~$4,000 to $6,000/yr; hybrid ~$2,000 to $3,000; remote ~$600 to $1,000. If your office is already paid for, the marginal cost of one more seat can be lower.",
       "consultantHelp": "Consultant side: workspace, hardware and connection are included in the day rate ($0 for you, office or remote)."
     },
     "lifecycle": {

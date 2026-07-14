@@ -29,14 +29,14 @@ export const VOLUME_DISCOUNT_BILLED_DAYS = 3;
 /** Volume discount applied to the day rate at {@link VOLUME_DISCOUNT_BILLED_DAYS}. */
 export const VOLUME_DISCOUNT_PCT = 10;
 
-/** Typical all-in recruitment cost for a senior profile, amortized over year 1 (% of gross). */
-export const DEFAULT_RECRUITMENT_PCT = 12;
+/** Typical in-house / light-agency recruit cost for a senior profile (% of gross), year 1. */
+export const DEFAULT_RECRUITMENT_PCT = 10;
 /** Paid ramp-up period before full productivity (months). */
-export const DEFAULT_ONBOARDING_MONTHS = 3;
+export const DEFAULT_ONBOARDING_MONTHS = 2;
 /** Productivity during onboarding (0–100). 60 % ≈ paid full time, output at 60 %. */
 export const DEFAULT_ONBOARDING_PRODUCTIVITY = 60;
-/** Manager/team hours per week to supervise and align an employee (consultant: ~0). */
-export const DEFAULT_COORDINATION_HOURS_PER_WEEK = 2;
+/** Light manager alignment for an autonomous senior (consultant: ~0). */
+export const DEFAULT_COORDINATION_HOURS_PER_WEEK = 1;
 /** Average employee tenure in tech (years); hiring and ramp-up recur on this cadence. */
 export const DEFAULT_AVERAGE_TENURE_YEARS = 3;
 /** Expected severance/notice at departure (weeks of base pay), amortized over tenure. */

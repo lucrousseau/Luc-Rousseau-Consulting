@@ -175,7 +175,7 @@ describe("computeAutonomyOverhead", () => {
     expect(overhead.coordinationAnnualCost).toBe(11_876.28);
     expect(overhead.employeeToolsAnnualCost).toBe(5_500);
     expect(overhead.workplaceAnnualCost).toBe(4_000);
-    expect(DEFAULT_COORDINATION_HOURS_PER_WEEK).toBe(2);
+    expect(DEFAULT_COORDINATION_HOURS_PER_WEEK).toBe(1);
   });
 
   it("drops tools and workplace when their toggles are off", () => {
@@ -212,19 +212,19 @@ describe("computeDayRateComparison", () => {
       workplaceAnnualCost: WORKPLACE_ANNUAL_COST[preset.defaultWorkplaceMode],
     });
 
-    expect(result.baseEmployerCost).toBe(159_754.84);
-    expect(result.ongoingAnnualCost).toBe(180_737.2);
-    expect(result.yearOneAnnualCost).toBe(197_537.2);
-    expect(result.steadyStateCostPerDay).toBe(840.64);
-    expect(result.yearOneCostPerDay).toBe(1063.17);
-    expect(result.effectiveProductiveDays).toBe(185.8);
+    expect(result.baseEmployerCost).toBe(135_624.84);
+    expect(result.ongoingAnnualCost).toBe(148_405.64);
+    expect(result.yearOneAnnualCost).toBe(160_405.64);
+    expect(result.steadyStateCostPerDay).toBe(690.26);
+    expect(result.yearOneCostPerDay).toBe(811.36);
+    expect(result.effectiveProductiveDays).toBe(197.7);
     expect(result.consultantWeeklyCost).toBe(1800);
     expect(result.consultantAnnualCost).toBe(83_520);
-    expect(result.annualSaving).toBe(97_217.2);
-    expect(result.hiringFriction?.recruitmentCost).toBe(16_800);
-    expect(result.autonomyOverhead?.coordinationAnnualCost).toBe(11_982.36);
-    expect(result.autonomyOverhead?.employeeToolsAnnualCost).toBe(5_500);
-    expect(result.autonomyOverhead?.workplaceAnnualCost).toBe(3_500);
+    expect(result.annualSaving).toBe(64_885.64);
+    expect(result.hiringFriction?.recruitmentCost).toBe(12_000);
+    expect(result.autonomyOverhead?.coordinationAnnualCost).toBe(6_780.8);
+    expect(result.autonomyOverhead?.employeeToolsAnnualCost).toBe(3_500);
+    expect(result.autonomyOverhead?.workplaceAnnualCost).toBe(2_500);
     expect(result.quebecBreakdown?.year).toBe(2026);
   });
 

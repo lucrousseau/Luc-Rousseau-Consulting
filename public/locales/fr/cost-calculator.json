@@ -64,11 +64,11 @@
     },
     "benefits": {
       "label": "Avantages employeur",
-      "help": "Assurance collective, REER collectif, autres avantages imputables. Typique en tech : 5 à 8 % du brut."
+      "help": "Assurance collective, REER collectif, autres avantages imputables. Typique PME tech : 4 à 6 % du brut."
     },
     "bonus": {
       "label": "Prime / rémunération variable",
-      "help": "Bonus annuel, souvent 10 à 15 % du brut pour un profil senior. Ajouté au salaire cotisable (DAS appliqués). Prime estimée : {{amount}}."
+      "help": "Bonus annuel. Chez plusieurs PME : 0 à 5 % du brut; 10 %+ surtout en plus grosses boîtes. Ajouté au salaire cotisable (DAS appliqués). Prime estimée : {{amount}}."
     },
     "productiveDays": {
       "label": "Jours productifs par an (régime de croisière)",
@@ -81,12 +81,12 @@
     },
     "recruitment": {
       "label": "Coût de recrutement (ponctuel, année 1)",
-      "help": "Affichage, agence, temps des gestionnaires en entrevue, outils RH. Fourchette typique profil senior : 10 à 20 % du brut. Compté une seule fois, la 1re année."
+      "help": "Affichage, temps interne, parfois agence légère. Fourchette réaliste PME profil senior : 8 à 12 % du brut (agence pleine : plus haut). Compté une seule fois, la 1re année."
     },
     "onboardingMonths": {
       "label": "Durée du ramp-up",
       "hint": "{{count}} mois",
-      "help": "Période payée à plein salaire avant la pleine productivité. Profil senior : souvent 2 à 4 mois."
+      "help": "Période payée à plein salaire avant la pleine productivité. Profil senior autonome : souvent 1 à 3 mois."
     },
     "onboardingProductivity": {
       "label": "Productivité pendant le ramp-up",
@@ -100,15 +100,15 @@
     "coordination": {
       "label": "Heures internes de coordination par semaine",
       "hint": "{{count}} h/sem",
-      "help": "1:1, planification, revues, suivi RH. Profil senior employé : souvent 2 à 4 h/sem. Consultant autonome : proche de 0."
+      "help": "1:1, planification, revues, suivi RH. Senior autonome : souvent 1 à 2 h/sem. Consultant autonome : proche de 0."
     },
     "tools": {
       "includeEmployee": "Inclure poste de travail et logiciels employeur",
       "employee": {
         "label": "Outils et équipement employeur (annuel)",
         "help": {
-          "developer": "Ordinateur amorti (~3 ans), IDE, GitHub, licences dev, écran, casque. Typique PME : 4 000 à 7 000 $/an.",
-          "productManager": "Ordinateur, Figma, analytics, Miro, licences SaaS produit. Typique PME : 5 000 à 8 000 $/an."
+          "developer": "Ordinateur amorti (~3 ans), IDE, GitHub, licences de base. Typique PME : 3 000 à 4 500 $/an.",
+          "productManager": "Ordinateur, Figma ou équivalent, quelques SaaS produit. Typique PME : 3 000 à 4 500 $/an."
         }
       },
       "consultant": {
@@ -123,7 +123,7 @@
         "hybrid": "Hybride",
         "remote": "Télétravail"
       },
-      "help": "Coût moyen alloué par poste : loyer, aménagement, mobilier amorti et frais d'exploitation au bureau ; allocation, matériel maison et internet en télétravail. Bureau MTL : ~5 000 à 8 000 $/an ; hybride : ~3 000 à 4 000 $ ; télétravail : ~1 000 à 1 500 $. Si vos bureaux sont déjà payés, le coût marginal d'un poste de plus peut être plus bas.",
+      "help": "Coût moyen alloué par poste (PME MTL, fourchette basse–médiane) : bureau ~4 000 à 6 000 $/an ; hybride ~2 000 à 3 000 $ ; télétravail ~600 à 1 000 $. Si vos bureaux sont déjà payés, le coût marginal d'un poste de plus peut être plus bas.",
       "consultantHelp": "Côté consultant : espace de travail, poste et connexion sont inclus dans le TJM (0 $ pour vous, au bureau comme à distance)."
     },
     "lifecycle": {

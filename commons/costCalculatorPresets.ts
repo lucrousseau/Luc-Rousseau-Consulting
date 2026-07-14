@@ -28,16 +28,16 @@ export const CONSULTANT_RATE_TIERS = {
 export type WorkplaceMode = "office" | "hybrid" | "remote";
 
 /**
- * Annual employer workplace cost per seat (Montreal 2026, allocated per employee):
- * - office: rent + operating costs + desk/furniture amortized + utilities (~4-8k$).
- * - hybrid: partial footprint, shared desks, some home-office support.
- * - remote: home-office setup amortized + internet/phone allowance + occasional co-working.
- * Consultant: $0, their workspace is included in the day rate.
+ * Annual employer workplace cost per seat (Montreal PME, low–median allocation):
+ * - office: rent + opex share + desk amort (~4-6k$).
+ * - hybrid: hot-desk / partial footprint (~2-3k$).
+ * - remote: home-office allowance + intermittent co-working (~0.6-1k$).
+ * Consultant: $0, workspace included in the day rate.
  */
 export const WORKPLACE_ANNUAL_COST: Record<WorkplaceMode, number> = {
-  office: 6_000,
-  hybrid: 3_500,
-  remote: 1_200,
+  office: 5_000,
+  hybrid: 2_500,
+  remote: 800,
 };
 
 /** Display-ready mode list (mode id + annual cost) to iterate without computed member access. */
@@ -53,16 +53,20 @@ export function getWorkplaceMode(cost: number): WorkplaceMode | null {
 }
 
 /**
- * Employer-policy assumptions shared by both profiles.
+ * Employer-policy assumptions shared by both profiles (PME Quebec, deliberately
+ * low–median so the comparison stays conservative for the employee side).
  * Same company, same benefits plan, same tools budget: only salary and role-specific
  * friction (coordination, ramp-up) differ between dev and PM.
  */
 export const SHARED_EMPLOYER_DEFAULTS = {
   companyPayroll: 500_000,
-  benefitsPct: 7,
-  bonusPct: 10,
+  /** Group benefits often land around 4–6 % of base in SME tech. */
+  benefitsPct: 5,
+  /** Many SMEs pay little or no guaranteed cash bonus; 5 % is a cautious mid. */
+  bonusPct: 5,
   recruitmentPct: DEFAULT_RECRUITMENT_PCT,
-  employeeToolsAnnualCost: 5_500,
+  /** Laptop amortized + core SaaS (GitHub/IDE or Figma), not a full toolstack. */
+  employeeToolsAnnualCost: 3_500,
   workplaceMode: "hybrid" as WorkplaceMode,
   billedDaysPerWeek: 2,
   productiveDays: DEFAULT_PRODUCTIVE_DAYS,
@@ -94,8 +98,8 @@ export const CALCULATOR_ROLE_PRESETS: Record<CalculatorRole, CalculatorRolePrese
   developer: {
     id: "developer",
     cnesstSector: "tech",
-    // Senior dev median base, Montreal 2026 (Levels/PayScale ~107-130k, Robert Half higher).
-    defaultGrossSalary: 125_000,
+    // Senior base, Montreal PME: low–median of ~107-130k band (Glassdoor base ~113k).
+    defaultGrossSalary: 110_000,
     defaultCompanyPayroll: SHARED_EMPLOYER_DEFAULTS.companyPayroll,
     defaultConsultantDayRate: BASE_CONSULTANT_DAY_RATE,
     defaultProductiveDays: SHARED_EMPLOYER_DEFAULTS.productiveDays,
@@ -112,14 +116,14 @@ export const CALCULATOR_ROLE_PRESETS: Record<CalculatorRole, CalculatorRolePrese
   productManager: {
     id: "productManager",
     cnesstSector: "tech",
-    // Senior PM median base, Montreal 2026 (Levels total comp ~128k, job postings ~146k).
-    defaultGrossSalary: 140_000,
+    // Senior PM base, Montreal PME: below big-tech total-comp medians (~128k), not agency highs.
+    defaultGrossSalary: 120_000,
     defaultCompanyPayroll: SHARED_EMPLOYER_DEFAULTS.companyPayroll,
     defaultConsultantDayRate: BASE_CONSULTANT_DAY_RATE,
     defaultProductiveDays: SHARED_EMPLOYER_DEFAULTS.productiveDays,
-    defaultOnboardingMonths: 3,
-    defaultOnboardingProductivity: 55,
-    defaultCoordinationHoursPerWeek: 3,
+    defaultOnboardingMonths: 2,
+    defaultOnboardingProductivity: DEFAULT_ONBOARDING_PRODUCTIVITY,
+    defaultCoordinationHoursPerWeek: 2,
     defaultRecruitmentPct: SHARED_EMPLOYER_DEFAULTS.recruitmentPct,
     defaultBenefitsPct: SHARED_EMPLOYER_DEFAULTS.benefitsPct,
     defaultBonusPct: SHARED_EMPLOYER_DEFAULTS.bonusPct,

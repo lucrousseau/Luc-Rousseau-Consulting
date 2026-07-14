@@ -46,11 +46,9 @@ describe("costCalculatorPresets", () => {
     const developer = getCalculatorRolePreset("developer");
     const productManager = getCalculatorRolePreset("productManager");
 
+    expect(productManager.defaultGrossSalary).toBeGreaterThan(developer.defaultGrossSalary);
     expect(productManager.defaultCoordinationHoursPerWeek).toBeGreaterThan(
       developer.defaultCoordinationHoursPerWeek
-    );
-    expect(productManager.defaultOnboardingMonths).toBeGreaterThan(
-      developer.defaultOnboardingMonths
     );
   });
 
@@ -108,8 +106,8 @@ describe("costCalculatorPresets", () => {
 
     expect(pmResult.steadyStateCostPerDay).toBeGreaterThan(devResult.steadyStateCostPerDay);
     expect(pmResult.yearOneCostPerDay).toBeGreaterThan(devResult.yearOneCostPerDay);
-    expect(pmResult.ongoingAnnualCost).toBe(180_737.2);
-    expect(devResult.ongoingAnnualCost).toBe(159_630.22);
+    expect(pmResult.ongoingAnnualCost).toBe(148_405.64);
+    expect(devResult.ongoingAnnualCost).toBe(134_084);
   });
 
   it("charges a per-day premium yet stays cheaper on the annual commitment", () => {
@@ -150,11 +148,11 @@ describe("costCalculatorPresets", () => {
   });
 
   it("maps work modes to a per-seat workplace cost", () => {
-    expect(WORKPLACE_ANNUAL_COST).toEqual({ office: 6_000, hybrid: 3_500, remote: 1_200 });
+    expect(WORKPLACE_ANNUAL_COST).toEqual({ office: 5_000, hybrid: 2_500, remote: 800 });
     expect(WORKPLACE_MODE_LIST.map((entry) => entry.mode)).toEqual(["office", "hybrid", "remote"]);
-    expect(getWorkplaceMode(6_000)).toBe("office");
-    expect(getWorkplaceMode(3_500)).toBe("hybrid");
-    expect(getWorkplaceMode(1_200)).toBe("remote");
+    expect(getWorkplaceMode(5_000)).toBe("office");
+    expect(getWorkplaceMode(2_500)).toBe("hybrid");
+    expect(getWorkplaceMode(800)).toBe("remote");
     expect(getWorkplaceMode(9_999)).toBeNull();
     expect(getCalculatorRolePreset("developer").defaultWorkplaceMode).toBe("hybrid");
     expect(getCalculatorRolePreset("productManager").defaultWorkplaceMode).toBe("hybrid");
@@ -188,10 +186,10 @@ describe("costCalculatorPresets", () => {
     const off = computeDayRateComparison({ ...base, includeWorkplace: false });
 
     expect(off.autonomyOverhead?.workplaceAnnualCost).toBe(0);
-    expect(office.autonomyOverhead?.workplaceAnnualCost).toBe(6_000);
-    expect(remote.autonomyOverhead?.workplaceAnnualCost).toBe(1_200);
+    expect(office.autonomyOverhead?.workplaceAnnualCost).toBe(5_000);
+    expect(remote.autonomyOverhead?.workplaceAnnualCost).toBe(800);
     // Office footprint costs more than remote, all else equal.
-    expect(office.ongoingAnnualCost - remote.ongoingAnnualCost).toBeCloseTo(4_800, 2);
-    expect(office.ongoingAnnualCost - off.ongoingAnnualCost).toBeCloseTo(6_000, 2);
+    expect(office.ongoingAnnualCost - remote.ongoingAnnualCost).toBeCloseTo(4_200, 2);
+    expect(office.ongoingAnnualCost - off.ongoingAnnualCost).toBeCloseTo(5_000, 2);
   });
 });
