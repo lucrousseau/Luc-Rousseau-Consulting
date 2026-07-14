@@ -204,3 +204,34 @@ export function parseGrossSalaryQueryParam(
   const clamped = Math.min(GROSS_SALARY_MAX, Math.max(GROSS_SALARY_MIN, Math.round(parsed)));
   return Math.round(clamped / GROSS_SALARY_STEP) * GROSS_SALARY_STEP;
 }
+
+/** Allowed billed-days picks for deep links (`jours` / `days`). */
+export const BILLED_DAYS_QUERY_OPTIONS = [1, 2, 3] as const;
+export type BilledDaysQueryOption = (typeof BILLED_DAYS_QUERY_OPTIONS)[number];
+
+/**
+ * Reads `jours` or `days` from a Next.js query for deep links.
+ * Accepts 1, 2 or 3 only (optional trailing `j`).
+ */
+export function parseBilledDaysQueryParam(
+  value: string | string[] | undefined | null
+): BilledDaysQueryOption | null {
+  const raw = Array.isArray(value) ? value[0] : value;
+  if (raw == null || raw === "") {
+    return null;
+  }
+
+  const cleaned = String(raw)
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, "")
+    .replace(/j(?:ours?)?(?:\/sem(?:aine)?)?$/, "");
+  const parsed = Number(cleaned);
+  if (!Number.isInteger(parsed)) {
+    return null;
+  }
+
+  return (BILLED_DAYS_QUERY_OPTIONS as readonly number[]).includes(parsed)
+    ? (parsed as BilledDaysQueryOption)
+    : null;
+}

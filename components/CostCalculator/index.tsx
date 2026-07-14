@@ -9,6 +9,7 @@ import {
   WORKPLACE_ANNUAL_COST,
   getCalculatorRolePreset,
   getWorkplaceMode,
+  parseBilledDaysQueryParam,
   parseGrossSalaryQueryParam,
   type CalculatorRole,
 } from "../../commons/costCalculatorPresets";
@@ -52,6 +53,9 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
   const salaryFromQuery = router.isReady
     ? parseGrossSalaryQueryParam(router.query.salaire ?? router.query.salary)
     : null;
+  const daysFromQuery = router.isReady
+    ? parseBilledDaysQueryParam(router.query.jours ?? router.query.days)
+    : null;
   const [salaireOverride, setSalaireOverride] = useState<number | null>(null);
   const salaire = salaireOverride ?? salaryFromQuery ?? rolePreset.defaultGrossSalary;
   const [masseSalariale, setMasseSalariale] = useState(rolePreset.defaultCompanyPayroll);
@@ -80,7 +84,8 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
   const [ancienneteAnnees, setAncienneteAnnees] = useState(DEFAULT_AVERAGE_TENURE_YEARS);
   const [inclureFinEmploi, setInclureFinEmploi] = useState(true);
   const [semainesFinEmploi, setSemainesFinEmploi] = useState(DEFAULT_SEVERANCE_WEEKS);
-  const [joursSemaine, setJoursSemaine] = useState(rolePreset.defaultBilledDaysPerWeek);
+  const [joursSemaineOverride, setJoursSemaineOverride] = useState<number | null>(null);
+  const joursSemaine = joursSemaineOverride ?? daysFromQuery ?? rolePreset.defaultBilledDaysPerWeek;
 
   const r = useMemo(
     () =>
@@ -191,7 +196,7 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
                 <button
                   key={d}
                   type="button"
-                  onClick={() => setJoursSemaine(d)}
+                  onClick={() => setJoursSemaineOverride(d)}
                   className={classNames("cost-calculator__day-pick", {
                     "cost-calculator__day-pick--active": joursSemaine === d,
                   })}

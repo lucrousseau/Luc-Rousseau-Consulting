@@ -12,6 +12,7 @@ import {
   getCalculatorRolePreset,
   getWorkplaceMode,
   parseCalculatorRoleSlug,
+  parseBilledDaysQueryParam,
   parseGrossSalaryQueryParam,
   type CalculatorRole,
 } from "./costCalculatorPresets";
@@ -46,6 +47,18 @@ describe("costCalculatorPresets", () => {
     expect(parseGrossSalaryQueryParam("999999")).toBe(250_000);
     expect(parseGrossSalaryQueryParam("nope")).toBeNull();
     expect(parseGrossSalaryQueryParam(undefined)).toBeNull();
+  });
+
+  it("parses jours/days query values for deep links", () => {
+    expect(parseBilledDaysQueryParam("1")).toBe(1);
+    expect(parseBilledDaysQueryParam("2")).toBe(2);
+    expect(parseBilledDaysQueryParam("3")).toBe(3);
+    expect(parseBilledDaysQueryParam("3j")).toBe(3);
+    expect(parseBilledDaysQueryParam("2 j/sem")).toBe(2);
+    expect(parseBilledDaysQueryParam("0")).toBeNull();
+    expect(parseBilledDaysQueryParam("4")).toBeNull();
+    expect(parseBilledDaysQueryParam("nope")).toBeNull();
+    expect(parseBilledDaysQueryParam(undefined)).toBeNull();
   });
 
   it.each<CalculatorRole>(["developer", "productManager"])(

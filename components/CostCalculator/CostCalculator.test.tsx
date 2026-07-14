@@ -139,6 +139,13 @@ describe("CostCalculator", () => {
     expect(screen.getByRole("slider", { name: "fields.salary.label" })).toHaveValue("140000");
   });
 
+  it("seeds billed days from the jours query param", () => {
+    mockRouterQuery.jours = "3";
+    render(<CostCalculator />);
+
+    expect(screen.getByRole("button", { name: "3", pressed: true })).toBeInTheDocument();
+  });
+
   it("leads with a results-first sticky summary, not savings-led pills", () => {
     render(<CostCalculator />);
 
