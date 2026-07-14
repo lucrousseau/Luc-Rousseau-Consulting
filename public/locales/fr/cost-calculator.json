@@ -24,7 +24,7 @@
   },
   "inputs": {
     "consultant": {
-      "title": "Mes tarifs (TJM)"
+      "title": "Tarif {{role}}"
     },
     "vs": "versus",
     "employee": {

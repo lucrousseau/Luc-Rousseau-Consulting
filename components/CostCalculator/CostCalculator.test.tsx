@@ -23,38 +23,43 @@ jest.mock("next/router", () => ({
 }));
 
 describe("CostCalculator", () => {
-  it("shows the mission type from the page role as plain text", () => {
+  it("puts the mission role in the consultant side title", () => {
     render(<CostCalculator role="developer" />);
 
-    expect(screen.getByText("fields.role.options.developer")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: (_, el) => Boolean(el?.textContent?.startsWith("inputs.consultant.title")),
+      })
+    ).toBeInTheDocument();
     expect(screen.queryByRole("combobox", { name: "fields.role.label" })).not.toBeInTheDocument();
   });
 
-  it("renders a fixed standard day rate with exception note", () => {
-    const { container } = render(<CostCalculator />);
+  it("shows the effective day rate in the consultant side totals", () => {
+    render(<CostCalculator />);
 
-    expect(container.querySelector(".cost-calculator__rate-value")).toHaveTextContent(/900/);
-    expect(screen.getByText("fields.dayRate.note")).toBeInTheDocument();
+    expect(screen.getByText("results.dayCost.consultantLabel")).toBeInTheDocument();
+    expect(screen.getByText(/900/)).toBeInTheDocument();
     expect(
       screen.queryByRole("combobox", { name: "fields.engagementTier.label" })
     ).not.toBeInTheDocument();
   });
 
   it("keeps the same base day rate for either mission role", () => {
-    const { container, rerender } = render(<CostCalculator role="productManager" />);
-    expect(container.querySelector(".cost-calculator__rate-value")).toHaveTextContent(/900/);
+    const { rerender } = render(<CostCalculator role="productManager" />);
+    expect(screen.getAllByText(/900/).length).toBeGreaterThanOrEqual(1);
 
     rerender(<CostCalculator role="developer" />);
-    expect(container.querySelector(".cost-calculator__rate-value")).toHaveTextContent(/900/);
+    expect(screen.getAllByText(/900/).length).toBeGreaterThanOrEqual(1);
   });
 
   it("shows the volume-discounted day rate at 3 billed days", () => {
-    const { container } = render(<CostCalculator />);
+    render(<CostCalculator />);
 
     fireEvent.click(screen.getByRole("button", { name: "3" }));
 
     // 900 × 0.9 = 810
-    expect(container.querySelector(".cost-calculator__rate-value")).toHaveTextContent(/810/);
+    expect(screen.getAllByText(/810/).length).toBeGreaterThanOrEqual(1);
+    expect(screen.getByText(/fields\.billedDays\.volumeDiscount/)).toBeInTheDocument();
   });
 
   it("renders the workplace cost modes without a manual slider", () => {
@@ -100,12 +105,13 @@ describe("CostCalculator", () => {
     render(<CostCalculator />);
 
     expect(screen.getByText("inputs.employee.title")).toBeInTheDocument();
-    expect(screen.getByText("inputs.consultant.title")).toBeInTheDocument();
+    const consultant = screen.getByRole("heading", {
+      name: (_, el) => Boolean(el?.textContent?.startsWith("inputs.consultant.title")),
+    });
     expect(screen.getByText("inputs.vs")).toBeInTheDocument();
     expect(screen.getByRole("slider", { name: "fields.salary.label" })).toBeInTheDocument();
     expect(screen.getByRole("group", { name: "fields.billedDays.label" })).toBeInTheDocument();
 
-    const consultant = screen.getByText("inputs.consultant.title");
     const employee = screen.getByText("inputs.employee.title");
     expect(
       consultant.compareDocumentPosition(employee) & Node.DOCUMENT_POSITION_FOLLOWING

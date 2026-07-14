@@ -24,7 +24,7 @@
   },
   "inputs": {
     "consultant": {
-      "title": "My rates (day rate)"
+      "title": "{{role}} rate"
     },
     "vs": "versus",
     "employee": {

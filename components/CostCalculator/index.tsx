@@ -20,7 +20,6 @@ import {
   DEFAULT_AVERAGE_TENURE_YEARS,
   DEFAULT_SEVERANCE_WEEKS,
   QUEBEC_STAT_HOLIDAYS,
-  applyConsultantVolumeDiscount,
   computeDayRateComparison,
 } from "../../commons/dayRateComparison";
 
@@ -259,10 +258,6 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
   const breakdown = r.quebecBreakdown;
   const savingPct = pct1(Math.abs(r.annualSavingRelative) * 100);
   const activeWorkplaceMode = getWorkplaceMode(coutMilieu);
-  const displayDayRate = applyConsultantVolumeDiscount(
-    BASE_CONSULTANT_DAY_RATE,
-    joursSemaine
-  ).effectiveDayRate;
 
   const consultantWinsAnnual = r.annualSaving >= 0;
   // Luc's positioning: 1-2 d/wk is the fractional sweet spot, 3 is the ceiling (+ volume discount).
@@ -325,7 +320,9 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
 
       <div className="cost-calculator__inputs">
         <CompareSide
-          title={t("inputs.consultant.title")}
+          title={t("inputs.consultant.title", {
+            role: t(`fields.role.options.${role}`),
+          })}
           tone="consultant"
           footer={
             <SideTotals
@@ -346,15 +343,6 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
             />
           }
         >
-          <div className="cost-calculator__rate-block">
-            <p className="cost-calculator__rate-line">
-              {t("fields.role.label")} :{" "}
-              <span className="cost-calculator__mission-value">
-                {t(`fields.role.options.${role}`)}
-              </span>
-            </p>
-          </div>
-
           <Field
             label={t("fields.billedDays.label")}
             hint={t("fields.billedDays.hint", { count: joursSemaine })}
@@ -387,14 +375,6 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
               </p>
             )}
           </Field>
-
-          <div className="cost-calculator__rate-block">
-            <p className="cost-calculator__rate-line">
-              {t("fields.dayRate.label")} :{" "}
-              <span className="cost-calculator__rate-value">{fmt0(displayDayRate)}/j</span>
-            </p>
-            <p className="cost-calculator__help">{t("fields.dayRate.note")}</p>
-          </div>
         </CompareSide>
 
         <p className="cost-calculator__vs" aria-hidden="true">
