@@ -154,17 +154,43 @@
   accent-color: var(--primary-accent-color);
 }
 
-.cost-calculator__number {
+.cost-calculator__number,
+.cost-calculator__select {
   width: 100%;
-  margin-top: 0.45rem;
   padding: calc(var(--input-padding) * 0.55) var(--padding);
   border: var(--border-width) solid var(--input-border-color);
   border-radius: calc(var(--border-radius) * 0.35);
   background: var(--secondary-background-color);
   color: var(--input-color);
+  font: inherit;
+  font-size: 0.9375rem;
+}
+
+.cost-calculator__number {
+  margin-top: 0.45rem;
   font-family: var(--heading-3-font-family);
   font-variant-numeric: tabular-nums;
-  font-size: 0.9375rem;
+}
+
+.cost-calculator__select {
+  cursor: pointer;
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--heading-4-color) 50%),
+    linear-gradient(135deg, var(--heading-4-color) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1.1rem) calc(50% - 0.15rem),
+    calc(100% - 0.75rem) calc(50% - 0.15rem);
+  background-size:
+    0.35rem 0.35rem,
+    0.35rem 0.35rem;
+  background-repeat: no-repeat;
+  padding-right: 2.25rem;
+
+  &:focus-visible {
+    outline: 2px solid var(--primary-accent-color);
+    outline-offset: 2px;
+  }
 }
 
 .cost-calculator__help {
@@ -173,64 +199,6 @@
   line-height: 1.45;
   color: var(--body-color);
   opacity: 0.78;
-}
-
-.cost-calculator__segmented {
-  display: flex;
-  overflow: hidden;
-  border: var(--border-width) solid var(--body-background-color);
-  border-radius: calc(var(--border-radius) * 0.35);
-}
-
-.cost-calculator__segment {
-  flex: 1;
-  border: none;
-  padding: calc(var(--padding) * 0.55) calc(var(--padding) * 0.65);
-  background: var(--secondary-background-color);
-  color: var(--body-color);
-  font: inherit;
-  font-size: 0.8125rem;
-  cursor: pointer;
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
-
-  & + & {
-    border-left: var(--border-width) solid var(--body-background-color);
-  }
-
-  &--active {
-    background: var(--primary-accent-color);
-    color: var(--btn-primary-color);
-  }
-
-  &:hover:not(.cost-calculator__segment--active),
-  &:focus-visible:not(.cost-calculator__segment--active) {
-    background: var(--body-background-color);
-    outline: none;
-  }
-}
-
-.cost-calculator__segment--tier {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.15rem;
-  padding: calc(var(--padding) * 0.5) calc(var(--padding) * 0.45);
-  line-height: 1.2;
-  text-align: left;
-}
-
-.cost-calculator__tier-name {
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-
-.cost-calculator__tier-rate {
-  font-family: var(--heading-3-font-family);
-  font-variant-numeric: tabular-nums;
-  font-size: 0.75rem;
-  opacity: 0.9;
 }
 
 .cost-calculator__day-picks {

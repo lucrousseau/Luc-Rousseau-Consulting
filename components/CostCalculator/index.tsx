@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 
 import {
   CALCULATOR_ROLES,
+  CONSULTANT_RATE_TIERS,
   CONSULTANT_RATE_TIER_LIST,
   WORKPLACE_ANNUAL_COST,
   WORKPLACE_MODE_LIST,
@@ -12,6 +13,8 @@ import {
   getConsultantRateTier,
   getWorkplaceMode,
   type CalculatorRole,
+  type ConsultantRateTier,
+  type WorkplaceMode,
 } from "../../commons/costCalculatorPresets";
 import {
   CONSULTANT_WORKING_WEEKS_PER_YEAR,
@@ -304,51 +307,38 @@ export default function CostCalculator() {
 
       <div className="cost-calculator__card">
         <Field label={t("fields.role.label")}>
-          <div
-            className="cost-calculator__segmented"
-            role="group"
+          <select
+            className="cost-calculator__select"
+            value={role}
             aria-label={t("fields.role.label")}
+            onChange={(e) => handleRoleChange(e.target.value as CalculatorRole)}
           >
             {CALCULATOR_ROLES.map((roleId) => (
-              <button
-                key={roleId}
-                type="button"
-                onClick={() => handleRoleChange(roleId)}
-                className={classNames("cost-calculator__segment", {
-                  "cost-calculator__segment--active": role === roleId,
-                })}
-                aria-pressed={role === roleId}
-              >
+              <option key={roleId} value={roleId}>
                 {t(`fields.role.options.${roleId}`)}
-              </button>
+              </option>
             ))}
-          </div>
+          </select>
         </Field>
 
         <Field label={t("fields.engagementTier.label")}>
-          <div
-            className="cost-calculator__segmented cost-calculator__segmented--tiers"
-            role="group"
+          <select
+            className="cost-calculator__select"
+            value={activeTier ?? "structural"}
             aria-label={t("fields.engagementTier.label")}
+            title={activeTier ? t(`fields.engagementTier.descriptions.${activeTier}`) : undefined}
+            onChange={(e) => setTarif(CONSULTANT_RATE_TIERS[e.target.value as ConsultantRateTier])}
           >
             {CONSULTANT_RATE_TIER_LIST.map(({ tier, rate }) => (
-              <button
+              <option
                 key={tier}
-                type="button"
-                onClick={() => setTarif(rate)}
+                value={tier}
                 title={t(`fields.engagementTier.descriptions.${tier}`)}
-                className={classNames("cost-calculator__segment cost-calculator__segment--tier", {
-                  "cost-calculator__segment--active": activeTier === tier,
-                })}
-                aria-pressed={activeTier === tier}
               >
-                <span className="cost-calculator__tier-name">
-                  {t(`fields.engagementTier.options.${tier}`)}
-                </span>
-                <span className="cost-calculator__tier-rate">{fmt0(rate)}/j</span>
-              </button>
+                {t(`fields.engagementTier.options.${tier}`)} · {fmt0(rate)}/j
+              </option>
             ))}
-          </div>
+          </select>
         </Field>
 
         <Field
@@ -397,32 +387,15 @@ export default function CostCalculator() {
 
           <InputSection title={t("fields.employeeCost.title")}>
             <Field label={t("fields.salaryMode.label")}>
-              <div
-                className="cost-calculator__segmented"
-                role="group"
+              <select
+                className="cost-calculator__select"
+                value={modeCoutTotal ? "total" : "gross"}
                 aria-label={t("fields.salaryMode.label")}
+                onChange={(e) => setModeCoutTotal(e.target.value === "total")}
               >
-                <button
-                  type="button"
-                  onClick={() => setModeCoutTotal(false)}
-                  className={classNames("cost-calculator__segment", {
-                    "cost-calculator__segment--active": !modeCoutTotal,
-                  })}
-                  aria-pressed={!modeCoutTotal}
-                >
-                  {t("fields.salaryMode.gross")}
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setModeCoutTotal(true)}
-                  className={classNames("cost-calculator__segment", {
-                    "cost-calculator__segment--active": modeCoutTotal,
-                  })}
-                  aria-pressed={modeCoutTotal}
-                >
-                  {t("fields.salaryMode.total")}
-                </button>
-              </div>
+                <option value="gross">{t("fields.salaryMode.gross")}</option>
+                <option value="total">{t("fields.salaryMode.total")}</option>
+              </select>
             </Field>
 
             {!modeCoutTotal && (
@@ -627,31 +600,20 @@ export default function CostCalculator() {
 
             {inclureMilieu && (
               <Field label={t("fields.workplace.label")} hint={fmt0(coutMilieu)}>
-                <div
-                  className="cost-calculator__segmented"
-                  role="group"
+                <select
+                  className="cost-calculator__select"
+                  value={activeWorkplaceMode ?? "hybrid"}
                   aria-label={t("fields.workplace.label")}
+                  onChange={(e) =>
+                    setCoutMilieu(WORKPLACE_ANNUAL_COST[e.target.value as WorkplaceMode])
+                  }
                 >
                   {WORKPLACE_MODE_LIST.map(({ mode, cost }) => (
-                    <button
-                      key={mode}
-                      type="button"
-                      onClick={() => setCoutMilieu(cost)}
-                      className={classNames(
-                        "cost-calculator__segment cost-calculator__segment--tier",
-                        {
-                          "cost-calculator__segment--active": activeWorkplaceMode === mode,
-                        }
-                      )}
-                      aria-pressed={activeWorkplaceMode === mode}
-                    >
-                      <span className="cost-calculator__tier-name">
-                        {t(`fields.workplace.options.${mode}`)}
-                      </span>
-                      <span className="cost-calculator__tier-rate">{fmt0(cost)}/an</span>
-                    </button>
+                    <option key={mode} value={mode}>
+                      {t(`fields.workplace.options.${mode}`)} · {fmt0(cost)}/an
+                    </option>
                   ))}
-                </div>
+                </select>
               </Field>
             )}
           </InputSection>

@@ -23,19 +23,30 @@ describe("CostCalculator", () => {
   it("renders Quebec 2026 breakdown lines and role selector", () => {
     render(<CostCalculator />);
 
-    expect(screen.getByText("fields.role.options.developer")).toBeInTheDocument();
-    expect(screen.getByText("fields.role.options.productManager")).toBeInTheDocument();
+    const roleSelect = screen.getByRole("combobox", { name: "fields.role.label" });
+    expect(roleSelect).toBeInTheDocument();
+    expect(within(roleSelect).getByText("fields.role.options.developer")).toBeInTheDocument();
+    expect(within(roleSelect).getByText("fields.role.options.productManager")).toBeInTheDocument();
     expect(screen.getByText("results.breakdown.lines.qpp")).toBeInTheDocument();
     expect(screen.getByText("results.recurring.coordination")).toBeInTheDocument();
     expect(screen.getByText("results.notes.title")).toBeInTheDocument();
   });
 
-  it("renders compact engagement day-rate tiers without inline descriptions", () => {
+  it("renders engagement day-rate tiers as a compact select", () => {
     render(<CostCalculator />);
 
-    expect(screen.getByText("fields.engagementTier.options.ongoing")).toBeInTheDocument();
-    expect(screen.getByText("fields.engagementTier.options.structural")).toBeInTheDocument();
-    expect(screen.getByText("fields.engagementTier.options.turnaround")).toBeInTheDocument();
+    const engagementSelect = screen.getByRole("combobox", {
+      name: "fields.engagementTier.label",
+    });
+    expect(
+      within(engagementSelect).getByText(/fields\.engagementTier\.options\.ongoing/)
+    ).toBeInTheDocument();
+    expect(
+      within(engagementSelect).getByText(/fields\.engagementTier\.options\.structural/)
+    ).toBeInTheDocument();
+    expect(
+      within(engagementSelect).getByText(/fields\.engagementTier\.options\.turnaround/)
+    ).toBeInTheDocument();
     expect(
       screen.queryByText("fields.engagementTier.descriptions.structural")
     ).not.toBeInTheDocument();
@@ -46,13 +57,18 @@ describe("CostCalculator", () => {
   it("renders the workplace cost modes without a manual slider", () => {
     render(<CostCalculator />);
 
-    expect(screen.getByText("fields.workplace.options.office")).toBeInTheDocument();
-    expect(screen.getByText("fields.workplace.options.hybrid")).toBeInTheDocument();
-    expect(screen.getByText("fields.workplace.options.remote")).toBeInTheDocument();
+    const workplaceSelect = screen.getByRole("combobox", { name: "fields.workplace.label" });
+    expect(
+      within(workplaceSelect).getByText(/fields\.workplace\.options\.office/)
+    ).toBeInTheDocument();
+    expect(
+      within(workplaceSelect).getByText(/fields\.workplace\.options\.hybrid/)
+    ).toBeInTheDocument();
+    expect(
+      within(workplaceSelect).getByText(/fields\.workplace\.options\.remote/)
+    ).toBeInTheDocument();
     expect(screen.getByText("results.recurring.workplace")).toBeInTheDocument();
-
-    const workplaceGroup = screen.getByRole("group", { name: "fields.workplace.label" });
-    expect(within(workplaceGroup).queryByRole("slider")).not.toBeInTheDocument();
+    expect(within(workplaceSelect).queryByRole("slider")).not.toBeInTheDocument();
   });
 
   it("renders variable pay, employee lifecycle and the honesty notes", () => {
