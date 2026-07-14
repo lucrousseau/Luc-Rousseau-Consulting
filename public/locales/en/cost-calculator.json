@@ -204,7 +204,8 @@
       "hero": {
         "ratio": "{{days}} d ≈ {{equivalent}} FTE days",
         "ratioHint": "Yield and value on the framed scope",
-        "detail": "{{consultant}}/yr mandate vs {{employee}}/yr FTE · {{pct}}% of a full-time seat"
+        "detailLead": "{{consultant}}/yr mandate vs {{employee}}/yr FTE",
+        "detailShare": "{{pct}}% of a full-time seat"
       }
     },
     "dayCost": {

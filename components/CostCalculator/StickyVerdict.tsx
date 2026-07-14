@@ -20,11 +20,16 @@ export function StickyVerdict({
   consultantAnnualLabel,
   employeeAnnualLabel,
 }: StickyVerdictProps) {
+  const isOverBudget = !verdict.consultantWinsAnnual;
+  const shareLabel = t("results.verdict.hero.detailShare", {
+    pct: verdict.engagementSharePct,
+  });
+
   return (
     <div className="cost-calculator__sticky">
       <div
         className={classNames("cost-calculator__hero", {
-          "cost-calculator__hero--over": !verdict.consultantWinsAnnual,
+          "cost-calculator__hero--over": isOverBudget,
         })}
       >
         <div className="cost-calculator__hero-kicker">{t("results.verdict.kicker")}</div>
@@ -39,11 +44,16 @@ export function StickyVerdict({
         </p>
         <p className="cost-calculator__hero-ratio-hint">{t("results.verdict.hero.ratioHint")}</p>
         <p className="cost-calculator__hero-proof-detail">
-          {t("results.verdict.hero.detail", {
+          {t("results.verdict.hero.detailLead", {
             consultant: consultantAnnualLabel,
             employee: employeeAnnualLabel,
-            pct: verdict.engagementSharePct,
           })}
+          {" · "}
+          {isOverBudget ? (
+            <strong className="cost-calculator__hero-proof-share">{shareLabel}</strong>
+          ) : (
+            shareLabel
+          )}
         </p>
       </div>
     </div>
