@@ -1,6 +1,5 @@
-import { serverSideTranslations } from "next-i18next/pages/serverSideTranslations";
-
 import type { LocalizedPageEntry } from "./localizedManifest";
+import { serverSideTranslations } from "./serverSideTranslations";
 
 export interface SlugPageManifestApi {
   getAllSlugs: (locale?: string) => string[];

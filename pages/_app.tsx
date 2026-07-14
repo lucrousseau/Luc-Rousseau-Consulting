@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { appWithTranslation } from "next-i18next/pages";
 
 import { isCvPath } from "../commons/isCvPath";
+import { nextI18NextConfig } from "../commons/nextI18NextConfig";
 import "../styles/main.scss";
 import { GTM_CONTAINER_ID, isGtmEnabled } from "../utils/gtm";
 
@@ -55,4 +56,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   );
 }
 
-export default appWithTranslation(MyApp);
+export default appWithTranslation(MyApp, nextI18NextConfig);

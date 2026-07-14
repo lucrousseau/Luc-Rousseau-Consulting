@@ -2,8 +2,8 @@ import React from "react";
 import type { GetStaticProps } from "next";
 import dynamic from "next/dynamic";
 import { useTranslation } from "next-i18next/pages";
-import { serverSideTranslations } from "next-i18next/pages/serverSideTranslations";
 
+import { serverSideTranslations } from "../commons/serverSideTranslations";
 import SEO from "../components/SEO";
 import Container from "../components/Layout/Container";
 import type { SectionWithCtaProps } from "../commons/sectionTypes";

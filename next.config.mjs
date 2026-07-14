@@ -19,6 +19,11 @@ const nextPolyfillModule = path.join(
 
 const nextConfig = {
   outputFileTracingRoot: __dirname,
+  // next-i18next loads config + locale JSON via fs at runtime (ISR revalidate).
+  // Vercel NFT does not always trace those paths; force them into /var/task.
+  outputFileTracingIncludes: {
+    "/*": ["./next-i18next.config.js", "./public/locales/**/*"],
+  },
   serverExternalPackages: ["image-size"],
   turbopack: {
     resolveAlias: {

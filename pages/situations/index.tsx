@@ -1,8 +1,8 @@
 import type { GetStaticProps } from "next";
 import { useTranslation } from "next-i18next/pages";
 import { useRouter } from "next/router";
-import { serverSideTranslations } from "next-i18next/pages/serverSideTranslations";
 
+import { serverSideTranslations } from "../../commons/serverSideTranslations";
 import SEO from "../../components/SEO";
 import Container from "../../components/Layout/Container";
 import Header from "../../sections/Header";

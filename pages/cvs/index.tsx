@@ -1,7 +1,7 @@
 import type { GetStaticProps } from "next";
 import { useTranslation } from "next-i18next/pages";
-import { serverSideTranslations } from "next-i18next/pages/serverSideTranslations";
 
+import { serverSideTranslations } from "../../commons/serverSideTranslations";
 import CvHub from "../../sections/CvHub";
 import CvPageLayout from "../../sections/CvPageLayout";
 
