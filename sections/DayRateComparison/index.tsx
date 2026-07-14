@@ -6,6 +6,7 @@ import SectionIntro from "../../components/SectionIntro";
 import SectionCta from "../../components/SectionCta";
 import CostCalculator from "../../components/CostCalculator";
 import {
+  homeBlockRowStyle,
   homeBodyRowStyle,
   homeIntroRowStyle,
   homePreCtaContentRowStyle,
@@ -35,36 +36,42 @@ export default function DayRateComparison({ role }: DayRateComparisonProps) {
         titleAs="h1"
         rowStyle={homeIntroRowStyle}
       >
-        <p className="big section-day-rate-comparison__lede">{t("cost-calculator:lede")}</p>
+        <p className="big">{t("cost-calculator:lede")}</p>
       </SectionIntro>
 
       <Row
         halign="center"
-        style={homeBodyRowStyle}
+        style={homeBlockRowStyle}
         columns={[
           {
-            cols: { col: 10, xl: 11, sm: 12 },
+            cols: { col: 10, sm: 12 },
             content: (
-              <div className="section-day-rate-comparison__copy">
-                <div className="section-day-rate-comparison__block">
-                  <h2 className="section-day-rate-comparison__block-title">
+              <div className="align align--left section-day-rate-comparison__prose">
+                <section
+                  className="section-day-rate-comparison__block"
+                  aria-labelledby="day-rate-posture-heading"
+                >
+                  <h3
+                    id="day-rate-posture-heading"
+                    className="h3 section-day-rate-comparison__title"
+                  >
                     {t("cost-calculator:posture.title")}
-                  </h2>
+                  </h3>
                   {Array.isArray(postureParagraphs) &&
-                    postureParagraphs.map((paragraph) => (
-                      <p key={paragraph} className="section-day-rate-comparison__p">
-                        {paragraph}
-                      </p>
-                    ))}
-                </div>
+                    postureParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                </section>
 
-                <div className="section-day-rate-comparison__block">
-                  <h2 className="section-day-rate-comparison__block-title">
+                <section
+                  className="section-day-rate-comparison__block"
+                  aria-labelledby="day-rate-mandate-heading"
+                >
+                  <h3
+                    id="day-rate-mandate-heading"
+                    className="h3 section-day-rate-comparison__title"
+                  >
                     {t("cost-calculator:mandate.title")}
-                  </h2>
-                  <p className="section-day-rate-comparison__p section-day-rate-comparison__p--lede">
-                    {t("cost-calculator:mandate.lede")}
-                  </p>
+                  </h3>
+                  <p>{t("cost-calculator:mandate.lede")}</p>
                   {Array.isArray(mandateItems) && (
                     <ul className="section-day-rate-comparison__list">
                       {mandateItems.map((item) => (
@@ -72,7 +79,7 @@ export default function DayRateComparison({ role }: DayRateComparisonProps) {
                       ))}
                     </ul>
                   )}
-                </div>
+                </section>
               </div>
             ),
           },

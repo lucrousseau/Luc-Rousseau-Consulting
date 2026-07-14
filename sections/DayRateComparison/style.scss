@@ -1,56 +1,54 @@
 @use "../../styles/abstracts/variables" as *;
 
 .section-day-rate-comparison {
-  .section-day-rate-comparison__lede {
-    max-width: 42rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .section-day-rate-comparison__copy {
+  .section-day-rate-comparison__prose {
     display: flex;
     flex-direction: column;
-    gap: calc(var(--padding) * 1.35);
-    max-width: 40rem;
-    margin: 0 auto calc(var(--padding) * 0.35);
+    gap: calc(var(--page-home-row-pad, 2rem));
     text-align: left;
   }
 
-  .section-day-rate-comparison__block-title {
-    margin: 0 0 calc(var(--padding) * 0.65);
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.3;
-    color: var(--heading-2-color);
-    text-align: center;
+  .section-day-rate-comparison__title {
+    margin: 0 0 1rem;
+    text-align: left;
   }
 
-  .section-day-rate-comparison__p {
-    margin: 0 0 0.85rem;
-    font-size: 0.975rem;
-    line-height: 1.55;
-    color: var(--body-color);
+  .section-day-rate-comparison__block p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  .section-day-rate-comparison__block p + p {
+    margin-top: 0.85rem;
+  }
 
-    &--lede {
-      margin-bottom: 0.75rem;
-      opacity: 0.9;
-    }
+  .section-day-rate-comparison__block p + .section-day-rate-comparison__list {
+    margin-top: 1rem;
   }
 
   .section-day-rate-comparison__list {
     margin: 0;
-    padding-left: 1.15rem;
-    font-size: 0.975rem;
-    line-height: 1.55;
-    color: var(--body-color);
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+      padding-left: 0.9rem;
+    }
 
     li + li {
       margin-top: 0.65rem;
+    }
+
+    li::before {
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 0.35rem;
+      height: 0.35rem;
+      border-radius: 50%;
+      background-color: var(--primary-accent-color);
+      content: "";
     }
   }
 
