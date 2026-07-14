@@ -1,25 +1,25 @@
 {
   "seoTitle": "Coût réel par jour : CDI vs mandat fractionnel | Québec",
-  "seoDescription": "Au Québec, le consultant fractionnel est trop souvent lu comme un temps partiel ou un mandat ponctuel. Comparez le coût chargé d'un CDI au TJM d'un mandat orienté résultats (dev senior ou PM).",
+  "seoDescription": "Comparez le coût chargé d'un CDI au Québec au TJM d'un mandat fractionnel orienté résultats (dev senior ou PM). Clairement distinct du temps partiel et du mandat ponctuel.",
   "badge": "Posture fractionnelle, pas temps partiel",
   "title": "Coût réel par jour : CDI vs mandat fractionnel",
-  "lede": "On me range encore trop souvent dans la mauvaise case. Voici ce que ça coûte vraiment, une fois le CDI chargé face à mon TJM.",
+  "lede": "Le modèle fractionnel est encore souvent confondu avec du temps partiel ou un mandat ponctuel. Voici ce que ça coûte vraiment, une fois le CDI chargé face à mon TJM.",
   "posture": {
     "title": "La vraie différence, c'est la posture",
     "paragraphs": [
-      "Pas un employé à temps partiel. Pas un consultant pour un mandat ponctuel. L'entente se structure sur 3 mois, 6 mois, parfois un an : on définit ensemble les résultats attendus, et les objectifs évoluent avec ce qui a été livré.",
-      "Mon travail, ce n'est pas de faire tourner la roue. C'est d'identifier ce qui bloque, de nommer ce qui ralentit l'exécution et de prendre les moyens pour que les choses avancent, quitte à bousculer certains acquis.",
-      "Le niveau d'engagement n'est pas le même. J'exige sur les résultats. Si le statu quo prend le dessus ou si les décisions nécessaires ne sont jamais prises, les conditions pour livrer ne sont plus là : je sors moi-même."
+      "Ce n'est pas un poste à temps partiel, ni un mandat ponctuel. L'entente se structure sur 3 mois, 6 mois, parfois un an : on définit ensemble les résultats attendus, et les objectifs évoluent avec ce qui a été livré.",
+      "Mon rôle n'est pas de faire tourner la machine au quotidien. C'est d'identifier ce qui bloque, de clarifier ce qui ralentit l'exécution, et de créer les conditions pour avancer, y compris quand il faut remettre en question certaines habitudes.",
+      "L'engagement se joue sur les résultats, pas sur les heures présentes. Si le contexte ne permet plus de livrer (statu quo, décisions qui n'arrivent jamais), les conditions du mandat ne sont plus réunies : j'active la clause de sortie."
     ]
   },
   "mandate": {
     "title": "Cadre du mandat",
-    "lede": "Concrètement, voilà comment ça fonctionne côté opérations.",
+    "lede": "Concrètement, voici comment ça fonctionne côté opérations.",
     "items": [
-      "Je reste responsable de mes horaires. On alloue des jours travaillés pour simplifier la gestion, mais l'horaire reste sous mon contrôle : je peux le modifier, ajuster mes jours disponibles ou en retirer (avec compensation si besoin).",
-      "J'assume mes outils, mon matériel informatique, mes conférences, mes vacances et mes congés.",
+      "Je reste responsable de mon horaire. On alloue des jours travaillés pour simplifier la gestion, mais je peux ajuster mes jours disponibles ou en retirer (avec compensation si besoin).",
+      "J'assume mes outils, mon matériel, mes conférences, mes vacances et mes congés.",
       "On cadre ensemble le résultat et le périmètre technique ; le comment de l'exécution m'appartient (méthodes, outils, organisation du travail).",
-      "Si des facteurs hors de mon contrôle empêchent de livrer le résultat négocié au départ, malgré mes tentatives pour les gérer, je mets fin au mandat selon la clause de sortie. Dans les faits, c'est presque toujours moi qui termine pour cette raison. Un employé ne fait pas ça."
+      "Si des facteurs hors de mon contrôle empêchent de livrer le résultat convenu, malgré mes efforts pour les traiter, je peux mettre fin au mandat selon la clause de sortie. C'est une responsabilité partagée sur les conditions de livraison, pas un contrat d'emploi."
     ]
   },
   "inputs": {
@@ -268,7 +268,7 @@
     "text": "En régime de croisière, un profil à {{salary}} coûte environ {{employeeSteadyDay}} par jour productif une fois chargé et amorti. Un TJM de {{consultantDay}} peut sembler plus élevé par jour, mais c'est une expertise senior disponible dès la semaine 1, sans recrutement, ramp-up ni supervision. Surtout, l'employé engage {{employeeAnnual}} par an à temps plein, alors que le mandat fractionnel à {{billedDays}} j/sem revient à {{consultantAnnual}} par an, sans coût fixe : vous payez les jours utiles, pas le poste."
   },
   "disclaimer": "Estimations à but de comparaison, basées sur les taux DAS Québec 2026 (Revenu Québec, RCGT). Le ramp-up réduit les jours productifs (le salaire reste payé à 100 %) et le recrutement est compté une seule fois, la 1re année. La coordination interne est valorisée au coût horaire chargé de l'employé. Côté consultant, on annualise un mandat continu de 12 mois : {{vacation}} semaines de vacances, soit {{workingWeeks}} semaines de travail, moins les {{holidays}} jours fériés du Québec pro-ratés selon la cadence (un férié ne tombe pas toujours sur un jour client). À 3 j/sem, une remise volume de 10 % s'applique au TJM. Ajustez selon votre réalité et validez avec votre comptable, vos RH ou WebRAS pour un dossier précis.",
-  "ctaLead": "Si cette posture te ressemble, et que les chiffres parlent à ton contexte, on peut jaser 30 minutes.",
+  "ctaLead": "Si cette posture correspond à ce que vous cherchez, et que les chiffres parlent à votre contexte, on peut en parler 30 minutes.",
   "ctaTeaser": "On clarifie ensemble les résultats attendus et la cadence qui a du sens.",
   "ctaLabel": "Planifier un appel"
 }

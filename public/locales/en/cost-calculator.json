@@ -1,25 +1,25 @@
 {
   "seoTitle": "Real day rate: full-time vs fractional mandate | Quebec",
-  "seoDescription": "In Quebec, fractional consulting is often misread as part-time employment or a one-off gig. Compare a loaded full-time seat with a results-first day rate (senior dev or PM).",
+  "seoDescription": "Compare a loaded Quebec full-time seat with a results-first fractional day rate (senior dev or PM). Distinct from part-time employment and one-off gigs.",
   "badge": "Fractional posture, not part-time",
   "title": "Real day rate: full-time vs fractional mandate",
-  "lede": "I still get put in the wrong box too often. Here is what it really costs once a full-time seat is loaded against my day rate.",
+  "lede": "Fractional work is still often mistaken for part-time employment or a one-off gig. Here is what it really costs once a full-time seat is loaded against my day rate.",
   "posture": {
     "title": "The real difference is the posture",
     "paragraphs": [
-      "Not a part-time employee. Not a consultant for a one-off mandate. The agreement is structured over 3 months, 6 months, sometimes a year: we define expected outcomes together, and goals evolve with what has been delivered.",
-      "My job is not to keep the wheel spinning. It is to spot what blocks progress, name what slows execution, and take the means to move things forward, even when that challenges some habits.",
-      "The level of engagement is not the same. I insist on results. If the status quo takes over, or if the necessary decisions never get made, the conditions to deliver are gone: I exit myself."
+      "This is not a part-time seat, and not a one-off mandate. The agreement is structured over 3 months, 6 months, sometimes a year: we define expected outcomes together, and goals evolve with what has been delivered.",
+      "My role is not to keep the machine running day to day. It is to spot what blocks progress, clarify what slows execution, and create the conditions to move forward, including when some habits need to be questioned.",
+      "Engagement is about outcomes, not hours on site. If the context no longer allows delivery (status quo, decisions that never land), the conditions of the mandate are no longer met: I activate the exit clause."
     ]
   },
   "mandate": {
     "title": "How the mandate works",
     "lede": "In practice, here is how operations work on my side.",
     "items": [
-      "I remain responsible for my schedule. We allocate worked days to keep management simple, but the hours stay under my control: I can change them, adjust available days, or withdraw days (with compensation when needed).",
-      "I cover my own tools, computer equipment, conferences, vacations and time off.",
+      "I remain responsible for my schedule. We allocate worked days to keep management simple, but I can adjust available days or withdraw days (with compensation when needed).",
+      "I cover my own tools, equipment, conferences, vacations and time off.",
       "We frame the outcome and the technical scope together; how I execute stays mine (methods, tools, work organization).",
-      "If factors outside my control block delivery of the results negotiated up front, despite my attempts to address them, I end the mandate under the exit clause. In practice, I am almost always the one who ends it for that reason. An employee does not do that."
+      "If factors outside my control block delivery of the agreed result, despite my efforts to address them, I can end the mandate under the exit clause. Delivery conditions are a shared responsibility, not an employment contract."
     ]
   },
   "inputs": {
@@ -268,7 +268,7 @@
     "text": "In steady state, a {{salary}} profile costs about {{employeeSteadyDay}} per productive day once loaded and amortized. A day rate of {{consultantDay}} may look higher per day, but it is senior expertise available from week 1, with no recruitment, ramp-up or supervision. Above all, the employee commits {{employeeAnnual}} per year full time, while the fractional mandate at {{billedDays}} d/wk comes to {{consultantAnnual}} per year, with no fixed cost: you pay for useful days, not the seat."
   },
   "disclaimer": "Estimates for comparison only, based on 2026 Quebec payroll tax rates (Revenu Québec, RCGT). Ramp-up reduces productive days (salary is still paid at 100%) and recruitment is counted once, in year 1. Internal coordination is valued at the employee's loaded hourly cost. On the consultant side, we annualize a continuous 12-month mandate: {{vacation}} vacation weeks, i.e. {{workingWeeks}} working weeks, minus Quebec's {{holidays}} statutory holidays pro-rated to cadence (a holiday may not fall on a client day). At 3 d/wk, a 10% volume discount applies to the day rate. Adjust for your reality and validate with your accountant, HR team or WebRAS for a precise case.",
-  "ctaLead": "If this posture sounds like what you are looking for, and the numbers speak to your context, we can talk for 30 minutes.",
-  "ctaTeaser": "We will clarify expected outcomes and the cadence that makes sense.",
+  "ctaLead": "If this posture matches what you are looking for, and the numbers speak to your context, we can talk for 30 minutes.",
+  "ctaTeaser": "We clarify expected outcomes and the cadence that makes sense together.",
   "ctaLabel": "Schedule a call"
 }
