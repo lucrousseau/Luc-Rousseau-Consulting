@@ -240,7 +240,7 @@
       "employeeLabel": "Employee (5 d/wk)",
       "employeeSub": "loaded salary, tools and coordination, paid all year",
       "consultantLabel": "Consultant ({{days}} d/wk)",
-      "consultantSub": "Over 12 months: {{vacation}} vacation weeks and {{holidays}} holidays pro-rated to cadence, about {{billableWeeks}} billable weeks.",
+      "consultantSub": "Over 12 months: {{vacation}} weeks off (vacation and holidays included), {{billableWeeks}} billable weeks.",
       "savingLabel": "Difference",
       "savingConsultant": "At this cadence, the fractional mandate costs {{amount}} less per year ({{pct}}), and you only pay for useful days.",
       "savingEmployee": "At this cadence, the employee costs {{amount}} less per year ({{pct}}): if you need 5 d/wk continuously over several years, hiring makes sense."
@@ -268,7 +268,7 @@
     "kicker": "What this means in practice",
     "text": "In steady state, a {{salary}} profile costs about {{employeeSteadyDay}} per productive day once loaded and amortized. A day rate of {{consultantDay}} may look higher per day, but it is senior expertise available from week 1, with no recruitment, ramp-up or supervision. Above all, the employee commits {{employeeAnnual}} per year full time, while the fractional mandate at {{billedDays}} d/wk comes to {{consultantAnnual}} per year, with no fixed cost: you pay for useful days, not the seat."
   },
-  "disclaimer": "Estimates for comparison only, based on 2026 Quebec payroll tax rates (Revenu Québec, RCGT). Ramp-up reduces productive days (salary is still paid at 100%) and recruitment is counted once, in year 1. Internal coordination is valued at the employee's loaded hourly cost. On the consultant side, we annualize a continuous 12-month mandate: {{vacation}} vacation weeks, i.e. {{workingWeeks}} working weeks, minus Quebec's {{holidays}} statutory holidays pro-rated to cadence (a holiday may not fall on a client day). At 3 d/wk, a 10% volume discount applies to the day rate. Adjust for your reality and validate with your accountant, HR team or WebRAS for a precise case.",
+  "disclaimer": "Estimates for comparison only, based on 2026 Quebec payroll tax rates (Revenu Québec, RCGT). Ramp-up reduces productive days (salary is still paid at 100%) and recruitment is counted once, in year 1. Internal coordination is valued at the employee's loaded hourly cost. On the consultant side, we annualize a continuous 12-month mandate: {{vacation}} weeks off (vacation and holidays included), i.e. {{workingWeeks}} billable weeks. At 3 d/wk, a 10% volume discount applies to the day rate. Adjust for your reality and validate with your accountant, HR team or WebRAS for a precise case.",
   "ctaLead": "If this posture matches what you are looking for, and the numbers speak to your context, we can talk for 30 minutes.",
   "ctaTeaser": "We clarify expected outcomes and the cadence that makes sense together.",
   "ctaLabel": "Schedule a call"

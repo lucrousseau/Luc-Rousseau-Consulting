@@ -19,7 +19,6 @@ import {
   BILLABLE_WEEKS_PER_YEAR,
   DEFAULT_AVERAGE_TENURE_YEARS,
   DEFAULT_SEVERANCE_WEEKS,
-  QUEBEC_STAT_HOLIDAYS,
   computeDayRateComparison,
 } from "../../commons/dayRateComparison";
 
@@ -334,11 +333,7 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
               annualValue={`${fmt0(r.consultantAnnualCost)}/an`}
               annualSub={t("results.annual.consultantSub", {
                 vacation: CONSULTANT_VACATION_WEEKS_PER_YEAR,
-                billableWeeks: BILLABLE_WEEKS_PER_YEAR.toFixed(1).replace(
-                  ".",
-                  locale === "en" ? "." : ","
-                ),
-                holidays: QUEBEC_STAT_HOLIDAYS,
+                billableWeeks: BILLABLE_WEEKS_PER_YEAR,
               })}
             />
           }
@@ -874,7 +869,6 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
         {t("disclaimer", {
           vacation: CONSULTANT_VACATION_WEEKS_PER_YEAR,
           workingWeeks: CONSULTANT_WORKING_WEEKS_PER_YEAR,
-          holidays: QUEBEC_STAT_HOLIDAYS,
         })}
       </p>
     </div>

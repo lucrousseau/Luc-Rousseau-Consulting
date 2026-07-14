@@ -9,21 +9,17 @@ export const WORK_DAYS_PER_YEAR = 260;
 export const WORK_WEEKS_PER_YEAR = 52;
 export const PAID_DAYS_PER_WEEK = 5;
 export const WORK_DAYS_PER_MONTH = WORK_DAYS_PER_YEAR / 12;
-/** Consultant vacation weeks taken each year (continuous 12-month mandate). */
-export const CONSULTANT_VACATION_WEEKS_PER_YEAR = 4;
-/** Consultant working weeks per year after vacation (52 − 4). */
+/** Weeks off per continuous 12-month mandate (vacation + statutory holidays, simplified). */
+export const CONSULTANT_VACATION_WEEKS_PER_YEAR = 5;
+/** Consultant billable weeks per year after those weeks off (52 − 5). */
 export const CONSULTANT_WORKING_WEEKS_PER_YEAR =
   WORK_WEEKS_PER_YEAR - CONSULTANT_VACATION_WEEKS_PER_YEAR;
-/** Quebec statutory holidays (Loi sur les normes du travail + Fête nationale). */
-export const QUEBEC_STAT_HOLIDAYS = 8;
 /**
- * Effective consultant billable weeks on a continuous 12-month mandate:
- * working weeks minus Quebec statutory holidays, pro-rated to a 5-day week
- * (48 − 8/5 = 46.4). This averages the uncertainty that a holiday may or may
- * not fall on a billed client day at a fractional cadence.
+ * Effective consultant billable weeks on a continuous 12-month mandate.
+ * Holidays are folded into {@link CONSULTANT_VACATION_WEEKS_PER_YEAR} rather than
+ * pro-rated by weekday cadence (which varies too much for a fixed day of week).
  */
-export const BILLABLE_WEEKS_PER_YEAR =
-  CONSULTANT_WORKING_WEEKS_PER_YEAR - QUEBEC_STAT_HOLIDAYS / PAID_DAYS_PER_WEEK;
+export const BILLABLE_WEEKS_PER_YEAR = CONSULTANT_WORKING_WEEKS_PER_YEAR;
 /** Billed days/week that trigger Luc's volume discount. */
 export const VOLUME_DISCOUNT_BILLED_DAYS = 3;
 /** Volume discount applied to the day rate at {@link VOLUME_DISCOUNT_BILLED_DAYS}. */
