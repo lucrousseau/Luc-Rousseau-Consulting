@@ -4,15 +4,27 @@
   "badge": "Senior dev or PM vs consultant",
   "title": "Real day rate: employee vs fractional mandate",
   "lede": "Compare the fully loaded cost of a Quebec senior developer or product manager with a fractional consultant day rate. By default, only the essential levers: everything else is optional.",
+  "inputs": {
+    "consultant": {
+      "title": "My rates (day rate)",
+      "lede": "My day rate for the mission type and billed cadence (1 to 3 d/wk)."
+    },
+    "vs": "versus",
+    "employee": {
+      "title": "Employee (full-time)",
+      "lede": "Fully loaded cost of a full-time seat, shown as an equivalent day rate."
+    }
+  },
   "fields": {
     "advanced": {
       "label": "Advanced options"
     },
     "role": {
-      "label": "Profile compared",
+      "label": "Mission type",
+      "note": "This page compares my mandate to the cost of hiring that same profile full-time.",
       "options": {
-        "developer": "Senior developer",
-        "productManager": "Product manager (PM)"
+        "developer": "Senior development mandate",
+        "productManager": "Product / PM mandate"
       },
       "help": {
         "developer": "Senior dev in a tech SME: CNESST IT services (0.79%), lighter internal coordination, fractional mandate ideally 1-2 d/wk (max 3).",
@@ -118,7 +130,7 @@
       "help": "Statutory notice (Quebec LNT): 1 to 8 weeks by tenure. Wrongful-dismissal (common law) risk can go higher. Amortized over average tenure."
     },
     "dayRate": {
-      "label": "Standard day rate",
+      "label": "My day rate",
       "note": "Rates shown here are my standard rates. Rescue, restructuring, or other high-risk / difficult situations are priced differently."
     },
     "billedDays": {

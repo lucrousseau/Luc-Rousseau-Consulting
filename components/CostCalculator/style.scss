@@ -26,7 +26,8 @@
 }
 
 .cost-calculator__card,
-.cost-calculator__panel {
+.cost-calculator__panel,
+.cost-calculator__side {
   padding: calc(var(--double-padding) * 0.85);
   border-radius: var(--border-radius);
   background-color: var(--secondary-background-color);
@@ -34,10 +35,71 @@
   @include shadow;
 }
 
+.cost-calculator__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--padding) * 0.85);
+}
+
 .cost-calculator__field {
   margin-bottom: var(--padding);
 
   &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cost-calculator__side {
+  margin: 0;
+}
+
+.cost-calculator__vs {
+  margin: 0;
+  text-align: center;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--body-color);
+  opacity: 0.45;
+}
+
+.cost-calculator__side-head {
+  margin: 0 0 calc(var(--padding) * 0.85);
+  padding: 0 0 calc(var(--padding) * 0.55);
+  border-bottom: var(--border-width) solid var(--body-background-color);
+}
+
+.cost-calculator__side-title {
+  margin: 0;
+  font-family: var(--heading-3-font-family, inherit);
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--heading-2-color);
+}
+
+.cost-calculator__side--consultant .cost-calculator__side-title {
+  color: var(--compare-consultant-color);
+}
+
+.cost-calculator__side--employee .cost-calculator__side-title {
+  color: var(--compare-employee-color);
+}
+
+.cost-calculator__side-lede {
+  margin: 0.35rem 0 0;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--body-color);
+  opacity: 0.65;
+}
+
+.cost-calculator__side-body {
+  .cost-calculator__field:last-child,
+  .cost-calculator__rate-block:last-child,
+  .cost-calculator__advanced:last-child {
     margin-bottom: 0;
   }
 }
@@ -179,6 +241,10 @@
 .cost-calculator__rate-value {
   font-family: var(--heading-3-font-family);
   font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.cost-calculator__mission-value {
   font-weight: 600;
 }
 

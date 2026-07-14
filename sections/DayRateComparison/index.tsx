@@ -11,8 +11,13 @@ import {
   homePreCtaContentRowStyle,
 } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
+import type { CalculatorRole } from "../../commons/costCalculatorPresets";
 
-export default function DayRateComparison() {
+interface DayRateComparisonProps {
+  role: CalculatorRole;
+}
+
+export default function DayRateComparison({ role }: DayRateComparisonProps) {
   const { t } = useTranslation(["cost-calculator", "common"]);
   const scheduleCta = getScheduleCta(t);
 
@@ -33,7 +38,7 @@ export default function DayRateComparison() {
         columns={[
           {
             cols: { col: 10, xl: 11, sm: 12 },
-            content: <CostCalculator />,
+            content: <CostCalculator key={role} role={role} />,
           },
         ]}
       />

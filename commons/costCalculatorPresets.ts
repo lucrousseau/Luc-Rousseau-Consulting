@@ -131,6 +131,38 @@ export const CALCULATOR_ROLE_PRESETS: Record<CalculatorRole, CalculatorRolePrese
 
 export const CALCULATOR_ROLES = Object.keys(CALCULATOR_ROLE_PRESETS) as CalculatorRole[];
 
+/** Path slugs for each comparison (`/cout-reel-jour/dev`, `/cout-reel-jour/pm`). */
+export const CALCULATOR_ROLE_SLUGS: Record<CalculatorRole, string> = {
+  developer: "dev",
+  productManager: "pm",
+};
+
+export const CALCULATOR_ROLE_SLUG_LIST = Object.values(CALCULATOR_ROLE_SLUGS);
+
+const CALCULATOR_ROLE_ALIASES: Record<string, CalculatorRole> = {
+  developer: "developer",
+  developpeur: "developer",
+  développeur: "developer",
+  [CALCULATOR_ROLE_SLUGS.developer]: "developer",
+  productmanager: "productManager",
+  "product-manager": "productManager",
+  product_manager: "productManager",
+  [CALCULATOR_ROLE_SLUGS.productManager]: "productManager",
+};
+
+/** Parses a path slug (or legacy alias) into a calculator role. */
+export function parseCalculatorRoleSlug(
+  value: string | string[] | undefined | null
+): CalculatorRole | null {
+  const raw = Array.isArray(value) ? value[0] : value;
+  if (!raw) return null;
+  return CALCULATOR_ROLE_ALIASES[raw.trim().toLowerCase()] ?? null;
+}
+
+export function calculatorRoleToSlug(role: CalculatorRole): string {
+  return CALCULATOR_ROLE_SLUGS[role];
+}
+
 export function getCalculatorRolePreset(role: CalculatorRole): CalculatorRolePreset {
   return CALCULATOR_ROLE_PRESETS[role];
 }

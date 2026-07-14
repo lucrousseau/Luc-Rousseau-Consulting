@@ -4,15 +4,27 @@
   "badge": "Dev senior ou PM vs consultant",
   "title": "Coût réel par jour : employé vs mandat fractionnel",
   "lede": "Comparez le coût chargé d'un dev senior ou d'un PM québécois au tarif d'un consultant fractionnel. Par défaut, seuls les leviers essentiels : le reste est ajustable en option.",
+  "inputs": {
+    "consultant": {
+      "title": "Mes tarifs (TJM)",
+      "lede": "Mon tarif selon le type de mission et la cadence facturée (1 à 3 j/sem)."
+    },
+    "vs": "versus",
+    "employee": {
+      "title": "Employé (CDI)",
+      "lede": "Coût réel d'un poste à temps plein, ramené en équivalent journalier."
+    }
+  },
   "fields": {
     "advanced": {
       "label": "Options avancées"
     },
     "role": {
-      "label": "Profil comparé",
+      "label": "Type de mission",
+      "note": "Cette page compare mon mandat au coût d'embaucher le même profil en CDI.",
       "options": {
-        "developer": "Développeur senior",
-        "productManager": "Gestionnaire de produit (PM)"
+        "developer": "Mission développement senior",
+        "productManager": "Mission produit / PM"
       },
       "help": {
         "developer": "Dev senior en PME tech : CNESST services TI (0,79 %), peu de coordination interne, mandat fractionnel idéal à 1-2 j/sem (max 3).",
@@ -118,7 +130,7 @@
       "help": "Préavis légal LNT : 1 à 8 semaines selon l'ancienneté. Le risque de départ contesté (common law) peut aller plus haut. Amorti sur l'ancienneté moyenne."
     },
     "dayRate": {
-      "label": "TJM standard",
+      "label": "Mon TJM",
       "note": "Les tarifs affichés sont mes tarifs standard. Les missions de sauvetage, de restructuration ou toute situation à risque élevé / difficile sont évaluées autrement."
     },
     "billedDays": {

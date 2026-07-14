@@ -16,20 +16,19 @@ jest.mock("next-i18next/pages", () => ({
 jest.mock("next/router", () => ({
   useRouter: () => ({
     locale: "fr",
+    pathname: "/cout-reel-jour/pm",
+    query: {},
+    isReady: true,
   }),
 }));
 
 describe("CostCalculator", () => {
-  it("renders Quebec 2026 breakdown lines and role selector", () => {
-    render(<CostCalculator />);
+  it("shows the mission type from the page role as plain text", () => {
+    render(<CostCalculator role="developer" />);
 
-    const roleSelect = screen.getByRole("combobox", { name: "fields.role.label" });
-    expect(roleSelect).toBeInTheDocument();
-    expect(within(roleSelect).getByText("fields.role.options.developer")).toBeInTheDocument();
-    expect(within(roleSelect).getByText("fields.role.options.productManager")).toBeInTheDocument();
-    expect(screen.getByText("results.breakdown.lines.qpp")).toBeInTheDocument();
-    expect(screen.getByText("results.recurring.coordination")).toBeInTheDocument();
-    expect(screen.getByText("results.notes.title")).toBeInTheDocument();
+    expect(screen.getByText("fields.role.options.developer")).toBeInTheDocument();
+    expect(screen.getByText("fields.role.note")).toBeInTheDocument();
+    expect(screen.queryByRole("combobox", { name: "fields.role.label" })).not.toBeInTheDocument();
   });
 
   it("renders a fixed standard day rate with exception note", () => {
@@ -42,13 +41,11 @@ describe("CostCalculator", () => {
     ).not.toBeInTheDocument();
   });
 
-  it("keeps the same base day rate when switching roles", () => {
-    const { container } = render(<CostCalculator />);
+  it("keeps the same base day rate for either mission role", () => {
+    const { container, rerender } = render(<CostCalculator role="productManager" />);
+    expect(container.querySelector(".cost-calculator__rate-value")).toHaveTextContent(/900/);
 
-    fireEvent.change(screen.getByRole("combobox", { name: "fields.role.label" }), {
-      target: { value: "developer" },
-    });
-
+    rerender(<CostCalculator role="developer" />);
     expect(container.querySelector(".cost-calculator__rate-value")).toHaveTextContent(/900/);
   });
 
@@ -100,7 +97,25 @@ describe("CostCalculator", () => {
     });
   });
 
-  it("shows salary in the primary surface and keeps advanced options labeled", () => {
+  it("groups inputs into employee vs consultant sides", () => {
+    render(<CostCalculator />);
+
+    expect(screen.getByText("inputs.employee.title")).toBeInTheDocument();
+    expect(screen.getByText("inputs.employee.lede")).toBeInTheDocument();
+    expect(screen.getByText("inputs.consultant.title")).toBeInTheDocument();
+    expect(screen.getByText("inputs.consultant.lede")).toBeInTheDocument();
+    expect(screen.getByText("inputs.vs")).toBeInTheDocument();
+    expect(screen.getByRole("slider", { name: "fields.salary.label" })).toBeInTheDocument();
+    expect(screen.getByRole("group", { name: "fields.billedDays.label" })).toBeInTheDocument();
+
+    const consultant = screen.getByText("inputs.consultant.title");
+    const employee = screen.getByText("inputs.employee.title");
+    expect(
+      consultant.compareDocumentPosition(employee) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
+
+  it("shows salary in the employee side and keeps advanced options labeled", () => {
     render(<CostCalculator />);
 
     expect(screen.getByRole("slider", { name: "fields.salary.label" })).toBeInTheDocument();

@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 
 import {
   BASE_CONSULTANT_DAY_RATE,
-  CALCULATOR_ROLES,
   WORKPLACE_ANNUAL_COST,
   WORKPLACE_MODE_LIST,
   getCalculatorRolePreset,
@@ -101,35 +100,44 @@ function InputSection({ title, children }: InputSectionProps) {
   );
 }
 
-const DEFAULT_ROLE: CalculatorRole = "productManager";
-
-function applyRolePreset(role: CalculatorRole) {
-  const preset = getCalculatorRolePreset(role);
-  return {
-    salaire: preset.defaultGrossSalary,
-    masseSalariale: preset.defaultCompanyPayroll,
-    avantagesPct: preset.defaultBenefitsPct,
-    primePct: preset.defaultBonusPct,
-    joursProductifs: preset.defaultProductiveDays,
-    recrutementPct: preset.defaultRecruitmentPct,
-    onboardingMois: preset.defaultOnboardingMonths,
-    onboardingProductivite: preset.defaultOnboardingProductivity,
-    heuresCoordination: preset.defaultCoordinationHoursPerWeek,
-    coutOutilsEmployeur: preset.defaultEmployeeToolsAnnualCost,
-    coutMilieu: WORKPLACE_ANNUAL_COST[preset.defaultWorkplaceMode],
-    joursSemaine: preset.defaultBilledDaysPerWeek,
-  };
+interface CompareSideProps {
+  title: string;
+  lede: string;
+  tone: "employee" | "consultant";
+  children: ReactNode;
 }
 
-export default function CostCalculator() {
+function CompareSide({ title, lede, tone, children }: CompareSideProps) {
+  return (
+    <section
+      className={classNames("cost-calculator__side", {
+        "cost-calculator__side--employee": tone === "employee",
+        "cost-calculator__side--consultant": tone === "consultant",
+      })}
+    >
+      <header className="cost-calculator__side-head">
+        <h3 className="cost-calculator__side-title">{title}</h3>
+        <p className="cost-calculator__side-lede">{lede}</p>
+      </header>
+      <div className="cost-calculator__side-body">{children}</div>
+    </section>
+  );
+}
+
+const DEFAULT_ROLE: CalculatorRole = "productManager";
+
+interface CostCalculatorProps {
+  role?: CalculatorRole;
+}
+
+export default function CostCalculator({ role = DEFAULT_ROLE }: CostCalculatorProps) {
   const { t } = useTranslation("cost-calculator");
   const router = useRouter();
   const locale = router.locale ?? "fr";
   const fmt0 = (n: number) => createCurrencyFormatter(locale).format(Math.round(n));
   const pct1 = (n: number) => `${n.toFixed(1).replace(".", locale === "en" ? "." : ",")} %`;
 
-  const initialPreset = getCalculatorRolePreset(DEFAULT_ROLE);
-  const [role, setRole] = useState<CalculatorRole>(DEFAULT_ROLE);
+  const initialPreset = getCalculatorRolePreset(role);
   const [salaire, setSalaire] = useState(initialPreset.defaultGrossSalary);
   const [modeCoutTotal, setModeCoutTotal] = useState(false);
   const [masseSalariale, setMasseSalariale] = useState(initialPreset.defaultCompanyPayroll);
@@ -161,23 +169,6 @@ export default function CostCalculator() {
   const [joursSemaine, setJoursSemaine] = useState(initialPreset.defaultBilledDaysPerWeek);
 
   const rolePreset = getCalculatorRolePreset(role);
-
-  const handleRoleChange = (nextRole: CalculatorRole) => {
-    setRole(nextRole);
-    const preset = applyRolePreset(nextRole);
-    setSalaire(preset.salaire);
-    setMasseSalariale(preset.masseSalariale);
-    setAvantagesPct(preset.avantagesPct);
-    setPrimePct(preset.primePct);
-    setJoursProductifs(preset.joursProductifs);
-    setRecrutementPct(preset.recrutementPct);
-    setOnboardingMois(preset.onboardingMois);
-    setOnboardingProductivite(preset.onboardingProductivite);
-    setHeuresCoordination(preset.heuresCoordination);
-    setCoutOutilsEmployeur(preset.coutOutilsEmployeur);
-    setCoutMilieu(preset.coutMilieu);
-    setJoursSemaine(preset.joursSemaine);
-  };
 
   const r = useMemo(
     () =>
@@ -304,375 +295,386 @@ export default function CostCalculator() {
         </div>
       </div>
 
-      <div className="cost-calculator__card">
-        <Field label={t("fields.role.label")}>
-          <select
-            className="cost-calculator__select"
-            value={role}
-            aria-label={t("fields.role.label")}
-            onChange={(e) => handleRoleChange(e.target.value as CalculatorRole)}
-          >
-            {CALCULATOR_ROLES.map((roleId) => (
-              <option key={roleId} value={roleId}>
-                {t(`fields.role.options.${roleId}`)}
-              </option>
-            ))}
-          </select>
-        </Field>
-
-        <div className="cost-calculator__rate-block">
-          <p className="cost-calculator__rate-line">
-            {t("fields.dayRate.label")} :{" "}
-            <span className="cost-calculator__rate-value">{fmt0(displayDayRate)}/j</span>
-          </p>
-          <p className="cost-calculator__help">{t("fields.dayRate.note")}</p>
-        </div>
-
-        <Field
-          label={t("fields.billedDays.label")}
-          hint={t("fields.billedDays.hint", { count: joursSemaine })}
+      <div className="cost-calculator__inputs">
+        <CompareSide
+          title={t("inputs.consultant.title")}
+          lede={t("inputs.consultant.lede")}
+          tone="consultant"
         >
-          <div
-            className="cost-calculator__day-picks"
-            role="group"
-            aria-label={t("fields.billedDays.label")}
-          >
-            {[1, 2, 3].map((d) => (
-              <button
-                key={d}
-                type="button"
-                onClick={() => setJoursSemaine(d)}
-                className={classNames("cost-calculator__day-pick", {
-                  "cost-calculator__day-pick--active": joursSemaine === d,
-                })}
-                aria-pressed={joursSemaine === d}
-              >
-                {d}
-              </button>
-            ))}
-          </div>
-          {r.volumeDiscountPct > 0 && (
-            <p className="cost-calculator__help">
-              {t("fields.billedDays.volumeDiscount", {
-                pct: r.volumeDiscountPct,
-                rate: fmt0(r.effectiveConsultantDayRate),
-              })}
+          <div className="cost-calculator__rate-block">
+            <p className="cost-calculator__rate-line">
+              {t("fields.role.label")} :{" "}
+              <span className="cost-calculator__mission-value">
+                {t(`fields.role.options.${role}`)}
+              </span>
             </p>
-          )}
-        </Field>
+            <p className="cost-calculator__help">{t("fields.role.note")}</p>
+          </div>
 
-        <Field label={t("fields.salary.label")} hint={fmt0(salaire)}>
-          <input
-            type="range"
-            min={50000}
-            max={250000}
-            step={5000}
-            value={salaire}
-            onChange={(e) => setSalaire(Number(e.target.value))}
-            className="cost-calculator__range"
-            aria-label={t("fields.salary.label")}
-            aria-valuemin={50000}
-            aria-valuemax={250000}
-            aria-valuenow={salaire}
-          />
-        </Field>
-
-        <div className="cost-calculator__advanced">
-          <p className="cost-calculator__advanced-label">{t("fields.advanced.label")}</p>
-
-          <InputSection title={t("fields.employeeCost.title")}>
-            <Field label={t("fields.salaryMode.label")}>
-              <select
-                className="cost-calculator__select"
-                value={modeCoutTotal ? "total" : "gross"}
-                aria-label={t("fields.salaryMode.label")}
-                onChange={(e) => setModeCoutTotal(e.target.value === "total")}
-              >
-                <option value="gross">{t("fields.salaryMode.gross")}</option>
-                <option value="total">{t("fields.salaryMode.total")}</option>
-              </select>
-            </Field>
-
-            {!modeCoutTotal && (
-              <>
-                <Field label={t("fields.companyPayroll.label")} hint={fmt0(masseSalariale)}>
-                  <input
-                    type="range"
-                    min={100000}
-                    max={5000000}
-                    step={50000}
-                    value={masseSalariale}
-                    onChange={(e) => setMasseSalariale(Number(e.target.value))}
-                    className="cost-calculator__range"
-                    aria-valuemin={100000}
-                    aria-valuemax={5000000}
-                    aria-valuenow={masseSalariale}
-                  />
-                  <p className="cost-calculator__help">{t("fields.companyPayroll.help")}</p>
-                </Field>
-
-                <Field label={t("fields.benefits.label")} hint={`${avantagesPct} %`}>
-                  <input
-                    type="range"
-                    min={0}
-                    max={12}
-                    step={1}
-                    value={avantagesPct}
-                    onChange={(e) => setAvantagesPct(Number(e.target.value))}
-                    className="cost-calculator__range"
-                    aria-valuemin={0}
-                    aria-valuemax={12}
-                    aria-valuenow={avantagesPct}
-                  />
-                </Field>
-
-                <Field label={t("fields.bonus.label")} hint={`${primePct} %`}>
-                  <input
-                    type="range"
-                    min={0}
-                    max={30}
-                    step={1}
-                    value={primePct}
-                    onChange={(e) => setPrimePct(Number(e.target.value))}
-                    className="cost-calculator__range"
-                    aria-valuemin={0}
-                    aria-valuemax={30}
-                    aria-valuenow={primePct}
-                  />
-                </Field>
-              </>
-            )}
-
-            <Field
-              label={t("fields.productiveDays.label")}
-              hint={t("fields.productiveDays.hint", { count: joursProductifs })}
+          <Field
+            label={t("fields.billedDays.label")}
+            hint={t("fields.billedDays.hint", { count: joursSemaine })}
+          >
+            <div
+              className="cost-calculator__day-picks"
+              role="group"
+              aria-label={t("fields.billedDays.label")}
             >
-              <input
-                type="range"
-                min={180}
-                max={260}
-                step={5}
-                value={joursProductifs}
-                onChange={(e) => setJoursProductifs(Number(e.target.value))}
-                className="cost-calculator__range"
-                aria-valuemin={180}
-                aria-valuemax={260}
-                aria-valuenow={joursProductifs}
-              />
-            </Field>
-          </InputSection>
-
-          <InputSection title={t("fields.yearOne.title")}>
-            <label className="cost-calculator__checkbox">
-              <input
-                type="checkbox"
-                checked={inclureAnnee1}
-                onChange={(e) => setInclureAnnee1(e.target.checked)}
-              />
-              <span>{t("fields.yearOne.include")}</span>
-            </label>
-
-            {inclureAnnee1 && (
-              <>
-                <Field label={t("fields.recruitment.label")} hint={`${recrutementPct} %`}>
-                  <input
-                    type="range"
-                    min={0}
-                    max={25}
-                    step={1}
-                    value={recrutementPct}
-                    onChange={(e) => setRecrutementPct(Number(e.target.value))}
-                    className="cost-calculator__range"
-                    aria-valuemin={0}
-                    aria-valuemax={25}
-                    aria-valuenow={recrutementPct}
-                  />
-                </Field>
-
-                <Field
-                  label={t("fields.onboardingMonths.label")}
-                  hint={t("fields.onboardingMonths.hint", { count: onboardingMois })}
+              {[1, 2, 3].map((d) => (
+                <button
+                  key={d}
+                  type="button"
+                  onClick={() => setJoursSemaine(d)}
+                  className={classNames("cost-calculator__day-pick", {
+                    "cost-calculator__day-pick--active": joursSemaine === d,
+                  })}
+                  aria-pressed={joursSemaine === d}
                 >
-                  <input
-                    type="range"
-                    min={0}
-                    max={6}
-                    step={1}
-                    value={onboardingMois}
-                    onChange={(e) => setOnboardingMois(Number(e.target.value))}
-                    className="cost-calculator__range"
-                    aria-valuemin={0}
-                    aria-valuemax={6}
-                    aria-valuenow={onboardingMois}
-                  />
-                </Field>
-
-                <Field
-                  label={t("fields.onboardingProductivity.label")}
-                  hint={`${onboardingProductivite} %`}
-                >
-                  <input
-                    type="range"
-                    min={25}
-                    max={100}
-                    step={5}
-                    value={onboardingProductivite}
-                    onChange={(e) => setOnboardingProductivite(Number(e.target.value))}
-                    className="cost-calculator__range"
-                    aria-valuemin={25}
-                    aria-valuemax={100}
-                    aria-valuenow={onboardingProductivite}
-                  />
-                </Field>
-              </>
+                  {d}
+                </button>
+              ))}
+            </div>
+            {r.volumeDiscountPct > 0 && (
+              <p className="cost-calculator__help">
+                {t("fields.billedDays.volumeDiscount", {
+                  pct: r.volumeDiscountPct,
+                  rate: fmt0(r.effectiveConsultantDayRate),
+                })}
+              </p>
             )}
-          </InputSection>
+          </Field>
 
-          <InputSection title={t("fields.autonomy.title")}>
-            <label className="cost-calculator__checkbox">
-              <input
-                type="checkbox"
-                checked={inclureCoordination}
-                onChange={(e) => setInclureCoordination(e.target.checked)}
-              />
-              <span>{t("fields.autonomy.include")}</span>
-            </label>
+          <div className="cost-calculator__rate-block">
+            <p className="cost-calculator__rate-line">
+              {t("fields.dayRate.label")} :{" "}
+              <span className="cost-calculator__rate-value">{fmt0(displayDayRate)}/j</span>
+            </p>
+            <p className="cost-calculator__help">{t("fields.dayRate.note")}</p>
+          </div>
+        </CompareSide>
 
-            {inclureCoordination && (
-              <Field
-                label={t("fields.coordination.label")}
-                hint={t("fields.coordination.hint", { count: heuresCoordination })}
-              >
-                <input
-                  type="range"
-                  min={0}
-                  max={8}
-                  step={1}
-                  value={heuresCoordination}
-                  onChange={(e) => setHeuresCoordination(Number(e.target.value))}
-                  className="cost-calculator__range"
-                  aria-valuemin={0}
-                  aria-valuemax={8}
-                  aria-valuenow={heuresCoordination}
-                />
-              </Field>
-            )}
+        <p className="cost-calculator__vs" aria-hidden="true">
+          {t("inputs.vs")}
+        </p>
 
-            <label className="cost-calculator__checkbox">
-              <input
-                type="checkbox"
-                checked={inclureOutilsEmployeur}
-                onChange={(e) => setInclureOutilsEmployeur(e.target.checked)}
-              />
-              <span>{t("fields.tools.includeEmployee")}</span>
-            </label>
+        <CompareSide
+          title={t("inputs.employee.title")}
+          lede={t("inputs.employee.lede")}
+          tone="employee"
+        >
+          <Field label={t("fields.salary.label")} hint={fmt0(salaire)}>
+            <input
+              type="range"
+              min={50000}
+              max={250000}
+              step={5000}
+              value={salaire}
+              onChange={(e) => setSalaire(Number(e.target.value))}
+              className="cost-calculator__range"
+              aria-label={t("fields.salary.label")}
+              aria-valuemin={50000}
+              aria-valuemax={250000}
+              aria-valuenow={salaire}
+            />
+          </Field>
 
-            {inclureOutilsEmployeur && (
-              <Field label={t("fields.tools.employee.label")} hint={fmt0(coutOutilsEmployeur)}>
-                <input
-                  type="range"
-                  min={0}
-                  max={10000}
-                  step={500}
-                  value={coutOutilsEmployeur}
-                  onChange={(e) => setCoutOutilsEmployeur(Number(e.target.value))}
-                  className="cost-calculator__range"
-                  aria-valuemin={0}
-                  aria-valuemax={10000}
-                  aria-valuenow={coutOutilsEmployeur}
-                />
-              </Field>
-            )}
+          <div className="cost-calculator__advanced">
+            <p className="cost-calculator__advanced-label">{t("fields.advanced.label")}</p>
 
-            <label className="cost-calculator__checkbox">
-              <input
-                type="checkbox"
-                checked={inclureMilieu}
-                onChange={(e) => setInclureMilieu(e.target.checked)}
-              />
-              <span>{t("fields.workplace.include")}</span>
-            </label>
-
-            {inclureMilieu && (
-              <Field label={t("fields.workplace.label")} hint={fmt0(coutMilieu)}>
+            <InputSection title={t("fields.employeeCost.title")}>
+              <Field label={t("fields.salaryMode.label")}>
                 <select
                   className="cost-calculator__select"
-                  value={activeWorkplaceMode ?? "hybrid"}
-                  aria-label={t("fields.workplace.label")}
-                  onChange={(e) =>
-                    setCoutMilieu(WORKPLACE_ANNUAL_COST[e.target.value as WorkplaceMode])
-                  }
+                  value={modeCoutTotal ? "total" : "gross"}
+                  aria-label={t("fields.salaryMode.label")}
+                  onChange={(e) => setModeCoutTotal(e.target.value === "total")}
                 >
-                  {WORKPLACE_MODE_LIST.map(({ mode, cost }) => (
-                    <option key={mode} value={mode}>
-                      {t(`fields.workplace.options.${mode}`)} · {fmt0(cost)}/an
-                    </option>
-                  ))}
+                  <option value="gross">{t("fields.salaryMode.gross")}</option>
+                  <option value="total">{t("fields.salaryMode.total")}</option>
                 </select>
               </Field>
-            )}
-          </InputSection>
 
-          <InputSection title={t("fields.lifecycle.title")}>
-            <label className="cost-calculator__checkbox">
-              <input
-                type="checkbox"
-                checked={inclureRoulement}
-                onChange={(e) => setInclureRoulement(e.target.checked)}
-              />
-              <span>{t("fields.turnover.include")}</span>
-            </label>
+              {!modeCoutTotal && (
+                <>
+                  <Field label={t("fields.companyPayroll.label")} hint={fmt0(masseSalariale)}>
+                    <input
+                      type="range"
+                      min={100000}
+                      max={5000000}
+                      step={50000}
+                      value={masseSalariale}
+                      onChange={(e) => setMasseSalariale(Number(e.target.value))}
+                      className="cost-calculator__range"
+                      aria-valuemin={100000}
+                      aria-valuemax={5000000}
+                      aria-valuenow={masseSalariale}
+                    />
+                    <p className="cost-calculator__help">{t("fields.companyPayroll.help")}</p>
+                  </Field>
 
-            {(inclureRoulement || inclureFinEmploi) && (
+                  <Field label={t("fields.benefits.label")} hint={`${avantagesPct} %`}>
+                    <input
+                      type="range"
+                      min={0}
+                      max={12}
+                      step={1}
+                      value={avantagesPct}
+                      onChange={(e) => setAvantagesPct(Number(e.target.value))}
+                      className="cost-calculator__range"
+                      aria-valuemin={0}
+                      aria-valuemax={12}
+                      aria-valuenow={avantagesPct}
+                    />
+                  </Field>
+
+                  <Field label={t("fields.bonus.label")} hint={`${primePct} %`}>
+                    <input
+                      type="range"
+                      min={0}
+                      max={30}
+                      step={1}
+                      value={primePct}
+                      onChange={(e) => setPrimePct(Number(e.target.value))}
+                      className="cost-calculator__range"
+                      aria-valuemin={0}
+                      aria-valuemax={30}
+                      aria-valuenow={primePct}
+                    />
+                  </Field>
+                </>
+              )}
+
               <Field
-                label={t("fields.tenure.label")}
-                hint={t("fields.tenure.hint", { count: ancienneteAnnees })}
+                label={t("fields.productiveDays.label")}
+                hint={t("fields.productiveDays.hint", { count: joursProductifs })}
               >
                 <input
                   type="range"
-                  min={1}
-                  max={8}
-                  step={1}
-                  value={ancienneteAnnees}
-                  onChange={(e) => setAncienneteAnnees(Number(e.target.value))}
+                  min={180}
+                  max={260}
+                  step={5}
+                  value={joursProductifs}
+                  onChange={(e) => setJoursProductifs(Number(e.target.value))}
                   className="cost-calculator__range"
-                  aria-valuemin={1}
-                  aria-valuemax={8}
-                  aria-valuenow={ancienneteAnnees}
+                  aria-valuemin={180}
+                  aria-valuemax={260}
+                  aria-valuenow={joursProductifs}
                 />
               </Field>
-            )}
+            </InputSection>
 
-            <label className="cost-calculator__checkbox">
-              <input
-                type="checkbox"
-                checked={inclureFinEmploi}
-                onChange={(e) => setInclureFinEmploi(e.target.checked)}
-              />
-              <span>{t("fields.severance.include")}</span>
-            </label>
-
-            {inclureFinEmploi && (
-              <Field
-                label={t("fields.severance.label")}
-                hint={t("fields.severance.hint", { count: semainesFinEmploi })}
-              >
+            <InputSection title={t("fields.yearOne.title")}>
+              <label className="cost-calculator__checkbox">
                 <input
-                  type="range"
-                  min={0}
-                  max={26}
-                  step={1}
-                  value={semainesFinEmploi}
-                  onChange={(e) => setSemainesFinEmploi(Number(e.target.value))}
-                  className="cost-calculator__range"
-                  aria-valuemin={0}
-                  aria-valuemax={26}
-                  aria-valuenow={semainesFinEmploi}
+                  type="checkbox"
+                  checked={inclureAnnee1}
+                  onChange={(e) => setInclureAnnee1(e.target.checked)}
                 />
-              </Field>
-            )}
-          </InputSection>
-        </div>
+                <span>{t("fields.yearOne.include")}</span>
+              </label>
+
+              {inclureAnnee1 && (
+                <>
+                  <Field label={t("fields.recruitment.label")} hint={`${recrutementPct} %`}>
+                    <input
+                      type="range"
+                      min={0}
+                      max={25}
+                      step={1}
+                      value={recrutementPct}
+                      onChange={(e) => setRecrutementPct(Number(e.target.value))}
+                      className="cost-calculator__range"
+                      aria-valuemin={0}
+                      aria-valuemax={25}
+                      aria-valuenow={recrutementPct}
+                    />
+                  </Field>
+
+                  <Field
+                    label={t("fields.onboardingMonths.label")}
+                    hint={t("fields.onboardingMonths.hint", { count: onboardingMois })}
+                  >
+                    <input
+                      type="range"
+                      min={0}
+                      max={6}
+                      step={1}
+                      value={onboardingMois}
+                      onChange={(e) => setOnboardingMois(Number(e.target.value))}
+                      className="cost-calculator__range"
+                      aria-valuemin={0}
+                      aria-valuemax={6}
+                      aria-valuenow={onboardingMois}
+                    />
+                  </Field>
+
+                  <Field
+                    label={t("fields.onboardingProductivity.label")}
+                    hint={`${onboardingProductivite} %`}
+                  >
+                    <input
+                      type="range"
+                      min={25}
+                      max={100}
+                      step={5}
+                      value={onboardingProductivite}
+                      onChange={(e) => setOnboardingProductivite(Number(e.target.value))}
+                      className="cost-calculator__range"
+                      aria-valuemin={25}
+                      aria-valuemax={100}
+                      aria-valuenow={onboardingProductivite}
+                    />
+                  </Field>
+                </>
+              )}
+            </InputSection>
+
+            <InputSection title={t("fields.autonomy.title")}>
+              <label className="cost-calculator__checkbox">
+                <input
+                  type="checkbox"
+                  checked={inclureCoordination}
+                  onChange={(e) => setInclureCoordination(e.target.checked)}
+                />
+                <span>{t("fields.autonomy.include")}</span>
+              </label>
+
+              {inclureCoordination && (
+                <Field
+                  label={t("fields.coordination.label")}
+                  hint={t("fields.coordination.hint", { count: heuresCoordination })}
+                >
+                  <input
+                    type="range"
+                    min={0}
+                    max={8}
+                    step={1}
+                    value={heuresCoordination}
+                    onChange={(e) => setHeuresCoordination(Number(e.target.value))}
+                    className="cost-calculator__range"
+                    aria-valuemin={0}
+                    aria-valuemax={8}
+                    aria-valuenow={heuresCoordination}
+                  />
+                </Field>
+              )}
+
+              <label className="cost-calculator__checkbox">
+                <input
+                  type="checkbox"
+                  checked={inclureOutilsEmployeur}
+                  onChange={(e) => setInclureOutilsEmployeur(e.target.checked)}
+                />
+                <span>{t("fields.tools.includeEmployee")}</span>
+              </label>
+
+              {inclureOutilsEmployeur && (
+                <Field label={t("fields.tools.employee.label")} hint={fmt0(coutOutilsEmployeur)}>
+                  <input
+                    type="range"
+                    min={0}
+                    max={10000}
+                    step={500}
+                    value={coutOutilsEmployeur}
+                    onChange={(e) => setCoutOutilsEmployeur(Number(e.target.value))}
+                    className="cost-calculator__range"
+                    aria-valuemin={0}
+                    aria-valuemax={10000}
+                    aria-valuenow={coutOutilsEmployeur}
+                  />
+                </Field>
+              )}
+
+              <label className="cost-calculator__checkbox">
+                <input
+                  type="checkbox"
+                  checked={inclureMilieu}
+                  onChange={(e) => setInclureMilieu(e.target.checked)}
+                />
+                <span>{t("fields.workplace.include")}</span>
+              </label>
+
+              {inclureMilieu && (
+                <Field label={t("fields.workplace.label")} hint={fmt0(coutMilieu)}>
+                  <select
+                    className="cost-calculator__select"
+                    value={activeWorkplaceMode ?? "hybrid"}
+                    aria-label={t("fields.workplace.label")}
+                    onChange={(e) =>
+                      setCoutMilieu(WORKPLACE_ANNUAL_COST[e.target.value as WorkplaceMode])
+                    }
+                  >
+                    {WORKPLACE_MODE_LIST.map(({ mode, cost }) => (
+                      <option key={mode} value={mode}>
+                        {t(`fields.workplace.options.${mode}`)} · {fmt0(cost)}/an
+                      </option>
+                    ))}
+                  </select>
+                </Field>
+              )}
+            </InputSection>
+
+            <InputSection title={t("fields.lifecycle.title")}>
+              <label className="cost-calculator__checkbox">
+                <input
+                  type="checkbox"
+                  checked={inclureRoulement}
+                  onChange={(e) => setInclureRoulement(e.target.checked)}
+                />
+                <span>{t("fields.turnover.include")}</span>
+              </label>
+
+              {(inclureRoulement || inclureFinEmploi) && (
+                <Field
+                  label={t("fields.tenure.label")}
+                  hint={t("fields.tenure.hint", { count: ancienneteAnnees })}
+                >
+                  <input
+                    type="range"
+                    min={1}
+                    max={8}
+                    step={1}
+                    value={ancienneteAnnees}
+                    onChange={(e) => setAncienneteAnnees(Number(e.target.value))}
+                    className="cost-calculator__range"
+                    aria-valuemin={1}
+                    aria-valuemax={8}
+                    aria-valuenow={ancienneteAnnees}
+                  />
+                </Field>
+              )}
+
+              <label className="cost-calculator__checkbox">
+                <input
+                  type="checkbox"
+                  checked={inclureFinEmploi}
+                  onChange={(e) => setInclureFinEmploi(e.target.checked)}
+                />
+                <span>{t("fields.severance.include")}</span>
+              </label>
+
+              {inclureFinEmploi && (
+                <Field
+                  label={t("fields.severance.label")}
+                  hint={t("fields.severance.hint", { count: semainesFinEmploi })}
+                >
+                  <input
+                    type="range"
+                    min={0}
+                    max={26}
+                    step={1}
+                    value={semainesFinEmploi}
+                    onChange={(e) => setSemainesFinEmploi(Number(e.target.value))}
+                    className="cost-calculator__range"
+                    aria-valuemin={0}
+                    aria-valuemax={26}
+                    aria-valuenow={semainesFinEmploi}
+                  />
+                </Field>
+              )}
+            </InputSection>
+          </div>
+        </CompareSide>
       </div>
 
       <div className="cost-calculator__panel">

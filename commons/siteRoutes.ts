@@ -6,6 +6,8 @@
  * Resolved at render time via {@link resolveInternalLinkPath}.
  */
 
+import type { CalculatorRole } from "./costCalculatorPresets";
+import { calculatorRoleToSlug } from "./costCalculatorPresets";
 import type { LocalizedPageEntry } from "./localizedManifest";
 import {
   SITUATIONS,
@@ -43,6 +45,11 @@ export const ROUTES = Object.freeze({
   cvFounding: "/cvs/cv-founding",
   expertiseBase: "/expertise",
 });
+
+/** Same calculator page, keyed by mission slug (`/cout-reel-jour/dev` | `/pm`). */
+export function getDayRateComparisonPath(role: CalculatorRole = "productManager"): string {
+  return `${ROUTES.dayRateComparison}/${calculatorRoleToSlug(role)}`;
+}
 
 const STATIC_APP_PATHS = new Set<string>([
   ROUTES.home,

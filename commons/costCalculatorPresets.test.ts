@@ -6,14 +6,27 @@ import {
   SHARED_EMPLOYER_DEFAULTS,
   WORKPLACE_ANNUAL_COST,
   WORKPLACE_MODE_LIST,
+  calculatorRoleToSlug,
   getCalculatorRolePreset,
   getWorkplaceMode,
+  parseCalculatorRoleSlug,
   type CalculatorRole,
 } from "./costCalculatorPresets";
 
 describe("costCalculatorPresets", () => {
   it("exposes developer and product manager scenarios only", () => {
     expect(CALCULATOR_ROLES).toEqual(["developer", "productManager"]);
+  });
+
+  it("parses path slugs into calculator roles", () => {
+    expect(parseCalculatorRoleSlug("dev")).toBe("developer");
+    expect(parseCalculatorRoleSlug("pm")).toBe("productManager");
+    expect(parseCalculatorRoleSlug("developer")).toBe("developer");
+    expect(parseCalculatorRoleSlug("product-manager")).toBe("productManager");
+    expect(parseCalculatorRoleSlug("nope")).toBeNull();
+    expect(parseCalculatorRoleSlug(undefined)).toBeNull();
+    expect(calculatorRoleToSlug("developer")).toBe("dev");
+    expect(calculatorRoleToSlug("productManager")).toBe("pm");
   });
 
   it.each<CalculatorRole>(["developer", "productManager"])(
