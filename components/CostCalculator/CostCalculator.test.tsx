@@ -17,12 +17,19 @@ jest.mock("next/router", () => ({
   useRouter: () => ({
     locale: "fr",
     pathname: "/cout-reel-jour/pm",
-    query: {},
+    query: mockRouterQuery,
     isReady: true,
   }),
 }));
 
+const mockRouterQuery: Record<string, string | string[]> = {};
+
 describe("CostCalculator", () => {
+  beforeEach(() => {
+    Object.keys(mockRouterQuery).forEach((key) => {
+      delete mockRouterQuery[key];
+    });
+  });
   it("puts the mission role in the consultant side title", () => {
     render(<CostCalculator role="developer" />);
 
@@ -123,6 +130,13 @@ describe("CostCalculator", () => {
 
     expect(screen.getByRole("slider", { name: "fields.salary.label" })).toBeInTheDocument();
     expect(screen.getByText("fields.advanced.label")).toBeInTheDocument();
+  });
+
+  it("seeds gross salary from the salaire query param", () => {
+    mockRouterQuery.salaire = "140000";
+    render(<CostCalculator role="developer" />);
+
+    expect(screen.getByRole("slider", { name: "fields.salary.label" })).toHaveValue("140000");
   });
 
   it("leads with a results-first sticky summary, not savings-led pills", () => {

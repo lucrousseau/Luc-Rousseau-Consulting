@@ -18,6 +18,11 @@ export type CalculatorRole = "developer" | "productManager";
  */
 export const BASE_CONSULTANT_DAY_RATE = 900;
 
+/** Gross salary slider bounds on the day-rate calculator. */
+export const GROSS_SALARY_MIN = 50_000;
+export const GROSS_SALARY_MAX = 250_000;
+export const GROSS_SALARY_STEP = 5_000;
+
 /** Full engagement rate card (reference); calculator always uses the base rate. */
 export const CONSULTANT_RATE_TIERS = {
   ongoing: BASE_CONSULTANT_DAY_RATE,
@@ -172,4 +177,30 @@ export function calculatorRoleToSlug(role: CalculatorRole): string {
 
 export function getCalculatorRolePreset(role: CalculatorRole): CalculatorRolePreset {
   return CALCULATOR_ROLE_PRESETS[role];
+}
+
+/**
+ * Reads `salaire` or `salary` from a Next.js query for deep links.
+ * Clamps to the salary slider range and snaps to the slider step.
+ */
+export function parseGrossSalaryQueryParam(
+  value: string | string[] | undefined | null
+): number | null {
+  const raw = Array.isArray(value) ? value[0] : value;
+  if (raw == null || raw === "") {
+    return null;
+  }
+
+  const cleaned = String(raw)
+    .trim()
+    .replace(/\$/g, "")
+    .replace(/[\s,_]/g, "")
+    .replace(/k$/i, "000");
+  const parsed = Number(cleaned);
+  if (!Number.isFinite(parsed)) {
+    return null;
+  }
+
+  const clamped = Math.min(GROSS_SALARY_MAX, Math.max(GROSS_SALARY_MIN, Math.round(parsed)));
+  return Math.round(clamped / GROSS_SALARY_STEP) * GROSS_SALARY_STEP;
 }

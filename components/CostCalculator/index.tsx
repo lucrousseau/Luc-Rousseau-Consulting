@@ -6,10 +6,14 @@ import { useRouter } from "next/router";
 import {
   BASE_CONSULTANT_DAY_RATE,
   DEFAULT_CALCULATOR_ROLE,
+  GROSS_SALARY_MAX,
+  GROSS_SALARY_MIN,
+  GROSS_SALARY_STEP,
   WORKPLACE_ANNUAL_COST,
   WORKPLACE_MODE_LIST,
   getCalculatorRolePreset,
   getWorkplaceMode,
+  parseGrossSalaryQueryParam,
   type CalculatorRole,
   type WorkplaceMode,
 } from "../../commons/costCalculatorPresets";
@@ -166,7 +170,11 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
   const pct1 = (n: number) => `${n.toFixed(1).replace(".", locale === "en" ? "." : ",")} %`;
 
   const initialPreset = getCalculatorRolePreset(role);
-  const [salaire, setSalaire] = useState(initialPreset.defaultGrossSalary);
+  const salaryFromQuery = router.isReady
+    ? parseGrossSalaryQueryParam(router.query.salaire ?? router.query.salary)
+    : null;
+  const [salaireOverride, setSalaireOverride] = useState<number | null>(null);
+  const salaire = salaireOverride ?? salaryFromQuery ?? initialPreset.defaultGrossSalary;
   const [masseSalariale, setMasseSalariale] = useState(initialPreset.defaultCompanyPayroll);
   const [avantagesPct, setAvantagesPct] = useState(initialPreset.defaultBenefitsPct);
   const [primePct, setPrimePct] = useState(initialPreset.defaultBonusPct);
@@ -555,15 +563,15 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
           <Field label={t("fields.salary.label")} hint={fmt0(salaire)}>
             <input
               type="range"
-              min={50000}
-              max={250000}
-              step={5000}
+              min={GROSS_SALARY_MIN}
+              max={GROSS_SALARY_MAX}
+              step={GROSS_SALARY_STEP}
               value={salaire}
-              onChange={(e) => setSalaire(Number(e.target.value))}
+              onChange={(e) => setSalaireOverride(Number(e.target.value))}
               className="cost-calculator__range"
               aria-label={t("fields.salary.label")}
-              aria-valuemin={50000}
-              aria-valuemax={250000}
+              aria-valuemin={GROSS_SALARY_MIN}
+              aria-valuemax={GROSS_SALARY_MAX}
               aria-valuenow={salaire}
             />
           </Field>
