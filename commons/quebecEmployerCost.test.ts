@@ -262,6 +262,8 @@ describe("computeDayRateComparison", () => {
       billedDaysPerWeek: 3,
       includeHiringFriction: false,
       includeCoordinationOverhead: false,
+      includeEmployeeTools: false,
+      includeWorkplace: false,
     });
 
     expect(result.ongoingAnnualCost).toBe(158_354.84);
@@ -426,21 +428,30 @@ describe("computeDayRateComparison", () => {
     expect(on.yearOneAnnualCost).toBe(off.yearOneAnnualCost);
   });
 
-  it("keeps turnover inert when hiring friction is excluded", () => {
-    const result = computeDayRateComparison({
+  it("keeps cruise steady when year-1 is off but turnover stays on", () => {
+    const base = {
       grossSalary: 140_000,
       isTotalEmployerCost: true,
       consultantDayRate: 1_000,
       billedDaysPerWeek: 3,
-      includeHiringFriction: false,
+      recruitmentCostPct: 15,
+      onboardingMonths: 3,
+      onboardingProductivityPct: 55,
       includeCoordinationOverhead: false,
       includeTurnover: true,
+      averageTenureYears: 3,
       includeSeverance: false,
-    });
+    };
+    const withYearOne = computeDayRateComparison({ ...base, includeHiringFriction: true });
+    const withoutYearOne = computeDayRateComparison({ ...base, includeHiringFriction: false });
 
-    // No recruitment to amortize, and severance is off: no lifecycle overhead.
-    expect(result.lifecycle).toBeUndefined();
-    expect(result.ongoingAnnualCost).toBe(140_000);
+    expect(withYearOne.steadyStateCostPerDay).toBe(withoutYearOne.steadyStateCostPerDay);
+    expect(withYearOne.ongoingAnnualCost).toBe(withoutYearOne.ongoingAnnualCost);
+    expect(withYearOne.lifecycle?.amortizedRecruitmentCost).toBe(7_000);
+    expect(withoutYearOne.lifecycle?.amortizedRecruitmentCost).toBe(7_000);
+    // Year-1 spike only appears when the year-1 toggle is on.
+    expect(withYearOne.yearOneAnnualCost).toBeGreaterThan(withoutYearOne.yearOneAnnualCost);
+    expect(withoutYearOne.hiringFriction).toBeUndefined();
   });
 
   it("reports the cadence break-even where the consultant flips to cheaper", () => {

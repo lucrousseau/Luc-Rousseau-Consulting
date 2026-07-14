@@ -167,7 +167,6 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
 
   const initialPreset = getCalculatorRolePreset(role);
   const [salaire, setSalaire] = useState(initialPreset.defaultGrossSalary);
-  const [modeCoutTotal, setModeCoutTotal] = useState(false);
   const [masseSalariale, setMasseSalariale] = useState(initialPreset.defaultCompanyPayroll);
   const [avantagesPct, setAvantagesPct] = useState(initialPreset.defaultBenefitsPct);
   const [primePct, setPrimePct] = useState(initialPreset.defaultBonusPct);
@@ -202,7 +201,6 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
     () =>
       computeDayRateComparison({
         grossSalary: salaire,
-        isTotalEmployerCost: modeCoutTotal,
         companyTotalPayroll: masseSalariale,
         cnesstSector: rolePreset.cnesstSector,
         benefitsPct: avantagesPct,
@@ -228,7 +226,6 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
     [
       rolePreset.cnesstSector,
       salaire,
-      modeCoutTotal,
       masseSalariale,
       avantagesPct,
       primePct,
@@ -414,7 +411,7 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
                   {t("results.detailTitle")}
                 </summary>
                 <div className="cost-calculator__detail-body">
-                  {!modeCoutTotal && breakdown && (
+                  {breakdown && (
                     <BreakdownSection
                       title={t("results.breakdown.title", { year: breakdown.year })}
                     >
@@ -571,66 +568,50 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
             <p className="cost-calculator__advanced-label">{t("fields.advanced.label")}</p>
 
             <InputSection title={t("fields.employeeCost.title")}>
-              <Field label={t("fields.salaryMode.label")}>
-                <select
-                  className="cost-calculator__select"
-                  value={modeCoutTotal ? "total" : "gross"}
-                  aria-label={t("fields.salaryMode.label")}
-                  onChange={(e) => setModeCoutTotal(e.target.value === "total")}
-                >
-                  <option value="gross">{t("fields.salaryMode.gross")}</option>
-                  <option value="total">{t("fields.salaryMode.total")}</option>
-                </select>
+              <Field label={t("fields.companyPayroll.label")} hint={fmt0(masseSalariale)}>
+                <input
+                  type="range"
+                  min={100000}
+                  max={5000000}
+                  step={50000}
+                  value={masseSalariale}
+                  onChange={(e) => setMasseSalariale(Number(e.target.value))}
+                  className="cost-calculator__range"
+                  aria-valuemin={100000}
+                  aria-valuemax={5000000}
+                  aria-valuenow={masseSalariale}
+                />
               </Field>
 
-              {!modeCoutTotal && (
-                <>
-                  <Field label={t("fields.companyPayroll.label")} hint={fmt0(masseSalariale)}>
-                    <input
-                      type="range"
-                      min={100000}
-                      max={5000000}
-                      step={50000}
-                      value={masseSalariale}
-                      onChange={(e) => setMasseSalariale(Number(e.target.value))}
-                      className="cost-calculator__range"
-                      aria-valuemin={100000}
-                      aria-valuemax={5000000}
-                      aria-valuenow={masseSalariale}
-                    />
-                  </Field>
+              <Field label={t("fields.benefits.label")} hint={`${avantagesPct} %`}>
+                <input
+                  type="range"
+                  min={0}
+                  max={12}
+                  step={1}
+                  value={avantagesPct}
+                  onChange={(e) => setAvantagesPct(Number(e.target.value))}
+                  className="cost-calculator__range"
+                  aria-valuemin={0}
+                  aria-valuemax={12}
+                  aria-valuenow={avantagesPct}
+                />
+              </Field>
 
-                  <Field label={t("fields.benefits.label")} hint={`${avantagesPct} %`}>
-                    <input
-                      type="range"
-                      min={0}
-                      max={12}
-                      step={1}
-                      value={avantagesPct}
-                      onChange={(e) => setAvantagesPct(Number(e.target.value))}
-                      className="cost-calculator__range"
-                      aria-valuemin={0}
-                      aria-valuemax={12}
-                      aria-valuenow={avantagesPct}
-                    />
-                  </Field>
-
-                  <Field label={t("fields.bonus.label")} hint={`${primePct} %`}>
-                    <input
-                      type="range"
-                      min={0}
-                      max={30}
-                      step={1}
-                      value={primePct}
-                      onChange={(e) => setPrimePct(Number(e.target.value))}
-                      className="cost-calculator__range"
-                      aria-valuemin={0}
-                      aria-valuemax={30}
-                      aria-valuenow={primePct}
-                    />
-                  </Field>
-                </>
-              )}
+              <Field label={t("fields.bonus.label")} hint={`${primePct} %`}>
+                <input
+                  type="range"
+                  min={0}
+                  max={30}
+                  step={1}
+                  value={primePct}
+                  onChange={(e) => setPrimePct(Number(e.target.value))}
+                  className="cost-calculator__range"
+                  aria-valuemin={0}
+                  aria-valuemax={30}
+                  aria-valuenow={primePct}
+                />
+              </Field>
 
               <Field
                 label={t("fields.productiveDays.label")}
@@ -661,7 +642,7 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
                 <span>{t("fields.yearOne.include")}</span>
               </label>
 
-              {inclureAnnee1 && (
+              {(inclureAnnee1 || inclureRoulement) && (
                 <>
                   <Field label={t("fields.recruitment.label")} hint={`${recrutementPct} %`}>
                     <input

@@ -249,9 +249,13 @@ export function computeDayRateComparison(input: DayRateComparisonInput): DayRate
     applyConsultantVolumeDiscount(consultantDayRate, billedDaysPerWeek);
   const includeHiringFriction = input.includeHiringFriction ?? true;
   const includeCoordinationOverhead = input.includeCoordinationOverhead ?? true;
+  const includeEmployeeTools = input.includeEmployeeTools ?? true;
+  const includeWorkplace = input.includeWorkplace ?? true;
+  const includeTurnover = input.includeTurnover ?? false;
+  const includeSeverance = input.includeSeverance ?? false;
 
   const baseSalary = Math.max(0, input.grossSalary);
-  // Variable pay is pensionable/insurable income: fold it into the gross used for DAS.
+  // Variable pay is pensionable/insurable income: fold it into the DAS gross.
   const bonusPct = input.isTotalEmployerCost ? 0 : Math.max(0, input.bonusPct ?? 0);
   const bonusAmount = roundMoney(baseSalary * (bonusPct / 100));
   const grossForCost = baseSalary + bonusAmount;
@@ -269,19 +273,33 @@ export function computeDayRateComparison(input: DayRateComparisonInput): DayRate
     baseEmployerCost = quebecBreakdown.totalEmployerCost;
   }
 
-  const hiringFriction = includeHiringFriction
-    ? computeHiringFriction(baseSalary, productiveDays, input)
-    : undefined;
+  // Hiring numbers are needed for the year-1 spike and/or for turnover amortization.
+  // Keep them independent: unchecking year 1 must not change cruise when turnover is on.
+  const hiringInputs =
+    includeHiringFriction || includeTurnover
+      ? computeHiringFriction(baseSalary, productiveDays, input)
+      : undefined;
+  const hiringFriction = includeHiringFriction ? hiringInputs : undefined;
 
-  const autonomyOverhead = includeCoordinationOverhead
-    ? computeAutonomyOverhead(baseEmployerCost, input)
+  // Coordination, tools and workplace are independent toggles (UI checkboxes).
+  const wantsAutonomyOverhead =
+    includeCoordinationOverhead || includeEmployeeTools || includeWorkplace;
+  const autonomyOverhead = wantsAutonomyOverhead
+    ? computeAutonomyOverhead(baseEmployerCost, {
+        ...input,
+        includeEmployeeTools,
+        includeWorkplace,
+        // Hours force to 0 when coordination is off; tools/workplace stay independent.
+        coordinationHoursPerWeek: includeCoordinationOverhead ? input.coordinationHoursPerWeek : 0,
+      })
     : undefined;
 
   const coordinationExtra = autonomyOverhead?.coordinationAnnualCost ?? 0;
   const toolsExtra = autonomyOverhead?.employeeToolsAnnualCost ?? 0;
   const workplaceExtra = autonomyOverhead?.workplaceAnnualCost ?? 0;
-  const recruitmentExtra = hiringFriction?.recruitmentCost ?? 0;
-  const onboardingLostDays = hiringFriction?.onboardingLostDays ?? 0;
+  const recruitmentCost = hiringInputs?.recruitmentCost ?? 0;
+  const onboardingLostDays = hiringInputs?.onboardingLostDays ?? 0;
+  const recruitmentYearOneExtra = includeHiringFriction ? recruitmentCost : 0;
 
   // Recurring seat cost that repeats every year regardless of tenure.
   const recurringSeatCost = roundMoney(
@@ -289,17 +307,13 @@ export function computeDayRateComparison(input: DayRateComparisonInput): DayRate
   );
 
   // Employee lifecycle: turnover amortizes hiring over tenure; severance is an expected exit cost.
-  const includeTurnover = input.includeTurnover ?? false;
-  const includeSeverance = input.includeSeverance ?? false;
   const averageTenureYears = Math.max(1, input.averageTenureYears ?? DEFAULT_AVERAGE_TENURE_YEARS);
   const severanceWeeks = Math.max(0, input.severanceWeeks ?? DEFAULT_SEVERANCE_WEEKS);
 
-  // Turnover only has hiring to amortize when hiring friction is modeled.
-  const turnoverActive = includeTurnover && includeHiringFriction;
-  const amortizedRecruitmentCost = turnoverActive
-    ? roundMoney(recruitmentExtra / averageTenureYears)
+  const amortizedRecruitmentCost = includeTurnover
+    ? roundMoney(recruitmentCost / averageTenureYears)
     : 0;
-  const amortizedRampLostDays = turnoverActive
+  const amortizedRampLostDays = includeTurnover
     ? roundDays(onboardingLostDays / averageTenureYears)
     : 0;
   const severanceAnnualCost = includeSeverance
@@ -307,7 +321,7 @@ export function computeDayRateComparison(input: DayRateComparisonInput): DayRate
     : 0;
 
   const lifecycle: EmployeeLifecycleResult | undefined =
-    turnoverActive || includeSeverance
+    includeTurnover || includeSeverance
       ? {
           averageTenureYears,
           amortizedRecruitmentCost,
@@ -322,7 +336,7 @@ export function computeDayRateComparison(input: DayRateComparisonInput): DayRate
     recurringSeatCost + amortizedRecruitmentCost + severanceAnnualCost
   );
   // Year 1 spike: seat + the full one-time recruitment (ramp-up handled as fewer days).
-  const yearOneAnnualCost = roundMoney(recurringSeatCost + recruitmentExtra);
+  const yearOneAnnualCost = roundMoney(recurringSeatCost + recruitmentYearOneExtra);
   const effectiveProductiveDays = hiringFriction?.effectiveProductiveDays ?? productiveDays;
   // Steady state loses only the amortized share of ramp days (re-hire every ~tenure years).
   const steadyProductiveDays = Math.max(1, roundDays(productiveDays - amortizedRampLostDays));
