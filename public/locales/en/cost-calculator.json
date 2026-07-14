@@ -1,25 +1,47 @@
 {
   "seoTitle": "Real day rate: full-time vs fractional mandate | Quebec",
   "seoDescription": "Compare a loaded Quebec full-time seat with a results-first fractional day rate (senior dev or PM). Distinct from part-time employment and one-off gigs.",
+  "breadcrumb": "Real day rate",
   "badge": "Fractional posture, not part-time",
   "title": "Real day rate: full-time vs fractional mandate",
   "lede": "Fractional work is still often mistaken for part-time employment or a one-off gig. Here is what it really costs once a full-time seat is loaded against my day rate.",
   "posture": {
     "title": "The real difference is the posture",
-    "paragraphs": [
-      "This is not a part-time seat, and not a one-off mandate. The agreement is structured over 3 months, 6 months, sometimes a year: we define expected outcomes together, and goals evolve with what has been delivered.",
-      "My role is not to keep the machine running day to day. It is to spot what blocks progress, clarify what slows execution, and create the conditions to move forward, including when some habits need to be questioned.",
-      "Engagement is about outcomes, not hours on site. If the context no longer allows delivery (status quo, decisions that never land), the conditions of the mandate are no longer met: I activate the exit clause."
+    "items": [
+      {
+        "title": "Not part-time, and not a one-off mandate",
+        "content": "<p>The agreement is structured over 3 months, 6 months, sometimes a year: we define expected outcomes together, and goals evolve with what has been delivered.</p>"
+      },
+      {
+        "title": "Not keeping the machine running day to day",
+        "content": "<p>My role is to spot what blocks progress, clarify what slows execution, and create the conditions to move forward, including when some habits need to be questioned.</p>"
+      },
+      {
+        "title": "Outcomes, not hours on site",
+        "content": "<p>If the context no longer allows delivery (status quo, decisions that never land), the conditions of the mandate are no longer met: I activate the exit clause.</p>"
+      }
     ]
   },
   "mandate": {
     "title": "How the mandate works",
     "lede": "In practice, here is how operations work on my side.",
     "items": [
-      "I remain responsible for my schedule. We allocate worked days to keep management simple, but I can adjust available days or withdraw days (with compensation when needed).",
-      "I cover my own tools, equipment, conferences, vacations and time off.",
-      "We frame the outcome and the technical scope together; how I execute stays mine (methods, tools, work organization).",
-      "If factors outside my control block delivery of the agreed result, despite my efforts to address them, I can end the mandate under the exit clause. Delivery conditions are a shared responsibility, not an employment contract."
+      {
+        "title": "Schedule and allocated days",
+        "content": "<p>I remain responsible for my schedule. We allocate worked days to keep management simple, but I can adjust available days or withdraw days (with compensation when needed).</p>"
+      },
+      {
+        "title": "Tools, equipment and time off",
+        "content": "<p>I cover my own tools, equipment, conferences, vacations and time off.</p>"
+      },
+      {
+        "title": "Outcome, scope and execution",
+        "content": "<p>We frame the outcome and the technical scope together; how I execute stays mine (methods, tools, work organization).</p>"
+      },
+      {
+        "title": "Exit clause",
+        "content": "<p>If factors outside my control block delivery of the agreed result, despite my efforts to address them, I can end the mandate under the exit clause. Delivery conditions are a shared responsibility, not an employment contract.</p>"
+      }
     ]
   },
   "inputs": {

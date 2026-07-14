@@ -1,25 +1,47 @@
 {
   "seoTitle": "Coût réel par jour : CDI vs mandat fractionnel | Québec",
   "seoDescription": "Comparez le coût chargé d'un CDI au Québec au TJM d'un mandat fractionnel orienté résultats (dev senior ou PM). Clairement distinct du temps partiel et du mandat ponctuel.",
+  "breadcrumb": "Coût réel / jour",
   "badge": "Posture fractionnelle, pas temps partiel",
   "title": "Coût réel par jour : CDI vs mandat fractionnel",
   "lede": "Le modèle fractionnel est encore souvent confondu avec du temps partiel ou un mandat ponctuel. Voici ce que ça coûte vraiment, une fois le CDI chargé face à mon TJM.",
   "posture": {
     "title": "La vraie différence, c'est la posture",
-    "paragraphs": [
-      "Ce n'est pas un poste à temps partiel, ni un mandat ponctuel. L'entente se structure sur 3 mois, 6 mois, parfois un an : on définit ensemble les résultats attendus, et les objectifs évoluent avec ce qui a été livré.",
-      "Mon rôle n'est pas de faire tourner la machine au quotidien. C'est d'identifier ce qui bloque, de clarifier ce qui ralentit l'exécution, et de créer les conditions pour avancer, y compris quand il faut remettre en question certaines habitudes.",
-      "L'engagement se joue sur les résultats, pas sur les heures présentes. Si le contexte ne permet plus de livrer (statu quo, décisions qui n'arrivent jamais), les conditions du mandat ne sont plus réunies : j'active la clause de sortie."
+    "items": [
+      {
+        "title": "Pas du temps partiel ni un mandat ponctuel",
+        "content": "<p>L'entente se structure sur 3 mois, 6 mois, parfois un an : on définit ensemble les résultats attendus, et les objectifs évoluent avec ce qui a été livré.</p>"
+      },
+      {
+        "title": "Pas faire tourner la machine au quotidien",
+        "content": "<p>Mon rôle, c'est d'identifier ce qui bloque, de clarifier ce qui ralentit l'exécution, et de créer les conditions pour avancer, y compris quand il faut remettre en question certaines habitudes.</p>"
+      },
+      {
+        "title": "Résultats, pas heures présentes",
+        "content": "<p>Si le contexte ne permet plus de livrer (statu quo, décisions qui n'arrivent jamais), les conditions du mandat ne sont plus réunies : j'active la clause de sortie.</p>"
+      }
     ]
   },
   "mandate": {
     "title": "Cadre du mandat",
     "lede": "Concrètement, voici comment ça fonctionne côté opérations.",
     "items": [
-      "Je reste responsable de mon horaire. On alloue des jours travaillés pour simplifier la gestion, mais je peux ajuster mes jours disponibles ou en retirer (avec compensation si besoin).",
-      "J'assume mes outils, mon matériel, mes conférences, mes vacances et mes congés.",
-      "On cadre ensemble le résultat et le périmètre technique ; le comment de l'exécution m'appartient (méthodes, outils, organisation du travail).",
-      "Si des facteurs hors de mon contrôle empêchent de livrer le résultat convenu, malgré mes efforts pour les traiter, je peux mettre fin au mandat selon la clause de sortie. C'est une responsabilité partagée sur les conditions de livraison, pas un contrat d'emploi."
+      {
+        "title": "Horaire et jours alloués",
+        "content": "<p>Je reste responsable de mon horaire. On alloue des jours travaillés pour simplifier la gestion, mais je peux ajuster mes jours disponibles ou en retirer (avec compensation si besoin).</p>"
+      },
+      {
+        "title": "Outils, matériel et congés",
+        "content": "<p>J'assume mes outils, mon matériel, mes conférences, mes vacances et mes congés.</p>"
+      },
+      {
+        "title": "Résultat, périmètre et exécution",
+        "content": "<p>On cadre ensemble le résultat et le périmètre technique ; le comment de l'exécution m'appartient (méthodes, outils, organisation du travail).</p>"
+      },
+      {
+        "title": "Clause de sortie",
+        "content": "<p>Si des facteurs hors de mon contrôle empêchent de livrer le résultat convenu, malgré mes efforts pour les traiter, je peux mettre fin au mandat selon la clause de sortie. C'est une responsabilité partagée sur les conditions de livraison, pas un contrat d'emploi.</p>"
+      }
     ]
   },
   "inputs": {

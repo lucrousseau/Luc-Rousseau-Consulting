@@ -23,6 +23,10 @@ interface CoutReelJourPageProps {
 
 export default function CoutReelJourPage({ role, pagePath }: CoutReelJourPageProps) {
   const { t } = useTranslation(["cost-calculator", "common"]);
+  const contactIntroTeaser = [
+    `<p class="big">${t("cost-calculator:ctaLead")}</p>`,
+    `<p>${t("cost-calculator:ctaTeaser")}</p>`,
+  ].join("");
 
   return (
     <>
@@ -36,9 +40,9 @@ export default function CoutReelJourPage({ role, pagePath }: CoutReelJourPagePro
       <Container tag="header" style={pageShellStyle}>
         <Header showNavigation showCta={false} />
       </Container>
-      <main className="page-home page-day-rate-comparison">
+      <main className="page-home page-situation page-day-rate-comparison">
         <DayRateComparison role={role} />
-        <Contact />
+        <Contact introTeaser={contactIntroTeaser} />
       </main>
       <Container tag="footer" style={pageShellStyle}>
         <Footer />
