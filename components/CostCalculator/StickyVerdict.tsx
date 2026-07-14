@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import type { TFunction } from "i18next";
 
 import type { CalculatorVerdict } from "../../commons/costCalculatorVerdict";
@@ -21,7 +22,11 @@ export function StickyVerdict({
 }: StickyVerdictProps) {
   return (
     <div className="cost-calculator__sticky">
-      <div className="cost-calculator__hero">
+      <div
+        className={classNames("cost-calculator__hero", {
+          "cost-calculator__hero--over": !verdict.consultantWinsAnnual,
+        })}
+      >
         <div className="cost-calculator__hero-kicker">{t("results.verdict.kicker")}</div>
         <p className="cost-calculator__hero-headline">
           {t(verdict.headlineKey, { days: billedDaysPerWeek })}
