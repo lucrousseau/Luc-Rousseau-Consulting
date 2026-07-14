@@ -8,6 +8,7 @@ import {
   BASE_CONSULTANT_DAY_RATE,
   DEFAULT_CALCULATOR_ROLE,
   WORKPLACE_ANNUAL_COST,
+  calculatorRoleToSlug,
   getCalculatorRolePreset,
   getWorkplaceMode,
   parseBilledDaysQueryParam,
@@ -75,6 +76,7 @@ function buildInitialSessionState(
 
   return {
     v: COST_CALCULATOR_SESSION_VERSION,
+    roleSlug: calculatorRoleToSlug(role),
     salaire: saved?.salaire ?? deepLink.salary ?? rolePreset.defaultGrossSalary,
     joursSemaine: saved?.joursSemaine ?? deepLink.billedDays ?? rolePreset.defaultBilledDaysPerWeek,
     masseSalariale: saved?.masseSalariale ?? rolePreset.defaultCompanyPayroll,
