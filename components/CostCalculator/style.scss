@@ -433,30 +433,35 @@
   background: linear-gradient(135deg, #131e61 0%, #243552 55%, #2f4a42 100%);
   color: rgb(255 255 255 / 92%);
   box-shadow: 0 10px 28px rgb(19 30 97 / 22%);
+}
 
-  // Mandate annual cost exceeds CDI: brand coral cue, not a third product mode.
-  &--over {
-    background: linear-gradient(135deg, #3f241c 0%, #7a382c 48%, #ee6f57 100%);
-    box-shadow: 0 10px 28px rgb(126 52 40 / 28%);
+// Flattened (not nested) so the over-budget cue always ships in the CSS bundle.
+.cost-calculator__hero--over {
+  background: linear-gradient(
+    135deg,
+    #4a1410 0%,
+    #a02e24 42%,
+    var(--secondary-accent-color, #ee6f57) 100%
+  );
+  box-shadow: 0 10px 28px rgb(160 46 36 / 32%);
+}
 
-    .cost-calculator__hero-ratio-value {
-      color: rgb(255 224 210);
-    }
+.cost-calculator__hero--over .cost-calculator__hero-ratio-value {
+  color: rgb(255 214 200);
+}
 
-    .cost-calculator__hero-ratio-hint {
-      color: rgb(255 255 255 / 72%);
-    }
+.cost-calculator__hero--over .cost-calculator__hero-ratio-hint {
+  color: rgb(255 255 255 / 78%);
+}
 
-    .cost-calculator__hero-proof-detail {
-      border-top-color: rgb(255 255 255 / 22%);
-      color: rgb(255 255 255 / 70%);
-    }
+.cost-calculator__hero--over .cost-calculator__hero-proof-detail {
+  border-top-color: rgb(255 255 255 / 22%);
+  color: rgb(255 255 255 / 74%);
+}
 
-    .cost-calculator__hero-proof-share {
-      font-weight: 700;
-      color: #fff;
-    }
-  }
+.cost-calculator__hero--over .cost-calculator__hero-proof-share {
+  font-weight: 700;
+  color: #fff;
 }
 
 .cost-calculator__hero-kicker {

@@ -74,6 +74,8 @@ function buildInitialSessionState(
   const deepLink = readDeepLinkSeed(query);
   const saved = loadCostCalculatorSession(role);
 
+  // Session wins on reload (same tab). Deep-link seeds only when no session yet
+  // (new tab / first visit), so shared URLs still work.
   return {
     v: COST_CALCULATOR_SESSION_VERSION,
     roleSlug: calculatorRoleToSlug(role),

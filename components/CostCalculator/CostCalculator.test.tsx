@@ -155,6 +155,9 @@ describe("CostCalculator", () => {
     fireEvent.click(screen.getByRole("button", { name: "3" }));
     unmount();
 
+    // Stale URL query must not wipe the session draft on remount/reload.
+    mockRouterQuery.salary = "50000";
+    mockRouterQuery.jours = "1";
     render(<CostCalculator role="developer" />);
     expect(screen.getByRole("slider", { name: "fields.salary.label" })).toHaveValue("80000");
     expect(screen.getByRole("button", { name: "3", pressed: true })).toBeInTheDocument();
