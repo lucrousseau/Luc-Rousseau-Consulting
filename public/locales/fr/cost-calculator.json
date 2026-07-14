@@ -199,13 +199,13 @@
         "headline": "À {{days}} j/sem en focus : rendement comparable à 5 j CDI."
       },
       "hire": {
-        "headline": "À cette cadence, le budget annuel du mandat dépasse celui d'un CDI."
+        "headline": "À cette cadence, le TJM dépasse le coût/j CDI année 1 corrigé du rendement."
       },
       "hero": {
         "ratio": "{{days}} j ≈ {{equivalent}} j CDI",
         "ratioHint": "Rendement et valeur sur le périmètre cadré",
-        "detailLead": "{{consultant}}/an mandat vs {{employee}}/an CDI",
-        "detailShare": "{{pct}} % d'un poste CDI"
+        "detailLead": "{{consultant}}/an mandat vs {{employee}}/an CDI au rendement",
+        "detailShare": "{{pct}} % de l'équivalent CDI"
       }
     },
     "dayCost": {

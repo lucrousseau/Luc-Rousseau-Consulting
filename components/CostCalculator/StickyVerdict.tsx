@@ -20,7 +20,7 @@ export function StickyVerdict({
   consultantAnnualLabel,
   employeeAnnualLabel,
 }: StickyVerdictProps) {
-  const isOverBudget = !verdict.consultantWinsAnnual;
+  const isOverBudget = !verdict.consultantWinsOnYield;
   const shareLabel = t("results.verdict.hero.detailShare", {
     pct: verdict.engagementSharePct,
   });

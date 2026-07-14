@@ -246,9 +246,9 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
   const friction = r.hiringFriction;
   const verdict = resolveCalculatorVerdict({
     billedDaysPerWeek: joursSemaine,
-    annualSaving: r.annualSaving,
     consultantAnnualCost: r.consultantAnnualCost,
-    employeeAnnualCost: r.employeeAnnualCost,
+    effectiveConsultantDayRate: r.effectiveConsultantDayRate,
+    yearOneCostPerDay: r.yearOneCostPerDay,
   });
   const equivalentLabel = Number.isInteger(verdict.weeklyEquivalentDays)
     ? String(verdict.weeklyEquivalentDays)
@@ -263,7 +263,7 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
         billedDaysPerWeek={joursSemaine}
         equivalentLabel={equivalentLabel}
         consultantAnnualLabel={fmt0(r.consultantAnnualCost)}
-        employeeAnnualLabel={fmt0(r.employeeAnnualCost)}
+        employeeAnnualLabel={fmt0(verdict.yieldEquivalentCdiAnnual)}
       />
 
       <div className="cost-calculator__inputs">

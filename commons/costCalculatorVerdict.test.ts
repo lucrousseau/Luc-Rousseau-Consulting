@@ -1,3 +1,4 @@
+import { BILLABLE_WEEKS_PER_YEAR } from "./dayRateComparison";
 import { consultantDayValueRatio, consultantWeeklyEquivalentDays } from "./costCalculatorYield";
 import { resolveCalculatorVerdict } from "./costCalculatorVerdict";
 
@@ -16,57 +17,69 @@ describe("costCalculatorYield", () => {
 });
 
 describe("resolveCalculatorVerdict", () => {
-  const baseCosts = {
-    consultantAnnualCost: 84_600,
-    employeeAnnualCost: 146_584,
-    annualSaving: 146_584 - 84_600,
-  };
-
-  it("uses ideal tone for 1–2 d/wk when the consultant wins annually", () => {
+  it("stays ideal and prices the proof line on year-1 × yield cadence", () => {
+    // 900 ≤ 701 × 1.5 = 1_051.5; annual CDI slice = 701 × 1.5 × 47
+    const yieldEquivalentCdiAnnual = Math.round(701 * 1.5 * BILLABLE_WEEKS_PER_YEAR);
     const verdict = resolveCalculatorVerdict({
-      ...baseCosts,
-      billedDaysPerWeek: 2,
+      consultantAnnualCost: 42_300,
+      effectiveConsultantDayRate: 900,
+      yearOneCostPerDay: 701,
+      billedDaysPerWeek: 1,
     });
+    expect(verdict.consultantWinsOnYield).toBe(true);
     expect(verdict.tone).toBe("ideal");
-    expect(verdict.isFocusCeiling).toBe(false);
-    expect(verdict.headlineKey).toBe("results.verdict.ideal.headline");
-    expect(verdict.engagementSharePct).toBe(58);
-    expect(verdict.weeklyEquivalentDays).toBe(3);
+    expect(verdict.yieldEquivalentCdiAnnual).toBe(yieldEquivalentCdiAnnual);
+    expect(verdict.engagementSharePct).toBe(Math.round((42_300 / yieldEquivalentCdiAnnual) * 100));
+    expect(verdict.weeklyEquivalentDays).toBe(1.5);
   });
 
-  it("uses ceiling tone for 3 d/wk when the consultant wins annually", () => {
+  it("uses hire tone when TJM exceeds year-1 CDI day cost × yield ratio", () => {
     const verdict = resolveCalculatorVerdict({
-      consultantAnnualCost: 114_210,
-      employeeAnnualCost: 146_584,
-      annualSaving: 146_584 - 114_210,
-      billedDaysPerWeek: 3,
+      consultantAnnualCost: 56_400,
+      effectiveConsultantDayRate: 1_200,
+      yearOneCostPerDay: 701,
+      billedDaysPerWeek: 1,
     });
-    expect(verdict.tone).toBe("ceiling");
-    expect(verdict.isFocusCeiling).toBe(true);
-    expect(verdict.headlineKey).toBe("results.verdict.ceiling.headline");
-    expect(verdict.weeklyEquivalentDays).toBe(5);
-  });
-
-  it("uses hire tone when annual cost favors the employee", () => {
-    const verdict = resolveCalculatorVerdict({
-      consultantAnnualCost: 200_000,
-      employeeAnnualCost: 146_584,
-      annualSaving: 146_584 - 200_000,
-      billedDaysPerWeek: 3,
-    });
+    expect(verdict.consultantWinsOnYield).toBe(false);
     expect(verdict.tone).toBe("hire");
-    expect(verdict.consultantWinsAnnual).toBe(false);
-    expect(verdict.isFocusCeiling).toBe(false);
     expect(verdict.headlineKey).toBe("results.verdict.hire.headline");
   });
 
-  it("returns 0 engagement share when employee annual cost is 0", () => {
+  it("uses ideal tone for 1–2 d/wk when TJM beats the yield-adjusted CDI day cost", () => {
+    const verdict = resolveCalculatorVerdict({
+      consultantAnnualCost: 84_600,
+      effectiveConsultantDayRate: 900,
+      yearOneCostPerDay: 690,
+      billedDaysPerWeek: 2,
+    });
+    expect(verdict.tone).toBe("ideal");
+    expect(verdict.consultantWinsOnYield).toBe(true);
+    expect(verdict.yieldEquivalentCdiAnnual).toBe(Math.round(690 * 3 * BILLABLE_WEEKS_PER_YEAR));
+    expect(verdict.weeklyEquivalentDays).toBe(3);
+  });
+
+  it("uses ceiling tone for 3 d/wk when discounted TJM beats yield-adjusted CDI day cost", () => {
+    const verdict = resolveCalculatorVerdict({
+      consultantAnnualCost: 114_210,
+      effectiveConsultantDayRate: 810,
+      yearOneCostPerDay: 690,
+      billedDaysPerWeek: 3,
+    });
+    expect(verdict.tone).toBe("ceiling");
+    expect(verdict.consultantWinsOnYield).toBe(true);
+    expect(verdict.isFocusCeiling).toBe(true);
+    expect(verdict.yieldEquivalentCdiAnnual).toBe(Math.round(690 * 5 * BILLABLE_WEEKS_PER_YEAR));
+  });
+
+  it("returns 0 engagement share when year-1 day cost is 0", () => {
     const verdict = resolveCalculatorVerdict({
       consultantAnnualCost: 80_000,
-      employeeAnnualCost: 0,
-      annualSaving: 0,
+      effectiveConsultantDayRate: 900,
+      yearOneCostPerDay: 0,
       billedDaysPerWeek: 2,
     });
     expect(verdict.engagementSharePct).toBe(0);
+    expect(verdict.yieldEquivalentCdiAnnual).toBe(0);
+    expect(verdict.consultantWinsOnYield).toBe(false);
   });
 });
