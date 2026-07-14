@@ -23,6 +23,9 @@ export default function DayRateComparison({ role }: DayRateComparisonProps) {
   const postureParagraphs = t("cost-calculator:posture.paragraphs", {
     returnObjects: true,
   }) as string[];
+  const mandateItems = t("cost-calculator:mandate.items", {
+    returnObjects: true,
+  }) as string[];
 
   return (
     <Container className="section-day-rate-comparison" align="center" halign="center">
@@ -42,16 +45,34 @@ export default function DayRateComparison({ role }: DayRateComparisonProps) {
           {
             cols: { col: 10, xl: 11, sm: 12 },
             content: (
-              <div className="section-day-rate-comparison__posture">
-                <h2 className="section-day-rate-comparison__posture-title">
-                  {t("cost-calculator:posture.title")}
-                </h2>
-                {Array.isArray(postureParagraphs) &&
-                  postureParagraphs.map((paragraph) => (
-                    <p key={paragraph} className="section-day-rate-comparison__posture-p">
-                      {paragraph}
-                    </p>
-                  ))}
+              <div className="section-day-rate-comparison__copy">
+                <div className="section-day-rate-comparison__block">
+                  <h2 className="section-day-rate-comparison__block-title">
+                    {t("cost-calculator:posture.title")}
+                  </h2>
+                  {Array.isArray(postureParagraphs) &&
+                    postureParagraphs.map((paragraph) => (
+                      <p key={paragraph} className="section-day-rate-comparison__p">
+                        {paragraph}
+                      </p>
+                    ))}
+                </div>
+
+                <div className="section-day-rate-comparison__block">
+                  <h2 className="section-day-rate-comparison__block-title">
+                    {t("cost-calculator:mandate.title")}
+                  </h2>
+                  <p className="section-day-rate-comparison__p section-day-rate-comparison__p--lede">
+                    {t("cost-calculator:mandate.lede")}
+                  </p>
+                  {Array.isArray(mandateItems) && (
+                    <ul className="section-day-rate-comparison__list">
+                      {mandateItems.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
             ),
           },

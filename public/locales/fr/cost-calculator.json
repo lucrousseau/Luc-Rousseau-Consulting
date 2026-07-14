@@ -12,6 +12,16 @@
       "Le niveau d'engagement n'est pas le même. J'exige sur les résultats. Si le statu quo prend le dessus ou si les décisions nécessaires ne sont jamais prises, les conditions pour livrer ne sont plus là : je sors moi-même."
     ]
   },
+  "mandate": {
+    "title": "Cadre du mandat",
+    "lede": "Concrètement, voilà comment ça fonctionne côté opérations.",
+    "items": [
+      "Je reste responsable de mes horaires. On alloue des jours travaillés pour simplifier la gestion, mais l'horaire reste sous mon contrôle : je peux le modifier, ajuster mes jours disponibles ou en retirer (avec compensation si besoin).",
+      "J'assume mes outils, mon matériel informatique, mes conférences, mes vacances et mes congés.",
+      "On cadre ensemble le résultat et le périmètre technique ; le comment de l'exécution m'appartient (méthodes, outils, organisation du travail).",
+      "Si des facteurs hors de mon contrôle empêchent de livrer le résultat négocié au départ, malgré mes tentatives pour les gérer, je mets fin au mandat selon la clause de sortie. Dans les faits, c'est presque toujours moi qui termine pour cette raison. Un employé ne fait pas ça."
+    ]
+  },
   "inputs": {
     "consultant": {
       "title": "Mes tarifs (TJM)"
