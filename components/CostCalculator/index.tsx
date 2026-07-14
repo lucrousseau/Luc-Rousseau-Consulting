@@ -258,14 +258,11 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
   const consultantWinsAnnual = r.annualSaving >= 0;
   // Luc's positioning: 1-2 d/wk is the fractional sweet spot, 3 is the ceiling (+ volume discount).
   const cadenceIdeal = joursSemaine <= 2;
-
-  const verdictHeadline = consultantWinsAnnual
-    ? t(cadenceIdeal ? "results.verdict.ideal.headline" : "results.verdict.ceiling.headline", {
-        days: joursSemaine,
-        amount: fmt0(Math.abs(r.annualSaving)),
-        pct: savingPct,
-      })
-    : t("results.verdict.hire.headline");
+  const verdictKey = consultantWinsAnnual
+    ? cadenceIdeal
+      ? "results.verdict.ideal"
+      : "results.verdict.ceiling"
+    : "results.verdict.hire";
 
   return (
     <div className="cost-calculator">
@@ -277,33 +274,40 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
         >
           <div className="cost-calculator__hero-top">
             <div className="cost-calculator__hero-kicker">{t("results.verdict.kicker")}</div>
-            <p className="cost-calculator__hero-headline">{verdictHeadline}</p>
+            <p className="cost-calculator__hero-headline">
+              {t(`${verdictKey}.headline`, { days: joursSemaine })}
+            </p>
+            <p className="cost-calculator__hero-sub">{t(`${verdictKey}.sub`)}</p>
           </div>
           <div className="cost-calculator__hero-metrics">
-            <div className="cost-calculator__hero-metric">
+            <div className="cost-calculator__hero-metric cost-calculator__hero-metric--offer">
               <span className="cost-calculator__hero-metric-label">
-                {t("results.annual.employeeLabel")}
-              </span>
-              <span className="cost-calculator__hero-metric-value cost-calculator__hero-metric-value--employee">
-                {fmt0(r.employeeAnnualCost)}/an
-              </span>
-            </div>
-            <div className="cost-calculator__hero-metric">
-              <span className="cost-calculator__hero-metric-label">
-                {t("results.annual.consultantLabel", { days: joursSemaine })}
+                {t("results.verdict.hero.consultantLabel", { days: joursSemaine })}
               </span>
               <span className="cost-calculator__hero-metric-value cost-calculator__hero-metric-value--consultant">
                 {fmt0(r.consultantAnnualCost)}/an
               </span>
             </div>
+            <div className="cost-calculator__hero-metric">
+              <span className="cost-calculator__hero-metric-label">
+                {t("results.verdict.hero.employeeLabel")}
+              </span>
+              <span className="cost-calculator__hero-metric-value cost-calculator__hero-metric-value--employee">
+                {fmt0(r.employeeAnnualCost)}/an
+              </span>
+            </div>
             <div className="cost-calculator__hero-metric cost-calculator__hero-metric--diff">
               <span className="cost-calculator__hero-metric-label">
-                {t("results.annual.savingLabel")}
+                {t(
+                  consultantWinsAnnual
+                    ? "results.verdict.hero.gapLabel"
+                    : "results.verdict.hero.gapLabelHire"
+                )}
               </span>
               <span
                 className={classNames("cost-calculator__hero-metric-value", {
-                  "cost-calculator__hero-metric-value--consultant": r.annualSaving >= 0,
-                  "cost-calculator__hero-metric-value--employee": r.annualSaving < 0,
+                  "cost-calculator__hero-metric-value--consultant": consultantWinsAnnual,
+                  "cost-calculator__hero-metric-value--employee": !consultantWinsAnnual,
                 })}
               >
                 {fmt0(Math.abs(r.annualSaving))}

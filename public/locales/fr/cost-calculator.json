@@ -161,24 +161,24 @@
       "title": "Notes et limites"
     },
     "verdict": {
-      "kicker": "Le verdict",
+      "kicker": "Ce que ça donne",
       "ideal": {
-        "headline": "À {{days}} j/sem : {{amount}} d'économie par an ({{pct}}).",
-        "sub": "C'est là que le modèle donne le plus : une expertise senior orientée résultats, disponible tout de suite, sans engagement fixe."
+        "headline": "À {{days}} j/sem en mode focus : une avancée senior sur le cœur du chantier, sans embaucher un poste à 5 j/sem.",
+        "sub": "Vous engagez des jours utiles orientés résultats. L'écart de coût annuel suit ci-dessous."
       },
       "ceiling": {
-        "headline": "À {{days}} j/sem (capacité max) : encore {{amount}} d'économie par an ({{pct}}).",
-        "sub": "On approche du point où un poste à temps plein se défend. Je ne prends pas de mandats de 4 j/sem ou plus : au-delà, le fractionnel n'a plus d'avantage."
+        "headline": "À {{days}} j/sem (mon maximum) : implication et focus au plus haut, sans poste à temps plein.",
+        "sub": "Au-delà, un poste CDI se défend mieux. Je ne prends pas de mandats à 4 j/sem ou plus."
       },
       "hire": {
-        "headline": "Dans ce scénario, le coût penche vers l'employé.",
-        "sub": "À ce salaire et ce tarif, l'embauche revient moins cher sur l'année. Le fractionnel reste pertinent pour une expertise senior ciblée et orientée résultats, sans engagement."
+        "headline": "À ce salaire et cette cadence, le coût annuel penche vers un CDI.",
+        "sub": "Le fractionnel reste pertinent pour une expertise senior ciblée, pas pour remplacer un plein temps à ce niveau de coût."
       },
-      "cap": "Disponibilité : 1 à 3 j/sem (max 3). La zone idéale reste 1 à 2 j/sem. C'est le mindset orienté résultats qui fait la différence, pas le nombre d'heures.",
-      "points": {
-        "results": "Orienté résultats, pas à l'heure",
-        "speed": "Expertise senior dès la semaine 1",
-        "flex": "Sans charges ni engagement fixe"
+      "hero": {
+        "consultantLabel": "Mandat {{days}} j/sem",
+        "employeeLabel": "Poste CDI 5 j/sem",
+        "gapLabel": "Écart annuel",
+        "gapLabelHire": "Écart (CDI plus bas)"
       }
     },
     "dayCost": {

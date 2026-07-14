@@ -596,6 +596,14 @@
   color: #fff;
 }
 
+.cost-calculator__hero-sub {
+  margin: 0.45rem 0 0;
+  max-width: 42rem;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: rgb(255 255 255 / 72%);
+}
+
 .cost-calculator__hero-metrics {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -604,7 +612,7 @@
   border-top: 1px solid rgb(255 255 255 / 14%);
 
   @media screen and (min-width: $sm) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.15fr 1fr 0.95fr;
   }
 }
 
@@ -613,6 +621,10 @@
   flex-direction: column;
   gap: 0.2rem;
   min-width: 0;
+
+  &--offer .cost-calculator__hero-metric-value {
+    font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  }
 
   &--diff {
     grid-column: 1 / -1;

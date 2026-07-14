@@ -125,10 +125,25 @@ describe("CostCalculator", () => {
     expect(screen.getByText("fields.advanced.label")).toBeInTheDocument();
   });
 
-  it("leads with a compact verdict without marketing pills", () => {
+  it("leads with a results-first sticky summary, not savings-led pills", () => {
     render(<CostCalculator />);
 
     expect(screen.getByText("results.verdict.kicker")).toBeInTheDocument();
+    expect(
+      screen.getByText((_, el) =>
+        Boolean(
+          el?.textContent?.startsWith("results.verdict.ideal.headline") ||
+          el?.textContent?.startsWith("results.verdict.ceiling.headline")
+        )
+      )
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        (_, el) =>
+          el?.textContent === "results.verdict.ideal.sub" ||
+          el?.textContent === "results.verdict.ceiling.sub"
+      )
+    ).toBeInTheDocument();
     expect(screen.queryByText("results.verdict.points.results")).not.toBeInTheDocument();
     expect(screen.queryByText("results.verdict.cap")).not.toBeInTheDocument();
   });

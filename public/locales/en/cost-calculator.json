@@ -161,24 +161,24 @@
       "title": "Notes and limits"
     },
     "verdict": {
-      "kicker": "The verdict",
+      "kicker": "What you get",
       "ideal": {
-        "headline": "At {{days}} d/wk: {{amount}} saved per year ({{pct}}).",
-        "sub": "This is where the model delivers most: senior, results-oriented expertise, available right away, with no fixed commitment."
+        "headline": "At {{days}} d/wk in focus mode: senior progress on the core of the work, without hiring a 5 d/wk seat.",
+        "sub": "You commit to useful, results-oriented days. The annual cost gap is below."
       },
       "ceiling": {
-        "headline": "At {{days}} d/wk (max capacity): still {{amount}} saved per year ({{pct}}).",
-        "sub": "We are nearing the point where a full-time seat holds up. I do not take mandates of 4 d/wk or more: beyond that, fractional loses its edge."
+        "headline": "At {{days}} d/wk (my maximum): peak involvement and focus, without a full-time seat.",
+        "sub": "Beyond that, a full-time seat holds up better. I do not take mandates of 4 d/wk or more."
       },
       "hire": {
-        "headline": "In this scenario, cost leans toward the employee.",
-        "sub": "At this salary and rate, hiring is cheaper over the year. Fractional still fits for focused, results-oriented senior expertise with no commitment."
+        "headline": "At this salary and cadence, annual cost leans toward a full-time hire.",
+        "sub": "Fractional still fits for focused senior expertise, not for replacing a full-time seat at this cost level."
       },
-      "cap": "Availability: 1 to 3 d/wk (max 3). The sweet spot stays 1 to 2 d/wk. It is the results-oriented mindset that makes the difference, not the number of hours.",
-      "points": {
-        "results": "Results-oriented, not by the hour",
-        "speed": "Senior expertise from week 1",
-        "flex": "No payroll taxes or fixed commitment"
+      "hero": {
+        "consultantLabel": "Mandate {{days}} d/wk",
+        "employeeLabel": "Full-time seat 5 d/wk",
+        "gapLabel": "Annual gap",
+        "gapLabelHire": "Gap (full-time lower)"
       }
     },
     "dayCost": {
