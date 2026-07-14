@@ -53,8 +53,9 @@ describe("costCalculatorPresets", () => {
     expect(parseBilledDaysQueryParam("1")).toBe(1);
     expect(parseBilledDaysQueryParam("2")).toBe(2);
     expect(parseBilledDaysQueryParam("3")).toBe(3);
-    expect(parseBilledDaysQueryParam("3j")).toBe(3);
-    expect(parseBilledDaysQueryParam("2 j/sem")).toBe(2);
+    expect(parseBilledDaysQueryParam(" 3 ")).toBe(3);
+    expect(parseBilledDaysQueryParam("3j")).toBeNull();
+    expect(parseBilledDaysQueryParam("2 j/sem")).toBeNull();
     expect(parseBilledDaysQueryParam("0")).toBeNull();
     expect(parseBilledDaysQueryParam("4")).toBeNull();
     expect(parseBilledDaysQueryParam("nope")).toBeNull();

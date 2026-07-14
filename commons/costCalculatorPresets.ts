@@ -211,7 +211,7 @@ export type BilledDaysQueryOption = (typeof BILLED_DAYS_QUERY_OPTIONS)[number];
 
 /**
  * Reads `jours` or `days` from a Next.js query for deep links.
- * Accepts 1, 2 or 3 only (optional trailing `j`).
+ * Accepts 1, 2 or 3 only.
  */
 export function parseBilledDaysQueryParam(
   value: string | string[] | undefined | null
@@ -221,12 +221,7 @@ export function parseBilledDaysQueryParam(
     return null;
   }
 
-  const cleaned = String(raw)
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, "")
-    .replace(/j(?:ours?)?(?:\/sem(?:aine)?)?$/, "");
-  const parsed = Number(cleaned);
+  const parsed = Number(String(raw).trim());
   if (!Number.isInteger(parsed)) {
     return null;
   }
