@@ -32,54 +32,33 @@ describe("CostCalculator", () => {
     expect(screen.getByText("results.notes.title")).toBeInTheDocument();
   });
 
-  it("renders engagement day-rate tiers as a compact select", () => {
-    render(<CostCalculator />);
+  it("renders a fixed standard day rate with exception note", () => {
+    const { container } = render(<CostCalculator />);
 
-    const engagementSelect = screen.getByRole("combobox", {
-      name: "fields.engagementTier.label",
-    });
+    expect(container.querySelector(".cost-calculator__rate-value")).toHaveTextContent(/900/);
+    expect(screen.getByText("fields.dayRate.note")).toBeInTheDocument();
     expect(
-      within(engagementSelect).getByText(/fields\.engagementTier\.options\.productManager\.ongoing/)
-    ).toBeInTheDocument();
-    expect(
-      within(engagementSelect).getByText(
-        /fields\.engagementTier\.options\.productManager\.structural/
-      )
-    ).toBeInTheDocument();
-    expect(screen.queryByText("fields.engagementTier.help")).not.toBeInTheDocument();
-    expect(screen.getByText("fields.engagementTier.note")).toBeInTheDocument();
+      screen.queryByRole("combobox", { name: "fields.engagementTier.label" })
+    ).not.toBeInTheDocument();
   });
 
-  it("shows developer senior and team-lead engagement options", () => {
-    render(<CostCalculator />);
+  it("keeps the same base day rate when switching roles", () => {
+    const { container } = render(<CostCalculator />);
 
     fireEvent.change(screen.getByRole("combobox", { name: "fields.role.label" }), {
       target: { value: "developer" },
     });
 
-    const engagementSelect = screen.getByRole("combobox", {
-      name: "fields.engagementTier.label",
-    });
-    expect(
-      within(engagementSelect).getByText(/fields\.engagementTier\.options\.developer\.ongoing/)
-    ).toBeInTheDocument();
-    expect(
-      within(engagementSelect).getByText(/fields\.engagementTier\.options\.developer\.structural/)
-    ).toBeInTheDocument();
-    expect(engagementSelect).toHaveValue("ongoing");
+    expect(container.querySelector(".cost-calculator__rate-value")).toHaveTextContent(/900/);
   });
 
-  it("shows discounted day rates in the engagement select at 3 billed days", () => {
-    render(<CostCalculator />);
+  it("shows the volume-discounted day rate at 3 billed days", () => {
+    const { container } = render(<CostCalculator />);
 
     fireEvent.click(screen.getByRole("button", { name: "3" }));
 
-    const engagementSelect = screen.getByRole("combobox", {
-      name: "fields.engagementTier.label",
-    });
-    // 1 100 × 0.9 = 990 ; 900 × 0.9 = 810
-    expect(within(engagementSelect).getByText(/990/)).toBeInTheDocument();
-    expect(within(engagementSelect).getByText(/810/)).toBeInTheDocument();
+    // 900 × 0.9 = 810
+    expect(container.querySelector(".cost-calculator__rate-value")).toHaveTextContent(/810/);
   });
 
   it("renders the workplace cost modes without a manual slider", () => {

@@ -166,6 +166,30 @@
   font-size: 0.9375rem;
 }
 
+.cost-calculator__rate-block {
+  margin-bottom: var(--padding);
+}
+
+.cost-calculator__rate-line {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--heading-4-color);
+}
+
+.cost-calculator__rate-value {
+  font-family: var(--heading-3-font-family);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.cost-calculator__help {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--body-color);
+  opacity: 0.72;
+}
+
 .cost-calculator__number {
   margin-top: 0.45rem;
   font-family: var(--heading-3-font-family);

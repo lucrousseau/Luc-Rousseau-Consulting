@@ -117,29 +117,8 @@
       "hint": "{{count}} wks",
       "help": "Statutory notice (Quebec LNT): 1 to 8 weeks by tenure. Wrongful-dismissal (common law) risk can go higher. Amortized over average tenure."
     },
-    "engagementTier": {
-      "label": "Engagement type",
-      "options": {
-        "developer": {
-          "ongoing": "Dev",
-          "structural": "Team lead"
-        },
-        "productManager": {
-          "ongoing": "Standard mission (3 months+)",
-          "structural": "Short mission (3 months)"
-        }
-      },
-      "descriptions": {
-        "developer": {
-          "ongoing": "Development, base rate",
-          "structural": "Team lead / technical leadership"
-        },
-        "productManager": {
-          "ongoing": "Standard PM mandate, 3 months or more",
-          "structural": "Short PM mission, about 3 months"
-        }
-      },
-      "help": "Base $900/day (dev or standard PM mission). Team lead or short PM mission: $1,100/day. At 3 d/wk: 10% volume discount.",
+    "dayRate": {
+      "label": "Standard day rate",
       "note": "Rates shown here are my standard rates. Rescue, restructuring, or other high-risk / difficult situations are priced differently."
     },
     "billedDays": {

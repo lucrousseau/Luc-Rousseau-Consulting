@@ -1,13 +1,12 @@
 import { computeDayRateComparison } from "./dayRateComparison";
 import {
+  BASE_CONSULTANT_DAY_RATE,
   CALCULATOR_ROLES,
   CONSULTANT_RATE_TIERS,
   SHARED_EMPLOYER_DEFAULTS,
   WORKPLACE_ANNUAL_COST,
   WORKPLACE_MODE_LIST,
   getCalculatorRolePreset,
-  getConsultantRateTier,
-  getConsultantRateTiersForRole,
   getWorkplaceMode,
   type CalculatorRole,
 } from "./costCalculatorPresets";
@@ -120,25 +119,15 @@ describe("costCalculatorPresets", () => {
     expect(devResult.annualSaving).toBeGreaterThan(0);
   });
 
-  it("maps role presets to Luc's real day-rate tiers", () => {
+  it("maps role presets to the fixed base day rate", () => {
+    expect(BASE_CONSULTANT_DAY_RATE).toBe(900);
     expect(CONSULTANT_RATE_TIERS).toEqual({ ongoing: 900, structural: 1_100 });
     expect(getCalculatorRolePreset("developer").defaultConsultantDayRate).toBe(
-      CONSULTANT_RATE_TIERS.ongoing
+      BASE_CONSULTANT_DAY_RATE
     );
     expect(getCalculatorRolePreset("productManager").defaultConsultantDayRate).toBe(
-      CONSULTANT_RATE_TIERS.ongoing
+      BASE_CONSULTANT_DAY_RATE
     );
-    expect(getConsultantRateTiersForRole("developer").map((entry) => entry.tier)).toEqual([
-      "ongoing",
-      "structural",
-    ]);
-    expect(getConsultantRateTiersForRole("productManager").map((entry) => entry.tier)).toEqual([
-      "ongoing",
-      "structural",
-    ]);
-    expect(getConsultantRateTier(900)).toBe("ongoing");
-    expect(getConsultantRateTier(1_100)).toBe("structural");
-    expect(getConsultantRateTier(1_000)).toBeNull();
   });
 
   it("maps work modes to a per-seat workplace cost", () => {

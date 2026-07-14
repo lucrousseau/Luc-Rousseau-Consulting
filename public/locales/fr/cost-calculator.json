@@ -117,29 +117,8 @@
       "hint": "{{count}} sem.",
       "help": "Préavis légal LNT : 1 à 8 semaines selon l'ancienneté. Le risque de départ contesté (common law) peut aller plus haut. Amorti sur l'ancienneté moyenne."
     },
-    "engagementTier": {
-      "label": "Type d'engagement",
-      "options": {
-        "developer": {
-          "ongoing": "Dev",
-          "structural": "Team lead"
-        },
-        "productManager": {
-          "ongoing": "Mission standard (3 mois et plus)",
-          "structural": "Mission courte (3 mois)"
-        }
-      },
-      "descriptions": {
-        "developer": {
-          "ongoing": "Développement, tarif de base",
-          "structural": "Team lead / leadership technique"
-        },
-        "productManager": {
-          "ongoing": "Mandat PM standard, 3 mois et plus",
-          "structural": "Mission PM courte, environ 3 mois"
-        }
-      },
-      "help": "Base 900 $/j (dev ou mission PM standard). Team lead ou mission PM courte : 1 100 $/j. À 3 j/sem : remise volume de 10 %.",
+    "dayRate": {
+      "label": "TJM standard",
       "note": "Les tarifs affichés sont mes tarifs standard. Les missions de sauvetage, de restructuration ou toute situation à risque élevé / difficile sont évaluées autrement."
     },
     "billedDays": {

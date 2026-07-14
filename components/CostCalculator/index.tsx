@@ -4,16 +4,13 @@ import { useTranslation } from "next-i18next/pages";
 import { useRouter } from "next/router";
 
 import {
+  BASE_CONSULTANT_DAY_RATE,
   CALCULATOR_ROLES,
-  CONSULTANT_RATE_TIERS,
   WORKPLACE_ANNUAL_COST,
   WORKPLACE_MODE_LIST,
   getCalculatorRolePreset,
-  getConsultantRateTier,
-  getConsultantRateTiersForRole,
   getWorkplaceMode,
   type CalculatorRole,
-  type ConsultantRateTier,
   type WorkplaceMode,
 } from "../../commons/costCalculatorPresets";
 import {
@@ -120,7 +117,6 @@ function applyRolePreset(role: CalculatorRole) {
     heuresCoordination: preset.defaultCoordinationHoursPerWeek,
     coutOutilsEmployeur: preset.defaultEmployeeToolsAnnualCost,
     coutMilieu: WORKPLACE_ANNUAL_COST[preset.defaultWorkplaceMode],
-    tarif: preset.defaultConsultantDayRate,
     joursSemaine: preset.defaultBilledDaysPerWeek,
   };
 }
@@ -162,7 +158,6 @@ export default function CostCalculator() {
   const [ancienneteAnnees, setAncienneteAnnees] = useState(DEFAULT_AVERAGE_TENURE_YEARS);
   const [inclureFinEmploi, setInclureFinEmploi] = useState(true);
   const [semainesFinEmploi, setSemainesFinEmploi] = useState(DEFAULT_SEVERANCE_WEEKS);
-  const [tarif, setTarif] = useState(initialPreset.defaultConsultantDayRate);
   const [joursSemaine, setJoursSemaine] = useState(initialPreset.defaultBilledDaysPerWeek);
 
   const rolePreset = getCalculatorRolePreset(role);
@@ -181,7 +176,6 @@ export default function CostCalculator() {
     setHeuresCoordination(preset.heuresCoordination);
     setCoutOutilsEmployeur(preset.coutOutilsEmployeur);
     setCoutMilieu(preset.coutMilieu);
-    setTarif(preset.tarif);
     setJoursSemaine(preset.joursSemaine);
   };
 
@@ -195,7 +189,7 @@ export default function CostCalculator() {
         benefitsPct: avantagesPct,
         bonusPct: primePct,
         productiveDays: joursProductifs,
-        consultantDayRate: tarif,
+        consultantDayRate: BASE_CONSULTANT_DAY_RATE,
         billedDaysPerWeek: joursSemaine,
         includeHiringFriction: inclureAnnee1,
         recruitmentCostPct: recrutementPct,
@@ -234,7 +228,6 @@ export default function CostCalculator() {
       ancienneteAnnees,
       inclureFinEmploi,
       semainesFinEmploi,
-      tarif,
       joursSemaine,
     ]
   );
@@ -246,15 +239,11 @@ export default function CostCalculator() {
   const maxBar =
     Math.max(r.yearOneCostPerDay, r.steadyStateCostPerDay, r.effectiveConsultantDayRate) || 1;
   const savingPct = pct1(Math.abs(r.annualSavingRelative) * 100);
-  const activeTier = getConsultantRateTier(tarif);
-  const roleTiers = getConsultantRateTiersForRole(role);
-  const selectedTier =
-    activeTier && roleTiers.some((entry) => entry.tier === activeTier)
-      ? activeTier
-      : roleTiers[0]?.tier;
   const activeWorkplaceMode = getWorkplaceMode(coutMilieu);
-  const displayDayRate = (listRate: number) =>
-    applyConsultantVolumeDiscount(listRate, joursSemaine).effectiveDayRate;
+  const displayDayRate = applyConsultantVolumeDiscount(
+    BASE_CONSULTANT_DAY_RATE,
+    joursSemaine
+  ).effectiveDayRate;
 
   const consultantWinsAnnual = r.annualSaving >= 0;
   // Luc's positioning: 1-2 d/wk is the fractional sweet spot, 3 is the ceiling (+ volume discount).
@@ -331,31 +320,13 @@ export default function CostCalculator() {
           </select>
         </Field>
 
-        <Field label={t("fields.engagementTier.label")}>
-          <select
-            className="cost-calculator__select"
-            value={selectedTier}
-            aria-label={t("fields.engagementTier.label")}
-            title={
-              selectedTier
-                ? t(`fields.engagementTier.descriptions.${role}.${selectedTier}`)
-                : undefined
-            }
-            onChange={(e) => setTarif(CONSULTANT_RATE_TIERS[e.target.value as ConsultantRateTier])}
-          >
-            {roleTiers.map(({ tier, rate }) => (
-              <option
-                key={tier}
-                value={tier}
-                title={t(`fields.engagementTier.descriptions.${role}.${tier}`)}
-              >
-                {t(`fields.engagementTier.options.${role}.${tier}`)} · {fmt0(displayDayRate(rate))}
-                /j
-              </option>
-            ))}
-          </select>
-          <p className="cost-calculator__help">{t("fields.engagementTier.note")}</p>
-        </Field>
+        <div className="cost-calculator__rate-block">
+          <p className="cost-calculator__rate-line">
+            {t("fields.dayRate.label")} :{" "}
+            <span className="cost-calculator__rate-value">{fmt0(displayDayRate)}/j</span>
+          </p>
+          <p className="cost-calculator__help">{t("fields.dayRate.note")}</p>
+        </div>
 
         <Field
           label={t("fields.billedDays.label")}
