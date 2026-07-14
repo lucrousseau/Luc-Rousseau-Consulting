@@ -294,7 +294,7 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
                 {t("results.annual.employeeLabel")}
               </span>
               <span className="cost-calculator__hero-metric-value cost-calculator__hero-metric-value--employee">
-                {fmt0(r.employeeAnnualCost)}
+                {fmt0(r.employeeAnnualCost)}/an
               </span>
             </div>
             <div className="cost-calculator__hero-metric">
@@ -302,7 +302,7 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
                 {t("results.annual.consultantLabel", { days: joursSemaine })}
               </span>
               <span className="cost-calculator__hero-metric-value cost-calculator__hero-metric-value--consultant">
-                {fmt0(r.consultantAnnualCost)}
+                {fmt0(r.consultantAnnualCost)}/an
               </span>
             </div>
             <div className="cost-calculator__hero-metric cost-calculator__hero-metric--diff">
@@ -334,7 +334,7 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
               dayValue={`${fmt0(r.effectiveConsultantDayRate)}/j`}
               daySub={t("results.dayCost.consultantSub", { days: joursSemaine })}
               annualLabel={t("results.annual.consultantLabel", { days: joursSemaine })}
-              annualValue={fmt0(r.consultantAnnualCost)}
+              annualValue={`${fmt0(r.consultantAnnualCost)}/an`}
               annualSub={t("results.annual.consultantSub", {
                 vacation: CONSULTANT_VACATION_WEEKS_PER_YEAR,
                 billableWeeks: BILLABLE_WEEKS_PER_YEAR.toFixed(1).replace(
@@ -430,7 +430,7 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
                   ) : null
                 }
                 annualLabel={t("results.annual.employeeLabel")}
-                annualValue={fmt0(r.employeeAnnualCost)}
+                annualValue={`${fmt0(r.employeeAnnualCost)}/an`}
                 annualSub={t("results.annual.employeeSub")}
               />
 

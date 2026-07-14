@@ -41,6 +41,17 @@ export default function DayRateComparison({ role }: DayRateComparisonProps) {
 
       <Row
         halign="center"
+        style={homeBodyRowStyle}
+        columns={[
+          {
+            cols: { col: 10, xl: 11, sm: 12 },
+            content: <CostCalculator key={role} role={role} />,
+          },
+        ]}
+      />
+
+      <Row
+        halign="center"
         style={homeBlockRowStyle}
         columns={[
           {
@@ -82,17 +93,6 @@ export default function DayRateComparison({ role }: DayRateComparisonProps) {
                 </section>
               </div>
             ),
-          },
-        ]}
-      />
-
-      <Row
-        halign="center"
-        style={homeBodyRowStyle}
-        columns={[
-          {
-            cols: { col: 10, xl: 11, sm: 12 },
-            content: <CostCalculator key={role} role={role} />,
           },
         ]}
       />

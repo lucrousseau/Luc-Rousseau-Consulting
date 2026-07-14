@@ -50,6 +50,8 @@
 
 .cost-calculator__side {
   margin: 0;
+  min-width: 0;
+  overflow-x: clip;
 }
 
 .cost-calculator__vs {
@@ -96,6 +98,9 @@
 }
 
 .cost-calculator__side-body {
+  min-width: 0;
+  overflow-x: clip;
+
   .cost-calculator__field:last-child,
   .cost-calculator__rate-block:last-child,
   .cost-calculator__advanced:last-child {
@@ -280,7 +285,9 @@
 
 .cost-calculator__range {
   display: block;
+  box-sizing: border-box;
   width: 100%;
+  max-width: 100%;
   margin: 0;
   cursor: pointer;
   accent-color: var(--primary-accent-color);
@@ -288,7 +295,11 @@
 
 .cost-calculator__number,
 .cost-calculator__select {
+  box-sizing: border-box;
+  display: block;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: calc(var(--input-padding) * 0.55) var(--padding);
   border: var(--border-width) solid var(--input-border-color);
   border-radius: calc(var(--border-radius) * 0.35);

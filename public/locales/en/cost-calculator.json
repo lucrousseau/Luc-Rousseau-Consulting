@@ -240,7 +240,7 @@
       "employeeLabel": "Employee (5 d/wk)",
       "employeeSub": "loaded salary, tools and coordination, paid all year",
       "consultantLabel": "Consultant ({{days}} d/wk)",
-      "consultantSub": "Continuous 12-month mandate: {{vacation}} vacation weeks, ~{{billableWeeks}} billable weeks ({{holidays}} holidays pro-rated).",
+      "consultantSub": "Over 12 months: {{vacation}} vacation weeks and {{holidays}} holidays pro-rated to cadence, about {{billableWeeks}} billable weeks.",
       "savingLabel": "Difference",
       "savingConsultant": "At this cadence, the fractional mandate costs {{amount}} less per year ({{pct}}), and you only pay for useful days.",
       "savingEmployee": "At this cadence, the employee costs {{amount}} less per year ({{pct}}): if you need 5 d/wk continuously over several years, hiring makes sense."
