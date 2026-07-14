@@ -29,6 +29,7 @@ describe("CostCalculator", () => {
     Object.keys(mockRouterQuery).forEach((key) => {
       delete mockRouterQuery[key];
     });
+    window.sessionStorage.clear();
   });
   it("puts the mission role in the consultant side title", () => {
     render(<CostCalculator role="developer" />);
@@ -144,6 +145,30 @@ describe("CostCalculator", () => {
     render(<CostCalculator />);
 
     expect(screen.getByRole("button", { name: "3", pressed: true })).toBeInTheDocument();
+  });
+
+  it("restores salaire and jours from sessionStorage after remount", () => {
+    const { unmount } = render(<CostCalculator role="developer" />);
+    fireEvent.change(screen.getByRole("slider", { name: "fields.salary.label" }), {
+      target: { value: "80000" },
+    });
+    fireEvent.click(screen.getByRole("button", { name: "3" }));
+    unmount();
+
+    render(<CostCalculator role="developer" />);
+    expect(screen.getByRole("slider", { name: "fields.salary.label" })).toHaveValue("80000");
+    expect(screen.getByRole("button", { name: "3", pressed: true })).toBeInTheDocument();
+  });
+
+  it("does not leak developer session values into the product-manager calculator", () => {
+    const { unmount } = render(<CostCalculator role="developer" />);
+    fireEvent.change(screen.getByRole("slider", { name: "fields.salary.label" }), {
+      target: { value: "80000" },
+    });
+    unmount();
+
+    render(<CostCalculator role="productManager" />);
+    expect(screen.getByRole("slider", { name: "fields.salary.label" })).not.toHaveValue("80000");
   });
 
   it("leads with a results-first sticky summary, not savings-led pills", () => {
