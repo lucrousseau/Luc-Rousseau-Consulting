@@ -439,24 +439,24 @@
 .cost-calculator__hero--over {
   background: linear-gradient(
     135deg,
-    #4a1410 0%,
-    #a02e24 42%,
+    #7a3a32 0%,
+    #c45a48 45%,
     var(--secondary-accent-color, #ee6f57) 100%
   );
-  box-shadow: 0 10px 28px rgb(160 46 36 / 32%);
+  box-shadow: 0 10px 28px rgb(196 90 72 / 28%);
 }
 
 .cost-calculator__hero--over .cost-calculator__hero-ratio-value {
-  color: rgb(255 214 200);
+  color: rgb(255 232 220);
 }
 
 .cost-calculator__hero--over .cost-calculator__hero-ratio-hint {
-  color: rgb(255 255 255 / 78%);
+  color: rgb(255 255 255 / 82%);
 }
 
 .cost-calculator__hero--over .cost-calculator__hero-proof-detail {
-  border-top-color: rgb(255 255 255 / 22%);
-  color: rgb(255 255 255 / 74%);
+  border-top-color: rgb(255 255 255 / 24%);
+  color: rgb(255 255 255 / 78%);
 }
 
 .cost-calculator__hero--over .cost-calculator__hero-proof-share {
