@@ -24,23 +24,31 @@
   },
   "mandate": {
     "title": "Cadre du mandat",
-    "lede": "Concrètement, voici comment ça fonctionne côté opérations.",
+    "lede": "Le cadre est pensé pour rester un mandat de consultant indépendant, pas un emploi déguisé. Voici ce qui reste clairement de mon côté (responsabilité et matériel), et ce qu'on cadre ensemble.",
     "items": [
       {
-        "title": "Horaire et jours alloués",
-        "content": "<p>Je reste responsable de mon horaire. On alloue des jours travaillés pour simplifier la gestion, mais je peux ajuster mes jours disponibles ou en retirer (avec compensation si besoin).</p>"
+        "title": "Consultant indépendant, pas un employé",
+        "content": "<p>Je facture en mandat via ma structure, avec un TJM et un résultat convenu. Ce n'est ni un CDD, ni un poste à temps partiel, ni une relation de subordination. Le cadre vise à garder une vraie <strong>autonomie d'exécution</strong> : vous achetez une expertise et des résultats, pas un siège dans l'organigramme.</p><p>Ça réduit le risque de requalification (Revenu Québec, CNESST, normes du travail), mais ça ne remplace pas l'avis de votre comptable ou de vos RH sur votre dossier.</p>"
       },
       {
-        "title": "Outils, matériel et congés",
-        "content": "<p>J'assume mes outils, mon matériel, mes conférences, mes vacances et mes congés.</p>"
+        "title": "Ce qui reste à ma charge",
+        "content": "<p>J'assume <strong>mes outils, mon matériel, mes logiciels, mes conférences, mes vacances et mes congés</strong>. Assurance, DAS et obligations fiscales côté travailleur autonome ou société restent les miennes. Vous ne fournissez pas un poste « équipé employé » : l'infrastructure pour livrer fait partie du mandat.</p>"
       },
       {
-        "title": "Résultat, périmètre et exécution",
-        "content": "<p>On cadre ensemble le résultat et le périmètre technique ; le comment de l'exécution m'appartient (méthodes, outils, organisation du travail).</p>"
+        "title": "Horaire et organisation : mon affaire",
+        "content": "<p>Je reste responsable de mon horaire. On alloue des jours travaillés pour simplifier la gestion et le suivi des résultats, mais je peux ajuster mes jours disponibles ou en retirer (avec compensation si besoin). Pas de pointage employé, pas d'obligation d'être présent aux mêmes heures qu'une équipe interne.</p>"
       },
       {
-        "title": "Clause de sortie",
-        "content": "<p>Si des facteurs hors de mon contrôle empêchent de livrer le résultat convenu, malgré mes efforts pour les traiter, je peux mettre fin au mandat selon la clause de sortie. C'est une responsabilité partagée sur les conditions de livraison, pas un contrat d'emploi.</p>"
+        "title": "Résultat cadré, exécution à moi",
+        "content": "<p>On définit ensemble le résultat attendu et le périmètre technique. Le <strong>comment</strong> (méthodes, outils, organisation du travail, priorisation du build) m'appartient. C'est cohérent avec mon offre : débloquer, clarifier et livrer, sans devenir le rouage ops du quotidien ni un employé encadré.</p>"
+      },
+      {
+        "title": "Plusieurs clients, pas un poste captive",
+        "content": "<p>Je travaille avec un nombre limité de clients en parallèle. Cette disponibilité partagée fait partie du modèle fractionnel : vous payez les jours utiles sur votre chantier, pas une exclusivité type emploi. Si vous avez besoin de 5 j/sem en continu, l'embauche se discute plutôt qu'un mandat.</p>"
+      },
+      {
+        "title": "Clause de sortie si on ne peut plus livrer",
+        "content": "<p>Si des facteurs hors de mon contrôle empêchent de livrer le résultat convenu, malgré mes efforts pour les traiter (statu quo, décisions qui n'arrivent jamais), je peux mettre fin au mandat selon la clause de sortie. Les conditions de livraison sont une responsabilité partagée : ce n'est pas un contrat d'emploi, et personne ne feint le contraire.</p>"
       }
     ]
   },

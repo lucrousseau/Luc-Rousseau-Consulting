@@ -24,23 +24,31 @@
   },
   "mandate": {
     "title": "How the mandate works",
-    "lede": "In practice, here is how operations work on my side.",
+    "lede": "The framework is built to stay an independent consulting mandate, not disguised employment. Here is what clearly stays on my side (responsibility and materials), and what we frame together.",
     "items": [
       {
-        "title": "Schedule and allocated days",
-        "content": "<p>I remain responsible for my schedule. We allocate worked days to keep management simple, but I can adjust available days or withdraw days (with compensation when needed).</p>"
+        "title": "Independent consultant, not an employee",
+        "content": "<p>I bill through my own structure, with a day rate and an agreed outcome. This is not a fixed-term job, not a part-time seat, and not a subordinate relationship. The setup keeps real <strong>execution autonomy</strong>: you buy expertise and outcomes, not a seat on the org chart.</p><p>That lowers the risk of reclassification (Revenu Québec, CNESST, labour standards), but it does not replace advice from your accountant or HR on your specific case.</p>"
       },
       {
-        "title": "Tools, equipment and time off",
-        "content": "<p>I cover my own tools, equipment, conferences, vacations and time off.</p>"
+        "title": "What stays on my side",
+        "content": "<p>I cover <strong>my tools, equipment, software, conferences, vacations and time off</strong>. Insurance, payroll taxes and tax obligations on the independent-worker or corporation side stay mine. You are not provisioning an equipped employee seat: the infrastructure to deliver is part of the mandate.</p>"
       },
       {
-        "title": "Outcome, scope and execution",
-        "content": "<p>We frame the outcome and the technical scope together; how I execute stays mine (methods, tools, work organization).</p>"
+        "title": "Schedule and organization: my call",
+        "content": "<p>I remain responsible for my schedule. We allocate worked days to keep management and outcome tracking simple, but I can adjust available days or withdraw days (with compensation when needed). No employee time clock, and no duty to keep the same hours as an internal team.</p>"
       },
       {
-        "title": "Exit clause",
-        "content": "<p>If factors outside my control block delivery of the agreed result, despite my efforts to address them, I can end the mandate under the exit clause. Delivery conditions are a shared responsibility, not an employment contract.</p>"
+        "title": "Framed outcome, execution mine",
+        "content": "<p>We define the expected outcome and technical scope together. The <strong>how</strong> (methods, tools, work organization, build prioritization) stays mine. That matches the offer: unblock, clarify and deliver, without becoming day-to-day ops or a managed employee.</p>"
+      },
+      {
+        "title": "Several clients, not a captive seat",
+        "content": "<p>I work with a limited number of clients in parallel. Shared availability is part of the fractional model: you pay useful days on your initiative, not employment-style exclusivity. If you need 5 days/week continuously, hiring is the conversation, not this mandate.</p>"
+      },
+      {
+        "title": "Exit clause if delivery is blocked",
+        "content": "<p>If factors outside my control block delivery of the agreed result, despite my efforts to address them (status quo, decisions that never land), I can end the mandate under the exit clause. Delivery conditions are a shared responsibility: this is not an employment contract, and nobody pretends otherwise.</p>"
       }
     ]
   },
