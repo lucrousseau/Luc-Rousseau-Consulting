@@ -193,22 +193,19 @@
     "verdict": {
       "kicker": "What you get",
       "ideal": {
-        "headline": "At {{days}} d/wk in focus mode: senior progress on the core of the work, without hiring a 5 d/wk seat.",
-        "sub": "You commit to useful, results-oriented days. The annual cost gap is below."
+        "headline": "At {{days}} d/wk: targeted progress on the heart of the work."
       },
       "ceiling": {
-        "headline": "At {{days}} d/wk (my maximum): peak involvement and focus, without a full-time seat.",
-        "sub": "Beyond that, a full-time seat holds up better. I do not take mandates of 4 d/wk or more."
+        "headline": "At {{days}} d/wk in focus: yield comparable to a 5 d/wk seat."
       },
       "hire": {
-        "headline": "At this salary and cadence, annual cost leans toward a full-time hire.",
-        "sub": "Fractional still fits for focused senior expertise, not for replacing a full-time seat at this cost level."
+        "headline": "At this cadence, the annual budget leans toward a full-time hire."
       },
       "hero": {
-        "consultantLabel": "Mandate {{days}} d/wk",
-        "employeeLabel": "Full-time seat 5 d/wk",
-        "gapLabel": "Annual gap",
-        "gapLabelHire": "Gap (full-time lower)"
+        "ratio": "{{days}} d ≈ {{equivalent}} FTE days",
+        "ratioHint": "Yield and value on the framed scope",
+        "ratioHintCeiling": "3 focus days ≈ 5 diluted days, on the framed scope",
+        "detail": "{{consultant}}/yr mandate vs {{employee}}/yr FTE · {{pct}}% of a full-time seat"
       }
     },
     "dayCost": {

@@ -152,12 +152,11 @@ describe("CostCalculator", () => {
       )
     ).toBeInTheDocument();
     expect(
-      screen.getByText(
-        (_, el) =>
-          el?.textContent === "results.verdict.ideal.sub" ||
-          el?.textContent === "results.verdict.ceiling.sub"
+      screen.getByText((_, el) =>
+        Boolean(el?.textContent?.startsWith("results.verdict.hero.ratio:"))
       )
     ).toBeInTheDocument();
+    expect(screen.getByText("results.verdict.hero.ratioHint")).toBeInTheDocument();
     expect(screen.queryByText("results.verdict.points.results")).not.toBeInTheDocument();
     expect(screen.queryByText("results.verdict.cap")).not.toBeInTheDocument();
   });

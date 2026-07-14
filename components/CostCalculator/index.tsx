@@ -11,6 +11,7 @@ import {
   GROSS_SALARY_STEP,
   WORKPLACE_ANNUAL_COST,
   WORKPLACE_MODE_LIST,
+  consultantWeeklyEquivalentDays,
   getCalculatorRolePreset,
   getWorkplaceMode,
   parseGrossSalaryQueryParam,
@@ -260,12 +261,20 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
   const autonomy = r.autonomyOverhead;
   const lifecycle = r.lifecycle;
   const breakdown = r.quebecBreakdown;
-  const savingPct = pct1(Math.abs(r.annualSavingRelative) * 100);
+  const engagementSharePct =
+    r.employeeAnnualCost > 0
+      ? Math.round((r.consultantAnnualCost / r.employeeAnnualCost) * 100)
+      : 0;
+  const weeklyEquivalent = consultantWeeklyEquivalentDays(joursSemaine);
+  const equivalentLabel = Number.isInteger(weeklyEquivalent)
+    ? String(weeklyEquivalent)
+    : weeklyEquivalent.toFixed(1).replace(".", locale === "en" ? "." : ",");
   const activeWorkplaceMode = getWorkplaceMode(coutMilieu);
 
   const consultantWinsAnnual = r.annualSaving >= 0;
-  // Luc's positioning: 1-2 d/wk is the fractional sweet spot, 3 is the ceiling (+ volume discount).
+  // Luc's positioning: 1-2 d/wk is targeted progress; 3 d/wk is focus ceiling (3 ≈ 5 FTE days).
   const cadenceIdeal = joursSemaine <= 2;
+  const isFocusCeiling = consultantWinsAnnual && !cadenceIdeal;
   const verdictKey = consultantWinsAnnual
     ? cadenceIdeal
       ? "results.verdict.ideal"
@@ -278,51 +287,33 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
         <div
           className={classNames("cost-calculator__hero", {
             "cost-calculator__hero--win": consultantWinsAnnual,
+            "cost-calculator__hero--parity": isFocusCeiling,
           })}
         >
-          <div className="cost-calculator__hero-top">
-            <div className="cost-calculator__hero-kicker">{t("results.verdict.kicker")}</div>
-            <p className="cost-calculator__hero-headline">
-              {t(`${verdictKey}.headline`, { days: joursSemaine })}
-            </p>
-            <p className="cost-calculator__hero-sub">{t(`${verdictKey}.sub`)}</p>
-          </div>
-          <div className="cost-calculator__hero-metrics">
-            <div className="cost-calculator__hero-metric cost-calculator__hero-metric--offer">
-              <span className="cost-calculator__hero-metric-label">
-                {t("results.verdict.hero.consultantLabel", { days: joursSemaine })}
-              </span>
-              <span className="cost-calculator__hero-metric-value cost-calculator__hero-metric-value--consultant">
-                {fmt0(r.consultantAnnualCost)}/an
-              </span>
-            </div>
-            <div className="cost-calculator__hero-metric">
-              <span className="cost-calculator__hero-metric-label">
-                {t("results.verdict.hero.employeeLabel")}
-              </span>
-              <span className="cost-calculator__hero-metric-value cost-calculator__hero-metric-value--employee">
-                {fmt0(r.employeeAnnualCost)}/an
-              </span>
-            </div>
-            <div className="cost-calculator__hero-metric cost-calculator__hero-metric--diff">
-              <span className="cost-calculator__hero-metric-label">
-                {t(
-                  consultantWinsAnnual
-                    ? "results.verdict.hero.gapLabel"
-                    : "results.verdict.hero.gapLabelHire"
-                )}
-              </span>
-              <span
-                className={classNames("cost-calculator__hero-metric-value", {
-                  "cost-calculator__hero-metric-value--consultant": consultantWinsAnnual,
-                  "cost-calculator__hero-metric-value--employee": !consultantWinsAnnual,
-                })}
-              >
-                {fmt0(Math.abs(r.annualSaving))}
-                <span className="cost-calculator__hero-metric-pct"> ({savingPct})</span>
-              </span>
-            </div>
-          </div>
+          <div className="cost-calculator__hero-kicker">{t("results.verdict.kicker")}</div>
+          <p className="cost-calculator__hero-headline">
+            {t(`${verdictKey}.headline`, { days: joursSemaine })}
+          </p>
+          <p className="cost-calculator__hero-ratio-value">
+            {t("results.verdict.hero.ratio", {
+              days: joursSemaine,
+              equivalent: equivalentLabel,
+            })}
+          </p>
+          <p className="cost-calculator__hero-ratio-hint">
+            {t(
+              isFocusCeiling
+                ? "results.verdict.hero.ratioHintCeiling"
+                : "results.verdict.hero.ratioHint"
+            )}
+          </p>
+          <p className="cost-calculator__hero-proof-detail">
+            {t("results.verdict.hero.detail", {
+              consultant: fmt0(r.consultantAnnualCost),
+              employee: fmt0(r.employeeAnnualCost),
+              pct: engagementSharePct,
+            })}
+          </p>
         </div>
       </div>
 

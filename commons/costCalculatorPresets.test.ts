@@ -12,6 +12,8 @@ import {
   getWorkplaceMode,
   parseCalculatorRoleSlug,
   parseGrossSalaryQueryParam,
+  consultantDayValueRatio,
+  consultantWeeklyEquivalentDays,
   type CalculatorRole,
 } from "./costCalculatorPresets";
 
@@ -45,6 +47,18 @@ describe("costCalculatorPresets", () => {
     expect(parseGrossSalaryQueryParam("999999")).toBe(250_000);
     expect(parseGrossSalaryQueryParam("nope")).toBeNull();
     expect(parseGrossSalaryQueryParam(undefined)).toBeNull();
+  });
+
+  it("maps billed days to a realistic focus day-value ratio", () => {
+    expect(consultantDayValueRatio(1)).toBe(1.5);
+    expect(consultantDayValueRatio(2)).toBe(1.5);
+    expect(consultantDayValueRatio(3)).toBe(1.7);
+  });
+
+  it("maps billed days to weekly CDI-equivalent yield", () => {
+    expect(consultantWeeklyEquivalentDays(1)).toBe(1.5);
+    expect(consultantWeeklyEquivalentDays(2)).toBe(3);
+    expect(consultantWeeklyEquivalentDays(3)).toBe(5);
   });
 
   it.each<CalculatorRole>(["developer", "productManager"])(

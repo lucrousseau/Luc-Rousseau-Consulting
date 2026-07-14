@@ -575,96 +575,62 @@
   }
 }
 
-.cost-calculator__hero-top {
-  margin-bottom: 0.65rem;
-}
-
 .cost-calculator__hero-kicker {
-  margin-bottom: 0.25rem;
-  font-size: 0.625rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  margin: 0 0 0.35rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgb(255 255 255 / 62%);
+  color: rgb(255 255 255 / 72%);
 }
 
 .cost-calculator__hero-headline {
   margin: 0;
   font-family: var(--heading-2-font-family);
-  font-size: clamp(0.95rem, 2.4vw, 1.15rem);
-  line-height: 1.3;
+  font-size: clamp(0.95rem, 2.3vw, 1.1rem);
+  line-height: 1.35;
   color: #fff;
 }
 
-.cost-calculator__hero-sub {
-  margin: 0.45rem 0 0;
-  max-width: 42rem;
-  font-size: 0.8125rem;
-  line-height: 1.45;
-  color: rgb(255 255 255 / 72%);
-}
-
-.cost-calculator__hero-metrics {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.55rem 0.75rem;
-  padding-top: 0.65rem;
-  border-top: 1px solid rgb(255 255 255 / 14%);
-
-  @media screen and (min-width: $sm) {
-    grid-template-columns: 1.15fr 1fr 0.95fr;
-  }
-}
-
-.cost-calculator__hero-metric {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  min-width: 0;
-
-  &--offer .cost-calculator__hero-metric-value {
-    font-size: clamp(1.05rem, 2.5vw, 1.25rem);
-  }
-
-  &--diff {
-    grid-column: 1 / -1;
-
-    @media screen and (min-width: $sm) {
-      grid-column: auto;
-    }
-  }
-}
-
-.cost-calculator__hero-metric-label {
-  font-size: 0.625rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: rgb(255 255 255 / 58%);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.cost-calculator__hero-metric-value {
-  font-family: var(--heading-3-font-family);
-  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
-  line-height: 1.15;
+.cost-calculator__hero-ratio-value {
+  margin: 0.65rem 0 0.2rem;
+  font-family: var(--heading-2-font-family);
+  font-size: clamp(1.45rem, 3.5vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.1;
   font-variant-numeric: tabular-nums;
-  color: #fff;
-
-  &--employee {
-    color: rgb(210 218 255);
-  }
-
-  &--consultant {
-    color: #b7d0c4;
-  }
+  color: rgb(196 220 208);
 }
 
-.cost-calculator__hero-metric-pct {
+.cost-calculator__hero--parity .cost-calculator__hero-ratio-value {
+  font-size: clamp(1.6rem, 4vw, 2.05rem);
+  letter-spacing: -0.02em;
+}
+
+.cost-calculator__hero:not(.cost-calculator__hero--win) .cost-calculator__hero-ratio-value {
+  color: rgb(210 218 255);
+}
+
+.cost-calculator__hero-ratio-hint {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  color: rgb(255 255 255 / 62%);
+}
+
+.cost-calculator__hero--parity .cost-calculator__hero-ratio-hint {
   font-size: 0.8125rem;
-  opacity: 0.85;
+  font-weight: 600;
+  color: rgb(196 220 208 / 88%);
+}
+
+.cost-calculator__hero-proof-detail {
+  margin: 0.65rem 0 0;
+  padding-top: 0.55rem;
+  border-top: 1px solid rgb(255 255 255 / 14%);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: rgb(255 255 255 / 55%);
 }
 
 .cost-calculator__detail {
