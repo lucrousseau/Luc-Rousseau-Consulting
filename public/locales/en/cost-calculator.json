@@ -3,8 +3,11 @@
   "seoDescription": "Compare the real cost per productive day of a senior developer or product manager (loaded employee) with an autonomous fractional consultant. Quebec tech scenarios, 2026 payroll taxes, steady state and year 1.",
   "badge": "Senior dev or PM vs consultant",
   "title": "Real day rate: employee vs fractional mandate",
-  "lede": "Two Quebec tech profiles: senior developer or product manager. We load the salary (2026 payroll taxes), add hiring, ramp-up, internal supervision and tools, then compare with an autonomous consultant billed per useful day. More often than not, a fractional mandate costs less over the year, with senior expertise available right away. Honest numbers, not inflated ones.",
+  "lede": "Compare the fully loaded cost of a Quebec senior developer or product manager with a fractional consultant day rate. By default, only the essential levers: everything else is optional.",
   "fields": {
+    "advanced": {
+      "label": "Advanced options"
+    },
     "role": {
       "label": "Profile compared",
       "options": {
@@ -17,7 +20,7 @@
       }
     },
     "employeeCost": {
-      "title": "Employee cost: salary and payroll",
+      "title": "Payroll loads and productive days",
       "lede": "Gross salary, payroll taxes, benefits and productive days."
     },
     "salary": {
@@ -46,8 +49,8 @@
       "help": "After year 1: 260 workdays minus holidays (~10), vacation (~20), sick/personal (~6), meetings and non-productive time (~9). Initial ramp-up is modeled separately."
     },
     "yearOne": {
-      "title": "Year 1: recruitment and ramp-up",
-      "include": "Include recruitment and ramp-up (more realistic year-1 comparison)"
+      "title": "Year 1",
+      "include": "Include recruitment and ramp-up"
     },
     "recruitment": {
       "label": "Recruitment cost (one-time, year 1)",
@@ -63,9 +66,9 @@
       "help": "60%: employee is paid 100% but delivers about 60% of a productive day. Ramp-up reduces delivered days, not the salary paid."
     },
     "autonomy": {
-      "title": "Autonomy: internal load for employees",
+      "title": "Coordination, tools and workplace",
       "lede": "An employee needs supervision, alignment and HR follow-up. A senior fractional consultant is self-directed: prioritization, delivery, minimal escalation.",
-      "include": "Include internal coordination time (manager, team, HR)"
+      "include": "Include internal coordination time"
     },
     "coordination": {
       "label": "Internal coordination hours per week",
@@ -73,7 +76,7 @@
       "help": "1:1s, planning, reviews, HR follow-up. Senior employee: often 2 to 4 h/wk. Autonomous consultant: close to 0."
     },
     "tools": {
-      "includeEmployee": "Include workstation and software paid by employer",
+      "includeEmployee": "Include employer workstation and software",
       "employee": {
         "label": "Employer tools and equipment (annual)",
         "help": {
@@ -86,7 +89,7 @@
       }
     },
     "workplace": {
-      "include": "Include workplace cost (office or remote)",
+      "include": "Include workplace cost",
       "label": "Workplace cost (annual, per seat)",
       "options": {
         "office": "Office",
@@ -97,11 +100,11 @@
       "consultantHelp": "Consultant side: workspace, hardware and connection are included in the day rate ($0 for you, office or remote)."
     },
     "lifecycle": {
-      "title": "Employee lifecycle",
+      "title": "Turnover and end of employment",
       "lede": "An employee eventually leaves: you re-hire and re-train, and a departure can trigger notice pay. A consultant mandate simply ends at term, with no severance."
     },
     "turnover": {
-      "include": "Amortize recruitment over tenure (turnover)"
+      "include": "Amortize recruitment over tenure"
     },
     "tenure": {
       "label": "Average tenure",
@@ -109,17 +112,17 @@
       "help": "Average time in seat before a departure. In tech, often 2 to 4 years. Shorter tenure means recruitment and ramp-up recur more often."
     },
     "severance": {
-      "include": "Include an end-of-employment cost (notice)",
+      "include": "Include an end-of-employment cost",
       "label": "Notice / severance",
       "hint": "{{count}} wks",
       "help": "Statutory notice (Quebec LNT): 1 to 8 weeks by tenure. Wrongful-dismissal (common law) risk can go higher. Amortized over average tenure."
     },
     "engagementTier": {
-      "label": "Engagement type (day rate)",
+      "label": "Engagement type",
       "options": {
         "ongoing": "Ongoing",
         "structural": "Temporary PM",
-        "turnaround": "Stabilization / turnaround"
+        "turnaround": "Stabilization"
       },
       "descriptions": {
         "ongoing": "Dev or simple PM, long-term mandate",
@@ -129,24 +132,27 @@
       "help": "The day rate depends on the mandate: {{ongoing}}/day ongoing (dev or simple PM), {{structural}}/day for a temporary PM mission (3 or 6 months, no extension planned), {{turnaround}}/day for stabilization or turnaround."
     },
     "billedDays": {
-      "label": "Billed days per week",
+      "label": "Billed days / week",
       "hint": "{{count}} d/wk",
       "help": "I take on 3 d/wk maximum. The fractional sweet spot: 1 to 2 d/wk, where senior expertise costs the least and delivers the most. At 4 d/wk or more, hiring is more advantageous (and I do not take those mandates)."
     }
   },
   "results": {
+    "notes": {
+      "title": "Notes and limits"
+    },
     "verdict": {
       "kicker": "The verdict",
       "ideal": {
-        "headline": "At {{days}} d/wk, you are in the fractional sweet spot: {{amount}} saved per year ({{pct}}).",
+        "headline": "At {{days}} d/wk: {{amount}} saved per year ({{pct}}).",
         "sub": "This is where the model delivers most: senior, results-oriented expertise, available right away, with no fixed commitment."
       },
       "ceiling": {
-        "headline": "At {{days}} d/wk, this is my maximum capacity, and you still save {{amount}} per year ({{pct}}).",
+        "headline": "At {{days}} d/wk (max capacity): still {{amount}} saved per year ({{pct}}).",
         "sub": "We are nearing the point where a full-time seat holds up. I do not take mandates of 4 d/wk or more: beyond that, fractional loses its edge."
       },
       "hire": {
-        "headline": "In this specific scenario, cost leans toward the employee.",
+        "headline": "In this scenario, cost leans toward the employee.",
         "sub": "At this salary and rate, hiring is cheaper over the year. Fractional still fits for focused, results-oriented senior expertise with no commitment."
       },
       "cap": "Availability: 1 to 3 d/wk (max 3). The sweet spot stays 1 to 2 d/wk. It is the results-oriented mindset that makes the difference, not the number of hours.",
@@ -183,7 +189,7 @@
       }
     },
     "recurring": {
-      "title": "Recurring costs around the seat (consultant: included or $0)",
+      "title": "Recurring costs around the seat",
       "coordination": "Internal coordination (supervision)",
       "tools": "Workstation and software (employer)",
       "workplace": "Workplace (office or remote)",
@@ -211,12 +217,12 @@
       "employeeYearOne": "Employee (year 1)"
     },
     "annual": {
-      "kicker": "Annual commitment: what you really pay",
-      "employeeLabel": "Employee (5 d/wk, fixed)",
+      "kicker": "Annual commitment",
+      "employeeLabel": "Employee (5 d/wk)",
       "employeeSub": "loaded salary, tools and coordination, paid all year",
       "consultantLabel": "Consultant ({{days}} d/wk)",
       "consultantSub": "≈ {{workingWeeks}} working weeks minus {{holidays}} Quebec statutory holidays, flexible with no fixed commitment",
-      "savingLabel": "Annual difference",
+      "savingLabel": "Difference",
       "savingConsultant": "At this cadence, the fractional mandate costs {{amount}} less per year ({{pct}}), and you only pay for useful days.",
       "savingEmployee": "At this cadence, the employee costs {{amount}} less per year ({{pct}}): if you need 5 d/wk continuously over several years, hiring makes sense."
     },
