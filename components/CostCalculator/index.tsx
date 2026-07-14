@@ -55,12 +55,12 @@ interface BreakdownDetailsProps {
   children: ReactNode;
 }
 
-function BreakdownDetails({ title, children }: BreakdownDetailsProps) {
+function BreakdownSection({ title, children }: BreakdownDetailsProps) {
   return (
-    <details className="cost-calculator__details">
-      <summary className="cost-calculator__details-summary">{title}</summary>
-      <div className="cost-calculator__details-body">{children}</div>
-    </details>
+    <section className="cost-calculator__breakdown-section">
+      <h4 className="cost-calculator__breakdown-heading">{title}</h4>
+      <div className="cost-calculator__breakdown-section-body">{children}</div>
+    </section>
   );
 }
 
@@ -405,33 +405,175 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
           title={t("inputs.employee.title")}
           tone="employee"
           footer={
-            <SideTotals
-              tone="employee"
-              dayLabel={t("results.dayCost.steadyLabel")}
-              dayValue={`${fmt0(r.steadyStateCostPerDay)}/j`}
-              daySub={t("results.dayCost.steadySub", { days: joursProductifs })}
-              dayExtra={
-                friction ? (
-                  <div className="cost-calculator__side-metric-extra">
-                    <span className="cost-calculator__side-metric-label">
-                      {t("results.dayCost.yearOneLabel")}
-                    </span>
-                    <span className="cost-calculator__side-metric-value cost-calculator__side-metric-value--employee">
-                      {fmt0(r.yearOneCostPerDay)}/j
-                    </span>
-                    <span className="cost-calculator__side-metric-sub">
-                      {t("results.dayCost.yearOneSub", {
-                        days: r.effectiveProductiveDays,
-                        lost: friction.onboardingLostDays,
-                      })}
-                    </span>
-                  </div>
-                ) : null
-              }
-              annualLabel={t("results.annual.employeeLabel")}
-              annualValue={fmt0(r.employeeAnnualCost)}
-              annualSub={t("results.annual.employeeSub")}
-            />
+            <>
+              <SideTotals
+                tone="employee"
+                dayLabel={t("results.dayCost.steadyLabel")}
+                dayValue={`${fmt0(r.steadyStateCostPerDay)}/j`}
+                daySub={t("results.dayCost.steadySub", { days: joursProductifs })}
+                dayExtra={
+                  friction ? (
+                    <div className="cost-calculator__side-metric-extra">
+                      <span className="cost-calculator__side-metric-label">
+                        {t("results.dayCost.yearOneLabel")}
+                      </span>
+                      <span className="cost-calculator__side-metric-value cost-calculator__side-metric-value--employee">
+                        {fmt0(r.yearOneCostPerDay)}/j
+                      </span>
+                      <span className="cost-calculator__side-metric-sub">
+                        {t("results.dayCost.yearOneSub", {
+                          days: r.effectiveProductiveDays,
+                          lost: friction.onboardingLostDays,
+                        })}
+                      </span>
+                    </div>
+                  ) : null
+                }
+                annualLabel={t("results.annual.employeeLabel")}
+                annualValue={fmt0(r.employeeAnnualCost)}
+                annualSub={t("results.annual.employeeSub")}
+              />
+
+              <details className="cost-calculator__detail">
+                <summary className="cost-calculator__detail-summary">
+                  {t("results.detailTitle")}
+                </summary>
+                <div className="cost-calculator__detail-body">
+                  {!modeCoutTotal && breakdown && (
+                    <BreakdownSection
+                      title={t("results.breakdown.title", { year: breakdown.year })}
+                    >
+                      <ul className="cost-calculator__breakdown-list">
+                        {breakdown.mandatoryContributions.map((line) => (
+                          <li key={line.id} className="cost-calculator__breakdown-item">
+                            <span>{t(`results.breakdown.lines.${line.id}`)}</span>
+                            <span>{fmt0(line.amount)}</span>
+                          </li>
+                        ))}
+                        {r.bonusAmount > 0 && (
+                          <li className="cost-calculator__breakdown-item">
+                            <span>{t("results.breakdown.lines.bonus")}</span>
+                            <span>{fmt0(r.bonusAmount)}</span>
+                          </li>
+                        )}
+                        <li className="cost-calculator__breakdown-item">
+                          <span>{t("results.breakdown.lines.benefits")}</span>
+                          <span>{fmt0(breakdown.benefitsAmount)}</span>
+                        </li>
+                        <li className="cost-calculator__breakdown-item cost-calculator__breakdown-item--total">
+                          <span>{t("results.breakdown.loadedTotal")}</span>
+                          <span>{fmt0(r.baseEmployerCost)}</span>
+                        </li>
+                      </ul>
+                      <p className="cost-calculator__breakdown-foot">
+                        {t("results.breakdown.footnote", {
+                          fss: pct1(breakdown.fssRate * 100),
+                        })}
+                      </p>
+                    </BreakdownSection>
+                  )}
+
+                  {autonomy &&
+                    (autonomy.coordinationAnnualCost > 0 ||
+                      autonomy.employeeToolsAnnualCost > 0 ||
+                      autonomy.workplaceAnnualCost > 0) && (
+                      <BreakdownSection title={t("results.recurring.title")}>
+                        <ul className="cost-calculator__breakdown-list">
+                          {autonomy.coordinationAnnualCost > 0 && (
+                            <li className="cost-calculator__breakdown-item">
+                              <span>{t("results.recurring.coordination")}</span>
+                              <span>{fmt0(autonomy.coordinationAnnualCost)}</span>
+                            </li>
+                          )}
+                          {autonomy.employeeToolsAnnualCost > 0 && (
+                            <li className="cost-calculator__breakdown-item">
+                              <span>{t("results.recurring.tools")}</span>
+                              <span>{fmt0(autonomy.employeeToolsAnnualCost)}</span>
+                            </li>
+                          )}
+                          {autonomy.workplaceAnnualCost > 0 && (
+                            <li className="cost-calculator__breakdown-item">
+                              <span>{t("results.recurring.workplace")}</span>
+                              <span>{fmt0(autonomy.workplaceAnnualCost)}</span>
+                            </li>
+                          )}
+                          <li className="cost-calculator__breakdown-item cost-calculator__breakdown-item--consultant">
+                            <span>{t("results.recurring.consultantTools")}</span>
+                            <span>{t("results.recurring.consultantToolsIncluded")}</span>
+                          </li>
+                        </ul>
+                        {autonomy.coordinationAnnualCost > 0 && (
+                          <p className="cost-calculator__breakdown-foot">
+                            {t("results.recurring.autonomyFootnote", {
+                              hours: autonomy.coordinationHoursPerWeek,
+                              hourly: fmt0(autonomy.coordinationHourlyCost),
+                            })}
+                          </p>
+                        )}
+                      </BreakdownSection>
+                    )}
+
+                  {lifecycle &&
+                    (lifecycle.amortizedRecruitmentCost > 0 ||
+                      lifecycle.severanceAnnualCost > 0) && (
+                      <BreakdownSection title={t("results.lifecycle.title")}>
+                        <ul className="cost-calculator__breakdown-list">
+                          {lifecycle.amortizedRecruitmentCost > 0 && (
+                            <li className="cost-calculator__breakdown-item">
+                              <span>{t("results.lifecycle.turnover")}</span>
+                              <span>{fmt0(lifecycle.amortizedRecruitmentCost)}</span>
+                            </li>
+                          )}
+                          {lifecycle.severanceAnnualCost > 0 && (
+                            <li className="cost-calculator__breakdown-item">
+                              <span>{t("results.lifecycle.severance")}</span>
+                              <span>{fmt0(lifecycle.severanceAnnualCost)}</span>
+                            </li>
+                          )}
+                          <li className="cost-calculator__breakdown-item cost-calculator__breakdown-item--consultant">
+                            <span>{t("results.lifecycle.consultant")}</span>
+                            <span>{t("results.lifecycle.consultantIncluded")}</span>
+                          </li>
+                        </ul>
+                        <p className="cost-calculator__breakdown-foot">
+                          {t("results.lifecycle.footnote", {
+                            tenure: lifecycle.averageTenureYears,
+                            lostDays: lifecycle.amortizedRampLostDays,
+                          })}
+                        </p>
+                      </BreakdownSection>
+                    )}
+
+                  {friction && (
+                    <BreakdownSection title={t("results.yearOne.title")}>
+                      <ul className="cost-calculator__breakdown-list">
+                        <li className="cost-calculator__breakdown-item">
+                          <span>{t("results.yearOne.recruitment")}</span>
+                          <span>{fmt0(friction.recruitmentCost)}</span>
+                        </li>
+                      </ul>
+                      <p className="cost-calculator__breakdown-foot">
+                        {t("results.yearOne.rampNote", {
+                          months: onboardingMois,
+                          productivity: onboardingProductivite,
+                          lostDays: friction.onboardingLostDays,
+                        })}
+                      </p>
+                    </BreakdownSection>
+                  )}
+
+                  <BreakdownSection title={t("results.notes.title")}>
+                    <p className="cost-calculator__note-text">{t("results.autonomy.text")}</p>
+                    <p className="cost-calculator__note-text">
+                      {t("results.consultantConsiderations.text")}
+                    </p>
+                    <p className="cost-calculator__panel-note cost-calculator__panel-note--muted">
+                      {t("results.taxes.note")}
+                    </p>
+                  </BreakdownSection>
+                </div>
+              </details>
+            </>
           }
         >
           <Field label={t("fields.salary.label")} hint={fmt0(salaire)}>
@@ -746,136 +888,6 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
             </InputSection>
           </div>
         </CompareSide>
-      </div>
-
-      <div className="cost-calculator__panel">
-        {!modeCoutTotal && breakdown && (
-          <BreakdownDetails title={t("results.breakdown.title", { year: breakdown.year })}>
-            <ul className="cost-calculator__breakdown-list">
-              {breakdown.mandatoryContributions.map((line) => (
-                <li key={line.id} className="cost-calculator__breakdown-item">
-                  <span>{t(`results.breakdown.lines.${line.id}`)}</span>
-                  <span>{fmt0(line.amount)}</span>
-                </li>
-              ))}
-              {r.bonusAmount > 0 && (
-                <li className="cost-calculator__breakdown-item">
-                  <span>{t("results.breakdown.lines.bonus")}</span>
-                  <span>{fmt0(r.bonusAmount)}</span>
-                </li>
-              )}
-              <li className="cost-calculator__breakdown-item">
-                <span>{t("results.breakdown.lines.benefits")}</span>
-                <span>{fmt0(breakdown.benefitsAmount)}</span>
-              </li>
-              <li className="cost-calculator__breakdown-item cost-calculator__breakdown-item--total">
-                <span>{t("results.breakdown.loadedTotal")}</span>
-                <span>{fmt0(r.baseEmployerCost)}</span>
-              </li>
-            </ul>
-            <p className="cost-calculator__breakdown-foot">
-              {t("results.breakdown.footnote", {
-                fss: pct1(breakdown.fssRate * 100),
-              })}
-            </p>
-          </BreakdownDetails>
-        )}
-
-        {autonomy &&
-          (autonomy.coordinationAnnualCost > 0 ||
-            autonomy.employeeToolsAnnualCost > 0 ||
-            autonomy.workplaceAnnualCost > 0) && (
-            <BreakdownDetails title={t("results.recurring.title")}>
-              <ul className="cost-calculator__breakdown-list">
-                {autonomy.coordinationAnnualCost > 0 && (
-                  <li className="cost-calculator__breakdown-item">
-                    <span>{t("results.recurring.coordination")}</span>
-                    <span>{fmt0(autonomy.coordinationAnnualCost)}</span>
-                  </li>
-                )}
-                {autonomy.employeeToolsAnnualCost > 0 && (
-                  <li className="cost-calculator__breakdown-item">
-                    <span>{t("results.recurring.tools")}</span>
-                    <span>{fmt0(autonomy.employeeToolsAnnualCost)}</span>
-                  </li>
-                )}
-                {autonomy.workplaceAnnualCost > 0 && (
-                  <li className="cost-calculator__breakdown-item">
-                    <span>{t("results.recurring.workplace")}</span>
-                    <span>{fmt0(autonomy.workplaceAnnualCost)}</span>
-                  </li>
-                )}
-                <li className="cost-calculator__breakdown-item cost-calculator__breakdown-item--consultant">
-                  <span>{t("results.recurring.consultantTools")}</span>
-                  <span>{t("results.recurring.consultantToolsIncluded")}</span>
-                </li>
-              </ul>
-              {autonomy.coordinationAnnualCost > 0 && (
-                <p className="cost-calculator__breakdown-foot">
-                  {t("results.recurring.autonomyFootnote", {
-                    hours: autonomy.coordinationHoursPerWeek,
-                    hourly: fmt0(autonomy.coordinationHourlyCost),
-                  })}
-                </p>
-              )}
-            </BreakdownDetails>
-          )}
-
-        {lifecycle &&
-          (lifecycle.amortizedRecruitmentCost > 0 || lifecycle.severanceAnnualCost > 0) && (
-            <BreakdownDetails title={t("results.lifecycle.title")}>
-              <ul className="cost-calculator__breakdown-list">
-                {lifecycle.amortizedRecruitmentCost > 0 && (
-                  <li className="cost-calculator__breakdown-item">
-                    <span>{t("results.lifecycle.turnover")}</span>
-                    <span>{fmt0(lifecycle.amortizedRecruitmentCost)}</span>
-                  </li>
-                )}
-                {lifecycle.severanceAnnualCost > 0 && (
-                  <li className="cost-calculator__breakdown-item">
-                    <span>{t("results.lifecycle.severance")}</span>
-                    <span>{fmt0(lifecycle.severanceAnnualCost)}</span>
-                  </li>
-                )}
-                <li className="cost-calculator__breakdown-item cost-calculator__breakdown-item--consultant">
-                  <span>{t("results.lifecycle.consultant")}</span>
-                  <span>{t("results.lifecycle.consultantIncluded")}</span>
-                </li>
-              </ul>
-              <p className="cost-calculator__breakdown-foot">
-                {t("results.lifecycle.footnote", {
-                  tenure: lifecycle.averageTenureYears,
-                  lostDays: lifecycle.amortizedRampLostDays,
-                })}
-              </p>
-            </BreakdownDetails>
-          )}
-
-        {friction && (
-          <BreakdownDetails title={t("results.yearOne.title")}>
-            <ul className="cost-calculator__breakdown-list">
-              <li className="cost-calculator__breakdown-item">
-                <span>{t("results.yearOne.recruitment")}</span>
-                <span>{fmt0(friction.recruitmentCost)}</span>
-              </li>
-            </ul>
-            <p className="cost-calculator__breakdown-foot">
-              {t("results.yearOne.rampNote", {
-                months: onboardingMois,
-                productivity: onboardingProductivite,
-                lostDays: friction.onboardingLostDays,
-              })}
-            </p>
-          </BreakdownDetails>
-        )}
-
-        <BreakdownDetails title={t("results.notes.title")}>
-          <p className="cost-calculator__note-text">{t("results.autonomy.text")}</p>
-          <p className="cost-calculator__note-text">{t("results.consultantConsiderations.text")}</p>
-          <p className="cost-calculator__panel-note cost-calculator__panel-note--muted">
-            {t("results.taxes.note")}
-          </p>
-        </BreakdownDetails>
       </div>
 
       <p className="cost-calculator__disclaimer">

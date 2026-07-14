@@ -156,6 +156,7 @@
     }
   },
   "results": {
+    "detailTitle": "Détail du calcul",
     "notes": {
       "title": "Notes et limites"
     },
