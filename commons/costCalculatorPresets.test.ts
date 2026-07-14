@@ -7,6 +7,7 @@ import {
   WORKPLACE_MODE_LIST,
   getCalculatorRolePreset,
   getConsultantRateTier,
+  getConsultantRateTiersForRole,
   getWorkplaceMode,
   type CalculatorRole,
 } from "./costCalculatorPresets";
@@ -120,15 +121,23 @@ describe("costCalculatorPresets", () => {
   });
 
   it("maps role presets to Luc's real day-rate tiers", () => {
-    expect(CONSULTANT_RATE_TIERS).toEqual({ ongoing: 900, structural: 1_100, turnaround: 1_300 });
+    expect(CONSULTANT_RATE_TIERS).toEqual({ ongoing: 900, structural: 1_100 });
     expect(getCalculatorRolePreset("developer").defaultConsultantDayRate).toBe(
       CONSULTANT_RATE_TIERS.ongoing
     );
     expect(getCalculatorRolePreset("productManager").defaultConsultantDayRate).toBe(
-      CONSULTANT_RATE_TIERS.structural
+      CONSULTANT_RATE_TIERS.ongoing
     );
+    expect(getConsultantRateTiersForRole("developer").map((entry) => entry.tier)).toEqual([
+      "ongoing",
+      "structural",
+    ]);
+    expect(getConsultantRateTiersForRole("productManager").map((entry) => entry.tier)).toEqual([
+      "ongoing",
+      "structural",
+    ]);
     expect(getConsultantRateTier(900)).toBe("ongoing");
-    expect(getConsultantRateTier(1_300)).toBe("turnaround");
+    expect(getConsultantRateTier(1_100)).toBe("structural");
     expect(getConsultantRateTier(1_000)).toBeNull();
   });
 

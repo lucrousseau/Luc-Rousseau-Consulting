@@ -218,9 +218,9 @@ describe("computeDayRateComparison", () => {
     expect(result.steadyStateCostPerDay).toBe(840.64);
     expect(result.yearOneCostPerDay).toBe(1063.17);
     expect(result.effectiveProductiveDays).toBe(185.8);
-    expect(result.consultantWeeklyCost).toBe(2200);
-    expect(result.consultantAnnualCost).toBe(102_080);
-    expect(result.annualSaving).toBe(78_657.2);
+    expect(result.consultantWeeklyCost).toBe(1800);
+    expect(result.consultantAnnualCost).toBe(83_520);
+    expect(result.annualSaving).toBe(97_217.2);
     expect(result.hiringFriction?.recruitmentCost).toBe(16_800);
     expect(result.autonomyOverhead?.coordinationAnnualCost).toBe(11_982.36);
     expect(result.autonomyOverhead?.employeeToolsAnnualCost).toBe(5_500);

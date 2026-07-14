@@ -6,11 +6,11 @@ import { useRouter } from "next/router";
 import {
   CALCULATOR_ROLES,
   CONSULTANT_RATE_TIERS,
-  CONSULTANT_RATE_TIER_LIST,
   WORKPLACE_ANNUAL_COST,
   WORKPLACE_MODE_LIST,
   getCalculatorRolePreset,
   getConsultantRateTier,
+  getConsultantRateTiersForRole,
   getWorkplaceMode,
   type CalculatorRole,
   type ConsultantRateTier,
@@ -22,6 +22,7 @@ import {
   DEFAULT_AVERAGE_TENURE_YEARS,
   DEFAULT_SEVERANCE_WEEKS,
   QUEBEC_STAT_HOLIDAYS,
+  applyConsultantVolumeDiscount,
   computeDayRateComparison,
 } from "../../commons/dayRateComparison";
 
@@ -246,7 +247,14 @@ export default function CostCalculator() {
     Math.max(r.yearOneCostPerDay, r.steadyStateCostPerDay, r.effectiveConsultantDayRate) || 1;
   const savingPct = pct1(Math.abs(r.annualSavingRelative) * 100);
   const activeTier = getConsultantRateTier(tarif);
+  const roleTiers = getConsultantRateTiersForRole(role);
+  const selectedTier =
+    activeTier && roleTiers.some((entry) => entry.tier === activeTier)
+      ? activeTier
+      : roleTiers[0]?.tier;
   const activeWorkplaceMode = getWorkplaceMode(coutMilieu);
+  const displayDayRate = (listRate: number) =>
+    applyConsultantVolumeDiscount(listRate, joursSemaine).effectiveDayRate;
 
   const consultantWinsAnnual = r.annualSaving >= 0;
   // Luc's positioning: 1-2 d/wk is the fractional sweet spot, 3 is the ceiling (+ volume discount).
@@ -326,21 +334,27 @@ export default function CostCalculator() {
         <Field label={t("fields.engagementTier.label")}>
           <select
             className="cost-calculator__select"
-            value={activeTier ?? "structural"}
+            value={selectedTier}
             aria-label={t("fields.engagementTier.label")}
-            title={activeTier ? t(`fields.engagementTier.descriptions.${activeTier}`) : undefined}
+            title={
+              selectedTier
+                ? t(`fields.engagementTier.descriptions.${role}.${selectedTier}`)
+                : undefined
+            }
             onChange={(e) => setTarif(CONSULTANT_RATE_TIERS[e.target.value as ConsultantRateTier])}
           >
-            {CONSULTANT_RATE_TIER_LIST.map(({ tier, rate }) => (
+            {roleTiers.map(({ tier, rate }) => (
               <option
                 key={tier}
                 value={tier}
-                title={t(`fields.engagementTier.descriptions.${tier}`)}
+                title={t(`fields.engagementTier.descriptions.${role}.${tier}`)}
               >
-                {t(`fields.engagementTier.options.${tier}`)} · {fmt0(rate)}/j
+                {t(`fields.engagementTier.options.${role}.${tier}`)} · {fmt0(displayDayRate(rate))}
+                /j
               </option>
             ))}
           </select>
+          <p className="cost-calculator__help">{t("fields.engagementTier.note")}</p>
         </Field>
 
         <Field

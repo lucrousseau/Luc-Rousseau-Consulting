@@ -1,4 +1,4 @@
-import { render, screen, within } from "@testing-library/react";
+import { fireEvent, render, screen, within } from "@testing-library/react";
 
 import CostCalculator from "./index";
 
@@ -39,19 +39,47 @@ describe("CostCalculator", () => {
       name: "fields.engagementTier.label",
     });
     expect(
-      within(engagementSelect).getByText(/fields\.engagementTier\.options\.ongoing/)
+      within(engagementSelect).getByText(/fields\.engagementTier\.options\.productManager\.ongoing/)
     ).toBeInTheDocument();
     expect(
-      within(engagementSelect).getByText(/fields\.engagementTier\.options\.structural/)
+      within(engagementSelect).getByText(
+        /fields\.engagementTier\.options\.productManager\.structural/
+      )
     ).toBeInTheDocument();
-    expect(
-      within(engagementSelect).getByText(/fields\.engagementTier\.options\.turnaround/)
-    ).toBeInTheDocument();
-    expect(
-      screen.queryByText("fields.engagementTier.descriptions.structural")
-    ).not.toBeInTheDocument();
     expect(screen.queryByText("fields.engagementTier.help")).not.toBeInTheDocument();
-    expect(screen.queryByText("fields.dayRate.label")).not.toBeInTheDocument();
+    expect(screen.getByText("fields.engagementTier.note")).toBeInTheDocument();
+  });
+
+  it("shows developer senior and team-lead engagement options", () => {
+    render(<CostCalculator />);
+
+    fireEvent.change(screen.getByRole("combobox", { name: "fields.role.label" }), {
+      target: { value: "developer" },
+    });
+
+    const engagementSelect = screen.getByRole("combobox", {
+      name: "fields.engagementTier.label",
+    });
+    expect(
+      within(engagementSelect).getByText(/fields\.engagementTier\.options\.developer\.ongoing/)
+    ).toBeInTheDocument();
+    expect(
+      within(engagementSelect).getByText(/fields\.engagementTier\.options\.developer\.structural/)
+    ).toBeInTheDocument();
+    expect(engagementSelect).toHaveValue("ongoing");
+  });
+
+  it("shows discounted day rates in the engagement select at 3 billed days", () => {
+    render(<CostCalculator />);
+
+    fireEvent.click(screen.getByRole("button", { name: "3" }));
+
+    const engagementSelect = screen.getByRole("combobox", {
+      name: "fields.engagementTier.label",
+    });
+    // 1 100 × 0.9 = 990 ; 900 × 0.9 = 810
+    expect(within(engagementSelect).getByText(/990/)).toBeInTheDocument();
+    expect(within(engagementSelect).getByText(/810/)).toBeInTheDocument();
   });
 
   it("renders the workplace cost modes without a manual slider", () => {

@@ -120,16 +120,27 @@
     "engagementTier": {
       "label": "Engagement type",
       "options": {
-        "ongoing": "Ongoing",
-        "structural": "Temporary PM",
-        "turnaround": "Stabilization"
+        "developer": {
+          "ongoing": "Dev",
+          "structural": "Team lead"
+        },
+        "productManager": {
+          "ongoing": "Standard mission (3 months+)",
+          "structural": "Short mission (3 months)"
+        }
       },
       "descriptions": {
-        "ongoing": "Dev or simple PM, long-term mandate",
-        "structural": "Short PM mission (3 or 6 months), known upfront as temporary",
-        "turnaround": "PM in a critical situation or rescue mandate"
+        "developer": {
+          "ongoing": "Development, base rate",
+          "structural": "Team lead / technical leadership"
+        },
+        "productManager": {
+          "ongoing": "Standard PM mandate, 3 months or more",
+          "structural": "Short PM mission, about 3 months"
+        }
       },
-      "help": "The day rate depends on the mandate: {{ongoing}}/day ongoing (dev or simple PM), {{structural}}/day for a temporary PM mission (3 or 6 months, no extension planned), {{turnaround}}/day for stabilization or turnaround."
+      "help": "Base $900/day (dev or standard PM mission). Team lead or short PM mission: $1,100/day. At 3 d/wk: 10% volume discount.",
+      "note": "Rates shown here are my standard rates. Rescue, restructuring, or other high-risk / difficult situations are priced differently."
     },
     "billedDays": {
       "label": "Billed days / week",
@@ -252,6 +263,6 @@
   },
   "disclaimer": "Estimates for comparison only, based on 2026 Quebec payroll tax rates (Revenu Québec, RCGT). Ramp-up reduces productive days (salary is still paid at 100%) and recruitment is counted once, in year 1. Internal coordination is valued at the employee's loaded hourly cost. On the consultant side, we annualize a continuous 12-month mandate: {{vacation}} vacation weeks, i.e. {{workingWeeks}} working weeks, minus Quebec's {{holidays}} statutory holidays pro-rated to cadence (a holiday may not fall on a client day). At 3 d/wk, a 10% volume discount applies to the day rate. Adjust for your reality and validate with your accountant, HR team or WebRAS for a precise case.",
   "ctaLead": "You have seen the gap: at the right cadence, a fractional mandate often costs less than hiring, without the payroll taxes or the commitment.",
-  "ctaTeaser": "Tell me your context and we will frame the mandate that fits: ongoing, temporary PM or turnaround.",
+  "ctaTeaser": "Tell me your context and we will frame the mandate that fits: short or standard mission.",
   "ctaLabel": "Schedule a call"
 }

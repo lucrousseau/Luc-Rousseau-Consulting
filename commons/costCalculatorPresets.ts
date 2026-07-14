@@ -10,33 +10,44 @@ import {
 export type CalculatorRole = "developer" | "productManager";
 
 /** Consultant day-rate tiers by engagement type (Luc's real grid). */
-export type ConsultantRateTier = "ongoing" | "structural" | "turnaround";
+export type ConsultantRateTier = "ongoing" | "structural";
 
 /**
  * Day rate scales with the mandate, not just the role:
- * - ongoing: dev or simple PO/PM, long-term.
- * - structural: short temporary PM mandate (3 or 6 months), known upfront it will not extend.
- * - turnaround: stabilization / rescue PM mandate (highest stakes and urgency).
+ * - ongoing: standard engagement at 900 $/day (dev, or standard PM mission).
+ *   Default / base rate.
+ * - structural: elevated scope at 1 100 $/day (team lead, or short PM mission ~3 months).
+ * Volume discount (−10 %) applies separately when the client books 3 d/wk.
  */
 export const CONSULTANT_RATE_TIERS: Record<ConsultantRateTier, number> = {
   ongoing: 900,
   structural: 1_100,
-  turnaround: 1_300,
 };
 
-export const CONSULTANT_RATE_TIER_ORDER: ConsultantRateTier[] = [
-  "ongoing",
-  "structural",
-  "turnaround",
-];
+export const CONSULTANT_RATE_TIER_ORDER: ConsultantRateTier[] = ["ongoing", "structural"];
+
+/** Which engagement tiers Luc offers for each compared profile. */
+export const CONSULTANT_RATE_TIERS_BY_ROLE: Record<CalculatorRole, ConsultantRateTier[]> = {
+  developer: ["ongoing", "structural"],
+  productManager: ["ongoing", "structural"],
+};
 
 /** Display-ready tier list (tier id + rate) to iterate without computed member access. */
 export const CONSULTANT_RATE_TIER_LIST: ReadonlyArray<{ tier: ConsultantRateTier; rate: number }> =
-  [
-    { tier: "ongoing", rate: CONSULTANT_RATE_TIERS.ongoing },
-    { tier: "structural", rate: CONSULTANT_RATE_TIERS.structural },
-    { tier: "turnaround", rate: CONSULTANT_RATE_TIERS.turnaround },
-  ];
+  CONSULTANT_RATE_TIER_ORDER.map((tier) => ({
+    tier,
+    rate: CONSULTANT_RATE_TIERS[tier],
+  }));
+
+/** Engagement options available for a given role. */
+export function getConsultantRateTiersForRole(
+  role: CalculatorRole
+): ReadonlyArray<{ tier: ConsultantRateTier; rate: number }> {
+  return CONSULTANT_RATE_TIERS_BY_ROLE[role].map((tier) => ({
+    tier,
+    rate: CONSULTANT_RATE_TIERS[tier],
+  }));
+}
 
 /** Returns the tier whose rate exactly matches the given day rate, if any. */
 export function getConsultantRateTier(dayRate: number): ConsultantRateTier | null {
@@ -134,7 +145,7 @@ export const CALCULATOR_ROLE_PRESETS: Record<CalculatorRole, CalculatorRolePrese
     // Senior PM median base, Montreal 2026 (Levels total comp ~128k, job postings ~146k).
     defaultGrossSalary: 140_000,
     defaultCompanyPayroll: SHARED_EMPLOYER_DEFAULTS.companyPayroll,
-    defaultConsultantDayRate: CONSULTANT_RATE_TIERS.structural,
+    defaultConsultantDayRate: CONSULTANT_RATE_TIERS.ongoing,
     defaultProductiveDays: SHARED_EMPLOYER_DEFAULTS.productiveDays,
     defaultOnboardingMonths: 3,
     defaultOnboardingProductivity: 55,
