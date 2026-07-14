@@ -230,3 +230,24 @@ export function parseBilledDaysQueryParam(
     ? (parsed as BilledDaysQueryOption)
     : null;
 }
+
+export interface CalculatorDeepLinkSeed {
+  salary: number | null;
+  billedDays: BilledDaysQueryOption | null;
+}
+
+/**
+ * Parses salary + billed-days deep-link params from a search string
+ * (`?salary=80000&jours=3` or a full `asPath`).
+ */
+export function parseCalculatorDeepLinkQuery(searchOrPath: string): CalculatorDeepLinkSeed {
+  const queryIndex = searchOrPath.indexOf("?");
+  const query =
+    queryIndex >= 0 ? searchOrPath.slice(queryIndex + 1) : searchOrPath.replace(/^\?/, "");
+  const params = new URLSearchParams(query);
+
+  return {
+    salary: parseGrossSalaryQueryParam(params.get("salaire") ?? params.get("salary")),
+    billedDays: parseBilledDaysQueryParam(params.get("jours") ?? params.get("days")),
+  };
+}

@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next/pages";
+import dynamic from "next/dynamic";
 
 import { ROUTES } from "../../commons/siteRoutes";
 import {
@@ -14,7 +15,11 @@ import Container from "../../components/Layout/Container";
 import NumberedHighlightList from "../../components/NumberedHighlightList";
 import Row from "../../components/Layout/Row";
 import SectionIntro from "../../components/SectionIntro";
-import CostCalculator from "../../components/CostCalculator";
+
+const CostCalculator = dynamic(() => import("../../components/CostCalculator"), {
+  ssr: false,
+  loading: () => <div className="cost-calculator cost-calculator--boot" aria-busy="true" />,
+});
 
 interface DayRateComparisonProps {
   role: CalculatorRole;

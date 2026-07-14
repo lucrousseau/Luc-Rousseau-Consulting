@@ -13,6 +13,7 @@ import {
   getWorkplaceMode,
   parseCalculatorRoleSlug,
   parseBilledDaysQueryParam,
+  parseCalculatorDeepLinkQuery,
   parseGrossSalaryQueryParam,
   type CalculatorRole,
 } from "./costCalculatorPresets";
@@ -60,6 +61,18 @@ describe("costCalculatorPresets", () => {
     expect(parseBilledDaysQueryParam("4")).toBeNull();
     expect(parseBilledDaysQueryParam("nope")).toBeNull();
     expect(parseBilledDaysQueryParam(undefined)).toBeNull();
+  });
+
+  it("parses combined deep-link search strings", () => {
+    expect(parseCalculatorDeepLinkQuery("?salary=80000&jours=3")).toEqual({
+      salary: 80_000,
+      billedDays: 3,
+    });
+    expect(parseCalculatorDeepLinkQuery("/cout-reel-jour/dev?salaire=140000&days=2")).toEqual({
+      salary: 140_000,
+      billedDays: 2,
+    });
+    expect(parseCalculatorDeepLinkQuery("")).toEqual({ salary: null, billedDays: null });
   });
 
   it.each<CalculatorRole>(["developer", "productManager"])(

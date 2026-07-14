@@ -15,6 +15,14 @@
   --compare-consultant-color: var(--primary-accent-color);
 }
 
+// Neutral shell while deep-link query is read (avoids default→seed layout jump).
+.cost-calculator--boot {
+  min-height: 28rem;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-background-color);
+  opacity: 0.55;
+}
+
 .cost-calculator__sticky {
   position: sticky;
   top: 0;

@@ -2,6 +2,7 @@ import classNames from "classnames";
 import { useMemo, useState } from "react";
 import { useTranslation } from "next-i18next/pages";
 import { useRouter } from "next/router";
+import type { ParsedUrlQuery } from "querystring";
 
 import {
   BASE_CONSULTANT_DAY_RATE,
@@ -10,7 +11,9 @@ import {
   getCalculatorRolePreset,
   getWorkplaceMode,
   parseBilledDaysQueryParam,
+  parseCalculatorDeepLinkQuery,
   parseGrossSalaryQueryParam,
+  type CalculatorDeepLinkSeed,
   type CalculatorRole,
 } from "../../commons/costCalculatorPresets";
 import { buildDayRateComparisonInput } from "../../commons/buildDayRateComparisonInput";
@@ -37,6 +40,25 @@ function createCurrencyFormatter(locale: string) {
   });
 }
 
+function seedFromRouterQuery(query: ParsedUrlQuery): CalculatorDeepLinkSeed {
+  return {
+    salary: parseGrossSalaryQueryParam(query.salaire ?? query.salary),
+    billedDays: parseBilledDaysQueryParam(query.jours ?? query.days),
+  };
+}
+
+function readDeepLinkSeed(query: ParsedUrlQuery): CalculatorDeepLinkSeed {
+  const fromLocation =
+    typeof window !== "undefined"
+      ? parseCalculatorDeepLinkQuery(window.location.search)
+      : { salary: null, billedDays: null };
+  const fromRouter = seedFromRouterQuery(query);
+  return {
+    salary: fromLocation.salary ?? fromRouter.salary,
+    billedDays: fromLocation.billedDays ?? fromRouter.billedDays,
+  };
+}
+
 interface CostCalculatorProps {
   role?: CalculatorRole;
 }
@@ -50,12 +72,10 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
   const pct1 = (n: number) => `${n.toFixed(1).replace(".", locale === "en" ? "." : ",")} %`;
 
   const rolePreset = getCalculatorRolePreset(role);
-  const salaryFromQuery = router.isReady
-    ? parseGrossSalaryQueryParam(router.query.salaire ?? router.query.salary)
-    : null;
-  const daysFromQuery = router.isReady
-    ? parseBilledDaysQueryParam(router.query.jours ?? router.query.days)
-    : null;
+  // Client-only mount (DayRateComparison dynamic ssr:false): seed once from location / router.
+  const [deepLinkSeed] = useState(() => readDeepLinkSeed(router.query));
+  const salaryFromQuery = deepLinkSeed.salary;
+  const daysFromQuery = deepLinkSeed.billedDays;
   const [salaireOverride, setSalaireOverride] = useState<number | null>(null);
   const salaire = salaireOverride ?? salaryFromQuery ?? rolePreset.defaultGrossSalary;
   const [masseSalariale, setMasseSalariale] = useState(rolePreset.defaultCompanyPayroll);
