@@ -2,13 +2,40 @@
 
 .section-day-rate-comparison {
   .section-day-rate-comparison__lede {
-    max-width: 48ch;
+    max-width: 42rem;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .section-day-rate-comparison__posture {
+    max-width: 40rem;
+    margin: 0 auto calc(var(--padding) * 0.35);
+    text-align: left;
+  }
+
+  .section-day-rate-comparison__posture-title {
+    margin: 0 0 calc(var(--padding) * 0.65);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    color: var(--heading-2-color);
+    text-align: center;
+  }
+
+  .section-day-rate-comparison__posture-p {
+    margin: 0 0 0.85rem;
+    font-size: 0.975rem;
+    line-height: 1.55;
+    color: var(--body-color);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   .cost-calculator {
-    margin-top: calc(var(--padding) * 0.5);
+    margin-top: calc(var(--padding) * 0.35);
   }
 }
 
