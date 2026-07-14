@@ -12,6 +12,8 @@ User-agent: *
 Allow: /
 Disallow: /cvs/
 Disallow: /en/cvs/
+Disallow: /cout-reel-jour
+Disallow: /en/cout-reel-jour
 
 Sitemap: ${base}/sitemap.xml
 

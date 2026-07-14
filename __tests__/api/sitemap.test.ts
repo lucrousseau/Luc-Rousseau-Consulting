@@ -51,4 +51,14 @@ describe("sitemap API", () => {
     expect(res.body).toContain(`${base}/situations/plateforme-editoriale-produit`);
     expect(res.body).toContain(`${base}/situations/refonte-produit-par-phases`);
   });
+
+  it("omits the private day-rate calculator", () => {
+    const req = { method: "GET", headers: { host: "lucrousseau.com" } };
+    const res = createMockRes();
+
+    handler(req, res);
+
+    expect(res.body).not.toContain(`${base}/cout-reel-jour`);
+    expect(res.body).not.toContain(`${base}/en/cout-reel-jour`);
+  });
 });

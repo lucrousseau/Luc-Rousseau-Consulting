@@ -28,7 +28,10 @@ export const ROUTES = Object.freeze({
   services: "/services",
   /** Private CV hub (noindex, omitted from the sitemap). */
   cvHub: "/cvs",
-  /** Employee vs fractional day-rate comparison (interactive). */
+  /**
+   * Employee vs fractional day-rate comparison (interactive).
+   * Noindex + omitted from sitemap/robots; shareable privately.
+   */
   dayRateComparison: "/cout-reel-jour",
   /** Product Engineer CV variant. */
   cv: "/cvs/cv-engineer",

@@ -21,6 +21,7 @@ export default function CoutReelJourPage() {
         description={t("cost-calculator:seoDescription")}
         path={ROUTES.dayRateComparison}
         sameAs={[t("common:linkedin")]}
+        noindex
       />
       <Container tag="header" style={pageShellStyle}>
         <Header showNavigation showCta={false} />
