@@ -199,12 +199,11 @@
         "headline": "À {{days}} j/sem en focus : rendement comparable à 5 j CDI."
       },
       "hire": {
-        "headline": "À cette cadence, le budget annuel penche vers un CDI."
+        "headline": "À cette cadence, le budget annuel du mandat dépasse celui d'un CDI."
       },
       "hero": {
         "ratio": "{{days}} j ≈ {{equivalent}} j CDI",
         "ratioHint": "Rendement et valeur sur le périmètre cadré",
-        "ratioHintCeiling": "3 jours de focus ≈ 5 jours dilués, sur le périmètre cadré",
         "detail": "{{consultant}}/an mandat vs {{employee}}/an CDI · {{pct}} % d'un poste CDI"
       }
     },

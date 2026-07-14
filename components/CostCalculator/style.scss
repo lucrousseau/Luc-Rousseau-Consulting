@@ -422,13 +422,9 @@
 .cost-calculator__hero {
   padding: calc(var(--padding) * 0.85) var(--padding);
   border-radius: calc(var(--border-radius) * 0.65);
-  background: var(--heading-2-color);
+  background: linear-gradient(135deg, #131e61 0%, #243552 55%, #2f4a42 100%);
   color: rgb(255 255 255 / 92%);
   box-shadow: 0 10px 28px rgb(19 30 97 / 22%);
-
-  &--win {
-    background: linear-gradient(135deg, #131e61 0%, #243552 55%, #2f4a42 100%);
-  }
 }
 
 .cost-calculator__hero-kicker {
@@ -458,26 +454,11 @@
   color: rgb(196 220 208);
 }
 
-.cost-calculator__hero--parity .cost-calculator__hero-ratio-value {
-  font-size: clamp(1.6rem, 4vw, 2.05rem);
-  letter-spacing: -0.02em;
-}
-
-.cost-calculator__hero:not(.cost-calculator__hero--win) .cost-calculator__hero-ratio-value {
-  color: rgb(210 218 255);
-}
-
 .cost-calculator__hero-ratio-hint {
   margin: 0;
   font-size: 0.75rem;
   line-height: 1.35;
   color: rgb(255 255 255 / 62%);
-}
-
-.cost-calculator__hero--parity .cost-calculator__hero-ratio-hint {
-  font-size: 0.8125rem;
-  font-weight: 600;
-  color: rgb(196 220 208 / 88%);
 }
 
 .cost-calculator__hero-proof-detail {

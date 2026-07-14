@@ -147,7 +147,8 @@ describe("CostCalculator", () => {
       screen.getByText((_, el) =>
         Boolean(
           el?.textContent?.startsWith("results.verdict.ideal.headline") ||
-          el?.textContent?.startsWith("results.verdict.ceiling.headline")
+          el?.textContent?.startsWith("results.verdict.ceiling.headline") ||
+          el?.textContent?.startsWith("results.verdict.hire.headline")
         )
       )
     ).toBeInTheDocument();
@@ -156,13 +157,7 @@ describe("CostCalculator", () => {
         Boolean(el?.textContent?.startsWith("results.verdict.hero.ratio:"))
       )
     ).toBeInTheDocument();
-    expect(
-      screen.getByText(
-        (content) =>
-          content === "results.verdict.hero.ratioHint" ||
-          content === "results.verdict.hero.ratioHintCeiling"
-      )
-    ).toBeInTheDocument();
+    expect(screen.getByText("results.verdict.hero.ratioHint")).toBeInTheDocument();
     expect(screen.queryByText("results.verdict.points.results")).not.toBeInTheDocument();
     expect(screen.queryByText("results.verdict.cap")).not.toBeInTheDocument();
   });

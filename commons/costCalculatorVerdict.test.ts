@@ -30,7 +30,6 @@ describe("resolveCalculatorVerdict", () => {
     expect(verdict.tone).toBe("ideal");
     expect(verdict.isFocusCeiling).toBe(false);
     expect(verdict.headlineKey).toBe("results.verdict.ideal.headline");
-    expect(verdict.ratioHintKey).toBe("results.verdict.hero.ratioHint");
     expect(verdict.engagementSharePct).toBe(58);
     expect(verdict.weeklyEquivalentDays).toBe(3);
   });
@@ -45,7 +44,6 @@ describe("resolveCalculatorVerdict", () => {
     expect(verdict.tone).toBe("ceiling");
     expect(verdict.isFocusCeiling).toBe(true);
     expect(verdict.headlineKey).toBe("results.verdict.ceiling.headline");
-    expect(verdict.ratioHintKey).toBe("results.verdict.hero.ratioHintCeiling");
     expect(verdict.weeklyEquivalentDays).toBe(5);
   });
 

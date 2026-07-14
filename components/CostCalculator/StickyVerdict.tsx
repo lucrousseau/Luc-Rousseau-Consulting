@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import type { TFunction } from "i18next";
 
 import type { CalculatorVerdict } from "../../commons/costCalculatorVerdict";
@@ -22,12 +21,7 @@ export function StickyVerdict({
 }: StickyVerdictProps) {
   return (
     <div className="cost-calculator__sticky">
-      <div
-        className={classNames("cost-calculator__hero", {
-          "cost-calculator__hero--win": verdict.consultantWinsAnnual,
-          "cost-calculator__hero--parity": verdict.isFocusCeiling,
-        })}
-      >
+      <div className="cost-calculator__hero">
         <div className="cost-calculator__hero-kicker">{t("results.verdict.kicker")}</div>
         <p className="cost-calculator__hero-headline">
           {t(verdict.headlineKey, { days: billedDaysPerWeek })}
@@ -38,7 +32,7 @@ export function StickyVerdict({
             equivalent: equivalentLabel,
           })}
         </p>
-        <p className="cost-calculator__hero-ratio-hint">{t(verdict.ratioHintKey)}</p>
+        <p className="cost-calculator__hero-ratio-hint">{t("results.verdict.hero.ratioHint")}</p>
         <p className="cost-calculator__hero-proof-detail">
           {t("results.verdict.hero.detail", {
             consultant: consultantAnnualLabel,
