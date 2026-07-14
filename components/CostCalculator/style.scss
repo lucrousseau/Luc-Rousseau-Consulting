@@ -104,6 +104,72 @@
   }
 }
 
+.cost-calculator__side-foot {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--padding) * 0.75);
+  margin-top: calc(var(--padding) * 0.85);
+  padding-top: calc(var(--padding) * 0.75);
+  border-top: var(--border-width) solid var(--body-background-color);
+}
+
+.cost-calculator__side-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.cost-calculator__side-metric--annual {
+  padding-top: calc(var(--padding) * 0.55);
+  border-top: 1px solid rgb(0 0 0 / 6%);
+}
+
+.cost-calculator__side-metric-extra {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: calc(var(--padding) * 0.45);
+  padding-top: calc(var(--padding) * 0.45);
+  border-top: 1px dashed rgb(0 0 0 / 6%);
+}
+
+.cost-calculator__side-metric-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--body-color);
+  opacity: 0.55;
+}
+
+.cost-calculator__side-metric-value {
+  font-family: var(--heading-3-font-family, inherit);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--heading-2-color);
+}
+
+.cost-calculator__side-metric-value--consultant {
+  color: var(--compare-consultant-color);
+}
+
+.cost-calculator__side-metric-value--employee {
+  color: var(--compare-employee-color);
+}
+
+.cost-calculator__side-metric-sub {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: var(--body-color);
+  opacity: 0.65;
+}
+
+.cost-calculator__side-metric--annual .cost-calculator__side-metric-value {
+  font-size: 1.5rem;
+}
+
 .cost-calculator__advanced .cost-calculator__field {
   margin-bottom: calc(var(--padding) * 0.75);
 }

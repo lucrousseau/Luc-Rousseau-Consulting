@@ -16,6 +16,7 @@ import {
 import {
   CONSULTANT_WORKING_WEEKS_PER_YEAR,
   CONSULTANT_VACATION_WEEKS_PER_YEAR,
+  BILLABLE_WEEKS_PER_YEAR,
   DEFAULT_AVERAGE_TENURE_YEARS,
   DEFAULT_SEVERANCE_WEEKS,
   QUEBEC_STAT_HOLIDAYS,
@@ -45,30 +46,6 @@ function Field({ label, hint, children }: FieldProps) {
         {hint && <span className="cost-calculator__field-hint">{hint}</span>}
       </div>
       {children}
-    </div>
-  );
-}
-
-interface StatProps {
-  label: string;
-  value: string;
-  sub?: string;
-  tone?: "employee" | "consultant" | "neutral";
-}
-
-function Stat({ label, value, sub, tone = "neutral" }: StatProps) {
-  return (
-    <div className="cost-calculator__stat">
-      <div className="cost-calculator__stat-label">{label}</div>
-      <div
-        className={classNames("cost-calculator__stat-value", {
-          "cost-calculator__stat-value--employee": tone === "employee",
-          "cost-calculator__stat-value--consultant": tone === "consultant",
-        })}
-      >
-        {value}
-      </div>
-      {sub && <div className="cost-calculator__stat-sub">{sub}</div>}
     </div>
   );
 }
@@ -106,9 +83,10 @@ interface CompareSideProps {
   lede?: string;
   tone: "employee" | "consultant";
   children: ReactNode;
+  footer?: ReactNode;
 }
 
-function CompareSide({ title, lede, tone, children }: CompareSideProps) {
+function CompareSide({ title, lede, tone, children, footer }: CompareSideProps) {
   return (
     <section
       className={classNames("cost-calculator__side", {
@@ -121,7 +99,60 @@ function CompareSide({ title, lede, tone, children }: CompareSideProps) {
         {lede ? <p className="cost-calculator__side-lede">{lede}</p> : null}
       </header>
       <div className="cost-calculator__side-body">{children}</div>
+      {footer ? <footer className="cost-calculator__side-foot">{footer}</footer> : null}
     </section>
+  );
+}
+
+interface SideTotalsProps {
+  tone: "employee" | "consultant";
+  dayLabel: string;
+  dayValue: string;
+  daySub?: string;
+  dayExtra?: ReactNode;
+  annualLabel: string;
+  annualValue: string;
+  annualSub?: string;
+}
+
+function SideTotals({
+  tone,
+  dayLabel,
+  dayValue,
+  daySub,
+  dayExtra,
+  annualLabel,
+  annualValue,
+  annualSub,
+}: SideTotalsProps) {
+  return (
+    <>
+      <div className="cost-calculator__side-metric">
+        <span className="cost-calculator__side-metric-label">{dayLabel}</span>
+        <span
+          className={classNames("cost-calculator__side-metric-value", {
+            "cost-calculator__side-metric-value--consultant": tone === "consultant",
+            "cost-calculator__side-metric-value--employee": tone === "employee",
+          })}
+        >
+          {dayValue}
+        </span>
+        {daySub ? <span className="cost-calculator__side-metric-sub">{daySub}</span> : null}
+        {dayExtra}
+      </div>
+      <div className="cost-calculator__side-metric cost-calculator__side-metric--annual">
+        <span className="cost-calculator__side-metric-label">{annualLabel}</span>
+        <span
+          className={classNames("cost-calculator__side-metric-value", {
+            "cost-calculator__side-metric-value--consultant": tone === "consultant",
+            "cost-calculator__side-metric-value--employee": tone === "employee",
+          })}
+        >
+          {annualValue}
+        </span>
+        {annualSub ? <span className="cost-calculator__side-metric-sub">{annualSub}</span> : null}
+      </div>
+    </>
   );
 }
 
@@ -226,8 +257,6 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
   const autonomy = r.autonomyOverhead;
   const lifecycle = r.lifecycle;
   const breakdown = r.quebecBreakdown;
-  const maxBar =
-    Math.max(r.yearOneCostPerDay, r.steadyStateCostPerDay, r.effectiveConsultantDayRate) || 1;
   const savingPct = pct1(Math.abs(r.annualSavingRelative) * 100);
   const activeWorkplaceMode = getWorkplaceMode(coutMilieu);
   const displayDayRate = applyConsultantVolumeDiscount(
@@ -295,7 +324,28 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
       </div>
 
       <div className="cost-calculator__inputs">
-        <CompareSide title={t("inputs.consultant.title")} tone="consultant">
+        <CompareSide
+          title={t("inputs.consultant.title")}
+          tone="consultant"
+          footer={
+            <SideTotals
+              tone="consultant"
+              dayLabel={t("results.dayCost.consultantLabel")}
+              dayValue={`${fmt0(r.effectiveConsultantDayRate)}/j`}
+              daySub={t("results.dayCost.consultantSub", { days: joursSemaine })}
+              annualLabel={t("results.annual.consultantLabel", { days: joursSemaine })}
+              annualValue={fmt0(r.consultantAnnualCost)}
+              annualSub={t("results.annual.consultantSub", {
+                vacation: CONSULTANT_VACATION_WEEKS_PER_YEAR,
+                billableWeeks: BILLABLE_WEEKS_PER_YEAR.toFixed(1).replace(
+                  ".",
+                  locale === "en" ? "." : ","
+                ),
+                holidays: QUEBEC_STAT_HOLIDAYS,
+              })}
+            />
+          }
+        >
           <div className="cost-calculator__rate-block">
             <p className="cost-calculator__rate-line">
               {t("fields.role.label")} :{" "}
@@ -351,7 +401,39 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
           {t("inputs.vs")}
         </p>
 
-        <CompareSide title={t("inputs.employee.title")} tone="employee">
+        <CompareSide
+          title={t("inputs.employee.title")}
+          tone="employee"
+          footer={
+            <SideTotals
+              tone="employee"
+              dayLabel={t("results.dayCost.steadyLabel")}
+              dayValue={`${fmt0(r.steadyStateCostPerDay)}/j`}
+              daySub={t("results.dayCost.steadySub", { days: joursProductifs })}
+              dayExtra={
+                friction ? (
+                  <div className="cost-calculator__side-metric-extra">
+                    <span className="cost-calculator__side-metric-label">
+                      {t("results.dayCost.yearOneLabel")}
+                    </span>
+                    <span className="cost-calculator__side-metric-value cost-calculator__side-metric-value--employee">
+                      {fmt0(r.yearOneCostPerDay)}/j
+                    </span>
+                    <span className="cost-calculator__side-metric-sub">
+                      {t("results.dayCost.yearOneSub", {
+                        days: r.effectiveProductiveDays,
+                        lost: friction.onboardingLostDays,
+                      })}
+                    </span>
+                  </div>
+                ) : null
+              }
+              annualLabel={t("results.annual.employeeLabel")}
+              annualValue={fmt0(r.employeeAnnualCost)}
+              annualSub={t("results.annual.employeeSub")}
+            />
+          }
+        >
           <Field label={t("fields.salary.label")} hint={fmt0(salaire)}>
             <input
               type="range"
@@ -667,81 +749,6 @@ export default function CostCalculator({ role = DEFAULT_CALCULATOR_ROLE }: CostC
       </div>
 
       <div className="cost-calculator__panel">
-        <div className="cost-calculator__bars">
-          <p className="cost-calculator__bars-title">{t("results.bars.kicker")}</p>
-          <div className="cost-calculator__bar-row">
-            <div className="cost-calculator__bar-head">
-              <span>{t("results.bars.consultant")}</span>
-              <span className="cost-calculator__bar-value cost-calculator__bar-value--consultant">
-                {fmt0(r.effectiveConsultantDayRate)}/j
-              </span>
-            </div>
-            <div className="cost-calculator__bar-track">
-              <div
-                className="cost-calculator__bar-fill cost-calculator__bar-fill--consultant"
-                style={{ width: `${(r.effectiveConsultantDayRate / maxBar) * 100}%` }}
-              />
-            </div>
-          </div>
-          <div className="cost-calculator__bar-row">
-            <div className="cost-calculator__bar-head">
-              <span>{t("results.bars.employeeSteady")}</span>
-              <span className="cost-calculator__bar-value cost-calculator__bar-value--employee">
-                {fmt0(r.steadyStateCostPerDay)}/j
-              </span>
-            </div>
-            <div className="cost-calculator__bar-track">
-              <div
-                className="cost-calculator__bar-fill cost-calculator__bar-fill--employee"
-                style={{ width: `${(r.steadyStateCostPerDay / maxBar) * 100}%` }}
-              />
-            </div>
-          </div>
-          {friction && (
-            <div className="cost-calculator__bar-row">
-              <div className="cost-calculator__bar-head">
-                <span>{t("results.bars.employeeYearOne")}</span>
-                <span className="cost-calculator__bar-value cost-calculator__bar-value--employee">
-                  {fmt0(r.yearOneCostPerDay)}/j
-                </span>
-              </div>
-              <div className="cost-calculator__bar-track">
-                <div
-                  className="cost-calculator__bar-fill cost-calculator__bar-fill--employee cost-calculator__bar-fill--year-one"
-                  style={{ width: `${(r.yearOneCostPerDay / maxBar) * 100}%` }}
-                />
-              </div>
-            </div>
-          )}
-        </div>
-
-        <div className="cost-calculator__stats cost-calculator__stats--pair">
-          <Stat
-            label={t("results.dayCost.steadyLabel")}
-            value={`${fmt0(r.steadyStateCostPerDay)}/j`}
-            sub={t("results.dayCost.steadySub", { days: joursProductifs })}
-            tone="employee"
-          />
-          {friction ? (
-            <Stat
-              label={t("results.dayCost.yearOneLabel")}
-              value={`${fmt0(r.yearOneCostPerDay)}/j`}
-              sub={t("results.dayCost.yearOneSub", {
-                days: r.effectiveProductiveDays,
-                lost: friction.onboardingLostDays,
-              })}
-              tone="employee"
-            />
-          ) : (
-            <Stat
-              label={t("results.dayCost.consultantLabel")}
-              value={`${fmt0(r.effectiveConsultantDayRate)}/j`}
-              sub={t("results.dayCost.consultantSub", { days: joursSemaine })}
-              tone="consultant"
-            />
-          )}
-        </div>
-
         {!modeCoutTotal && breakdown && (
           <BreakdownDetails title={t("results.breakdown.title", { year: breakdown.year })}>
             <ul className="cost-calculator__breakdown-list">

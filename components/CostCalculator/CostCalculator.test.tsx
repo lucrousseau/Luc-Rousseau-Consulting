@@ -135,12 +135,18 @@ describe("CostCalculator", () => {
     expect(options.map((b) => b.textContent)).toEqual(["1", "2", "3"]);
   });
 
-  it("shows both steady-state and year-1 day cost, plus the annual commitment", () => {
+  it("shows day and annual totals in each compare side", () => {
     render(<CostCalculator />);
 
+    expect(screen.getByText("results.dayCost.consultantLabel")).toBeInTheDocument();
     expect(screen.getByText("results.dayCost.steadyLabel")).toBeInTheDocument();
     expect(screen.getByText("results.dayCost.yearOneLabel")).toBeInTheDocument();
-    expect(screen.getByText("results.annual.employeeLabel")).toBeInTheDocument();
+    expect(screen.getAllByText("results.annual.employeeLabel").length).toBeGreaterThanOrEqual(1);
+    expect(
+      screen.getAllByText((_, el) =>
+        Boolean(el?.textContent?.startsWith("results.annual.consultantLabel"))
+      ).length
+    ).toBeGreaterThanOrEqual(1);
   });
 
   it("labels the first-year recruitment cost without a ramp-up dollar line", () => {

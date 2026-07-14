@@ -239,7 +239,7 @@
       "employeeLabel": "Employé (5 j/sem)",
       "employeeSub": "salaire chargé, outils et coordination, payés toute l'année",
       "consultantLabel": "Consultant ({{days}} j/sem)",
-      "consultantSub": "Mandat continu 12 mois : {{vacation}} sem. de vacances, ~{{workingWeeks}} sem. facturables (fériés pro-ratés).",
+      "consultantSub": "Mandat continu 12 mois : {{vacation}} sem. de vacances, ~{{billableWeeks}} sem. facturables ({{holidays}} fériés pro-ratés).",
       "savingLabel": "Différence",
       "savingConsultant": "À cette cadence, le mandat fractionnel coûte {{amount}} de moins par an ({{pct}}), et vous ne payez que les jours utiles.",
       "savingEmployee": "À cette cadence, l'employé coûte {{amount}} de moins par an ({{pct}}) : si vous avez besoin de 5 j/sem en continu sur plusieurs années, l'embauche se défend."
