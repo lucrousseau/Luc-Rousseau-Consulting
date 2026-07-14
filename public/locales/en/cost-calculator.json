@@ -134,7 +134,8 @@
     "billedDays": {
       "label": "Billed days / week",
       "hint": "{{count}} d/wk",
-      "help": "I take on 3 d/wk maximum. The fractional sweet spot: 1 to 2 d/wk, where senior expertise costs the least and delivers the most. At 4 d/wk or more, hiring is more advantageous (and I do not take those mandates)."
+      "help": "I take on 3 d/wk maximum. The fractional sweet spot: 1 to 2 d/wk, where senior expertise costs the least and delivers the most. At 4 d/wk or more, hiring is more advantageous (and I do not take those mandates).",
+      "volumeDiscount": "{{pct}}% volume discount included: effective day rate {{rate}}/day."
     }
   },
   "results": {
@@ -221,7 +222,7 @@
       "employeeLabel": "Employee (5 d/wk)",
       "employeeSub": "loaded salary, tools and coordination, paid all year",
       "consultantLabel": "Consultant ({{days}} d/wk)",
-      "consultantSub": "≈ {{workingWeeks}} working weeks minus {{holidays}} Quebec statutory holidays, flexible with no fixed commitment",
+      "consultantSub": "Continuous 12-month mandate: {{vacation}} vacation weeks, ~{{workingWeeks}} billable weeks (holidays pro-rated).",
       "savingLabel": "Difference",
       "savingConsultant": "At this cadence, the fractional mandate costs {{amount}} less per year ({{pct}}), and you only pay for useful days.",
       "savingEmployee": "At this cadence, the employee costs {{amount}} less per year ({{pct}}): if you need 5 d/wk continuously over several years, hiring makes sense."
@@ -249,7 +250,7 @@
     "kicker": "What this means in practice",
     "text": "In steady state, a {{salary}} profile costs about {{employeeSteadyDay}} per productive day once loaded and amortized. A day rate of {{consultantDay}} may look higher per day, but it is senior expertise available from week 1, with no recruitment, ramp-up or supervision. Above all, the employee commits {{employeeAnnual}} per year full time, while the fractional mandate at {{billedDays}} d/wk comes to {{consultantAnnual}} per year, with no fixed cost: you pay for useful days, not the seat."
   },
-  "disclaimer": "Estimates for comparison only, based on 2026 Quebec payroll tax rates (Revenu Québec, RCGT). Ramp-up reduces productive days (salary is still paid at 100%) and recruitment is counted once, in year 1. Internal coordination is valued at the employee's loaded hourly cost, and the consultant is estimated at {{workingWeeks}} working weeks minus Quebec's {{holidays}} statutory holidays: adjust for your reality. Validate with your accountant, HR team or WebRAS for a precise case.",
+  "disclaimer": "Estimates for comparison only, based on 2026 Quebec payroll tax rates (Revenu Québec, RCGT). Ramp-up reduces productive days (salary is still paid at 100%) and recruitment is counted once, in year 1. Internal coordination is valued at the employee's loaded hourly cost. On the consultant side, we annualize a continuous 12-month mandate: {{vacation}} vacation weeks, i.e. {{workingWeeks}} working weeks, minus Quebec's {{holidays}} statutory holidays pro-rated to cadence (a holiday may not fall on a client day). At 3 d/wk, a 10% volume discount applies to the day rate. Adjust for your reality and validate with your accountant, HR team or WebRAS for a precise case.",
   "ctaLead": "You have seen the gap: at the right cadence, a fractional mandate often costs less than hiring, without the payroll taxes or the commitment.",
   "ctaTeaser": "Tell me your context and we will frame the mandate that fits: ongoing, temporary PM or turnaround.",
   "ctaLabel": "Schedule a call"

@@ -134,7 +134,8 @@
     "billedDays": {
       "label": "Jours facturés / semaine",
       "hint": "{{count}} j/sem",
-      "help": "Je prends au maximum 3 j/sem. La zone idéale du fractionnel : 1 à 2 j/sem, là où l'expertise senior coûte le moins et rapporte le plus. À 4 j/sem ou plus, l'embauche est plus avantageuse (et je ne prends pas ces mandats)."
+      "help": "Je prends au maximum 3 j/sem. La zone idéale du fractionnel : 1 à 2 j/sem, là où l'expertise senior coûte le moins et rapporte le plus. À 4 j/sem ou plus, l'embauche est plus avantageuse (et je ne prends pas ces mandats).",
+      "volumeDiscount": "Remise volume {{pct}} % incluse : TJM effectif {{rate}}/j."
     }
   },
   "results": {
@@ -221,7 +222,7 @@
       "employeeLabel": "Employé (5 j/sem)",
       "employeeSub": "salaire chargé, outils et coordination, payés toute l'année",
       "consultantLabel": "Consultant ({{days}} j/sem)",
-      "consultantSub": "≈ {{workingWeeks}} sem. de travail moins {{holidays}} fériés du Québec, flexible et sans engagement fixe",
+      "consultantSub": "Mandat continu 12 mois : {{vacation}} sem. de vacances, ~{{workingWeeks}} sem. facturables (fériés pro-ratés).",
       "savingLabel": "Différence",
       "savingConsultant": "À cette cadence, le mandat fractionnel coûte {{amount}} de moins par an ({{pct}}), et vous ne payez que les jours utiles.",
       "savingEmployee": "À cette cadence, l'employé coûte {{amount}} de moins par an ({{pct}}) : si vous avez besoin de 5 j/sem en continu sur plusieurs années, l'embauche se défend."
@@ -249,7 +250,7 @@
     "kicker": "Ce que ça veut dire concrètement",
     "text": "En régime de croisière, un profil à {{salary}} coûte environ {{employeeSteadyDay}} par jour productif une fois chargé et amorti. Un TJM de {{consultantDay}} peut sembler plus élevé par jour, mais c'est une expertise senior disponible dès la semaine 1, sans recrutement, ramp-up ni supervision. Surtout, l'employé engage {{employeeAnnual}} par an à temps plein, alors que le mandat fractionnel à {{billedDays}} j/sem revient à {{consultantAnnual}} par an, sans coût fixe : vous payez les jours utiles, pas le poste."
   },
-  "disclaimer": "Estimations à but de comparaison, basées sur les taux DAS Québec 2026 (Revenu Québec, RCGT). Le ramp-up réduit les jours productifs (le salaire reste payé à 100 %) et le recrutement est compté une seule fois, la 1re année. La coordination interne est valorisée au coût horaire chargé de l'employé et le consultant est estimé à {{workingWeeks}} semaines de travail, moins les {{holidays}} jours fériés du Québec : ajustez selon votre réalité. Validez avec votre comptable, vos RH ou WebRAS pour un dossier précis.",
+  "disclaimer": "Estimations à but de comparaison, basées sur les taux DAS Québec 2026 (Revenu Québec, RCGT). Le ramp-up réduit les jours productifs (le salaire reste payé à 100 %) et le recrutement est compté une seule fois, la 1re année. La coordination interne est valorisée au coût horaire chargé de l'employé. Côté consultant, on annualise un mandat continu de 12 mois : {{vacation}} semaines de vacances, soit {{workingWeeks}} semaines de travail, moins les {{holidays}} jours fériés du Québec pro-ratés selon la cadence (un férié ne tombe pas toujours sur un jour client). À 3 j/sem, une remise volume de 10 % s'applique au TJM. Ajustez selon votre réalité et validez avec votre comptable, vos RH ou WebRAS pour un dossier précis.",
   "ctaLead": "Vous avez vu l'écart : à la bonne cadence, un mandat fractionnel coûte souvent moins cher qu'une embauche, sans les charges ni l'engagement.",
   "ctaTeaser": "Dites-moi votre contexte et on cadre ensemble le mandat qui a du sens : durée, PM temporaire ou stabilisation.",
   "ctaLabel": "Planifier un appel"

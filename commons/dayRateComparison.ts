@@ -9,17 +9,25 @@ export const WORK_DAYS_PER_YEAR = 260;
 export const WORK_WEEKS_PER_YEAR = 52;
 export const PAID_DAYS_PER_WEEK = 5;
 export const WORK_DAYS_PER_MONTH = WORK_DAYS_PER_YEAR / 12;
-/** Consultant working weeks per year (52 minus ~5 weeks of vacation, prospection and admin). */
-export const CONSULTANT_WORKING_WEEKS_PER_YEAR = 47;
+/** Consultant vacation weeks taken each year (continuous 12-month mandate). */
+export const CONSULTANT_VACATION_WEEKS_PER_YEAR = 4;
+/** Consultant working weeks per year after vacation (52 − 4). */
+export const CONSULTANT_WORKING_WEEKS_PER_YEAR =
+  WORK_WEEKS_PER_YEAR - CONSULTANT_VACATION_WEEKS_PER_YEAR;
 /** Quebec statutory holidays (Loi sur les normes du travail + Fête nationale). */
 export const QUEBEC_STAT_HOLIDAYS = 8;
 /**
- * Effective consultant billable weeks: working weeks minus Quebec statutory holidays,
- * pro-rated to a 5-day week (47 - 8/5 = 45.4). At 5 d/wk all 8 holidays land on billed
- * days; at 2 d/wk only ~3.2 do, which this pro-rating captures on average.
+ * Effective consultant billable weeks on a continuous 12-month mandate:
+ * working weeks minus Quebec statutory holidays, pro-rated to a 5-day week
+ * (48 − 8/5 = 46.4). This averages the uncertainty that a holiday may or may
+ * not fall on a billed client day at a fractional cadence.
  */
 export const BILLABLE_WEEKS_PER_YEAR =
   CONSULTANT_WORKING_WEEKS_PER_YEAR - QUEBEC_STAT_HOLIDAYS / PAID_DAYS_PER_WEEK;
+/** Billed days/week that trigger Luc's volume discount. */
+export const VOLUME_DISCOUNT_BILLED_DAYS = 3;
+/** Volume discount applied to the day rate at {@link VOLUME_DISCOUNT_BILLED_DAYS}. */
+export const VOLUME_DISCOUNT_PCT = 10;
 
 /** Typical all-in recruitment cost for a senior profile, amortized over year 1 (% of gross). */
 export const DEFAULT_RECRUITMENT_PCT = 12;
@@ -119,8 +127,13 @@ export interface DayRateComparisonResult {
   steadyStateCostPerDay: number;
   /** Year-1 cost divided by ramp-reduced productive days. */
   yearOneCostPerDay: number;
+  /** List day rate before volume discount. */
   consultantDayRate: number;
-  /** consultant − employee per productive day (positive = consultant costs more/day). */
+  /** Day rate after volume discount (if any). */
+  effectiveConsultantDayRate: number;
+  /** Volume discount applied to the day rate (0 or 10). */
+  volumeDiscountPct: number;
+  /** effectiveConsultant − employee per productive day (positive = consultant costs more/day). */
   gapSteadyPerDay: number;
   gapYearOnePerDay: number;
   /** employee − consultant annual spend (positive = consultant is cheaper per year). */
@@ -148,6 +161,20 @@ function roundMoney(value: number): number {
 
 function roundDays(value: number): number {
   return Math.round(value * 10) / 10;
+}
+
+/** Applies Luc's volume discount when the client books 3 billed days per week. */
+export function applyConsultantVolumeDiscount(
+  listDayRate: number,
+  billedDaysPerWeek: number
+): { effectiveDayRate: number; volumeDiscountPct: number } {
+  const volumeDiscountPct =
+    billedDaysPerWeek === VOLUME_DISCOUNT_BILLED_DAYS ? VOLUME_DISCOUNT_PCT : 0;
+  const effectiveDayRate =
+    volumeDiscountPct > 0
+      ? roundMoney(listDayRate * (1 - volumeDiscountPct / 100))
+      : Math.max(0, listDayRate);
+  return { effectiveDayRate, volumeDiscountPct };
 }
 
 /**
@@ -222,6 +249,8 @@ export function computeDayRateComparison(input: DayRateComparisonInput): DayRate
   const productiveDays = Math.max(1, input.productiveDays ?? DEFAULT_PRODUCTIVE_DAYS);
   const consultantDayRate = Math.max(0, input.consultantDayRate ?? 0);
   const billedDaysPerWeek = Math.max(0, input.billedDaysPerWeek ?? 0);
+  const { effectiveDayRate: effectiveConsultantDayRate, volumeDiscountPct } =
+    applyConsultantVolumeDiscount(consultantDayRate, billedDaysPerWeek);
   const includeHiringFriction = input.includeHiringFriction ?? true;
   const includeCoordinationOverhead = input.includeCoordinationOverhead ?? true;
 
@@ -305,19 +334,19 @@ export function computeDayRateComparison(input: DayRateComparisonInput): DayRate
   const steadyStateCostPerDay = roundMoney(ongoingAnnualCost / steadyProductiveDays);
   const yearOneCostPerDay = roundMoney(yearOneAnnualCost / effectiveProductiveDays);
 
-  const gapSteadyPerDay = roundMoney(consultantDayRate - steadyStateCostPerDay);
-  const gapYearOnePerDay = roundMoney(consultantDayRate - yearOneCostPerDay);
+  const gapSteadyPerDay = roundMoney(effectiveConsultantDayRate - steadyStateCostPerDay);
+  const gapYearOnePerDay = roundMoney(effectiveConsultantDayRate - yearOneCostPerDay);
 
   const employeeWeeklyCost = roundMoney(ongoingAnnualCost / WORK_WEEKS_PER_YEAR);
-  const consultantWeeklyCost = roundMoney(consultantDayRate * billedDaysPerWeek);
+  const consultantWeeklyCost = roundMoney(effectiveConsultantDayRate * billedDaysPerWeek);
 
   const employeeAnnualCost = ongoingAnnualCost;
   const consultantAnnualCost = roundMoney(
-    consultantDayRate * billedDaysPerWeek * BILLABLE_WEEKS_PER_YEAR
+    effectiveConsultantDayRate * billedDaysPerWeek * BILLABLE_WEEKS_PER_YEAR
   );
   const annualSaving = roundMoney(employeeAnnualCost - consultantAnnualCost);
   const annualSavingRelative = employeeAnnualCost > 0 ? annualSaving / employeeAnnualCost : 0;
-  // Cadence at which the consultant's annual spend matches the employee's fixed annual cost.
+  // Break-even uses the list rate: the volume discount only applies at exactly 3 d/wk.
   const breakEvenBilledDaysPerWeek =
     consultantDayRate > 0 && BILLABLE_WEEKS_PER_YEAR > 0
       ? roundDays(employeeAnnualCost / (consultantDayRate * BILLABLE_WEEKS_PER_YEAR))
@@ -331,6 +360,8 @@ export function computeDayRateComparison(input: DayRateComparisonInput): DayRate
     steadyStateCostPerDay,
     yearOneCostPerDay,
     consultantDayRate,
+    effectiveConsultantDayRate,
+    volumeDiscountPct,
     gapSteadyPerDay,
     gapYearOnePerDay,
     annualSaving,

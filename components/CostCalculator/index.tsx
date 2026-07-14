@@ -18,6 +18,7 @@ import {
 } from "../../commons/costCalculatorPresets";
 import {
   CONSULTANT_WORKING_WEEKS_PER_YEAR,
+  CONSULTANT_VACATION_WEEKS_PER_YEAR,
   DEFAULT_AVERAGE_TENURE_YEARS,
   DEFAULT_SEVERANCE_WEEKS,
   QUEBEC_STAT_HOLIDAYS,
@@ -241,13 +242,14 @@ export default function CostCalculator() {
   const autonomy = r.autonomyOverhead;
   const lifecycle = r.lifecycle;
   const breakdown = r.quebecBreakdown;
-  const maxBar = Math.max(r.yearOneCostPerDay, r.steadyStateCostPerDay, tarif) || 1;
+  const maxBar =
+    Math.max(r.yearOneCostPerDay, r.steadyStateCostPerDay, r.effectiveConsultantDayRate) || 1;
   const savingPct = pct1(Math.abs(r.annualSavingRelative) * 100);
   const activeTier = getConsultantRateTier(tarif);
   const activeWorkplaceMode = getWorkplaceMode(coutMilieu);
 
   const consultantWinsAnnual = r.annualSaving >= 0;
-  // Luc's positioning: 1-2 d/wk is the fractional sweet spot, 3 is the ceiling.
+  // Luc's positioning: 1-2 d/wk is the fractional sweet spot, 3 is the ceiling (+ volume discount).
   const cadenceIdeal = joursSemaine <= 2;
 
   const verdictHeadline = consultantWinsAnnual
@@ -364,6 +366,14 @@ export default function CostCalculator() {
               </button>
             ))}
           </div>
+          {r.volumeDiscountPct > 0 && (
+            <p className="cost-calculator__help">
+              {t("fields.billedDays.volumeDiscount", {
+                pct: r.volumeDiscountPct,
+                rate: fmt0(r.effectiveConsultantDayRate),
+              })}
+            </p>
+          )}
         </Field>
 
         <Field label={t("fields.salary.label")} hint={fmt0(salaire)}>
@@ -687,13 +697,13 @@ export default function CostCalculator() {
             <div className="cost-calculator__bar-head">
               <span>{t("results.bars.consultant")}</span>
               <span className="cost-calculator__bar-value cost-calculator__bar-value--consultant">
-                {fmt0(tarif)}/j
+                {fmt0(r.effectiveConsultantDayRate)}/j
               </span>
             </div>
             <div className="cost-calculator__bar-track">
               <div
                 className="cost-calculator__bar-fill cost-calculator__bar-fill--consultant"
-                style={{ width: `${(tarif / maxBar) * 100}%` }}
+                style={{ width: `${(r.effectiveConsultantDayRate / maxBar) * 100}%` }}
               />
             </div>
           </div>
@@ -749,7 +759,7 @@ export default function CostCalculator() {
           ) : (
             <Stat
               label={t("results.dayCost.consultantLabel")}
-              value={`${fmt0(tarif)}/j`}
+              value={`${fmt0(r.effectiveConsultantDayRate)}/j`}
               sub={t("results.dayCost.consultantSub", { days: joursSemaine })}
               tone="consultant"
             />
@@ -887,6 +897,7 @@ export default function CostCalculator() {
 
       <p className="cost-calculator__disclaimer">
         {t("disclaimer", {
+          vacation: CONSULTANT_VACATION_WEEKS_PER_YEAR,
           workingWeeks: CONSULTANT_WORKING_WEEKS_PER_YEAR,
           holidays: QUEBEC_STAT_HOLIDAYS,
         })}

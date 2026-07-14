@@ -219,8 +219,8 @@ describe("computeDayRateComparison", () => {
     expect(result.yearOneCostPerDay).toBe(1063.17);
     expect(result.effectiveProductiveDays).toBe(185.8);
     expect(result.consultantWeeklyCost).toBe(2200);
-    expect(result.consultantAnnualCost).toBe(99_880);
-    expect(result.annualSaving).toBe(80_857.2);
+    expect(result.consultantAnnualCost).toBe(102_080);
+    expect(result.annualSaving).toBe(78_657.2);
     expect(result.hiringFriction?.recruitmentCost).toBe(16_800);
     expect(result.autonomyOverhead?.coordinationAnnualCost).toBe(11_982.36);
     expect(result.autonomyOverhead?.employeeToolsAnnualCost).toBe(5_500);
@@ -267,7 +267,9 @@ describe("computeDayRateComparison", () => {
     expect(result.ongoingAnnualCost).toBe(158_354.84);
     expect(result.steadyStateCostPerDay).toBe(736.53);
     expect(result.yearOneCostPerDay).toBe(736.53);
-    expect(result.gapSteadyPerDay).toBe(138.47);
+    expect(result.gapSteadyPerDay).toBe(50.97);
+    expect(result.volumeDiscountPct).toBe(10);
+    expect(result.effectiveConsultantDayRate).toBe(787.5);
     expect(result.hiringFriction).toBeUndefined();
     expect(result.autonomyOverhead).toBeUndefined();
   });
@@ -307,10 +309,10 @@ describe("computeDayRateComparison", () => {
     expect(WORK_DAYS_PER_YEAR - DEFAULT_PRODUCTIVE_DAYS).toBe(45);
   });
 
-  it("bills the consultant on 47 working weeks minus 8 Quebec statutory holidays, pro-rated to cadence", () => {
-    expect(CONSULTANT_WORKING_WEEKS_PER_YEAR).toBe(47);
+  it("bills the consultant on 48 working weeks minus 8 Quebec statutory holidays, pro-rated to cadence", () => {
+    expect(CONSULTANT_WORKING_WEEKS_PER_YEAR).toBe(48);
     expect(QUEBEC_STAT_HOLIDAYS).toBe(8);
-    expect(BILLABLE_WEEKS_PER_YEAR).toBeCloseTo(45.4, 10);
+    expect(BILLABLE_WEEKS_PER_YEAR).toBeCloseTo(46.4, 10);
 
     // A 5 d/wk cadence loses all 8 holidays; a 2 d/wk cadence loses only ~3.2 of them.
     const fullTime = computeDayRateComparison({
@@ -330,10 +332,28 @@ describe("computeDayRateComparison", () => {
       includeCoordinationOverhead: false,
     });
 
-    // 5 d/wk: 1000 × 5 × 45.4 = 227 000 (235 potential days − 8 holidays = 227).
-    expect(fullTime.consultantAnnualCost).toBe(227_000);
-    // 2 d/wk: 1000 × 2 × 45.4 = 90 800 (94 potential days − 3.2 holidays = 90.8).
-    expect(fractional.consultantAnnualCost).toBe(90_800);
+    // 5 d/wk: 1000 × 5 × 46.4 = 232 000 (240 potential days − 8 holidays = 232).
+    expect(fullTime.consultantAnnualCost).toBe(232_000);
+    // 2 d/wk: 1000 × 2 × 46.4 = 92 800 (96 potential days − 3.2 holidays = 92.8).
+    expect(fractional.consultantAnnualCost).toBe(92_800);
+  });
+
+  it("applies a 10% volume discount to the day rate at 3 billed days per week", () => {
+    const result = computeDayRateComparison({
+      grossSalary: 100_000,
+      isTotalEmployerCost: true,
+      consultantDayRate: 1_000,
+      billedDaysPerWeek: 3,
+      includeHiringFriction: false,
+      includeCoordinationOverhead: false,
+    });
+
+    expect(result.consultantDayRate).toBe(1_000);
+    expect(result.volumeDiscountPct).toBe(10);
+    expect(result.effectiveConsultantDayRate).toBe(900);
+    // 900 × 3 × 46.4 = 125 280
+    expect(result.consultantWeeklyCost).toBe(2_700);
+    expect(result.consultantAnnualCost).toBe(125_280);
   });
 
   it("folds variable pay into the DAS gross and ignores it in total-cost mode", () => {
@@ -435,8 +455,8 @@ describe("computeDayRateComparison", () => {
     const atFlip = computeDayRateComparison({ ...base, billedDaysPerWeek: 3 });
 
     expect(atFlip.employeeAnnualCost).toBe(200_000);
-    // 200 000 / (1000 × 45.4) ≈ 4.4 billed days per week.
-    expect(atFlip.breakEvenBilledDaysPerWeek).toBeCloseTo(4.4, 1);
+    // 200 000 / (1000 × 46.4) ≈ 4.3 billed days per week.
+    expect(atFlip.breakEvenBilledDaysPerWeek).toBeCloseTo(4.3, 1);
 
     const below = computeDayRateComparison({ ...base, billedDaysPerWeek: 4 });
     const above = computeDayRateComparison({ ...base, billedDaysPerWeek: 5 });
