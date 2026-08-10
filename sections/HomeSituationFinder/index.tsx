@@ -32,7 +32,9 @@ export default function HomeSituationFinder() {
         columns={[
           {
             cols: { col: 10, sm: 12 },
-            content: <SituationsQuiz className="home-situation-finder__quiz" />,
+            content: (
+              <SituationsQuiz className="home-situation-finder__quiz" trackSection="home-quiz" />
+            ),
           },
         ]}
       />

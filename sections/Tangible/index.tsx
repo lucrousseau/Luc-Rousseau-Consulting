@@ -79,7 +79,7 @@ export default function Tangible({ cta, showCta = true }: SectionWithCtaProps) {
         columns={[
           {
             cols: { col: 10, sm: 12 },
-            content: <Accordion align={"left"} items={items} />,
+            content: <Accordion align={"left"} items={items} trackSection="tangible" />,
           },
         ]}
       />

@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import type { CSSProperties, ReactNode } from "react";
 
+import type { AnalyticsProperties } from "../../utils/analytics";
 import Row from "../Layout/Row";
 import Button from "../Button";
 import ContactAlternates from "../ContactAlternates";
@@ -20,6 +21,7 @@ function renderTeaser(
 
 export interface SectionCtaProps {
   trackSection?: string;
+  trackProps?: AnalyticsProperties;
   href?: string;
   label?: ReactNode;
   teaser?: ReactNode | string | false;
@@ -40,6 +42,7 @@ export interface SectionCtaProps {
 
 export default function SectionCta({
   trackSection,
+  trackProps,
   href,
   label,
   teaser,
@@ -60,7 +63,14 @@ export default function SectionCta({
   const teaserNode = renderTeaser(teaser, teaserClassName);
 
   const button = (
-    <Button variant={variant} size={size} href={href} label={label} trackSection={trackSection} />
+    <Button
+      variant={variant}
+      size={size}
+      href={href}
+      label={label}
+      trackSection={trackSection}
+      trackProps={trackProps}
+    />
   );
 
   const ctaContent = bare ? (
@@ -68,14 +78,18 @@ export default function SectionCta({
       {beforeCTA}
       {teaserNode}
       {wrapButtonInP ? <p>{button}</p> : button}
-      {showContactAlternates && <ContactAlternates trackSection={trackSection} />}
+      {showContactAlternates && (
+        <ContactAlternates trackSection={trackSection} trackProps={trackProps} />
+      )}
     </>
   ) : (
     <div className={classNames(align && `align align--${align}`, className)}>
       {beforeCTA}
       {teaserNode}
       {wrapButtonInP ? <p>{button}</p> : button}
-      {showContactAlternates && <ContactAlternates trackSection={trackSection} />}
+      {showContactAlternates && (
+        <ContactAlternates trackSection={trackSection} trackProps={trackProps} />
+      )}
     </div>
   );
 

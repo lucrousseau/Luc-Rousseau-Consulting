@@ -11,6 +11,7 @@ import {
   type RoutingQuizOption,
   type RoutingQuizSteps,
 } from "../../commons/routingQuiz";
+import { trackCtaClick, trackEvent } from "../../utils/analytics";
 
 type BrowseLink = {
   id: string;
@@ -34,6 +35,8 @@ type RoutingQuizProps = {
   browseLinks?: BrowseLink[];
   browseLinkLabelKey?: (id: string) => string;
   className?: string;
+  /** Analytics section locator (`home-quiz`, `situations-quiz`, …) */
+  trackSection?: string;
 };
 
 /**
@@ -52,6 +55,7 @@ export default function RoutingQuiz({
   browseLinks,
   browseLinkLabelKey,
   className,
+  trackSection,
 }: RoutingQuizProps) {
   const { t } = useTranslation(i18nNamespace);
   const questionHeadingId = useId();
@@ -66,7 +70,22 @@ export default function RoutingQuiz({
   const questionNumber = getRoutingQuizQuestionNumber(stepStack, rootStepId);
 
   const handleOption = (option: RoutingQuizOption) => {
+    if (trackSection) {
+      trackEvent("quiz_select", {
+        section: trackSection,
+        step: currentStepId,
+        option: option.id,
+        question: questionNumber,
+      });
+    }
+
     if (option.result) {
+      if (trackSection) {
+        trackEvent("quiz_result", {
+          section: trackSection,
+          result: option.result,
+        });
+      }
       setResultId(option.result);
       return;
     }
@@ -77,6 +96,12 @@ export default function RoutingQuiz({
   };
 
   const goBack = () => {
+    if (trackSection) {
+      trackEvent("quiz_back", {
+        section: trackSection,
+        from: resultId ? "result" : currentStepId,
+      });
+    }
     if (resultId) {
       setResultId(null);
       return;
@@ -87,6 +112,12 @@ export default function RoutingQuiz({
   };
 
   const restart = () => {
+    if (trackSection) {
+      trackEvent("quiz_restart", {
+        section: trackSection,
+        result: resultId ?? undefined,
+      });
+    }
     setStepStack([rootStepId]);
     setResultId(null);
   };
@@ -138,7 +169,13 @@ export default function RoutingQuiz({
         )}
         <p className="big component__routing-quiz__result-teaser">{t(resultTeaserKey(resultId))}</p>
         <p className="component__routing-quiz__actions">
-          <Button variant="secondary" href={resultHref(resultId)} label={t(uiKey("result.cta"))} />
+          <Button
+            variant="secondary"
+            href={resultHref(resultId)}
+            label={t(uiKey("result.cta"))}
+            trackSection={trackSection ? `${trackSection}-result` : undefined}
+            trackProps={trackSection ? { result: resultId } : undefined}
+          />
         </p>
         <p className="component__routing-quiz__secondary-actions">
           <button type="button" className="component__routing-quiz__text-btn" onClick={restart}>
@@ -195,12 +232,28 @@ export default function RoutingQuiz({
       </ul>
 
       {browseLinks && browseLinks.length > 0 && (
-        <details className="component__routing-quiz__browse">
+        <details
+          className="component__routing-quiz__browse"
+          onToggle={(event) => {
+            if (!trackSection) return;
+            const details = event.currentTarget;
+            if (details.open) {
+              trackEvent("quiz_browse_open", { section: trackSection });
+            }
+          }}
+        >
           <summary>{t(uiKey("browseAll.summary"))}</summary>
           <ul className="component__routing-quiz__browse-list">
             {browseLinks.map((link) => (
               <li key={link.id} className="component__routing-quiz__browse-item">
-                <Link href={link.href} className="component__routing-quiz__browse-link">
+                <Link
+                  href={link.href}
+                  className="component__routing-quiz__browse-link"
+                  onClick={() => {
+                    if (!trackSection) return;
+                    trackCtaClick(`${trackSection}-browse`, { result: link.id });
+                  }}
+                >
                   {browseLinkLabelKey ? t(browseLinkLabelKey(link.id)) : (link.label ?? link.id)}
                 </Link>
               </li>

@@ -85,7 +85,7 @@ export default function HomeHero() {
                       cols: { col: 6, lg: 10, md: 12 },
                       content: (
                         <>
-                          <Accordion align={"left"} items={items} />
+                          <Accordion align={"left"} items={items} trackSection="hero" />
                         </>
                       ),
                     },

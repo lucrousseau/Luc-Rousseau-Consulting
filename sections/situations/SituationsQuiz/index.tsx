@@ -13,10 +13,15 @@ const situationQuoteKey = (id: string) => `situations.${id}.quote`;
 
 interface SituationsQuizProps {
   className?: string;
+  /** Analytics section (`home-quiz` on home, `situations-quiz` on hub). */
+  trackSection?: string;
 }
 
 /** Situations hub quiz: thin wrapper around {@link RoutingQuiz}. */
-export default function SituationsQuiz({ className }: SituationsQuizProps) {
+export default function SituationsQuiz({
+  className,
+  trackSection = "situations-quiz",
+}: SituationsQuizProps) {
   const router = useRouter();
   const locale = router.locale ?? "fr";
 
@@ -38,6 +43,7 @@ export default function SituationsQuiz({ className }: SituationsQuizProps) {
           getSituationPathById(situation.id, locale) ?? `${ROUTES.situationsHub}/${situation.id}`,
       }))}
       browseLinkLabelKey={situationTitleKey}
+      trackSection={trackSection}
     />
   );
 }
