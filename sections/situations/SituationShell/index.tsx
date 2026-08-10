@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import { useTranslation } from "next-i18next/pages";
 
 import Row from "../../../components/Layout/Row";
@@ -9,6 +8,7 @@ import Accordion from "../../../components/Accordion";
 import Table from "../../../components/Table";
 import { parseHtmlContent, parseHtmlItems } from "../../../commons/parseHtmlContent";
 import { homeTableRowStyle } from "../../../commons/pageRowSpacing";
+import { getBlockPageTrackSection } from "../../../commons/blockPageContactIntro";
 
 import TechnicalStack from "../../TechnicalStack";
 import SituationHero from "../SituationHero";
@@ -24,9 +24,10 @@ function hasGroups(block: SituationBlock): boolean {
 
 interface SituationBlockProps {
   block: SituationBlock;
+  trackPage?: string;
 }
 
-function SituationBlockRenderer({ block }: SituationBlockProps) {
+function SituationBlockRenderer({ block, trackPage }: SituationBlockProps) {
   if (!block?.type) {
     return null;
   }
@@ -132,7 +133,14 @@ function SituationBlockRenderer({ block }: SituationBlockProps) {
             columns={[
               {
                 cols: { col: 10, sm: 12 },
-                content: <Accordion align="left" items={faqItems} />,
+                content: (
+                  <Accordion
+                    align="left"
+                    items={faqItems}
+                    trackSection="situation-faq"
+                    trackProps={trackPage ? { page: trackPage } : undefined}
+                  />
+                ),
               },
             ]}
           />
@@ -166,22 +174,34 @@ function SituationBlockRenderer({ block }: SituationBlockProps) {
 interface SituationShellProps {
   namespace: string;
   showSituationsHub?: boolean;
+  trackPage?: string;
 }
 
 /** Renders a full situation page from i18n namespace (`hero` + `blocks[]`). */
 export default function SituationShell({
   namespace,
   showSituationsHub = true,
+  trackPage,
 }: SituationShellProps) {
   const { t } = useTranslation([namespace, "common"]);
   const blocks = t("blocks", { returnObjects: true });
   const blockList = (Array.isArray(blocks) ? blocks : []) as SituationBlock[];
+  const heroTrackSection = getBlockPageTrackSection(blockList, "situation-hero");
 
   return (
     <>
-      <SituationHero namespace={namespace} showSituationsHub={showSituationsHub} />
+      <SituationHero
+        namespace={namespace}
+        showSituationsHub={showSituationsHub}
+        trackSection={heroTrackSection}
+        trackPage={trackPage}
+      />
       {blockList.map((block, index) => (
-        <SituationBlockRenderer key={`${block.type}-${block.sectionKey ?? index}`} block={block} />
+        <SituationBlockRenderer
+          key={`${block.type}-${block.sectionKey ?? index}`}
+          block={block}
+          trackPage={trackPage}
+        />
       ))}
     </>
   );

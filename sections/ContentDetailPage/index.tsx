@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import { useTranslation } from "next-i18next/pages";
 import { useRouter } from "next/router";
 
@@ -14,6 +13,8 @@ import { absoluteUrl, localizedPath } from "../../commons/localizedPath";
 import { getSiteOrigin } from "../../utils/siteOrigin";
 import { getBlockPageContactIntro } from "../../commons/blockPageContactIntro";
 import { pageShellStyle } from "../../commons/pageRowSpacing";
+import { SITUATIONS } from "../../commons/situationsManifest";
+import { EXPERTISE_PAGES } from "../../commons/expertiseManifest";
 import type { SituationHeroData } from "../situations/situationTypes";
 
 export interface ContentDetailPageProps {
@@ -22,6 +23,11 @@ export interface ContentDetailPageProps {
   hreflangPaths: HreflangPaths;
   publishedAt: string;
   variant?: "situation" | "expertise";
+}
+
+function getTrackPageId(variant: "situation" | "expertise", namespace: string): string | undefined {
+  const entries = variant === "situation" ? SITUATIONS : EXPERTISE_PAGES;
+  return entries.find((entry) => entry.namespace === namespace)?.id;
 }
 
 export default function ContentDetailPage({
@@ -44,6 +50,7 @@ export default function ContentDetailPage({
 
   const blocks = t(`${namespace}:blocks`, { returnObjects: true });
   const contactIntroTeaser = getBlockPageContactIntro(blocks);
+  const trackPage = getTrackPageId(variant, namespace);
 
   const homeLabel = t("common:home-link-label");
   const jsonLd =
@@ -92,8 +99,12 @@ export default function ContentDetailPage({
         <Header showNavigation showCta={false} />
       </Container>
       <main className={mainClassName}>
-        <SituationShell namespace={namespace} showSituationsHub={showSituationsHub} />
-        <Contact introTeaser={contactIntroTeaser} />
+        <SituationShell
+          namespace={namespace}
+          showSituationsHub={showSituationsHub}
+          trackPage={trackPage}
+        />
+        <Contact introTeaser={contactIntroTeaser} trackPage={trackPage} />
       </main>
       <Container tag="footer" style={pageShellStyle}>
         <Footer />

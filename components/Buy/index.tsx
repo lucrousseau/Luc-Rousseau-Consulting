@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 
 import { alignments, type AlignmentProps } from "../../commons/alignments";
 import { getScheduleCta } from "../../commons/scheduleCta";
+import type { AnalyticsProperties } from "../../utils/analytics";
 
 import SectionCta from "../SectionCta";
 
@@ -22,6 +23,7 @@ type BuyProps = AlignmentProps & {
   size?: string | null;
   variant?: string;
   trackSection?: string;
+  trackProps?: AnalyticsProperties;
 };
 
 export default function Buy({
@@ -34,6 +36,7 @@ export default function Buy({
   size = "small",
   variant = "secondary",
   trackSection,
+  trackProps,
   ...props
 }: BuyProps) {
   const { t, i18n } = useTranslation();
@@ -66,6 +69,7 @@ export default function Buy({
         wrapButtonInP={false}
         showContactAlternates={Boolean(trackSection)}
         trackSection={trackSection}
+        trackProps={trackProps}
         href={href ?? scheduleCta.link}
         label={label ?? scheduleCta.label}
         variant={variant}

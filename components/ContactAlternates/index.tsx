@@ -2,16 +2,19 @@ import classNames from "classnames";
 import { useTranslation } from "next-i18next/pages";
 
 import type { AlignmentProps } from "../../commons/alignments";
+import { trackCtaClick, type AnalyticsProperties } from "../../utils/analytics";
 
 type ContactAlternatesProps = AlignmentProps & {
   className?: string;
   trackSection?: string;
+  trackProps?: AnalyticsProperties;
   hideLinkedIn?: boolean;
 };
 
 export default function ContactAlternates({
   className,
   trackSection,
+  trackProps,
   hideLinkedIn = false,
   align = "center",
 }: ContactAlternatesProps) {
@@ -19,13 +22,7 @@ export default function ContactAlternates({
 
   const handleClick = (variant: string) => () => {
     if (!trackSection) return;
-    import("@vercel/analytics")
-      .then(({ track }) => {
-        if (typeof track === "function") {
-          track("cta_click", { section: `${trackSection}:${variant}` });
-        }
-      })
-      .catch(() => {});
+    trackCtaClick(`${trackSection}:${variant}`, trackProps);
   };
 
   return (

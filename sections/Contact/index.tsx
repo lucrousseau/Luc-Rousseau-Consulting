@@ -7,6 +7,7 @@ import SectionIntro from "../../components/SectionIntro";
 import SectionCta from "../../components/SectionCta";
 import { homeIntroRowStyle, homeBodyRowStyle } from "../../commons/pageRowSpacing";
 import { getScheduleCta } from "../../commons/scheduleCta";
+import { trackCtaClick } from "../../utils/analytics";
 
 import type { TFunction } from "i18next";
 import type { SectionWithCtaProps } from "../../commons/sectionTypes";
@@ -25,16 +26,6 @@ interface ContactChannel {
   actionLabel?: string;
 }
 
-function trackChannelClick(variant: string) {
-  import("@vercel/analytics")
-    .then(({ track }) => {
-      if (typeof track === "function") {
-        track("cta_click", { section: `contact:${variant}` });
-      }
-    })
-    .catch(() => {});
-}
-
 function getChannelLinkLabel(channel: ContactChannel, t: TFunction): string | undefined {
   if (channel.id === "email") {
     return t("common:contact-email-display");
@@ -44,12 +35,14 @@ function getChannelLinkLabel(channel: ContactChannel, t: TFunction): string | un
 
 type ContactProps = SectionWithCtaProps & {
   introTeaser?: string | null;
+  /** Page id for analytics (situation / expertise), attached to contact CTAs. */
+  trackPage?: string;
 };
 
 /**
  * Site-wide contact section. Requires i18n: `contact`, `common`.
  */
-export default function Contact({ cta, introTeaser = null }: ContactProps = {}) {
+export default function Contact({ cta, introTeaser = null, trackPage }: ContactProps = {}) {
   const { t } = useTranslation(["contact", "common"]);
   const scheduleCta = getScheduleCta(t);
   const rawChannels = t("contact:channels", { returnObjects: true });
@@ -63,6 +56,7 @@ export default function Contact({ cta, introTeaser = null }: ContactProps = {}) 
     ? parseHtmlContent(situationIntro)
     : parseHtmlContent(t("contact:lede"));
   const ctaTeaser = situationIntro ? null : parseHtmlContent(t("contact:ctaTeaser"));
+  const trackProps = trackPage ? { page: trackPage } : undefined;
 
   return (
     <Container id={t("contact:anchor")} className="section-contact" align="center" halign="center">
@@ -90,6 +84,7 @@ export default function Contact({ cta, introTeaser = null }: ContactProps = {}) 
                       align="center"
                       showContactAlternates={false}
                       trackSection="contact"
+                      trackProps={trackProps}
                       href={cta?.link ?? scheduleCta.link}
                       label={cta?.label ?? scheduleCta.label}
                       teaser={ctaTeaser}
@@ -122,7 +117,7 @@ export default function Contact({ cta, introTeaser = null }: ContactProps = {}) 
                                 {...(channel.id === "linkedin"
                                   ? { target: "_blank", rel: "noopener noreferrer" }
                                   : {})}
-                                onClick={() => trackChannelClick(channel.id)}
+                                onClick={() => trackCtaClick(`contact:${channel.id}`, trackProps)}
                               >
                                 {linkLabel}
                               </a>

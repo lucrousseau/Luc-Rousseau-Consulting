@@ -3,6 +3,8 @@ import Link from "next/link";
 import classNames from "classnames";
 import type { ElementType, ReactNode } from "react";
 
+import { trackCtaClick, type AnalyticsProperties } from "../../utils/analytics";
+
 function isExternalHref(href: unknown): href is string {
   if (!href || typeof href !== "string") return false;
   return /^(https?:|mailto:|tel:)/i.test(href);
@@ -18,6 +20,7 @@ type ButtonProps = {
   type?: string;
   target?: string;
   trackSection?: string;
+  trackProps?: AnalyticsProperties;
 };
 
 export default function Button({
@@ -30,6 +33,7 @@ export default function Button({
   type,
   target,
   trackSection,
+  trackProps,
 }: ButtonProps) {
   const useNativeAnchor = isExternalHref(href);
   const Tag = tag || (useNativeAnchor ? "a" : Link);
@@ -37,13 +41,7 @@ export default function Button({
 
   const handleClick = () => {
     if (!trackSection) return;
-    import("@vercel/analytics")
-      .then(({ track }) => {
-        if (typeof track === "function") {
-          track("cta_click", { section: trackSection });
-        }
-      })
-      .catch(() => {});
+    trackCtaClick(trackSection, trackProps);
   };
 
   const externalProps =

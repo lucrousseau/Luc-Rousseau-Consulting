@@ -12,10 +12,17 @@ import type { SituationHeroData } from "../situationTypes";
 interface SituationHeroProps {
   namespace: string;
   showSituationsHub?: boolean;
+  trackSection?: string;
+  trackPage?: string;
 }
 
 /** Situation page hero (h1 + lede + optional Buy). Reads `hero` from the situation namespace. */
-export default function SituationHero({ namespace, showSituationsHub = true }: SituationHeroProps) {
+export default function SituationHero({
+  namespace,
+  showSituationsHub = true,
+  trackSection = "situation-hero",
+  trackPage,
+}: SituationHeroProps) {
   const { t } = useTranslation([namespace, "common"]);
   const hero = t(`${namespace}:hero`, { returnObjects: true }) as SituationHeroData;
   const buy = hero?.buy;
@@ -65,7 +72,8 @@ export default function SituationHero({ namespace, showSituationsHub = true }: S
                   variant="primary"
                   size={null}
                   label={buy.label}
-                  trackSection="situation-hero"
+                  trackSection={trackSection}
+                  trackProps={trackPage ? { page: trackPage } : undefined}
                 />
               ),
             },
