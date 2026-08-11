@@ -3,11 +3,18 @@ import Link from "next/link";
 import classNames from "classnames";
 import type { ElementType, ReactNode } from "react";
 
-import { trackCtaClick, type AnalyticsProperties } from "../../utils/analytics";
+import { analyticsText, trackCtaClick, type AnalyticsProperties } from "../../utils/analytics";
 
 function isExternalHref(href: unknown): href is string {
   if (!href || typeof href !== "string") return false;
   return /^(https?:|mailto:|tel:)/i.test(href);
+}
+
+function labelToAnalyticsText(label: ReactNode): string | undefined {
+  if (typeof label === "string" || typeof label === "number") {
+    return analyticsText(label);
+  }
+  return undefined;
 }
 
 type ButtonProps = {
@@ -41,7 +48,12 @@ export default function Button({
 
   const handleClick = () => {
     if (!trackSection) return;
-    trackCtaClick(trackSection, trackProps);
+    const readableLabel = labelToAnalyticsText(label);
+    // Prefer an explicit `label` from trackProps (e.g. quiz result title).
+    trackCtaClick(trackSection, {
+      ...(readableLabel ? { label: readableLabel } : {}),
+      ...trackProps,
+    });
   };
 
   const externalProps =

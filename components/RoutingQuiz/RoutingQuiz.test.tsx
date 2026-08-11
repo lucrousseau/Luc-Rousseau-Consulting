@@ -29,10 +29,16 @@ jest.mock("next/link", () => {
   return MockLink;
 });
 
-jest.mock("../../utils/analytics", () => ({
-  trackEvent: jest.fn(),
-  trackCtaClick: jest.fn(),
-}));
+jest.mock("../../utils/analytics", () => {
+  const actual = jest.requireActual(
+    "../../utils/analytics"
+  ) as typeof import("../../utils/analytics");
+  return {
+    ...actual,
+    trackEvent: jest.fn(),
+    trackCtaClick: jest.fn(),
+  };
+});
 
 const steps = {
   root: {
@@ -53,7 +59,7 @@ describe("RoutingQuiz analytics", () => {
     jest.clearAllMocks();
   });
 
-  it("tracks option select and result", async () => {
+  it("tracks option select and result with readable labels", async () => {
     render(
       <RoutingQuiz
         steps={steps}
@@ -69,13 +75,11 @@ describe("RoutingQuiz analytics", () => {
 
     expect(trackEvent).toHaveBeenCalledWith("quiz_select", {
       section: "home-quiz",
-      step: "root",
-      option: "opt-b",
-      question: 1,
+      choice: "Q1 · quiz.questions.root · quiz.options.opt-b.label",
     });
     expect(trackEvent).toHaveBeenCalledWith("quiz_result", {
       section: "home-quiz",
-      result: "situation-a",
+      result: "title.situation-a",
     });
 
     await waitFor(() => {
@@ -84,11 +88,11 @@ describe("RoutingQuiz analytics", () => {
 
     fireEvent.click(screen.getByText("quiz.result.cta"));
     expect(trackCtaClick).toHaveBeenCalledWith("home-quiz-result", {
-      result: "situation-a",
+      label: "title.situation-a",
     });
   });
 
-  it("tracks browse open and browse link", () => {
+  it("tracks browse open and browse link with readable labels", () => {
     render(
       <RoutingQuiz
         steps={steps}
@@ -115,7 +119,7 @@ describe("RoutingQuiz analytics", () => {
 
     fireEvent.click(screen.getByText("browse.situation-a"));
     expect(trackCtaClick).toHaveBeenCalledWith("situations-quiz-browse", {
-      result: "situation-a",
+      label: "browse.situation-a",
     });
   });
 });

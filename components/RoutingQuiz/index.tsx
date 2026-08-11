@@ -11,7 +11,7 @@ import {
   type RoutingQuizOption,
   type RoutingQuizSteps,
 } from "../../commons/routingQuiz";
-import { trackCtaClick, trackEvent } from "../../utils/analytics";
+import { trackCtaClick, trackEvent, analyticsProps, analyticsJoin } from "../../utils/analytics";
 
 type BrowseLink = {
   id: string;
@@ -69,22 +69,29 @@ export default function RoutingQuiz({
   const totalQuestions = totalQuestionsProp ?? getRoutingQuizMaxDepth(steps, rootStepId);
   const questionNumber = getRoutingQuizQuestionNumber(stepStack, rootStepId);
 
+  const optionLabel = (optionId: string) => t(`${uiKeyPrefix}.options.${optionId}.label`);
+  const resultLabel = (id: string) => t(resultTitleKey(id));
+
   const handleOption = (option: RoutingQuizOption) => {
-    if (trackSection) {
-      trackEvent("quiz_select", {
-        section: trackSection,
-        step: currentStepId,
-        option: option.id,
-        question: questionNumber,
-      });
+    if (trackSection && step) {
+      const questionLabel = t(step.questionKey);
+      const choice = analyticsJoin(`Q${questionNumber}`, questionLabel, optionLabel(option.id));
+      trackEvent(
+        "quiz_select",
+        analyticsProps(trackSection, {
+          choice,
+        })
+      );
     }
 
     if (option.result) {
       if (trackSection) {
-        trackEvent("quiz_result", {
-          section: trackSection,
-          result: option.result,
-        });
+        trackEvent(
+          "quiz_result",
+          analyticsProps(trackSection, {
+            result: resultLabel(option.result),
+          })
+        );
       }
       setResultId(option.result);
       return;
@@ -97,10 +104,17 @@ export default function RoutingQuiz({
 
   const goBack = () => {
     if (trackSection) {
-      trackEvent("quiz_back", {
-        section: trackSection,
-        from: resultId ? "result" : currentStepId,
-      });
+      const fromLabel = resultId
+        ? analyticsJoin("result", resultLabel(resultId))
+        : step
+          ? t(step.questionKey)
+          : currentStepId;
+      trackEvent(
+        "quiz_back",
+        analyticsProps(trackSection, {
+          from: fromLabel,
+        })
+      );
     }
     if (resultId) {
       setResultId(null);
@@ -113,10 +127,12 @@ export default function RoutingQuiz({
 
   const restart = () => {
     if (trackSection) {
-      trackEvent("quiz_restart", {
-        section: trackSection,
-        result: resultId ?? undefined,
-      });
+      trackEvent(
+        "quiz_restart",
+        analyticsProps(trackSection, {
+          ...(resultId ? { result: resultLabel(resultId) } : {}),
+        })
+      );
     }
     setStepStack([rootStepId]);
     setResultId(null);
@@ -174,7 +190,13 @@ export default function RoutingQuiz({
             href={resultHref(resultId)}
             label={t(uiKey("result.cta"))}
             trackSection={trackSection ? `${trackSection}-result` : undefined}
-            trackProps={trackSection ? { result: resultId } : undefined}
+            trackProps={
+              trackSection
+                ? {
+                    label: resultLabel(resultId),
+                  }
+                : undefined
+            }
           />
         </p>
         <p className="component__routing-quiz__secondary-actions">
@@ -238,26 +260,31 @@ export default function RoutingQuiz({
             if (!trackSection) return;
             const details = event.currentTarget;
             if (details.open) {
-              trackEvent("quiz_browse_open", { section: trackSection });
+              trackEvent("quiz_browse_open", analyticsProps(trackSection));
             }
           }}
         >
           <summary>{t(uiKey("browseAll.summary"))}</summary>
           <ul className="component__routing-quiz__browse-list">
-            {browseLinks.map((link) => (
-              <li key={link.id} className="component__routing-quiz__browse-item">
-                <Link
-                  href={link.href}
-                  className="component__routing-quiz__browse-link"
-                  onClick={() => {
-                    if (!trackSection) return;
-                    trackCtaClick(`${trackSection}-browse`, { result: link.id });
-                  }}
-                >
-                  {browseLinkLabelKey ? t(browseLinkLabelKey(link.id)) : (link.label ?? link.id)}
-                </Link>
-              </li>
-            ))}
+            {browseLinks.map((link) => {
+              const browseLabel = browseLinkLabelKey
+                ? t(browseLinkLabelKey(link.id))
+                : (link.label ?? link.id);
+              return (
+                <li key={link.id} className="component__routing-quiz__browse-item">
+                  <Link
+                    href={link.href}
+                    className="component__routing-quiz__browse-link"
+                    onClick={() => {
+                      if (!trackSection) return;
+                      trackCtaClick(`${trackSection}-browse`, { label: browseLabel });
+                    }}
+                  >
+                    {browseLabel}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </details>
       )}

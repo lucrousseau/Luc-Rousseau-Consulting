@@ -4,7 +4,7 @@ import Image, { type StaticImageData } from "next/image";
 import type { ReactNode } from "react";
 
 import { alignments, type AlignmentProps } from "../../commons/alignments";
-import { trackEvent, type AnalyticsProperties } from "../../utils/analytics";
+import { trackAccordionOpen, type AnalyticsProperties } from "../../utils/analytics";
 
 type AccordionItem = {
   title?: string;
@@ -23,7 +23,7 @@ type AccordionProps = AlignmentProps & {
   items: AccordionItem[];
   callback?: (state: AccordionCallbackState) => void;
   activeIndex?: number | null;
-  /** When set, fires `accordion_open` with `{ section, item }` on expand. */
+  /** When set, fires `accordion_open` with `{ section, item: title }` on expand. */
   trackSection?: string;
   trackProps?: AnalyticsProperties;
 };
@@ -49,11 +49,9 @@ export default function Accordion({
     callback({ open, index });
 
     if (open && trackSection) {
-      trackEvent("accordion_open", {
-        section: trackSection,
-        item: index,
-        ...trackProps,
-      });
+      // eslint-disable-next-line security/detect-object-injection -- index from UI state
+      const itemTitle = items[index]?.title;
+      trackAccordionOpen(trackSection, itemTitle, trackProps);
     }
   };
 
