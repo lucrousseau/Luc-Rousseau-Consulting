@@ -42,9 +42,11 @@ function sanitizeProperties(properties?: AnalyticsProperties): AnalyticsProperti
     if (typeof value === "string") {
       const text = analyticsText(value);
       if (text === undefined) continue;
+      // eslint-disable-next-line security/detect-object-injection -- key from Object.entries
       next[key] = text;
       continue;
     }
+    // eslint-disable-next-line security/detect-object-injection -- key from Object.entries
     next[key] = value;
   }
   return next;
@@ -56,7 +58,8 @@ function sanitizeProperties(properties?: AnalyticsProperties): AnalyticsProperti
  */
 export function analyticsProps(section: string, detail?: AnalyticsProperties): AnalyticsProperties {
   const { page, ...rest } = detail ?? {};
-  const sectionValue = analyticsJoin(section, page) ?? section;
+  const pageText = typeof page === "string" || typeof page === "number" ? page : undefined;
+  const sectionValue = analyticsJoin(section, pageText) ?? section;
   return sanitizeProperties({ section: sectionValue, ...rest }) ?? { section: sectionValue };
 }
 
