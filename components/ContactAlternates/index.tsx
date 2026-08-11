@@ -20,10 +20,13 @@ export default function ContactAlternates({
 }: ContactAlternatesProps) {
   const { t } = useTranslation("common");
 
-  const handleClick = (variant: string) => () => {
+  const handleClick = (label: string) => () => {
     if (!trackSection) return;
-    trackCtaClick(`${trackSection}:${variant}`, trackProps);
+    trackCtaClick(trackSection, { ...trackProps, label });
   };
+
+  const linkedInLabel = t("linkedin-contact-label");
+  const emailLabel = t("contact-email-display");
 
   return (
     <span
@@ -40,9 +43,9 @@ export default function ContactAlternates({
             href={t("linkedin")}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={handleClick("linkedin")}
+            onClick={handleClick(linkedInLabel)}
           >
-            {t("linkedin-contact-label")}
+            {linkedInLabel}
           </a>
           <span className="contact-alternates__sep" aria-hidden="true">
             {" "}
@@ -53,9 +56,9 @@ export default function ContactAlternates({
       <a
         className="contact-alternates__link"
         href={t("contact-email-mailto")}
-        onClick={handleClick("email")}
+        onClick={handleClick(emailLabel)}
       >
-        {t("contact-email-display")}
+        {emailLabel}
       </a>
     </span>
   );

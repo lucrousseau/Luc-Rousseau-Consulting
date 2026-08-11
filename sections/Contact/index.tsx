@@ -117,7 +117,12 @@ export default function Contact({ cta, introTeaser = null, trackPage }: ContactP
                                 {...(channel.id === "linkedin"
                                   ? { target: "_blank", rel: "noopener noreferrer" }
                                   : {})}
-                                onClick={() => trackCtaClick(`contact:${channel.id}`, trackProps)}
+                                onClick={() =>
+                                  trackCtaClick("contact", {
+                                    ...trackProps,
+                                    label: linkLabel ?? channel.title,
+                                  })
+                                }
                               >
                                 {linkLabel}
                               </a>
