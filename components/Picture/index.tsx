@@ -50,8 +50,9 @@ export default function Picture({
         priority={Boolean(priority)}
         fetchPriority={priority ? "high" : undefined}
         loading={priority ? "eager" : (loading ?? "lazy")}
+        decoding={priority ? "sync" : "async"}
         sizes={sizes}
-        quality={priority ? 85 : 75}
+        quality={75}
       />
     </div>
   );
