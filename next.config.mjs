@@ -27,6 +27,12 @@ const nextConfig = {
   },
   serverExternalPackages: ["image-size"],
   turbopack: {
+    rules: {
+      // Alias alone does not catch Next's relative polyfill-module import under Turbopack.
+      "**/next/dist/build/polyfills/polyfill-module.js": {
+        loaders: ["./lib/empty-polyfill-loader.js"],
+      },
+    },
     resolveAlias: {
       // Relative imports inside next/dist do not always match an absolute key.
       [nextPolyfillModule]: "./lib/empty-polyfill.js",
