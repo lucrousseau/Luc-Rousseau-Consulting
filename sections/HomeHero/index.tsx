@@ -10,6 +10,9 @@ import { homeCtaRowStyle } from "../../commons/pageRowSpacing";
 
 import lucProfilPhoto from "./images/luc-profil-photo.jpg";
 
+/** Column width on mobile (sm-9), not 90vw; 90vw overfetched a 750px LCP image. */
+export const HOME_HERO_PROFILE_SIZES = "(max-width: 576px) 70vw, (max-width: 768px) 80vw, 400px";
+
 /**
  * Home hero (h1/h2, accordion, Buy). Requires i18n: `home-hero`, `common`.
  * Intentionally not using SectionIntro; CTA via Buy → SectionCta.
@@ -71,7 +74,7 @@ export default function HomeHero() {
                                     alt={t("home-hero:profile-image-alt")}
                                     rounded={true}
                                     priority={true}
-                                    sizes={"(max-width: 600px) 90vw, 400px"}
+                                    sizes={HOME_HERO_PROFILE_SIZES}
                                   />
                                 ),
                               },

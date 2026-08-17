@@ -12,6 +12,7 @@ const withBundleAnalyzer = (await import("@next/bundle-analyzer")).default({
   enabled: process.env.ANALYZE === "true",
 });
 
+const emptyPolyfill = path.join(__dirname, "lib/empty-polyfill.js");
 const nextPolyfillModule = path.join(
   __dirname,
   "node_modules/next/dist/build/polyfills/polyfill-module.js"
@@ -26,21 +27,33 @@ const nextConfig = {
   },
   serverExternalPackages: ["image-size"],
   turbopack: {
+    rules: {
+      // Alias alone does not catch Next's relative polyfill-module import under Turbopack.
+      "**/next/dist/build/polyfills/polyfill-module.js": {
+        loaders: ["./lib/empty-polyfill-loader.js"],
+      },
+    },
     resolveAlias: {
-      [nextPolyfillModule]: path.join(__dirname, "lib/empty-polyfill.js"),
+      // Relative imports inside next/dist do not always match an absolute key.
+      [nextPolyfillModule]: "./lib/empty-polyfill.js",
+      "next/dist/build/polyfills/polyfill-module": "./lib/empty-polyfill.js",
+      "next/dist/build/polyfills/polyfill-module.js": "./lib/empty-polyfill.js",
     },
   },
   webpack(config) {
     // Fallback for `next build --webpack` when Turbopack alias is unavailable.
     config.resolve.alias = {
       ...config.resolve.alias,
-      [nextPolyfillModule]: path.join(__dirname, "lib/empty-polyfill.js"),
+      [nextPolyfillModule]: emptyPolyfill,
+      "next/dist/build/polyfills/polyfill-module": emptyPolyfill,
+      "next/dist/build/polyfills/polyfill-module.js": emptyPolyfill,
     };
     return config;
   },
   images: {
     formats: ["image/avif", "image/webp"],
-    deviceSizes: [384, 640, 750, 828, 1080, 1200],
+    // 512 covers the home LCP photo at ~70vw on a 412px phone (1.75x DPR).
+    deviceSizes: [384, 512, 640, 750, 828, 1080, 1200],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     qualities: [75, 85],
     minimumCacheTTL: 31536000,
@@ -48,6 +61,8 @@ const nextConfig = {
   experimental: {
     // classnames breaks dev HMR when optimized (import.meta.webpackHot in CJS context)
     optimizePackageImports: ["html-react-parser"],
+    // Inline critical CSS and load the rest asynchronously (Pages Router + critters).
+    optimizeCss: true,
   },
   async rewrites() {
     return [

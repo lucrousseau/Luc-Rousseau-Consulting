@@ -187,21 +187,20 @@ const SEO = ({
     );
   }
 
-  return (
-    <Head>
-      <title>{title}</title>
-      {jsonLdPerson && (
+  const jsonLdNodes = (
+    <>
+      {jsonLdPerson ? (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }}
         />
-      )}
-      {jsonLdProfessionalService && (
+      ) : null}
+      {jsonLdProfessionalService ? (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProfessionalService) }}
         />
-      )}
+      ) : null}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }}
@@ -213,6 +212,12 @@ const SEO = ({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       ))}
+    </>
+  );
+
+  return (
+    <Head>
+      <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonical} />
 
@@ -243,6 +248,7 @@ const SEO = ({
       <link rel="icon" type="image/png" sizes="32x32" href={`${base}/favicon/favicon-32x32.png`} />
       <link rel="icon" type="image/png" sizes="16x16" href={`${base}/favicon/favicon-16x16.png`} />
       <link rel="manifest" href={`${base}/favicon/site.webmanifest`} />
+      {jsonLdNodes}
     </Head>
   );
 };
