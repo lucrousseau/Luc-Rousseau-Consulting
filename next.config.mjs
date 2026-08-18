@@ -23,9 +23,14 @@ const nextConfig = {
   // next-i18next loads config + locale JSON via fs at runtime (ISR revalidate).
   // Vercel NFT does not always trace those paths; force them into /var/task.
   outputFileTracingIncludes: {
-    "/*": ["./next-i18next.config.js", "./public/locales/**/*"],
+    "/*": [
+      "./next-i18next.config.js",
+      "./public/locales/**/*",
+      // Dynamic require("critters") in Next's HTML post-process; NFT often misses it.
+      "./node_modules/critters/**/*",
+    ],
   },
-  serverExternalPackages: ["image-size"],
+  serverExternalPackages: ["image-size", "critters"],
   turbopack: {
     rules: {
       // Alias alone does not catch Next's relative polyfill-module import under Turbopack.
@@ -54,14 +59,16 @@ const nextConfig = {
     formats: ["image/avif", "image/webp"],
     // 512 covers the home LCP photo at ~70vw on a 412px phone (1.75x DPR).
     deviceSizes: [384, 512, 640, 750, 828, 1080, 1200],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // 384 lives in deviceSizes only; duplicating it here doubled the 384w srcset entry.
+    imageSizes: [16, 32, 48, 64, 96, 128, 256],
     qualities: [75, 85],
     minimumCacheTTL: 31536000,
   },
   experimental: {
     // classnames breaks dev HMR when optimized (import.meta.webpackHot in CJS context)
     optimizePackageImports: ["html-react-parser"],
-    // Inline critical CSS and load the rest asynchronously (Pages Router + critters).
+    // Inline critical CSS and load the rest with media=print (Pages Router + critters).
+    // Requires the `critters` package at build and at ISR HTML regeneration.
     optimizeCss: true,
   },
   async rewrites() {
