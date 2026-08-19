@@ -8,7 +8,7 @@ jest.mock("next-i18next/pages", () => ({
       const values: Record<string, string> = {
         linkedin: "https://www.linkedin.com/in/lucrousseau/",
         "linkedin-contact-label": "LinkedIn",
-        github: "https://github.com/lucrousseau/Luc-Rousseau-Consulting",
+        github: "https://github.com/lucrousseau/",
         "github-contact-label": "GitHub",
       };
       return values[key] ?? key;
@@ -26,10 +26,7 @@ describe("SocialLinks", () => {
     expect(linkedIn).toHaveAttribute("target", "_blank");
 
     const github = screen.getByRole("link", { name: "GitHub" });
-    expect(github).toHaveAttribute(
-      "href",
-      "https://github.com/lucrousseau/Luc-Rousseau-Consulting"
-    );
+    expect(github).toHaveAttribute("href", "https://github.com/lucrousseau/");
     expect(github).toHaveAttribute("rel", "noopener noreferrer");
   });
 });
