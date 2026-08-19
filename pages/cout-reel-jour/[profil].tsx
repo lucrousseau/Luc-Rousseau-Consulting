@@ -34,7 +34,7 @@ export default function CoutReelJourPage({ role, pagePath }: CoutReelJourPagePro
         title={t("cost-calculator:seoTitle")}
         description={t("cost-calculator:seoDescription")}
         path={pagePath}
-        sameAs={[t("common:linkedin")]}
+        sameAs={[t("common:linkedin"), t("common:github")]}
         noindex
       />
       <Container tag="header" style={pageShellStyle}>

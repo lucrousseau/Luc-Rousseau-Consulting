@@ -21,7 +21,7 @@ export default function Services() {
       <SEO
         title={t("about:title")}
         description={t("common:schedule-me-label")}
-        sameAs={[t("common:linkedin")]}
+        sameAs={[t("common:linkedin"), t("common:github")]}
         noindex
       />
       <Container
