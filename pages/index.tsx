@@ -36,7 +36,7 @@ export default function Home() {
         title={t("home-seo-title")}
         description={t("home-seo-description")}
         image={t("home-seo-image")}
-        sameAs={[t("common:linkedin")]}
+        sameAs={[t("common:linkedin"), t("common:github")]}
       />
       <Container
         tag={"header"}

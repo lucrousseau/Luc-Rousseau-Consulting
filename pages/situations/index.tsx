@@ -49,7 +49,7 @@ export default function SituationsIndexPage() {
         description={t("seoDescription")}
         image={t("seoImage")}
         path={ROUTES.situationsHub}
-        sameAs={[t("common:linkedin")]}
+        sameAs={[t("common:linkedin"), t("common:github")]}
         jsonLd={hubJsonLd}
       />
       <Container tag="header" style={pageShellStyle}>

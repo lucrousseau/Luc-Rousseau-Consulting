@@ -92,7 +92,7 @@ export default function ContentDetailPage({
         description={pageDescription}
         path={pagePath}
         hreflangPaths={hreflangPaths}
-        sameAs={[t("common:linkedin")]}
+        sameAs={[t("common:linkedin"), t("common:github")]}
         jsonLd={jsonLd}
       />
       <Container tag="header" style={pageShellStyle}>
