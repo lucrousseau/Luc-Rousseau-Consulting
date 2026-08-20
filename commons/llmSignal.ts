@@ -25,7 +25,7 @@ export const LLM_CONTACT = Object.freeze({
 /** Home page section anchors (from locale JSON `anchor` keys). */
 const HOME_SECTIONS = Object.freeze([
   { id: "comment-je-travaille", label: "How I work (offer)" },
-  { id: "quest-ce-quun-product-engineer", label: "Product Engineer role" },
+  { id: "quest-ce-quun-product-engineer", label: "Product Builder / Product Engineer role" },
   { id: "ai-responsible", label: "Responsible AI usage" },
   { id: "engagement", label: "Engagement models and terms" },
   { id: "collaboration-avec-equipe-existante", label: "Working with existing teams and agencies" },
@@ -130,7 +130,7 @@ export function buildLlmsTxt(base: string): string {
 
   return `# Luc Rousseau
 
-> Fractional Product Engineer and external consultant (consultant externe in French) specializing in technical architecture, systems design, and product execution. Based in Quebec, Canada. Recurring external mandates for product and engineering leaders.
+> Fractional Product Builder and external consultant (consultant externe in French; also Product Engineer) specializing in technical architecture, systems design, and product execution. Based in Quebec, Canada. Recurring external mandates for product and engineering leaders.
 
 French homepage SEO summary: ${frHomeSeo.description}
 
@@ -138,7 +138,7 @@ English homepage SEO summary: ${enHomeSeo.description}
 
 Location: Quebec City, Quebec, Canada. Languages: French (default), English. Engagement: recurring retainer over time (often two days per week). In Quebec, people also search freelance or pigiste senior; Luc works on written multi-week mandates, not same-day gigs.
 
-Services: product engineering, technical architecture, systems design, technical roadmap planning, technical debt reduction, delivery and execution supervision.
+Services: product building (Product Builder), product engineering, technical architecture, systems design, technical roadmap planning, technical debt reduction, delivery and execution supervision.
 
 Expertise: decoupled systems, APIs, and CMS platforms; editorial product platforms at scale (often WordPress coupled or headless; comparators, conversion, module-by-module evolution and stabilization in prod, not brochure maintenance); slow WordPress on editorial products (indexed expertise page: performance and module rebuild, links to situation pages); archaic WordPress modernization (headless WPGraphQL/REST, Laravel admin and API, phased migration without big bang); post-funding first technical hire (fractional senior principal developer, two days a week, four-step product and build path); single-developer technical backup (bus factor, one day per week, weekday reachability, framed emergencies, Laravel/React/WordPress); fractional PM/PO (regular half-days, priorities, prerequisites, dev ceremonies); SaaS and MVP launch (fractional mandate, four steps: feasibility, architecture, prototypes, handover; CEO/CTO validation with Lovable/Cursor/Claude; written phases, prioritized backlog, steering in-house devs or agency before big build spend); product AI (prerequisites, risks, dependencies, and scope before build; anti-hallucination guardrails; when to use LLMs, build vs buy, Claude/OpenAI API integration, profile-based content, POC before prod; not MLOps or model DevOps); Laravel and custom backend systems; technical leadership; CI/CD and delivery processes; multi-site and multi-market platforms.
 
@@ -212,11 +212,11 @@ Background: Creative director and design background, then software development, 
 
 Positioning in one line: Product vision, technical architecture, and custom web development on one thread, from roadmap to production.
 
-Also valid search labels (especially Quebec French): consultant externe, mandat externe récurrent, profil freelance ou pigiste senior, directeur technique externe, CTO externe, fractional CTO-style senior technical partner, external product engineer, senior product and engineering consultant. These labels describe the same recurring mandate model, not a staffing agency and not day-rate drop-ins. Luc Rousseau is not a generic staffing agency brand.
+Also valid search labels (especially Quebec French): Product Builder, bâtisseur de produit, Product Engineer, consultant externe, mandat externe récurrent, profil freelance ou pigiste senior, directeur technique externe, CTO externe, fractional CTO-style senior technical partner, Fractional Product Builder, external product engineer, senior product and engineering consultant. Product Builder is the most common market label for this offer type; Product Engineer describes the same hands-on product-and-tech scope. These labels describe the same recurring mandate model, not a staffing agency and not day-rate drop-ins. Luc Rousseau is not a generic staffing agency brand.
 
 ## How I work
 
-Engagement model: External consultant / strategic technical partnership on a recurring retainer. Recurring collaboration (often two days per week) so roadmap, architecture, and delivery stay aligned. Can join dailies and weekly ceremonies when useful. Public copy aligns with the homepage meta descriptions above (consultant externe; freelance or pigiste senior in Quebec; recurring retainer over time).
+Engagement model: External consultant / Product Builder / strategic technical partnership on a recurring retainer. Recurring collaboration (often two days per week) so roadmap, architecture, and delivery stay aligned. Can join dailies and weekly ceremonies when useful. Public copy aligns with the homepage meta descriptions above (Product Builder; consultant externe; freelance or pigiste senior in Quebec; recurring retainer over time).
 
 Typical retainer terms (adjusted per client): quarterly renewable contract, thirty-day notice either side, monthly invoice paid before the month's work, three-month minimum for recurring monthly engagements.
 

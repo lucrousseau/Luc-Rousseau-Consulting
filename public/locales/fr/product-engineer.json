@@ -1,13 +1,13 @@
 {
   "anchor": "quest-ce-quun-product-engineer",
-  "navigation-label": "Consultant produit et développeur senior",
+  "navigation-label": "Product Builder et rôle produit-tech",
   "navigation-label-short": "Rôle",
   "badge": "En bref",
-  "title": "Consultant produit et développeur senior",
-  "paragraphOpening": "<p class=\"big product-engineer__opening\">Si vous cherchez un <strong>consultant externe</strong>, un directeur technique externe, ou un profil « freelance » ou « pigiste » senior en mandat récurrent, vous êtes au bon endroit : leadership technique senior sans embauche à temps plein. Ce libellé s'arrête souvent à la direction, aux escalades et au pilotage des partenaires techniques. J'utilise aussi Product Engineer (en anglais) parce que les arbitrages produit, l'architecture et l'exécution terrain restent sur le même fil, pour que la roadmap et ce qui part en prod ne se détachent pas.</p>",
-  "paragraph": "<p>Un consultant produit et développeur senior vous aide à décider quoi construire et pourquoi, conçoit l'architecture technique et comment le système doit fonctionner, et le construit, ou le fait construire par l'équipe. Pas de prise de tickets : il contribue au plan, aux choix techniques et à la livraison. Une seule personne pour passer de « on ne sait pas ce qu'il nous faut » ou « notre technique part en vrille » à un plan clair et un produit qui marche. Avec l'IA partout, ce profil décide où elle a sa place, où sont les garde-fous et ce qui part en prod : <strong>pas de handoff, pas de boîte noire</strong>. En 2026 c'est le profil qui gagne.</p>",
+  "title": "Product Builder : consultant produit et développeur senior",
+  "paragraphOpening": "<p class=\"big product-engineer__opening\">Si vous cherchez un <strong>Product Builder</strong>, un <strong>consultant externe</strong>, un directeur technique externe, ou un profil « freelance » ou « pigiste » senior en mandat récurrent, vous êtes au bon endroit : leadership technique senior sans embauche à temps plein. Product Builder est le libellé le plus courant pour ce type d'offre (même en français) ; on dit aussi bâtisseur de produit. Le libellé CTO externe s'arrête souvent à la direction, aux escalades et au pilotage des partenaires techniques. J'utilise aussi Product Engineer parce que les arbitrages produit, l'architecture et l'exécution terrain restent sur le même fil, pour que la roadmap et ce qui part en prod ne se détachent pas.</p>",
+  "paragraph": "<p>Un Product Builder (consultant produit et développeur senior) vous aide à décider quoi construire et pourquoi, conçoit l'architecture technique et comment le système doit fonctionner, et le construit, ou le fait construire par l'équipe. Pas de prise de tickets : il contribue au plan, aux choix techniques et à la livraison. Une seule personne pour passer de « on ne sait pas ce qu'il nous faut » ou « notre technique part en vrille » à un plan clair et un produit qui marche. Avec l'IA partout, ce profil décide où elle a sa place, où sont les garde-fous et ce qui part en prod : <strong>pas de handoff, pas de boîte noire</strong>. En 2026 c'est le profil qui gagne.</p>",
   "table-caption": "Comparaison des rôles",
-  "intro": "Développeur, Tech Lead, Product Manager, consultant externe, CTO externe, freelance, pigiste, Product Engineer, des libellés qu'on croise souvent au Québec, <em>périmètre différent</em>. Ci-dessous : où se situe chaque rôle sur le <strong>focus, la responsabilité, la profondeur et la livraison</strong>.",
+  "intro": "Développeur, Tech Lead, Product Manager, consultant externe, CTO externe, freelance, pigiste, Product Builder, Product Engineer, des libellés qu'on croise souvent au Québec, <em>périmètre différent</em>. Ci-dessous : où se situe chaque rôle sur le <strong>focus, la responsabilité, la profondeur et la livraison</strong>.",
   "ctaTeaser": "Vous voulez voir comment ça s'applique à votre contexte ? Parlons de vos objectifs produit et techniques.",
   "footer-cta-label": "Planifier un appel",
   "table": {
@@ -17,7 +17,7 @@
       "techLead": "Tech Lead",
       "productManager": "Product Manager",
       "fractionalCto": "CTO externe",
-      "productEngineer": "Product Engineer"
+      "productEngineer": "Product Builder"
     },
     "rows": [
       {

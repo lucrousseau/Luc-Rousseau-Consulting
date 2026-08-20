@@ -1,11 +1,11 @@
 {
   "anchor": "cv",
-  "seoTitle": "Luc Rousseau | Resume, Product Engineer and senior developer",
-  "seoDescription": "Luc Rousseau's background: product consultant and Product Engineer, 26 years from design to product. Architecture, headless, WordPress, Laravel, React. Quebec and remote.",
+  "seoTitle": "Luc Rousseau | Resume, Product Builder and senior developer",
+  "seoDescription": "Luc Rousseau's background: Product Builder and Product Engineer, 26 years from design to product. Architecture, headless, WordPress, Laravel, React. Quebec and remote.",
   "name": "Luc Rousseau",
-  "role": "Product Engineer · product and senior developer",
+  "role": "Product Builder · product and senior developer",
   "tagline": "Roadmap, architecture and delivery: one thread, from strategy to code.",
-  "photoAlt": "Luc Rousseau, Product Engineer and senior developer",
+  "photoAlt": "Luc Rousseau, Product Builder and senior developer",
   "location": "Quebec, Canada",
   "availability": "Open to permanent roles and consulting mandates, across Canada and remote",
   "actions": {
@@ -46,7 +46,7 @@
   },
   "summary": {
     "title": "Profile",
-    "content": "<p><strong>Product Engineer</strong> with a solid web development background, I turn ideas into concrete products. Creative director and designer early on, then programmer, now product and technical leadership: having been on both sides of the brief gives me a rare perspective. Self-taught, I built my expertise in the field, project after project.</p><p>I help product and engineering teams decide what to build and why, design how the system should work, then ship it. No handoff, no black box: someone who structures, challenges and delivers, from roadmap to code.</p>"
+    "content": "<p><strong>Product Builder</strong> (Product Engineer) with a solid web development background, I turn ideas into concrete products. Creative director and designer early on, then programmer, now product and technical leadership: having been on both sides of the brief gives me a rare perspective. Self-taught, I built my expertise in the field, project after project.</p><p>I help product and engineering teams decide what to build and why, design how the system should work, then ship it. No handoff, no black box: someone who structures, challenges and delivers, from roadmap to code.</p>"
   },
   "highlights": {
     "items": [
@@ -82,7 +82,7 @@
     "stackLabel": "Stack",
     "items": [
       {
-        "role": "Product Engineer · independent",
+        "role": "Product Builder · independent",
         "company": "Luc Rousseau Consulting",
         "companyHref": "https://lucrousseau.com",
         "period": "Dec. 2021 – present",

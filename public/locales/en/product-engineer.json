@@ -1,13 +1,13 @@
 {
   "anchor": "what-is-a-product-engineer",
-  "navigation-label": "What is a Product Engineer?",
+  "navigation-label": "What is a Product Builder?",
   "navigation-label-short": "Role",
   "badge": "In short",
-  "title": "What is a Product Engineer?",
-  "paragraphOpening": "<p class=\"big product-engineer__opening\">If you're looking for an external consultant, a <strong>fractional CTO</strong>, or a senior freelancer on a recurring retainer, you're in the right place: serious technical leadership without a full-time hire. The fractional CTO label often stops at direction, escalation, and vendor oversight. I use Product Engineer because product trade-offs, architecture, and hands-on delivery stay on the same thread, so the roadmap and what ships don't drift apart.</p>",
-  "paragraph": "<p>A Product Engineer helps you decide what to build and why, designs how the system should work, and builds it, or has the team build it. They <em>don't just take tickets</em>: they shape the plan, the technical choices, and the delivery. One person who can take you from \"we're not sure what we need\" or \"our tech is a mess\" to a clear plan and a product that works. With AI everywhere, this profile decides where it fits, where the guardrails are, and what ships: <strong>no handoff, no black box</strong>. In 2026 that's the profile that wins.</p>",
+  "title": "What is a Product Builder?",
+  "paragraphOpening": "<p class=\"big product-engineer__opening\">If you're looking for a <strong>Product Builder</strong>, an external consultant, a <strong>fractional CTO</strong>, or a senior freelancer on a recurring retainer, you're in the right place: serious technical leadership without a full-time hire. Product Builder is the most common label for this kind of offer. The fractional CTO label often stops at direction, escalation, and vendor oversight. I also use Product Engineer because product trade-offs, architecture, and hands-on delivery stay on the same thread, so the roadmap and what ships don't drift apart.</p>",
+  "paragraph": "<p>A Product Builder (Product Engineer) helps you decide what to build and why, designs how the system should work, and builds it, or has the team build it. They <em>don't just take tickets</em>: they shape the plan, the technical choices, and the delivery. One person who can take you from \"we're not sure what we need\" or \"our tech is a mess\" to a clear plan and a product that works. With AI everywhere, this profile decides where it fits, where the guardrails are, and what ships: <strong>no handoff, no black box</strong>. In 2026 that's the profile that wins.</p>",
   "table-caption": "How the role compares",
-  "intro": "Developer, Tech Lead, Product Manager, external consultant, fractional CTO, freelancer, contractor, Product Engineer, labels you hear in the wild, <em>different scope</em>. Below: where each sits on <strong>focus, ownership, depth, and delivery</strong>.",
+  "intro": "Developer, Tech Lead, Product Manager, external consultant, fractional CTO, freelancer, contractor, Product Builder, Product Engineer, labels you hear in the wild, <em>different scope</em>. Below: where each sits on <strong>focus, ownership, depth, and delivery</strong>.",
   "ctaTeaser": "Want to see how this fits your context? Let's talk about your product and technical goals.",
   "footer-cta-label": "Book a call",
   "table": {
@@ -17,7 +17,7 @@
       "techLead": "Tech Lead",
       "productManager": "Product Manager",
       "fractionalCto": "Fractional CTO",
-      "productEngineer": "Product Engineer"
+      "productEngineer": "Product Builder"
     },
     "rows": [
       {

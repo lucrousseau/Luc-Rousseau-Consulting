@@ -1,11 +1,11 @@
 {
   "anchor": "cv",
-  "seoTitle": "Luc Rousseau | CV, consultant produit et développeur senior",
-  "seoDescription": "Parcours de Luc Rousseau : consultant produit et Product Engineer, 26 ans du design au produit. Architecture, headless, WordPress, Laravel, React. Québec et à distance.",
+  "seoTitle": "Luc Rousseau | CV, Product Builder et consultant produit",
+  "seoDescription": "Parcours de Luc Rousseau : Product Builder, consultant produit et Product Engineer, 26 ans du design au produit. Architecture, headless, WordPress, Laravel, React. Québec et à distance.",
   "name": "Luc Rousseau",
-  "role": "Product Engineer · produit et développeur senior",
+  "role": "Product Builder · produit et développeur senior",
   "tagline": "Feuille de route, architecture et livraison : un seul fil, de la stratégie au code.",
-  "photoAlt": "Luc Rousseau, consultant produit et développeur senior",
+  "photoAlt": "Luc Rousseau, Product Builder, consultant produit et développeur senior",
   "location": "Québec, Canada",
   "availability": "Ouvert aux postes permanents et aux mandats, au Canada et à distance",
   "actions": {
@@ -46,7 +46,7 @@
   },
   "summary": {
     "title": "Profil",
-    "content": "<p><strong>Product Engineer</strong> avec un solide bagage en développement web, je transforme des idées en produits concrets. Directeur artistique et designer à mes débuts, puis programmeur, aujourd'hui produit et leadership technique : ce parcours des deux côtés du brief me donne une perspective rare. Autodidacte, j'ai bâti mon expertise sur le terrain, projet après projet.</p><p>J'aide les équipes produit et technique à décider quoi construire et pourquoi, à concevoir comment le système doit fonctionner, puis à le livrer. Pas de relai, pas de boîte noire : quelqu'un qui structure, questionne et livre, de la feuille de route au code.</p>"
+    "content": "<p><strong>Product Builder</strong> (Product Engineer) avec un solide bagage en développement web, je transforme des idées en produits concrets. Directeur artistique et designer à mes débuts, puis programmeur, aujourd'hui produit et leadership technique : ce parcours des deux côtés du brief me donne une perspective rare. Autodidacte, j'ai bâti mon expertise sur le terrain, projet après projet.</p><p>J'aide les équipes produit et technique à décider quoi construire et pourquoi, à concevoir comment le système doit fonctionner, puis à le livrer. Pas de relai, pas de boîte noire : quelqu'un qui structure, questionne et livre, de la feuille de route au code.</p>"
   },
   "highlights": {
     "items": [
@@ -82,7 +82,7 @@
     "stackLabel": "Stack",
     "items": [
       {
-        "role": "Product Engineer · indépendant",
+        "role": "Product Builder · indépendant",
         "company": "Luc Rousseau Consulting",
         "companyHref": "https://lucrousseau.com",
         "period": "Déc. 2021 – aujourd'hui",
