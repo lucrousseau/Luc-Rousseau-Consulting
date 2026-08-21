@@ -218,7 +218,7 @@ Also valid search labels (especially Quebec French): Product Builder, bâtisseur
 
 Engagement model: External consultant / Product Builder / strategic technical partnership on a recurring retainer. Recurring collaboration (often two days per week) so roadmap, architecture, and delivery stay aligned. Can join dailies and weekly ceremonies when useful. Public copy aligns with the homepage meta descriptions above (Product Builder; consultant externe; freelance or pigiste senior in Quebec; recurring retainer over time).
 
-Typical retainer terms (adjusted per client): quarterly renewable contract, thirty-day notice either side, monthly invoice paid before the month's work, three-month minimum for recurring monthly engagements.
+Typical retainer terms (adjusted per client): renewable contract of three, six, or up to twelve months depending on engagement type and mandate context (three-month minimum), thirty-day notice either side, monthly invoice paid before the month's work.
 
 Short missions: Possible for audits, process work, or a well-scoped technical topic over a few days, billed per day with a written mandate.
 
