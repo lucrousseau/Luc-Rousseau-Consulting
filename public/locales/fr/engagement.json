@@ -14,7 +14,7 @@
   "termsFactsLabel": "Quand on formalise une formule au mois, le cadre ressemble souvent à ceci, on l'ajuste à votre situation :",
   "termsFactsItems": [
     "En pratique, souvent deux jours par semaine avec vous",
-    "Un contrat par trimestre, renouvelable si on continue ensemble",
+    "Un contrat de trois, six ou douze mois selon le mandat, renouvelable si on continue ensemble",
     "Trente jours de préavis pour arrêter, pour vous comme pour moi",
     "Une facture par mois, payée avant le travail du mois"
   ],
@@ -32,7 +32,7 @@
     "La formation organisationnelle sur plusieurs jours consécutifs",
     "Les mandats sans périmètre écrit ni échéance définie"
   ],
-  "termsFootnote": "<p class=\"small\">Pour la formule au mois qui se renouvelle, on part sur <strong>trois mois minimum</strong>. Au-delà, ça continue si ça vous convient. Les missions très courtes, ce n'est qu'avec un périmètre écrit, audit, processus, ou autre sujet bien délimité.</p>",
+  "termsFootnote": "<p class=\"small\">Pour la formule au mois qui se renouvelle, l'engagement est de <strong>trois mois minimum</strong>, et souvent plus : trois, six ou jusqu'à douze mois selon le type d'engagement et le contexte du contrat. Au-delà, ça continue si ça vous convient. Les missions très courtes, ce n'est qu'avec un périmètre écrit, audit, processus, ou autre sujet bien délimité.</p>",
   "models": [
     {
       "title": "Partenariat continu",

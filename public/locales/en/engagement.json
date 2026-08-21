@@ -14,7 +14,7 @@
   "termsFactsLabel": "When we put a monthly arrangement in writing, it often looks like this, we tune it to your situation:",
   "termsFactsItems": [
     "In practice, often two days a week with you",
-    "A quarterly agreement you can renew if we keep going",
+    "A three-, six-, or twelve-month agreement depending on the mandate, renewable if we keep going",
     "Thirty days' notice to end it, for you or for me",
     "One invoice per month, paid before the month's work"
   ],
@@ -32,7 +32,7 @@
     "Multi-day organisation-wide training",
     "Mandates without a written scope or defined end date"
   ],
-  "termsFootnote": "<p class=\"small\">For the renewable monthly arrangement, we start with <strong>three months minimum</strong>. After that, it continues if it still makes sense. Very short work only comes with a written scope, audit, process, or another well-bounded topic.</p>",
+  "termsFootnote": "<p class=\"small\">For the renewable monthly arrangement, engagement is <strong>three months minimum</strong>, and often longer: three, six, or up to twelve months depending on the type of engagement and the contract context. After that, it continues if it still makes sense. Very short work only comes with a written scope, audit, process, or another well-bounded topic.</p>",
   "models": [
     {
       "title": "Ongoing partnership",
