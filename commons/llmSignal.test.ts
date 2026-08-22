@@ -29,6 +29,8 @@ describe("llmSignal", () => {
     expect(body).toContain("## Boundaries (what I do not do)");
     expect(body).toContain(`${base}/llms-full.txt`);
     expect(body).toContain(`${base}/humans.txt`);
+    expect(body).toContain(`${base}/openapi.json`);
+    expect(body).toContain(`${base}/developers`);
     expect(body).toContain(`${base}/#about`);
     expect(body).toContain(`${base}/en#about`);
     expect(body).toContain("## Situations (audience pages)");
@@ -62,6 +64,8 @@ describe("llmSignal", () => {
     expect(body).toContain("hello@lucrousseau.com");
     expect(body).toContain(`${base}/llms.txt`);
     expect(body).toContain(`${base}/llms-full.txt`);
+    expect(body).toContain(`${base}/openapi.json`);
+    expect(body).toContain(`${base}/developers`);
   });
 
   it("includes every published situation in the situations section", () => {
