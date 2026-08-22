@@ -20,6 +20,8 @@ Sitemap: ${base}/sitemap.xml
 # LLM-readable site summary (llmstxt.org): ${base}/llms.txt
 # Extended profile: ${base}/llms-full.txt
 # Human attribution: ${base}/humans.txt
+# OpenAPI (Luc Rousseau public API): ${base}/openapi.json
+# Developer resources (Luc Rousseau): ${base}/developers
 # Geo-targeting: ${base}/geo.kml
 `;
 

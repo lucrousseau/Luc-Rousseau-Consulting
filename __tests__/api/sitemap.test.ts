@@ -52,6 +52,16 @@ describe("sitemap API", () => {
     expect(res.body).toContain(`${base}/situations/refonte-produit-par-phases`);
   });
 
+  it("includes Luc Rousseau developer resources", () => {
+    const req = { method: "GET", headers: { host: "lucrousseau.com" } };
+    const res = createMockRes();
+
+    handler(req, res);
+
+    expect(res.body).toContain(`${base}/developers`);
+    expect(res.body).toContain(`${base}/en/developers`);
+  });
+
   it("omits the private day-rate calculator", () => {
     const req = { method: "GET", headers: { host: "lucrousseau.com" } };
     const res = createMockRes();
