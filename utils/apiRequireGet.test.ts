@@ -16,7 +16,7 @@ describe("apiRequireGet", () => {
     expect(res.end).not.toHaveBeenCalled();
   });
 
-  it("returns false and sends 405 for POST", () => {
+  it("returns false and sends JSON 405 for POST", () => {
     const req = { method: "POST" };
     const res = {
       statusCode: 200,
@@ -26,6 +26,9 @@ describe("apiRequireGet", () => {
     expect(apiRequireGet(req, res)).toBe(false);
     expect(res.statusCode).toBe(405);
     expect(res.setHeader).toHaveBeenCalledWith("Allow", "GET, HEAD");
-    expect(res.end).toHaveBeenCalledWith("Method Not Allowed");
+    expect(res.setHeader).toHaveBeenCalledWith("Content-Type", "application/json; charset=utf-8");
+    const body = JSON.parse(res.end.mock.calls[0][0]);
+    expect(body.error.code).toBe("method_not_allowed");
+    expect(body.error.hint).toMatch(/openapi/i);
   });
 });

@@ -176,6 +176,8 @@ ${buildExpertiseSection(base)}
 - [llms-full.txt](${base}/llms-full.txt): Extended identity, engagement model, and positioning
 - [humans.txt](${base}/humans.txt): People behind the site
 - [Sitemap](${base}/sitemap.xml): Full list of indexable pages
+- [OpenAPI](${base}/openapi.json): Luc Rousseau public API specification
+- [Developer resources](${base}/developers): Luc Rousseau developer docs (API, OpenAPI, agent files)
 - [llms.txt](${base}/llms.txt): This file
 - [Geo KML](${base}/geo.kml): Geographic location metadata
 `;
@@ -290,6 +292,8 @@ ${buildExpertiseSection(base)}
 - Index: ${base}/llms.txt
 - This file: ${base}/llms-full.txt
 - Sitemap: ${base}/sitemap.xml
+- OpenAPI: ${base}/openapi.json
+- Developer resources: ${base}/developers
 - Schema.org JSON-LD: Person, ProfessionalService, and WebSite on public HTML pages
 `;
 }
@@ -315,6 +319,8 @@ export function buildHumansTxt(base: string): string {
     Languages: French (default), English
     LLM index: ${base}/llms.txt
     LLM extended profile: ${base}/llms-full.txt
-    Standards: HTML5, JSON-LD (Schema.org), llms.txt (llmstxt.org)
+    Standards: HTML5, JSON-LD (Schema.org), llms.txt (llmstxt.org), OpenAPI
+    Developer resources: ${base}/developers
+    OpenAPI: ${base}/openapi.json
 `;
 }

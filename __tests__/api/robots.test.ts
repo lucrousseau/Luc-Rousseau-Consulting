@@ -58,6 +58,8 @@ describe("robots API", () => {
     handler(req, res);
 
     expect(res.body).toContain(`# LLM-readable site summary (llmstxt.org): ${base}/llms.txt`);
+    expect(res.body).toContain(`# OpenAPI (Luc Rousseau public API): ${base}/openapi.json`);
+    expect(res.body).toContain(`# Developer resources (Luc Rousseau): ${base}/developers`);
     expect(res.body).toContain(`# Geo-targeting: ${base}/geo.kml`);
     expect(res.body).not.toMatch(/^LLMs-Txt:/m);
     expect(res.body).not.toMatch(/^KML:/m);

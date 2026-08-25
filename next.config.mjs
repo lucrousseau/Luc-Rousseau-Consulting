@@ -78,6 +78,7 @@ const nextConfig = {
       { source: "/llms.txt", destination: "/api/llms.txt" },
       { source: "/llms-full.txt", destination: "/api/llms-full.txt" },
       { source: "/humans.txt", destination: "/api/humans.txt" },
+      { source: "/openapi.json", destination: "/api/openapi.json" },
     ];
   },
   i18n: {

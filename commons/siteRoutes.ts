@@ -44,6 +44,8 @@ export const ROUTES = Object.freeze({
   cvTechLead: "/cvs/cv-techlead",
   cvFounding: "/cvs/cv-founding",
   expertiseBase: "/expertise",
+  /** Public developer / agent resources (OpenAPI, llms.txt, negotiation notes). */
+  developers: "/developers",
 });
 
 /** Same calculator page, keyed by mission slug (`/cout-reel-jour/dev` | `/pm`). */
@@ -56,6 +58,7 @@ const STATIC_APP_PATHS = new Set<string>([
   ROUTES.situationsHub,
   ROUTES.services,
   ROUTES.dayRateComparison,
+  ROUTES.developers,
 ]);
 
 export interface LocaleAlternateUrls {
