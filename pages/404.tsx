@@ -16,8 +16,8 @@ export default function NotFound() {
   const title = isEn ? "Page not found | Luc Rousseau" : "Page introuvable | Luc Rousseau";
   const heading = isEn ? "Page not found" : "Page introuvable";
   const lead = isEn
-    ? "This path does not exist on lucrousseau.com. Use the links below to continue."
-    : "Ce chemin n'existe pas sur lucrousseau.com. Utilisez les liens ci-dessous pour continuer.";
+    ? "This path does not exist on lucrousseau.com. Below are links to help you find what you're looking for."
+    : "Ce chemin n'existe pas sur lucrousseau.com. Vous trouverez ci-dessous des liens pour vous orienter.";
 
   return (
     <>
@@ -50,26 +50,64 @@ export default function NotFound() {
         </p>
         <h1 style={{ margin: "0.75rem 0 0.5rem", fontSize: "2rem" }}>{heading}</h1>
         <p style={{ margin: "0 0 1.5rem" }}>{lead}</p>
-        <ul style={{ margin: 0, paddingLeft: "1.25rem" }}>
+
+        <h2 style={{ fontSize: "1.25rem", marginTop: "2rem", marginBottom: "0.75rem" }}>
+          {isEn ? "Where to look next" : "Où chercher"}
+        </h2>
+        <ul style={{ margin: "0 0 1.5rem", paddingLeft: "1.25rem", lineHeight: 1.8 }}>
           <li>
-            <Link href={homeHref}>{isEn ? "Home" : "Accueil"}</Link>
+            <Link href={homeHref}>
+              <strong>{isEn ? "Home" : "Accueil"}</strong>
+            </Link>
+            {" — "}
+            {isEn
+              ? "Product engineering and technical consulting services"
+              : "Services d'ingénierie produit et consultation technique"}
           </li>
           <li>
-            <Link href={situationsHref}>{isEn ? "Situations" : "Situations"}</Link>
+            <Link href={situationsHref}>
+              <strong>{isEn ? "Situations" : "Situations"}</strong>
+            </Link>
+            {" — "}
+            {isEn
+              ? "Audience-specific engagement pages for different use cases"
+              : "Pages d'engagement spécifiques par audience et cas d'usage"}
           </li>
           <li>
             <Link href={developersHref}>
-              {isEn ? "Luc Rousseau developer resources" : "Ressources développeurs Luc Rousseau"}
+              <strong>{isEn ? "Developer resources" : "Ressources développeurs"}</strong>
             </Link>
+            {" — "}
+            {isEn
+              ? "OpenAPI spec, llms.txt, and machine-readable endpoints"
+              : "Spécification OpenAPI, llms.txt et endpoints lisibles par machine"}
+          </li>
+        </ul>
+
+        <h2 style={{ fontSize: "1.25rem", marginTop: "2rem", marginBottom: "0.75rem" }}>
+          {isEn ? "Machine-readable resources" : "Ressources machine"}
+        </h2>
+        <ul style={{ margin: 0, paddingLeft: "1.25rem", lineHeight: 1.8 }}>
+          <li>
+            <a href="/llms.txt">
+              <strong>llms.txt</strong>
+            </a>
+            {" — "}
+            {isEn ? "Site index for LLM systems" : "Index du site pour systèmes LLM"}
           </li>
           <li>
-            <a href="/llms.txt">llms.txt</a>
+            <a href="/openapi.json">
+              <strong>openapi.json</strong>
+            </a>
+            {" — "}
+            {isEn ? "API specification (OpenAPI 3.1)" : "Spécification API (OpenAPI 3.1)"}
           </li>
           <li>
-            <a href="/openapi.json">openapi.json</a>
-          </li>
-          <li>
-            <a href="/sitemap.xml">sitemap.xml</a>
+            <a href="/sitemap.xml">
+              <strong>sitemap.xml</strong>
+            </a>
+            {" — "}
+            {isEn ? "Complete site map" : "Plan complet du site"}
           </li>
         </ul>
       </main>

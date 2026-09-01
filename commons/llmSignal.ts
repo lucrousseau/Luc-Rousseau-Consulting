@@ -150,6 +150,10 @@ ${buildBoundariesBlock()}
 
 - [Home (French)](${getLocalizedRouteUrl(base, ROUTES.home, "fr", DEFAULT_LOCALE)}): Main site in French
 - [Home (English)](${getLocalizedRouteUrl(base, ROUTES.home, "en", DEFAULT_LOCALE)}): English version
+- [About (French)](${getLocalizedRouteUrl(base, ROUTES.about, "fr", DEFAULT_LOCALE)}): Background, expertise, and approach
+- [About (English)](${getLocalizedRouteUrl(base, ROUTES.about, "en", DEFAULT_LOCALE)}): English about page
+- [Privacy (French)](${getLocalizedRouteUrl(base, ROUTES.privacy, "fr", DEFAULT_LOCALE)}): Privacy policy
+- [Privacy (English)](${getLocalizedRouteUrl(base, ROUTES.privacy, "en", DEFAULT_LOCALE)}): English privacy policy
 - [Situations (French)](${getLocalizedRouteUrl(base, ROUTES.situationsHub, "fr", DEFAULT_LOCALE)}): Two-question quiz; result shows a client-voice quote then links to the matching situation page
 - [Situations (English)](${getLocalizedRouteUrl(base, ROUTES.situationsHub, "en", DEFAULT_LOCALE)}): English situations index and routing quiz
 

@@ -210,6 +210,61 @@ See the home page and situations for the public offer.
 `;
   }
 
+  if (path === ROUTES.about) {
+    const title = locale === "en" ? "About Luc Rousseau" : "À propos de Luc Rousseau";
+    const intro =
+      locale === "en"
+        ? "Product Builder and technical consultant based in Quebec, Canada. Creative director turned programmer, now leading product and technical mandates."
+        : "Product Builder et consultant technique basé au Québec, Canada. Directeur créatif devenu programmeur, maintenant à la tête de mandats produit et techniques.";
+    const aboutUrl = getLocalizedRouteUrl(base, ROUTES.about, locale, DEFAULT_LOCALE);
+
+    return `# ${title}
+
+${intro}
+
+One accountable partner from strategy to delivery. I work across the stack: modern frontends (React, Next.js, Vue), APIs, platform choices, and technical architecture. Not a consultant who leaves a deck, not a dev who only takes tickets—someone who structures, challenges, and ships.
+
+**Background:** Creative director and designer, then programmer, now product and technical leadership. That path gives me a perspective that's rare. I've been on both sides: pixels to systems, UX to APIs, design to roadmap.
+
+**Expertise:** Editorial platforms at scale, complex SaaS, e-commerce, greenfield products. Frontend architecture, API design, database modeling, CI/CD, infrastructure. I understand how product decisions affect engineering constraints, and how engineering choices enable or limit product possibilities.
+
+**Based in Quebec, working across Canada.** Fractional engagement model: senior-level product and technical leadership without full-time executive overhead. Mandates from weeks to ongoing quarterly engagements.
+
+- [Full about page (HTML)](${aboutUrl})
+- [Contact](${base}/llms.txt#contact)
+- [Developer resources](${base}/developers)
+`;
+  }
+
+  if (path === ROUTES.privacy) {
+    const title = locale === "en" ? "Privacy Policy" : "Politique de confidentialité";
+    const intro =
+      locale === "en"
+        ? "How lucrousseau.com handles your information when you visit or contact for professional services."
+        : "Comment lucrousseau.com traite vos informations lorsque vous visitez ou contactez pour des services professionnels.";
+    const privacyUrl = getLocalizedRouteUrl(base, ROUTES.privacy, locale, DEFAULT_LOCALE);
+
+    return `# ${title}
+
+${intro}
+
+**Information collected:** Anonymous analytics (page views, region, device, performance via Vercel Analytics). Contact information (name, email) when you reach out. No cookies for tracking or advertising.
+
+**How we use it:** Improve site performance and user experience. Respond to professional inquiries. Maintain communication during active engagements. Legal compliance when required.
+
+**Security:** HTTPS encryption, Content Security Policy headers, secure API authentication, regular security audits.
+
+**Your rights:** Access, correct, or delete your personal information. Opt out of communications. Withdraw consent at any time. Contact hello@lucrousseau.com to exercise these rights.
+
+**Third parties:** Vercel (hosting/analytics), Calendly (scheduling), email providers. Each has its own privacy policy.
+
+Effective: September 1, 2026 · Luc Rousseau operates from Quebec, Canada.
+
+- [Full privacy policy (HTML)](${privacyUrl})
+- [Contact](${base}/llms.txt#contact)
+`;
+  }
+
   const situationMatch = path.match(/^\/situations\/([^/]+)$/);
   if (situationMatch) {
     return buildSituationPageMarkdown(base, situationMatch[1], locale);

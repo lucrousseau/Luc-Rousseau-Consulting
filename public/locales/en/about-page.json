@@ -1,0 +1,17 @@
+{
+  "seo-title": "About Luc Rousseau | Product Builder and Technical Consultant",
+  "seo-description": "Learn about Luc Rousseau, a Product Builder based in Quebec. Creative director turned programmer, now leading product and technical mandates. One accountable partner from strategy to delivery.",
+  "title": "About Luc Rousseau",
+  "subtitle": "Product Builder · Technical Consultant · Quebec",
+  "intro": "<p class=\"big\">Creative director and design for several years, then <strong>programmer</strong>, now product and technical leadership. That path gives me a perspective that's rare. I've been on both sides of the brief: from pixels and UX to systems, APIs, and roadmap.</p>",
+  "background-heading": "Background and approach",
+  "background": "<p>I know what gets lost when \"design\" and \"engineering\" talk past each other, and how to keep things aligned. I work across the stack: modern frontends (React, Next.js, Vue), APIs and service boundaries, and platform choices that fit the product, including headless and coupled WordPress for editorial platforms at scale, Laravel for tailored backends, and bespoke stacks when neither box fits.</p><p>Architecture and product thinking come before the label on the repo. I care about clarity over buzzwords, reducing complexity instead of adding layers, and one person owning the thread from strategy to delivery.</p>",
+  "why-heading": "Why Product Builder",
+  "why": "<p>That's why I work as a <strong>Product Builder</strong>: not a consultant who leaves a deck, not a dev who only takes tickets, but someone who structures, challenges, and ships. Based in Quebec, Canada, I work with product and engineering leaders across Canada and remotely who want one accountable partner for technical architecture, systems design, and product execution.</p>",
+  "experience-heading": "Experience and expertise",
+  "experience": "<p>I've worked on editorial platforms at scale, complex SaaS applications, e-commerce systems, and greenfield products. My technical background spans frontend architecture, API design, database modeling, CI/CD pipelines, and infrastructure decisions. I understand how product decisions affect engineering constraints, and how engineering choices enable or limit product possibilities.</p><p>Whether you need someone to lead a technical migration, architect a new product module, unblock a stuck engineering team, or bridge the gap between product vision and delivery reality, I bring both the technical depth and product judgment to deliver outcomes, not just implementations.</p>",
+  "location-heading": "Based in Quebec, working across Canada",
+  "location": "<p>I'm based in <strong>Quebec, Canada</strong>, and work with clients across Canada and internationally. My engagement model is fractional: you get senior-level product and technical leadership without the overhead of a full-time executive hire. I work on mandates ranging from a few weeks to ongoing quarterly engagements, depending on your needs.</p>",
+  "values-heading": "What I value",
+  "values": "<p>Clarity over complexity. Shipping over theorizing. Honest conversations about trade-offs. One person owning the outcome. Systems that last beyond the current sprint. Products that people actually want to use. Engineering work that serves product goals, not the reverse.</p>"
+}
