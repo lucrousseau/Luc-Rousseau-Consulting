@@ -89,6 +89,7 @@ const SEO = ({
           "@type": "Person",
           "@id": personId,
           name: SITE_NAME,
+          description: homeSeoCopy.description,
           url: siteHome,
           sameAs: sameAs,
           jobTitle: homeSeoCopy.jobTitle,

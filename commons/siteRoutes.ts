@@ -28,6 +28,8 @@ export const ROUTES = Object.freeze({
   home: "/",
   situationsHub: "/situations",
   services: "/services",
+  about: "/about",
+  privacy: "/privacy",
   /** Private CV hub (noindex, omitted from the sitemap). */
   cvHub: "/cvs",
   /**
@@ -57,6 +59,8 @@ const STATIC_APP_PATHS = new Set<string>([
   ROUTES.home,
   ROUTES.situationsHub,
   ROUTES.services,
+  ROUTES.about,
+  ROUTES.privacy,
   ROUTES.dayRateComparison,
   ROUTES.developers,
 ]);

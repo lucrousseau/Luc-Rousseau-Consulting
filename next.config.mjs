@@ -89,12 +89,17 @@ const nextConfig = {
   reactStrictMode: true,
   async headers() {
     const cacheableHtml = "public, s-maxage=86400, stale-while-revalidate=604800";
-    const homeHeaders = [{ key: "Cache-Control", value: cacheableHtml }, ...securityHeaders];
+    const varyAccept = { key: "Vary", value: "Accept, Accept-Encoding" };
+    const homeHeaders = [
+      { key: "Cache-Control", value: cacheableHtml },
+      varyAccept,
+      ...securityHeaders,
+    ];
 
     return [
       { source: "/", headers: homeHeaders },
       { source: "/en", headers: homeHeaders },
-      { source: "/(.*)", headers: securityHeaders },
+      { source: "/(.*)", headers: [...securityHeaders, varyAccept] },
     ];
   },
   async redirects() {
