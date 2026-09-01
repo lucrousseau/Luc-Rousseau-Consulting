@@ -75,9 +75,7 @@ export default function NotFound() {
           </li>
           <li>
             <Link href={developersHref}>
-              <strong>
-                {isEn ? "Developer resources" : "Ressources développeurs"}
-              </strong>
+              <strong>{isEn ? "Developer resources" : "Ressources développeurs"}</strong>
             </Link>
             {" — "}
             {isEn

@@ -18,10 +18,7 @@ export default function PrivacyPage() {
 
   return (
     <>
-      <SEO
-        title={t("privacy:seo-title")}
-        description={t("privacy:seo-description")}
-      />
+      <SEO title={t("privacy:seo-title")} description={t("privacy:seo-description")} />
       <Container
         tag="header"
         style={{
