@@ -6,6 +6,186 @@
       "has": [{ "type": "host", "value": "www.lucrousseau.com" }],
       "destination": "https://lucrousseau.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/zines",
+      "destination": "https://lucrousseau.ca/c/zines/",
+      "permanent": true
+    },
+    {
+      "source": "/zines/",
+      "destination": "https://lucrousseau.ca/c/zines/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/zines",
+      "destination": "https://lucrousseau.ca/c/zines/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/zines/",
+      "destination": "https://lucrousseau.ca/c/zines/",
+      "permanent": true
+    },
+    {
+      "source": "/en/zines",
+      "destination": "https://lucrousseau.ca/c/zines/",
+      "permanent": true
+    },
+    {
+      "source": "/en/zines/",
+      "destination": "https://lucrousseau.ca/c/zines/",
+      "permanent": true
+    },
+    {
+      "source": "/zines/05_gre_esp_fra",
+      "destination": "https://lucrousseau.ca/p/05-gre-esp-fra/",
+      "permanent": true
+    },
+    {
+      "source": "/zines/05_gre_esp_fra/",
+      "destination": "https://lucrousseau.ca/p/05-gre-esp-fra/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/zines/05_gre_esp_fra",
+      "destination": "https://lucrousseau.ca/p/05-gre-esp-fra/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/zines/05_gre_esp_fra/",
+      "destination": "https://lucrousseau.ca/p/05-gre-esp-fra/",
+      "permanent": true
+    },
+    {
+      "source": "/en/zines/05_gre_esp_fra",
+      "destination": "https://lucrousseau.ca/p/05-gre-esp-fra/",
+      "permanent": true
+    },
+    {
+      "source": "/en/zines/05_gre_esp_fra/",
+      "destination": "https://lucrousseau.ca/p/05-gre-esp-fra/",
+      "permanent": true
+    },
+    {
+      "source": "/zines/04_cai",
+      "destination": "https://lucrousseau.ca/p/04-cai/",
+      "permanent": true
+    },
+    {
+      "source": "/zines/04_cai/",
+      "destination": "https://lucrousseau.ca/p/04-cai/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/zines/04_cai",
+      "destination": "https://lucrousseau.ca/p/04-cai/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/zines/04_cai/",
+      "destination": "https://lucrousseau.ca/p/04-cai/",
+      "permanent": true
+    },
+    {
+      "source": "/en/zines/04_cai",
+      "destination": "https://lucrousseau.ca/p/04-cai/",
+      "permanent": true
+    },
+    {
+      "source": "/en/zines/04_cai/",
+      "destination": "https://lucrousseau.ca/p/04-cai/",
+      "permanent": true
+    },
+    {
+      "source": "/zines/03_ist",
+      "destination": "https://lucrousseau.ca/p/03-ist/",
+      "permanent": true
+    },
+    {
+      "source": "/zines/03_ist/",
+      "destination": "https://lucrousseau.ca/p/03-ist/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/zines/03_ist",
+      "destination": "https://lucrousseau.ca/p/03-ist/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/zines/03_ist/",
+      "destination": "https://lucrousseau.ca/p/03-ist/",
+      "permanent": true
+    },
+    {
+      "source": "/en/zines/03_ist",
+      "destination": "https://lucrousseau.ca/p/03-ist/",
+      "permanent": true
+    },
+    {
+      "source": "/en/zines/03_ist/",
+      "destination": "https://lucrousseau.ca/p/03-ist/",
+      "permanent": true
+    },
+    {
+      "source": "/zines/02_prt_hun_ita",
+      "destination": "https://lucrousseau.ca/p/02-prt-hun-ita/",
+      "permanent": true
+    },
+    {
+      "source": "/zines/02_prt_hun_ita/",
+      "destination": "https://lucrousseau.ca/p/02-prt-hun-ita/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/zines/02_prt_hun_ita",
+      "destination": "https://lucrousseau.ca/p/02-prt-hun-ita/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/zines/02_prt_hun_ita/",
+      "destination": "https://lucrousseau.ca/p/02-prt-hun-ita/",
+      "permanent": true
+    },
+    {
+      "source": "/en/zines/02_prt_hun_ita",
+      "destination": "https://lucrousseau.ca/p/02-prt-hun-ita/",
+      "permanent": true
+    },
+    {
+      "source": "/en/zines/02_prt_hun_ita/",
+      "destination": "https://lucrousseau.ca/p/02-prt-hun-ita/",
+      "permanent": true
+    },
+    {
+      "source": "/zines/01_mex",
+      "destination": "https://lucrousseau.ca/p/01-mex/",
+      "permanent": true
+    },
+    {
+      "source": "/zines/01_mex/",
+      "destination": "https://lucrousseau.ca/p/01-mex/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/zines/01_mex",
+      "destination": "https://lucrousseau.ca/p/01-mex/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/zines/01_mex/",
+      "destination": "https://lucrousseau.ca/p/01-mex/",
+      "permanent": true
+    },
+    {
+      "source": "/en/zines/01_mex",
+      "destination": "https://lucrousseau.ca/p/01-mex/",
+      "permanent": true
+    },
+    {
+      "source": "/en/zines/01_mex/",
+      "destination": "https://lucrousseau.ca/p/01-mex/",
+      "permanent": true
     }
   ]
 }

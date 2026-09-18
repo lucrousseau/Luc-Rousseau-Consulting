@@ -106,7 +106,11 @@ const nextConfig = {
     /** www → apex is handled in vercel.json (edge), not here; avoids i18n redirect loops. */
     const rules = [];
 
-    const zinesBase = "https://lucrousseau.ca/zines";
+    /** Catalog lives at /c/zines/; products at /p/{slug}/. Trailing-slash
+     *  paths are also in vercel.json so the edge fires before Next.js
+     *  strips the slash (/zines/01_mex/ → /zines/01_mex). */
+    const zinesIndex = "https://lucrousseau.ca/c/zines/";
+    const zineProductBase = "https://lucrousseau.ca/p";
     const zineMappings = [
       { from: "05_gre_esp_fra", to: "05-gre-esp-fra" },
       { from: "04_cai", to: "04-cai" },
@@ -115,17 +119,19 @@ const nextConfig = {
       { from: "01_mex", to: "01-mex" },
     ];
 
-    /** Index redirects: /zines, /fr/zines, /en/zines → external zines site */
+    /** Index redirects: /zines, /fr/zines, /en/zines → zine catalog on .ca */
     for (const base of ["/zines", "/fr/zines", "/en/zines"]) {
       rules.push({
         source: base,
-        destination: `${zinesBase}/`,
+        destination: zinesIndex,
         permanent: true,
+        locale: false,
       });
       rules.push({
         source: `${base}/`,
-        destination: `${zinesBase}/`,
+        destination: zinesIndex,
         permanent: true,
+        locale: false,
       });
     }
 
@@ -134,13 +140,15 @@ const nextConfig = {
       for (const prefix of ["/zines", "/fr/zines", "/en/zines"]) {
         rules.push({
           source: `${prefix}/${from}`,
-          destination: `${zinesBase}/${to}`,
+          destination: `${zineProductBase}/${to}/`,
           permanent: true,
+          locale: false,
         });
         rules.push({
           source: `${prefix}/${from}/`,
-          destination: `${zinesBase}/${to}`,
+          destination: `${zineProductBase}/${to}/`,
           permanent: true,
+          locale: false,
         });
       }
     }
