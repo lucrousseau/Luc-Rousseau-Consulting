@@ -29,6 +29,10 @@ yarn-error.log*
 .env*.local
 .npmrc.local
 
+# Claude Code / agents (personal)
+CLAUDE.local.md
+.claude/settings.local.json
+
 # backup / scratch
 /bk
 

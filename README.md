@@ -104,6 +104,7 @@ Après `npm install`, le script `prepare` installe les hooks Husky automatiqueme
 - `public/locales/` : fichiers de traduction (next-i18next)
 
 Conventions contributeur : [`CONTRIBUTING.md`](CONTRIBUTING.md).
+Instructions agents (Cursor, Claude Code) : [`AGENTS.md`](AGENTS.md) ; Claude Code charge [`CLAUDE.md`](CLAUDE.md), qui importe `AGENTS.md`.
 
 ### Réutiliser une section sur une autre page
 

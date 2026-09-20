@@ -1,5 +1,7 @@
 # Contributing
 
+Coding agents: follow [`AGENTS.md`](AGENTS.md) (Claude Code also reads `CLAUDE.md`, which imports it).
+
 ## Scripts
 
 Run the full check suite before pushing (also enforced by the `pre-push` Husky hook):
