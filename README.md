@@ -6,7 +6,7 @@ Site Next.js 16 (Pages Router) avec i18n (en/fr) et architecture SCSS modulaire.
 
 | Outil             | Version                                                                                                  |
 | ----------------- | -------------------------------------------------------------------------------------------------------- |
-| Next.js           | 16.2.x                                                                                                   |
+| Next.js           | 16.3.x                                                                                                   |
 | React             | 19.2.x                                                                                                   |
 | Langage           | TypeScript (`.ts` / `.tsx`)                                                                              |
 | Typage            | `tsc` strict sur le code source (`commons/`, `utils/`, `components/`, `sections/`, `pages/`, `proxy.ts`) |

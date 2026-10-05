@@ -20,6 +20,8 @@ const nextPolyfillModule = path.join(
 );
 
 const nextConfig = {
+  // Next 16.3+ rewrites AGENTS.md on every `next dev`; ours is hand-written and authoritative.
+  agentRules: false,
   outputFileTracingRoot: __dirname,
   // next-i18next loads config + locale JSON via fs at runtime (ISR revalidate).
   // Vercel NFT does not always trace those paths; force them into /var/task.
@@ -31,7 +33,7 @@ const nextConfig = {
       "./node_modules/critters/**/*",
     ],
   },
-  serverExternalPackages: ["image-size", "critters"],
+  serverExternalPackages: ["critters"],
   turbopack: {
     rules: {
       // Alias alone does not catch Next's relative polyfill-module import under Turbopack.
