@@ -8,11 +8,7 @@ export default function Logo({ ...props }: AlignmentProps) {
 
   return (
     <div className={classNames("component component__logo", alignmentsClass)}>
-      <Link
-        href="/"
-        className="h2 logo"
-        aria-label="Luc Rousseau | CTO à la Demande & Création de Produits"
-      >
+      <Link href="/" className="h2 logo" aria-label="Luc Rousseau | Product Builder">
         <span>Luc Rousseau</span>
       </Link>
     </div>

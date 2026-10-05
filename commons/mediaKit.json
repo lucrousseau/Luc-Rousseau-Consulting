@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "id": "vector",
+      "files": [
+        { "id": "symbol", "file": "lrc-symbole.svg", "source": "symbole/lrc-symbole.svg" },
+        {
+          "id": "symbolChalk",
+          "file": "lrc-symbole-blanc.svg",
+          "source": "symbole/lrc-symbole-blanc.svg",
+          "dark": true
+        },
+        { "id": "symbol32", "file": "lrc-symbole-32.svg", "source": "symbole/lrc-symbole-32.svg" },
+        { "id": "symbol16", "file": "lrc-symbole-16.svg", "source": "symbole/lrc-symbole-16.svg" }
+      ]
+    },
+    {
+      "id": "images",
+      "files": [
+        {
+          "id": "avatar",
+          "file": "linkedin-avatar-400.png",
+          "source": "png/linkedin-avatar-400.png"
+        },
+        {
+          "id": "icon512",
+          "file": "android-chrome-512.png",
+          "source": "png/android-chrome-512.png"
+        },
+        {
+          "id": "icon192",
+          "file": "android-chrome-192.png",
+          "source": "png/android-chrome-192.png"
+        },
+        { "id": "icon180", "file": "apple-touch-icon.png", "source": "png/apple-touch-icon.png" },
+        { "id": "favicon32", "file": "favicon-32.png", "source": "png/favicon-32.png" },
+        { "id": "favicon16", "file": "favicon-16.png", "source": "png/favicon-16.png" }
+      ]
+    },
+    {
+      "id": "charter",
+      "files": [
+        {
+          "id": "charter",
+          "file": "charte-lrc-v1.0.png",
+          "source": "charte/charte-lrc-v1.0.png",
+          "noPreview": true
+        }
+      ]
+    }
+  ]
+}

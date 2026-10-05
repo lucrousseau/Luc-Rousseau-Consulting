@@ -1,0 +1,80 @@
+{
+  "seo-title": "Media kit | Luc Rousseau",
+  "eyebrow": "Media kit",
+  "title": "The symbol and its files",
+  "lede": "The symbol, palette and files of Luc Rousseau Consulting, ready to use in an article, a presentation or a partner listing.",
+  "symbol-alt": "Luc Rousseau Consulting symbol: three navy links forming a closed chain",
+  "symbol-heading": "The closed chain",
+  "symbol-meaning": "Three links: architecture, product direction and code. “I am the whole chain.”",
+  "rules": [
+    "<strong>All navy</strong>, never recoloured, no effects.",
+    "<strong>On dark backgrounds</strong>, use the chalk version.",
+    "<strong>Below 48&nbsp;px</strong>, use the 16 and 32 drawings made for those sizes."
+  ],
+  "palette-heading": "Palette",
+  "colors": {
+    "navy": "Navy",
+    "slate": "Slate",
+    "green": "Green",
+    "chalk": "Chalk",
+    "white": "White"
+  },
+  "typography": "Headings in Quincy CF Black, subheadings in Quincy CF Medium, body text in the system font.",
+  "files-heading": "Files",
+  "col-file": "File",
+  "col-usage": "Use",
+  "col-format": "Format",
+  "download": "Download",
+  "download-label": "Download {{file}}",
+  "groups": {
+    "vector": "Symbol, vector",
+    "images": "Images",
+    "charter": "Charter"
+  },
+  "files": {
+    "symbol": {
+      "label": "Navy symbol",
+      "usage": "General use"
+    },
+    "symbolChalk": {
+      "label": "Chalk symbol",
+      "usage": "On dark backgrounds"
+    },
+    "symbol32": {
+      "label": "32 px symbol",
+      "usage": "Small sizes"
+    },
+    "symbol16": {
+      "label": "16 px symbol",
+      "usage": "Favicon"
+    },
+    "avatar": {
+      "label": "Avatar 400 × 400",
+      "usage": "Profiles and social networks"
+    },
+    "icon512": {
+      "label": "Icon 512 × 512",
+      "usage": "Apps and directories"
+    },
+    "icon192": {
+      "label": "Icon 192 × 192",
+      "usage": "Android home screen"
+    },
+    "icon180": {
+      "label": "Icon 180 × 180",
+      "usage": "iOS home screen"
+    },
+    "favicon32": {
+      "label": "Favicon 32 × 32",
+      "usage": "Browser tab"
+    },
+    "favicon16": {
+      "label": "Favicon 16 × 16",
+      "usage": "Browser tab"
+    },
+    "charter": {
+      "label": "Charter v1.0",
+      "usage": "Palette, typography, symbol"
+    }
+  }
+}

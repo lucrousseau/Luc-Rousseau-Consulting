@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Charte LRC v1.0</title>
+<style>
+@font-face{font-family:QuincyCF;font-weight:900;src:url("../../public/fonts/QuincyCF-Black.woff2") format("woff2");}
+@font-face{font-family:QuincyCF;font-weight:500;src:url("../../public/fonts/QuincyCF-Medium.woff2") format("woff2");}
+:root{--marine:#131e61;--ardoise:#454c73;--vert:#4a6359;--vert-h:#3d5249;--craie:#f6f5f5;--blanc:#fff;--corail:#ee6f57;
+--sys:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--line:rgba(69,76,115,.22)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1600px;height:1700px;background:var(--craie);color:var(--ardoise);font-family:var(--sys);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.page{position:relative;width:1600px;height:1700px;padding:80px 96px 96px 140px;display:grid;grid-template-columns:400px 1fr;column-gap:88px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.q9{font-family:QuincyCF,Georgia,serif;font-weight:900;color:var(--marine)}
+.q5{font-family:QuincyCF,Georgia,serif;font-weight:500}
+.left{display:flex;flex-direction:column}
+.left h1{font-size:52px;line-height:1.1;margin-top:20px}
+.left .lede{margin-top:24px;max-width:350px;font-size:16px;line-height:1.8}
+.prop{margin-top:auto;border:1.5px dashed var(--ardoise);padding:22px 22px 18px;background:transparent}
+.prop .tag{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ardoise);border:1px solid var(--ardoise);padding:3px 8px;margin-bottom:12px}
+.prop h2{font-size:22px;line-height:1.2}
+.prop ul{list-style:none;margin-top:10px}
+.prop li{padding:8px 0;border-top:1px solid var(--line);font-size:14px;line-height:1.5}
+.prop li b{color:var(--marine);font-weight:600}
+.dot{display:inline-block;width:.42em;height:.42em;border-radius:50%;background:var(--corail);vertical-align:.12em}
+.right{display:grid;grid-template-rows:auto auto 1fr;row-gap:50px}
+.sec-h{display:flex;align-items:baseline;gap:16px;margin-bottom:18px}
+.sec-h .n{font-size:12px;letter-spacing:.14em}
+.sec-h h2{font-size:24px}
+.pal{display:grid;grid-template-columns:1.7fr 1.3fr 1.3fr 1fr .8fr .8fr;height:150px}
+.sw{padding:14px 14px 12px;display:flex;flex-direction:column;justify-content:space-between;font-size:12.5px}
+.sw .nm{font-weight:600;font-size:14.5px}
+.sw .hx{font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.s-marine{background:var(--marine);color:var(--craie)}
+.s-ardoise{background:var(--ardoise);color:var(--craie)}
+.s-vert{background:var(--vert);color:var(--craie)}
+.s-craie{background:var(--craie);color:var(--marine);border:1px solid rgba(69,76,115,.3)}
+.s-blanc{background:var(--blanc);color:var(--marine);border:1px solid rgba(69,76,115,.3);border-left:0}
+.s-corail{background:var(--corail);color:var(--marine)}
+.roles{display:grid;grid-template-columns:1.7fr 1.3fr 1.3fr 1fr .8fr .8fr;font-size:12.5px;line-height:1.45}
+.roles div{padding:10px 14px 0 0}
+.roles .c{display:block;margin-top:6px;font-variant-numeric:tabular-nums;color:var(--marine);font-weight:600}
+.roles .c.ko{color:#a5402d}
+.var{margin-top:14px;font-size:12.5px;padding-top:10px;border-top:1px solid var(--line)}
+.var b{color:var(--marine);font-weight:600}
+.chip{display:inline-block;width:11px;height:11px;vertical-align:-1px;margin:0 4px 0 2px}
+.typo{display:grid;grid-template-columns:1fr 330px;column-gap:44px;align-items:start}
+.spec .t1{font-size:52px;line-height:1.1}
+.spec .t2{font-size:36px;line-height:1.1;margin-top:18px;padding-bottom:.5em;position:relative}
+.spec .t2::after{content:"";position:absolute;left:0;bottom:0;width:5rem;height:2px;background:var(--vert)}
+.spec .t3{font-size:24px;line-height:1.3;margin-top:16px;color:var(--ardoise)}
+.spec .badge{font-size:14px;font-weight:600;color:var(--vert);margin-top:14px}
+.spec p{margin-top:6px;max-width:560px;line-height:1.8}
+.spec .lnk{color:var(--vert);text-decoration:underline;text-underline-offset:.18em;font-weight:500}
+.btns{margin-top:16px;display:flex;gap:12px}
+.btn{display:inline-block;font-size:16px;font-weight:500;padding:8px 22px;border-radius:30px;border:2px solid var(--vert);background:var(--vert);color:var(--craie)}
+.btn.sec{background:var(--ardoise);border-color:var(--ardoise)}
+.scale{font-size:12.5px}
+.scale div{display:grid;grid-template-columns:1fr auto;gap:10px;padding:6px 0;border-top:1px solid var(--line)}
+.scale div b{color:var(--marine);font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
+.scale .h{font-size:11px;letter-spacing:.12em;text-transform:uppercase;border-top:0;padding-bottom:4px}
+.mono{display:grid;grid-template-columns:auto auto 1fr;column-gap:36px;align-items:start}
+.tile{width:140px;height:140px;display:flex;align-items:center;justify-content:center}
+.cap{font-size:12.5px;margin-top:10px;max-width:160px;line-height:1.4}
+.cap b{color:var(--marine)}
+.lrc-tile{background:var(--craie);border:1px solid rgba(69,76,115,.3)}
+.lr{font-size:74px;line-height:1;letter-spacing:-.02em}
+.lr .pt{color:var(--corail)}
+.note{font-size:14px;max-width:440px;line-height:1.55}
+.note b{color:var(--marine);font-weight:600}
+.lic{font-size:13px;margin-top:14px;padding:12px 14px;border-left:3px solid var(--marine);background:var(--blanc)}
+.prop.rule{border:1.5px solid var(--marine);background:var(--blanc)}
+.prop.rule .tag{color:var(--craie);background:var(--marine);border-color:var(--marine)}
+.opts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.opt{padding:14px 16px 16px;border:1px solid transparent}
+.opt.rec{border:2px solid var(--marine);background:var(--blanc)}
+.rtag{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;background:var(--marine);color:var(--craie);padding:3px 8px;margin-bottom:12px}
+.rtag.ghost{background:transparent}
+.pair{display:flex;align-items:flex-end;gap:18px}
+.favwrap{display:flex;flex-direction:column;align-items:center;gap:6px}
+.fav{width:32px;height:32px;background:var(--craie);border:1px solid rgba(69,76,115,.3);display:flex;align-items:center;justify-content:center}
+.fav .q9{font-size:16.5px;line-height:1;letter-spacing:-.02em}
+.fl{font-size:11px}.opt .cap{max-width:none}
+.hx2{font-weight:400;font-variant-numeric:tabular-nums}
+.mono2{display:grid;grid-template-columns:72px 1fr 300px;gap:24px;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.mono2 .note{max-width:none;font-size:13px}
+.mono2 .lic{margin-top:0}
+.opt .lrc-tile{width:128px;height:128px}.pair{gap:12px}.fav16{width:16px;height:16px;background:var(--craie);border:1px solid rgba(69,76,115,.3);display:flex;align-items:center;justify-content:center}.fav svg,.fav16 svg{display:block}.opt .cap .col{font-size:11.5px;opacity:.85}.opt .cap .dist{display:block;margin-top:6px;font-size:11.5px;font-style:italic}.opt{padding:12px 12px 14px}
+.right{min-width:0}.fav{width:34px;height:34px}.fav16{width:18px;height:18px}.fl{white-space:nowrap}.opt .lrc-tile{width:112px;height:112px}
+.p5{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);gap:36px;align-items:start}
+.p5-l{background:var(--blanc);border:2px solid var(--marine);padding:16px 20px 18px}
+.p5-row{display:flex;align-items:flex-end;gap:22px}
+.p5-big{background:var(--craie);border:1px solid rgba(69,76,115,.3);padding:12px}
+.p5-sm{display:flex;flex-direction:column;align-items:center;gap:6px}
+.p5-dark{background:var(--marine);padding:8px}
+.p5-why{margin-top:14px;font-size:14px;line-height:1.55}
+.p5-why b{color:var(--marine)}
+.tabbar{background:#dfe1e6;border-radius:10px 10px 0 0;padding:8px 8px 0;display:flex;gap:4px}
+.tab{background:#fff;border-radius:8px 8px 0 0;padding:9px 12px;display:flex;align-items:center;gap:8px;font-size:12.5px;color:#222;width:240px;min-width:0}
+.tab.off{background:transparent;width:auto;color:#555}
+.tab .ttl{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tab .tx{color:#888}
+.tfav svg{display:block}
+.ctx{font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin:8px 0 22px}
+.li{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid #e3e3e3;border-radius:10px;padding:14px}
+.li-av{border:1px solid #e3e3e3;border-radius:6px;background:var(--craie);padding:6px}
+.li-n{font-weight:600;color:#1d1d1d;font-size:15px}
+.li-s{font-size:12.5px;color:#666;margin-top:2px}
+.foot{position:absolute;left:140px;right:96px;bottom:30px;display:flex;justify-content:space-between;font-size:12px;letter-spacing:.06em}
+</style>
+</head>
+<body>
+<div class="page">
+  <section class="left">
+    <div class="eyebrow">Luc Rousseau Consulting · Charte minimale</div>
+    <h1 class="q9">Ce que le site emploie déjà.</h1>
+    <p class="lede">Relevé le 5 octobre 2026 dans le code de lucrousseau.com et sur le site en ligne. Cette charte décrit le système existant : chaque couleur et chaque taille porte le rôle qu’elle a aujourd’hui.</p>
+
+    <div class="prop rule">
+      <span class="tag">Règle adoptée · 5 octobre 2026</span>
+      <h2 class="q9">La règle du point</h2>
+      <ul>
+        <li><b>Un seul point,</b> qui reprend le « · » de « Luc Rousseau · Product Builder ».</li>
+        <li><b>Où il vit :</b> le symbole et le séparateur du nom, nulle part ailleurs.</li>
+        <li><b>Jamais :</b> sur du texte, un lien, un bouton ou un fond.</li>
+        <li><b>Sa couleur :</b> le vert #4A6359, sans objet tant que le symbole n’a pas de point. Le corail est écarté du rôle de marque.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="right">
+    <div>
+      <div class="sec-h"><span class="n">01</span><h2 class="q9">Palette, telle qu’employée</h2></div>
+      <div class="pal">
+        <div class="sw s-marine"><span class="nm">Marine</span><span class="hx">#131E61</span></div>
+        <div class="sw s-ardoise"><span class="nm">Ardoise</span><span class="hx">#454C73</span></div>
+        <div class="sw s-vert"><span class="nm">Vert</span><span class="hx">#4A6359</span></div>
+        <div class="sw s-craie"><span class="nm">Craie</span><span class="hx">#F6F5F5</span></div>
+        <div class="sw s-blanc"><span class="nm">Blanc</span><span class="hx">#FFFFFF</span></div>
+        <div class="sw s-corail"><span class="nm">Corail</span><span class="hx">#EE6F57</span></div>
+      </div>
+      <div class="roles">
+        <div>Titres H1, H2, H4 à H6, logo « Luc Rousseau » sur ordinateur.<span class="c">13,9:1 sur craie</span></div>
+        <div>Texte courant, intertitres H3, boutons secondaires.<span class="c">7,6:1 sur craie</span></div>
+        <div>Liens, bouton principal, filet sous les H2, badges, puces, logo sur mobile.<span class="c">6,0:1 sur craie</span></div>
+        <div>Fond de page, texte des boutons.</div>
+        <div>Cartes : accordéon, quiz, tableaux.</div>
+        <div>Alerte de dépassement du calculateur, seulement. Hors rôle de marque.<span class="c ko">2,7:1 sur craie</span></div>
+      </div>
+      <div class="var"><b>Variantes en usage :</b> vert au survol <span class="chip" style="background:#3d5249"></span>#3D5249 · dégradé du calculateur <span class="chip" style="background:#243552"></span>#243552 <span class="chip" style="background:#2f4a42"></span>#2F4A42 · dégradé d’alerte <span class="chip" style="background:#7a3a32"></span>#7A3A32 <span class="chip" style="background:#c45a48"></span>#C45A48 · texte atténué : ardoise à 70-82 %.</div>
+    </div>
+
+    <div>
+      <div class="sec-h"><span class="n">02</span><h2 class="q9">Typographie, telle qu’employée</h2></div>
+      <div class="typo">
+        <div class="spec">
+          <div class="q9 t1">Product Builder</div>
+          <div class="q9 t2">Produit, architecture et code.</div>
+          <div class="q5 t3">Clarté produit et roadmap</div>
+          <div class="badge">Badge de section</div>
+          <p>Texte courant en police système, 16 px, interligne 1,8, avec un <span class="lnk">lien dans le texte</span>.</p>
+          <div class="btns"><span class="btn">Bouton principal</span><span class="btn sec">Bouton secondaire</span></div>
+        </div>
+        <div class="scale">
+          <div class="h"><span>Niveau · police · graisse</span><b>px</b></div>
+          <div><span>H1 · Quincy CF Black 900</span><b>52 (44 mobile)</b></div>
+          <div><span>Logo · Quincy CF Black 900</span><b>36</b></div>
+          <div><span>H2 · Quincy CF Black 900, filet vert</span><b>36 (32 mobile)</b></div>
+          <div><span>H3 · Quincy CF Medium 500</span><b>24</b></div>
+          <div><span>H4 · système 500-600, marine</span><b>20</b></div>
+          <div><span>H5 · système, marine</span><b>18</b></div>
+          <div><span>Texte agrandi · système 400</span><b>17,6</b></div>
+          <div><span>Texte · système 400, interligne 1,8</span><b>16</b></div>
+          <div><span>Petit texte · système 400</span><b>14,4</b></div>
+          <div><span>Badge · système 600, vert</span><b>14</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="sec-h"><span class="n">03</span><h2 class="q9">Le symbole : la chaîne fermée</h2></div>
+      <div class="p5">
+        <div class="p5-l">
+          <span class="rtag">Retenu par Luc · variante A6 · 5 octobre 2026</span>
+          <div class="p5-row">
+            <div class="p5-big"><svg viewBox="0 0 64 64" width="176" height="176" style="display:block;background:#fff"><g fill="none" stroke="#131e61" stroke-width="3.00"><rect x="17.53" y="8.87" width="28.93" height="15.67" rx="7.84" transform="rotate(0.00 32.00 16.70)"/><rect x="31.88" y="33.72" width="28.93" height="15.67" rx="7.84" transform="rotate(120.00 46.35 41.56)"/><rect x="3.18" y="33.72" width="28.93" height="15.67" rx="7.84" transform="rotate(240.00 17.65 41.56)"/></g></svg></div>
+            <div class="p5-sm"><div class="fav"><svg viewBox="0 0 64 64" width="32" height="32" style="display:block;background:#fff"><g fill="none" stroke="#131e61" stroke-width="4.35"><rect x="17.92" y="9.48" width="28.17" height="15.26" rx="7.63" transform="rotate(0.00 32.00 17.11)"/><rect x="31.88" y="33.67" width="28.17" height="15.26" rx="7.63" transform="rotate(120.00 45.97 41.30)"/><rect x="3.95" y="33.67" width="28.17" height="15.26" rx="7.63" transform="rotate(240.00 18.03 41.30)"/></g></svg></div><span class="fl">32 px</span></div>
+            <div class="p5-sm"><div class="fav16"><svg viewBox="0 0 64 64" width="16" height="16" style="display:block;background:#fff"><g fill="none" stroke="#131e61" stroke-width="5.55"><rect x="18.26" y="10.02" width="27.49" height="14.89" rx="7.44" transform="rotate(0.00 32.00 17.47)"/><rect x="31.89" y="33.63" width="27.49" height="14.89" rx="7.44" transform="rotate(120.00 45.63 41.08)"/><rect x="4.63" y="33.63" width="27.49" height="14.89" rx="7.44" transform="rotate(240.00 18.37 41.08)"/></g></svg></div><span class="fl">16 px</span></div>
+            <div class="p5-sm"><div class="p5-dark"><svg viewBox="0 0 64 64" width="48" height="48" style="display:block;background:#131e61"><g fill="none" stroke="#f6f5f5" stroke-width="3.60"><rect x="17.70" y="9.14" width="28.59" height="15.49" rx="7.74" transform="rotate(0.00 32.00 16.88)"/><rect x="31.88" y="33.70" width="28.59" height="15.49" rx="7.74" transform="rotate(120.00 46.18 41.44)"/><rect x="3.52" y="33.70" width="28.59" height="15.49" rx="7.74" transform="rotate(240.00 17.82 41.44)"/></g></svg></div><span class="fl">sur marine</span></div>
+          </div>
+          <p class="p5-why"><b>Ce qu’il dit :</b> trois maillons, architecture, cap produit et code, qui forment à eux seuls une chaîne fermée : « je suis à moi seul la chaîne ». Tout marine, sans entrelacs, sans point.</p>
+        </div>
+        <div class="p5-r">
+          <div class="tabbar"><div class="tab"><span class="tfav"><svg viewBox="0 0 64 64" width="16" height="16" style="display:block;background:#fff"><g fill="none" stroke="#131e61" stroke-width="5.55"><rect x="18.26" y="10.02" width="27.49" height="14.89" rx="7.44" transform="rotate(0.00 32.00 17.47)"/><rect x="31.89" y="33.63" width="27.49" height="14.89" rx="7.44" transform="rotate(120.00 45.63 41.08)"/><rect x="4.63" y="33.63" width="27.49" height="14.89" rx="7.44" transform="rotate(240.00 18.37 41.08)"/></g></svg></span><span class="ttl">Luc Rousseau · Product Builder</span><span class="tx">×</span></div><div class="tab off"><span class="ttl">Nouvel onglet</span></div></div>
+          <div class="ctx">Onglet de navigateur, 16 px</div>
+          <div class="li">
+            <div class="li-av"><svg viewBox="0 0 64 64" width="52" height="52" style="display:block;background:#fff"><g fill="none" stroke="#131e61" stroke-width="3.80"><rect x="17.76" y="9.23" width="28.48" height="15.43" rx="7.71" transform="rotate(0.00 32.00 16.94)"/><rect x="31.88" y="33.69" width="28.48" height="15.43" rx="7.71" transform="rotate(120.00 46.12 41.41)"/><rect x="3.64" y="33.69" width="28.48" height="15.43" rx="7.71" transform="rotate(240.00 17.88 41.41)"/></g></svg></div>
+            <div><div class="li-n">Luc Rousseau · Product Builder</div><div class="li-s">Conseil en produit et en développement · Québec</div></div>
+          </div>
+          <div class="ctx">Avatar de page, format carré</div>
+        </div>
+      </div>
+      <div class="mono2">
+        <div class="pho">
+          <svg viewBox="0 0 140 140" width="72" height="72"><rect width="140" height="140" fill="#16160F"/><g transform="translate(10 10)" fill="none" stroke="#FAFAF7" stroke-width="14" stroke-linecap="butt" stroke-linejoin="miter"><path d="M20 20V93h43"/><path d="M63 20v80"/><path d="M63 27h17a16 16 0 0 1 0 32H63"/><path d="M74 59 101 96"/></g></svg>
+        </div>
+        <p class="note"><b>Face au photographe (TK-150) :</b> le bloc noir plein et les lettres LR restent à lucrousseau.ca. Ici, aucune lettre, aucun noir, un trait ouvert en marine : les deux marques ne se confondent pas.</p>
+        <div class="lic"><b>Fichiers :</b> dessin final et déclinaisons (favicon, icône d’écran d’accueil, avatar) dans TK-398, après les retouches fines.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="foot"><span>TK-397 · v1.0 · 5 octobre 2026 · approuvée par Luc</span><span>Sources : styles/abstracts/_variables.scss, composants du site, lucrousseau.com en ligne à 1440 px</span></div>
+</div>
+</body>
+</html>
