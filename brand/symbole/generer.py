@@ -59,7 +59,8 @@ SPECS={
  'apple-touch-icon.svg':     dict(size_vb=180,stroke=7.2,gap=7.2*J,extent=118,bg=C),
  'android-chrome-192.svg':   dict(size_vb=192,stroke=7.4,gap=7.4*J,extent=114,bg=C),
  'android-chrome-512.svg':   dict(size_vb=512,stroke=19.5,gap=19.5*J,extent=304,bg=C),
- 'linkedin-avatar-400.svg':  dict(size_vb=400,stroke=15,gap=15*J,extent=226,bg=C),
+ # Avatar LinkedIn : symbole a 90 % du carre, trait a l'echelle (variante 6 retenue par Luc, TK-404).
+ 'linkedin-avatar-400.svg':  dict(size_vb=400,stroke=23.89,gap=23.89*J,extent=360,bg=C),
 }
 if __name__=='__main__':
     import os
