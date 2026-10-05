@@ -18,3 +18,6 @@ public/images/*.webp
 # Misc
 coverage
 .vercel
+
+# Brand kit archive: Jeff's approved HTML boards stay byte-for-byte as approved
+brand/charte/*.html
