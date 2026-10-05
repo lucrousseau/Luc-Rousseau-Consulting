@@ -1,0 +1,80 @@
+{
+  "seo-title": "Media kit | Luc Rousseau",
+  "eyebrow": "Media kit",
+  "title": "Le symbole et ses fichiers",
+  "lede": "Le symbole, la palette et les fichiers de Luc Rousseau Consulting, prêts à l'emploi pour un article, une présentation ou une fiche de partenaire.",
+  "symbol-alt": "Symbole de Luc Rousseau Consulting : trois maillons marine qui forment une chaîne fermée",
+  "symbol-heading": "La chaîne fermée",
+  "symbol-meaning": "Trois maillons : l'architecture, le cap produit et le code. « Je suis à moi seul la chaîne. »",
+  "rules": [
+    "<strong>Tout marine</strong>, sans recoloration ni effet.",
+    "<strong>Sur fond foncé</strong>, la version craie.",
+    "<strong>Sous 48&nbsp;px</strong>, les dessins 16 et 32 prévus pour ces tailles."
+  ],
+  "palette-heading": "Palette",
+  "colors": {
+    "navy": "Marine",
+    "slate": "Ardoise",
+    "green": "Vert",
+    "chalk": "Craie",
+    "white": "Blanc"
+  },
+  "typography": "Titres en Quincy CF Black, intertitres en Quincy CF Medium, texte en police système.",
+  "files-heading": "Fichiers",
+  "col-file": "Fichier",
+  "col-usage": "Usage",
+  "col-format": "Format",
+  "download": "Télécharger",
+  "download-label": "Télécharger {{file}}",
+  "groups": {
+    "vector": "Symbole, vectoriel",
+    "images": "Images",
+    "charter": "Charte"
+  },
+  "files": {
+    "symbol": {
+      "label": "Symbole marine",
+      "usage": "Usage général"
+    },
+    "symbolChalk": {
+      "label": "Symbole craie",
+      "usage": "Sur fond foncé"
+    },
+    "symbol32": {
+      "label": "Symbole 32 px",
+      "usage": "Petites tailles"
+    },
+    "symbol16": {
+      "label": "Symbole 16 px",
+      "usage": "Favicon"
+    },
+    "avatar": {
+      "label": "Avatar 400 × 400",
+      "usage": "Profils et réseaux sociaux"
+    },
+    "icon512": {
+      "label": "Icône 512 × 512",
+      "usage": "Applications et annuaires"
+    },
+    "icon192": {
+      "label": "Icône 192 × 192",
+      "usage": "Écran d'accueil Android"
+    },
+    "icon180": {
+      "label": "Icône 180 × 180",
+      "usage": "Écran d'accueil iOS"
+    },
+    "favicon32": {
+      "label": "Favicon 32 × 32",
+      "usage": "Onglet de navigateur"
+    },
+    "favicon16": {
+      "label": "Favicon 16 × 16",
+      "usage": "Onglet de navigateur"
+    },
+    "charter": {
+      "label": "Charte v1.0",
+      "usage": "Palette, typographie, symbole"
+    }
+  }
+}

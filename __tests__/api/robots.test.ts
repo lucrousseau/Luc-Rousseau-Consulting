@@ -64,4 +64,13 @@ describe("robots API", () => {
     expect(res.body).not.toMatch(/^LLMs-Txt:/m);
     expect(res.body).not.toMatch(/^KML:/m);
   });
+
+  it("does not disallow the media kit, so crawlers can read its noindex", () => {
+    const req = { method: "GET", headers: { host: "lucrousseau.com" } };
+    const res = createMockRes();
+
+    handler(req, res);
+
+    expect(res.body).not.toContain("media-kit");
+  });
 });

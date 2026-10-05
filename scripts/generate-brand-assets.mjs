@@ -4,7 +4,9 @@
  * Une seule source, un seul moteur de rendu :
  * - `brand/png/` : les PNG et l'ICO du kit de marque ;
  * - `public/favicon/` et `public/favicon.ico` : les icônes du site, copies exactes des
- *   fichiers de `brand/png/` sous les noms que le site attend.
+ *   fichiers de `brand/png/` sous les noms que le site attend ;
+ * - `public/media-kit/` : les fichiers téléchargeables de la page /media-kit, copies exactes
+ *   des fichiers de `brand/` listés dans `commons/mediaKit.json`.
  *
  * Les SVG font foi ; rien de ce qui est généré ici ne se retouche à la main. Après toute
  * retouche d'un SVG (à la main ou par `brand/symbole/generer.py`) : `npm run brand`, puis
@@ -13,7 +15,7 @@
  * Les 16 et 32 px ont leur propre dessin (trait épaissi, jour élargi) : ce ne sont pas
  * des réductions du maître `lrc-symbole.svg`.
  */
-import { realpathSync } from "node:fs";
+import { readFileSync, realpathSync } from "node:fs";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -23,7 +25,14 @@ import sharp from "sharp";
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 export const SOURCE_DIR = path.join(ROOT, "brand/symbole");
 export const PNG_DIR = path.join(ROOT, "brand/png");
+export const BRAND_DIR = path.join(ROOT, "brand");
 export const FAVICON_DIR = path.join(ROOT, "public/favicon");
+export const MEDIA_KIT_DIR = path.join(ROOT, "public/media-kit");
+
+/** Fichiers publics du kit : `source` relatif à `brand/`, `file` sous `public/media-kit/`. */
+export const MEDIA_KIT_FILES = JSON.parse(
+  readFileSync(path.join(ROOT, "commons/mediaKit.json"), "utf8")
+).groups.flatMap((group) => group.files);
 
 /** Craie de la charte LRC : fond des icônes opaques. */
 const CHALK = "#f6f5f5";
@@ -129,6 +138,10 @@ async function main() {
   await emit(PNG_DIR, "favicon.ico", ico);
   await emit(FAVICON_DIR, "favicon.ico", ico);
   await emit(path.join(ROOT, "public"), "favicon.ico", ico);
+  for (const { file, source } of MEDIA_KIT_FILES) {
+    // eslint-disable-next-line security/detect-non-literal-fs-filename
+    await emit(MEDIA_KIT_DIR, file, readFileSync(path.join(BRAND_DIR, source)));
+  }
 }
 
 /** realpath : lancé par un lien symbolique, argv[1] ne vaudrait pas le chemin du module. */

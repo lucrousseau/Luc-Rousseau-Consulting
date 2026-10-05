@@ -38,11 +38,17 @@ Les fichiers de Quincy CF vivent dans `public/fonts/` pour le site ; ils ne fon
 - `png/` : PNG et `favicon.ico` générés à partir des SVG.
 - `charte/` : `charte-lrc-v1.0.png` et sa source HTML (elle charge Quincy CF depuis `public/fonts/`).
 
+## Version publique
+
+La page [lucrousseau.com/media-kit](https://lucrousseau.com/media-kit) (et `/en/media-kit`) propose au téléchargement les fichiers listés dans `commons/mediaKit.json`, copiés par `npm run brand` dans `public/media-kit/`. Ni ce README, ni les scripts, ni les sources des icônes n'y sont publiés.
+
+La page et ses fichiers sont publics mais **non indexables** : en-tête `X-Robots-Tag: noindex, nofollow` (`lib/noindexHeaders.mjs`), balise `robots` sur la page, absence du sitemap, aucun lien depuis la navigation ni le pied de page. Ils ne sont **pas** bloqués dans robots.txt : un `Disallow` empêcherait les moteurs de lire le noindex.
+
 ## Régénérer
 
 ```bash
 python3 brand/symbole/generer.py   # seulement si la géométrie change : réécrit les SVG
-npm run brand                      # rend brand/png/ et les icônes du site depuis les SVG
+npm run brand                      # rend brand/png/, les icônes du site et public/media-kit/
 ```
 
 Committer les SVG et tout ce que `npm run brand` a réécrit dans le même commit. Le test `__tests__/brand-assets.test.ts` échoue si un PNG ne correspond plus à son SVG.

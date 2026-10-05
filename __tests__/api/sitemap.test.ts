@@ -71,4 +71,13 @@ describe("sitemap API", () => {
     expect(res.body).not.toContain(`${base}/cout-reel-jour`);
     expect(res.body).not.toContain(`${base}/en/cout-reel-jour`);
   });
+
+  it("omits the noindex media kit", () => {
+    const req = { method: "GET", headers: { host: "lucrousseau.com" } };
+    const res = createMockRes();
+
+    handler(req, res);
+
+    expect(res.body).not.toContain("media-kit");
+  });
 });

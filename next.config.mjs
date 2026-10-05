@@ -4,6 +4,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import i18n from "./next-i18next.config.js";
 import { securityHeaders } from "./lib/securityHeaders.mjs";
+import { noindexHeaderRules } from "./lib/noindexHeaders.mjs";
 import { SITUATION_SLUG_PAIRS as SITUATIONS } from "./commons/situationSlugRoutes.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -100,6 +101,7 @@ const nextConfig = {
       { source: "/", headers: homeHeaders },
       { source: "/en", headers: homeHeaders },
       { source: "/(.*)", headers: [...securityHeaders, varyAccept] },
+      ...noindexHeaderRules,
     ];
   },
   async redirects() {

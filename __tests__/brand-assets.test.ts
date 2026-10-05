@@ -7,7 +7,10 @@ import path from "node:path";
 import sharp from "sharp";
 
 import {
+  BRAND_DIR,
   FAVICON_DIR,
+  MEDIA_KIT_DIR,
+  MEDIA_KIT_FILES,
   PNG_DIR,
   RASTERS,
   ROOT,
@@ -47,6 +50,13 @@ describe("brand assets", () => {
     "public/favicon/$site is an exact copy of brand/png/$png",
     ({ png, site }) => {
       expect(read(FAVICON_DIR, site!).equals(readPng(png))).toBe(true);
+    }
+  );
+
+  it.each(MEDIA_KIT_FILES)(
+    "public/media-kit/$file is an exact copy of brand/$source",
+    ({ file, source }: { file: string; source: string }) => {
+      expect(read(MEDIA_KIT_DIR, file).equals(read(BRAND_DIR, source))).toBe(true);
     }
   );
 
