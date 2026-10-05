@@ -6,41 +6,52 @@ import path from "node:path";
 
 import sharp from "sharp";
 
-import { ICONS, renderIcon } from "../scripts/generate-favicons.mjs";
+import { ICONS, ICO_PNGS, buildIco, renderIcon } from "../scripts/generate-favicons.mjs";
 
 const root = path.resolve(__dirname, "..");
 const publicDir = path.join(root, "public");
+const readPublic = (...parts: string[]) => readFileSync(path.join(publicDir, ...parts));
+
+/** Raw RGBA, so a transparent background turned opaque (or the reverse) shows up. */
+const rgba = (input: Buffer) => sharp(input).ensureAlpha().raw().toBuffer();
 
 describe("site icons", () => {
   it.each(ICONS)("$png matches its SVG source ($svg)", async (icon) => {
-    const committed = readFileSync(path.join(publicDir, "favicon", icon.png));
+    const committed = readPublic("favicon", icon.png);
     const meta = await sharp(committed).metadata();
     expect(meta.width).toBe(icon.size);
     expect(meta.height).toBe(icon.size);
     expect(meta.hasAlpha).toBe(!icon.opaque);
 
-    // Tolerance, not byte equality: a libvips upgrade shifts anti-aliasing slightly.
-    // A redrawn SVG left without `npm run favicons` moves far more than this.
-    const flat = (input: Buffer) =>
-      sharp(input).flatten({ background: "#ffffff" }).removeAlpha().raw().toBuffer();
-    const [expected, actual] = await Promise.all([flat(await renderIcon(icon)), flat(committed)]);
-    const meanDiff = expected.reduce((sum, value, i) => sum + Math.abs(value - actual[i]), 0);
-    expect(meanDiff / expected.length).toBeLessThan(1);
+    // Not byte equality: a libvips upgrade shifts anti-aliasing on stroke edges. A redrawn
+    // or recoloured SVG left without `npm run favicons` moves far more channels, by more.
+    const [expected, actual] = await Promise.all([rgba(await renderIcon(icon)), rgba(committed)]);
+    expect(actual.length).toBe(expected.length);
+    let off = 0;
+    for (let i = 0; i < expected.length; i++) {
+      if (Math.abs(expected[i] - actual[i]) > 8) off++;
+    }
+    expect(off / expected.length).toBeLessThan(0.01);
   });
 
-  it("serves the same favicon.ico at the root and under /favicon", () => {
-    const rootIco = readFileSync(path.join(publicDir, "favicon.ico"));
-    const nestedIco = readFileSync(path.join(publicDir, "favicon", "favicon.ico"));
-    expect(rootIco.equals(nestedIco)).toBe(true);
+  it("builds favicon.ico from the committed 16 and 32 px PNGs", () => {
+    const expected = buildIco(
+      ICO_PNGS.map((png) => ({
+        size: ICONS.find((icon) => icon.png === png)!.size,
+        data: readPublic("favicon", png),
+      }))
+    );
+    expect(readPublic("favicon", "favicon.ico").equals(expected)).toBe(true);
+    expect(readPublic("favicon.ico").equals(expected)).toBe(true);
   });
 
   it("points every manifest icon at a file that exists", () => {
-    const manifest = JSON.parse(
-      readFileSync(path.join(publicDir, "favicon", "site.webmanifest"), "utf8")
-    ) as { icons: { src: string }[] };
+    const manifest = JSON.parse(readPublic("favicon", "site.webmanifest").toString("utf8")) as {
+      icons: { src: string }[];
+    };
     for (const { src } of manifest.icons) {
       expect(src.startsWith("/")).toBe(true);
-      expect(() => readFileSync(path.join(publicDir, src))).not.toThrow();
+      expect(() => readPublic(src)).not.toThrow();
     }
   });
 });

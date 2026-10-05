@@ -11,6 +11,7 @@
  * 2026-10-05). Les 16 et 32 px ont leur propre dessin (trait épaissi, jour élargi) :
  * ce ne sont pas des réductions du maître `lrc-symbole.svg`.
  */
+import { realpathSync } from "node:fs";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -36,8 +37,8 @@ export const ICONS = [
   { svg: "android-chrome-512.svg", png: "android-chrome-512x512.png", size: 512, opaque: true },
 ];
 
-/** Tailles embarquées dans favicon.ico (PNG intégrés). */
-const ICO_SIZES = [16, 32];
+/** PNG embarqués dans favicon.ico, par nom de fichier : 16 et 32, comme l'ICO approuvé (TK-398). */
+export const ICO_PNGS = ["favicon-16x16.png", "favicon-32x32.png"];
 
 export async function renderIcon({ svg, size, opaque }) {
   let image = sharp(path.join(source, svg), { density: 72 }).resize(size, size, { fit: "fill" });
@@ -73,19 +74,25 @@ async function main() {
   const rendered = new Map();
   for (const icon of ICONS) {
     const data = await renderIcon(icon);
-    rendered.set(icon.size, data);
+    rendered.set(icon.png, data);
     // icon.png vient de la liste ICONS ci-dessus, jamais d'une entrée externe.
     // eslint-disable-next-line security/detect-non-literal-fs-filename
     await writeFile(path.join(favicon, icon.png), data);
     console.log(`public/favicon/${icon.png}`);
   }
-  const ico = buildIco(ICO_SIZES.map((size) => ({ size, data: rendered.get(size) })));
+  const ico = buildIco(
+    ICO_PNGS.map((png) => ({
+      size: ICONS.find((icon) => icon.png === png).size,
+      data: rendered.get(png),
+    }))
+  );
   await writeFile(path.join(favicon, "favicon.ico"), ico);
   await writeFile(path.join(root, "public/favicon.ico"), ico);
   console.log("public/favicon/favicon.ico, public/favicon.ico");
 }
 
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
+// realpath : lancé par un lien symbolique, argv[1] ne serait pas égal au chemin du module.
+if (process.argv[1] && realpathSync(process.argv[1]) === fileURLToPath(import.meta.url)) {
   main().catch((error) => {
     console.error(error);
     process.exit(1);
