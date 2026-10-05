@@ -46,6 +46,11 @@ export const ROUTES = Object.freeze({
   cvTechLead: "/cvs/cv-techlead",
   cvFounding: "/cvs/cv-founding",
   expertiseBase: "/expertise",
+  /**
+   * Brand media kit: public and downloadable, noindex (X-Robots-Tag + meta), omitted from
+   * the sitemap, robots.txt, the navigation and the footer.
+   */
+  mediaKit: "/media-kit",
   /** Public developer / agent resources (OpenAPI, llms.txt, negotiation notes). */
   developers: "/developers",
 });

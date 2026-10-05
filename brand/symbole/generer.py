@@ -1,5 +1,5 @@
 # Generateur du symbole LRC 2a (chaine fermee, sans entrelacs, tout marine). TK-398.
-# Les SVG font foi ; les PNG et l'ICO en sont rendus par Chrome headless.
+# Les SVG font foi ; dans le depot, les PNG et l'ICO en sont rendus par `npm run brand` (sharp).
 import math
 M='#131e61';C='#f6f5f5'
 ASPECT=24/13      # longueur / hauteur des maillons (proportions de la planche de duel)

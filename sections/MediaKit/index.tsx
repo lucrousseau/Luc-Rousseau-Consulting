@@ -121,7 +121,7 @@ export default function MediaKit({ groups }: { groups: MediaKitGroup[] }) {
         <table className="media-kit__table">
           <thead>
             <tr>
-              <th aria-hidden="true" />
+              <td />
               <th scope="col">{t("col-file")}</th>
               <th scope="col" className="media-kit__optional">
                 {t("col-usage")}
@@ -129,7 +129,9 @@ export default function MediaKit({ groups }: { groups: MediaKitGroup[] }) {
               <th scope="col" className="media-kit__optional">
                 {t("col-format")}
               </th>
-              <th aria-hidden="true" />
+              <th scope="col">
+                <span className="media-kit__sr">{t("download")}</span>
+              </th>
             </tr>
           </thead>
           {groups.map((group) => (

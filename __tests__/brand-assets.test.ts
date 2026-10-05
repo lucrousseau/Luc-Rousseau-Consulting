@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 
 import sharp from "sharp";
@@ -59,6 +59,11 @@ describe("brand assets", () => {
       expect(read(MEDIA_KIT_DIR, file).equals(read(BRAND_DIR, source))).toBe(true);
     }
   );
+
+  it("publishes nothing in public/media-kit beyond commons/mediaKit.json", () => {
+    const listed = MEDIA_KIT_FILES.map(({ file }: { file: string }) => file).sort();
+    expect(readdirSync(MEDIA_KIT_DIR).sort()).toEqual(listed);
+  });
 
   it("builds every favicon.ico from the committed 16 and 32 px PNGs", () => {
     const expected = buildIcoFrom(readPng);

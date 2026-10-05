@@ -44,7 +44,10 @@ function formatSize(bytes: number, locale: string): string {
   return locale === "fr" ? `${value} ko` : `${value} KB`;
 }
 
-/** Static at build, no revalidate: file sizes are read from public/ where the build runs. */
+/**
+ * Static at build. Do NOT add `revalidate`: file sizes are read from public/, which exists
+ * at build time but not inside a Vercel function, so an ISR regeneration would throw.
+ */
 export const getStaticProps: GetStaticProps = async ({ locale = "fr" }) => {
   const publicDir = path.join(process.cwd(), "public", "media-kit");
   const groups: MediaKitGroup[] = mediaKit.groups.map((group) => ({

@@ -49,27 +49,27 @@
       "usage": "Favicon"
     },
     "avatar": {
-      "label": "Avatar 400 × 400",
+      "label": "Avatar 400 × 400",
       "usage": "Profiles and social networks"
     },
     "icon512": {
-      "label": "Icon 512 × 512",
+      "label": "Icon 512 × 512",
       "usage": "Apps and directories"
     },
     "icon192": {
-      "label": "Icon 192 × 192",
+      "label": "Icon 192 × 192",
       "usage": "Android home screen"
     },
     "icon180": {
-      "label": "Icon 180 × 180",
+      "label": "Icon 180 × 180",
       "usage": "iOS home screen"
     },
     "favicon32": {
-      "label": "Favicon 32 × 32",
+      "label": "Favicon 32 × 32",
       "usage": "Browser tab"
     },
     "favicon16": {
-      "label": "Favicon 16 × 16",
+      "label": "Favicon 16 × 16",
       "usage": "Browser tab"
     },
     "charter": {

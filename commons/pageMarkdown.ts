@@ -298,6 +298,7 @@ export function isKnownSitePath(pathWithoutLocale: string): boolean {
   }
 
   if (path === ROUTES.cvHub || path.startsWith(`${ROUTES.cvHub}/`)) return true;
+  if (path === ROUTES.mediaKit) return true;
   if (path === ROUTES.dayRateComparison || path.startsWith(`${ROUTES.dayRateComparison}/`)) {
     return true;
   }

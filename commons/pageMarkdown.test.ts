@@ -49,6 +49,8 @@ describe("pageMarkdown", () => {
   it("recognizes public and private known paths", () => {
     expect(isPublicHtmlPath(ROUTES.developers)).toBe(true);
     expect(isKnownSitePath(ROUTES.cvHub)).toBe(true);
+    expect(isKnownSitePath(ROUTES.mediaKit)).toBe(true);
+    expect(isPublicHtmlPath(ROUTES.mediaKit)).toBe(false);
     expect(isPublicHtmlPath("/this-does-not-exist")).toBe(false);
     expect(isKnownSitePath("/this-does-not-exist")).toBe(false);
   });
