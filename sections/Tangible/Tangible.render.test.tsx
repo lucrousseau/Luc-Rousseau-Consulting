@@ -63,13 +63,13 @@ describe("Tangible section", () => {
     );
   });
 
-  it("opens Builder Helper without a site link", () => {
+  it("opens Builder Helper with a link to its site", () => {
     render(<Tangible showCta={false} />);
 
     fireEvent.click(screen.getByRole("button", { name: /^Builder Helper/ }));
 
     const row = rowFor("Builder Helper");
     expect(row).toHaveTextContent("Stripe Connect");
-    expect(within(row).queryByRole("link")).toBeNull();
+    expect(within(row).getByRole("link")).toHaveAttribute("href", "https://builderhelper.ca");
   });
 });
