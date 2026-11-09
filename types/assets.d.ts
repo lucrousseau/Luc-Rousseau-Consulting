@@ -43,5 +43,10 @@ declare module "*.gif" {
   export default content;
 }
 
+declare module "*.svg" {
+  const content: StaticImageImport;
+  export default content;
+}
+
 declare module "*.scss";
 declare module "*.css";
