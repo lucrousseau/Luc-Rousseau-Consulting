@@ -22,6 +22,7 @@ jest.mock("next-i18next/pages", () => ({
 // next/jest stubs every static image to the same src: give each logo its own to tell them apart.
 jest.mock("./logos", () => ({
   PROJECT_LOGOS: {
+    "builder-helper": "/builder-helper.svg",
     milesopedia: "/milesopedia.png",
     nesto: "/nesto.png",
     "mon-meilleur-taux": "/comparemortgage.png",
@@ -42,13 +43,16 @@ const rowFor = (title: string) => {
 };
 
 describe("Tangible section", () => {
-  it("renders Builder Helper first, without a logo, and keeps each logo on its own case", () => {
+  it("renders Builder Helper first, with its badge, and keeps each logo on its own case", () => {
     render(<Tangible showCta={false} />);
 
     const triggers = screen.getAllByRole("button", { expanded: false });
     expect(triggers[0]).toHaveTextContent("Builder Helper");
 
-    expect(within(rowFor("Builder Helper")).queryByRole("img")).toBeNull();
+    expect(within(rowFor("Builder Helper")).getByRole("img")).toHaveAttribute(
+      "src",
+      expect.stringContaining("builder-helper")
+    );
     expect(within(rowFor("Milesopedia")).getByRole("img")).toHaveAttribute(
       "src",
       expect.stringContaining("milesopedia")

@@ -30,6 +30,6 @@ describe("tangible cases", () => {
     for (const id of Object.keys(PROJECT_LOGOS)) {
       expect(ids).toContain(id);
     }
-    expect(Object.hasOwn(PROJECT_LOGOS, "builder-helper")).toBe(false);
+    expect(Object.hasOwn(PROJECT_LOGOS, "builder-helper")).toBe(true);
   });
 });
