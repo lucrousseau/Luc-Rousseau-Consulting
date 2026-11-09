@@ -3,28 +3,37 @@
   "navigation-label": "Projects",
   "navigation-label-short": "Work",
   "badge": "Proof",
-  "title": "Selected work",
-  "summary": "<p class=\"big\">A few engagements where <strong>ownership of architecture, product impact, and delivery</strong> mattered. <em>Outcomes over tasks.</em> The mix spans Laravel/React product builds and large-scale CMS platforms, same thread: clear boundaries, what ships, and how it stays operable.</p>",
+  "title": "Recent engagements",
+  "summary": "<p class=\"big\">A few engagements where <strong>ownership of architecture, product impact, and delivery</strong> mattered. <em>Outcomes over tasks.</em> The mix spans custom product builds, large-scale CMS platforms and a marketplace taken over through launch, same thread: clear boundaries, what ships, and how it stays operable.</p>",
   "items": [
     {
+      "id": "builder-helper",
+      "title": "Builder Helper",
+      "content": "<p>Context: A Quebec B2B marketplace for renting construction machinery and equipment was already live with a first customer, on an MVP built by an outside vendor. The company had to bring the product in house, with no technical team, and take it to public launch.</p><p>My role: I ran the framing, then took over the product end to end: roadmap and sprints, design system and mockups, architecture, code review and releases, infrastructure and payments. To ship at a team's pace without a team, I set up a crew of specialized AI agents (development, review, QA, design, copy), held in place by guardrails and a human sign-off at every step.</p><p>Outcomes:</p><ul><li>Framing delivered in two weeks: user journeys, explicit launch criteria and a phased roadmap, before any code was written.</li><li>Code, hosting, database, email and payments moved into the company's own accounts in under a month, so it fully controls its product.</li><li>Regular production releases and real rentals billed through Stripe Connect, while preparing the public launch.</li><li>AI-augmented delivery that never runs unsupervised: every change is reviewed by a separate agent and then by me, money rules are tested first, and risky actions (migrations, production) stay blocked without my approval.</li></ul><h5>Tech stack</h5><p>SvelteKit, TypeScript, Drizzle ORM and PostgreSQL (Neon), Vercel, Stripe Connect, AWS (S3, SES), Datadog, design system in Figma, planning in Notion, AI agents with Claude Code, CI and automated security review.</p>"
+    },
+    {
+      "id": "milesopedia",
       "title": "Milesopedia",
       "content": "<p>Context: A multi-site, multi-brand comparison network had to grow into new markets without splitting the stack, while editorial work was hitting the limits of legacy page patterns.</p><p>My role: I owned the architecture direction for a centralized data path (API foundation), the editorial layer (Gutenberg and block patterns), and the operational discipline, CI/CD and releases, so plugins, themes, and sites stayed aligned across the network.</p><p>Outcomes:</p><ul><li>One technical base that supports Canada, France, and the United States as one system to operate, instead of parallel silos per market.</li><li>Editorial can ship complex comparison experiences with a repeatable block model, less bespoke HTML per launch, fewer one-off maintenance paths.</li><li>Progressive migration off legacy components toward a modern block stack: value shipped in slices rather than pausing for a full rewrite.</li><li>Release and performance work stayed tied to editorial and revenue priorities, so improvements land where they move the business, not as random tech projects.</li></ul><h5>Tech stack</h5><p>WordPress and custom plugins, PHP and JavaScript (ES6+), Gutenberg block development, REST and centralized API design, advanced caching, CI/CD and automated deployments, multi-site and multi-brand architecture, custom financial comparators, integrations with external data sources.</p>",
       "cta-label": "Visit site",
       "cta-link": "https://milesopedia.com"
     },
     {
+      "id": "nesto",
       "title": "Nesto",
       "content": "<p>Context: Several product initiatives needed one shared backbone so teams did not reinvent foundations for each release.</p><p>My role: I defined and implemented the centralized system architecture (including an adaptable layout grid), set technical guardrails for teams, supported hiring with structured technical evaluation, and kept monitoring and evolution loops in place.</p><p>Outcomes:</p><ul><li>One architecture spine reused across projects, less drift between teams and faster onboarding when a new surface ships.</li><li>A large library of React-based Gutenberg blocks so marketing and product surfaces stay consistent without a custom front-end per page.</li><li>Lead capture wired to Salesforce with clear server-side paths, fewer ad-hoc integrations per initiative.</li><li>Hiring support stayed practical: structured technical exercises so candidates are evaluated on real constraints, not trivia.</li></ul><h5>Tech stack</h5><p>Vanilla PHP and JavaScript (ES6+), React blocks for Gutenberg, transients and advanced caching, sessions and local storage, REST routes, external API integration, custom WordPress rewrite rules, advanced MySQL, Salesforce for lead creation, Webpack builds for theme variants via CLI.</p>",
       "cta-label": "Visit site",
       "cta-link": "https://www.nesto.ca"
     },
     {
+      "id": "mon-meilleur-taux",
       "title": "Compare Mortgages",
       "content": "<p>Context: A mortgage comparison flow had to move from planning to production with tight coordination between design, back-end, and front-end, without losing quality on the way to launch.</p><p>My role: I shaped the system architecture for comparison logic, sequenced phases and deliverables, coordinated design through development, and shipped tooling for experimentation and analysis.</p><p>Outcomes:</p><ul><li>Phased delivery with explicit priorities and timelines so the build advanced without thrash between design and engineering.</li><li>Functional prototypes and UI work aligned to what engineering could ship, fewer late surprises in scope.</li><li>A/B and analytics tooling integrated so the team can tune the funnel after launch without bolting on another stack.</li></ul><h5>Tech stack</h5><p>Vanilla PHP and JavaScript (ES6+), REST routes and external API integration, custom WordPress rewrite rules, advanced MySQL, Salesforce for lead creation, Webpack for theme build variants via CLI.</p>",
       "cta-label": "Visit site",
       "cta-link": "https://comparemortgages.ca/quotes/purchase/"
     },
     {
+      "id": "brightwize",
       "title": "BrightWize",
       "content": "<p>Context: A mortgage-industry product needed a clear go/no-go frame, a defensible architecture, and steady technical oversight before and during build.</p><p>My role: I ran feasibility and phasing, selected the stack and shaped the technical prerequisites, and stayed close during delivery, Laravel and React calculators, data modelling, reviews, and integration patterns (including public-facing rate experiences).</p><p>Outcomes:</p><ul><li>An execution strategy and architecture decision record before heavy spend, less rework when constraints change mid-flight.</li><li>Mortgage-rate and calculator experiences integrated where users already compare (example live on Nesto).</li><li>Code and integration reviews stayed close to production risk, fewer surprises when rates data or partner rules change.</li></ul><h5>Tech stack</h5><p>Laravel, complex MySQL schemas and queries, React calculators for mortgage flows, scraping where required, project scoping, estimation, and code reviews.</p>",
       "cta-label": "See example",

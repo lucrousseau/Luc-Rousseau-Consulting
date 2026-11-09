@@ -11,15 +11,10 @@ import { getScheduleCta } from "../../commons/scheduleCta";
 import Button from "../../components/Button";
 import Accordion from "../../components/Accordion";
 
-import milesopediaLogo from "./images/milesopedia.png";
-import nestoLogo from "./images/nesto.png";
-import comparemortgageLogo from "./images/comparemortgage.png";
-import nestogroupLogo from "./images/nestogroup.png";
-
-/** Order matches `tangible.json` items (Milesopedia → Nesto → Compare → BrightWize). */
-const PROJECT_LOGOS = [milesopediaLogo, nestoLogo, comparemortgageLogo, nestogroupLogo];
+import { PROJECT_LOGOS } from "./logos";
 
 interface TangibleItem {
+  id: string;
   title: string;
   content: string;
   "cta-link"?: string;
@@ -34,7 +29,7 @@ export default function Tangible({ cta, showCta = true }: SectionWithCtaProps) {
   const scheduleCta = getScheduleCta(t);
 
   const rawItems = t("tangible:items", { returnObjects: true });
-  const items = ((Array.isArray(rawItems) ? rawItems : []) as TangibleItem[]).map((item, index) => {
+  const items = ((Array.isArray(rawItems) ? rawItems : []) as TangibleItem[]).map((item) => {
     const content = (
       <>
         {parseHtmlContent(item.content)}
@@ -55,9 +50,7 @@ export default function Tangible({ cta, showCta = true }: SectionWithCtaProps) {
 
     return {
       title: item.title,
-      // index from .map over static locale items
-      // eslint-disable-next-line security/detect-object-injection
-      logo: PROJECT_LOGOS[index] ?? null,
+      logo: Object.hasOwn(PROJECT_LOGOS, item.id) ? PROJECT_LOGOS[item.id] : undefined,
       content: content,
     };
   });
