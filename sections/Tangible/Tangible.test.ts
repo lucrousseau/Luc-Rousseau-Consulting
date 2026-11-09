@@ -18,10 +18,10 @@ describe("tangible cases", () => {
     expect(new Set(fr.map((item) => item.id)).size).toBe(fr.length);
   });
 
-  it("puts Builder Helper first, without a site link", () => {
+  it("puts Builder Helper first, linking to builderhelper.ca", () => {
     for (const items of [fr, en]) {
       expect(items[0]?.id).toBe("builder-helper");
-      expect(items[0]?.["cta-link"]).toBeUndefined();
+      expect(items[0]?.["cta-link"]).toBe("https://builderhelper.ca");
     }
   });
 
